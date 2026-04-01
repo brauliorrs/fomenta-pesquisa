@@ -29,8 +29,13 @@ jobs:
 
       - name: Run bot
         env:
+          INSTAGRAM_PUBLISH_MODE: ${{ secrets.INSTAGRAM_PUBLISH_MODE }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          INSTAGRAM_API_HOST: ${{ secrets.INSTAGRAM_API_HOST }}
+          INSTAGRAM_API_VERSION: ${{ secrets.INSTAGRAM_API_VERSION }}
+          PUBLIC_ASSET_BASE_URL: ${{ secrets.PUBLIC_ASSET_BASE_URL }}
+          INSTAGRAM_PUBLISH_STORIES: ${{ secrets.INSTAGRAM_PUBLISH_STORIES }}
           META_APP_ID: ${{ secrets.META_APP_ID }}
           META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
           GITHUB_REPOSITORY: ${{ github.repository }}
