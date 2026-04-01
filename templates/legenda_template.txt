@@ -1,0 +1,6 @@
+{{ titulo }}
+
+Orgao: {{ orgao }}
+Publico: {{ publico_alvo }}
+Prazo: {{ data_expiracao }}
+Link: {{ link }}

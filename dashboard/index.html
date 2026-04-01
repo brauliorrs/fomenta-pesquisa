@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radar de Editais</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Painel Editorial</p>
+          <h1>Radar de Editais</h1>
+          <p class="hero-copy">Revise a fila de publicação, acompanhe urgência de prazo e veja a legenda pronta antes de publicar no Instagram.</p>
+        </div>
+        <div class="hero-badge">
+          <span>Base atual</span>
+          <strong id="lastCollected">--</strong>
+          <small id="queueInfo">Fila editorial indisponível</small>
+        </div>
+      </header>
+
+      <section class="stats" id="stats"></section>
+
+      <section class="filters">
+        <label>
+          <span>Buscar</span>
+          <input id="searchInput" type="search" placeholder="Título, órgão ou resumo" />
+        </label>
+        <label>
+          <span>Fonte</span>
+          <select id="sourceFilter">
+            <option value="">Todas</option>
+          </select>
+        </label>
+        <label>
+          <span>Status</span>
+          <select id="statusFilter">
+            <option value="">Todos</option>
+            <option value="novo">Novo</option>
+            <option value="prorrogado">Prorrogado</option>
+            <option value="atualizado">Atualizado</option>
+            <option value="encerrado">Encerrado</option>
+          </select>
+        </label>
+        <label>
+          <span>Prazo</span>
+          <select id="deadlineFilter">
+            <option value="">Todos</option>
+            <option value="urgent">Até 7 dias</option>
+            <option value="soon">Até 30 dias</option>
+            <option value="open">Sem urgência</option>
+            <option value="missing">Sem prazo</option>
+          </select>
+        </label>
+        <label>
+          <span>Fila</span>
+          <select id="queueFilter">
+            <option value="">Todos</option>
+            <option value="ready">Só prontos</option>
+            <option value="review">Só revisão</option>
+            <option value="blocked">Só bloqueados</option>
+            <option value="top">Top 10 da fila</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="results-bar">
+        <strong id="resultCount">0 editais</strong>
+        <button id="resetButton" type="button">Limpar filtros</button>
+      </section>
+
+      <section id="cards" class="cards"></section>
+    </div>
+
+    <template id="cardTemplate">
+      <article class="card">
+        <div class="card-topline">
+          <span class="chip source"></span>
+          <span class="chip deadline"></span>
+          <span class="chip queue"></span>
+        </div>
+        <section class="instagram-preview">
+          <div class="instagram-card">
+            <p class="instagram-card-header"></p>
+            <h3 class="instagram-card-title"></h3>
+            <div class="instagram-card-deadline"></div>
+            <p class="instagram-card-summary"></p>
+            <p class="instagram-card-handle"></p>
+          </div>
+        </section>
+        <h2 class="card-title"></h2>
+        <p class="card-summary"></p>
+        <dl class="meta"></dl>
+        <div class="caption-preview">
+          <p class="caption-label">Preview da legenda</p>
+          <pre class="caption-content"></pre>
+        </div>
+        <div class="card-actions">
+          <a class="button source-link" target="_blank" rel="noreferrer">Abrir fonte</a>
+          <a class="button secondary card-link" target="_blank" rel="noreferrer">Abrir card</a>
+          <a class="button secondary mock-link" target="_blank" rel="noreferrer">Abrir mock</a>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

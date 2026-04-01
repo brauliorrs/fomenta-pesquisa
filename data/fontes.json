@@ -1,0 +1,54 @@
+﻿[
+  {
+    "nome": "Conselho Nacional de Desenvolvimento Cientifico e Tecnologico",
+    "sigla": "CNPQ",
+    "uf": "BR",
+    "site_oficial": "http://memoria2.cnpq.br",
+    "pagina_editais": "http://memoria2.cnpq.br/web/guest/chamadas-publicas?p_p_id=resultadosportlet_WAR_resultadoscnpqportlet_INSTANCE_0ZaM&filtro=abertas",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
+    "nome": "Coordenacao de Aperfeicoamento de Pessoal de Nivel Superior",
+    "sigla": "CAPES",
+    "uf": "BR",
+    "site_oficial": "https://www.gov.br/capes/pt-br",
+    "pagina_editais": "https://www.gov.br/capes/pt-br/assuntos/noticias",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
+    "nome": "Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa",
+    "sigla": "CONFAP",
+    "uf": "BR",
+    "site_oficial": "https://confap.org.br",
+    "pagina_editais": "https://news.confap.org.br/tag/editais/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
+    "nome": "Instituto de Pesquisa Economica Aplicada",
+    "sigla": "IPEA",
+    "uf": "BR",
+    "site_oficial": "https://www.ipea.gov.br/portal",
+    "pagina_editais": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  }
+]

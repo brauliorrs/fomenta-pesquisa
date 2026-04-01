@@ -1,0 +1,556 @@
+2026-03-30 13:41:38,962 [INFO] Inicio da execucao
+2026-03-30 13:41:39,190 [ERROR] Erro ao processar fonte CNPQ
+Traceback (most recent call last):
+  File "D:\Automatização_editais_instagram\src\services\scraper_service.py", line 43, in collect
+    raw_items = source.collect()
+                ^^^^^^^^^^^^^^^^
+  File "D:\Automatização_editais_instagram\src\sources\base_source.py", line 38, in collect
+    raw_content = self.fetch()
+                  ^^^^^^^^^^^^
+  File "D:\Automatização_editais_instagram\src\sources\base_source.py", line 27, in fetch
+    response.raise_for_status()
+  File "D:\Automatização_editais_instagram\.venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/editais
+2026-03-30 13:41:39,395 [ERROR] Erro ao processar fonte CAPES
+Traceback (most recent call last):
+  File "D:\Automatização_editais_instagram\src\services\scraper_service.py", line 43, in collect
+    raw_items = source.collect()
+                ^^^^^^^^^^^^^^^^
+  File "D:\Automatização_editais_instagram\src\sources\base_source.py", line 38, in collect
+    raw_content = self.fetch()
+                  ^^^^^^^^^^^^
+  File "D:\Automatização_editais_instagram\src\sources\base_source.py", line 27, in fetch
+    response.raise_for_status()
+  File "D:\Automatização_editais_instagram\.venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.gov.br/capes/pt-br/acesso-a-informacao/acoes-e-programas/bolsas/editais
+2026-03-30 13:41:39,397 [INFO] Total coletado: 0
+2026-03-30 13:41:39,397 [INFO] Novos: 0 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 13:41:39,397 [INFO] Repostados/Publicados: 0
+2026-03-30 13:41:39,397 [INFO] Expirados: 0
+2026-03-30 13:41:39,397 [INFO] Erros por fonte: 2
+2026-03-30 13:41:39,397 [INFO] Fim da execucao
+2026-03-30 13:43:46,838 [INFO] Inicio da execucao
+2026-03-30 13:44:05,560 [INFO] Inicio da execucao
+2026-03-30 13:44:06,013 [INFO] Fonte CNPQ retornou 20 itens
+2026-03-30 13:44:06,330 [INFO] Fonte CAPES retornou 20 itens
+2026-03-30 13:44:06,566 [INFO] Fonte CONFAP retornou 0 itens
+2026-03-30 13:44:06,585 [INFO] Total coletado: 40
+2026-03-30 13:44:06,585 [INFO] Novos: 40 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 13:44:06,585 [INFO] Repostados/Publicados: 40
+2026-03-30 13:44:06,585 [INFO] Expirados: 0
+2026-03-30 13:44:06,586 [INFO] Erros por fonte: 0
+2026-03-30 13:44:06,586 [INFO] Fim da execucao
+2026-03-30 13:47:27,116 [INFO] Inicio da execucao
+2026-03-30 13:47:27,416 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 13:47:27,728 [INFO] Fonte CAPES retornou 9 itens
+2026-03-30 13:47:29,424 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 13:47:29,450 [INFO] Total coletado: 27
+2026-03-30 13:47:29,450 [INFO] Novos: 27 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 13:47:29,450 [INFO] Repostados/Publicados: 27
+2026-03-30 13:47:29,450 [INFO] Expirados: 0
+2026-03-30 13:47:29,450 [INFO] Erros por fonte: 0
+2026-03-30 13:47:29,451 [INFO] Fim da execucao
+2026-03-30 13:51:29,471 [INFO] Inicio da execucao
+2026-03-30 13:51:29,850 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 13:51:30,206 [INFO] Fonte CAPES retornou 10 itens
+2026-03-30 13:51:32,343 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 13:51:32,357 [INFO] Total coletado: 28
+2026-03-30 13:51:32,357 [INFO] Novos: 28 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 13:51:32,357 [INFO] Repostados/Publicados: 28
+2026-03-30 13:51:32,357 [INFO] Expirados: 0
+2026-03-30 13:51:32,357 [INFO] Erros por fonte: 0
+2026-03-30 13:51:32,357 [INFO] Fim da execucao
+2026-03-30 13:53:09,118 [INFO] Inicio da execucao
+2026-03-30 13:53:09,414 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 13:53:09,754 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 13:53:11,649 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 13:53:11,666 [INFO] Total coletado: 21
+2026-03-30 13:53:11,667 [INFO] Novos: 21 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 13:53:11,667 [INFO] Repostados/Publicados: 21
+2026-03-30 13:53:11,667 [INFO] Expirados: 0
+2026-03-30 13:53:11,667 [INFO] Erros por fonte: 0
+2026-03-30 13:53:11,667 [INFO] Fim da execucao
+2026-03-30 13:58:17,541 [INFO] Inicio da execucao
+2026-03-30 13:58:17,869 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 13:58:18,220 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 13:58:19,743 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 13:58:19,751 [INFO] Total coletado: 21
+2026-03-30 13:58:19,751 [INFO] Novos: 21 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 13:58:19,751 [INFO] Repostados/Publicados: 21
+2026-03-30 13:58:19,751 [INFO] Expirados: 0
+2026-03-30 13:58:19,751 [INFO] Erros por fonte: 0
+2026-03-30 13:58:19,751 [INFO] Fim da execucao
+2026-03-30 14:07:46,374 [INFO] Inicio da execucao
+2026-03-30 14:07:46,653 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 14:07:47,831 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 14:07:51,621 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 14:08:18,922 [INFO] Total coletado: 21
+2026-03-30 14:08:18,922 [INFO] Novos: 21 | Prorrogados: 0 | Mantidos: 0
+2026-03-30 14:08:18,922 [INFO] Repostados/Publicados: 21
+2026-03-30 14:08:18,923 [INFO] Expirados: 0
+2026-03-30 14:08:18,923 [INFO] Erros por fonte: 0
+2026-03-30 14:08:18,923 [INFO] Fim da execucao
+2026-03-30 14:20:06,823 [INFO] Inicio da execucao
+2026-03-30 14:20:07,119 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 14:20:08,364 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 14:20:11,869 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 14:20:35,805 [INFO] Total coletado: 21
+2026-03-30 14:20:35,805 [INFO] Novos: 0 | Prorrogados: 5 | Mantidos: 16
+2026-03-30 14:20:35,805 [INFO] Repostados/Publicados: 0
+2026-03-30 14:20:35,805 [INFO] Expirados: 3
+2026-03-30 14:20:35,805 [INFO] Erros por fonte: 0
+2026-03-30 14:20:35,805 [INFO] Fim da execucao
+2026-03-30 14:35:41,620 [INFO] Inicio da execucao
+2026-03-30 14:35:41,946 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 14:35:43,212 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 14:35:47,119 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 14:36:20,928 [INFO] Total coletado: 21
+2026-03-30 14:36:20,928 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 18 | Mantidos: 3
+2026-03-30 14:36:20,928 [INFO] Repostados/Publicados: 0
+2026-03-30 14:36:20,928 [INFO] Bloqueados para postagem: 0
+2026-03-30 14:36:20,928 [INFO] Expirados: 3
+2026-03-30 14:36:20,928 [INFO] Erros por fonte: 0
+2026-03-30 14:36:20,928 [INFO] Fim da execucao
+2026-03-30 15:26:50,333 [INFO] Inicio da execucao
+2026-03-30 15:26:50,613 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 15:26:51,831 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 15:26:58,256 [INFO] Fonte CONFAP retornou 14 itens
+2026-03-30 15:27:32,561 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 15:27:34,797 [INFO] Total coletado: 31
+2026-03-30 15:27:34,797 [INFO] Novos: 10 | Prorrogados: 0 | Atualizados: 18 | Mantidos: 3
+2026-03-30 15:27:34,797 [INFO] Repostados/Publicados: 10
+2026-03-30 15:27:34,797 [INFO] Bloqueados para postagem: 0
+2026-03-30 15:27:34,797 [INFO] Expirados: 3
+2026-03-30 15:27:34,797 [INFO] Erros por fonte: 0
+2026-03-30 15:27:34,799 [INFO] Fim da execucao
+2026-03-30 15:35:20,471 [INFO] Inicio da execucao
+2026-03-30 15:35:20,749 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 15:35:21,956 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 15:35:26,175 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 15:35:45,198 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 15:35:47,348 [INFO] Total coletado: 29
+2026-03-30 15:35:47,348 [INFO] Novos: 0 | Prorrogados: 14 | Atualizados: 12 | Mantidos: 3
+2026-03-30 15:35:47,348 [INFO] Repostados/Publicados: 0
+2026-03-30 15:35:47,348 [INFO] Bloqueados para postagem: 0
+2026-03-30 15:35:47,348 [INFO] Expirados: 17
+2026-03-30 15:35:47,348 [INFO] Erros por fonte: 0
+2026-03-30 15:35:47,348 [INFO] Fim da execucao
+2026-03-30 15:36:31,151 [INFO] Inicio da execucao
+2026-03-30 15:36:31,430 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 15:36:32,729 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 15:36:33,988 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 15:36:37,845 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 15:36:39,914 [INFO] Total coletado: 29
+2026-03-30 15:36:39,914 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 12 | Mantidos: 17
+2026-03-30 15:36:39,914 [INFO] Repostados/Publicados: 0
+2026-03-30 15:36:39,914 [INFO] Bloqueados para postagem: 0
+2026-03-30 15:36:39,914 [INFO] Expirados: 17
+2026-03-30 15:36:39,914 [INFO] Erros por fonte: 0
+2026-03-30 15:36:39,915 [INFO] Fim da execucao
+2026-03-30 15:37:14,879 [INFO] Inicio da execucao
+2026-03-30 15:37:15,215 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 15:37:16,395 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 15:37:19,572 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 15:37:29,862 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 15:37:31,781 [INFO] Total coletado: 29
+2026-03-30 15:37:31,781 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 12 | Mantidos: 17
+2026-03-30 15:37:31,781 [INFO] Repostados/Publicados: 0
+2026-03-30 15:37:31,781 [INFO] Bloqueados para postagem: 2
+2026-03-30 15:37:31,781 [INFO] Expirados: 17
+2026-03-30 15:37:31,781 [INFO] Erros por fonte: 0
+2026-03-30 15:37:31,781 [INFO] Fim da execucao
+2026-03-30 16:31:06,987 [INFO] Inicio da execucao
+2026-03-30 16:31:07,279 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 16:31:08,520 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 16:31:14,699 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:31:37,063 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 16:31:39,009 [INFO] Total coletado: 29
+2026-03-30 16:31:39,009 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 12 | Mantidos: 17
+2026-03-30 16:31:39,010 [INFO] Repostados/Publicados: 0
+2026-03-30 16:31:39,010 [INFO] Bloqueados para postagem: 2
+2026-03-30 16:31:39,010 [INFO] Expirados: 17
+2026-03-30 16:31:39,010 [INFO] Erros por fonte: 0
+2026-03-30 16:31:39,010 [INFO] Fim da execucao
+2026-03-30 16:32:23,280 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:32:40,295 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:33:09,717 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:33:25,435 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:33:44,316 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:34:15,991 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:40:16,773 [INFO] Inicio da execucao
+2026-03-30 16:40:17,090 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 16:40:18,288 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 16:40:21,571 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:40:41,810 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 16:40:43,743 [INFO] Total coletado: 29
+2026-03-30 16:40:43,744 [INFO] Novos: 0 | Prorrogados: 4 | Atualizados: 10 | Mantidos: 15
+2026-03-30 16:40:43,744 [INFO] Repostados/Publicados: 0
+2026-03-30 16:40:43,744 [INFO] Bloqueados para postagem: 2
+2026-03-30 16:40:43,744 [INFO] Expirados: 20
+2026-03-30 16:40:43,744 [INFO] Erros por fonte: 0
+2026-03-30 16:40:43,744 [INFO] Fim da execucao
+2026-03-30 16:41:27,721 [INFO] Inicio da execucao
+2026-03-30 16:41:28,000 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 16:41:29,210 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 16:41:30,807 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:41:33,988 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 16:41:35,998 [INFO] Total coletado: 29
+2026-03-30 16:41:35,998 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 9 | Mantidos: 20
+2026-03-30 16:41:35,999 [INFO] Repostados/Publicados: 0
+2026-03-30 16:41:35,999 [INFO] Bloqueados para postagem: 2
+2026-03-30 16:41:35,999 [INFO] Expirados: 20
+2026-03-30 16:41:35,999 [INFO] Erros por fonte: 0
+2026-03-30 16:41:35,999 [INFO] Fim da execucao
+2026-03-30 16:45:45,395 [INFO] Inicio da execucao
+2026-03-30 16:45:45,691 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 16:45:46,831 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 16:45:49,655 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:46:16,069 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 16:46:18,009 [INFO] Total coletado: 29
+2026-03-30 16:46:18,009 [INFO] Novos: 0 | Prorrogados: 4 | Atualizados: 9 | Mantidos: 16
+2026-03-30 16:46:18,009 [INFO] Repostados/Publicados: 0
+2026-03-30 16:46:18,009 [INFO] Bloqueados para postagem: 2
+2026-03-30 16:46:18,010 [INFO] Expirados: 16
+2026-03-30 16:46:18,010 [INFO] Erros por fonte: 0
+2026-03-30 16:46:18,010 [INFO] Fim da execucao
+2026-03-30 16:57:27,440 [INFO] Inicio da execucao
+2026-03-30 16:57:27,792 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 16:57:30,242 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 16:57:32,816 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:57:54,191 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 16:57:56,130 [INFO] Total coletado: 29
+2026-03-30 16:57:56,130 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 13 | Mantidos: 16 | Deduplicados por chave: 0
+2026-03-30 16:57:56,130 [INFO] Repostados/Publicados: 0
+2026-03-30 16:57:56,130 [INFO] Bloqueados para postagem: 4
+2026-03-30 16:57:56,131 [INFO] Expirados: 16
+2026-03-30 16:57:56,131 [INFO] Erros por fonte: 0
+2026-03-30 16:57:56,131 [INFO] Fim da execucao
+2026-03-30 16:58:24,432 [INFO] Inicio da execucao
+2026-03-30 16:58:24,705 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 16:58:25,913 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 16:58:28,358 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 16:58:32,298 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 16:58:34,281 [INFO] Total coletado: 29
+2026-03-30 16:58:34,282 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 13 | Mantidos: 16 | Deduplicados por chave: 0
+2026-03-30 16:58:34,282 [INFO] Repostados/Publicados: 0
+2026-03-30 16:58:34,282 [INFO] Bloqueados para postagem: 4
+2026-03-30 16:58:34,282 [INFO] Expirados: 16
+2026-03-30 16:58:34,282 [INFO] Erros por fonte: 0
+2026-03-30 16:58:34,282 [INFO] Fim da execucao
+2026-03-30 17:04:40,916 [INFO] Inicio da execucao
+2026-03-30 17:04:41,182 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 17:04:42,441 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 17:04:45,404 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 17:04:49,974 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/
+2026-03-30 17:05:13,385 [WARNING] Falha ao enriquecer item https://mestradigital.com.br/: HTTPSConnectionPool(host='mestradigital.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='mestradigital.com.br', port=443): Failed to resolve 'mestradigital.com.br' ([Errno 11001] getaddrinfo failed)"))
+2026-03-30 17:05:17,749 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/
+2026-03-30 17:05:18,051 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 17:05:19,893 [INFO] Total coletado: 29
+2026-03-30 17:05:19,894 [INFO] Novos: 0 | Prorrogados: 1 | Atualizados: 15 | Mantidos: 13 | Deduplicados por chave: 12
+2026-03-30 17:05:19,894 [INFO] Repostados/Publicados: 0
+2026-03-30 17:05:19,894 [INFO] Bloqueados para postagem: 8
+2026-03-30 17:05:19,894 [INFO] Expirados: 15
+2026-03-30 17:05:19,894 [INFO] Erros por fonte: 0
+2026-03-30 17:05:19,894 [INFO] Fim da execucao
+2026-03-30 17:06:09,944 [INFO] Inicio da execucao
+2026-03-30 17:06:10,209 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 17:06:11,434 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 17:06:17,466 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 17:06:24,124 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-03-30 17:06:55,301 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-03-30 17:07:03,219 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/
+2026-03-30 17:07:03,479 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 17:07:05,405 [INFO] Total coletado: 29
+2026-03-30 17:07:05,405 [INFO] Novos: 0 | Prorrogados: 2 | Atualizados: 14 | Mantidos: 13 | Deduplicados por chave: 12
+2026-03-30 17:07:05,405 [INFO] Repostados/Publicados: 0
+2026-03-30 17:07:05,405 [INFO] Bloqueados para postagem: 6
+2026-03-30 17:07:05,406 [INFO] Expirados: 15
+2026-03-30 17:07:05,406 [INFO] Erros por fonte: 0
+2026-03-30 17:07:05,406 [INFO] Fim da execucao
+2026-03-30 17:08:34,595 [INFO] Inicio da execucao
+2026-03-30 17:08:34,910 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 17:08:36,188 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 17:08:39,307 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 17:08:41,031 [ERROR] Erro ao processar fonte CONFAP
+Traceback (most recent call last):
+  File "D:\Automatização_editais_instagram\src\services\scraper_service.py", line 81, in collect
+    enriched_item = self._enrich_item(item, collected_at)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Automatização_editais_instagram\src\services\scraper_service.py", line 110, in _enrich_item
+    official_link = self._extract_official_link(soup)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Automatização_editais_instagram\src\services\scraper_service.py", line 190, in _extract_official_link
+    href = href.split()[0].rstrip('.,);]')
+           ~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-30 17:08:41,250 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 17:08:43,166 [INFO] Total coletado: 17
+2026-03-30 17:08:43,166 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 7 | Mantidos: 10 | Deduplicados por chave: 0
+2026-03-30 17:08:43,166 [INFO] Repostados/Publicados: 0
+2026-03-30 17:08:43,166 [INFO] Bloqueados para postagem: 6
+2026-03-30 17:08:43,166 [INFO] Expirados: 15
+2026-03-30 17:08:43,166 [INFO] Erros por fonte: 1
+2026-03-30 17:08:43,166 [INFO] Fim da execucao
+2026-03-30 17:09:09,428 [INFO] Inicio da execucao
+2026-03-30 17:09:09,729 [INFO] Fonte CNPQ retornou 4 itens
+2026-03-30 17:09:11,008 [INFO] Fonte CAPES retornou 3 itens
+2026-03-30 17:09:12,184 [INFO] Fonte CONFAP retornou 12 itens
+2026-03-30 17:09:16,504 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-03-30 17:09:41,619 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-03-30 17:09:46,295 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/
+2026-03-30 17:09:46,561 [INFO] Fonte IPEA retornou 10 itens
+2026-03-30 17:09:48,496 [INFO] Total coletado: 29
+2026-03-30 17:09:48,496 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 14 | Mantidos: 15 | Deduplicados por chave: 12
+2026-03-30 17:09:48,496 [INFO] Repostados/Publicados: 0
+2026-03-30 17:09:48,496 [INFO] Bloqueados para postagem: 6
+2026-03-30 17:09:48,496 [INFO] Expirados: 15
+2026-03-30 17:09:48,496 [INFO] Erros por fonte: 0
+2026-03-30 17:09:48,496 [INFO] Fim da execucao
+2026-04-01 13:43:02,296 [INFO] Inicio da execucao
+2026-04-01 13:43:02,630 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 13:43:03,647 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 13:43:05,864 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 13:43:13,063 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 13:43:35,083 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 13:43:35,353 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 13:43:37,938 [INFO] Total coletado: 26
+2026-04-01 13:43:37,938 [INFO] Novos: 3 | Prorrogados: 4 | Atualizados: 10 | Mantidos: 9 | Deduplicados por chave: 11
+2026-04-01 13:43:37,938 [INFO] Repostados/Publicados: 4
+2026-04-01 13:43:37,938 [INFO] Bloqueados para postagem: 2
+2026-04-01 13:43:37,938 [INFO] Expirados: 19
+2026-04-01 13:43:37,938 [INFO] Erros por fonte: 0
+2026-04-01 13:43:37,938 [INFO] Fim da execucao
+2026-04-01 13:50:26,758 [INFO] Inicio da execucao
+2026-04-01 13:50:27,032 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 13:50:28,202 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 13:50:29,458 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 13:50:34,476 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 13:50:57,770 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 13:50:58,034 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 13:51:00,810 [INFO] Total coletado: 26
+2026-04-01 13:51:00,810 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 14 | Mantidos: 12 | Deduplicados por chave: 11
+2026-04-01 13:51:00,810 [INFO] Repostados/Publicados: 0
+2026-04-01 13:51:00,810 [INFO] Bloqueados para postagem: 1
+2026-04-01 13:51:00,810 [INFO] Expirados: 19
+2026-04-01 13:51:00,810 [INFO] Erros por fonte: 0
+2026-04-01 13:51:00,810 [INFO] Fim da execucao
+2026-04-01 13:55:06,392 [INFO] Inicio da execucao
+2026-04-01 13:55:06,695 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 13:55:07,881 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 13:55:10,226 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 13:55:15,484 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 13:55:45,943 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 13:55:46,231 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 13:55:49,136 [INFO] Total coletado: 26
+2026-04-01 13:55:49,136 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 14 | Mantidos: 12 | Deduplicados por chave: 11
+2026-04-01 13:55:49,136 [INFO] Repostados/Publicados: 0
+2026-04-01 13:55:49,136 [INFO] Bloqueados para postagem: 1
+2026-04-01 13:55:49,136 [INFO] Expirados: 19
+2026-04-01 13:55:49,136 [INFO] Erros por fonte: 0
+2026-04-01 13:55:49,136 [INFO] Fim da execucao
+2026-04-01 14:33:28,273 [INFO] Inicio da execucao
+2026-04-01 14:33:28,565 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 14:33:29,820 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 14:33:31,694 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 14:33:37,229 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 14:33:38,034 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 14:34:20,527 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 14:34:20,788 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 14:34:23,918 [INFO] Total coletado: 26
+2026-04-01 14:34:23,918 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 12 | Mantidos: 11 | Deduplicados por chave: 11
+2026-04-01 14:34:23,918 [INFO] Repostados/Publicados: 0
+2026-04-01 14:34:23,918 [INFO] Bloqueados para postagem: 1
+2026-04-01 14:34:23,918 [INFO] Expirados: 20
+2026-04-01 14:34:23,918 [INFO] Erros por fonte: 0
+2026-04-01 14:34:23,918 [INFO] Fim da execucao
+2026-04-01 14:38:06,081 [INFO] Inicio da execucao
+2026-04-01 14:38:06,375 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 14:38:07,595 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 14:38:10,519 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 14:38:15,137 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 14:38:17,071 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 14:38:52,399 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 14:38:52,610 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 14:38:54,946 [INFO] Total coletado: 26
+2026-04-01 14:38:54,947 [INFO] Novos: 0 | Prorrogados: 1 | Atualizados: 12 | Mantidos: 13 | Deduplicados por chave: 11
+2026-04-01 14:38:54,947 [INFO] Repostados/Publicados: 0
+2026-04-01 14:38:54,947 [INFO] Bloqueados para postagem: 1
+2026-04-01 14:38:54,947 [INFO] Expirados: 20
+2026-04-01 14:38:54,947 [INFO] Erros por fonte: 0
+2026-04-01 14:38:54,947 [INFO] Fim da execucao
+2026-04-01 14:55:36,343 [INFO] Inicio da execucao
+2026-04-01 14:55:36,615 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 14:55:37,864 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 14:55:39,291 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 14:55:41,398 [WARNING] Falha ao enriquecer item https://news.confap.org.br/fapesb-lanca-nova-edicao-do-edital-move-para-eventos-científicos-no-exterior/: 404 Client Error: Not Found for url: https://news.confap.org.br/fapesb-lanca-nova-edicao-do-edital-move-para-eventos-cient%C3%ADficos-no-exterior/
+2026-04-01 14:56:21,484 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 14:56:21,736 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 14:56:24,937 [INFO] Total coletado: 26
+2026-04-01 14:56:24,937 [INFO] Novos: 0 | Prorrogados: 6 | Atualizados: 8 | Mantidos: 12 | Deduplicados por chave: 17
+2026-04-01 14:56:24,937 [INFO] Repostados/Publicados: 0
+2026-04-01 14:56:24,937 [INFO] Bloqueados para postagem: 1
+2026-04-01 14:56:24,938 [INFO] Expirados: 20
+2026-04-01 14:56:24,938 [INFO] Erros por fonte: 0
+2026-04-01 14:56:24,938 [INFO] Fim da execucao
+2026-04-01 14:59:16,218 [INFO] Inicio da execucao
+2026-04-01 14:59:16,491 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 14:59:17,680 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 14:59:20,646 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 14:59:26,293 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 14:59:27,254 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 14:59:32,437 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:00:01,157 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:00:01,372 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:00:03,623 [INFO] Total coletado: 26
+2026-04-01 15:00:03,623 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 10 | Mantidos: 13 | Deduplicados por chave: 26
+2026-04-01 15:00:03,623 [INFO] Repostados/Publicados: 0
+2026-04-01 15:00:03,623 [INFO] Bloqueados para postagem: 1
+2026-04-01 15:00:03,623 [INFO] Expirados: 20
+2026-04-01 15:00:03,623 [INFO] Erros por fonte: 0
+2026-04-01 15:00:03,623 [INFO] Fim da execucao
+2026-04-01 15:00:58,568 [INFO] Inicio da execucao
+2026-04-01 15:00:58,881 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:01:00,171 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 15:01:01,696 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:01:08,566 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:01:09,824 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:01:14,618 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:01:43,017 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:01:43,258 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:01:45,591 [INFO] Total coletado: 26
+2026-04-01 15:01:45,592 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 10 | Mantidos: 13 | Deduplicados por chave: 26
+2026-04-01 15:01:45,592 [INFO] Repostados/Publicados: 0
+2026-04-01 15:01:45,592 [INFO] Bloqueados para postagem: 1
+2026-04-01 15:01:45,592 [INFO] Expirados: 20
+2026-04-01 15:01:45,592 [INFO] Erros por fonte: 0
+2026-04-01 15:01:45,592 [INFO] Fim da execucao
+2026-04-01 15:02:25,774 [INFO] Inicio da execucao
+2026-04-01 15:02:26,055 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:02:27,283 [INFO] Fonte CAPES retornou 1 itens
+2026-04-01 15:02:28,530 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:02:35,018 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:02:36,022 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:02:39,765 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:03:10,549 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:03:10,775 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:03:13,073 [INFO] Total coletado: 26
+2026-04-01 15:03:13,073 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 13 | Mantidos: 13 | Deduplicados por chave: 0
+2026-04-01 15:03:13,073 [INFO] Repostados/Publicados: 0
+2026-04-01 15:03:13,073 [INFO] Bloqueados para postagem: 1
+2026-04-01 15:03:13,073 [INFO] Expirados: 19
+2026-04-01 15:03:13,073 [INFO] Erros por fonte: 0
+2026-04-01 15:03:13,073 [INFO] Fim da execucao
+2026-04-01 15:12:48,115 [INFO] Inicio da execucao
+2026-04-01 15:12:48,397 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:12:49,558 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:12:50,662 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:12:56,524 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:12:58,599 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:13:02,474 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:13:31,560 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:13:31,761 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:13:34,448 [INFO] Total coletado: 25
+2026-04-01 15:13:34,448 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 5
+2026-04-01 15:13:34,448 [INFO] Repostados/Publicados: 0
+2026-04-01 15:13:34,448 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:13:34,448 [INFO] Expirados: 19
+2026-04-01 15:13:34,448 [INFO] Erros por fonte: 0
+2026-04-01 15:13:34,448 [INFO] Fim da execucao
+2026-04-01 15:14:08,398 [INFO] Inicio da execucao
+2026-04-01 15:14:08,701 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:14:09,858 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:14:11,241 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:14:16,896 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:14:17,763 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:14:21,326 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:14:47,621 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:15:01,695 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:15:09,416 [INFO] Total coletado: 25
+2026-04-01 15:15:09,417 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-01 15:15:09,417 [INFO] Repostados/Publicados: 0
+2026-04-01 15:15:09,417 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:15:09,417 [INFO] Expirados: 19
+2026-04-01 15:15:09,417 [INFO] Erros por fonte: 0
+2026-04-01 15:15:09,417 [INFO] Fim da execucao
+2026-04-01 15:21:15,362 [INFO] Inicio da execucao
+2026-04-01 15:21:15,645 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:21:18,917 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:21:19,888 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:21:25,455 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:21:26,269 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:21:30,064 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:22:06,317 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:22:06,554 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:22:09,425 [INFO] Total coletado: 25
+2026-04-01 15:22:09,426 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-01 15:22:09,426 [INFO] Repostados/Publicados: 0
+2026-04-01 15:22:09,426 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:22:09,426 [INFO] Expirados: 19
+2026-04-01 15:22:09,426 [INFO] Erros por fonte: 0
+2026-04-01 15:22:09,426 [INFO] Fim da execucao
+2026-04-01 15:26:37,585 [INFO] Inicio da execucao
+2026-04-01 15:26:37,894 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:26:39,096 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:26:40,193 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:26:46,157 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:26:47,479 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:26:53,069 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:27:28,660 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:27:28,946 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:27:31,725 [INFO] Total coletado: 25
+2026-04-01 15:27:31,725 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-01 15:27:31,725 [INFO] Repostados/Publicados: 0
+2026-04-01 15:27:31,725 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:27:31,725 [INFO] Expirados: 19
+2026-04-01 15:27:31,725 [INFO] Erros por fonte: 0
+2026-04-01 15:27:31,725 [INFO] Fim da execucao
+2026-04-01 15:32:46,557 [INFO] Inicio da execucao
+2026-04-01 15:32:46,827 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:32:49,979 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:32:50,961 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:32:56,684 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:32:57,511 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:33:01,425 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:33:32,046 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:33:32,306 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:33:35,166 [INFO] Total coletado: 25
+2026-04-01 15:33:35,167 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-01 15:33:35,167 [INFO] Repostados/Publicados: 0
+2026-04-01 15:33:35,167 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:33:35,167 [INFO] Expirados: 19
+2026-04-01 15:33:35,167 [INFO] Erros por fonte: 0
+2026-04-01 15:33:35,167 [INFO] Fim da execucao
+2026-04-01 15:34:17,034 [INFO] Inicio da execucao
+2026-04-01 15:34:17,328 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:34:18,537 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:34:19,975 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:34:24,110 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:34:24,954 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:34:28,537 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:34:54,536 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:34:54,799 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:34:57,786 [INFO] Total coletado: 25
+2026-04-01 15:34:57,786 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-01 15:34:57,787 [INFO] Repostados/Publicados: 0
+2026-04-01 15:34:57,787 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:34:57,787 [INFO] Expirados: 19
+2026-04-01 15:34:57,787 [INFO] Erros por fonte: 0
+2026-04-01 15:34:57,787 [INFO] Fim da execucao
+2026-04-01 15:40:32,395 [INFO] Inicio da execucao
+2026-04-01 15:40:32,693 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-01 15:40:34,876 [INFO] Fonte CAPES retornou 0 itens
+2026-04-01 15:40:35,777 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-01 15:40:42,388 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-01 15:40:43,883 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-01 15:40:47,362 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-01 15:41:21,974 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-01 15:41:22,231 [INFO] Fonte IPEA retornou 10 itens
+2026-04-01 15:41:25,026 [INFO] Total coletado: 25
+2026-04-01 15:41:25,027 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-01 15:41:25,027 [INFO] Repostados/Publicados: 0
+2026-04-01 15:41:25,027 [INFO] Bloqueados para postagem: 2
+2026-04-01 15:41:25,027 [INFO] Expirados: 19
+2026-04-01 15:41:25,027 [INFO] Erros por fonte: 0
+2026-04-01 15:41:25,027 [INFO] Fim da execucao
