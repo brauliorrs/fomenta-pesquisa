@@ -586,3 +586,19 @@ IndexError: list index out of range
 2026-04-02 16:04:15,508 [INFO] Expirados: 22
 2026-04-02 16:04:15,508 [INFO] Erros por fonte: 0
 2026-04-02 16:04:15,508 [INFO] Fim da execucao
+2026-04-03 05:06:55,125 [INFO] Inicio da execucao
+2026-04-03 05:06:56,465 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-03 05:06:59,907 [INFO] Fonte CAPES retornou 1 itens
+2026-04-03 05:07:04,356 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-03 05:07:12,191 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-03 05:07:15,548 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-03 05:07:18,811 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-03 05:08:09,309 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-03 05:08:10,385 [INFO] Fonte IPEA retornou 10 itens
+2026-04-03 05:08:19,830 [INFO] Total coletado: 26
+2026-04-03 05:08:19,830 [INFO] Novos: 0 | Prorrogados: 5 | Atualizados: 8 | Mantidos: 13 | Deduplicados por chave: 3
+2026-04-03 05:08:19,830 [INFO] Repostados/Publicados: 1
+2026-04-03 05:08:19,831 [INFO] Bloqueados para postagem: 1
+2026-04-03 05:08:19,831 [INFO] Expirados: 23
+2026-04-03 05:08:19,831 [INFO] Erros por fonte: 0
+2026-04-03 05:08:19,831 [INFO] Fim da execucao
