@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-label="CAPES abre chamamento para criação de estatueta institucional">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d3c82"/>
+      <stop offset="58%" stop-color="#2a69b8"/>
+      <stop offset="100%" stop-color="#d6e7ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="84%" cy="14%" r="46%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="accent" cx="22%" cy="18%" r="20%">
+      <stop offset="0%" stop-color="#f5db8d" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f5db8d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" rx="0" fill="url(#bg)"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <rect width="1080" height="1350" fill="url(#accent)"/>
+  <circle cx="968" cy="1210" r="180" fill="rgba(255,255,255,0.12)"/>
+  <text x="84" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="5" fill="rgba(248,244,237,0.86)">EDITAL CAPES</text>
+  <text x="84" y="260" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#f8f4ed">CAPES abre</text>
+  <text x="84" y="348" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#f8f4ed">chamamento para</text>
+  <text x="84" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#f8f4ed">criação</text>
+  <g transform="translate(84 610)">
+    <rect width="320" height="82" rx="22" fill="rgba(255,248,236,0.94)"/>
+    <text x="32" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="1.5" fill="#17312b">PRAZO: 22/04</text>
+  </g>
+  <text x="84" y="760" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="500" fill="rgba(248,244,237,0.96)">As peças artísticas deverão representar a</text>
+  <text x="84" y="808" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="500" fill="rgba(248,244,237,0.96)">história institucional da agência</text>
+  <text x="84" y="1248" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="4" fill="rgba(248,244,237,0.88)">@editais.pesquisa</text>
+</svg>
