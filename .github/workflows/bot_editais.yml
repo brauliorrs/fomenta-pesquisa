@@ -29,21 +29,21 @@ jobs:
 
       - name: Run bot
         env:
-          INSTAGRAM_PUBLISH_MODE: ${{ secrets.INSTAGRAM_PUBLISH_MODE }}
+          INSTAGRAM_PUBLISH_MODE: ${{ vars.INSTAGRAM_PUBLISH_MODE || 'mock' }}
           INSTAGRAM_DEFER_PUBLISH: "true"
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
-          INSTAGRAM_API_HOST: ${{ secrets.INSTAGRAM_API_HOST }}
-          INSTAGRAM_API_VERSION: ${{ secrets.INSTAGRAM_API_VERSION }}
-          PUBLIC_ASSET_BASE_URL: ${{ secrets.PUBLIC_ASSET_BASE_URL }}
-          INSTAGRAM_PUBLISH_TARGET: ${{ secrets.INSTAGRAM_PUBLISH_TARGET }}
-          INSTAGRAM_REPOST_TARGET: ${{ secrets.INSTAGRAM_REPOST_TARGET }}
-          INSTAGRAM_PUBLISH_STORIES: ${{ secrets.INSTAGRAM_PUBLISH_STORIES }}
-          META_APP_ID: ${{ secrets.META_APP_ID }}
+          INSTAGRAM_API_HOST: ${{ vars.INSTAGRAM_API_HOST || 'https://graph.instagram.com' }}
+          INSTAGRAM_API_VERSION: ${{ vars.INSTAGRAM_API_VERSION || 'v24.0' }}
+          PUBLIC_ASSET_BASE_URL: ${{ vars.PUBLIC_ASSET_BASE_URL || '' }}
+          INSTAGRAM_PUBLISH_TARGET: ${{ vars.INSTAGRAM_PUBLISH_TARGET || 'both' }}
+          INSTAGRAM_REPOST_TARGET: ${{ vars.INSTAGRAM_REPOST_TARGET || 'story' }}
+          INSTAGRAM_PUBLISH_STORIES: ${{ vars.INSTAGRAM_PUBLISH_STORIES || 'false' }}
+          META_APP_ID: ${{ vars.META_APP_ID || '' }}
           META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TIMEZONE: America/Sao_Paulo
+          GITHUB_TOKEN: ${{ github.token }}
+          TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
         run: python -m src.main
 
       - name: Commit prepared assets
@@ -63,25 +63,25 @@ jobs:
       - name: Wait for public assets
         if: steps.commit_assets.outputs.assets_changed == 'true'
         env:
-          PUBLIC_ASSET_BASE_URL: ${{ secrets.PUBLIC_ASSET_BASE_URL }}
+          PUBLIC_ASSET_BASE_URL: ${{ vars.PUBLIC_ASSET_BASE_URL || '' }}
         run: python -m src.wait_for_public_assets
 
       - name: Publish ready items
         env:
-          INSTAGRAM_PUBLISH_MODE: ${{ secrets.INSTAGRAM_PUBLISH_MODE }}
+          INSTAGRAM_PUBLISH_MODE: ${{ vars.INSTAGRAM_PUBLISH_MODE || 'mock' }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
-          INSTAGRAM_API_HOST: ${{ secrets.INSTAGRAM_API_HOST }}
-          INSTAGRAM_API_VERSION: ${{ secrets.INSTAGRAM_API_VERSION }}
-          PUBLIC_ASSET_BASE_URL: ${{ secrets.PUBLIC_ASSET_BASE_URL }}
-          INSTAGRAM_PUBLISH_TARGET: ${{ secrets.INSTAGRAM_PUBLISH_TARGET }}
-          INSTAGRAM_REPOST_TARGET: ${{ secrets.INSTAGRAM_REPOST_TARGET }}
-          INSTAGRAM_PUBLISH_STORIES: ${{ secrets.INSTAGRAM_PUBLISH_STORIES }}
-          META_APP_ID: ${{ secrets.META_APP_ID }}
+          INSTAGRAM_API_HOST: ${{ vars.INSTAGRAM_API_HOST || 'https://graph.instagram.com' }}
+          INSTAGRAM_API_VERSION: ${{ vars.INSTAGRAM_API_VERSION || 'v24.0' }}
+          PUBLIC_ASSET_BASE_URL: ${{ vars.PUBLIC_ASSET_BASE_URL || '' }}
+          INSTAGRAM_PUBLISH_TARGET: ${{ vars.INSTAGRAM_PUBLISH_TARGET || 'both' }}
+          INSTAGRAM_REPOST_TARGET: ${{ vars.INSTAGRAM_REPOST_TARGET || 'story' }}
+          INSTAGRAM_PUBLISH_STORIES: ${{ vars.INSTAGRAM_PUBLISH_STORIES || 'false' }}
+          META_APP_ID: ${{ vars.META_APP_ID || '' }}
           META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TIMEZONE: America/Sao_Paulo
+          GITHUB_TOKEN: ${{ github.token }}
+          TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
         run: python -m src.publish_pending
 
       - name: Commit publish results

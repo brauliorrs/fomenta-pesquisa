@@ -78,7 +78,16 @@ O painel permite:
 
 ## Variáveis de ambiente
 
-Crie um arquivo `.env` opcional com:
+O arquivo `.env.example` existe apenas como referência.
+
+Para desenvolvimento local, você pode copiar esse modelo para `.env`.
+
+Para produção no GitHub Actions, o projeto não depende de `.env` local:
+
+- use `Settings > Secrets and variables > Actions > Secrets` para valores sensíveis
+- use `Settings > Secrets and variables > Actions > Variables` para valores públicos ou operacionais
+
+### `.env` opcional para desenvolvimento local
 
 ```env
 INSTAGRAM_ACCESS_TOKEN=
@@ -97,9 +106,33 @@ GITHUB_TOKEN=
 TIMEZONE=America/Sao_Paulo
 ```
 
+### Configuração recomendada no GitHub
+
+Secrets:
+
+- `INSTAGRAM_ACCESS_TOKEN`
+- `INSTAGRAM_BUSINESS_ACCOUNT_ID`
+- `META_APP_SECRET`
+
+Variables:
+
+- `INSTAGRAM_PUBLISH_MODE`
+- `INSTAGRAM_API_HOST`
+- `INSTAGRAM_API_VERSION`
+- `PUBLIC_ASSET_BASE_URL`
+- `INSTAGRAM_PUBLISH_TARGET`
+- `INSTAGRAM_REPOST_TARGET`
+- `INSTAGRAM_PUBLISH_STORIES`
+- `META_APP_ID`
+- `TIMEZONE`
+
+O workflow já usa `github.repository` e `github.token`, então não é necessário manter `GITHUB_REPOSITORY` ou `GITHUB_TOKEN` em secrets para a automação padrão.
+
 ## Observações
 
-- A publicação no Instagram continua em modo mock.
+- O `.env` é opcional e serve só para rodar localmente.
+- No GitHub Actions, o workflow já consegue operar só com `Secrets` e `Variables`.
+- A publicação no Instagram continua em modo mock por padrão.
 - Para ativar publicação real, use `INSTAGRAM_PUBLISH_MODE=real`.
 - O fluxo padrão do projeto agora está alinhado ao `Instagram Login`, usando `https://graph.instagram.com` e token de usuário do Instagram.
 - Em `INSTAGRAM_ACCESS_TOKEN`, use o token gerado para a conta profissional no app da Meta.

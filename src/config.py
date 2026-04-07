@@ -24,23 +24,28 @@ def env_or_default(name: str, default: str = "") -> str:
     return value if value else default
 
 
+def env_flag(name: str, default: bool = False) -> bool:
+    fallback = "true" if default else "false"
+    return env_or_default(name, fallback).lower() == "true"
+
+
 @dataclass(frozen=True)
 class Settings:
-    timezone: str = os.getenv("TIMEZONE", "America/Sao_Paulo")
-    instagram_publish_mode: str = os.getenv("INSTAGRAM_PUBLISH_MODE", "mock")
-    instagram_defer_publish: bool = os.getenv("INSTAGRAM_DEFER_PUBLISH", "false").lower() == "true"
-    instagram_access_token: str = os.getenv("INSTAGRAM_ACCESS_TOKEN", "")
-    instagram_business_account_id: str = os.getenv("INSTAGRAM_BUSINESS_ACCOUNT_ID", "")
-    instagram_api_host: str = os.getenv("INSTAGRAM_API_HOST", "https://graph.instagram.com")
-    instagram_api_version: str = os.getenv("INSTAGRAM_API_VERSION", "v24.0")
-    public_asset_base_url: str = os.getenv("PUBLIC_ASSET_BASE_URL", "")
+    timezone: str = env_or_default("TIMEZONE", "America/Sao_Paulo")
+    instagram_publish_mode: str = env_or_default("INSTAGRAM_PUBLISH_MODE", "mock")
+    instagram_defer_publish: bool = env_flag("INSTAGRAM_DEFER_PUBLISH", default=False)
+    instagram_access_token: str = env_or_default("INSTAGRAM_ACCESS_TOKEN", "")
+    instagram_business_account_id: str = env_or_default("INSTAGRAM_BUSINESS_ACCOUNT_ID", "")
+    instagram_api_host: str = env_or_default("INSTAGRAM_API_HOST", "https://graph.instagram.com")
+    instagram_api_version: str = env_or_default("INSTAGRAM_API_VERSION", "v24.0")
+    public_asset_base_url: str = env_or_default("PUBLIC_ASSET_BASE_URL", "")
     instagram_publish_target: str = env_or_default("INSTAGRAM_PUBLISH_TARGET", "both").lower()
     instagram_repost_target: str = env_or_default("INSTAGRAM_REPOST_TARGET", "story").lower()
-    instagram_publish_stories: bool = os.getenv("INSTAGRAM_PUBLISH_STORIES", "false").lower() == "true"
-    meta_app_id: str = os.getenv("META_APP_ID", "")
-    meta_app_secret: str = os.getenv("META_APP_SECRET", "")
-    github_repository: str = os.getenv("GITHUB_REPOSITORY", "")
-    github_token: str = os.getenv("GITHUB_TOKEN", "")
+    instagram_publish_stories: bool = env_flag("INSTAGRAM_PUBLISH_STORIES", default=False)
+    meta_app_id: str = env_or_default("META_APP_ID", "")
+    meta_app_secret: str = env_or_default("META_APP_SECRET", "")
+    github_repository: str = env_or_default("GITHUB_REPOSITORY", "")
+    github_token: str = env_or_default("GITHUB_TOKEN", "")
     fontes_path: Path = DATA_DIR / "fontes.json"
     editais_path: Path = DATA_DIR / "editais.json"
     historico_postagens_path: Path = DATA_DIR / "historico_postagens.csv"
