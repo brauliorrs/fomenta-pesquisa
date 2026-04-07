@@ -93,7 +93,7 @@ Para produção no GitHub Actions, o projeto não depende de `.env` local:
 INSTAGRAM_ACCESS_TOKEN=
 INSTAGRAM_BUSINESS_ACCOUNT_ID=
 INSTAGRAM_PUBLISH_MODE=mock
-INSTAGRAM_API_HOST=https://graph.instagram.com
+INSTAGRAM_API_HOST=https://graph.facebook.com
 INSTAGRAM_API_VERSION=v24.0
 PUBLIC_ASSET_BASE_URL=
 INSTAGRAM_PUBLISH_TARGET=both
@@ -135,9 +135,9 @@ O workflow já usa `github.repository` e `github.token`, então não é necessá
 - No GitHub Actions, o workflow já consegue operar só com `Secrets` e `Variables`.
 - A publicação no Instagram continua em modo mock por padrão.
 - Para ativar publicação real, use `INSTAGRAM_PUBLISH_MODE=real`.
-- O fluxo padrão do projeto agora está alinhado ao `Instagram Login`, usando `https://graph.instagram.com` e token de usuário do Instagram.
-- Em `INSTAGRAM_ACCESS_TOKEN`, use o token gerado para a conta profissional no app da Meta.
-- Em `INSTAGRAM_BUSINESS_ACCOUNT_ID`, use o `IG User ID` da conta profissional conectada ao app.
+- O fluxo padrão do projeto para publicação real usa a Graph API em `https://graph.facebook.com`.
+- Em `INSTAGRAM_ACCESS_TOKEN`, use o token com acesso à conta profissional conectada à Página.
+- Em `INSTAGRAM_BUSINESS_ACCOUNT_ID`, use o `Instagram Business Account ID` da conta profissional conectada ao app.
 - A mídia precisa estar em uma URL pública no momento da chamada à Meta; por isso o projeto usa `PUBLIC_ASSET_BASE_URL` para montar a URL do card gerado.
 - Em `INSTAGRAM_PUBLISH_TARGET`, use `feed`, `story` ou `both` para a primeira publicação. Para o fluxo editorial atual, o recomendado é `both`, para sair no feed e também no story na primeira ida.
 - Em `INSTAGRAM_REPOST_TARGET`, use `feed`, `story` ou `both` para as republicações automáticas até o edital vencer. Se ficar vazio, o projeto reaproveita o alvo da primeira publicação.
