@@ -3,7 +3,7 @@ id: coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9
 fonte: CAPES
 orgao: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
 prazo: 2026-06-10
-card: draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.svg
+card: draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
 
 Edital no radar: CAPES lança edital em parceria com universidade dos EUA
 

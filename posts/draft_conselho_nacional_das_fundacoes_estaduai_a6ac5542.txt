@@ -3,7 +3,7 @@ id: conselho_nacional_das_fundacoes_estaduai_a6ac5542
 fonte: CONFAP
 orgao: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
 prazo: 2026-05-15
-card: draft_conselho_nacional_das_fundacoes_estaduai_a6ac5542.svg
+card: draft_conselho_nacional_das_fundacoes_estaduai_a6ac5542.jpg
 
 Edital no radar: Governo de Pernambuco lança edital Cátedras Franco-Brasileiras com foco em cooperação científica internacional
 

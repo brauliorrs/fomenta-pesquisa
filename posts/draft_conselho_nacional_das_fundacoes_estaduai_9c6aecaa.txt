@@ -3,7 +3,7 @@ id: conselho_nacional_das_fundacoes_estaduai_9c6aecaa
 fonte: CONFAP
 orgao: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
 prazo: 2026-04-23
-card: draft_conselho_nacional_das_fundacoes_estaduai_9c6aecaa.svg
+card: draft_conselho_nacional_das_fundacoes_estaduai_9c6aecaa.jpg
 
 Edital no radar: Terceira edição do Programa Centelha RO oferecerá recursos financeiros de até R$ 80 mil por projeto contemplado
 

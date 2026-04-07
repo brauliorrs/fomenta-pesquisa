@@ -3,7 +3,7 @@ id: conselho_nacional_das_fundacoes_estaduai_8e601171
 fonte: CONFAP
 orgao: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
 prazo: 2026-04-24
-card: draft_conselho_nacional_das_fundacoes_estaduai_8e601171.svg
+card: draft_conselho_nacional_das_fundacoes_estaduai_8e601171.jpg
 
 Edital no radar: Fapesb lança nova edição do edital MOVE para eventos científicos no exterior
 

@@ -3,7 +3,7 @@ id: conselho_nacional_de_desenvolvimento_cie_78104ac3
 fonte: CNPQ
 orgao: Conselho Nacional de Desenvolvimento Científico e Tecnológico
 prazo: 2026-05-04
-card: draft_conselho_nacional_de_desenvolvimento_cie_78104ac3.svg
+card: draft_conselho_nacional_de_desenvolvimento_cie_78104ac3.jpg
 
 Edital no radar: Chamada Nº 28/2025 - Apoio a Projetos de Cooperação CNPq-TUBITAK
 

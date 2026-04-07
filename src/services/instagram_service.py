@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-import html
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
+from PIL import Image, ImageColor, ImageDraw, ImageFilter, ImageFont
 
 from src.config import Settings
 from src.models import Edital, PublicationResult
@@ -21,6 +21,20 @@ class DraftAssets:
 class InstagramService:
     WIDTH = 1080
     HEIGHT = 1350
+    FONT_CANDIDATES = {
+        'regular': (
+            Path('C:/Windows/Fonts/georgia.ttf'),
+            Path('C:/Windows/Fonts/times.ttf'),
+            Path('/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'),
+            Path('/Library/Fonts/Georgia.ttf'),
+        ),
+        'bold': (
+            Path('C:/Windows/Fonts/georgiab.ttf'),
+            Path('C:/Windows/Fonts/timesbd.ttf'),
+            Path('/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf'),
+            Path('/Library/Fonts/Georgia Bold.ttf'),
+        ),
+    }
 
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
@@ -94,8 +108,9 @@ class InstagramService:
         return asset_path
 
     def _write_card_asset(self, edital: Edital, prefix: str) -> Path:
-        asset_path = self.posts_dir / f'{prefix}_{edital.id}.svg'
-        asset_path.write_text(self._build_card_svg(edital), encoding='utf-8')
+        asset_path = self.posts_dir / f'{prefix}_{edital.id}.jpg'
+        image = self._build_card_image(edital)
+        image.save(asset_path, format='JPEG', quality=92, subsampling=0)
         return asset_path
 
     def _build_mock_asset(self, edital: Edital, prefix: str) -> str:
@@ -105,7 +120,7 @@ class InstagramService:
             f'fonte: {edital.fonte}',
             f'orgao: {edital.orgao}',
             f'prazo: {edital.data_expiracao or "nao informado"}',
-            f'card: {prefix}_{edital.id}.svg',
+            f'card: {prefix}_{edital.id}.jpg',
             '',
             edital.instagram_caption,
         ]
@@ -151,51 +166,144 @@ class InstagramService:
         version = self.settings.instagram_api_version.strip('/')
         ig_user_id = self.settings.instagram_business_account_id
         if not ig_user_id or not self.settings.instagram_access_token:
-            raise ValueError('Credenciais do Instagram nao configuradas para publicacao real.')
+            raise ValueError(self._credentials_hint())
         return f'{host}/{version}/{ig_user_id}/{edge}'
 
-    def _build_card_svg(self, edital: Edital) -> str:
+    def _credentials_hint(self) -> str:
+        host = self.settings.instagram_api_host.lower()
+        if 'graph.instagram.com' in host:
+            return (
+                'Credenciais do Instagram nao configuradas para publicacao real. '
+                'Para Instagram Login, use INSTAGRAM_ACCESS_TOKEN com o token do usuario do Instagram '
+                'e INSTAGRAM_BUSINESS_ACCOUNT_ID com o IG User ID da conta profissional.'
+            )
+        return (
+            'Credenciais do Instagram nao configuradas para publicacao real. '
+            'Para Facebook Login, use INSTAGRAM_ACCESS_TOKEN com o Page Access Token '
+            'e INSTAGRAM_BUSINESS_ACCOUNT_ID com o Instagram Business Account ID.'
+        )
+
+    def _build_card_image(self, edital: Edital) -> Image.Image:
         palette = self._palette(edital)
         title_lines = self._wrap_text(edital.card_title or edital.titulo, 18, 3)
-        summary_lines = self._wrap_text(edital.card_summary or edital.resumo or 'Resumo não informado.', 42, 5)
-        header = html.escape(edital.card_header or f'EDITAL {edital.fonte}')
-        deadline = html.escape(edital.card_deadline or 'PRAZO A DEFINIR')
-        handle = html.escape(edital.card_handle or '@editais.pesquisa')
-        label = html.escape(edital.card_title or edital.titulo)
+        summary_lines = self._wrap_text(edital.card_summary or edital.resumo or 'Resumo nao informado.', 42, 5)
+        header = edital.card_header or f'EDITAL {edital.fonte}'
+        deadline = edital.card_deadline or 'PRAZO A DEFINIR'
+        handle = edital.card_handle or '@editais.pesquisa'
 
-        title_svg = self._render_lines(title_lines, x=84, start_y=260, line_height=88, font_size=74, weight=700)
-        summary_svg = self._render_lines(summary_lines, x=84, start_y=760, line_height=48, font_size=34, weight=500, fill='rgba(248,244,237,0.96)')
+        image = self._build_background(palette)
+        draw = ImageDraw.Draw(image)
 
-        return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{self.WIDTH}" height="{self.HEIGHT}" viewBox="0 0 {self.WIDTH} {self.HEIGHT}" role="img" aria-label="{label}">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="{palette['bg_start']}"/>
-      <stop offset="58%" stop-color="{palette['bg_mid']}"/>
-      <stop offset="100%" stop-color="{palette['bg_end']}"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="84%" cy="14%" r="46%">
-      <stop offset="0%" stop-color="{palette['glow']}" stop-opacity="0.38"/>
-      <stop offset="100%" stop-color="{palette['glow']}" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="accent" cx="22%" cy="18%" r="20%">
-      <stop offset="0%" stop-color="{palette['accent']}" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="{palette['accent']}" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="{self.WIDTH}" height="{self.HEIGHT}" rx="0" fill="url(#bg)"/>
-  <rect width="{self.WIDTH}" height="{self.HEIGHT}" fill="url(#glow)"/>
-  <rect width="{self.WIDTH}" height="{self.HEIGHT}" fill="url(#accent)"/>
-  <circle cx="968" cy="1210" r="180" fill="rgba(255,255,255,0.12)"/>
-  <text x="84" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="5" fill="rgba(248,244,237,0.86)">{header}</text>
-  {title_svg}
-  <g transform="translate(84 610)">
-    <rect width="320" height="82" rx="22" fill="rgba(255,248,236,0.94)"/>
-    <text x="32" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="1.5" fill="{palette['deadline_text']}">{deadline}</text>
-  </g>
-  {summary_svg}
-  <text x="84" y="1248" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="4" fill="rgba(248,244,237,0.88)">{handle}</text>
-</svg>
-"""
+        header_font = self._load_font('regular', 28)
+        title_font = self._load_font('bold', 74)
+        summary_font = self._load_font('regular', 34)
+        deadline_font = self._load_font('bold', 34)
+        handle_font = self._load_font('regular', 28)
+
+        draw.text((84, 120), header, font=header_font, fill=(245, 240, 233))
+
+        y = 260
+        for line in title_lines:
+            draw.text((84, y), line, font=title_font, fill=(248, 244, 237))
+            y += 88
+
+        badge_box = (84, 610, 404, 692)
+        draw.rounded_rectangle(badge_box, radius=22, fill=(255, 248, 236))
+        deadline_bbox = draw.textbbox((0, 0), deadline, font=deadline_font)
+        deadline_y = badge_box[1] + ((badge_box[3] - badge_box[1]) - (deadline_bbox[3] - deadline_bbox[1])) // 2 - 2
+        draw.text((badge_box[0] + 32, deadline_y), deadline, font=deadline_font, fill=self._hex_to_rgb(palette['deadline_text']))
+
+        y = 760
+        for line in summary_lines:
+            draw.text((84, y), line, font=summary_font, fill=(244, 240, 233))
+            y += 48
+
+        draw.text((84, 1248), handle, font=handle_font, fill=(246, 241, 234))
+        return image
+
+    def _build_background(self, palette: dict[str, str]) -> Image.Image:
+        image = Image.new('RGB', (self.WIDTH, self.HEIGHT))
+        draw = ImageDraw.Draw(image)
+        split = int(self.HEIGHT * 0.58)
+        start = self._hex_to_rgb(palette['bg_start'])
+        mid = self._hex_to_rgb(palette['bg_mid'])
+        end = self._hex_to_rgb(palette['bg_end'])
+
+        for y in range(self.HEIGHT):
+            if y <= split:
+                ratio = y / max(split, 1)
+                color = self._blend_color(start, mid, ratio)
+            else:
+                ratio = (y - split) / max(self.HEIGHT - split - 1, 1)
+                color = self._blend_color(mid, end, ratio)
+            draw.line((0, y, self.WIDTH, y), fill=color)
+
+        overlay = Image.new('RGBA', (self.WIDTH, self.HEIGHT), (0, 0, 0, 0))
+        overlay = self._apply_blurred_circle(
+            overlay,
+            color=palette['glow'],
+            bbox=(560, -80, 1250, 610),
+            alpha=96,
+            blur_radius=110,
+        )
+        overlay = self._apply_blurred_circle(
+            overlay,
+            color=palette['accent'],
+            bbox=(40, 0, 420, 380),
+            alpha=78,
+            blur_radius=90,
+        )
+        overlay = self._apply_blurred_circle(
+            overlay,
+            color='#ffffff',
+            bbox=(788, 1030, 1148, 1390),
+            alpha=32,
+            blur_radius=14,
+        )
+
+        return Image.alpha_composite(image.convert('RGBA'), overlay).convert('RGB')
+
+    def _apply_blurred_circle(
+        self,
+        overlay: Image.Image,
+        color: str,
+        bbox: tuple[int, int, int, int],
+        alpha: int,
+        blur_radius: int,
+    ) -> Image.Image:
+        circle = Image.new('RGBA', (self.WIDTH, self.HEIGHT), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(circle)
+        draw.ellipse(bbox, fill=self._hex_to_rgb(color) + (alpha,))
+        if blur_radius > 0:
+            circle = circle.filter(ImageFilter.GaussianBlur(radius=blur_radius))
+        return Image.alpha_composite(overlay, circle)
+
+    def _load_font(self, weight: str, size: int) -> ImageFont.ImageFont | ImageFont.FreeTypeFont:
+        for font_path in self.FONT_CANDIDATES.get(weight, ()):
+            if font_path.exists():
+                try:
+                    return ImageFont.truetype(str(font_path), size=size)
+                except OSError:
+                    continue
+        try:
+            return ImageFont.truetype('DejaVuSerif.ttf', size=size)
+        except OSError:
+            return ImageFont.load_default()
+
+    def _hex_to_rgb(self, value: str) -> tuple[int, int, int]:
+        return ImageColor.getrgb(value)
+
+    def _blend_color(
+        self,
+        start: tuple[int, int, int],
+        end: tuple[int, int, int],
+        ratio: float,
+    ) -> tuple[int, int, int]:
+        bounded_ratio = max(0.0, min(1.0, ratio))
+        return tuple(
+            int(round(start[channel] + (end[channel] - start[channel]) * bounded_ratio))
+            for channel in range(3)
+        )
 
     def _palette(self, edital: Edital) -> dict[str, str]:
         source = (edital.fonte or '').upper()
@@ -254,22 +362,3 @@ class InstagramService:
             lines.append(current)
 
         return lines[:max_lines]
-
-    def _render_lines(
-        self,
-        lines: list[str],
-        x: int,
-        start_y: int,
-        line_height: int,
-        font_size: int,
-        weight: int,
-        fill: str = '#f8f4ed',
-    ) -> str:
-        rendered: list[str] = []
-        y = start_y
-        for line in lines:
-            rendered.append(
-                f'<text x="{x}" y="{y}" font-family="Georgia, \'Times New Roman\', serif" font-size="{font_size}" font-weight="{weight}" fill="{fill}">{html.escape(line)}</text>'
-            )
-            y += line_height
-        return '\n  '.join(rendered)

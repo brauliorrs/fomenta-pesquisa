@@ -1,49 +1,9 @@
 {
-  "generated_at": "2026-04-01T15:40:32.395804-03:00",
-  "total_prontos": 9,
+  "generated_at": "2026-04-06T22:34:49.337312-03:00",
+  "total_prontos": 7,
   "itens": [
     {
       "posicao_fila": 1,
-      "id": "instituto_de_pesquisa_economica_aplicada_2cc47f09",
-      "titulo": "Chamada Pública 12/2026",
-      "fonte": "IPEA",
-      "orgao": "Instituto de Pesquisa Economica Aplicada",
-      "prazo": "2026-04-01",
-      "status": "atualizado",
-      "score_editorial": 90,
-      "ultima_postagem": "2026-04-01T13:43:02.296676-03:00",
-      "quantidade_postagens": 1,
-      "urgencia_dias": 0,
-      "link": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16316-chamada-publica-12-2026",
-      "caption": "Edital no radar: Chamada Pública 12/2026\nÚltimo dia de inscrição.\n\nÓrgão: Instituto de Pesquisa Economica Aplicada\nPúblico: Pesquisadores e bolsistas\nAbertura: 01/04/2026\nPrazo: 01/04/2026\n\nResumo: Ipea - Instituto de Pesquisa Econômica Aplicada\n\nLink oficial: https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16316-chamada-publica-12-2026\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #IPEA #FomentoPesquisa",
-      "card_header": "EDITAL IPEA",
-      "card_title": "Chamada Pública 12/2026",
-      "card_deadline": "ÚLTIMO DIA",
-      "card_summary": "Ipea - Instituto de Pesquisa Econômica Aplicada",
-      "card_handle": "@editais.pesquisa"
-    },
-    {
-      "posicao_fila": 2,
-      "id": "instituto_de_pesquisa_economica_aplicada_9e5674f6",
-      "titulo": "Chamada Pública 13/2026",
-      "fonte": "IPEA",
-      "orgao": "Instituto de Pesquisa Economica Aplicada",
-      "prazo": "2026-04-01",
-      "status": "atualizado",
-      "score_editorial": 90,
-      "ultima_postagem": "2026-04-01T13:43:02.296676-03:00",
-      "quantidade_postagens": 1,
-      "urgencia_dias": 0,
-      "link": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16317-chamada-publica-13-2026",
-      "caption": "Edital no radar: Chamada Pública 13/2026\nÚltimo dia de inscrição.\n\nÓrgão: Instituto de Pesquisa Economica Aplicada\nPúblico: Pesquisadores e bolsistas\nAbertura: 01/04/2026\nPrazo: 01/04/2026\n\nResumo: Ipea - Instituto de Pesquisa Econômica Aplicada\n\nLink oficial: https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16317-chamada-publica-13-2026\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #IPEA #FomentoPesquisa",
-      "card_header": "EDITAL IPEA",
-      "card_title": "Chamada Pública 13/2026",
-      "card_deadline": "ÚLTIMO DIA",
-      "card_summary": "Ipea - Instituto de Pesquisa Econômica Aplicada",
-      "card_handle": "@editais.pesquisa"
-    },
-    {
-      "posicao_fila": 3,
       "id": "conselho_nacional_das_fundacoes_estaduai_d6513b70",
       "titulo": "FAPERJ lança edital para jovens cientistas mulheres e homenageia a pesquisadora Tatiana Sampaio",
       "fonte": "CONFAP",
@@ -53,7 +13,7 @@
       "score_editorial": 100,
       "ultima_postagem": "2026-03-30T14:07:46.373629-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 16,
+      "urgencia_dias": 11,
       "link": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_08_2026_%E2%80%93_Programa_de_Apoio_%C3%A0_Jovem_Cientista_Mulher_Dra_Tatiana_Sampaio.pdf",
       "caption": "Edital no radar: FAPERJ lança edital para jovens cientistas mulheres e homenageia a pesquisadora Tatiana Sampaio\n\nÓrgão: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa\nPúblico: Pesquisadores e instituicoes de pesquisa\nAbertura: 12/03/2026\nPrazo: 17/04/2026\n\nResumo: Em comemoração ao Dia Internacional das Mulheres, celebrado em 8 de março, a Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ) lançou o Programa de Apoio à Jovem Cientista Mulher D...\n\nLink oficial: https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_08_2026_%E2%80%93_Programa_de_Apoio_%C3%A0_Jovem_Cientista_Mulher_Dra_Tatiana_Sampaio.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CONFAP #FomentoPesquisa",
       "card_header": "EDITAL CONFAP",
@@ -63,7 +23,7 @@
       "card_handle": "@editais.pesquisa"
     },
     {
-      "posicao_fila": 4,
+      "posicao_fila": 2,
       "id": "coordenacao_de_aperfeicoamento_de_pessoa_398ddf61",
       "titulo": "CAPES abre chamamento para criação de estatueta institucional",
       "fonte": "CAPES",
@@ -73,7 +33,7 @@
       "score_editorial": 90,
       "ultima_postagem": "2026-03-30T14:07:46.373629-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 21,
+      "urgencia_dias": 16,
       "link": "https://www.gov.br/capes/pt-br/assuntos/noticias/capes-abre-chamamento-para-criacao-de-estatueta-institucional",
       "caption": "Edital no radar: CAPES abre chamamento para criação de estatueta institucional\n\nÓrgão: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior\nPúblico: Comunidade acadêmica\nAbertura: 13/03/2026\nPrazo: 22/04/2026\n\nResumo: As peças artísticas deverão representar a história institucional da agência\n\nLink oficial: https://www.gov.br/capes/pt-br/assuntos/noticias/capes-abre-chamamento-para-criacao-de-estatueta-institucional\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CAPES",
       "card_header": "EDITAL CAPES",
@@ -83,7 +43,7 @@
       "card_handle": "@editais.pesquisa"
     },
     {
-      "posicao_fila": 5,
+      "posicao_fila": 3,
       "id": "conselho_nacional_das_fundacoes_estaduai_9c6aecaa",
       "titulo": "Terceira edição do Programa Centelha RO oferecerá recursos financeiros de até R$ 80 mil por projeto contemplado",
       "fonte": "CONFAP",
@@ -93,7 +53,7 @@
       "score_editorial": 100,
       "ultima_postagem": "2026-03-30T14:07:46.373629-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 22,
+      "urgencia_dias": 17,
       "link": "https://ro.programacentelha.com.br/",
       "caption": "Edital no radar: Terceira edição do Programa Centelha RO oferecerá recursos financeiros de até R$ 80 mil por projeto contemplado\n\nÓrgão: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa\nPúblico: Pesquisadores e instituicoes de pesquisa\nAbertura: Não informado\nPrazo: 23/04/2026\n\nResumo: Com o objetivo de estimular a criação de empreendimentos inovadores e disseminar a cultura empreendedora, o governo de Rondônia lançou no dia 11 de março o Programa Centelha 3/RO. O programa oferece capacitações, recu...\n\nLink oficial: https://ro.programacentelha.com.br/\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CONFAP #FomentoPesquisa",
       "card_header": "EDITAL CONFAP",
@@ -103,7 +63,7 @@
       "card_handle": "@editais.pesquisa"
     },
     {
-      "posicao_fila": 6,
+      "posicao_fila": 4,
       "id": "conselho_nacional_das_fundacoes_estaduai_8e601171",
       "titulo": "Fapesb lança nova edição do edital MOVE para eventos científicos no exterior",
       "fonte": "CONFAP",
@@ -113,7 +73,7 @@
       "score_editorial": 100,
       "ultima_postagem": "2026-03-30T14:07:46.373629-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 23,
+      "urgencia_dias": 18,
       "link": "https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf",
       "caption": "Edital no radar: Fapesb lança nova edição do edital MOVE para eventos científicos no exterior\n\nÓrgão: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa\nPúblico: Pesquisadores e instituicoes de pesquisa\nAbertura: Não informado\nPrazo: 24/04/2026\n\nResumo: Após o sucesso da primeira edição, a Fundação de Amparo à Pesquisa do Estado da Bahia (Fapesb), órgão vinculado à Secretaria de Ciência, Tecnologia e Inovação (Secti), lançou, na terça-feira (10), uma nova edição do E...\n\nLink oficial: https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CONFAP #FomentoPesquisa",
       "card_header": "EDITAL CONFAP",
@@ -123,7 +83,7 @@
       "card_handle": "@editais.pesquisa"
     },
     {
-      "posicao_fila": 7,
+      "posicao_fila": 5,
       "id": "conselho_nacional_de_desenvolvimento_cie_78104ac3",
       "titulo": "Chamada Nº 28/2025 - Apoio a Projetos de Cooperação CNPq-TUBITAK",
       "fonte": "CNPQ",
@@ -133,7 +93,7 @@
       "score_editorial": 90,
       "ultima_postagem": "2026-03-30T14:07:46.373629-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 33,
+      "urgencia_dias": 28,
       "link": "http://memoria2.cnpq.br/web/guest/chamadas-publicas?p_p_id=resultadosportlet_WAR_resultadoscnpqportlet_INSTANCE_0ZaM&filtro=abertas&detalha=chamadaDivulgada&idDivulgacao=13287",
       "caption": "Edital no radar: Chamada Nº 28/2025 - Apoio a Projetos de Cooperação CNPq-TUBITAK\n\nÓrgão: Conselho Nacional de Desenvolvimento Científico e Tecnológico\nPúblico: Pesquisadores\nAbertura: 30/12/2025\nPrazo: 04/05/2026\n\nLink oficial: http://memoria2.cnpq.br/web/guest/chamadas-publicas?p_p_id=resultadosportlet_WAR_resultadoscnpqportlet_INSTANCE_0ZaM&filtro=abertas&detalha=chamadaDivulgada&idDivulgacao=13287\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CNPq #FomentoPesquisa",
       "card_header": "EDITAL CNPq",
@@ -143,7 +103,7 @@
       "card_handle": "@editais.pesquisa"
     },
     {
-      "posicao_fila": 8,
+      "posicao_fila": 6,
       "id": "conselho_nacional_das_fundacoes_estaduai_a6ac5542",
       "titulo": "Governo de Pernambuco lança edital Cátedras Franco-Brasileiras com foco em cooperação científica internacional",
       "fonte": "CONFAP",
@@ -153,7 +113,7 @@
       "score_editorial": 100,
       "ultima_postagem": "2026-04-01T13:43:02.296676-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 44,
+      "urgencia_dias": 39,
       "link": "https://news.confap.org.br/governo-de-pernambuco-lanca-edital-catedras-franco-brasileiras-com-foco-em-cooperacao-cientifica-internacional/",
       "caption": "Edital no radar: Governo de Pernambuco lança edital Cátedras Franco-Brasileiras com foco em cooperação científica internacional\n\nÓrgão: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa\nPúblico: Pesquisadores e instituicoes de pesquisa\nAbertura: Não informado\nPrazo: 15/05/2026\n\nResumo: O Governo de Pernambuco, por meio da Secretaria de Ciência, Tecnologia e Inovação (Secti) e da Fundação de Amparo à Ciência e Tecnologia de Pernambuco (Facepe), em parceria com a Embaixada da França no Brasil, lançou,...\n\nLink oficial: https://news.confap.org.br/governo-de-pernambuco-lanca-edital-catedras-franco-brasileiras-com-foco-em-cooperacao-cientifica-internacional/\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CONFAP #FomentoPesquisa",
       "card_header": "EDITAL CONFAP",
@@ -163,7 +123,7 @@
       "card_handle": "@editais.pesquisa"
     },
     {
-      "posicao_fila": 9,
+      "posicao_fila": 7,
       "id": "coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9",
       "titulo": "CAPES lança edital em parceria com universidade dos EUA",
       "fonte": "CAPES",
@@ -173,7 +133,7 @@
       "score_editorial": 100,
       "ultima_postagem": "2026-03-30T14:07:46.373629-03:00",
       "quantidade_postagens": 1,
-      "urgencia_dias": 70,
+      "urgencia_dias": 65,
       "link": "https://www.gov.br/capes/pt-br/assuntos/noticias/capes-lanca-edital-em-parceria-com-universidade-dos-eua",
       "caption": "Edital no radar: CAPES lança edital em parceria com universidade dos EUA\n\nÓrgão: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior\nPúblico: Comunidade acadêmica\nAbertura: 13/03/2026\nPrazo: 10/06/2026\n\nResumo: Serão financiados até cinco projetos de pesquisa conjuntos com a Universidade de Purdue; inscrições devem ser feitas até 10 de junho\n\nLink oficial: https://www.gov.br/capes/pt-br/assuntos/noticias/capes-lanca-edital-em-parceria-com-universidade-dos-eua\n\nSalve este post para consultar depois e compartilhe com quem pode se interessar.\n\n#Edital #Pesquisa #OportunidadeAcademica #CAPES",
       "card_header": "EDITAL CAPES",

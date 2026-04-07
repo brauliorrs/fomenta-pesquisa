@@ -3,7 +3,7 @@ id: coordenacao_de_aperfeicoamento_de_pessoa_398ddf61
 fonte: CAPES
 orgao: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
 prazo: 2026-04-22
-card: draft_coordenacao_de_aperfeicoamento_de_pessoa_398ddf61.svg
+card: draft_coordenacao_de_aperfeicoamento_de_pessoa_398ddf61.jpg
 
 Edital no radar: CAPES abre chamamento para criação de estatueta institucional
 

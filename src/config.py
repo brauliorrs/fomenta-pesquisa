@@ -22,8 +22,8 @@ class Settings:
     instagram_publish_mode: str = os.getenv("INSTAGRAM_PUBLISH_MODE", "mock")
     instagram_access_token: str = os.getenv("INSTAGRAM_ACCESS_TOKEN", "")
     instagram_business_account_id: str = os.getenv("INSTAGRAM_BUSINESS_ACCOUNT_ID", "")
-    instagram_api_host: str = os.getenv("INSTAGRAM_API_HOST", "https://graph.facebook.com")
-    instagram_api_version: str = os.getenv("INSTAGRAM_API_VERSION", "v22.0")
+    instagram_api_host: str = os.getenv("INSTAGRAM_API_HOST", "https://graph.instagram.com")
+    instagram_api_version: str = os.getenv("INSTAGRAM_API_VERSION", "v24.0")
     public_asset_base_url: str = os.getenv("PUBLIC_ASSET_BASE_URL", "")
     instagram_publish_stories: bool = os.getenv("INSTAGRAM_PUBLISH_STORIES", "false").lower() == "true"
     meta_app_id: str = os.getenv("META_APP_ID", "")

@@ -3,7 +3,7 @@ id: conselho_nacional_das_fundacoes_estaduai_d6513b70
 fonte: CONFAP
 orgao: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
 prazo: 2026-04-17
-card: draft_conselho_nacional_das_fundacoes_estaduai_d6513b70.svg
+card: draft_conselho_nacional_das_fundacoes_estaduai_d6513b70.jpg
 
 Edital no radar: FAPERJ lança edital para jovens cientistas mulheres e homenageia a pesquisadora Tatiana Sampaio
 
