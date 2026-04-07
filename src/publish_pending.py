@@ -76,8 +76,12 @@ def ready_editais(editais: list[dict[str, Any]]) -> list[dict[str, Any]]:
     ]
 
 
+def has_real_feed_publication(edital: dict[str, Any]) -> bool:
+    return bool(str(edital.get('instagram_feed_media_id', '') or '').strip())
+
+
 def candidate_priority(edital: dict[str, Any], story_enabled: bool) -> int:
-    if not edital.get('instagram_feed_publicado'):
+    if not has_real_feed_publication(edital):
         return 0
     if story_enabled and not edital.get('instagram_story_media_id'):
         return 1
@@ -141,7 +145,7 @@ def select_story_repost_candidates(
     return [
         edital
         for edital in ordered_candidates
-        if edital.get('instagram_feed_publicado')
+        if has_real_feed_publication(edital)
         and edital.get('id') not in posted_story_today_ids
         and edital.get('id') not in attempted_ids
     ]

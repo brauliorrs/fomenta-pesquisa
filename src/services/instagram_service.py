@@ -152,11 +152,15 @@ class InstagramService:
             mock_path=str(mock_path),
         )
 
+    def _has_real_feed_publication(self, edital: Edital) -> bool:
+        return bool((edital.instagram_feed_media_id or "").strip())
+
     def _configured_targets(self, edital: Edital) -> tuple[str, ...]:
         publish_targets = self._normalize_targets(self.settings.instagram_publish_target)
         repost_targets = self._normalize_targets(self.settings.instagram_repost_target)
+        has_feed_publication = self._has_real_feed_publication(edital)
 
-        if edital.instagram_feed_publicado:
+        if has_feed_publication:
             return repost_targets
 
         # Story nunca deve sair sozinho antes de existir um post no feed.
@@ -165,7 +169,7 @@ class InstagramService:
                 return ("feed", "story")
             return ("feed",)
 
-        if "feed" in publish_targets and "story" in publish_targets and edital.instagram_story_media_id:
+        if edital.instagram_story_media_id:
             return ("feed",)
 
         return publish_targets
