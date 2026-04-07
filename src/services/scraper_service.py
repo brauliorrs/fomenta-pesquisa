@@ -19,8 +19,12 @@ from src.services.render_service import RenderService
 from src.sources.capes import CAPESSource
 from src.sources.cnpq import CNPQSource
 from src.sources.confap import CONFAPSource
+from src.sources.embrapa import EMBRAPASource
+from src.sources.finep import FINEPSource
+from src.sources.fiocruz import FIOCRUZSource
 from src.sources.faps import FAPSource
 from src.sources.ipea import IPEASource
+from src.sources.serrapilheira import SERRAPILHEIRASource
 
 try:
     from pypdf import PdfReader
@@ -66,8 +70,12 @@ class ScraperService:
             'CNPQ': CNPQSource,
             'CAPES': CAPESSource,
             'CONFAP': CONFAPSource,
+            'EMBRAPA': EMBRAPASource,
+            'FINEP': FINEPSource,
+            'FIOCRUZ': FIOCRUZSource,
             'FAP': FAPSource,
             'IPEA': IPEASource,
+            'SERRAPILHEIRA': SERRAPILHEIRASource,
         }
         source_class = mapping.get(config.sigla.upper())
         if source_class is None:
@@ -384,6 +392,23 @@ class ScraperService:
             start_dt = self.normalize_service.normalize_date(start_value)
             end_dt = self.normalize_service.normalize_date(end_value)
             return start_dt, end_dt
+
+        extenso_match = re.search(
+            r'Inscri(?:ç|c)(?:ões|oes)\s+de\s+(\d{1,2})\s+de\s+([A-Za-zçãéíóúâêôà]+)\s+a\s+(\d{1,2})\s+de\s+([A-Za-zçãéíóúâêôà]+)\s+de\s+(\d{4})',
+            text,
+            flags=re.I,
+        )
+        if extenso_match:
+            start_day, start_month_name, end_day, end_month_name, year = extenso_match.groups()
+            start_month = self.PT_MONTHS.get(start_month_name.lower())
+            end_month = self.PT_MONTHS.get(end_month_name.lower())
+            if start_month and end_month:
+                try:
+                    start_dt = datetime(int(year), start_month, int(start_day)).date().isoformat()
+                    end_dt = datetime(int(year), end_month, int(end_day)).date().isoformat()
+                    return start_dt, end_dt
+                except ValueError:
+                    return None, None
         return None, None
 
     def _extract_contextual_dates(self, line_text: str, collected_at: str, description: str | None) -> tuple[str | None, str | None]:
@@ -431,9 +456,9 @@ class ScraperService:
 
         text = re.sub(r'mar\?o', 'marco', text, flags=re.I)
         lower = text.lower()
-        if 'amanhã' in lower or 'amanha' in lower:
+        if re.search(r'(até|ate|prazo|encerr|inscri|submiss|envio|termina)[^.\n]{0,40}\bamanh[ãa]\b', lower):
             return (base_dt.date() + timedelta(days=1)).isoformat()
-        if 'ontem' in lower:
+        if re.search(r'(publicad|divulgad|abertur|ontem)[^.\n]{0,40}\bontem\b', lower):
             return (base_dt.date() - timedelta(days=1)).isoformat()
 
         range_match = re.search(r'de\s+(\d{1,2})\s+de\s+([A-Za-zçãéíóúâêôà]+)\s+até\s+(?:as\s+\d{1,2}h\s+de\s+)?(\d{1,2})\s+de\s+([A-Za-zçãéíóúâêôà]+)', text, flags=re.I)

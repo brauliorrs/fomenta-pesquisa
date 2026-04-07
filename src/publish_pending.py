@@ -5,6 +5,7 @@ from typing import Any
 
 from src.config import settings
 from src.models import Edital
+from src.services.history_service import prune_history_rows
 from src.services.instagram_service import InstagramService
 from src.services.publication_queue_service import PublicationQueueService
 from src.services.storage_service import StorageService
@@ -187,7 +188,6 @@ def attempt_publication(
 
     if result.success:
         apply_publication_result(edital, result, now_iso)
-
     history_rows.append(
         {
             'edital_id': edital['id'],
@@ -210,7 +210,10 @@ def main() -> None:
     now_iso = now.isoformat()
 
     editais = storage.read_json(settings.editais_path, default=[])
-    history_rows = storage.read_csv(settings.historico_postagens_path)
+    history_rows = prune_history_rows(
+        storage.read_csv(settings.historico_postagens_path),
+        editais,
+    )
     positions = queue_positions(storage)
     publish_targets = normalized_targets(settings.instagram_publish_target, settings.instagram_publish_stories)
     repost_targets = normalized_targets(settings.instagram_repost_target, settings.instagram_publish_stories)

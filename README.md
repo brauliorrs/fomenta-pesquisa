@@ -5,13 +5,14 @@ Bot em Python para monitorar editais de pesquisa, manter memória em arquivos ve
 ## O que esta versão entrega
 
 - Estrutura modular para evolução do projeto
-- Coleta ativa de CNPq, CAPES, CONFAP e IPEA
+- Coleta ativa de CNPq, CAPES, CONFAP, IPEA, Fiocruz, Embrapa, Finep e Serrapilheira
 - Enriquecimento com resumo, links oficiais e extração de datas em HTML, PDF e endpoints JSON
 - Memória persistida em `data/editais.json` e `data/historico_postagens.csv`
 - Fila editorial pronta em `data/fila_publicacao.json`
 - Geração de card visual (`.jpg`) e mock textual (`.txt`) em `posts/`
 - Painel local para visualizar editais em `dashboard/`
 - Workflow do GitHub Actions para execução agendada e manual
+- Catálogo de expansão de fontes em `data/fontes_planejadas.json`
 
 ## Estrutura
 
@@ -50,8 +51,8 @@ Depois de rodar a coleta, você passa a ter:
 - `data/editais.json`: base consolidada dos editais
 - `data/fila_publicacao.json`: fila dos itens prontos para postagem, ordenada por urgência
 - `data/historico_postagens.csv`: histórico do mock de publicação
-- `posts/*.jpg`: card visual automático pronto para revisão
-- `posts/*.txt`: mock textual com legenda pronta para revisão
+- `posts/*.jpg`: card visual automático temporário para revisão e publicação
+- `posts/*.txt`: mock textual temporário com legenda pronta para revisão
 
 ## Painel local de editais
 
@@ -93,7 +94,7 @@ Para produção no GitHub Actions, o projeto não depende de `.env` local:
 INSTAGRAM_ACCESS_TOKEN=
 INSTAGRAM_BUSINESS_ACCOUNT_ID=
 INSTAGRAM_PUBLISH_MODE=mock
-INSTAGRAM_API_HOST=https://graph.facebook.com
+INSTAGRAM_API_HOST=https://graph.instagram.com
 INSTAGRAM_API_VERSION=v24.0
 PUBLIC_ASSET_BASE_URL=
 INSTAGRAM_PUBLISH_TARGET=both
@@ -135,9 +136,9 @@ O workflow já usa `github.repository` e `github.token`, então não é necessá
 - No GitHub Actions, o workflow já consegue operar só com `Secrets` e `Variables`.
 - A publicação no Instagram continua em modo mock por padrão.
 - Para ativar publicação real, use `INSTAGRAM_PUBLISH_MODE=real`.
-- O fluxo padrão do projeto para publicação real usa a Graph API em `https://graph.facebook.com`.
-- Em `INSTAGRAM_ACCESS_TOKEN`, use o token com acesso à conta profissional conectada à Página.
-- Em `INSTAGRAM_BUSINESS_ACCOUNT_ID`, use o `Instagram Business Account ID` da conta profissional conectada ao app.
+- O fluxo padrão do projeto para publicação real usa a Graph API em `https://graph.instagram.com`.
+- Em `INSTAGRAM_ACCESS_TOKEN`, use o token do stack que já foi validado na sua conta profissional.
+- Em `INSTAGRAM_BUSINESS_ACCOUNT_ID`, use o identificador da conta profissional compatível com esse mesmo stack de autenticação.
 - A mídia precisa estar em uma URL pública no momento da chamada à Meta; por isso o projeto usa `PUBLIC_ASSET_BASE_URL` para montar a URL do card gerado.
 - Em `INSTAGRAM_PUBLISH_TARGET`, use `feed`, `story` ou `both` para a primeira publicação. Para o fluxo editorial atual, o recomendado é `both`, para sair no feed e também no story na primeira ida.
 - Em `INSTAGRAM_REPOST_TARGET`, use `feed`, `story` ou `both` para as republicações automáticas até o edital vencer. Se ficar vazio, o projeto reaproveita o alvo da primeira publicação.

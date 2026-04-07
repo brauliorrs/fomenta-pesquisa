@@ -1,8 +1,11 @@
 ﻿from __future__ import annotations
 
+from pathlib import Path
+
 from src.config import settings
 from src.models import Edital, SourceConfig
 from src.services.dedup_service import DedupService
+from src.services.history_service import prune_history_rows
 from src.services.instagram_service import InstagramService
 from src.services.normalize_service import NormalizeService
 from src.services.publication_queue_service import PublicationQueueService
@@ -205,6 +208,51 @@ def sync_draft_assets(editais: list[dict], instagram_service: InstagramService) 
         edital['instagram_mock_asset'] = assets.mock_path
 
 
+def prune_expired_editais(editais: list[dict], current_date: str) -> tuple[list[dict], list[dict]]:
+    ativos: list[dict] = []
+    expirados: list[dict] = []
+    for edital in editais:
+        expiration = edital.get('data_expiracao')
+        if expiration and expiration < current_date:
+            expirados.append(edital)
+            continue
+        ativos.append(edital)
+    return ativos, expirados
+
+
+def cleanup_expired_assets(expired_editais: list[dict], active_editais: list[dict]) -> None:
+    posts_dir = settings.posts_dir.resolve()
+    protected_paths: set[Path] = set()
+
+    for edital in active_editais:
+        for field_name in ('instagram_asset', 'instagram_story_asset', 'instagram_mock_asset'):
+            raw_path = str(edital.get(field_name) or '').strip()
+            if not raw_path:
+                continue
+            path = Path(raw_path)
+            try:
+                protected_paths.add(path.resolve())
+            except OSError:
+                continue
+
+    for edital in expired_editais:
+        for field_name in ('instagram_asset', 'instagram_story_asset', 'instagram_mock_asset'):
+            raw_path = str(edital.get(field_name) or '').strip()
+            if not raw_path:
+                continue
+            path = Path(raw_path)
+            try:
+                resolved = path.resolve()
+            except OSError:
+                continue
+            if resolved in protected_paths:
+                continue
+            if posts_dir not in resolved.parents:
+                continue
+            if resolved.exists():
+                resolved.unlink()
+
+
 def main() -> None:
     logger = configure_logger(settings.log_file_path)
     storage = StorageService()
@@ -235,16 +283,21 @@ def main() -> None:
     normalize_publication_state(merged_payload)
     rebuild_captions(merged_payload, render_service)
     expired_count = mark_expired(merged_payload, today)
-    sync_draft_assets(merged_payload, instagram_service)
-    publication_queue_service.export(merged_payload, now_iso)
+    active_payload, expired_payload = prune_expired_editais(merged_payload, today)
+    cleanup_expired_assets(expired_payload, active_payload)
+    sync_draft_assets(active_payload, instagram_service)
+    publication_queue_service.export(active_payload, now_iso)
 
-    history_rows = storage.read_csv(settings.historico_postagens_path)
+    history_rows = prune_history_rows(
+        storage.read_csv(settings.historico_postagens_path),
+        active_payload,
+    )
     reposted = 0
     blocked = 0
     if settings.instagram_defer_publish:
         logger.info('Publicacao adiada para etapa posterior ao sync dos assets publicos.')
     else:
-        for edital in merged_payload:
+        for edital in active_payload:
             if edital.get('status') == 'encerrado':
                 continue
             if not edital.get('pronto_para_postagem'):
@@ -265,7 +318,7 @@ def main() -> None:
                     }
                 )
 
-    storage.write_json(settings.editais_path, merged_payload)
+    storage.write_json(settings.editais_path, active_payload)
     storage.write_csv(
         settings.historico_postagens_path,
         history_rows,
@@ -279,7 +332,7 @@ def main() -> None:
     )
     logger.info('Repostados/Publicados: %s', reposted)
     logger.info('Bloqueados para postagem: %s', blocked)
-    logger.info('Expirados: %s', expired_count)
+    logger.info('Expirados removidos da base: %s', expired_count)
     logger.info('Erros por fonte: %s', len(errors))
     logger.info('Fim da execucao')
 

@@ -1,0 +1,246 @@
+{
+  "federais": [
+    {
+      "sigla": "ANP",
+      "nome": "Agencia Nacional do Petroleo, Gas Natural e Biocombustiveis",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "CAPES",
+      "nome": "Coordenacao de Aperfeicoamento de Pessoal de Nivel Superior",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "CNPQ",
+      "nome": "Conselho Nacional de Desenvolvimento Cientifico e Tecnologico",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "FINEP",
+      "nome": "Financiadora de Estudos e Projetos",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "EMBRAPII",
+      "nome": "Empresa Brasileira de Pesquisa e Inovacao Industrial",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "parser_dedicado"
+    }
+  ],
+  "estaduais": [
+    {
+      "sigla": "FAPAC",
+      "nome": "Fundacao de Amparo a Pesquisa do Acre",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEAL",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado de Alagoas",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEAP",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado do Amapa",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEAM",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado do Amazonas",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPESB",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado da Bahia",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FUNCAP",
+      "nome": "Fundacao Cearense de Apoio ao Desenvolvimento Cientifico e Tecnologico",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPDF",
+      "nome": "Fundacao de Apoio a Pesquisa do Distrito Federal",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPES",
+      "nome": "Fundacao de Amparo a Pesquisa e Inovacao do Espirito Santo",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEG",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado de Goias",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEMA",
+      "nome": "Fundacao de Amparo a Pesquisa e ao Desenvolvimento Cientifico e Tecnologico do Maranhao",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEMAT",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado de Mato Grosso",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FUNDECT",
+      "nome": "Fundacao de Apoio ao Desenvolvimento do Ensino, Ciencia e Tecnologia do Estado de Mato Grosso do Sul",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEMIG",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado de Minas Gerais",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPESPA",
+      "nome": "Fundacao Amazonia de Amparo a Estudos e Pesquisas do Para",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPESQ",
+      "nome": "Fundacao de Apoio a Pesquisa do Estado da Paraiba",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPPR",
+      "nome": "Fundacao Araucaria de Apoio ao Desenvolvimento Cientifico e Tecnologico do Estado do Parana",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FACEPE",
+      "nome": "Fundacao de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPEPI",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado do Piaui",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPERJ",
+      "nome": "Fundacao Carlos Chagas Filho de Amparo a Pesquisa do Estado do Rio de Janeiro",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPERN",
+      "nome": "Fundacao de Apoio a Pesquisa do Estado do Rio Grande do Norte",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPERGS",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado do Rio Grande do Sul",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPERO",
+      "nome": "Fundacao de Amparo ao Desenvolvimento das Acoes Cientificas e Tecnologicas e a Pesquisa do Estado de Rondonia",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPESC",
+      "nome": "Fundacao de Amparo a Pesquisa e Inovacao do Estado de Santa Catarina",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPESP",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado de Sao Paulo",
+      "status_integracao": "planejada",
+      "prioridade": "alta",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPITEC",
+      "nome": "Fundacao de Apoio a Pesquisa e a Inovacao Tecnologica do Estado de Sergipe",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    },
+    {
+      "sigla": "FAPT",
+      "nome": "Fundacao de Amparo a Pesquisa do Estado do Tocantins",
+      "status_integracao": "planejada",
+      "prioridade": "media",
+      "estrategia": "direta_ou_confap"
+    }
+  ],
+  "privados": [
+    {
+      "sigla": "SERRAPILHEIRA",
+      "nome": "Instituto Serrapilheira",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    }
+  ],
+  "observacoes": {
+    "integradas_runtime": [
+      "CAPES",
+      "CNPQ",
+      "CONFAP",
+      "IPEA",
+      "FIOCRUZ",
+      "EMBRAPA",
+      "FINEP",
+      "SERRAPILHEIRA"
+    ],
+    "fontes_estaduais": "As FAPs podem entrar gradualmente por parser proprio ou complementar a cobertura ja obtida via CONFAP.",
+    "criterio_editorial": "So entram na fila automatica itens com prazo valido e inscricoes abertas."
+  }
+}

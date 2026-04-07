@@ -36,7 +36,7 @@ class Settings:
     instagram_defer_publish: bool = env_flag("INSTAGRAM_DEFER_PUBLISH", default=False)
     instagram_access_token: str = env_or_default("INSTAGRAM_ACCESS_TOKEN", "")
     instagram_business_account_id: str = env_or_default("INSTAGRAM_BUSINESS_ACCOUNT_ID", "")
-    instagram_api_host: str = env_or_default("INSTAGRAM_API_HOST", "https://graph.facebook.com")
+    instagram_api_host: str = env_or_default("INSTAGRAM_API_HOST", "https://graph.instagram.com")
     instagram_api_version: str = env_or_default("INSTAGRAM_API_VERSION", "v24.0")
     public_asset_base_url: str = env_or_default("PUBLIC_ASSET_BASE_URL", "")
     instagram_publish_target: str = env_or_default("INSTAGRAM_PUBLISH_TARGET", "both").lower()

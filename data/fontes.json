@@ -50,5 +50,57 @@
     "selectors": {
       "item": "a"
     }
+  },
+  {
+    "nome": "Fundacao Oswaldo Cruz",
+    "sigla": "FIOCRUZ",
+    "uf": "BR",
+    "site_oficial": "https://fomentoapesquisa.fiocruz.br",
+    "pagina_editais": "https://fomentoapesquisa.fiocruz.br/editais",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": ".editalItem"
+    }
+  },
+  {
+    "nome": "Empresa Brasileira de Pesquisa Agropecuaria",
+    "sigla": "EMBRAPA",
+    "uf": "BR",
+    "site_oficial": "https://www.embrapa.br",
+    "pagina_editais": "https://www.embrapa.br/chamadas-de-projetos",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": ".card-frame"
+    }
+  },
+  {
+    "nome": "Financiadora de Estudos e Projetos",
+    "sigla": "FINEP",
+    "uf": "BR",
+    "site_oficial": "https://www.finep.gov.br",
+    "pagina_editais": "https://www.finep.gov.br/chamadas-publicas/chamadaspublicas?situacao=aberta",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": ".item"
+    }
+  },
+  {
+    "nome": "Instituto Serrapilheira",
+    "sigla": "SERRAPILHEIRA",
+    "uf": "BR",
+    "site_oficial": "https://serrapilheira.org",
+    "pagina_editais": "https://serrapilheira.org/todas-as-chamadas/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
   }
 ]
