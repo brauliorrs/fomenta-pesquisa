@@ -1183,3 +1183,20 @@ requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', por
 2026-04-07 18:49:56,630 [INFO] Tentando publicar item da carga inicial coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
 2026-04-07 18:49:56,825 [INFO] Carga inicial habilitada. Tentativas de publicacao apos sync: 7
 2026-04-07 18:49:56,825 [INFO] Carga inicial habilitada. Publicacoes concluidas apos sync: 0
+2026-04-07 18:55:13,931 [INFO] Inicio da execucao
+2026-04-07 18:55:14,803 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-07 18:55:18,042 [INFO] Fonte CAPES retornou 2 itens
+2026-04-07 18:55:21,610 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-07 18:55:31,606 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-07 18:55:34,532 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-07 18:56:07,414 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/about/international_partnerships/brasillinois: HTTPSConnectionPool(host='www.uillinois.edu', port=443): Max retries exceeded with url: /about/international_partnerships/brasillinois (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.uillinois.edu', port=443) at 0x7f665a8ca810>, 'Connection to www.uillinois.edu timed out. (connect timeout=30)'))
+2026-04-07 18:56:52,524 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-07 18:56:53,514 [INFO] Fonte IPEA retornou 10 itens
+2026-04-07 18:57:08,523 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-07 18:57:08,526 [INFO] Total coletado: 27
+2026-04-07 18:57:08,526 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 8 | Mantidos: 16 | Deduplicados por chave: 3
+2026-04-07 18:57:08,526 [INFO] Repostados/Publicados: 0
+2026-04-07 18:57:08,526 [INFO] Bloqueados para postagem: 0
+2026-04-07 18:57:08,526 [INFO] Expirados: 23
+2026-04-07 18:57:08,526 [INFO] Erros por fonte: 0
+2026-04-07 18:57:08,526 [INFO] Fim da execucao
