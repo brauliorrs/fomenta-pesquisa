@@ -190,6 +190,11 @@ def normalize_payload_text_fields(editais: list[dict], normalize_service: Normal
             edital[field_name] = normalize_service.clean_text(edital.get(field_name))
 
 
+def normalize_publication_state(editais: list[dict]) -> None:
+    for edital in editais:
+        edital['instagram_feed_publicado'] = bool(str(edital.get('instagram_feed_media_id', '') or '').strip())
+
+
 def sync_draft_assets(editais: list[dict], instagram_service: InstagramService) -> None:
     for edital in editais:
         if edital.get('status') == 'encerrado' or not edital.get('pronto_para_postagem'):
@@ -227,6 +232,7 @@ def main() -> None:
     merged_payload = dedup_service.collapse_payload(merged_payload)
     normalize_payload_text_fields(merged_payload, normalize_service)
     normalize_payload_ids(merged_payload, normalize_service)
+    normalize_publication_state(merged_payload)
     rebuild_captions(merged_payload, render_service)
     expired_count = mark_expired(merged_payload, today)
     sync_draft_assets(merged_payload, instagram_service)
