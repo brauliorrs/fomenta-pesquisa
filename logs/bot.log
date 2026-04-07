@@ -1003,3 +1003,20 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', 
 2026-04-07 18:08:29,359 [INFO] Tentando publicar item da carga inicial coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
 2026-04-07 18:08:29,476 [INFO] Carga inicial habilitada. Tentativas de publicacao apos sync: 7
 2026-04-07 18:08:29,476 [INFO] Carga inicial habilitada. Publicacoes concluidas apos sync: 0
+2026-04-07 18:18:44,531 [INFO] Inicio da execucao
+2026-04-07 18:18:45,545 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-07 18:18:48,181 [INFO] Fonte CAPES retornou 2 itens
+2026-04-07 18:18:53,652 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-07 18:19:12,431 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-07 18:19:22,609 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-07 18:19:25,581 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-07 18:20:12,429 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-07 18:20:13,858 [INFO] Fonte IPEA retornou 10 itens
+2026-04-07 18:20:30,249 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-07 18:20:30,251 [INFO] Total coletado: 27
+2026-04-07 18:20:30,252 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 15 | Deduplicados por chave: 3
+2026-04-07 18:20:30,252 [INFO] Repostados/Publicados: 0
+2026-04-07 18:20:30,252 [INFO] Bloqueados para postagem: 0
+2026-04-07 18:20:30,252 [INFO] Expirados: 23
+2026-04-07 18:20:30,252 [INFO] Erros por fonte: 0
+2026-04-07 18:20:30,252 [INFO] Fim da execucao
