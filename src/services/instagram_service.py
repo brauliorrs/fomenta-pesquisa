@@ -311,10 +311,15 @@ class InstagramService:
             "e INSTAGRAM_BUSINESS_ACCOUNT_ID com o Instagram Business Account ID."
         )
 
-    def _build_feed_image(self, edital: Edital) -> Image.Image:
+    def _build_feed_image(
+        self,
+        edital: Edital,
+        include_content_panel: bool = True,
+        center_content: bool = True,
+    ) -> Image.Image:
         palette = self._palette(edital)
         title_text = edital.card_title or edital.titulo
-        summary_lines = self._wrap_text(edital.card_summary or edital.resumo or "Resumo nao informado.", 42, 5)
+        summary_text = edital.card_summary or edital.resumo or "Resumo nao informado."
         header = edital.card_header or f"EDITAL {edital.fonte}"
         deadline = edital.card_deadline or "PRAZO A DEFINIR"
         handle_value = edital.card_handle
@@ -324,55 +329,95 @@ class InstagramService:
         show_footer = bool(footer_note or handle)
 
         image = self._build_background(palette, self.FEED_WIDTH, self.FEED_HEIGHT)
-        image = self._apply_feed_content_panels(image, palette, include_footer=show_footer)
+        image = self._apply_feed_content_panels(
+            image,
+            palette,
+            include_content=include_content_panel,
+            include_footer=show_footer,
+        )
         draw = ImageDraw.Draw(image)
 
         header_font = self._load_font("regular", 28)
         title_lines, title_font = self._fit_title_layout(title_text, max_width=self.FEED_WIDTH - 168, max_lines=3)
-        summary_font = self._load_font("regular", 34)
+        summary_font = self._load_font("regular", 44)
         deadline_font = self._load_font("bold", 34)
         footer_font = self._load_font("regular", 28)
         handle_font = self._load_font("regular", 28)
         light_text = (248, 244, 237)
         dark_text = self._hex_to_rgb(palette["deadline_text"])
 
-        self._draw_text_with_shadow(draw, (84, 120), header, header_font, light_text)
+        summary_width = self.FEED_WIDTH - (260 if center_content else 168)
+        summary_lines = self._wrap_text_to_width(
+            summary_text,
+            summary_font,
+            max_width=summary_width,
+            max_lines=4 if center_content else 5,
+            allow_overflow=False,
+        )
+
+        header_x = 84
+        if center_content:
+            header_x = (self.FEED_WIDTH - self._text_width(header, header_font)) // 2
+        self._draw_text_with_shadow(draw, (header_x, 120), header, header_font, light_text)
 
         y = 260
         for line in title_lines:
-            self._draw_text_with_shadow(draw, (84, y), line, title_font, light_text, shadow_offset=4)
+            line_x = 84
+            if center_content:
+                line_x = (self.FEED_WIDTH - self._text_width(line, title_font)) // 2
+            self._draw_text_with_shadow(draw, (line_x, y), line, title_font, light_text, shadow_offset=4)
             y += self._line_height(title_font, extra=16)
 
-        badge_box = (84, 610, 404, 692)
+        if center_content:
+            badge_width = 320
+            badge_left = (self.FEED_WIDTH - badge_width) // 2
+            badge_box = (badge_left, 610, badge_left + badge_width, 692)
+        else:
+            badge_box = (84, 610, 404, 692)
         draw.rounded_rectangle(badge_box, radius=22, fill=(255, 248, 236))
         deadline_bbox = draw.textbbox((0, 0), deadline, font=deadline_font)
         deadline_y = badge_box[1] + ((badge_box[3] - badge_box[1]) - (deadline_bbox[3] - deadline_bbox[1])) // 2 - 2
-        draw.text((badge_box[0] + 32, deadline_y), deadline, font=deadline_font, fill=dark_text)
+        deadline_x = badge_box[0] + 32
+        if center_content:
+            deadline_x = badge_box[0] + ((badge_box[2] - badge_box[0]) - (deadline_bbox[2] - deadline_bbox[0])) // 2
+        draw.text((deadline_x, deadline_y), deadline, font=deadline_font, fill=dark_text)
 
-        y = 760
+        summary_line_height = self._line_height(summary_font, extra=8)
+        y = 750
         for line in summary_lines:
-            self._draw_text_with_shadow(draw, (84, y), line, summary_font, light_text)
-            y += 48
+            line_x = 84
+            if center_content:
+                line_x = (self.FEED_WIDTH - self._text_width(line, summary_font)) // 2
+            self._draw_text_with_shadow(draw, (line_x, y), line, summary_font, light_text)
+            y += summary_line_height
 
         if footer_note:
-            draw.text((84, 1188), footer_note, font=footer_font, fill=dark_text)
+            footer_x = 84 + ((936 - self._text_width(footer_note, footer_font)) // 2)
+            draw.text((footer_x, 1188), footer_note, font=footer_font, fill=dark_text)
         if handle:
-            draw.text((84, 1248), handle, font=handle_font, fill=dark_text)
+            handle_x = 84 + ((936 - self._text_width(handle, handle_font)) // 2)
+            draw.text((handle_x, 1248), handle, font=handle_font, fill=dark_text)
         return image
 
     def _build_story_image(self, edital: Edital) -> Image.Image:
         palette = self._palette(edital)
         image = self._build_background(palette, self.STORY_WIDTH, self.STORY_HEIGHT)
 
-        card = self._build_feed_image(replace(edital, card_footer_note="", card_handle=""))
+        card = self._build_feed_image(
+            replace(edital, card_footer_note="", card_handle=""),
+            center_content=True,
+        )
         card = self._resize_to_fit(card, max_width=900, max_height=1120)
+        if card.height > 1010:
+            card = card.crop((0, 0, card.width, 1010))
+        card = self._with_rounded_corners(card, radius=52)
         shadow_overlay = Image.new("RGBA", (self.STORY_WIDTH, self.STORY_HEIGHT), (0, 0, 0, 0))
         shadow_overlay = self._apply_blurred_circle(
             shadow_overlay,
             self.STORY_WIDTH,
             self.STORY_HEIGHT,
             color="#0e221d",
-            bbox=(130, 120, 950, 1270),
+            bbox=(130, 120, 950, 1165),
             alpha=72,
             blur_radius=50,
         )
@@ -381,39 +426,82 @@ class InstagramService:
 
         card_x = (self.STORY_WIDTH - card.width) // 2
         card_y = 120
-        image.paste(card, (card_x, card_y))
+        image.paste(card, (card_x, card_y), card)
 
-        callout_box = (72, 1380, 1008, 1760)
+        callout_box = (72, 1216, 1008, 1568)
         draw.rounded_rectangle(callout_box, radius=42, fill=(255, 248, 236))
         draw.rounded_rectangle(callout_box, radius=42, outline=(217, 198, 169), width=3)
 
-        title_font = self._load_font("bold", 58)
+        title_font = self._load_font("bold", 50)
         body_font = self._load_font("regular", 34)
-        handle_font = self._load_font("bold", 36)
+        handle_font = self._load_font("bold", 34)
+        text_color = self._hex_to_rgb(palette["deadline_text"])
+        body_color = (42, 57, 51)
+        cta_color = (39, 90, 69)
 
-        draw.text((120, 1438), "Veja o post do perfil", font=title_font, fill=self._hex_to_rgb(palette["deadline_text"]))
+        inner_padding_x = 56
+        body_width = callout_box[2] - callout_box[0] - (inner_padding_x * 2)
+        title_text = "Veja o post do perfil"
+        cta_text = "Abra o post para acessar o edital."
+        story_text = (
+            "O link do edital e os detalhes completos est\u00e3o na legenda "
+            "do post do perfil @editais.pesquisa."
+        )
+        story_lines = self._wrap_text_to_width(
+            story_text,
+            body_font,
+            max_width=body_width,
+            max_lines=4,
+            allow_overflow=False,
+        )
 
-        story_lines = [
-            "O link do edital e os detalhes",
-            "completos estão na legenda do",
-            "post do perfil @editais.pesquisa.",
-        ]
-        text_y = 1532
+        title_height = self._line_height(title_font)
+        body_line_height = self._line_height(body_font, extra=10)
+        body_height = max(0, (len(story_lines) * body_line_height) - 10)
+        cta_height = self._line_height(handle_font)
+        gap_title_body = 24
+        gap_body_cta = 24
+        block_height = title_height + gap_title_body + body_height + gap_body_cta + cta_height
+        start_y = callout_box[1] + max(32, ((callout_box[3] - callout_box[1]) - block_height) // 2)
+
+        title_x = callout_box[0] + ((callout_box[2] - callout_box[0]) - self._text_width(title_text, title_font)) // 2
+        draw.text((title_x, start_y), title_text, font=title_font, fill=text_color)
+
+        body_y = start_y + title_height + gap_title_body
+        text_y = body_y
         for line in story_lines:
-            draw.text((120, text_y), line, font=body_font, fill=(60, 52, 45))
-            text_y += 44
+            line_x = callout_box[0] + ((callout_box[2] - callout_box[0]) - self._text_width(line, body_font)) // 2
+            draw.text((line_x, text_y), line, font=body_font, fill=body_color)
+            text_y += body_line_height
 
-        draw.text((120, 1672), "Abra o post para acessar o edital.", font=handle_font, fill=(42, 74, 64))
+        cta_y = text_y + gap_body_cta - 10
+        cta_x = callout_box[0] + ((callout_box[2] - callout_box[0]) - self._text_width(cta_text, handle_font)) // 2
+        draw.text((cta_x, cta_y), cta_text, font=handle_font, fill=cta_color)
         return image
 
-    def _apply_feed_content_panels(self, image: Image.Image, palette: dict[str, str], include_footer: bool = True) -> Image.Image:
+    def _apply_feed_content_panels(
+        self,
+        image: Image.Image,
+        palette: dict[str, str],
+        include_content: bool = True,
+        include_footer: bool = True,
+    ) -> Image.Image:
         overlay = Image.new("RGBA", image.size, (0, 0, 0, 0))
         draw = ImageDraw.Draw(overlay)
-        draw.rounded_rectangle((56, 84, 1024, 1090), radius=42, fill=(15, 44, 30, 56))
+        if include_content:
+            draw.rounded_rectangle((56, 84, 1024, 1090), radius=42, fill=(15, 44, 30, 56))
         if include_footer:
             draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, fill=(255, 248, 236, 108))
             draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, outline=self._hex_to_rgb(palette["accent"]) + (92,), width=2)
         return Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB")
+
+    def _with_rounded_corners(self, image: Image.Image, radius: int) -> Image.Image:
+        rounded = image.convert("RGBA")
+        mask = Image.new("L", rounded.size, 0)
+        mask_draw = ImageDraw.Draw(mask)
+        mask_draw.rounded_rectangle((0, 0, rounded.width, rounded.height), radius=radius, fill=255)
+        rounded.putalpha(mask)
+        return rounded
 
     def _build_background(self, palette: dict[str, str], width: int, height: int) -> Image.Image:
         image = Image.new("RGB", (width, height))
@@ -711,3 +799,4 @@ class InstagramService:
             lines.append(current)
 
         return lines[:max_lines]
+
