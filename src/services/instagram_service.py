@@ -159,6 +159,12 @@ class InstagramService:
         if edital.instagram_feed_publicado:
             return repost_targets
 
+        # Story nunca deve sair sozinho antes de existir um post no feed.
+        if "feed" not in publish_targets:
+            if "story" in publish_targets:
+                return ("feed", "story")
+            return ("feed",)
+
         if "feed" in publish_targets and "story" in publish_targets and edital.instagram_story_media_id:
             return ("feed",)
 

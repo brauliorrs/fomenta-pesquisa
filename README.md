@@ -140,6 +140,7 @@ O workflow já usa `github.repository` e `github.token`, então não é necessá
 - A mídia precisa estar em uma URL pública no momento da chamada à Meta; por isso o projeto usa `PUBLIC_ASSET_BASE_URL` para montar a URL do card gerado.
 - Em `INSTAGRAM_PUBLISH_TARGET`, use `feed`, `story` ou `both` para a primeira publicação. Para o fluxo editorial atual, o recomendado é `both`, para sair no feed e também no story na primeira ida.
 - Em `INSTAGRAM_REPOST_TARGET`, use `feed`, `story` ou `both` para as republicações automáticas até o edital vencer. Se ficar vazio, o projeto reaproveita o alvo da primeira publicação.
+- O bot nunca publica `story` sozinho antes de existir um `feed` daquele edital; se um item ainda nao foi ao feed, a regra editorial força o feed primeiro.
 - Para publicar em stories pela API, a conta do Instagram precisa ser profissional; stories exigem conta Business nas limitações atuais da API oficial.
 - O código já está preparado para três destinos de publicação real:
   - `feed` com `image_url + caption`
