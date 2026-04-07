@@ -994,3 +994,12 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', 
 2026-04-07 18:08:26,184 [INFO] Expirados: 23
 2026-04-07 18:08:26,184 [INFO] Erros por fonte: 0
 2026-04-07 18:08:26,184 [INFO] Fim da execucao
+2026-04-07 18:08:28,734 [INFO] Tentando publicar item da carga inicial conselho_nacional_das_fundacoes_estaduai_d04b25ff usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_d04b25ff.jpg
+2026-04-07 18:08:28,825 [INFO] Tentando publicar item da carga inicial coordenacao_de_aperfeicoamento_de_pessoa_398ddf61 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_398ddf61.jpg
+2026-04-07 18:08:28,938 [INFO] Tentando publicar item da carga inicial conselho_nacional_das_fundacoes_estaduai_ed4cd0d1 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_ed4cd0d1.jpg
+2026-04-07 18:08:29,053 [INFO] Tentando publicar item da carga inicial conselho_nacional_das_fundacoes_estaduai_af528128 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_af528128.jpg
+2026-04-07 18:08:29,184 [INFO] Tentando publicar item da carga inicial conselho_nacional_de_desenvolvimento_cie_78104ac3 usando asset publico draft_conselho_nacional_de_desenvolvimento_cie_78104ac3.jpg
+2026-04-07 18:08:29,241 [INFO] Tentando publicar item da carga inicial conselho_nacional_das_fundacoes_estaduai_7e8bcd93 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_7e8bcd93.jpg
+2026-04-07 18:08:29,359 [INFO] Tentando publicar item da carga inicial coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
+2026-04-07 18:08:29,476 [INFO] Carga inicial habilitada. Tentativas de publicacao apos sync: 7
+2026-04-07 18:08:29,476 [INFO] Carga inicial habilitada. Publicacoes concluidas apos sync: 0
