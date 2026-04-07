@@ -1029,3 +1029,96 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', 
 2026-04-07 18:20:32,735 [INFO] Tentando publicar item da carga inicial coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
 2026-04-07 18:20:32,829 [INFO] Carga inicial habilitada. Tentativas de publicacao apos sync: 7
 2026-04-07 18:20:32,829 [INFO] Carga inicial habilitada. Publicacoes concluidas apos sync: 0
+2026-04-07 18:26:27,024 [INFO] Inicio da execucao
+2026-04-07 18:26:28,230 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-07 18:26:31,346 [INFO] Fonte CAPES retornou 2 itens
+2026-04-07 18:26:36,238 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-07 18:26:44,303 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-07 18:26:50,917 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-07 18:26:53,851 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-07 18:27:41,396 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-07 18:28:12,097 [ERROR] Erro ao processar fonte IPEA
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1415, in getresponse
+    response.begin()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 330, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 291, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/util/retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/fomenta-pesquisa/fomenta-pesquisa/src/services/scraper_service.py", line 86, in collect
+    raw_items = source.collect()
+                ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/fomenta-pesquisa/fomenta-pesquisa/src/sources/base_source.py", line 38, in collect
+    raw_content = self.fetch()
+                  ^^^^^^^^^^^^
+  File "/home/runner/work/fomenta-pesquisa/fomenta-pesquisa/src/sources/base_source.py", line 22, in fetch
+    response = requests.get(
+               ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Read timed out. (read timeout=30)
+2026-04-07 18:28:18,888 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-07 18:28:18,891 [INFO] Total coletado: 17
+2026-04-07 18:28:18,891 [INFO] Novos: 0 | Prorrogados: 3 | Atualizados: 9 | Mantidos: 5 | Deduplicados por chave: 3
+2026-04-07 18:28:18,891 [INFO] Repostados/Publicados: 0
+2026-04-07 18:28:18,891 [INFO] Bloqueados para postagem: 0
+2026-04-07 18:28:18,891 [INFO] Expirados: 23
+2026-04-07 18:28:18,891 [INFO] Erros por fonte: 1
+2026-04-07 18:28:18,891 [INFO] Fim da execucao
