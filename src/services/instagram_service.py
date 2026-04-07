@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date
 from pathlib import Path
 from time import monotonic, sleep
@@ -317,11 +317,14 @@ class InstagramService:
         summary_lines = self._wrap_text(edital.card_summary or edital.resumo or "Resumo nao informado.", 42, 5)
         header = edital.card_header or f"EDITAL {edital.fonte}"
         deadline = edital.card_deadline or "PRAZO A DEFINIR"
-        handle = edital.card_handle or "@editais.pesquisa"
-        footer_note = edital.card_footer_note or "Link do edital e detalhes abaixo"
+        handle_value = edital.card_handle
+        footer_note_value = edital.card_footer_note
+        handle = ("@editais.pesquisa" if handle_value is None else handle_value).strip()
+        footer_note = ("Link do edital e detalhes abaixo." if footer_note_value is None else footer_note_value).strip()
+        show_footer = bool(footer_note or handle)
 
         image = self._build_background(palette, self.FEED_WIDTH, self.FEED_HEIGHT)
-        image = self._apply_feed_content_panels(image, palette)
+        image = self._apply_feed_content_panels(image, palette, include_footer=show_footer)
         draw = ImageDraw.Draw(image)
 
         header_font = self._load_font("regular", 28)
@@ -351,15 +354,17 @@ class InstagramService:
             self._draw_text_with_shadow(draw, (84, y), line, summary_font, light_text)
             y += 48
 
-        draw.text((84, 1188), footer_note, font=footer_font, fill=dark_text)
-        draw.text((84, 1248), handle, font=handle_font, fill=dark_text)
+        if footer_note:
+            draw.text((84, 1188), footer_note, font=footer_font, fill=dark_text)
+        if handle:
+            draw.text((84, 1248), handle, font=handle_font, fill=dark_text)
         return image
 
     def _build_story_image(self, edital: Edital) -> Image.Image:
         palette = self._palette(edital)
         image = self._build_background(palette, self.STORY_WIDTH, self.STORY_HEIGHT)
 
-        card = self._build_feed_image(edital)
+        card = self._build_feed_image(replace(edital, card_footer_note="", card_handle=""))
         card = self._resize_to_fit(card, max_width=900, max_height=1120)
         shadow_overlay = Image.new("RGBA", (self.STORY_WIDTH, self.STORY_HEIGHT), (0, 0, 0, 0))
         shadow_overlay = self._apply_blurred_circle(
@@ -386,11 +391,11 @@ class InstagramService:
         body_font = self._load_font("regular", 34)
         handle_font = self._load_font("bold", 36)
 
-        draw.text((120, 1438), "Link do edital abaixo", font=title_font, fill=self._hex_to_rgb(palette["deadline_text"]))
+        draw.text((120, 1438), "Veja o post do perfil", font=title_font, fill=self._hex_to_rgb(palette["deadline_text"]))
 
         story_lines = [
-            "Link do edital e detalhes completos",
-            "ficam logo abaixo na legenda do",
+            "O link do edital e os detalhes",
+            "completos estão na legenda do",
             "post do perfil @editais.pesquisa.",
         ]
         text_y = 1532
@@ -398,15 +403,16 @@ class InstagramService:
             draw.text((120, text_y), line, font=body_font, fill=(60, 52, 45))
             text_y += 44
 
-        draw.text((120, 1672), "Abra o post do perfil para ver o edital.", font=handle_font, fill=(42, 74, 64))
+        draw.text((120, 1672), "Abra o post para acessar o edital.", font=handle_font, fill=(42, 74, 64))
         return image
 
-    def _apply_feed_content_panels(self, image: Image.Image, palette: dict[str, str]) -> Image.Image:
+    def _apply_feed_content_panels(self, image: Image.Image, palette: dict[str, str], include_footer: bool = True) -> Image.Image:
         overlay = Image.new("RGBA", image.size, (0, 0, 0, 0))
         draw = ImageDraw.Draw(overlay)
         draw.rounded_rectangle((56, 84, 1024, 1090), radius=42, fill=(15, 44, 30, 56))
-        draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, fill=(255, 248, 236, 108))
-        draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, outline=self._hex_to_rgb(palette["accent"]) + (92,), width=2)
+        if include_footer:
+            draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, fill=(255, 248, 236, 108))
+            draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, outline=self._hex_to_rgb(palette["accent"]) + (92,), width=2)
         return Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB")
 
     def _build_background(self, palette: dict[str, str], width: int, height: int) -> Image.Image:

@@ -43,7 +43,7 @@ class RenderService:
         lines.extend(
             [
                 '',
-                'Link oficial para copiar e colar no navegador:',
+                'Link oficial do edital:',
                 self._display_text(edital.link),
                 '',
                 'Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.',
@@ -61,7 +61,7 @@ class RenderService:
             'card_deadline': self._build_card_deadline(edital.data_expiracao),
             'card_summary': self._build_card_summary(edital),
             'card_handle': '@editais.pesquisa',
-            'card_footer_note': 'Link do edital e detalhes abaixo',
+            'card_footer_note': 'Link do edital e detalhes abaixo.',
         }
 
     def _format_date(self, value: str | None) -> str:
