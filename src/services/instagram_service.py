@@ -313,7 +313,7 @@ class InstagramService:
 
     def _build_feed_image(self, edital: Edital) -> Image.Image:
         palette = self._palette(edital)
-        title_lines = self._wrap_text(edital.card_title or edital.titulo, 18, 3)
+        title_text = edital.card_title or edital.titulo
         summary_lines = self._wrap_text(edital.card_summary or edital.resumo or "Resumo nao informado.", 42, 5)
         header = edital.card_header or f"EDITAL {edital.fonte}"
         deadline = edital.card_deadline or "PRAZO A DEFINIR"
@@ -321,35 +321,38 @@ class InstagramService:
         footer_note = edital.card_footer_note or "Link e detalhes no post do perfil"
 
         image = self._build_background(palette, self.FEED_WIDTH, self.FEED_HEIGHT)
+        image = self._apply_feed_content_panels(image, palette)
         draw = ImageDraw.Draw(image)
 
         header_font = self._load_font("regular", 28)
-        title_font = self._load_font("bold", 74)
+        title_lines, title_font = self._fit_title_layout(title_text, max_width=self.FEED_WIDTH - 168, max_lines=3)
         summary_font = self._load_font("regular", 34)
         deadline_font = self._load_font("bold", 34)
         footer_font = self._load_font("regular", 28)
         handle_font = self._load_font("regular", 28)
+        light_text = (248, 244, 237)
+        dark_text = self._hex_to_rgb(palette["deadline_text"])
 
-        draw.text((84, 120), header, font=header_font, fill=(245, 240, 233))
+        self._draw_text_with_shadow(draw, (84, 120), header, header_font, light_text)
 
         y = 260
         for line in title_lines:
-            draw.text((84, y), line, font=title_font, fill=(248, 244, 237))
-            y += 88
+            self._draw_text_with_shadow(draw, (84, y), line, title_font, light_text, shadow_offset=4)
+            y += self._line_height(title_font, extra=16)
 
         badge_box = (84, 610, 404, 692)
         draw.rounded_rectangle(badge_box, radius=22, fill=(255, 248, 236))
         deadline_bbox = draw.textbbox((0, 0), deadline, font=deadline_font)
         deadline_y = badge_box[1] + ((badge_box[3] - badge_box[1]) - (deadline_bbox[3] - deadline_bbox[1])) // 2 - 2
-        draw.text((badge_box[0] + 32, deadline_y), deadline, font=deadline_font, fill=self._hex_to_rgb(palette["deadline_text"]))
+        draw.text((badge_box[0] + 32, deadline_y), deadline, font=deadline_font, fill=dark_text)
 
         y = 760
         for line in summary_lines:
-            draw.text((84, y), line, font=summary_font, fill=(244, 240, 233))
+            self._draw_text_with_shadow(draw, (84, y), line, summary_font, light_text)
             y += 48
 
-        draw.text((84, 1188), footer_note, font=footer_font, fill=(244, 240, 233))
-        draw.text((84, 1248), handle, font=handle_font, fill=(246, 241, 234))
+        draw.text((84, 1188), footer_note, font=footer_font, fill=dark_text)
+        draw.text((84, 1248), handle, font=handle_font, fill=dark_text)
         return image
 
     def _build_story_image(self, edital: Edital) -> Image.Image:
@@ -397,6 +400,14 @@ class InstagramService:
 
         draw.text((120, 1672), "Abra o post do perfil para ver o edital.", font=handle_font, fill=(42, 74, 64))
         return image
+
+    def _apply_feed_content_panels(self, image: Image.Image, palette: dict[str, str]) -> Image.Image:
+        overlay = Image.new("RGBA", image.size, (0, 0, 0, 0))
+        draw = ImageDraw.Draw(overlay)
+        draw.rounded_rectangle((56, 84, 1024, 1090), radius=42, fill=(15, 44, 30, 56))
+        draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, fill=(255, 248, 236, 108))
+        draw.rounded_rectangle((60, 1138, 1020, 1306), radius=28, outline=self._hex_to_rgb(palette["accent"]) + (92,), width=2)
+        return Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB")
 
     def _build_background(self, palette: dict[str, str], width: int, height: int) -> Image.Image:
         image = Image.new("RGB", (width, height))
@@ -468,6 +479,107 @@ class InstagramService:
         resample_attr = getattr(Image, "Resampling", Image)
         new_size = (max(1, int(round(image.width * ratio))), max(1, int(round(image.height * ratio))))
         return image.resize(new_size, resample=resample_attr.LANCZOS)
+
+    def _fit_title_layout(
+        self,
+        text: str,
+        max_width: int,
+        max_lines: int,
+    ) -> tuple[list[str], ImageFont.ImageFont | ImageFont.FreeTypeFont]:
+        candidates = (74, 70, 66, 62, 58)
+        for size in candidates:
+            font = self._load_font("bold", size)
+            lines = self._wrap_text_to_width(text, font, max_width, max_lines)
+            if len(lines) <= max_lines:
+                return lines, font
+
+        fallback_font = self._load_font("bold", candidates[-1])
+        fallback_lines = self._wrap_text_to_width(text, fallback_font, max_width, max_lines, allow_overflow=False)
+        return fallback_lines[:max_lines], fallback_font
+
+    def _wrap_text_to_width(
+        self,
+        value: str,
+        font: ImageFont.ImageFont | ImageFont.FreeTypeFont,
+        max_width: int,
+        max_lines: int,
+        allow_overflow: bool = True,
+    ) -> list[str]:
+        words = (value or "").split()
+        if not words:
+            return [""]
+
+        lines: list[str] = []
+        current_words: list[str] = []
+
+        for word in words:
+            candidate_words = current_words + [word]
+            candidate_line = " ".join(candidate_words).strip()
+            if self._text_width(candidate_line, font) <= max_width or not current_words:
+                current_words = candidate_words
+                continue
+            lines.append(" ".join(current_words))
+            current_words = [word]
+
+        if current_words:
+            lines.append(" ".join(current_words))
+
+        if allow_overflow or len(lines) <= max_lines:
+            return lines
+
+        truncated = lines[: max_lines - 1]
+        remaining_words = " ".join(lines[max_lines - 1 :]).split()
+        last_line = self._truncate_line_to_width(" ".join(remaining_words), font, max_width)
+        truncated.append(last_line)
+        return truncated
+
+    def _truncate_line_to_width(
+        self,
+        value: str,
+        font: ImageFont.ImageFont | ImageFont.FreeTypeFont,
+        max_width: int,
+    ) -> str:
+        words = (value or "").split()
+        if not words:
+            return ""
+
+        line = " ".join(words)
+        if self._text_width(line, font) <= max_width:
+            return line
+
+        while words:
+            candidate = " ".join(words).rstrip(" ,;:-") + "..."
+            if self._text_width(candidate, font) <= max_width:
+                return candidate
+            words.pop()
+        return "..."
+
+    def _text_width(self, value: str, font: ImageFont.ImageFont | ImageFont.FreeTypeFont) -> int:
+        dummy = Image.new("RGB", (1, 1))
+        draw = ImageDraw.Draw(dummy)
+        bbox = draw.textbbox((0, 0), value, font=font)
+        return bbox[2] - bbox[0]
+
+    def _line_height(self, font: ImageFont.ImageFont | ImageFont.FreeTypeFont, extra: int = 0) -> int:
+        dummy = Image.new("RGB", (1, 1))
+        draw = ImageDraw.Draw(dummy)
+        bbox = draw.textbbox((0, 0), "Ag", font=font)
+        return (bbox[3] - bbox[1]) + extra
+
+    def _draw_text_with_shadow(
+        self,
+        draw: ImageDraw.ImageDraw,
+        position: tuple[int, int],
+        text: str,
+        font: ImageFont.ImageFont | ImageFont.FreeTypeFont,
+        fill: tuple[int, int, int],
+        shadow_fill: tuple[int, int, int] = (11, 24, 18),
+        shadow_offset: int = 3,
+    ) -> None:
+        x, y = position
+        for dx, dy in ((shadow_offset, shadow_offset), (shadow_offset, 0), (0, shadow_offset)):
+            draw.text((x + dx, y + dy), text, font=font, fill=shadow_fill)
+        draw.text(position, text, font=font, fill=fill)
 
     def _load_font(self, weight: str, size: int) -> ImageFont.ImageFont | ImageFont.FreeTypeFont:
         for font_path in self.FONT_CANDIDATES.get(weight, ()):
