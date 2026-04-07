@@ -47,7 +47,7 @@ class RenderService:
                 self._display_text(edital.link),
                 '',
                 'Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.',
-                'No post do perfil, o link oficial e mais informações ficam logo abaixo na legenda.',
+                'No post, o link do edital e os detalhes ficam logo abaixo na legenda.',
                 '',
                 self._build_hashtags(edital),
             ]
@@ -61,7 +61,7 @@ class RenderService:
             'card_deadline': self._build_card_deadline(edital.data_expiracao),
             'card_summary': self._build_card_summary(edital),
             'card_handle': '@editais.pesquisa',
-            'card_footer_note': 'Link e detalhes no post do perfil',
+            'card_footer_note': 'Link do edital e detalhes abaixo',
         }
 
     def _format_date(self, value: str | None) -> str:

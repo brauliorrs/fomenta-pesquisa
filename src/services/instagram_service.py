@@ -318,7 +318,7 @@ class InstagramService:
         header = edital.card_header or f"EDITAL {edital.fonte}"
         deadline = edital.card_deadline or "PRAZO A DEFINIR"
         handle = edital.card_handle or "@editais.pesquisa"
-        footer_note = edital.card_footer_note or "Link e detalhes no post do perfil"
+        footer_note = edital.card_footer_note or "Link do edital e detalhes abaixo"
 
         image = self._build_background(palette, self.FEED_WIDTH, self.FEED_HEIGHT)
         image = self._apply_feed_content_panels(image, palette)
@@ -386,10 +386,10 @@ class InstagramService:
         body_font = self._load_font("regular", 34)
         handle_font = self._load_font("bold", 36)
 
-        draw.text((120, 1438), "Mais detalhes no post", font=title_font, fill=self._hex_to_rgb(palette["deadline_text"]))
+        draw.text((120, 1438), "Link do edital abaixo", font=title_font, fill=self._hex_to_rgb(palette["deadline_text"]))
 
         story_lines = [
-            "Link oficial e informacoes completas",
+            "Link do edital e detalhes completos",
             "ficam logo abaixo na legenda do",
             "post do perfil @editais.pesquisa.",
         ]
