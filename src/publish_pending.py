@@ -11,6 +11,27 @@ from src.utils.dates import now_in_timezone
 from src.utils.logger import configure_logger
 
 
+def apply_publication_result(edital: dict, result, now_iso: str) -> None:
+    if not result.success:
+        return
+
+    published_targets = result.payload.get('published_targets', [])
+    if not published_targets:
+        return
+
+    edital['ultima_postagem'] = now_iso
+    edital['quantidade_postagens'] = int(edital.get('quantidade_postagens', 0)) + 1
+    edital['instagram_asset'] = result.payload.get('feed_image_path', edital.get('instagram_asset', ''))
+    edital['instagram_story_asset'] = result.payload.get('story_image_path', edital.get('instagram_story_asset', ''))
+    edital['instagram_mock_asset'] = result.payload.get('mock_path', edital.get('instagram_mock_asset', ''))
+
+    if 'feed' in published_targets:
+        edital['instagram_feed_publicado'] = True
+        edital['instagram_feed_media_id'] = result.payload.get('feed_media_id', edital.get('instagram_feed_media_id', ''))
+    if 'story' in published_targets:
+        edital['instagram_story_media_id'] = result.payload.get('story_media_id', edital.get('instagram_story_media_id', ''))
+
+
 def main() -> None:
     logger = configure_logger(settings.log_file_path)
     storage = StorageService()
@@ -42,14 +63,12 @@ def main() -> None:
         result = instagram_service.publish_prepared_asset(
             Edital(**edital),
             image_path=asset_path,
+            story_image_path=edital.get('instagram_story_asset', ''),
             mock_path=edital.get('instagram_mock_asset', ''),
         )
 
         if result.success:
-            edital['ultima_postagem'] = now_iso
-            edital['quantidade_postagens'] = int(edital.get('quantidade_postagens', 0)) + 1
-            edital['instagram_asset'] = result.asset_path
-            edital['instagram_mock_asset'] = result.payload.get('mock_path', edital.get('instagram_mock_asset', ''))
+            apply_publication_result(edital, result, now_iso)
             published += 1
 
         history_rows.append(

@@ -16,6 +16,14 @@ TEMPLATES_DIR = ROOT_DIR / "templates"
 load_dotenv(ROOT_DIR / ".env")
 
 
+def env_or_default(name: str, default: str = "") -> str:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    value = value.strip()
+    return value if value else default
+
+
 @dataclass(frozen=True)
 class Settings:
     timezone: str = os.getenv("TIMEZONE", "America/Sao_Paulo")
@@ -26,6 +34,8 @@ class Settings:
     instagram_api_host: str = os.getenv("INSTAGRAM_API_HOST", "https://graph.instagram.com")
     instagram_api_version: str = os.getenv("INSTAGRAM_API_VERSION", "v24.0")
     public_asset_base_url: str = os.getenv("PUBLIC_ASSET_BASE_URL", "")
+    instagram_publish_target: str = env_or_default("INSTAGRAM_PUBLISH_TARGET", "both").lower()
+    instagram_repost_target: str = env_or_default("INSTAGRAM_REPOST_TARGET", "story").lower()
     instagram_publish_stories: bool = os.getenv("INSTAGRAM_PUBLISH_STORIES", "false").lower() == "true"
     meta_app_id: str = os.getenv("META_APP_ID", "")
     meta_app_secret: str = os.getenv("META_APP_SECRET", "")

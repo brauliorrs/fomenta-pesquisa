@@ -20,17 +20,22 @@ class Edital:
     data_ultima_coleta: str
     ultima_postagem: str | None = None
     quantidade_postagens: int = 0
+    instagram_feed_publicado: bool = False
+    instagram_feed_media_id: str = ''
+    instagram_story_media_id: str = ''
     status: str = 'novo'
     houve_prorrogacao: bool = False
     hash_conteudo: str = ''
     instagram_caption: str = ''
     instagram_asset: str = ''
+    instagram_story_asset: str = ''
     instagram_mock_asset: str = ''
     card_header: str = ''
     card_title: str = ''
     card_deadline: str = ''
     card_summary: str = ''
     card_handle: str = '@editais.pesquisa'
+    card_footer_note: str = ''
     pronto_para_postagem: bool = False
     motivo_bloqueio_postagem: str = ''
     revisao_humana_obrigatoria: bool = False

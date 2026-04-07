@@ -20,29 +20,38 @@ def is_public_image(url: str) -> bool:
 def main() -> None:
     storage = StorageService()
     editais = storage.read_json(settings.editais_path, default=[])
-    ready_assets = [
-        Path(item['instagram_asset']).name
-        for item in editais
-        if item.get('pronto_para_postagem') and item.get('instagram_asset')
-    ]
+    ready_assets = sorted(
+        {
+            Path(asset_path).name
+            for item in editais
+            if item.get('pronto_para_postagem')
+            for asset_path in (item.get('instagram_asset'), item.get('instagram_story_asset'))
+            if asset_path
+        }
+    )
     if not ready_assets:
         print('Nenhum asset pronto para validar no ambiente publico.')
         return
 
-    sample_asset = ready_assets[0]
-    sample_url = settings.public_asset_base_url.rstrip('/') + '/' + sample_asset
     timeout_seconds = 300
     interval_seconds = 15
     start = time.time()
 
     while True:
-        if is_public_image(sample_url):
-            print(f'Asset publico disponivel: {sample_url}')
+        pending_urls = [
+            settings.public_asset_base_url.rstrip('/') + '/' + asset_name
+            for asset_name in ready_assets
+            if not is_public_image(settings.public_asset_base_url.rstrip('/') + '/' + asset_name)
+        ]
+        if not pending_urls:
+            print(f'Assets publicos disponiveis: {len(ready_assets)}')
             return
         elapsed = int(time.time() - start)
         if elapsed >= timeout_seconds:
-            raise TimeoutError(f'Asset ainda nao esta publico apos {timeout_seconds}s: {sample_url}')
-        print(f'Aguardando asset publico ({elapsed}s): {sample_url}')
+            raise TimeoutError(
+                f'Assets ainda nao estao publicos apos {timeout_seconds}s: {", ".join(pending_urls[:3])}'
+            )
+        print(f'Aguardando {len(pending_urls)} asset(s) publico(s) ({elapsed}s): {pending_urls[0]}')
         time.sleep(interval_seconds)
 
 

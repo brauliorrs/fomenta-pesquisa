@@ -44,6 +44,27 @@ REVIEW_REASONS = (
 )
 
 
+def apply_publication_result(edital: dict, result, now_iso: str) -> None:
+    if not result.success:
+        return
+
+    published_targets = result.payload.get('published_targets', [])
+    if not published_targets:
+        return
+
+    edital['ultima_postagem'] = now_iso
+    edital['quantidade_postagens'] = int(edital.get('quantidade_postagens', 0)) + 1
+    edital['instagram_asset'] = result.payload.get('feed_image_path', edital.get('instagram_asset', ''))
+    edital['instagram_story_asset'] = result.payload.get('story_image_path', edital.get('instagram_story_asset', ''))
+    edital['instagram_mock_asset'] = result.payload.get('mock_path', edital.get('instagram_mock_asset', ''))
+
+    if 'feed' in published_targets:
+        edital['instagram_feed_publicado'] = True
+        edital['instagram_feed_media_id'] = result.payload.get('feed_media_id', edital.get('instagram_feed_media_id', ''))
+    if 'story' in published_targets:
+        edital['instagram_story_media_id'] = result.payload.get('story_media_id', edital.get('instagram_story_media_id', ''))
+
+
 def evaluate_editorial_quality(edital: dict) -> tuple[int, list[str], bool, bool]:
     pendencias: list[str] = []
     score = 100
@@ -174,7 +195,8 @@ def sync_draft_assets(editais: list[dict], instagram_service: InstagramService) 
         if edital.get('status') == 'encerrado' or not edital.get('pronto_para_postagem'):
             continue
         assets = instagram_service.build_draft_assets(Edital(**edital))
-        edital['instagram_asset'] = assets.image_path
+        edital['instagram_asset'] = assets.feed_image_path
+        edital['instagram_story_asset'] = assets.story_image_path
         edital['instagram_mock_asset'] = assets.mock_path
 
 
@@ -225,10 +247,7 @@ def main() -> None:
             if repost_service.should_repost(edital.get('data_expiracao'), edital.get('ultima_postagem'), now):
                 result = instagram_service.publish(Edital(**edital))
                 if result.success:
-                    edital['ultima_postagem'] = now_iso
-                    edital['quantidade_postagens'] = int(edital.get('quantidade_postagens', 0)) + 1
-                    edital['instagram_asset'] = result.asset_path
-                    edital['instagram_mock_asset'] = result.payload.get('mock_path', edital.get('instagram_mock_asset', ''))
+                    apply_publication_result(edital, result, now_iso)
                     reposted += 1
                 history_rows.append(
                     {
