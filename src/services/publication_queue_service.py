@@ -36,6 +36,7 @@ class PublicationQueueService:
             'score_editorial': item.get('score_editorial', 0),
             'ultima_postagem': item.get('ultima_postagem'),
             'quantidade_postagens': item.get('quantidade_postagens', 0),
+            'instagram_feed_publicado': bool(item.get('instagram_feed_publicado')),
             'urgencia_dias': self._days_left(item.get('data_expiracao')),
             'link': item.get('link'),
             'caption': item.get('instagram_caption'),
@@ -44,6 +45,7 @@ class PublicationQueueService:
             'card_deadline': item.get('card_deadline'),
             'card_summary': item.get('card_summary'),
             'card_handle': item.get('card_handle'),
+            'card_footer_note': item.get('card_footer_note'),
         }
 
     def _sort_key(self, item: dict[str, Any]) -> tuple[int, int, str]:

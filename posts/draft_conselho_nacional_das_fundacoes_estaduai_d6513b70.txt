@@ -1,21 +1,25 @@
 [MOCK INSTAGRAM DRAFT]
 id: conselho_nacional_das_fundacoes_estaduai_d6513b70
 fonte: CONFAP
-orgao: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
+orgao: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa
 prazo: 2026-04-17
-card: draft_conselho_nacional_das_fundacoes_estaduai_d6513b70.jpg
+card_feed: draft_conselho_nacional_das_fundacoes_estaduai_d6513b70.jpg
+card_story: draft_conselho_nacional_das_fundacoes_estaduai_d6513b70_story.jpg
 
-Edital no radar: FAPERJ lança edital para jovens cientistas mulheres e homenageia a pesquisadora Tatiana Sampaio
+Oportunidade no radar: FAPERJ lança edital para jovens cientistas mulheres e homenageia a pesquisadora Tatiana Sampaio
 
-Órgão: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
-Público: Pesquisadores e instituicoes de pesquisa
-Abertura: 12/03/2026
-Prazo: 17/04/2026
+Em comemoração ao Dia Internacional das Mulheres, celebrado em 8 de março, a Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ) lançou o Programa de Apoio à Jovem Cientista Mulher Dra.
 
-Resumo: Em comemoração ao Dia Internacional das Mulheres, celebrado em 8 de março, a Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ) lançou o Programa de Apoio à Jovem Cientista Mulher D...
+Instituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa
+Público-alvo: Pesquisadores e instituições de pesquisa
+Tipo: Pesquisa
+Abertura das inscrições: 12/03/2026
+Prazo final: 17/04/2026
 
-Link oficial: https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_08_2026_%E2%80%93_Programa_de_Apoio_%C3%A0_Jovem_Cientista_Mulher_Dra_Tatiana_Sampaio.pdf
+Link oficial para copiar e colar no navegador:
+https://www.faperj.br/rp/downloads/Edital_FAPERJ_N%C2%BA_08_2026_%E2%80%93_Programa_de_Apoio_%C3%A0_Jovem_Cientista_Mulher_Dra_Tatiana_Sampaio.pdf
 
-Salve este post para consultar depois e compartilhe com quem pode se interessar.
+Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
+No post do perfil, o link oficial e mais informações ficam logo abaixo na legenda.
 
 #Edital #Pesquisa #OportunidadeAcademica #CONFAP #FomentoPesquisa

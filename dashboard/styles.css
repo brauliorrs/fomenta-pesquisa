@@ -304,15 +304,16 @@ button:hover,
 }
 
 .instagram-card-header,
-.instagram-card-handle {
+.instagram-card-handle,
+.instagram-card-footer-note {
   position: relative;
   z-index: 1;
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
 }
 
 .instagram-card-header {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   font-size: 0.8rem;
   opacity: 0.84;
 }
@@ -358,8 +359,18 @@ button:hover,
 .instagram-card-handle {
   position: absolute;
   left: 24px;
-  bottom: 20px;
+  bottom: 38px;
   font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.88;
+}
+
+.instagram-card-footer-note {
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  font-size: 0.75rem;
   opacity: 0.88;
 }
 

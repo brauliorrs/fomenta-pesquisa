@@ -87,6 +87,8 @@ INSTAGRAM_PUBLISH_MODE=mock
 INSTAGRAM_API_HOST=https://graph.instagram.com
 INSTAGRAM_API_VERSION=v24.0
 PUBLIC_ASSET_BASE_URL=
+INSTAGRAM_PUBLISH_TARGET=both
+INSTAGRAM_REPOST_TARGET=story
 INSTAGRAM_PUBLISH_STORIES=false
 META_APP_ID=
 META_APP_SECRET=
@@ -103,10 +105,17 @@ TIMEZONE=America/Sao_Paulo
 - Em `INSTAGRAM_ACCESS_TOKEN`, use o token gerado para a conta profissional no app da Meta.
 - Em `INSTAGRAM_BUSINESS_ACCOUNT_ID`, use o `IG User ID` da conta profissional conectada ao app.
 - A mídia precisa estar em uma URL pública no momento da chamada à Meta; por isso o projeto usa `PUBLIC_ASSET_BASE_URL` para montar a URL do card gerado.
-- Para publicar em feed e também em stories pela API, a conta do Instagram precisa ser profissional; stories exigem conta Business nas limitações atuais da API oficial.
-- O código já está preparado para duas etapas de publicação real:
-  - feed com `image_url + caption`
-  - stories com `image_url` quando `INSTAGRAM_PUBLISH_STORIES=true`
+- Em `INSTAGRAM_PUBLISH_TARGET`, use `feed`, `story` ou `both` para a primeira publicação. Para o fluxo editorial atual, o recomendado é `both`, para sair no feed e também no story na primeira ida.
+- Em `INSTAGRAM_REPOST_TARGET`, use `feed`, `story` ou `both` para as republicações automáticas até o edital vencer. Se ficar vazio, o projeto reaproveita o alvo da primeira publicação.
+- Para publicar em stories pela API, a conta do Instagram precisa ser profissional; stories exigem conta Business nas limitações atuais da API oficial.
+- O código já está preparado para três destinos de publicação real:
+  - `feed` com `image_url + caption`
+  - `story` com `image_url`
+  - `both` para enviar aos dois destinos na mesma execução
+- O ciclo recomendado do bot é:
+  - primeira publicação em `both`
+  - republicações em `story`
+  - nenhuma nova ida ao feed depois que `instagram_feed_publicado=true`
 - Os cards de publicação agora são gerados em `JPEG`, formato compatível com a etapa de publish da API oficial.
 - Os scrapers usam configuração em `data/fontes.json` e toleram falhas por fonte.
 - A extração de prazos usa heurísticas, leitura de PDF e alguns endpoints auxiliares quando a página oficial expõe cronograma fora do HTML principal.

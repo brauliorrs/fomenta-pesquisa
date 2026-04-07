@@ -135,6 +135,7 @@ function normalizeItem(item) {
     card_deadline: repairText(queueEntry?.card_deadline ?? item.card_deadline),
     card_summary: repairText(queueEntry?.card_summary ?? item.card_summary),
     card_handle: repairText(queueEntry?.card_handle ?? item.card_handle),
+    card_footer_note: repairText(queueEntry?.card_footer_note ?? item.card_footer_note),
     queuePosition: queueEntry?.posicao_fila ?? null,
     queueUrgency: queueEntry?.urgencia_dias ?? null,
   };
@@ -278,6 +279,7 @@ function renderCards(items) {
     const instagramCardDeadline = fragment.querySelector('.instagram-card-deadline');
     const instagramCardSummary = fragment.querySelector('.instagram-card-summary');
     const instagramCardHandle = fragment.querySelector('.instagram-card-handle');
+    const instagramCardFooterNote = fragment.querySelector('.instagram-card-footer-note');
 
     const badge = deadlineBadge(item);
     const quality = Number.isFinite(Number(item.score_editorial)) ? Number(item.score_editorial) : 0;
@@ -313,6 +315,7 @@ function renderCards(items) {
     instagramCardDeadline.textContent = item.card_deadline || 'PRAZO A DEFINIR';
     instagramCardSummary.textContent = item.card_summary || item.resumo || 'Resumo não informado.';
     instagramCardHandle.textContent = item.card_handle || '@editais.pesquisa';
+    instagramCardFooterNote.textContent = item.card_footer_note || 'Link e detalhes no post do perfil';
     title.textContent = item.titulo;
     summary.textContent = item.resumo || 'Resumo não informado.';
     caption.textContent = item.instagram_caption || 'Legenda indisponível.';

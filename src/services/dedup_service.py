@@ -62,6 +62,10 @@ class DedupService:
                 'data_ultima_coleta',
                 'hash_conteudo',
                 'instagram_caption',
+                'instagram_story_asset',
+                'instagram_feed_publicado',
+                'instagram_feed_media_id',
+                'instagram_story_media_id',
                 'pronto_para_postagem',
                 'motivo_bloqueio_postagem',
                 'revisao_humana_obrigatoria',
@@ -122,6 +126,18 @@ class DedupService:
                 int(current.get('quantidade_postagens', 0) or 0),
                 int(item.get('quantidade_postagens', 0) or 0),
             )
+            current['instagram_feed_publicado'] = bool(
+                current.get('instagram_feed_publicado') or item.get('instagram_feed_publicado')
+            )
+            current['instagram_feed_media_id'] = str(
+                current.get('instagram_feed_media_id') or item.get('instagram_feed_media_id') or ''
+            )
+            current['instagram_story_media_id'] = str(
+                item.get('instagram_story_media_id') or current.get('instagram_story_media_id') or ''
+            )
+            current['instagram_story_asset'] = str(
+                item.get('instagram_story_asset') or current.get('instagram_story_asset') or ''
+            )
             current['ultima_postagem'] = max(
                 str(current.get('ultima_postagem') or ''),
                 str(item.get('ultima_postagem') or ''),
@@ -132,6 +148,10 @@ class DedupService:
 
     def _resolve_field_value(self, field_name: str, current_value, incoming_value):
         if field_name in {'data_abertura', 'data_expiracao', 'resumo', 'publico_alvo'} and current_value and not incoming_value:
+            return current_value
+        if field_name == 'instagram_feed_publicado':
+            return bool(current_value or incoming_value)
+        if field_name in {'instagram_feed_media_id', 'instagram_story_media_id', 'instagram_story_asset'} and current_value and not incoming_value:
             return current_value
         if field_name == 'link' and current_value and incoming_value:
             current_is_confap = 'news.confap.org.br' in str(current_value).lower()

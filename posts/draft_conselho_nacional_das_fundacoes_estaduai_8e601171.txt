@@ -1,21 +1,25 @@
 [MOCK INSTAGRAM DRAFT]
 id: conselho_nacional_das_fundacoes_estaduai_8e601171
 fonte: CONFAP
-orgao: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
+orgao: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa
 prazo: 2026-04-24
-card: draft_conselho_nacional_das_fundacoes_estaduai_8e601171.jpg
+card_feed: draft_conselho_nacional_das_fundacoes_estaduai_8e601171.jpg
+card_story: draft_conselho_nacional_das_fundacoes_estaduai_8e601171_story.jpg
 
-Edital no radar: Fapesb lança nova edição do edital MOVE para eventos científicos no exterior
+Oportunidade no radar: Fapesb lança nova edição do edital MOVE para eventos científicos no exterior
 
-Órgão: Conselho Nacional das Fundacoes Estaduais de Amparo a Pesquisa
-Público: Pesquisadores e instituicoes de pesquisa
-Abertura: Não informado
-Prazo: 24/04/2026
+Após o sucesso da primeira edição, a Fundação de Amparo à Pesquisa do Estado da Bahia (Fapesb), órgão vinculado à Secretaria de Ciência, Tecnologia e Inovação (Secti), lançou, na terça-feira (10), uma nova edição do Edital MOVE – Participação de Pesquisadores em Eventos no Exterior.
 
-Resumo: Após o sucesso da primeira edição, a Fundação de Amparo à Pesquisa do Estado da Bahia (Fapesb), órgão vinculado à Secretaria de Ciência, Tecnologia e Inovação (Secti), lançou, na terça-feira (10), uma nova edição do E...
+Instituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa
+Público-alvo: Pesquisadores e instituições de pesquisa
+Tipo: Pesquisa
+Abertura das inscrições: Não informado
+Prazo final: 24/04/2026
 
-Link oficial: https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+Link oficial para copiar e colar no navegador:
+https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
 
-Salve este post para consultar depois e compartilhe com quem pode se interessar.
+Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
+No post do perfil, o link oficial e mais informações ficam logo abaixo na legenda.
 
 #Edital #Pesquisa #OportunidadeAcademica #CONFAP #FomentoPesquisa

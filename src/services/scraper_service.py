@@ -546,6 +546,10 @@ class ScraperService:
             'status': 'novo',
             'pronto_para_postagem': False,
             'motivo_bloqueio_postagem': '',
+            'instagram_feed_publicado': False,
+            'instagram_feed_media_id': '',
+            'instagram_story_media_id': '',
+            'instagram_story_asset': '',
         }
         normalized['hash_conteudo'] = self.normalize_service.content_hash(normalized)
         edital = Edital(**normalized)
