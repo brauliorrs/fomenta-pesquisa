@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass, replace
 from datetime import date
 from pathlib import Path
@@ -245,7 +246,7 @@ class InstagramService:
             "access_token": self.settings.instagram_access_token,
         }
         response = requests.post(self._graph_url("media"), data=payload, timeout=60)
-        response.raise_for_status()
+        self._raise_for_status_with_details(response, "Falha ao criar container de feed")
         return response.json()["id"]
 
     def _create_story_container(self, media_url: str) -> str:
@@ -255,7 +256,7 @@ class InstagramService:
             "access_token": self.settings.instagram_access_token,
         }
         response = requests.post(self._graph_url("media"), data=payload, timeout=60)
-        response.raise_for_status()
+        self._raise_for_status_with_details(response, "Falha ao criar container de story")
         return response.json()["id"]
 
     def _publish_container(self, creation_id: str) -> str:
@@ -296,7 +297,7 @@ class InstagramService:
             params={"fields": "status_code", "access_token": token},
             timeout=60,
         )
-        response.raise_for_status()
+        self._raise_for_status_with_details(response, "Falha ao consultar status do container")
         return str(response.json().get("status_code", "")).upper() or "UNKNOWN"
 
     def _graph_url(self, edge: str) -> str:
@@ -306,6 +307,17 @@ class InstagramService:
         if not ig_user_id or not self.settings.instagram_access_token:
             raise ValueError(self._credentials_hint())
         return f"{host}/{version}/{ig_user_id}/{edge}"
+
+    def _raise_for_status_with_details(self, response: requests.Response, context: str) -> None:
+        try:
+            response.raise_for_status()
+        except requests.HTTPError as exc:
+            detail = response.text.strip()
+            try:
+                detail = json.dumps(response.json(), ensure_ascii=False)
+            except Exception:
+                detail = detail[:1000]
+            raise RuntimeError(f"{context}: HTTP {response.status_code} - {detail}") from exc
 
     def _credentials_hint(self) -> str:
         host = self.settings.instagram_api_host.lower()
