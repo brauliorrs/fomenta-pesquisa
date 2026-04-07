@@ -30,6 +30,7 @@ jobs:
       - name: Run bot
         env:
           INSTAGRAM_PUBLISH_MODE: ${{ secrets.INSTAGRAM_PUBLISH_MODE }}
+          INSTAGRAM_DEFER_PUBLISH: "true"
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
           INSTAGRAM_API_HOST: ${{ secrets.INSTAGRAM_API_HOST }}
@@ -43,11 +44,45 @@ jobs:
           TIMEZONE: America/Sao_Paulo
         run: python -m src.main
 
-      - name: Commit data changes
+      - name: Commit prepared assets
+        id: commit_assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/editais.json data/historico_postagens.csv logs/bot.log posts
-          git diff --cached --quiet && exit 0
+          if git diff --cached --quiet; then
+            echo "assets_changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           git commit -m "update: editais $(date -u +'%Y-%m-%d %H:%M')"
+          git push
+          echo "assets_changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for public assets
+        if: steps.commit_assets.outputs.assets_changed == 'true'
+        env:
+          PUBLIC_ASSET_BASE_URL: ${{ secrets.PUBLIC_ASSET_BASE_URL }}
+        run: python -m src.wait_for_public_assets
+
+      - name: Publish ready items
+        env:
+          INSTAGRAM_PUBLISH_MODE: ${{ secrets.INSTAGRAM_PUBLISH_MODE }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          INSTAGRAM_API_HOST: ${{ secrets.INSTAGRAM_API_HOST }}
+          INSTAGRAM_API_VERSION: ${{ secrets.INSTAGRAM_API_VERSION }}
+          PUBLIC_ASSET_BASE_URL: ${{ secrets.PUBLIC_ASSET_BASE_URL }}
+          INSTAGRAM_PUBLISH_STORIES: ${{ secrets.INSTAGRAM_PUBLISH_STORIES }}
+          META_APP_ID: ${{ secrets.META_APP_ID }}
+          META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TIMEZONE: America/Sao_Paulo
+        run: python -m src.publish_pending
+
+      - name: Commit publish results
+        run: |
+          git add data/editais.json data/historico_postagens.csv logs/bot.log
+          git diff --cached --quiet && exit 0
+          git commit -m "publish: instagram $(date -u +'%Y-%m-%d %H:%M')"
           git push

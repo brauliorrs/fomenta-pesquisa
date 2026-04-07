@@ -43,7 +43,24 @@ class InstagramService:
 
     def publish(self, edital: Edital) -> PublicationResult:
         assets = self.build_draft_assets(edital, prefix='post')
+        return self._publish_assets(edital, assets)
 
+    def publish_prepared_asset(
+        self,
+        edital: Edital,
+        image_path: str | None = None,
+        mock_path: str | None = None,
+    ) -> PublicationResult:
+        resolved_image_path = image_path or edital.instagram_asset
+        if not resolved_image_path:
+            raise ValueError('Nenhum asset preparado encontrado para publicacao.')
+        assets = DraftAssets(
+            image_path=resolved_image_path,
+            mock_path=mock_path or edital.instagram_mock_asset,
+        )
+        return self._publish_assets(edital, assets)
+
+    def _publish_assets(self, edital: Edital, assets: DraftAssets) -> PublicationResult:
         if self.settings.instagram_publish_mode.lower() != 'real':
             return PublicationResult(
                 success=True,
@@ -131,6 +148,9 @@ class InstagramService:
         if not base_url:
             raise ValueError('PUBLIC_ASSET_BASE_URL nao configurada. A Meta exige URL publica para publicar a midia.')
         return urljoin(base_url.rstrip('/') + '/', asset_name)
+
+    def public_asset_url(self, asset_name: str) -> str:
+        return self._public_asset_url(asset_name)
 
     def _create_feed_container(self, media_url: str, caption: str) -> str:
         payload = {

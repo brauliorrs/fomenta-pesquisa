@@ -20,6 +20,7 @@ load_dotenv(ROOT_DIR / ".env")
 class Settings:
     timezone: str = os.getenv("TIMEZONE", "America/Sao_Paulo")
     instagram_publish_mode: str = os.getenv("INSTAGRAM_PUBLISH_MODE", "mock")
+    instagram_defer_publish: bool = os.getenv("INSTAGRAM_DEFER_PUBLISH", "false").lower() == "true"
     instagram_access_token: str = os.getenv("INSTAGRAM_ACCESS_TOKEN", "")
     instagram_business_account_id: str = os.getenv("INSTAGRAM_BUSINESS_ACCOUNT_ID", "")
     instagram_api_host: str = os.getenv("INSTAGRAM_API_HOST", "https://graph.instagram.com")

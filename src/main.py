@@ -213,28 +213,32 @@ def main() -> None:
     history_rows = storage.read_csv(settings.historico_postagens_path)
     reposted = 0
     blocked = 0
-    for edital in merged_payload:
-        if edital.get('status') == 'encerrado':
-            continue
-        if not edital.get('pronto_para_postagem'):
-            blocked += 1
-            continue
-        if repost_service.should_repost(edital.get('data_expiracao'), edital.get('ultima_postagem'), now):
-            result = instagram_service.publish(Edital(**edital))
-            edital['ultima_postagem'] = now_iso
-            edital['quantidade_postagens'] = int(edital.get('quantidade_postagens', 0)) + 1
-            edital['instagram_asset'] = result.asset_path
-            edital['instagram_mock_asset'] = result.payload.get('mock_path', '')
-            history_rows.append(
-                {
-                    'edital_id': edital['id'],
-                    'data_publicacao': now_iso,
-                    'status': 'success' if result.success else 'failed',
-                    'asset_path': result.asset_path,
-                    'mensagem': result.message,
-                }
-            )
-            reposted += 1
+    if settings.instagram_defer_publish:
+        logger.info('Publicacao adiada para etapa posterior ao sync dos assets publicos.')
+    else:
+        for edital in merged_payload:
+            if edital.get('status') == 'encerrado':
+                continue
+            if not edital.get('pronto_para_postagem'):
+                blocked += 1
+                continue
+            if repost_service.should_repost(edital.get('data_expiracao'), edital.get('ultima_postagem'), now):
+                result = instagram_service.publish(Edital(**edital))
+                if result.success:
+                    edital['ultima_postagem'] = now_iso
+                    edital['quantidade_postagens'] = int(edital.get('quantidade_postagens', 0)) + 1
+                    edital['instagram_asset'] = result.asset_path
+                    edital['instagram_mock_asset'] = result.payload.get('mock_path', edital.get('instagram_mock_asset', ''))
+                    reposted += 1
+                history_rows.append(
+                    {
+                        'edital_id': edital['id'],
+                        'data_publicacao': now_iso,
+                        'status': 'success' if result.success else 'failed',
+                        'asset_path': result.asset_path,
+                        'mensagem': result.message,
+                    }
+                )
 
     storage.write_json(settings.editais_path, merged_payload)
     storage.write_csv(
