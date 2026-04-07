@@ -6,6 +6,7 @@ from typing import Any
 from src.config import settings
 from src.models import Edital
 from src.services.instagram_service import InstagramService
+from src.services.publication_queue_service import PublicationQueueService
 from src.services.storage_service import StorageService
 from src.utils.dates import parse_date
 from src.utils.dates import now_in_timezone
@@ -203,6 +204,7 @@ def main() -> None:
     logger = configure_logger(settings.log_file_path)
     storage = StorageService()
     instagram_service = InstagramService(settings)
+    queue_service = PublicationQueueService(storage, settings.publication_queue_path)
 
     now = now_in_timezone(settings.timezone)
     now_iso = now.isoformat()
@@ -240,6 +242,7 @@ def main() -> None:
                 if edital.get('instagram_story_media_id'):
                     posted_story_today_ids.add(edital.get('id', ''))
 
+        queue_service.export(editais, now_iso)
         storage.write_json(settings.editais_path, editais)
         storage.write_csv(
             settings.historico_postagens_path,
@@ -286,6 +289,7 @@ def main() -> None:
             published += 1
             break
 
+    queue_service.export(editais, now_iso)
     storage.write_json(settings.editais_path, editais)
     storage.write_csv(
         settings.historico_postagens_path,

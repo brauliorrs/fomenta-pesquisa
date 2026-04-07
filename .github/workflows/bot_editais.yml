@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editais.json data/historico_postagens.csv logs/bot.log posts
+          git add data/editais.json data/fila_publicacao.json data/historico_postagens.csv logs/bot.log posts
           if git diff --cached --quiet; then
             echo "assets_changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -93,7 +93,7 @@ jobs:
 
       - name: Commit publish results
         run: |
-          git add data/editais.json data/historico_postagens.csv logs/bot.log
+          git add data/editais.json data/fila_publicacao.json data/historico_postagens.csv logs/bot.log
           git diff --cached --quiet && exit 0
           git commit -m "publish: instagram $(date -u +'%Y-%m-%d %H:%M')"
           git push
