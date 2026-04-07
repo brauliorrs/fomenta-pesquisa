@@ -119,6 +119,7 @@ Variables:
 - `INSTAGRAM_PUBLISH_MODE`
 - `INSTAGRAM_API_HOST`
 - `INSTAGRAM_API_VERSION`
+- `INSTAGRAM_BOOTSTRAP_PUBLISH_ALL`
 - `PUBLIC_ASSET_BASE_URL`
 - `INSTAGRAM_PUBLISH_TARGET`
 - `INSTAGRAM_REPOST_TARGET`
@@ -147,11 +148,24 @@ O workflow já usa `github.repository` e `github.token`, então não é necessá
   - `story` com `image_url`
   - `both` para enviar aos dois destinos na mesma execução
 - O ciclo recomendado do bot é:
-  - primeira publicação em `both`
-  - republicações em `story`
-  - nenhuma nova ida ao feed depois que `instagram_feed_publicado=true`
+  - primeira carga manual com `workflow_dispatch` e `publish_all_ready=true` para publicar todos os itens inéditos já prontos
+  - execuções agendadas às `00:00` e `12:00` para pesquisar os fomentadores, atualizar a fila e publicar o próximo item novo
+  - repost diário em `story` para edital válido, conforme `INSTAGRAM_REPOST_TARGET=story`
+  - nenhuma nova ida ao feed depois que `instagram_feed_publicado=true`, a menos que você limpe o histórico conscientemente
 - Os cards de publicação agora são gerados em `JPEG`, formato compatível com a etapa de publish da API oficial.
 - Os scrapers usam configuração em `data/fontes.json` e toleram falhas por fonte.
 - A extração de prazos usa heurísticas, leitura de PDF e alguns endpoints auxiliares quando a página oficial expõe cronograma fora do HTML principal.
 - Quando não houver mudanças, o workflow evita falha no commit.
 - O workflow do GitHub Actions está configurado em UTC para equivaler a `00:00` e `12:00` de `America/Sao_Paulo` no cenário atual, usando `0 3,15 * * *`.
+
+## Primeira carga de publicacao
+
+Para fazer a primeira carga com todos os itens prontos da fila:
+
+1. Abra `Actions` no GitHub.
+2. Escolha o workflow `Bot Editais`.
+3. Clique em `Run workflow`.
+4. Marque `publish_all_ready=true`.
+5. Execute manualmente.
+
+Nessa execucao manual, o bot publica todos os itens prontos e ainda inéditos, com `feed + story` conforme a configuracao atual.

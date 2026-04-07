@@ -2,6 +2,12 @@ name: Bot Editais
 
 on:
   workflow_dispatch:
+    inputs:
+      publish_all_ready:
+        description: "Publicar todos os itens prontos da fila nesta execucao manual"
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: "0 3,15 * * *"
 
@@ -82,6 +88,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_TOKEN: ${{ github.token }}
           TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
+          INSTAGRAM_BOOTSTRAP_PUBLISH_ALL: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_all_ready && 'true' || 'false' }}
         run: python -m src.publish_pending
 
       - name: Commit publish results

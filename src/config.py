@@ -42,6 +42,7 @@ class Settings:
     instagram_publish_target: str = env_or_default("INSTAGRAM_PUBLISH_TARGET", "both").lower()
     instagram_repost_target: str = env_or_default("INSTAGRAM_REPOST_TARGET", "story").lower()
     instagram_publish_stories: bool = env_flag("INSTAGRAM_PUBLISH_STORIES", default=False)
+    instagram_bootstrap_publish_all: bool = env_flag("INSTAGRAM_BOOTSTRAP_PUBLISH_ALL", default=False)
     meta_app_id: str = env_or_default("META_APP_ID", "")
     meta_app_secret: str = env_or_default("META_APP_SECRET", "")
     github_repository: str = env_or_default("GITHUB_REPOSITORY", "")
