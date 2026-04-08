@@ -48,6 +48,27 @@
       "status_integracao": "integrada",
       "prioridade": "ativa",
       "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "BNDES",
+      "nome": "Banco Nacional de Desenvolvimento Economico e Social",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "DECIT",
+      "nome": "Departamento de Ciencia e Tecnologia do Ministerio da Saude",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "ABDI",
+      "nome": "Agencia Brasileira de Desenvolvimento Industrial",
+      "status_integracao": "pendente",
+      "prioridade": "ativa",
+      "estrategia": "avaliar_bloqueio_cloudflare"
     }
   ],
   "estaduais": [
@@ -246,15 +267,17 @@
   "observacoes": {
     "integradas_runtime": [
       "ANP",
+      "BASA",
+      "BNDES",
       "CAPES",
       "CNPQ",
       "CONFAP",
+      "DECIT",
       "IPEA",
       "FIOCRUZ",
       "EMBRAPA",
       "EMBRAPII",
       "FUNDECI",
-      "BASA",
       "FINEP",
       "FAPESP",
       "FAPEMIG",

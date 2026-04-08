@@ -18,9 +18,11 @@ from src.services.normalize_service import NormalizeService
 from src.services.render_service import RenderService
 from src.sources.anp import ANPSource
 from src.sources.basa import BASASource
+from src.sources.bndes import BNDESSource
 from src.sources.capes import CAPESSource
 from src.sources.cnpq import CNPQSource
 from src.sources.confap import CONFAPSource
+from src.sources.decit import DECITSource
 from src.sources.embrapa import EMBRAPASource
 from src.sources.embrapii import EMBRAPIISource
 from src.sources.facepe import FACEPESource
@@ -102,9 +104,11 @@ class ScraperService:
         mapping = {
             'ANP': ANPSource,
             'BASA': BASASource,
+            'BNDES': BNDESSource,
             'CNPQ': CNPQSource,
             'CAPES': CAPESSource,
             'CONFAP': CONFAPSource,
+            'DECIT': DECITSource,
             'EMBRAPA': EMBRAPASource,
             'EMBRAPII': EMBRAPIISource,
             'FACEPE': FACEPESource,

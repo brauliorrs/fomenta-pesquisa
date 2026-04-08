@@ -130,6 +130,19 @@
     }
   },
   {
+    "nome": "Banco Nacional de Desenvolvimento Economico e Social",
+    "sigla": "BNDES",
+    "uf": "BR",
+    "site_oficial": "https://www.bndes.gov.br",
+    "pagina_editais": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
     "nome": "Financiadora de Estudos e Projetos",
     "sigla": "FINEP",
     "uf": "BR",
@@ -140,6 +153,19 @@
     "parser": "generic",
     "selectors": {
       "item": ".item"
+    }
+  },
+  {
+    "nome": "Departamento de Ciencia e Tecnologia do Ministerio da Saude",
+    "sigla": "DECIT",
+    "uf": "BR",
+    "site_oficial": "https://www.gov.br/saude",
+    "pagina_editais": "https://www.gov.br/saude/pt-br/assuntos/noticias",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a.summary.url"
     }
   },
   {

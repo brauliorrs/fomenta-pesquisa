@@ -5,7 +5,7 @@ Bot em Python para monitorar editais de pesquisa, manter memória em arquivos ve
 ## O que esta versão entrega
 
 - Estrutura modular para evolução do projeto
-- Coleta ativa de ANP, CNPq, CAPES, CONFAP, IPEA, Fiocruz, Embrapa, EMBRAPII, Fundeci, Banco da Amazonia, Finep, FAPESP, FAPERJ, FACEPE, FAPAC, FAPEAL, FAPEAP, FAPEAM, FAPESB, FUNCAP, FAPDF, FAPES, FAPEG, FAPEMA, FAPEMAT, FUNDECT, FAPEMIG, FAPESPA, FAPESQ, FAPPR, FAPEPI, FAPERN, FAPERGS, FAPERO, FAPITEC, FAPT, FAPESC e Serrapilheira
+- Coleta ativa de ANP, CNPq, CAPES, CONFAP, IPEA, Fiocruz, Embrapa, EMBRAPII, Fundeci, Banco da Amazonia, BNDES, DECIT, Finep, FAPESP, FAPERJ, FACEPE, FAPAC, FAPEAL, FAPEAP, FAPEAM, FAPESB, FUNCAP, FAPDF, FAPES, FAPEG, FAPEMA, FAPEMAT, FUNDECT, FAPEMIG, FAPESPA, FAPESQ, FAPPR, FAPEPI, FAPERN, FAPERGS, FAPERO, FAPITEC, FAPT, FAPESC e Serrapilheira
 - Enriquecimento com resumo, links oficiais e extração de datas em HTML, PDF e endpoints JSON
 - Memória persistida em `data/editais.json` e `data/historico_postagens.csv`
 - Fila editorial pronta em `data/fila_publicacao.json`
