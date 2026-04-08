@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -64,7 +66,16 @@ jobs:
             exit 0
           fi
           git commit -m "update: editais $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          pushed=false
+          for attempt in 1 2 3; do
+            if git push; then
+              pushed=true
+              break
+            fi
+            git fetch origin main
+            git pull --rebase origin main
+          done
+          test "$pushed" = "true"
           echo "assets_changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Wait for public assets
@@ -98,4 +109,13 @@ jobs:
           git add data/editais.json data/fila_publicacao.json data/historico_postagens.csv logs/bot.log
           git diff --cached --quiet && exit 0
           git commit -m "publish: instagram $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          pushed=false
+          for attempt in 1 2 3; do
+            if git push; then
+              pushed=true
+              break
+            fi
+            git fetch origin main
+            git pull --rebase origin main
+          done
+          test "$pushed" = "true"
