@@ -1209,3 +1209,28 @@ requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', por
 2026-04-07 18:58:47,900 [INFO] Tentando publicar item da carga inicial coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
 2026-04-07 18:59:08,414 [INFO] Carga inicial habilitada. Tentativas de publicacao apos sync: 7
 2026-04-07 18:59:08,415 [INFO] Carga inicial habilitada. Publicacoes concluidas apos sync: 7
+2026-04-08 05:13:15,113 [INFO] Inicio da execucao
+2026-04-08 05:13:16,477 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-08 05:13:19,317 [INFO] Fonte CAPES retornou 2 itens
+2026-04-08 05:13:22,474 [INFO] Fonte CONFAP retornou 12 itens
+2026-04-08 05:13:29,592 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-08 05:13:31,787 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-08 05:13:34,267 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-08 05:14:20,098 [WARNING] Falha ao enriquecer item https://www.facepe.br/wp-content/uploads/2026/03/Edital_PBPP_09_2026-2.pdf: HTTPSConnectionPool(host='www.facepe.br', port=443): Read timed out. (read timeout=30)
+2026-04-08 05:15:08,031 [WARNING] Falha ao enriquecer item https://www.facepe.br/wp-content/uploads/2026/03/2026.03.03-Compet-Mulheres-31.pdf: HTTPSConnectionPool(host='www.facepe.br', port=443): Read timed out. (read timeout=30)
+2026-04-08 05:15:10,325 [WARNING] Falha ao enriquecer item https://inscricoes.premiocbmm.com.br/cadastrar-instituicao: 404 Client Error: Not Found for url: https://inscricoes.premiocbmm.com.br/cadastrar-instituicao
+2026-04-08 05:15:11,305 [INFO] Fonte IPEA retornou 10 itens
+2026-04-08 05:15:21,921 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-04-08 05:15:41,060 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-04-08 05:15:43,032 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-04-08 05:15:45,400 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-04-08 05:15:47,996 [INFO] Fonte FINEP retornou 10 itens
+2026-04-08 05:16:04,481 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-04-08 05:16:39,183 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-08 05:16:39,185 [INFO] Total coletado: 63
+2026-04-08 05:16:39,186 [INFO] Novos: 36 | Prorrogados: 7 | Atualizados: 9 | Mantidos: 11 | Deduplicados por chave: 3
+2026-04-08 05:16:39,186 [INFO] Repostados/Publicados: 0
+2026-04-08 05:16:39,186 [INFO] Bloqueados para postagem: 0
+2026-04-08 05:16:39,186 [INFO] Expirados removidos da base: 37
+2026-04-08 05:16:39,186 [INFO] Erros por fonte: 0
+2026-04-08 05:16:39,186 [INFO] Fim da execucao
