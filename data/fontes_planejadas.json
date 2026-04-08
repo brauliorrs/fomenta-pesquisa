@@ -34,6 +34,20 @@
       "status_integracao": "integrada",
       "prioridade": "ativa",
       "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "FUNDECI",
+      "nome": "Banco do Nordeste - Fundeci",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "BASA",
+      "nome": "Banco da Amazonia S.A.",
+      "status_integracao": "integrada",
+      "prioridade": "ativa",
+      "estrategia": "parser_dedicado"
     }
   ],
   "estaduais": [
@@ -239,6 +253,8 @@
       "FIOCRUZ",
       "EMBRAPA",
       "EMBRAPII",
+      "FUNDECI",
+      "BASA",
       "FINEP",
       "FAPESP",
       "FAPEMIG",

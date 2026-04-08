@@ -104,6 +104,32 @@
     }
   },
   {
+    "nome": "Banco do Nordeste - Fundeci",
+    "sigla": "FUNDECI",
+    "uf": "BR",
+    "site_oficial": "https://www.bnb.gov.br",
+    "pagina_editais": "https://www.bnb.gov.br/fundeci/editais",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "li.list-group-item"
+    }
+  },
+  {
+    "nome": "Banco da Amazonia S.A.",
+    "sigla": "BASA",
+    "uf": "BR",
+    "site_oficial": "https://www.bancoamazonia.com.br",
+    "pagina_editais": "https://www.bancoamazonia.com.br/edital-de-pesquisa-cientifica",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "main"
+    }
+  },
+  {
     "nome": "Financiadora de Estudos e Projetos",
     "sigla": "FINEP",
     "uf": "BR",

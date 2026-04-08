@@ -17,6 +17,7 @@ from src.models import Edital, SourceConfig
 from src.services.normalize_service import NormalizeService
 from src.services.render_service import RenderService
 from src.sources.anp import ANPSource
+from src.sources.basa import BASASource
 from src.sources.capes import CAPESSource
 from src.sources.cnpq import CNPQSource
 from src.sources.confap import CONFAPSource
@@ -49,6 +50,7 @@ from src.sources.faperj import FAPERJSource
 from src.sources.finep import FINEPSource
 from src.sources.fiocruz import FIOCRUZSource
 from src.sources.faps import FAPSource
+from src.sources.fundeci import FUNDECISource
 from src.sources.funcap import FUNCAPSource
 from src.sources.fundect import FUNDECTSource
 from src.sources.ipea import IPEASource
@@ -99,6 +101,7 @@ class ScraperService:
     def _build_source(self, config: SourceConfig):
         mapping = {
             'ANP': ANPSource,
+            'BASA': BASASource,
             'CNPQ': CNPQSource,
             'CAPES': CAPESSource,
             'CONFAP': CONFAPSource,
@@ -131,6 +134,7 @@ class ScraperService:
             'FINEP': FINEPSource,
             'FIOCRUZ': FIOCRUZSource,
             'FAP': FAPSource,
+            'FUNDECI': FUNDECISource,
             'FUNCAP': FUNCAPSource,
             'FUNDECT': FUNDECTSource,
             'IPEA': IPEASource,
