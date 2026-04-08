@@ -1234,3 +1234,7 @@ requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.ipea.gov.br', por
 2026-04-08 05:16:39,186 [INFO] Expirados removidos da base: 37
 2026-04-08 05:16:39,186 [INFO] Erros por fonte: 0
 2026-04-08 05:16:39,186 [INFO] Fim da execucao
+2026-04-08 05:17:36,943 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_45425c2e usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_45425c2e.jpg
+2026-04-08 05:17:56,554 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_d04b25ff usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_d04b25ff.jpg
+2026-04-08 05:18:05,028 [INFO] Tentativas de publicacao apos sync: 2
+2026-04-08 05:18:05,028 [INFO] Publicacoes concluidas apos sync: 2
