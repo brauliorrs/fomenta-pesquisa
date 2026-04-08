@@ -360,7 +360,7 @@ class InstagramService:
         draw = ImageDraw.Draw(image)
 
         header_font = self._load_font("regular", 28)
-        title_lines, title_font = self._fit_title_layout(title_text, max_width=self.FEED_WIDTH - 168, max_lines=3)
+        title_lines, title_font = self._fit_title_layout(title_text, max_width=self.FEED_WIDTH - 168, max_lines=4)
         summary_font = self._load_font("regular", 44)
         deadline_font = self._load_font("bold", 34)
         footer_font = self._load_font("regular", 28)
@@ -602,7 +602,7 @@ class InstagramService:
         max_width: int,
         max_lines: int,
     ) -> tuple[list[str], ImageFont.ImageFont | ImageFont.FreeTypeFont]:
-        candidates = (74, 70, 66, 62, 58)
+        candidates = (74, 70, 66, 62, 58, 54, 50, 46, 42, 38)
         for size in candidates:
             font = self._load_font("bold", size)
             lines = self._wrap_text_to_width(text, font, max_width, max_lines)
@@ -610,7 +610,7 @@ class InstagramService:
                 return lines, font
 
         fallback_font = self._load_font("bold", candidates[-1])
-        fallback_lines = self._wrap_text_to_width(text, fallback_font, max_width, max_lines, allow_overflow=False)
+        fallback_lines = self._wrap_text_to_width(text, fallback_font, max_width, max_lines, allow_overflow=True)
         return fallback_lines[:max_lines], fallback_font
 
     def _wrap_text_to_width(
