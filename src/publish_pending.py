@@ -106,6 +106,13 @@ def row_mentions_story_success(row: dict[str, Any]) -> bool:
     return 'story' in message
 
 
+def row_mentions_feed_success(row: dict[str, Any]) -> bool:
+    if str(row.get('status', '')).lower() != 'success':
+        return False
+    message = str(row.get('mensagem', '')).lower()
+    return 'feed' in message
+
+
 def story_posted_today(row: dict[str, Any], now) -> bool:
     if not row_mentions_story_success(row):
         return False
@@ -122,6 +129,19 @@ def ids_with_story_today(history_rows: list[dict[str, Any]], now) -> set[str]:
         if edital_id and story_posted_today(row, now):
             ids.add(edital_id)
     return ids
+
+
+def count_feed_publications_today(history_rows: list[dict[str, Any]], now) -> int:
+    total = 0
+    for row in history_rows:
+        if not row_mentions_feed_success(row):
+            continue
+        published_at = parse_date(row.get('data_publicacao'))
+        if published_at is None:
+            continue
+        if published_at.date() == now.date():
+            total += 1
+    return total
 
 
 def select_new_publication_candidates(
@@ -171,11 +191,11 @@ def attempt_publication(
     history_rows: list[dict[str, Any]],
     logger,
     reason: str,
-) -> bool:
+) -> Any | None:
     asset_path = edital.get('instagram_asset') or ''
     if not asset_path:
         logger.warning('Item %s sem asset preparado para publicacao.', edital.get('id'))
-        return False
+        return None
 
     asset_name = Path(asset_path).name
     logger.info('%s %s usando asset publico %s', reason, edital.get('id'), asset_name)
@@ -197,7 +217,7 @@ def attempt_publication(
             'mensagem': result.message,
         }
     )
-    return result.success
+    return result
 
 
 def main() -> None:
@@ -220,6 +240,9 @@ def main() -> None:
     story_enabled = 'story' in publish_targets
     story_reposts_enabled = 'story' in repost_targets
     posted_story_today_ids = ids_with_story_today(history_rows, now)
+    feed_publications_today = count_feed_publications_today(history_rows, now)
+    max_new_publications_per_day = max(0, settings.instagram_max_new_publications_per_day)
+    remaining_new_publications_today = max(0, max_new_publications_per_day - feed_publications_today)
 
     published = 0
     attempted = 0
@@ -233,14 +256,15 @@ def main() -> None:
         for edital in select_bootstrap_candidates(ordered_candidates, story_enabled):
             attempted += 1
             attempted_ids.add(edital.get('id', ''))
-            if attempt_publication(
+            result = attempt_publication(
                 edital,
                 instagram_service,
                 now_iso,
                 history_rows,
                 logger,
                 'Tentando publicar item da carga inicial',
-            ):
+            )
+            if result and result.success:
                 published += 1
                 if edital.get('instagram_story_media_id'):
                     posted_story_today_ids.add(edital.get('id', ''))
@@ -257,21 +281,37 @@ def main() -> None:
         logger.info('Carga inicial habilitada. Publicacoes concluidas apos sync: %s', published)
         return
 
-    for edital in select_new_publication_candidates(ordered_candidates, story_enabled):
-        attempted += 1
-        attempted_ids.add(edital.get('id', ''))
-        if attempt_publication(
-            edital,
-            instagram_service,
-            now_iso,
-            history_rows,
-            logger,
-            'Tentando publicar item prioritario da fila',
-        ):
-            published += 1
-            if edital.get('instagram_story_media_id'):
-                posted_story_today_ids.add(edital.get('id', ''))
-            break
+    if remaining_new_publications_today <= 0:
+        logger.info(
+            'Limite diario de novos posts no feed atingido: %s/%s.',
+            feed_publications_today,
+            max_new_publications_per_day,
+        )
+    else:
+        for edital in select_new_publication_candidates(ordered_candidates, story_enabled):
+            if remaining_new_publications_today <= 0:
+                break
+            attempted += 1
+            attempted_ids.add(edital.get('id', ''))
+            result = attempt_publication(
+                edital,
+                instagram_service,
+                now_iso,
+                history_rows,
+                logger,
+                'Tentando publicar item prioritario da fila',
+            )
+            if result and result.success:
+                published += 1
+                published_targets = result.payload.get('published_targets', [])
+                if 'feed' in published_targets:
+                    feed_publications_today += 1
+                    remaining_new_publications_today = max(
+                        0,
+                        max_new_publications_per_day - feed_publications_today,
+                    )
+                if 'story' in published_targets:
+                    posted_story_today_ids.add(edital.get('id', ''))
 
     for edital in select_story_repost_candidates(
         ordered_candidates,
@@ -281,14 +321,15 @@ def main() -> None:
     ):
         attempted += 1
         attempted_ids.add(edital.get('id', ''))
-        if attempt_publication(
+        result = attempt_publication(
             edital,
             instagram_service,
             now_iso,
             history_rows,
             logger,
             'Tentando repostar story diario para edital valido',
-        ):
+        )
+        if result and result.success:
             published += 1
             break
 
@@ -302,6 +343,11 @@ def main() -> None:
 
     logger.info('Tentativas de publicacao apos sync: %s', attempted)
     logger.info('Publicacoes concluidas apos sync: %s', published)
+    logger.info(
+        'Novos posts no feed hoje: %s/%s.',
+        feed_publications_today,
+        max_new_publications_per_day,
+    )
 
 
 if __name__ == '__main__':

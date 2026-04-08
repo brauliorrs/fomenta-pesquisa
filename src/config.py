@@ -29,6 +29,14 @@ def env_flag(name: str, default: bool = False) -> bool:
     return env_or_default(name, fallback).lower() == "true"
 
 
+def env_int(name: str, default: int) -> int:
+    value = env_or_default(name, str(default))
+    try:
+        return int(value)
+    except ValueError:
+        return default
+
+
 @dataclass(frozen=True)
 class Settings:
     timezone: str = env_or_default("TIMEZONE", "America/Sao_Paulo")
@@ -43,6 +51,7 @@ class Settings:
     instagram_repost_target: str = env_or_default("INSTAGRAM_REPOST_TARGET", "story").lower()
     instagram_publish_stories: bool = env_flag("INSTAGRAM_PUBLISH_STORIES", default=False)
     instagram_bootstrap_publish_all: bool = env_flag("INSTAGRAM_BOOTSTRAP_PUBLISH_ALL", default=False)
+    instagram_max_new_publications_per_day: int = env_int("INSTAGRAM_MAX_NEW_PUBLICATIONS_PER_DAY", 10)
     meta_app_id: str = env_or_default("META_APP_ID", "")
     meta_app_secret: str = env_or_default("META_APP_SECRET", "")
     github_repository: str = env_or_default("GITHUB_REPOSITORY", "")
