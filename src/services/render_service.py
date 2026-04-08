@@ -6,6 +6,7 @@ import re
 from src.models import Edital
 from src.services.normalize_service import NormalizeService
 from src.utils.dates import parse_date
+from src.utils.hashing import slugify
 
 
 class RenderService:
@@ -85,29 +86,108 @@ class RenderService:
             return f'Prazo encerra em {days_left} dias.'
         return ''
 
+    def _days_left(self, expiration_date: str | None) -> int | None:
+        parsed = parse_date(expiration_date)
+        if not parsed:
+            return None
+        return (parsed.date() - date.today()).days
+
     def _build_hashtags(self, edital: Edital) -> str:
-        tags = ['#Edital', '#Pesquisa', '#OportunidadeAcademica']
-        source_map = {
-            'CNPQ': '#CNPq',
-            'CAPES': '#CAPES',
-            'CONFAP': '#CONFAP',
-            'IPEA': '#IPEA',
-        }
-        source_tag = source_map.get(edital.fonte.upper())
+        tags: list[str] = []
+        title = self._display_text(edital.titulo).lower()
+        summary = self._display_text(edital.resumo).lower()
+        category = self._display_text(edital.categoria).lower()
+        audience = self._display_text(edital.publico_alvo).lower()
+        combined = ' '.join(part for part in (title, summary, category, audience) if part)
+        days_left = self._days_left(edital.data_expiracao)
+
+        for tag in ('EditalAberto', 'FomentoPesquisa', 'Pesquisa', 'Ciencia', 'OportunidadeAcademica'):
+            self._append_hashtag(tags, tag)
+
+        source_tag = self._build_source_hashtag(edital.fonte)
         if source_tag:
-            tags.append(source_tag)
+            self._append_hashtag(tags, source_tag)
 
-        category = edital.categoria.lower()
-        if 'bolsa' in category:
-            tags.append('#Bolsa')
-        if 'pesquisa' in category:
-            tags.append('#FomentoPesquisa')
+        if 'pesquisa' in category or 'pesquisa' in combined:
+            self._append_hashtag(tags, 'ProjetosDePesquisa')
+        if 'bolsa' in category or 'bolsa' in combined:
+            self._append_hashtag(tags, 'BolsaPesquisa')
+        if 'selec' in category or 'selecao' in combined or 'seleção' in combined:
+            self._append_hashtag(tags, 'Selecao')
+        if any(token in combined for token in ('chamada', 'chamamento', 'edital')):
+            self._append_hashtag(tags, 'ChamadaPublica')
+        if any(token in combined for token in ('inov', 'centelha', 'startup', 'empreendedor')):
+            self._append_hashtag(tags, 'Inovacao')
+            self._append_hashtag(tags, 'Empreendedorismo')
+        if any(token in combined for token in ('cooperacao', 'cooperação', 'internacional', 'brics')):
+            self._append_hashtag(tags, 'CooperacaoCientifica')
+        if any(token in combined for token in ('evento', 'congresso', 'seminario', 'seminário')):
+            self._append_hashtag(tags, 'EventosCientificos')
+        if any(token in combined for token in ('mulher', 'mulheres')):
+            self._append_hashtag(tags, 'MulheresNaCiencia')
 
-        unique_tags: list[str] = []
-        for tag in tags:
-            if tag not in unique_tags:
-                unique_tags.append(tag)
-        return ' '.join(unique_tags)
+        if any(token in audience for token in ('pesquis', 'cientista')):
+            self._append_hashtag(tags, 'Pesquisadores')
+        if 'institui' in audience:
+            self._append_hashtag(tags, 'InstituicoesDePesquisa')
+        if any(token in audience for token in ('estudant', 'discente')):
+            self._append_hashtag(tags, 'Estudantes')
+        if any(token in audience for token in ('academica', 'acadêmica', 'universidade', 'universitario', 'universitário')):
+            self._append_hashtag(tags, 'Universidades')
+        if edital.uf and edital.uf.upper() not in {'', 'BR'}:
+            self._append_hashtag(tags, f'Pesquisa{edital.uf.upper()}')
+        if days_left is not None and days_left <= 7:
+            self._append_hashtag(tags, 'PrazoFinal')
+
+        return ' '.join(tags[:10])
+
+    def _build_source_hashtag(self, fonte: str | None) -> str:
+        normalized = self._display_text(fonte).upper()
+        source_map = {
+            'ANP': 'ANP',
+            'CAPES': 'CAPES',
+            'CNPQ': 'CNPq',
+            'CONFAP': 'CONFAP',
+            'EMBRAPA': 'EMBRAPA',
+            'EMBRAPII': 'EMBRAPII',
+            'FACEPE': 'FACEPE',
+            'FAPEG': 'FAPEG',
+            'FAPEMA': 'FAPEMA',
+            'FAPEMAT': 'FAPEMAT',
+            'FAPEMIG': 'FAPEMIG',
+            'FAPERGS': 'FAPERGS',
+            'FAPERJ': 'FAPERJ',
+            'FAPES': 'FAPES',
+            'FAPESB': 'FAPESB',
+            'FAPESC': 'FAPESC',
+            'FAPESP': 'FAPESP',
+            'FAPPR': 'FundacaoAraucaria',
+            'FINEP': 'FINEP',
+            'FIOCRUZ': 'Fiocruz',
+            'FUNDECT': 'FUNDECT',
+            'IPEA': 'IPEA',
+            'SERRAPILHEIRA': 'Serrapilheira',
+        }
+        mapped = source_map.get(normalized)
+        if mapped:
+            return mapped
+
+        fallback = ''.join(part.capitalize() for part in slugify(normalized).split('_') if part)
+        return fallback
+
+    def _append_hashtag(self, tags: list[str], value: str | None) -> None:
+        token = self._normalize_hashtag_token(value)
+        if token and token not in tags:
+            tags.append(token)
+
+    def _normalize_hashtag_token(self, value: str | None) -> str:
+        normalized = self._display_text(value)
+        if not normalized:
+            return ''
+        token = re.sub(r'[^A-Za-z0-9]', '', normalized)
+        if len(token) < 2:
+            return ''
+        return f'#{token}'
 
     def _build_card_header(self, edital: Edital) -> str:
         source_map = {

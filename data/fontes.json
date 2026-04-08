@@ -1,5 +1,18 @@
 ﻿[
   {
+    "nome": "Agencia Nacional do Petroleo, Gas Natural e Biocombustiveis",
+    "sigla": "ANP",
+    "uf": "BR",
+    "site_oficial": "https://www.gov.br/anp/pt-br",
+    "pagina_editais": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/pesquisa-desenvolvimento-inovacao",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
     "nome": "Conselho Nacional de Desenvolvimento Cientifico e Tecnologico",
     "sigla": "CNPQ",
     "uf": "BR",
@@ -78,6 +91,19 @@
     }
   },
   {
+    "nome": "Empresa Brasileira de Pesquisa e Inovacao Industrial",
+    "sigla": "EMBRAPII",
+    "uf": "BR",
+    "site_oficial": "https://embrapii.org.br",
+    "pagina_editais": "https://embrapii.org.br/chamadas-publicas/chamada-publica-para-capacitacao-em-maturidade-para-grupos-de-pesquisa-em-icts-da-regiao-norte-n01-2026/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a.blue-left-block-list-link"
+    }
+  },
+  {
     "nome": "Financiadora de Estudos e Projetos",
     "sigla": "FINEP",
     "uf": "BR",
@@ -88,6 +114,344 @@
     "parser": "generic",
     "selectors": {
       "item": ".item"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado de Sao Paulo",
+    "sigla": "FAPESP",
+    "uf": "SP",
+    "site_oficial": "https://fapesp.br",
+    "pagina_editais": "https://fapesp.br/chamadas/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "h3 a"
+    }
+  },
+  {
+    "nome": "Fundacao Carlos Chagas Filho de Amparo a Pesquisa do Estado do Rio de Janeiro",
+    "sigla": "FAPERJ",
+    "uf": "RJ",
+    "site_oficial": "https://www.faperj.br",
+    "pagina_editais": "https://www.faperj.br/?id=28.5.7",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "p"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
+    "sigla": "FACEPE",
+    "uf": "PE",
+    "site_oficial": "https://www.facepe.br",
+    "pagina_editais": "https://www.facepe.br/editais/todos/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "h5 a"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Acre",
+    "sigla": "FAPAC",
+    "uf": "AC",
+    "site_oficial": "https://fapac.ac.gov.br",
+    "pagina_editais": "https://fapac.ac.gov.br/98-2/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado de Alagoas",
+    "sigla": "FAPEAL",
+    "uf": "AL",
+    "site_oficial": "https://www.fapeal.br",
+    "pagina_editais": "https://www.fapeal.br/pesquisador/editais/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "main a"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado do Piaui",
+    "sigla": "FAPEPI",
+    "uf": "PI",
+    "site_oficial": "https://www.fapepi.pi.gov.br",
+    "pagina_editais": "https://www.fapepi.pi.gov.br/editais-abertos/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "article"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa e Inovacao do Espirito Santo",
+    "sigla": "FAPES",
+    "uf": "ES",
+    "site_oficial": "https://fapes.es.gov.br",
+    "pagina_editais": "https://fapes.es.gov.br/editais-abertos-2",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "div.panel.panel-box"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado de Goias",
+    "sigla": "FAPEG",
+    "uf": "GO",
+    "site_oficial": "https://goias.gov.br/fapeg",
+    "pagina_editais": "https://goias.gov.br/fapeg/editais/inscricoes-abertas/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "table tr"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa e ao Desenvolvimento Cientifico e Tecnologico do Maranhao",
+    "sigla": "FAPEMA",
+    "uf": "MA",
+    "site_oficial": "https://www.fapema.br",
+    "pagina_editais": "https://www.fapema.br/category/editais-em-aberto/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "article"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado de Mato Grosso",
+    "sigla": "FAPEMAT",
+    "uf": "MT",
+    "site_oficial": "https://www.fapemat.mt.gov.br",
+    "pagina_editais": "https://www.fapemat.mt.gov.br/aberto",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "h3 a"
+    }
+  },
+  {
+    "nome": "Fundacao de Apoio ao Desenvolvimento do Ensino, Ciencia e Tecnologia do Estado de Mato Grosso do Sul",
+    "sigla": "FUNDECT",
+    "uf": "MS",
+    "site_oficial": "https://www.fundect.ms.gov.br",
+    "pagina_editais": "https://www.fundect.ms.gov.br/category/chamadas-abertas/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "article"
+    }
+  },
+  {
+    "nome": "Fundacao Amazonia de Amparo a Estudos e Pesquisas do Para",
+    "sigla": "FAPESPA",
+    "uf": "PA",
+    "site_oficial": "https://www.fapespa.pa.gov.br",
+    "pagina_editais": "https://www.fapespa.pa.gov.br/category/editais/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "h2 a"
+    }
+  },
+  {
+    "nome": "Fundacao de Apoio a Pesquisa do Estado da Paraiba",
+    "sigla": "FAPESQ",
+    "uf": "PB",
+    "site_oficial": "https://fapesq.rpp.br",
+    "pagina_editais": "https://fapesq.rpp.br/noticias/editais-com-prazo-de-submissao-de-propostas-aberto",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "article a"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado da Bahia",
+    "sigla": "FAPESB",
+    "uf": "BA",
+    "site_oficial": "https://www.fapesb.ba.gov.br",
+    "pagina_editais": "https://www.fapesb.ba.gov.br/category/edital/aberto/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "article"
+    }
+  },
+  {
+    "nome": "Fundacao Cearense de Apoio ao Desenvolvimento Cientifico e Tecnologico",
+    "sigla": "FUNCAP",
+    "uf": "CE",
+    "site_oficial": "https://www.funcap.ce.gov.br",
+    "pagina_editais": "https://www.funcap.ce.gov.br/editais/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "a"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado do Amazonas",
+    "sigla": "FAPEAM",
+    "uf": "AM",
+    "site_oficial": "https://www.fapeam.am.gov.br",
+    "pagina_editais": "https://www.fapeam.am.gov.br/editais/?aba=editais-abertos",
+    "tipo_coleta": "api",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "ajax-editais-abertos"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado do Amapa",
+    "sigla": "FAPEAP",
+    "uf": "AP",
+    "site_oficial": "https://fapeap.portal.ap.gov.br",
+    "pagina_editais": "https://fapeap.portal.ap.gov.br/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "tr.clickable-row"
+    }
+  },
+  {
+    "nome": "Fundacao de Apoio a Pesquisa do Distrito Federal",
+    "sigla": "FAPDF",
+    "uf": "DF",
+    "site_oficial": "https://www.fap.df.gov.br",
+    "pagina_editais": "https://www.fap.df.gov.br/editais-fapdf-20261",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "button.panel-header"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado de Minas Gerais",
+    "sigla": "FAPEMIG",
+    "uf": "MG",
+    "site_oficial": "https://fapemig.br",
+    "pagina_editais": "https://fapemig.br/oportunidades/chamadas-e-editais/",
+    "tipo_coleta": "api",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "api-export"
+    }
+  },
+  {
+    "nome": "Fundacao Araucaria de Apoio ao Desenvolvimento Cientifico e Tecnologico do Estado do Parana",
+    "sigla": "FAPPR",
+    "uf": "PR",
+    "site_oficial": "https://www.fappr.pr.gov.br",
+    "pagina_editais": "https://www.fappr.pr.gov.br/Programas-Abertos",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "div.row.two-col-right"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado do Rio Grande do Sul",
+    "sigla": "FAPERGS",
+    "uf": "RS",
+    "site_oficial": "https://fapergs.rs.gov.br",
+    "pagina_editais": "https://fapergs.rs.gov.br/abertos",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "div.row.two-col-right"
+    }
+  },
+  {
+    "nome": "Fundacao de Apoio a Pesquisa do Estado do Rio Grande do Norte",
+    "sigla": "FAPERN",
+    "uf": "RN",
+    "site_oficial": "https://www.fapern.rn.gov.br",
+    "pagina_editais": "https://www.fapern.rn.gov.br",
+    "tipo_coleta": "api",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "wp-json materia"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo ao Desenvolvimento das Acoes Cientificas e Tecnologicas e a Pesquisa do Estado de Rondonia",
+    "sigla": "FAPERO",
+    "uf": "RO",
+    "site_oficial": "https://rondonia.ro.gov.br/fapero",
+    "pagina_editais": "https://rondonia.ro.gov.br/fapero/publicacoes/2026-2/editais/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "h2"
+    }
+  },
+  {
+    "nome": "Fundacao de Apoio a Pesquisa e a Inovacao Tecnologica do Estado de Sergipe",
+    "sigla": "FAPITEC",
+    "uf": "SE",
+    "site_oficial": "https://fapitec.se.gov.br",
+    "pagina_editais": "https://fapitec.se.gov.br/editais-abertos/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "article"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa do Estado do Tocantins",
+    "sigla": "FAPT",
+    "uf": "TO",
+    "site_oficial": "https://www.to.gov.br/fapt",
+    "pagina_editais": "https://www.to.gov.br/fapt/01-editais-abertos/5sy36y0lf49g",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": ".page_extra_links a"
+    }
+  },
+  {
+    "nome": "Fundacao de Amparo a Pesquisa e Inovacao do Estado de Santa Catarina",
+    "sigla": "FAPESC",
+    "uf": "SC",
+    "site_oficial": "https://fapesc.sc.gov.br",
+    "pagina_editais": "https://fapesc.sc.gov.br/chamadas-abertas/",
+    "tipo_coleta": "html",
+    "ativo": true,
+    "parser": "generic",
+    "selectors": {
+      "item": "h3.upk-title a"
     }
   },
   {

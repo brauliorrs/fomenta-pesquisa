@@ -16,13 +16,41 @@ from requests.exceptions import SSLError
 from src.models import Edital, SourceConfig
 from src.services.normalize_service import NormalizeService
 from src.services.render_service import RenderService
+from src.sources.anp import ANPSource
 from src.sources.capes import CAPESSource
 from src.sources.cnpq import CNPQSource
 from src.sources.confap import CONFAPSource
 from src.sources.embrapa import EMBRAPASource
+from src.sources.embrapii import EMBRAPIISource
+from src.sources.facepe import FACEPESource
+from src.sources.fapac import FAPACSource
+from src.sources.fapeal import FAPEALSource
+from src.sources.fapeam import FAPEAMSource
+from src.sources.fapeap import FAPEAPSource
+from src.sources.fapepi import FAPEPISource
+from src.sources.fapdf import FAPDFSource
+from src.sources.fapes import FAPESSource
+from src.sources.fapesb import FAPESBSource
+from src.sources.fapesq import FAPESQSource
+from src.sources.fapeg import FAPEGSource
+from src.sources.fapema import FAPEMASource
+from src.sources.fapemat import FAPEMATSource
+from src.sources.fapern import FAPERNSource
+from src.sources.fapespa import FAPESPASource
+from src.sources.fapesp import FAPESPSource
+from src.sources.fapemig import FAPEMIGSource
+from src.sources.fapergs import FAPERGSSource
+from src.sources.fapero import FAPEROSource
+from src.sources.fapitec import FAPITECSource
+from src.sources.fapt import FAPTSource
+from src.sources.fapesc import FAPESCSource
+from src.sources.fappr import FAPPRSource
+from src.sources.faperj import FAPERJSource
 from src.sources.finep import FINEPSource
 from src.sources.fiocruz import FIOCRUZSource
 from src.sources.faps import FAPSource
+from src.sources.funcap import FUNCAPSource
+from src.sources.fundect import FUNDECTSource
 from src.sources.ipea import IPEASource
 from src.sources.serrapilheira import SERRAPILHEIRASource
 
@@ -56,6 +84,9 @@ class ScraperService:
     OPENING_HINTS = (
         'publicado em', 'publicada em', 'publicação em', 'publicacao em', 'lançada em', 'lancada em', 'divulgada em', 'abertura em', 'lançamento da chamada', 'lancamento da chamada'
     )
+    CLOSED_STATUS_HINTS = (
+        'encerrad', 'fechad', 'resultad', 'cancelad', 'revogad', 'suspens', 'analise', 'análise'
+    )
 
     STRICT_CONTEXT_SOURCES = {'CONFAP', 'CAPES'}
     OFFICIAL_LINK_EXCLUDE = ('news.confap.org.br', 'facebook.com', 'instagram.com', 'twitter.com', 'linkedin.com', 'youtube.com', 'confap.org.br', 'mailto:', 'tel:', 'mestradigital.com.br')
@@ -67,13 +98,41 @@ class ScraperService:
 
     def _build_source(self, config: SourceConfig):
         mapping = {
+            'ANP': ANPSource,
             'CNPQ': CNPQSource,
             'CAPES': CAPESSource,
             'CONFAP': CONFAPSource,
             'EMBRAPA': EMBRAPASource,
+            'EMBRAPII': EMBRAPIISource,
+            'FACEPE': FACEPESource,
+            'FAPAC': FAPACSource,
+            'FAPEAL': FAPEALSource,
+            'FAPEAM': FAPEAMSource,
+            'FAPEAP': FAPEAPSource,
+            'FAPEPI': FAPEPISource,
+            'FAPDF': FAPDFSource,
+            'FAPES': FAPESSource,
+            'FAPESB': FAPESBSource,
+            'FAPESQ': FAPESQSource,
+            'FAPEG': FAPEGSource,
+            'FAPEMA': FAPEMASource,
+            'FAPEMAT': FAPEMATSource,
+            'FAPERN': FAPERNSource,
+            'FAPESPA': FAPESPASource,
+            'FAPESP': FAPESPSource,
+            'FAPEMIG': FAPEMIGSource,
+            'FAPERGS': FAPERGSSource,
+            'FAPERO': FAPEROSource,
+            'FAPITEC': FAPITECSource,
+            'FAPT': FAPTSource,
+            'FAPESC': FAPESCSource,
+            'FAPPR': FAPPRSource,
+            'FAPERJ': FAPERJSource,
             'FINEP': FINEPSource,
             'FIOCRUZ': FIOCRUZSource,
             'FAP': FAPSource,
+            'FUNCAP': FUNCAPSource,
+            'FUNDECT': FUNDECTSource,
             'IPEA': IPEASource,
             'SERRAPILHEIRA': SERRAPILHEIRASource,
         }
@@ -85,6 +144,7 @@ class ScraperService:
     def collect(self, configs: list[SourceConfig], collected_at: str) -> tuple[list[Edital], list[dict[str, str]]]:
         editais: list[Edital] = []
         errors: list[dict[str, str]] = []
+        current_date = self.normalize_service.normalize_date(collected_at) or self._parse_collected_at(collected_at).date().isoformat()
 
         for config in configs:
             if not config.ativo:
@@ -94,14 +154,38 @@ class ScraperService:
                 raw_items = source.collect()
                 self.logger.info('Fonte %s retornou %s itens', config.sigla, len(raw_items))
                 for item in raw_items:
+                    if self._should_skip_closed_item(item, current_date):
+                        continue
                     enriched_item = self._enrich_item(item, collected_at)
+                    if self._should_skip_closed_item(enriched_item, current_date):
+                        continue
                     edital = self._to_edital(enriched_item, collected_at)
+                    if self._should_skip_closed_edital(edital, current_date):
+                        continue
                     editais.append(edital)
             except Exception as exc:
                 self.logger.exception('Erro ao processar fonte %s', config.sigla)
                 errors.append({'fonte': config.sigla, 'erro': str(exc)})
 
         return editais, errors
+
+    def _should_skip_closed_item(self, item: dict[str, Any], current_date: str) -> bool:
+        status = self.normalize_service.clean_text(item.get('status')).lower()
+        if status and any(hint in status for hint in self.CLOSED_STATUS_HINTS):
+            return True
+
+        expiration = self.normalize_service.normalize_date(item.get('data_expiracao'))
+        if expiration and expiration < current_date:
+            return True
+
+        return False
+
+    def _should_skip_closed_edital(self, edital: Edital, current_date: str) -> bool:
+        if edital.status == 'encerrado':
+            return True
+        if edital.data_expiracao and edital.data_expiracao < current_date:
+            return True
+        return False
 
     def _enrich_item(self, item: dict[str, Any], collected_at: str) -> dict[str, Any]:
         link = self.normalize_service.clean_url(item.get('link'))
