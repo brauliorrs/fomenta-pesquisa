@@ -64,13 +64,15 @@ class FAPEAMSource(BaseSource):
         return items
 
     def _fetch_page(self, page: int) -> dict[str, Any]:
-        response = requests.post(
-            self.AJAX_URL,
-            data={'tipo': 'editais-abertos', 'p': str(page), 'paginacao': '1'},
-            headers={**self.USER_AGENT, 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'},
-            timeout=self.timeout,
-        )
-        response.raise_for_status()
+        try:
+            response = self.request(
+                'POST',
+                self.AJAX_URL,
+                data={'tipo': 'editais-abertos', 'p': str(page), 'paginacao': '1'},
+                headers={**self.USER_AGENT, 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'},
+            )
+        except requests.RequestException:
+            return {}
         payload = response.json()
         return payload if isinstance(payload, dict) else {}
 
@@ -120,9 +122,8 @@ class FAPEAMSource(BaseSource):
 
     def _fetch_soup(self, url: str) -> BeautifulSoup | None:
         try:
-            response = requests.get(url, timeout=self.timeout, headers=self.USER_AGENT)
-            response.raise_for_status()
-        except Exception:
+            response = self.request('GET', url, headers=self.USER_AGENT)
+        except requests.RequestException:
             return None
         return BeautifulSoup(response.text, 'html.parser')
 

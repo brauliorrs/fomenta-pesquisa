@@ -459,7 +459,7 @@
     "sigla": "FAPERO",
     "uf": "RO",
     "site_oficial": "https://rondonia.ro.gov.br/fapero",
-    "pagina_editais": "https://rondonia.ro.gov.br/fapero/publicacoes/2026-2/editais/",
+    "pagina_editais": "https://rondonia.ro.gov.br/fapero/publicacoes/2026-2/",
     "tipo_coleta": "html",
     "ativo": true,
     "parser": "generic",

@@ -13,6 +13,8 @@ from src.sources.base_source import BaseSource
 class FAPERNSource(BaseSource):
     API_URL = 'https://www.fapern.rn.gov.br/wp-json/wp/v2/materia'
     USER_AGENT = {'User-Agent': 'editais-bot/1.0'}
+    PER_PAGE = 20
+    MAX_PAGES = 4
     INCLUDE_HINTS = ('edital', 'chamada', 'inscri', 'submiss', 'selec', 'bolsa')
     TITLE_EXCLUDE_HINTS = ('seminario', 'evento', 'reuniao', 'parceria', 'palestra', 'resultado', 'homologa')
     MONTHS = {
@@ -34,44 +36,39 @@ class FAPERNSource(BaseSource):
     def collect(self) -> list[dict[str, Any]]:
         items: list[dict[str, Any]] = []
         seen: set[str] = set()
-        page = 1
-        total_pages = 1
+        empty_pages = 0
 
-        while page <= total_pages:
-            response = requests.get(
-                self.API_URL,
-                params={'categories': 4, 'per_page': 50, 'page': page},
-                headers=self.USER_AGENT,
-                timeout=self.timeout,
-            )
-            if response.status_code == 400 and page > 1:
+        for page in range(1, self.MAX_PAGES + 1):
+            payload = self._fetch_page(page)
+            if payload is None:
                 break
-            response.raise_for_status()
-            total_pages = int(response.headers.get('X-WP-TotalPages', '1') or '1')
-            payload = response.json()
-            if not isinstance(payload, list):
-                break
+            if not payload:
+                empty_pages += 1
+                if page > 1:
+                    break
+                continue
 
+            page_relevant = 0
             for entry in payload:
                 item = self._build_item(entry)
                 if not item or item['link'] in seen:
                     continue
                 seen.add(item['link'])
                 items.append(item)
+                page_relevant += 1
 
-            page += 1
+            if page_relevant == 0:
+                empty_pages += 1
+                if empty_pages >= 2:
+                    break
+            else:
+                empty_pages = 0
 
         return items
 
     def fetch(self) -> str:
-        response = requests.get(
-            self.API_URL,
-            params={'categories': 4, 'per_page': 50, 'page': 1},
-            headers=self.USER_AGENT,
-            timeout=self.timeout,
-        )
-        response.raise_for_status()
-        return response.text
+        payload = self._fetch_page(1) or []
+        return json.dumps(payload, ensure_ascii=False)
 
     def parse(self, raw_content: str) -> list[dict[str, Any]]:
         payload = json.loads(raw_content)
@@ -87,6 +84,27 @@ class FAPERNSource(BaseSource):
             seen.add(item['link'])
             items.append(item)
         return items
+
+    def _fetch_page(self, page: int) -> list[dict[str, Any]] | None:
+        try:
+            response = self.request(
+                'GET',
+                self.API_URL,
+                params={'categories': 4, 'per_page': self.PER_PAGE, 'page': page},
+                headers=self.USER_AGENT,
+            )
+        except requests.HTTPError as exc:
+            status_code = exc.response.status_code if exc.response is not None else None
+            if page > 1 and status_code == 400:
+                return None
+            return []
+        except requests.RequestException:
+            return []
+
+        payload = response.json()
+        if not isinstance(payload, list):
+            return []
+        return [entry for entry in payload if isinstance(entry, dict)]
 
     def _build_item(self, entry: dict[str, Any]) -> dict[str, Any] | None:
         title = self._html_to_text(entry.get('title', {}).get('rendered'))

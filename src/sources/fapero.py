@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from datetime import datetime
+import re
 from typing import Any
 from urllib.parse import urljoin
 
@@ -9,6 +11,7 @@ from src.sources.base_source import BaseSource
 
 
 class FAPEROSource(BaseSource):
+    PUBLICACOES_PATTERN = re.compile(r'/publicacoes/\d{4}-\d+/?$', re.I)
     EXCLUDE_HINTS = (
         'resultado',
         'retifica',
@@ -18,6 +21,15 @@ class FAPEROSource(BaseSource):
         'encerrad',
         'demonstrativo',
     )
+
+    def fetch(self) -> str:
+        for candidate in self._candidate_urls():
+            try:
+                response = self.request('GET', candidate)
+            except Exception:
+                continue
+            return response.text
+        return ''
 
     def parse(self, raw_content: str) -> list[dict[str, Any]]:
         soup = self.soup(raw_content)
@@ -115,3 +127,26 @@ class FAPEROSource(BaseSource):
         if value is None:
             return ''
         return ' '.join(str(value).replace('\xa0', ' ').split())
+
+    def _candidate_urls(self) -> list[str]:
+        base_url = self.config.site_oficial.rstrip('/')
+        configured = self.config.pagina_editais.rstrip('/')
+        current_year = datetime.now().year
+
+        candidates = [
+            configured,
+            re.sub(r'/editais$', '', configured, flags=re.I),
+            f'{base_url}/publicacoes/{current_year}-2',
+            f'{base_url}/publicacoes/{current_year - 1}-2',
+            base_url,
+        ]
+
+        seen: set[str] = set()
+        normalized: list[str] = []
+        for candidate in candidates:
+            candidate = candidate.rstrip('/') + '/'
+            if not candidate or candidate in seen:
+                continue
+            seen.add(candidate)
+            normalized.append(candidate)
+        return normalized
