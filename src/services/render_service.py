@@ -199,10 +199,12 @@ class RenderService:
         return source_map.get(edital.fonte.upper(), f'EDITAL {edital.fonte.upper()}')
 
     def _build_card_title(self, edital: Edital) -> str:
-        title = self._display_text(edital.titulo)
+        original_title = self._display_text(edital.titulo)
+        title = original_title
         replacements = (
             ('Chamada Pública', ''),
             ('Chamada CNPq/', ''),
+            ('Chamada conjunta ', ''),
             ('Chamada ', ''),
             ('Edital ', ''),
             ('Programa de ', ''),
@@ -218,7 +220,7 @@ class RenderService:
             title = candidate
 
         title = ' '.join(title.split())
-        title = self._refine_card_title(title)
+        title = self._refine_card_title(title, edital, original_title)
         strong_breaks = (
             ' e homenageia ',
             ' com inscrições ',
@@ -250,7 +252,7 @@ class RenderService:
             return ' '.join(shortened).rstrip(' ,;:-')
         return title[:88].rstrip(' ,;:-')
 
-    def _refine_card_title(self, title: str) -> str:
+    def _refine_card_title(self, title: str, edital: Edital, original_title: str) -> str:
         rewrites = (
             (
                 r'^Terceira edição do Programa Centelha RO oferecerá recursos financeiros de até R\$?\s*80 mil\b.*$',
@@ -268,7 +270,11 @@ class RenderService:
         for pattern, replacement in rewrites:
             if re.match(pattern, title, flags=re.I):
                 return replacement
-        return title
+
+        refined = title.strip(' -:;')
+        if self._looks_like_fragment(refined):
+            return self._fallback_card_title(edital, original_title)
+        return refined or self._fallback_card_title(edital, original_title)
 
     def _can_strip_card_prefix(self, title: str) -> bool:
         stripped = title.strip()
@@ -283,6 +289,55 @@ class RenderService:
         if first_visible.isalpha() and first_visible.islower():
             return False
         return True
+
+    def _looks_like_fragment(self, title: str) -> bool:
+        if not title:
+            return True
+
+        lowered = title.lower()
+        fragment_prefixes = (
+            'de ',
+            'do ',
+            'da ',
+            'dos ',
+            'das ',
+            'e ',
+            'em ',
+            'para ',
+            'com ',
+            'conjunta ',
+            'propostas ',
+        )
+        if lowered.startswith(fragment_prefixes):
+            return True
+
+        if re.fullmatch(r'\d{1,2}/\d{4}\s*[-–—]?', title):
+            return True
+
+        if title.endswith('-') and len(title) <= 24:
+            return True
+
+        words = title.split()
+        if len(words) <= 2 and any(char.isdigit() for char in title):
+            return True
+
+        return False
+
+    def _fallback_card_title(self, edital: Edital, original_title: str) -> str:
+        cleaned = original_title.strip()
+        source_prefixes = (
+            f'{edital.fonte.upper()} / ' if edital.fonte else '',
+            f'{edital.fonte.upper()} - ' if edital.fonte else '',
+            f'{edital.fonte.upper()}: ' if edital.fonte else '',
+        )
+        for prefix in source_prefixes:
+            if prefix and cleaned.upper().startswith(prefix):
+                candidate = cleaned[len(prefix):].strip()
+                if candidate:
+                    cleaned = candidate
+                    break
+
+        return cleaned.strip(' -:;') or original_title.strip()
 
     def _build_card_deadline(self, expiration_date: str | None) -> str:
         parsed = parse_date(expiration_date)
