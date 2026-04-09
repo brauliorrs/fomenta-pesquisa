@@ -184,7 +184,7 @@ class RenderService:
         normalized = self._display_text(value)
         if not normalized:
             return ''
-        token = re.sub(r'[^A-Za-z0-9]', '', normalized)
+        token = ''.join(part.capitalize() for part in slugify(normalized).split('_') if part)
         if len(token) < 2:
             return ''
         return f'#{token}'
