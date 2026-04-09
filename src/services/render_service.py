@@ -1,7 +1,9 @@
 ﻿from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 import re
+from urllib.parse import urlparse
 
 from src.models import Edital
 from src.services.normalize_service import NormalizeService
@@ -17,7 +19,7 @@ class RenderService:
         prazo = self._format_date(edital.data_expiracao)
         abertura = self._format_date(edital.data_abertura)
         urgency = self._build_urgency_label(edital.data_expiracao)
-        titulo = self._display_text(edital.titulo)
+        titulo = self._preferred_title(edital)
         orgao = self._display_text(edital.orgao) or 'Não informado'
         publico = self._display_text(edital.publico_alvo) or 'Não informado'
         categoria = self._humanize_category(edital.categoria)
@@ -199,7 +201,7 @@ class RenderService:
         return source_map.get(edital.fonte.upper(), f'EDITAL {edital.fonte.upper()}')
 
     def _build_card_title(self, edital: Edital) -> str:
-        original_title = self._display_text(edital.titulo)
+        original_title = self._preferred_title(edital)
         title = original_title
         replacements = (
             ('Chamada Pública', ''),
@@ -338,6 +340,46 @@ class RenderService:
                     break
 
         return cleaned.strip(' -:;') or original_title.strip()
+
+    def _preferred_title(self, edital: Edital) -> str:
+        original_title = self._display_text(edital.titulo)
+        if not self._looks_like_fragment(original_title):
+            return original_title
+
+        link_title = self._title_from_link(edital.link, edital.fonte)
+        if link_title and not self._looks_like_fragment(link_title):
+            return link_title
+        return original_title
+
+    def _title_from_link(self, link: str | None, fonte: str | None) -> str:
+        cleaned_link = self._display_text(link)
+        if not cleaned_link:
+            return ''
+
+        path = urlparse(cleaned_link).path
+        title = Path(path).stem
+        if not title:
+            return ''
+
+        title = re.sub(r'^\d{4}[._-]\d{2}[._-]\d{2}[._-]?', '', title)
+        title = title.replace('___', ' - ').replace('__', ' ').replace('_', ' ')
+        title = re.sub(r'\bFNAL\b', '', title, flags=re.I)
+        title = re.sub(r'\bFINAL\b', '', title, flags=re.I)
+        title = re.sub(r'\bEdital[ -]+0*(\d{1,2})[ -]+(\d{4})\b', r'Edital \1/\2', title, flags=re.I)
+        title = re.sub(r'\b0*(\d{1,2})[ -]+(\d{4})\b', r'\1/\2', title)
+        if fonte:
+            title = re.sub(rf'\b{re.escape(fonte)}\b', '', title, flags=re.I)
+        title = re.sub(r'\bcatedras\b', 'Cátedras', title, flags=re.I)
+        title = re.sub(r'\bcientista arretado\b', 'Cientista Arretado', title, flags=re.I)
+        title = re.sub(r'\bbalanco energetico estadual\b', 'Balanço Energético Estadual', title, flags=re.I)
+        title = re.sub(r'\bjornadapibic\b', 'Jornada PIBIC', title, flags=re.I)
+        title = re.sub(r'\bprf\b', 'PRF', title, flags=re.I)
+        title = re.sub(r'\bbfp\b', 'BFP', title, flags=re.I)
+        title = re.sub(r'\s+-\s+-\s+', ' - ', title)
+        title = re.sub(r'\s{2,}', ' ', title).strip(' -_')
+        if not title:
+            return ''
+        return title[:1].upper() + title[1:]
 
     def _build_card_deadline(self, expiration_date: str | None) -> str:
         parsed = parse_date(expiration_date)

@@ -791,10 +791,19 @@ class InstagramService:
                 "accent": "#f4bdd0",
                 "deadline_text": "#3c1730",
             },
+            "FUNDACAO_FOMENTO": {
+                "bg_start": "#11463f",
+                "bg_mid": "#1e6e63",
+                "bg_end": "#d8eee9",
+                "glow": "#ffffff",
+                "accent": "#d7f1ec",
+                "deadline_text": "#17312b",
+            },
         }
+        palette_key = "FUNDACAO_FOMENTO" if self._is_foundation_source(source) else source
         palette = dict(
             palettes.get(
-                source,
+                palette_key,
                 {
                     "bg_start": "#11463f",
                     "bg_mid": "#1e6e63",
@@ -816,12 +825,16 @@ class InstagramService:
         elif days_left is not None and days_left <= 14:
             palette["accent"] = "#ffd088"
 
-        if "bolsa" in category or "bolsa" in title:
-            palette["accent"] = "#fff0af"
-        if any(token in category or token in title for token in ("inov", "empreendedor", "centelha")):
-            palette["accent"] = "#a6fff3"
+        if not self._is_foundation_source(source):
+            if "bolsa" in category or "bolsa" in title:
+                palette["accent"] = "#fff0af"
+            if any(token in category or token in title for token in ("inov", "empreendedor", "centelha")):
+                palette["accent"] = "#a6fff3"
 
         return palette
+
+    def _is_foundation_source(self, source: str) -> bool:
+        return source.startswith("FAP") or source in {"FACEPE", "FUNCAP", "FUNDECT"}
 
     def _days_left(self, expiration_date: str | None) -> int | None:
         if not expiration_date:
