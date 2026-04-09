@@ -3141,3 +3141,14 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-09 16:41:33,089 [INFO] Expirados removidos da base: 0
 2026-04-09 16:41:33,089 [INFO] Erros por fonte: 0
 2026-04-09 16:41:33,089 [INFO] Fim da execucao
+2026-04-09 16:42:39,841 [INFO] Limite diario de novos posts no feed atingido: 26/10.
+2026-04-09 16:42:39,841 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_398ddf61 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_398ddf61.jpg
+2026-04-09 16:42:43,341 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_ed4cd0d1 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_ed4cd0d1.jpg
+2026-04-09 16:42:46,832 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_af528128 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_af528128.jpg
+2026-04-09 16:42:50,119 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_45425c2e usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_45425c2e.jpg
+2026-04-09 16:42:53,477 [INFO] Tentando repostar story diario para edital valido conselho_nacional_de_desenvolvimento_cie_78104ac3 usando asset publico draft_conselho_nacional_de_desenvolvimento_cie_78104ac3.jpg
+2026-04-09 16:42:56,919 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_7e8bcd93 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_7e8bcd93.jpg
+2026-04-09 16:43:00,214 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
+2026-04-09 16:43:03,475 [INFO] Tentativas de publicacao apos sync: 7
+2026-04-09 16:43:03,475 [INFO] Publicacoes concluidas apos sync: 0
+2026-04-09 16:43:03,475 [INFO] Novos posts no feed hoje: 26/10.
