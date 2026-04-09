@@ -210,7 +210,12 @@ class RenderService:
         for source, target in replacements:
             if len(title) <= 72:
                 break
-            title = title.replace(source, target, 1)
+            candidate = title.replace(source, target, 1)
+            if candidate == title:
+                continue
+            if not self._can_strip_card_prefix(candidate):
+                continue
+            title = candidate
 
         title = ' '.join(title.split())
         title = self._refine_card_title(title)
@@ -264,6 +269,20 @@ class RenderService:
             if re.match(pattern, title, flags=re.I):
                 return replacement
         return title
+
+    def _can_strip_card_prefix(self, title: str) -> bool:
+        stripped = title.strip()
+        if not stripped:
+            return False
+
+        match = re.search(r'[A-Za-zÀ-ÿ0-9]', stripped)
+        if not match:
+            return False
+
+        first_visible = stripped[match.start()]
+        if first_visible.isalpha() and first_visible.islower():
+            return False
+        return True
 
     def _build_card_deadline(self, expiration_date: str | None) -> str:
         parsed = parse_date(expiration_date)
