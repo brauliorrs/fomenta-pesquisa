@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T02:52:56.181643-03:00",
+  "generated_at": "2026-04-10T12:56:27.968050-03:00",
   "total_prontos": 87,
   "itens": [
     {
@@ -933,7 +933,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-05-11",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-04-10T02:52:56.181643-03:00",
       "quantidade_postagens": 1,
@@ -1197,7 +1197,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-05-20",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
