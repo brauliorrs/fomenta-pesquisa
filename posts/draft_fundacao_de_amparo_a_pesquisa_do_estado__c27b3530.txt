@@ -7,7 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__c27b3530.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__c27b3530_story.jpg
 
 Oportunidade no radar: Chamada de Propostas de Redes FAPESP de Colaboração em Pesquisa em Transição Energética
-Prazo encerra em 4 dias.
+Prazo encerra em 3 dias.
 
 Área: Transição Energética.
 
