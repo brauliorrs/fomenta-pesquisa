@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-12T02:56:09.387732-03:00",
-  "total_prontos": 86,
+  "generated_at": "2026-04-12T12:38:05.071793-03:00",
+  "total_prontos": 87,
   "itens": [
     {
       "posicao_fila": 1,
@@ -1082,6 +1082,28 @@
     },
     {
       "posicao_fila": 50,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__fa083577",
+      "titulo": "Chamada de Propostas FAPESP/NSFC – Fundação Nacional de Ciências Naturais da China",
+      "fonte": "FAPESP",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
+      "prazo": "2026-05-15",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 33,
+      "link": "https://fapesp.br/18122/",
+      "caption": "Oportunidade no radar: Chamada de Propostas FAPESP/NSFC – Fundação Nacional de Ciências Naturais da China\n\nÁreas: \"Medicina de Precisão e Saúde Pública\" e \"Agricultura de Baixo Carbono\".\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas\nTipo: Pesquisa\nAbertura das inscrições: 12/04/2026\nPrazo final: 15/05/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18122/\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FAPESP",
+      "card_title": "Chamada de Propostas FAPESP/NSFC – Fundação Nacional de Ciências Naturais da China",
+      "card_deadline": "PRAZO: 15/05",
+      "card_summary": "Áreas: \"Medicina de Precisão e Saúde Pública\" e \"Agricultura de Baixo Carbono\".",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 51,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__7dca75a9",
       "titulo": "EDITAL N.º 013/2026 PROGRAMA AMAZÔNIDAS – MENINAS E MULHERES NA CIÊNCIA 2026",
       "fonte": "FAPEAM",
@@ -1103,7 +1125,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 51,
+      "posicao_fila": 52,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__1e8ca131",
       "titulo": "Chamada 004/2026 - Participação Coletiva em Eventos Técnicos no País - 1ª entrada",
       "fonte": "FAPEMIG",
@@ -1125,7 +1147,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 52,
+      "posicao_fila": 53,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__9bf2c4ac",
       "titulo": "EDITAL N.º 002/2026 - PROGRAMA DE APOIO À POPULARIZAÇÃO DA CIÊNCIA, TECNOLOGIA E INOVAÇÃO – POP CTI",
       "fonte": "FAPEAM",
@@ -1147,7 +1169,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 53,
+      "posicao_fila": 54,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ec5832bf",
       "titulo": "Chamada de Propostas FAPESP e Universidade de Saskatchewan 2026",
       "fonte": "FAPESP",
@@ -1169,7 +1191,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 54,
+      "posicao_fila": 55,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 18/2026 PROEVENTOS 2027 — FASE I",
       "fonte": "FAPESC",
@@ -1191,7 +1213,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 55,
+      "posicao_fila": 56,
       "id": "conselho_nacional_das_fundacoes_estaduai_d102b3d5",
       "titulo": "Sict e Fapergs lançam edital de R$ 8 milhões para fortalecer ambientes de inovação no RS",
       "fonte": "CONFAP",
@@ -1213,7 +1235,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 56,
+      "posicao_fila": 57,
       "id": "fundacao_araucaria_de_apoio_ao_desenvolv_80722a0a",
       "titulo": "CP 04/26: Interconexões Brasillinois",
       "fonte": "FAPPR",
@@ -1235,7 +1257,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 57,
+      "posicao_fila": 58,
       "id": "financiadora_de_estudos_e_projetos_fip_s_0508d0c8",
       "titulo": "FIP Startup Inteligência Artificial",
       "fonte": "FINEP",
@@ -1257,7 +1279,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 58,
+      "posicao_fila": 59,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__6e8d220c",
       "titulo": "Chamada Pública Fapeg nº 06/2026 - Programa de Auxílio à Pesquisa Científica e Tecnológica - Aquisição de Equipamentos",
       "fonte": "FAPEG",
@@ -1279,7 +1301,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 59,
+      "posicao_fila": 60,
       "id": "financiadora_de_estudos_e_projetos_ecoss_0f287840",
       "titulo": "Ecossistema Tecnológico de Biorrefino",
       "fonte": "FINEP",
@@ -1301,7 +1323,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 60,
+      "posicao_fila": 61,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_5c3364ba",
       "titulo": "12/2026 -",
       "fonte": "FACEPE",
@@ -1323,7 +1345,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 61,
+      "posicao_fila": 62,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__c3998a69",
       "titulo": "Chamada - Bolsa de Intercâmbio Internacional PRH-ANP (BEPE ANP) 2026",
       "fonte": "FAPESP",
@@ -1345,7 +1367,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 62,
+      "posicao_fila": 63,
       "id": "conselho_nacional_das_fundacoes_estaduai_e8fac09a",
       "titulo": "FAPESP lança nova chamada para Escolas São Paulo de Ciência Avançada",
       "fonte": "CONFAP",
@@ -1367,7 +1389,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 63,
+      "posicao_fila": 64,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__bde117d5",
       "titulo": "Escolas São Paulo de Ciência Avançada (ESPCA) - 20ª Chamada",
       "fonte": "FAPESP",
@@ -1389,7 +1411,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 64,
+      "posicao_fila": 65,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_e01d8bb9",
       "titulo": "03/2026 -",
       "fonte": "FACEPE",
@@ -1411,7 +1433,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 65,
+      "posicao_fila": 66,
       "id": "coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9",
       "titulo": "CAPES lança edital em parceria com universidade dos EUA",
       "fonte": "CAPES",
@@ -1433,7 +1455,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 66,
+      "posicao_fila": 67,
       "id": "conselho_nacional_das_fundacoes_estaduai_1ec38e82",
       "titulo": "Facepe divulga edital de produtividade pernambucana para o interior do estado",
       "fonte": "CONFAP",
@@ -1455,7 +1477,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 67,
+      "posicao_fila": 68,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__b413872b",
       "titulo": "Chamada de Propostas - Auxílio à Inovação Regular",
       "fonte": "FAPESP",
@@ -1477,7 +1499,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 68,
+      "posicao_fila": 69,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f",
       "titulo": "Programa Nacional de Apoio à Geração de Empreendimentos Inovadores Programa Centelha 3 São Paulo",
       "fonte": "FAPESP",
@@ -1499,7 +1521,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 69,
+      "posicao_fila": 70,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__296f3a63",
       "titulo": "Chamada FAPESP – Fundação Bracell – Fundação Itaú: Auxílio à Pesquisa para o Fortalecimento da Educação na Pré-Escola",
       "fonte": "FAPESP",
@@ -1521,7 +1543,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 70,
+      "posicao_fila": 71,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 16/2026 PROGRAMA DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO DE APOIO AOS GRUPOS DE PESQUISA DA ASSOCIAÇÃO CATARINENSE DAS FUNDAÇÕES EDUCACIONAIS (ACAFE)",
       "fonte": "FAPESC",
@@ -1543,7 +1565,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 71,
+      "posicao_fila": 72,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89071ad5",
       "titulo": "Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular",
       "fonte": "FAPESP",
@@ -1565,7 +1587,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 72,
+      "posicao_fila": 73,
       "id": "financiadora_de_estudos_e_projetos_agric_26c7babc",
       "titulo": "Agricultura familiar para ICTs 2026",
       "fonte": "FINEP",
@@ -1587,7 +1609,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 73,
+      "posicao_fila": 74,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 15/2026 PRÊMIO INOVAÇÃO CATARINENSE PROFESSOR CASPAR ERICH STEMMER EDIÇÃO 2026",
       "fonte": "FAPESC",
@@ -1609,7 +1631,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 74,
+      "posicao_fila": 75,
       "id": "financiadora_de_estudos_e_projetos_finep_315d632a",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
       "fonte": "FINEP",
@@ -1631,7 +1653,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 75,
+      "posicao_fila": 76,
       "id": "financiadora_de_estudos_e_projetos_finep_064113e0",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
       "fonte": "FINEP",
@@ -1653,7 +1675,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 76,
+      "posicao_fila": 77,
       "id": "financiadora_de_estudos_e_projetos_finep_32a33550",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
       "fonte": "FINEP",
@@ -1675,7 +1697,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 77,
+      "posicao_fila": 78,
       "id": "financiadora_de_estudos_e_projetos_finep_f6a3506d",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
       "fonte": "FINEP",
@@ -1697,7 +1719,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 78,
+      "posicao_fila": 79,
       "id": "financiadora_de_estudos_e_projetos_finep_1d63ef7c",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
       "fonte": "FINEP",
@@ -1719,7 +1741,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 79,
+      "posicao_fila": 80,
       "id": "financiadora_de_estudos_e_projetos_finep_74b0dc4f",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
       "fonte": "FINEP",
@@ -1741,7 +1763,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 80,
+      "posicao_fila": 81,
       "id": "financiadora_de_estudos_e_projetos_finep_35401209",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
       "fonte": "FINEP",
@@ -1763,7 +1785,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 81,
+      "posicao_fila": 82,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -1785,7 +1807,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 82,
+      "posicao_fila": 83,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -1807,7 +1829,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 83,
+      "posicao_fila": 84,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -1829,7 +1851,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 84,
+      "posicao_fila": 85,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1851,7 +1873,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 85,
+      "posicao_fila": 86,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1873,7 +1895,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 86,
+      "posicao_fila": 87,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
