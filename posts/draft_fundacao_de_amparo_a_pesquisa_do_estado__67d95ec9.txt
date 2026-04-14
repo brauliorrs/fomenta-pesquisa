@@ -1,24 +1,23 @@
 [MOCK INSTAGRAM DRAFT]
-id: fundacao_de_amparo_a_pesquisa_do_estado__c27b3530
+id: fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-04-14
-card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__c27b3530.jpg
-card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__c27b3530_story.jpg
+prazo: 2026-06-08
+card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9.jpg
+card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9_story.jpg
 
-Oportunidade no radar: Chamada de Propostas de Redes FAPESP de Colaboração em Pesquisa em Transição Energética
-Último dia de inscrição.
+Oportunidade no radar: Chamada de Propostas 2026 do PROPASP (Programa de Pesquisa Alemanha – São Paulo) – FAPESP e DAAD (Serviço Alemão de Intercâmbio Acadêmico)
 
-Área: Transição Energética.
+Área: todas.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas
 Tipo: Pesquisa
-Abertura das inscrições: 01/04/2026
-Prazo final: 14/04/2026
+Abertura das inscrições: 13/04/2026
+Prazo final: 08/06/2026
 
 Link oficial do edital:
-http://www.fapesp.br/17933
+https://fapesp.br/18123
 
 Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
 No post, o link do edital e os detalhes ficam logo abaixo na legenda.
