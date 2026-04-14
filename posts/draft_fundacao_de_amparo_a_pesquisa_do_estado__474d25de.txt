@@ -2,20 +2,19 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__474d25de
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-04-20
+prazo: 2026-04-27
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__474d25de.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__474d25de_story.jpg
 
 Oportunidade no radar: Chamada de Propostas – Programa de Pesquisa em Políticas Públicas (PPPP) 2025/2026
-Prazo encerra em 6 dias.
 
 Área: Políticas Públicas.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-Público-alvo: Empresas inovadoras, startups e pesquisadores
+Público-alvo: Pesquisadores, docentes e organizadores de atividades cientificas
 Tipo: Inovacao
 Abertura das inscrições: 16/10/2025
-Prazo final: 20/04/2026
+Prazo final: 27/04/2026
 
 Link oficial do edital:
 https://fapesp.br/17812

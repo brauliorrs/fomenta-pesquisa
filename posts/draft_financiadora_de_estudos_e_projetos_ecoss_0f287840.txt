@@ -8,7 +8,7 @@ card_story: draft_financiadora_de_estudos_e_projetos_ecoss_0f287840_story.jpg
 
 Oportunidade no radar: Ecossistema Tecnológico de Biorrefino
 
-Biotecnologia; Bioeconomia; Combustíveis.
+Bioeconomia; Biotecnologia; Bioeconomia; Combustíveis.
 
 Instituição: Financiadora de Estudos e Projetos
 Público-alvo: ICT (Pública ou Privada) credenciada ou com protocolo de credenciamento na ANP
