@@ -5540,3 +5540,71 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-17 16:37:12,248 [INFO] Tentativas de publicacao apos sync: 85
 2026-04-17 16:37:12,249 [INFO] Publicacoes concluidas apos sync: 1
 2026-04-17 16:37:12,249 [INFO] Novos posts no feed hoje: 0/10.
+2026-04-18 05:09:09,122 [INFO] Inicio da execucao
+2026-04-18 05:09:15,988 [INFO] Fonte ANP retornou 2 itens
+2026-04-18 05:09:22,561 [INFO] Fonte CNPQ retornou 2 itens
+2026-04-18 05:09:24,519 [INFO] Fonte CAPES retornou 6 itens
+2026-04-18 05:09:38,694 [INFO] Fonte CONFAP retornou 9 itens
+2026-04-18 05:10:13,568 [WARNING] Falha ao enriquecer item https://drive.rn.gov.br/index.php/s/dYdrcTiSC5kxFbt: HTTPSConnectionPool(host='drive.rn.gov.br', port=443): Max retries exceeded with url: /index.php/s/dYdrcTiSC5kxFbt (Caused by ConnectTimeoutError(<HTTPSConnection(host='drive.rn.gov.br', port=443) at 0x7fc2fd0fd990>, 'Connection to drive.rn.gov.br timed out. (connect timeout=30)'))
+2026-04-18 05:10:18,219 [WARNING] Falha ao enriquecer item https://fapergs.rs.gov.br/edital-fapergs-03-2026-programa-de-apoio-aos-ecossistemas-de-inovacao-edicao-2026: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-04-18 05:10:52,382 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7fc2fd9ef290>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-04-18 05:10:55,765 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-18 05:11:09,092 [INFO] Fonte IPEA retornou 10 itens
+2026-04-18 05:11:24,376 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-04-18 05:11:52,846 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-04-18 05:11:55,045 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-04-18 05:11:57,734 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-04-18 05:12:05,239 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-04-18 05:12:07,606 [INFO] Fonte FUNDECI retornou 0 itens
+2026-04-18 05:12:09,151 [INFO] Fonte BASA retornou 0 itens
+2026-04-18 05:12:17,981 [INFO] Fonte BNDES retornou 0 itens
+2026-04-18 05:12:19,763 [INFO] Fonte FINEP retornou 10 itens
+2026-04-18 05:12:34,484 [INFO] Fonte DECIT retornou 0 itens
+2026-04-18 05:12:35,681 [INFO] Fonte FAPESP retornou 16 itens
+2026-04-18 05:13:32,491 [INFO] Fonte FAPERJ retornou 14 itens
+2026-04-18 05:13:35,100 [INFO] Fonte FACEPE retornou 83 itens
+2026-04-18 05:19:41,880 [INFO] Fonte FAPAC retornou 0 itens
+2026-04-18 05:20:05,732 [INFO] Fonte FAPEAL retornou 24 itens
+2026-04-18 05:20:35,204 [INFO] Fonte FAPEPI retornou 3 itens
+2026-04-18 05:20:51,672 [INFO] Fonte FAPES retornou 0 itens
+2026-04-18 05:22:24,128 [INFO] Fonte FAPEG retornou 7 itens
+2026-04-18 05:25:08,123 [INFO] Fonte FAPEMA retornou 0 itens
+2026-04-18 05:25:10,749 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-04-18 05:25:23,257 [INFO] Fonte FUNDECT retornou 6 itens
+2026-04-18 05:26:08,820 [INFO] Fonte FAPESPA retornou 21 itens
+2026-04-18 05:26:37,249 [INFO] Fonte FAPESQ retornou 16 itens
+2026-04-18 05:26:41,652 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2026/edital-no-14-2026-concessao-de-bolsas-de-graduacao-sanduiche-para-mobilidade-internacional-do-programa-paraiba-sem-fronteiras-warwickshire-college-and-university: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2026/edital-no-14-2026-concessao-de-bolsas-de-graduacao-sanduiche-para-mobilidade-internacional-do-programa-paraiba-sem-fronteiras-warwickshire-college-and-university
+2026-04-18 05:26:42,356 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2026/edital-no-13-2026-2013-graduandos-para-o-projeto-preservacao-da-memoria-e-difusao-educativa-cultural-e-cientifica-do-acervo-da-fundacao-casa-de-jose-americo: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2026/edital-no-13-2026-2013-graduandos-para-o-projeto-preservacao-da-memoria-e-difusao-educativa-cultural-e-cientifica-do-acervo-da-fundacao-casa-de-jose-americo
+2026-04-18 05:26:43,406 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2026/edital-no-09-2026-2013-quinta-chamada-desafios-tecnologicos-e-inovacao-2013-conectando-startups-2013-saude-digital-e-biotecnologia: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2026/edital-no-09-2026-2013-quinta-chamada-desafios-tecnologicos-e-inovacao-2013-conectando-startups-2013-saude-digital-e-biotecnologia
+2026-04-18 05:26:44,486 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2026/edital-no-08-2026-quarta-chamada-desafios-tecnologicos-e-inovacao-2013-conectando-startups-2013-seguranca-alimentar-e-nutricional-san: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2026/edital-no-08-2026-quarta-chamada-desafios-tecnologicos-e-inovacao-2013-conectando-startups-2013-seguranca-alimentar-e-nutricional-san
+2026-04-18 05:26:45,533 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2026/edital-no-02-2026-edicao-2025-premio-confap-de-ciencia-tecnologia-inovacao-2013-professora-niede-guidon-2013-5a-edicao: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2026/edital-no-02-2026-edicao-2025-premio-confap-de-ciencia-tecnologia-inovacao-2013-professora-niede-guidon-2013-5a-edicao
+2026-04-18 05:26:46,737 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2025/edital-no-66-2025-2013-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2025/edital-no-66-2025-2013-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao
+2026-04-18 05:26:47,265 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2025/chamada-transnacional-conjunta-water4all-2025-agua-e-saude-criterios-especificos-adotados-pela-fapesq-pb: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2025/chamada-transnacional-conjunta-water4all-2025-agua-e-saude-criterios-especificos-adotados-pela-fapesq-pb
+2026-04-18 05:26:47,797 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/../../editais/2025/3a-chamada-transnacional-conjunta-parceria-de-economia-azul-sustentavel-2025-2026-criterios-adotados-pela-fapesq-pb: 503 Server Error: Service Temporarily Unavailable for url: https://fapesq.rpp.br/editais/2025/3a-chamada-transnacional-conjunta-parceria-de-economia-azul-sustentavel-2025-2026-criterios-adotados-pela-fapesq-pb
+2026-04-18 05:28:22,422 [INFO] Fonte FAPESB retornou 0 itens
+2026-04-18 05:28:24,573 [INFO] Fonte FUNCAP retornou 0 itens
+2026-04-18 05:29:37,367 [INFO] Fonte FAPEAM retornou 5 itens
+2026-04-18 05:29:49,939 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/03/Edital-CD-014-2026-LIDERA-CIENTISTA-AM-Resolucao-017-2026.pdf
+2026-04-18 05:30:03,833 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/03/Edital-CD-013-2026-AMAZoNIDAS-Meninas-e-Mulheres-Resolucao-016-2026.pdf
+2026-04-18 05:30:16,267 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-009-2026-SOCIO-TECH-FAPEAM.pdf
+2026-04-18 05:30:30,753 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/04/Resolucao-CD-008-2026-Edital-008-2026-PROVIDA-AM-FAPEAM.pdf
+2026-04-18 05:30:48,022 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-002-2026-POPCTI.pdf
+2026-04-18 05:30:56,741 [INFO] Fonte FAPEAP retornou 0 itens
+2026-04-18 05:32:31,646 [INFO] Fonte FAPDF retornou 0 itens
+2026-04-18 05:32:35,964 [INFO] Fonte FAPEMIG retornou 5 itens
+2026-04-18 05:32:55,386 [INFO] Fonte FAPPR retornou 7 itens
+2026-04-18 05:33:20,418 [INFO] Fonte FAPERGS retornou 0 itens
+2026-04-18 05:36:29,648 [INFO] Fonte FAPERN retornou 0 itens
+2026-04-18 05:36:31,787 [INFO] Fonte FAPERO retornou 0 itens
+2026-04-18 05:38:07,232 [INFO] Fonte FAPITEC retornou 0 itens
+2026-04-18 05:38:54,712 [INFO] Fonte FAPT retornou 2 itens
+2026-04-18 05:39:33,562 [INFO] Fonte FAPESC retornou 16 itens
+2026-04-18 05:40:33,678 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-04-18 05:42:09,679 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-18 05:42:09,696 [INFO] Total coletado: 160
+2026-04-18 05:42:09,697 [INFO] Novos: 8 | Prorrogados: 1 | Atualizados: 151 | Mantidos: 0 | Deduplicados por chave: 47
+2026-04-18 05:42:09,697 [INFO] Repostados/Publicados: 0
+2026-04-18 05:42:09,697 [INFO] Bloqueados para postagem: 0
+2026-04-18 05:42:09,697 [INFO] Expirados removidos da base: 5
+2026-04-18 05:42:09,697 [INFO] Erros por fonte: 0
+2026-04-18 05:42:09,697 [INFO] Fim da execucao
