@@ -36,7 +36,9 @@ class PublicationQueueService:
             'score_editorial': item.get('score_editorial', 0),
             'ultima_postagem': item.get('ultima_postagem'),
             'quantidade_postagens': item.get('quantidade_postagens', 0),
-            'instagram_feed_publicado': bool(item.get('instagram_feed_media_id')),
+            'instagram_feed_publicado': bool(
+                item.get('instagram_feed_publicado') or item.get('instagram_feed_media_id')
+            ),
             'urgencia_dias': self._days_left(item.get('data_expiracao')),
             'link': item.get('link'),
             'caption': item.get('instagram_caption'),

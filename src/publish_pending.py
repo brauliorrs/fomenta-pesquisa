@@ -79,7 +79,10 @@ def ready_editais(editais: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def has_real_feed_publication(edital: dict[str, Any]) -> bool:
-    return bool(str(edital.get('instagram_feed_media_id', '') or '').strip())
+    return bool(
+        edital.get('instagram_feed_publicado')
+        or str(edital.get('instagram_feed_media_id', '') or '').strip()
+    )
 
 
 def candidate_priority(edital: dict[str, Any], story_enabled: bool) -> int:

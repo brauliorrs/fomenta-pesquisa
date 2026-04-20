@@ -195,7 +195,10 @@ def normalize_payload_text_fields(editais: list[dict], normalize_service: Normal
 
 def normalize_publication_state(editais: list[dict]) -> None:
     for edital in editais:
-        edital['instagram_feed_publicado'] = bool(str(edital.get('instagram_feed_media_id', '') or '').strip())
+        edital['instagram_feed_publicado'] = bool(
+            edital.get('instagram_feed_publicado')
+            or str(edital.get('instagram_feed_media_id', '') or '').strip()
+        )
 
 
 def sync_draft_assets(editais: list[dict], instagram_service: InstagramService) -> None:

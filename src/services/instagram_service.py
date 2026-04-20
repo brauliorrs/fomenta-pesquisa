@@ -154,7 +154,10 @@ class InstagramService:
         )
 
     def _has_real_feed_publication(self, edital: Edital) -> bool:
-        return bool((edital.instagram_feed_media_id or "").strip())
+        return bool(
+            edital.instagram_feed_publicado
+            or (edital.instagram_feed_media_id or "").strip()
+        )
 
     def _configured_targets(self, edital: Edital) -> tuple[str, ...]:
         publish_targets = self._normalize_targets(self.settings.instagram_publish_target)
