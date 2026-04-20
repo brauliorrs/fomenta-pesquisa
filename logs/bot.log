@@ -6309,3 +6309,69 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-20 06:19:43,037 [INFO] Tentativas de publicacao apos sync: 86
 2026-04-20 06:19:43,037 [INFO] Publicacoes concluidas apos sync: 0
 2026-04-20 06:19:43,037 [INFO] Novos posts no feed hoje: 0/10.
+2026-04-20 16:12:32,712 [INFO] Inicio da execucao
+2026-04-20 16:12:39,747 [INFO] Fonte ANP retornou 2 itens
+2026-04-20 16:12:45,756 [INFO] Fonte CNPQ retornou 2 itens
+2026-04-20 16:12:48,040 [INFO] Fonte CAPES retornou 6 itens
+2026-04-20 16:12:58,152 [INFO] Fonte CONFAP retornou 9 itens
+2026-04-20 16:13:34,754 [WARNING] Falha ao enriquecer item https://drive.rn.gov.br/index.php/s/dYdrcTiSC5kxFbt: HTTPSConnectionPool(host='drive.rn.gov.br', port=443): Max retries exceeded with url: /index.php/s/dYdrcTiSC5kxFbt (Caused by ConnectTimeoutError(<HTTPSConnection(host='drive.rn.gov.br', port=443) at 0x7f6d112c7810>, 'Connection to drive.rn.gov.br timed out. (connect timeout=30)'))
+2026-04-20 16:13:42,070 [WARNING] Falha ao enriquecer item https://fapergs.rs.gov.br/edital-fapergs-03-2026-programa-de-apoio-aos-ecossistemas-de-inovacao-edicao-2026: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-04-20 16:13:51,027 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-20 16:13:53,887 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Edital-Move-05.2026.pdf
+2026-04-20 16:13:58,145 [WARNING] Falha ao enriquecer item https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf: 404 Client Error: Not Found for url: https://www.uillinois.edu/UserFiles/Servers/Server_1240/File/Brasillinois/EXRC20250310_BrasillinoisDelegation_Booklet_Final_Print_NoMarks.pdf
+2026-04-20 16:14:12,385 [INFO] Fonte IPEA retornou 10 itens
+2026-04-20 16:14:27,017 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-04-20 16:15:16,762 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-04-20 16:15:19,047 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-04-20 16:15:21,016 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-04-20 16:15:27,699 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-04-20 16:15:36,746 [INFO] Fonte FUNDECI retornou 0 itens
+2026-04-20 16:15:38,222 [INFO] Fonte BASA retornou 0 itens
+2026-04-20 16:15:39,404 [INFO] Fonte BNDES retornou 7 itens
+2026-04-20 16:15:57,764 [INFO] Fonte FINEP retornou 10 itens
+2026-04-20 16:16:09,683 [INFO] Fonte DECIT retornou 0 itens
+2026-04-20 16:16:10,810 [INFO] Fonte FAPESP retornou 16 itens
+2026-04-20 16:17:01,221 [INFO] Fonte FAPERJ retornou 14 itens
+2026-04-20 16:17:03,772 [INFO] Fonte FACEPE retornou 83 itens
+2026-04-20 16:19:43,879 [INFO] Fonte FAPAC retornou 23 itens
+2026-04-20 16:20:58,268 [INFO] Fonte FAPEAL retornou 24 itens
+2026-04-20 16:21:26,464 [INFO] Fonte FAPEPI retornou 3 itens
+2026-04-20 16:21:44,605 [INFO] Fonte FAPES retornou 0 itens
+2026-04-20 16:21:56,612 [INFO] Fonte FAPEG retornou 7 itens
+2026-04-20 16:23:15,936 [INFO] Fonte FAPEMA retornou 0 itens
+2026-04-20 16:23:18,467 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-04-20 16:23:27,708 [INFO] Fonte FUNDECT retornou 6 itens
+2026-04-20 16:24:07,991 [INFO] Fonte FAPESPA retornou 21 itens
+2026-04-20 16:24:38,012 [INFO] Fonte FAPESQ retornou 16 itens
+2026-04-20 16:24:59,442 [INFO] Fonte FAPESB retornou 10 itens
+2026-04-20 16:25:09,937 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretrizes-especificas-da-fapesb-chamada-2026-confap-brasillinois/
+2026-04-20 16:25:14,161 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-20 16:25:18,700 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/chamada-fundacao-de-amparo-a-pesquisa-da-bahiasectisemafgb-no-012026/
+2026-04-20 16:25:23,362 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/
+2026-04-20 16:25:27,747 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretrizes-especificas-da-fapesb-chamada-para-submissao-de-propostas-do-programa-de-intercambio-de-pessoal-msca-se-em-coordenacao-com-o-horizonte-europa-2/
+2026-04-20 16:25:32,481 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsecti-no-0032026-apoio-a-pesquisas-e-inovacoes-para-a-defesa-nacional-e-a-seguranca-publica/
+2026-04-20 16:25:37,436 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-no-0302025-apoio-a-pesquisa-cientifica-tecnologica-eou-de-inovacao-em-doencas-e-agravos-prevalentes-na-populacao-negra-com-enfase-em-doenca-falciforme-e-os-impactos-do-racismo-estrut/
+2026-04-20 16:25:41,888 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-no-0242025-programa-nacional-de-apoio-a-geracao-de-empreendimentos-inovadores-programa-centelha-3-bahia/
+2026-04-20 16:25:47,001 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-de-selecao-publica-no-027-2025-subvencao-economica-a-pesquisa-desenvolvimento-e-inovacao-p-d-i-solucoes-de-sistemas-inteligentes-para-a-administracao-estadual-rodada-1/
+2026-04-20 16:25:51,314 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretriz-fapesb-4o-chamada-publica-conjunta-de-apoio-a-pos-doutores-negros-e-indigenas-em-ecologia/
+2026-04-20 16:25:53,494 [INFO] Fonte FUNCAP retornou 0 itens
+2026-04-20 16:26:26,565 [INFO] Fonte FAPEAM retornou 0 itens
+2026-04-20 16:26:33,316 [INFO] Fonte FAPEAP retornou 0 itens
+2026-04-20 16:28:07,585 [INFO] Fonte FAPDF retornou 0 itens
+2026-04-20 16:28:10,236 [INFO] Fonte FAPEMIG retornou 5 itens
+2026-04-20 16:28:32,584 [INFO] Fonte FAPPR retornou 7 itens
+2026-04-20 16:29:52,454 [INFO] Fonte FAPERGS retornou 0 itens
+2026-04-20 16:33:00,196 [INFO] Fonte FAPERN retornou 0 itens
+2026-04-20 16:33:01,741 [INFO] Fonte FAPERO retornou 0 itens
+2026-04-20 16:33:04,962 [INFO] Fonte FAPITEC retornou 1 itens
+2026-04-20 16:33:41,389 [INFO] Fonte FAPT retornou 2 itens
+2026-04-20 16:34:22,197 [INFO] Fonte FAPESC retornou 16 itens
+2026-04-20 16:35:17,402 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-04-20 16:36:30,712 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-20 16:36:30,731 [INFO] Total coletado: 164
+2026-04-20 16:36:30,731 [INFO] Novos: 0 | Prorrogados: 1 | Atualizados: 163 | Mantidos: 0 | Deduplicados por chave: 52
+2026-04-20 16:36:30,731 [INFO] Repostados/Publicados: 0
+2026-04-20 16:36:30,731 [INFO] Bloqueados para postagem: 0
+2026-04-20 16:36:30,732 [INFO] Expirados removidos da base: 0
+2026-04-20 16:36:30,732 [INFO] Erros por fonte: 0
+2026-04-20 16:36:30,732 [INFO] Fim da execucao
