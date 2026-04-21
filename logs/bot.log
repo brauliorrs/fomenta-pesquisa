@@ -6656,3 +6656,73 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-21 16:34:55,337 [INFO] Expirados removidos da base: 0
 2026-04-21 16:34:55,337 [INFO] Erros por fonte: 0
 2026-04-21 16:34:55,337 [INFO] Fim da execucao
+2026-04-21 16:35:05,031 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_55dad04e usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_55dad04e.jpg
+2026-04-21 16:35:11,596 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_d4b57134 usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_d4b57134.jpg
+2026-04-21 16:35:17,864 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__b14e088e usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__b14e088e.jpg
+2026-04-21 16:35:21,887 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__71841a05 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__71841a05.jpg
+2026-04-21 16:35:32,694 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__218c6794 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__218c6794.jpg
+2026-04-21 16:35:42,850 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_58163517 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_58163517.jpg
+2026-04-21 16:35:48,409 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e.jpg
+2026-04-21 16:35:52,370 [INFO] Tentando publicar item prioritario da fila fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3.jpg
+2026-04-21 16:36:03,213 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__14c24694 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__14c24694.jpg
+2026-04-21 16:36:08,596 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_f6e36c88 usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_f6e36c88.jpg
+2026-04-21 16:36:20,290 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__1578f605 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__1578f605.jpg
+2026-04-21 16:36:24,107 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_2a0fa4dc usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_2a0fa4dc.jpg
+2026-04-21 16:36:34,782 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_premi_2a911a4e usando asset publico draft_financiadora_de_estudos_e_projetos_premi_2a911a4e.jpg
+2026-04-21 16:36:45,597 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_6321901f usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_6321901f.jpg
+2026-04-21 16:36:48,797 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_d8795942 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_d8795942.jpg
+2026-04-21 16:36:59,093 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__3faf4c5c usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__3faf4c5c.jpg
+2026-04-21 16:37:02,940 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_c0a065c9 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_c0a065c9.jpg
+2026-04-21 16:37:08,564 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__0675ede2 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__0675ede2.jpg
+2026-04-21 16:37:14,521 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25.jpg
+2026-04-21 16:37:17,894 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__9a5cfe73 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__9a5cfe73.jpg
+2026-04-21 16:37:23,743 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__fe73ac34 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__fe73ac34.jpg
+2026-04-21 16:37:35,033 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__743008bf usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__743008bf.jpg
+2026-04-21 16:37:45,631 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_08b9a160 usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_08b9a160.jpg
+2026-04-21 16:37:56,441 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__fa083577 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__fa083577.jpg
+2026-04-21 16:38:07,302 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__7dca75a9 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__7dca75a9.jpg
+2026-04-21 16:38:12,892 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_e41b2676 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e41b2676.jpg
+2026-04-21 16:38:20,439 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__1e8ca131 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__1e8ca131.jpg
+2026-04-21 16:38:25,827 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__9bf2c4ac usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__9bf2c4ac.jpg
+2026-04-21 16:38:31,315 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__ec5832bf usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__ec5832bf.jpg
+2026-04-21 16:38:38,248 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044.jpg
+2026-04-21 16:38:43,555 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_d102b3d5 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_d102b3d5.jpg
+2026-04-21 16:38:49,059 [INFO] Tentando publicar item prioritario da fila fundacao_araucaria_de_apoio_ao_desenvolv_80722a0a usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_80722a0a.jpg
+2026-04-21 16:38:54,711 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_fip_s_0508d0c8 usando asset publico draft_financiadora_de_estudos_e_projetos_fip_s_0508d0c8.jpg
+2026-04-21 16:38:58,109 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__6e8d220c usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__6e8d220c.jpg
+2026-04-21 16:39:09,110 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_ecoss_0f287840 usando asset publico draft_financiadora_de_estudos_e_projetos_ecoss_0f287840.jpg
+2026-04-21 16:39:19,834 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_ciencia_e_tecnologi_5c3364ba usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_5c3364ba.jpg
+2026-04-21 16:39:29,839 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__c3998a69 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__c3998a69.jpg
+2026-04-21 16:39:40,710 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_e8fac09a usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_e8fac09a.jpg
+2026-04-21 16:39:50,956 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__bde117d5 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__bde117d5.jpg
+2026-04-21 16:39:56,572 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_ciencia_e_tecnologi_e01d8bb9 usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_e01d8bb9.jpg
+2026-04-21 16:40:07,100 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9.jpg
+2026-04-21 16:40:17,634 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_1ec38e82 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_1ec38e82.jpg
+2026-04-21 16:40:28,108 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__b413872b usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__b413872b.jpg
+2026-04-21 16:40:38,538 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f.jpg
+2026-04-21 16:40:43,587 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__296f3a63 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__296f3a63.jpg
+2026-04-21 16:40:54,429 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca.jpg
+2026-04-21 16:40:59,715 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__89071ad5 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__89071ad5.jpg
+2026-04-21 16:41:10,114 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_agric_26c7babc usando asset publico draft_financiadora_de_estudos_e_projetos_agric_26c7babc.jpg
+2026-04-21 16:41:20,893 [INFO] Tentando publicar item prioritario da fila fundacao_araucaria_de_apoio_ao_desenvolv_da7bb4f9 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_da7bb4f9.jpg
+2026-04-21 16:41:26,740 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f.jpg
+2026-04-21 16:41:37,673 [INFO] Tentando publicar item prioritario da fila coordenacao_de_aperfeicoamento_de_pessoa_21491403 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_21491403.jpg
+2026-04-21 16:41:41,671 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a.jpg
+2026-04-21 16:41:52,460 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_315d632a usando asset publico draft_financiadora_de_estudos_e_projetos_finep_315d632a.jpg
+2026-04-21 16:41:58,302 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_064113e0 usando asset publico draft_financiadora_de_estudos_e_projetos_finep_064113e0.jpg
+2026-04-21 16:42:03,782 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_32a33550 usando asset publico draft_financiadora_de_estudos_e_projetos_finep_32a33550.jpg
+2026-04-21 16:42:14,201 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_f6a3506d usando asset publico draft_financiadora_de_estudos_e_projetos_finep_f6a3506d.jpg
+2026-04-21 16:42:19,699 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_1d63ef7c usando asset publico draft_financiadora_de_estudos_e_projetos_finep_1d63ef7c.jpg
+2026-04-21 16:42:25,369 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_74b0dc4f usando asset publico draft_financiadora_de_estudos_e_projetos_finep_74b0dc4f.jpg
+2026-04-21 16:42:36,426 [INFO] Tentando publicar item prioritario da fila financiadora_de_estudos_e_projetos_finep_35401209 usando asset publico draft_financiadora_de_estudos_e_projetos_finep_35401209.jpg
+2026-04-21 16:42:47,792 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b usando asset publico draft_fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b.jpg
+2026-04-21 16:42:53,851 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce.jpg
+2026-04-21 16:43:04,184 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__562385ad usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__562385ad.jpg
+2026-04-21 16:43:08,192 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d.jpg
+2026-04-21 16:43:14,119 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8.jpg
+2026-04-21 16:43:20,071 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d.jpg
+2026-04-21 16:43:32,419 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_398ddf61 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_398ddf61.jpg
+2026-04-21 16:43:35,154 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__31ff09d5 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__31ff09d5.jpg
+2026-04-21 16:43:44,409 [INFO] Tentativas de publicacao apos sync: 67
+2026-04-21 16:43:44,409 [INFO] Publicacoes concluidas apos sync: 1
+2026-04-21 16:43:44,409 [INFO] Novos posts no feed hoje: 0/10.
