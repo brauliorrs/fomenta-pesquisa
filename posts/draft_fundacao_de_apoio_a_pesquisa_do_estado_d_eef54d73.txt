@@ -2,20 +2,19 @@
 id: fundacao_de_apoio_a_pesquisa_do_estado_d_eef54d73
 fonte: FAPESQ
 orgao: Fundação de Apoio a Pesquisa do Estado da Paraiba
-prazo: 2026-04-23
+prazo: 2026-05-22
 card_feed: draft_fundacao_de_apoio_a_pesquisa_do_estado_d_eef54d73.jpg
 card_story: draft_fundacao_de_apoio_a_pesquisa_do_estado_d_eef54d73_story.jpg
 
 Oportunidade no radar: EDITAL Nº 09/2026 – Quinta Chamada Desafios Tecnológicos e Inovação – Conectando Startups – Saúde Digital e Biotecnologia
-Último dia de inscrição.
 
-EDITAL Nº 09/2026 – Quinta Chamada Desafios Tecnológicos e Inovação – Conectando Startups – Saúde Digital e Biotecnologia Inscrições: 26/03 a 23/04/2026.
+EDITAL Nº 09/2026 – Quinta Chamada Desafios Tecnológicos e Inovação – Conectando Startups – Saúde Digital e Biotecnologia Inscrições: 26/03 a 22/05/2026.
 
 Instituição: Fundação de Apoio a Pesquisa do Estado da Paraiba
 Público-alvo: Empresas, empreendedores, pesquisadores e ICTs da Paraiba
 Tipo: Inovacao
 Abertura das inscrições: 23/03/2026
-Prazo final: 23/04/2026
+Prazo final: 22/05/2026
 
 Link oficial do edital:
 https://fapesq.rpp.br/../../editais/2026/edital-no-09-2026-2013-quinta-chamada-desafios-tecnológicos-e-inovacao-2013-conectando-startups-2013-saude-digital-e-biotecnologia
