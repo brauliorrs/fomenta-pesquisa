@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T02:32:58.256966-03:00",
+  "generated_at": "2026-04-23T03:04:30.629464-03:00",
   "total_prontos": 86,
   "itens": [
     {
@@ -11,8 +11,8 @@
       "prazo": "2026-04-23",
       "status": "atualizado",
       "score_editorial": 100,
-      "ultima_postagem": "2026-04-21T13:35:05.011041-03:00",
-      "quantidade_postagens": 2,
+      "ultima_postagem": "2026-04-23T03:04:30.629464-03:00",
+      "quantidade_postagens": 3,
       "instagram_feed_publicado": true,
       "urgencia_dias": 0,
       "link": "https://api.site.fapemig.br/wp-content/uploads/CHAMADA-FAPEMIG-SEDE-032026-Novo-SEED-Aceleracao-de-Startups-por-meio-dos-Ambientes-Promotores-de-Inovacao-1-1-1.pdf",
@@ -1067,8 +1067,8 @@
       "prazo": "2026-05-22",
       "status": "novo",
       "score_editorial": 90,
-      "ultima_postagem": null,
-      "quantidade_postagens": 0,
+      "ultima_postagem": "2026-04-23T03:04:30.629464-03:00",
+      "quantidade_postagens": 1,
       "instagram_feed_publicado": false,
       "urgencia_dias": 29,
       "link": "https://fapesp.br/18131",
