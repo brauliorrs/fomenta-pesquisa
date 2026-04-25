@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T02:13:49.433644-03:00",
+  "generated_at": "2026-04-25T02:43:32.476299-03:00",
   "total_prontos": 79,
   "itens": [
     {
@@ -869,8 +869,8 @@
       "prazo": "2026-05-25",
       "status": "novo",
       "score_editorial": 100,
-      "ultima_postagem": null,
-      "quantidade_postagens": 0,
+      "ultima_postagem": "2026-04-25T02:43:32.476299-03:00",
+      "quantidade_postagens": 1,
       "instagram_feed_publicado": false,
       "urgencia_dias": 30,
       "link": "https://fapesc.sc.gov.br/wp-content/uploads/2026/04/Edital-FAPESC-Water4all-assinado.pdf",
