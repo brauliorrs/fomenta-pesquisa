@@ -142,18 +142,19 @@ O workflow já usa `github.repository` e `github.token`, então não é necessá
 - Em `INSTAGRAM_ACCESS_TOKEN`, use o token do stack que já foi validado na sua conta profissional.
 - Em `INSTAGRAM_BUSINESS_ACCOUNT_ID`, use o identificador da conta profissional compatível com esse mesmo stack de autenticação.
 - A mídia precisa estar em uma URL pública no momento da chamada à Meta; por isso o projeto usa `PUBLIC_ASSET_BASE_URL` para montar a URL do card gerado.
-- Em `INSTAGRAM_PUBLISH_TARGET`, use `feed`, `story` ou `both` para a primeira publicação. Para o fluxo editorial atual, o recomendado é `both`, para sair no feed e também no story na primeira ida.
+- Em `INSTAGRAM_PUBLISH_TARGET`, use `feed`, `story` ou `both` para a primeira publicação. Para o fluxo editorial atual, o recomendado é `both`, porque o primeiro lote do dia vira um carrossel no feed e cada edital desse lote também sai em story individual.
 - Em `INSTAGRAM_REPOST_TARGET`, use `feed`, `story` ou `both` para as republicações automáticas até o edital vencer. Se ficar vazio, o projeto reaproveita o alvo da primeira publicação.
-- Em `INSTAGRAM_MAX_NEW_PUBLICATIONS_PER_DAY`, defina o teto diario de novos posts no feed nas execucoes agendadas. O padrao atual e `10`.
+- Em `INSTAGRAM_MAX_NEW_PUBLICATIONS_PER_DAY`, defina o teto diario de novos editais que podem entrar no carrossel do feed nas execucoes agendadas. O padrao atual e `10`.
 - O bot nunca publica `story` sozinho antes de existir um `feed` daquele edital; se um item ainda nao foi ao feed, a regra editorial força o feed primeiro.
 - Para publicar em stories pela API, a conta do Instagram precisa ser profissional; stories exigem conta Business nas limitações atuais da API oficial.
 - O código já está preparado para três destinos de publicação real:
   - `feed` com `image_url + caption`
+  - `feed` em formato carrossel, com até 10 imagens por publicacao
   - `story` com `image_url`
   - `both` para enviar aos dois destinos na mesma execução
 - O ciclo recomendado do bot é:
   - primeira carga manual com `workflow_dispatch` e `publish_all_ready=true` para publicar todos os itens inéditos já prontos
-  - execuções agendadas às `00:00` e `12:00` para pesquisar os fomentadores, atualizar a fila e publicar novos itens até o teto diario configurado
+  - execuções agendadas às `00:00` e `12:00` para pesquisar os fomentadores, atualizar a fila e publicar no máximo um carrossel de feed por dia com os novos itens daquele dia, até o teto diario configurado
   - repost diário em `story` para edital válido, conforme `INSTAGRAM_REPOST_TARGET=story`
   - nenhuma nova ida ao feed depois que `instagram_feed_publicado=true`, a menos que você limpe o histórico conscientemente
 - Os cards de publicação agora são gerados em `JPEG`, formato compatível com a etapa de publish da API oficial.
@@ -172,4 +173,4 @@ Para fazer a primeira carga com todos os itens prontos da fila:
 4. Marque `publish_all_ready=true`.
 5. Execute manualmente.
 
-Nessa execucao manual, o bot publica todos os itens prontos e ainda inéditos, com `feed + story` conforme a configuracao atual.
+Nessa execucao manual, o bot publica todos os itens prontos e ainda inéditos em lotes de carrossel no feed, respeitando o limite de 10 imagens por carrossel, e publica os stories individualmente conforme a configuracao atual.

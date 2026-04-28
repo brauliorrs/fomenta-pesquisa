@@ -57,6 +57,31 @@ class RenderService:
         )
         return '\n'.join(lines)
 
+    def build_carousel_caption(self, editais: list[Edital]) -> str:
+        if not editais:
+            return ''
+
+        lines = [f'Editais do dia no radar: {len(editais)} oportunidade(s) para acompanhar.']
+        urgent_count = sum(1 for edital in editais if self._days_left(edital.data_expiracao) is not None and self._days_left(edital.data_expiracao) <= 7)
+        if urgent_count:
+            label = 'há prazo curto em' if urgent_count == 1 else 'há prazos curtos em'
+            lines.append(f'Atenção especial: {label} {urgent_count} item(ns) deste carrossel.')
+
+        lines.extend(['', 'Neste carrossel:'])
+        for index, edital in enumerate(editais, start=1):
+            lines.append(self._build_carousel_entry_line(index, edital))
+
+        lines.extend(
+            [
+                '',
+                'Nos stories, cada edital continua sendo lembrado separadamente até o vencimento.',
+                'Salve este carrossel para consultar depois e compartilhe com quem pode aproveitar essas oportunidades.',
+                '',
+                self._build_carousel_hashtags(editais),
+            ]
+        )
+        return '\n'.join(lines)
+
     def build_card_fields(self, edital: Edital) -> dict[str, str]:
         return {
             'card_header': self._build_card_header(edital),
@@ -176,6 +201,27 @@ class RenderService:
 
         fallback = ''.join(part.capitalize() for part in slugify(normalized).split('_') if part)
         return fallback
+
+    def _build_carousel_hashtags(self, editais: list[Edital]) -> str:
+        tags: list[str] = []
+        for tag in ('EditaisDoDia', 'EditalAberto', 'FomentoPesquisa', 'Pesquisa', 'Ciencia', 'OportunidadeAcademica'):
+            self._append_hashtag(tags, tag)
+
+        for edital in editais:
+            source_tag = self._build_source_hashtag(edital.fonte)
+            if source_tag:
+                self._append_hashtag(tags, source_tag)
+
+        if any(self._days_left(edital.data_expiracao) is not None and self._days_left(edital.data_expiracao) <= 7 for edital in editais):
+            self._append_hashtag(tags, 'PrazoFinal')
+
+        return ' '.join(tags[:12])
+
+    def _build_carousel_entry_line(self, index: int, edital: Edital) -> str:
+        prazo = self._format_date(edital.data_expiracao)
+        title = self._preferred_title(edital)
+        source = self._display_text(edital.fonte).upper() or 'FONTE'
+        return f'{index}. {title} | {source} | Prazo: {prazo}'
 
     def _append_hashtag(self, tags: list[str], value: str | None) -> None:
         token = self._normalize_hashtag_token(value)

@@ -318,6 +318,9 @@ def main() -> None:
                         'status': 'success' if result.success else 'failed',
                         'asset_path': result.asset_path,
                         'mensagem': result.message,
+                        'feed_media_id': result.payload.get('feed_media_id', ''),
+                        'story_media_id': result.payload.get('story_media_id', ''),
+                        'publication_kind': 'single',
                     }
                 )
 
@@ -325,7 +328,7 @@ def main() -> None:
     storage.write_csv(
         settings.historico_postagens_path,
         history_rows,
-        ['edital_id', 'data_publicacao', 'status', 'asset_path', 'mensagem'],
+        ['edital_id', 'data_publicacao', 'status', 'asset_path', 'mensagem', 'feed_media_id', 'story_media_id', 'publication_kind'],
     )
 
     logger.info('Total coletado: %s', len(collected_editais))

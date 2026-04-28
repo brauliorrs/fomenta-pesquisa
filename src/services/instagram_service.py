@@ -50,6 +50,40 @@ class InstagramService:
         assets = self.build_draft_assets(edital, prefix="post")
         return self._publish_assets(edital, assets)
 
+    def publish_feed_prepared_asset(
+        self,
+        edital: Edital,
+        image_path: str | None = None,
+        mock_path: str | None = None,
+    ) -> PublicationResult:
+        resolved_feed_image_path = image_path or edital.instagram_asset
+        if not resolved_feed_image_path:
+            raise ValueError("Nenhum asset de feed preparado encontrado para publicacao.")
+
+        assets = DraftAssets(
+            feed_image_path=resolved_feed_image_path,
+            story_image_path=edital.instagram_story_asset or resolved_feed_image_path,
+            mock_path=mock_path or edital.instagram_mock_asset,
+        )
+        return self._publish_assets(edital, assets, requested_targets=("feed",))
+
+    def publish_story_prepared_asset(
+        self,
+        edital: Edital,
+        story_image_path: str | None = None,
+        mock_path: str | None = None,
+    ) -> PublicationResult:
+        resolved_story_image_path = story_image_path or edital.instagram_story_asset or edital.instagram_asset
+        if not resolved_story_image_path:
+            raise ValueError("Nenhum asset de story preparado encontrado para publicacao.")
+
+        assets = DraftAssets(
+            feed_image_path=edital.instagram_asset or resolved_story_image_path,
+            story_image_path=resolved_story_image_path,
+            mock_path=mock_path or edital.instagram_mock_asset,
+        )
+        return self._publish_assets(edital, assets, requested_targets=("story",))
+
     def publish_prepared_asset(
         self,
         edital: Edital,
@@ -71,8 +105,77 @@ class InstagramService:
         )
         return self._publish_assets(edital, assets)
 
-    def _publish_assets(self, edital: Edital, assets: DraftAssets) -> PublicationResult:
-        requested_targets = self._configured_targets(edital)
+    def publish_feed_carousel_prepared_assets(
+        self,
+        editais: list[Edital],
+        image_paths: list[str],
+        caption: str,
+    ) -> PublicationResult:
+        if not editais:
+            raise ValueError("Nenhum edital informado para publicar no carrossel.")
+        if len(editais) != len(image_paths):
+            raise ValueError("Quantidade de editais e assets do carrossel nao conferem.")
+        if len(image_paths) > 10:
+            raise ValueError("O Instagram aceita no maximo 10 itens por carrossel.")
+
+        if len(image_paths) == 1:
+            single = self.publish_feed_prepared_asset(editais[0], image_path=image_paths[0])
+            single.payload["carousel_item_count"] = 1
+            single.payload["carousel_edital_ids"] = [editais[0].id]
+            return single
+
+        payload = {
+            "ids": [edital.id for edital in editais],
+            "caption": caption,
+            "feed_image_paths": list(image_paths),
+            "published_targets": [],
+            "requested_targets": ["feed"],
+            "carousel_item_count": len(image_paths),
+            "carousel_edital_ids": [edital.id for edital in editais],
+        }
+
+        if self.settings.instagram_publish_mode.lower() != "real":
+            payload["mode"] = "mock"
+            payload["published_targets"].append("feed")
+            return PublicationResult(
+                success=True,
+                payload=payload,
+                asset_path=image_paths[0],
+                message=f"Mock de publicacao de carrossel executado com sucesso para {len(image_paths)} item(ns).",
+            )
+
+        payload["mode"] = "real"
+        try:
+            media_urls = [self._public_asset_url(Path(path).name) for path in image_paths]
+            child_ids = [self._create_carousel_item_container(media_url) for media_url in media_urls]
+            creation_id = self._create_carousel_container(child_ids, caption)
+            feed_media_id = self._publish_container(creation_id)
+            payload["feed_media_urls"] = media_urls
+            payload["feed_child_creation_ids"] = child_ids
+            payload["feed_media_id"] = feed_media_id
+            payload["published_targets"].append("feed")
+            return PublicationResult(
+                success=True,
+                payload=payload,
+                asset_path=image_paths[0],
+                message=f"Carrossel publicado com sucesso com {len(image_paths)} item(ns).",
+            )
+        except Exception as exc:
+            payload["errors"] = [f"feed: {exc}"]
+            return PublicationResult(
+                success=False,
+                payload=payload,
+                asset_path=image_paths[0],
+                message=f"Falha na publicacao do carrossel: {exc}",
+            )
+
+    def _publish_assets(
+        self,
+        edital: Edital,
+        assets: DraftAssets,
+        requested_targets: tuple[str, ...] | None = None,
+    ) -> PublicationResult:
+        requested_targets = requested_targets or self._configured_targets(edital)
         primary_asset_path = self._primary_asset_path(assets, requested_targets)
         payload = {
             "id": edital.id,
@@ -250,6 +353,27 @@ class InstagramService:
         }
         response = requests.post(self._graph_url("media"), data=payload, timeout=60)
         self._raise_for_status_with_details(response, "Falha ao criar container de feed")
+        return response.json()["id"]
+
+    def _create_carousel_item_container(self, media_url: str) -> str:
+        payload = {
+            "image_url": media_url,
+            "is_carousel_item": "true",
+            "access_token": self.settings.instagram_access_token,
+        }
+        response = requests.post(self._graph_url("media"), data=payload, timeout=60)
+        self._raise_for_status_with_details(response, "Falha ao criar item do carrossel")
+        return response.json()["id"]
+
+    def _create_carousel_container(self, children_ids: list[str], caption: str) -> str:
+        payload = {
+            "media_type": "CAROUSEL",
+            "children": ",".join(children_ids),
+            "caption": caption,
+            "access_token": self.settings.instagram_access_token,
+        }
+        response = requests.post(self._graph_url("media"), data=payload, timeout=60)
+        self._raise_for_status_with_details(response, "Falha ao criar container do carrossel")
         return response.json()["id"]
 
     def _create_story_container(self, media_url: str) -> str:
