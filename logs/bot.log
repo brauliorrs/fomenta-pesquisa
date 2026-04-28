@@ -8544,3 +8544,17 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-28 06:37:42,229 [INFO] Expirados removidos da base: 3
 2026-04-28 06:37:42,229 [INFO] Erros por fonte: 0
 2026-04-28 06:37:42,229 [INFO] Fim da execucao
+2026-04-28 06:39:29,459 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__218c6794 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__218c6794.jpg
+2026-04-28 06:39:36,396 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_58163517 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_58163517.jpg
+2026-04-28 06:39:40,522 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e.jpg
+2026-04-28 06:39:44,447 [INFO] Tentando publicar item prioritario da fila fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3.jpg
+2026-04-28 06:39:48,380 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__14c24694 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__14c24694.jpg
+2026-04-28 06:39:52,505 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_f6e36c88 usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_f6e36c88.jpg
+2026-04-28 06:39:57,029 [INFO] Tentando publicar item prioritario da fila fundacao_de_apoio_a_pesquisa_do_estado_d_00d70fef usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_00d70fef.jpg
+2026-04-28 06:40:01,844 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_a8b5c31f usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_a8b5c31f.jpg
+2026-04-28 06:40:05,652 [INFO] Tentando publicar item prioritario da fila fundacao_de_amparo_a_pesquisa_do_estado__1578f605 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__1578f605.jpg
+2026-04-28 06:40:10,812 [INFO] Tentando publicar item prioritario da fila conselho_nacional_das_fundacoes_estaduai_2a0fa4dc usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_2a0fa4dc.jpg
+2026-04-28 06:40:15,966 [INFO] Tentando repostar story diario para edital valido conselho_nacional_de_desenvolvimento_cie_78104ac3 usando asset publico draft_conselho_nacional_de_desenvolvimento_cie_78104ac3.jpg
+2026-04-28 06:40:19,573 [INFO] Tentativas de publicacao apos sync: 11
+2026-04-28 06:40:19,573 [INFO] Publicacoes concluidas apos sync: 11
+2026-04-28 06:40:19,573 [INFO] Novos posts no feed hoje: 10/10.
