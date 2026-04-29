@@ -489,7 +489,6 @@ class InstagramService:
         header_font = self._load_font("regular", 28)
         title_lines, title_font = self._fit_title_layout(title_text, max_width=self.FEED_WIDTH - 168, max_lines=4)
         summary_font = self._load_font("regular", 44)
-        deadline_font = self._load_font("bold", 34)
         footer_font = self._load_font("regular", 28)
         handle_font = self._load_font("regular", 28)
         light_text = (248, 244, 237)
@@ -524,6 +523,12 @@ class InstagramService:
         else:
             badge_box = (84, 610, 404, 692)
         draw.rounded_rectangle(badge_box, radius=22, fill=(255, 248, 236))
+        deadline_font = self._fit_single_line_font(
+            deadline,
+            weight="bold",
+            max_width=(badge_box[2] - badge_box[0]) - 48,
+            candidate_sizes=(34, 32, 30, 28, 26, 24),
+        )
         deadline_bbox = draw.textbbox((0, 0), deadline, font=deadline_font)
         deadline_y = badge_box[1] + ((badge_box[3] - badge_box[1]) - (deadline_bbox[3] - deadline_bbox[1])) // 2 - 2
         deadline_x = badge_box[0] + 32
@@ -739,6 +744,19 @@ class InstagramService:
         fallback_font = self._load_font("bold", candidates[-1])
         fallback_lines = self._wrap_text_to_width(text, fallback_font, max_width, max_lines, allow_overflow=True)
         return fallback_lines[:max_lines], fallback_font
+
+    def _fit_single_line_font(
+        self,
+        text: str,
+        weight: str,
+        max_width: int,
+        candidate_sizes: tuple[int, ...],
+    ) -> ImageFont.ImageFont | ImageFont.FreeTypeFont:
+        for size in candidate_sizes:
+            font = self._load_font(weight, size)
+            if self._text_width(text, font) <= max_width:
+                return font
+        return self._load_font(weight, candidate_sizes[-1])
 
     def _wrap_text_to_width(
         self,
