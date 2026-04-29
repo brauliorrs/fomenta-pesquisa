@@ -8778,3 +8778,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-29 17:06:41,759 [INFO] Expirados removidos da base: 0
 2026-04-29 17:06:41,759 [INFO] Erros por fonte: 0
 2026-04-29 17:06:41,759 [INFO] Fim da execucao
+2026-04-29 17:07:36,839 [INFO] Limite diario de novos editais no feed atingido: 10/10.
+2026-04-29 17:07:36,839 [INFO] Tentando repostar story diario para edital valido fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3.jpg
+2026-04-29 17:07:39,829 [INFO] Tentativas de publicacao apos sync: 1
+2026-04-29 17:07:39,829 [INFO] Publicacoes concluidas apos sync: 1
+2026-04-29 17:07:39,830 [INFO] Novos editais publicados no feed hoje: 10/10.
