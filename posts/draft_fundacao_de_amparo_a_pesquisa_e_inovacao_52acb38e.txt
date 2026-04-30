@@ -2,20 +2,19 @@
 id: fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e
 fonte: FAPESC
 orgao: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina
-prazo: 2026-04-29
+prazo: 2026-05-21
 card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_52acb38e_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC N.º 14/2026 PROGRAMA MULHERES+TEC 5ª EDIÇÃO
-Último dia de inscrição.
 
-A oportunidade está aberta para pesquisadoras, estudantes e empreendedoras de Santa Catarina na categoria bolsa, com abertura registrada em 18/03/2026 e prazo final em 29/04/2026.
+A oportunidade está aberta para pesquisadoras, estudantes e empreendedoras de Santa Catarina na categoria bolsa, com abertura registrada em 18/03/2026 e prazo final em 21/05/2026.
 
 Instituição: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina
 Público-alvo: Pesquisadoras, estudantes e empreendedoras de Santa Catarina
 Tipo: Bolsa
 Abertura das inscrições: 18/03/2026
-Prazo final: 29/04/2026
+Prazo final: 21/05/2026
 
 Link oficial do edital:
 https://fapesc.sc.gov.br/wp-content/uploads/2026/03/Edital-no-14-2026.pdf
