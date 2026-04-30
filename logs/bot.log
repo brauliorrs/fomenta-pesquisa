@@ -8851,3 +8851,66 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-30 06:31:47,045 [INFO] Tentativas de publicacao apos sync: 11
 2026-04-30 06:31:47,045 [INFO] Publicacoes concluidas apos sync: 11
 2026-04-30 06:31:47,045 [INFO] Novos editais publicados no feed hoje: 10/10.
+2026-04-30 16:21:22,629 [INFO] Inicio da execucao
+2026-04-30 16:21:30,276 [INFO] Fonte ANP retornou 2 itens
+2026-04-30 16:21:35,455 [INFO] Fonte CNPQ retornou 3 itens
+2026-04-30 16:21:38,208 [INFO] Fonte CAPES retornou 5 itens
+2026-04-30 16:21:48,115 [INFO] Fonte CONFAP retornou 8 itens
+2026-04-30 16:22:12,109 [WARNING] Falha ao enriquecer item https://fapergs.rs.gov.br/edital-fapergs-04-2026-probic-probiti-edicao-2026-2028: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-04-30 16:22:45,283 [WARNING] Falha ao enriquecer item https://drive.rn.gov.br/index.php/s/dYdrcTiSC5kxFbt: HTTPSConnectionPool(host='drive.rn.gov.br', port=443): Max retries exceeded with url: /index.php/s/dYdrcTiSC5kxFbt (Caused by ConnectTimeoutError(<HTTPSConnection(host='drive.rn.gov.br', port=443) at 0x7fedfb6f8550>, 'Connection to drive.rn.gov.br timed out. (connect timeout=30)'))
+2026-04-30 16:22:57,560 [INFO] Fonte IPEA retornou 10 itens
+2026-04-30 16:23:51,771 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-04-30 16:24:14,722 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-04-30 16:24:16,363 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-04-30 16:24:18,526 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-04-30 16:24:23,774 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-04-30 16:24:27,734 [INFO] Fonte FUNDECI retornou 0 itens
+2026-04-30 16:24:28,828 [INFO] Fonte BASA retornou 0 itens
+2026-04-30 16:24:29,976 [INFO] Fonte BNDES retornou 8 itens
+2026-04-30 16:24:43,285 [INFO] Fonte FINEP retornou 10 itens
+2026-04-30 16:24:55,421 [INFO] Fonte DECIT retornou 0 itens
+2026-04-30 16:24:56,469 [INFO] Fonte FAPESP retornou 16 itens
+2026-04-30 16:25:33,034 [INFO] Fonte FAPERJ retornou 14 itens
+2026-04-30 16:25:35,545 [INFO] Fonte FACEPE retornou 85 itens
+2026-04-30 16:28:05,043 [INFO] Fonte FAPAC retornou 23 itens
+2026-04-30 16:29:18,418 [INFO] Fonte FAPEAL retornou 25 itens
+2026-04-30 16:29:44,184 [INFO] Fonte FAPEPI retornou 3 itens
+2026-04-30 16:29:56,288 [INFO] Fonte FAPES retornou 0 itens
+2026-04-30 16:30:09,016 [INFO] Fonte FAPEG retornou 9 itens
+2026-04-30 16:31:15,836 [INFO] Fonte FAPEMA retornou 0 itens
+2026-04-30 16:31:16,922 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-04-30 16:31:24,570 [INFO] Fonte FUNDECT retornou 6 itens
+2026-04-30 16:32:01,427 [INFO] Fonte FAPESPA retornou 21 itens
+2026-04-30 16:32:23,725 [INFO] Fonte FAPESQ retornou 14 itens
+2026-04-30 16:32:40,798 [INFO] Fonte FAPESB retornou 10 itens
+2026-04-30 16:32:46,213 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretrizes-especificas-da-fapesb-chamada-2026-confap-brasillinois/
+2026-04-30 16:33:01,082 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-04-30 16:33:06,406 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/chamada-fundacao-de-amparo-a-pesquisa-da-bahiasectisemafgb-no-012026/
+2026-04-30 16:33:11,465 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/
+2026-04-30 16:33:16,712 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretrizes-especificas-da-fapesb-chamada-para-submissao-de-propostas-do-programa-de-intercambio-de-pessoal-msca-se-em-coordenacao-com-o-horizonte-europa-2/
+2026-04-30 16:33:25,812 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsecti-no-0032026-apoio-a-pesquisas-e-inovacoes-para-a-defesa-nacional-e-a-seguranca-publica/
+2026-04-30 16:33:31,332 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-no-0302025-apoio-a-pesquisa-cientifica-tecnologica-eou-de-inovacao-em-doencas-e-agravos-prevalentes-na-populacao-negra-com-enfase-em-doenca-falciforme-e-os-impactos-do-racismo-estrut/
+2026-04-30 16:33:36,640 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-no-0242025-programa-nacional-de-apoio-a-geracao-de-empreendimentos-inovadores-programa-centelha-3-bahia/
+2026-04-30 16:33:41,357 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-de-selecao-publica-no-027-2025-subvencao-economica-a-pesquisa-desenvolvimento-e-inovacao-p-d-i-solucoes-de-sistemas-inteligentes-para-a-administracao-estadual-rodada-1/
+2026-04-30 16:33:45,963 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretriz-fapesb-4o-chamada-publica-conjunta-de-apoio-a-pos-doutores-negros-e-indigenas-em-ecologia/
+2026-04-30 16:33:47,645 [INFO] Fonte FUNCAP retornou 0 itens
+2026-04-30 16:34:20,705 [INFO] Fonte FAPEAM retornou 0 itens
+2026-04-30 16:34:27,011 [INFO] Fonte FAPEAP retornou 0 itens
+2026-04-30 16:36:00,488 [INFO] Fonte FAPDF retornou 0 itens
+2026-04-30 16:36:02,088 [INFO] Fonte FAPEMIG retornou 3 itens
+2026-04-30 16:36:11,155 [INFO] Fonte FAPPR retornou 9 itens
+2026-04-30 16:36:31,096 [INFO] Fonte FAPERGS retornou 0 itens
+2026-04-30 16:39:38,775 [INFO] Fonte FAPERN retornou 0 itens
+2026-04-30 16:39:40,839 [INFO] Fonte FAPERO retornou 0 itens
+2026-04-30 16:39:44,181 [INFO] Fonte FAPITEC retornou 1 itens
+2026-04-30 16:40:15,658 [INFO] Fonte FAPT retornou 2 itens
+2026-04-30 16:40:49,042 [INFO] Fonte FAPESC retornou 14 itens
+2026-04-30 16:41:42,973 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-04-30 16:43:15,477 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-04-30 16:43:15,501 [INFO] Total coletado: 157
+2026-04-30 16:43:15,501 [INFO] Novos: 2 | Prorrogados: 2 | Atualizados: 153 | Mantidos: 0 | Deduplicados por chave: 55
+2026-04-30 16:43:15,501 [INFO] Repostados/Publicados: 0
+2026-04-30 16:43:15,501 [INFO] Bloqueados para postagem: 0
+2026-04-30 16:43:15,501 [INFO] Expirados removidos da base: 0
+2026-04-30 16:43:15,501 [INFO] Erros por fonte: 0
+2026-04-30 16:43:15,502 [INFO] Fim da execucao
