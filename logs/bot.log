@@ -8846,3 +8846,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-04-30 06:29:09,949 [INFO] Expirados removidos da base: 1
 2026-04-30 06:29:09,949 [INFO] Erros por fonte: 0
 2026-04-30 06:29:09,949 [INFO] Fim da execucao
+2026-04-30 06:30:32,439 [INFO] Tentando publicar carrossel de feed com 10 item(ns): fundacao_de_amparo_a_pesquisa_do_estado__fe73ac34, fundacao_de_amparo_a_pesquisa_do_estado__3108582d, fundacao_de_apoio_a_pesquisa_do_estado_d_08b9a160, fundacao_de_amparo_a_pesquisa_do_estado__fa083577, fundacao_de_amparo_a_pesquisa_do_estado__7dca75a9, fundacao_de_amparo_a_pesquisa_e_inovacao_e41b2676, fundacao_de_amparo_a_pesquisa_do_estado__1e8ca131, fundacao_de_amparo_a_pesquisa_do_estado__9bf2c4ac, fundacao_de_amparo_a_pesquisa_do_estado__ec5832bf, fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044
+2026-04-30 06:31:42,938 [INFO] Tentando repostar story diario para edital valido fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_4f73eec3.jpg
+2026-04-30 06:31:47,045 [INFO] Tentativas de publicacao apos sync: 11
+2026-04-30 06:31:47,045 [INFO] Publicacoes concluidas apos sync: 11
+2026-04-30 06:31:47,045 [INFO] Novos editais publicados no feed hoje: 10/10.
