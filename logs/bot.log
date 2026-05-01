@@ -8987,3 +8987,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-01 06:43:05,286 [INFO] Expirados removidos da base: 6
 2026-05-01 06:43:05,286 [INFO] Erros por fonte: 0
 2026-05-01 06:43:05,286 [INFO] Fim da execucao
+2026-05-01 06:43:12,943 [INFO] Tentando publicar carrossel de feed com 10 item(ns): conselho_nacional_das_fundacoes_estaduai_d102b3d5, fundacao_de_amparo_a_pesquisa_do_estado__02156b6a, fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f, fundacao_de_amparo_a_pesquisa_e_inovacao_d0abbe16, conselho_nacional_das_fundacoes_estaduai_23616948, fundacao_de_apoio_a_pesquisa_do_estado_d_9438ff78, banco_nacional_de_desenvolvimento_econom_d1c58d8e, fundacao_araucaria_de_apoio_ao_desenvolv_80722a0a, conselho_nacional_das_fundacoes_estaduai_4907829f, financiadora_de_estudos_e_projetos_fip_s_0508d0c8
+2026-05-01 06:44:37,965 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_a8b5c31f usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_a8b5c31f.jpg
+2026-05-01 06:44:42,060 [INFO] Tentativas de publicacao apos sync: 11
+2026-05-01 06:44:42,060 [INFO] Publicacoes concluidas apos sync: 11
+2026-05-01 06:44:42,060 [INFO] Novos editais publicados no feed hoje: 10/10.
