@@ -9495,3 +9495,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-04 17:20:34,679 [INFO] Expirados removidos da base: 0
 2026-05-04 17:20:34,679 [INFO] Erros por fonte: 0
 2026-05-04 17:20:34,679 [INFO] Fim da execucao
+2026-05-04 17:21:58,439 [INFO] Limite diario de novos editais no feed atingido: 10/10.
+2026-05-04 17:21:58,439 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_premi_2a911a4e usando asset publico draft_financiadora_de_estudos_e_projetos_premi_2a911a4e.jpg
+2026-05-04 17:22:04,452 [INFO] Tentativas de publicacao apos sync: 1
+2026-05-04 17:22:04,452 [INFO] Publicacoes concluidas apos sync: 1
+2026-05-04 17:22:04,452 [INFO] Novos editais publicados no feed hoje: 10/10.
