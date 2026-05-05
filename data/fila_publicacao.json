@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T03:16:09.815766-03:00",
+  "generated_at": "2026-05-05T13:25:12.757992-03:00",
   "total_prontos": 75,
   "itens": [
     {
@@ -405,7 +405,7 @@
       "fonte": "CNPQ",
       "orgao": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
       "prazo": "2026-05-18",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-04-28T03:39:29.439777-03:00",
       "quantidade_postagens": 7,
@@ -1087,7 +1087,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-06-15",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-05-05T03:16:09.815766-03:00",
       "quantidade_postagens": 1,
