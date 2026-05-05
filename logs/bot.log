@@ -9500,3 +9500,65 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-04 17:22:04,452 [INFO] Tentativas de publicacao apos sync: 1
 2026-05-04 17:22:04,452 [INFO] Publicacoes concluidas apos sync: 1
 2026-05-04 17:22:04,452 [INFO] Novos editais publicados no feed hoje: 10/10.
+2026-05-05 05:45:54,839 [INFO] Inicio da execucao
+2026-05-05 05:46:03,270 [INFO] Fonte ANP retornou 2 itens
+2026-05-05 05:46:09,280 [INFO] Fonte CNPQ retornou 2 itens
+2026-05-05 05:46:11,722 [INFO] Fonte CAPES retornou 6 itens
+2026-05-05 05:46:26,436 [INFO] Fonte CONFAP retornou 0 itens
+2026-05-05 05:46:52,512 [INFO] Fonte IPEA retornou 10 itens
+2026-05-05 05:47:46,743 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16337-chamada-publica-016-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Read timed out. (read timeout=30)
+2026-05-05 05:48:45,275 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-05 05:49:04,094 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-05 05:49:06,443 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-05 05:49:08,641 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-05 05:49:14,980 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-05 05:49:17,782 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-05 05:49:19,336 [INFO] Fonte BASA retornou 0 itens
+2026-05-05 05:49:20,449 [INFO] Fonte BNDES retornou 8 itens
+2026-05-05 05:49:36,464 [INFO] Fonte FINEP retornou 10 itens
+2026-05-05 05:49:48,742 [INFO] Fonte DECIT retornou 0 itens
+2026-05-05 05:49:50,349 [INFO] Fonte FAPESP retornou 14 itens
+2026-05-05 05:50:32,218 [INFO] Fonte FAPERJ retornou 14 itens
+2026-05-05 05:50:34,417 [INFO] Fonte FACEPE retornou 85 itens
+2026-05-05 05:53:23,350 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-05 05:55:03,382 [INFO] Fonte FAPEAL retornou 24 itens
+2026-05-05 05:55:31,254 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-05 05:55:47,812 [INFO] Fonte FAPES retornou 0 itens
+2026-05-05 05:56:30,428 [INFO] Fonte FAPEG retornou 8 itens
+2026-05-05 05:57:39,047 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-05 05:57:40,871 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-05 05:57:50,321 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-05 05:58:33,654 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-05 05:59:03,441 [INFO] Fonte FAPESQ retornou 13 itens
+2026-05-05 05:59:16,113 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-05 05:59:20,451 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretrizes-especificas-da-fapesb-chamada-2026-confap-brasillinois/
+2026-05-05 05:59:25,098 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/
+2026-05-05 05:59:29,990 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/chamada-fundacao-de-amparo-a-pesquisa-da-bahiasectisemafgb-no-012026/
+2026-05-05 05:59:34,629 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/
+2026-05-05 05:59:39,207 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretrizes-especificas-da-fapesb-chamada-para-submissao-de-propostas-do-programa-de-intercambio-de-pessoal-msca-se-em-coordenacao-com-o-horizonte-europa-2/
+2026-05-05 05:59:44,630 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesbsecti-no-0032026-apoio-a-pesquisas-e-inovacoes-para-a-defesa-nacional-e-a-seguranca-publica/
+2026-05-05 05:59:49,784 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-fapesb-no-0302025-apoio-a-pesquisa-cientifica-tecnologica-eou-de-inovacao-em-doencas-e-agravos-prevalentes-na-populacao-negra-com-enfase-em-doenca-falciforme-e-os-impactos-do-racismo-estrut/
+2026-05-05 05:59:54,553 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-no-0242025-programa-nacional-de-apoio-a-geracao-de-empreendimentos-inovadores-programa-centelha-3-bahia/
+2026-05-05 05:59:59,543 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/edital-de-selecao-publica-no-027-2025-subvencao-economica-a-pesquisa-desenvolvimento-e-inovacao-p-d-i-solucoes-de-sistemas-inteligentes-para-a-administracao-estadual-rodada-1/
+2026-05-05 06:00:05,144 [INFO] Fallback SSL sem verificacao usado para https://www.fapesb.ba.gov.br/diretriz-fapesb-4o-chamada-publica-conjunta-de-apoio-a-pos-doutores-negros-e-indigenas-em-ecologia/
+2026-05-05 06:00:07,654 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-05 06:00:40,730 [INFO] Fonte FAPEAM retornou 0 itens
+2026-05-05 06:00:47,059 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-05 06:02:21,167 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-05 06:02:23,079 [INFO] Fonte FAPEMIG retornou 3 itens
+2026-05-05 06:02:33,512 [INFO] Fonte FAPPR retornou 8 itens
+2026-05-05 06:03:03,953 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-05 06:06:11,384 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-05 06:06:12,611 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-05 06:07:46,742 [INFO] Fonte FAPITEC retornou 0 itens
+2026-05-05 06:12:22,115 [INFO] Fonte FAPT retornou 0 itens
+2026-05-05 06:12:35,167 [INFO] Fonte FAPESC retornou 16 itens
+2026-05-05 06:13:43,064 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-05 06:14:43,964 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-05 06:14:43,986 [INFO] Total coletado: 145
+2026-05-05 06:14:43,986 [INFO] Novos: 2 | Prorrogados: 2 | Atualizados: 141 | Mantidos: 0 | Deduplicados por chave: 55
+2026-05-05 06:14:43,986 [INFO] Repostados/Publicados: 0
+2026-05-05 06:14:43,986 [INFO] Bloqueados para postagem: 0
+2026-05-05 06:14:43,986 [INFO] Expirados removidos da base: 4
+2026-05-05 06:14:43,986 [INFO] Erros por fonte: 0
+2026-05-05 06:14:43,986 [INFO] Fim da execucao
