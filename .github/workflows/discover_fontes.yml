@@ -1,0 +1,53 @@
+name: Descobrir Fontes
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 15 1 * *"
+
+concurrency:
+  group: discover-fontes
+  cancel-in-progress: false
+
+jobs:
+  discover-sources:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run source discovery
+        env:
+          TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
+        run: python -m src.discover_sources
+
+      - name: Commit discovery updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fontes.json data/fontes_planejadas.json data/fontes_candidatas.json data/fontes_descobertas.json logs/bot.log
+          git diff --cached --quiet && exit 0
+          git commit -m "discover: fontes $(date -u +'%Y-%m-%d %H:%M')"
+          pushed=false
+          for attempt in 1 2 3; do
+            if git push; then
+              pushed=true
+              break
+            fi
+            git fetch origin main
+            git pull --rebase origin main
+          done
+          test "$pushed" = "true"

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "nome": "Agencia Nacional do Petroleo, Gas Natural e Biocombustiveis",
     "sigla": "ANP",
@@ -147,7 +147,7 @@
     "sigla": "FINEP",
     "uf": "BR",
     "site_oficial": "https://www.finep.gov.br",
-    "pagina_editais": "https://www.finep.gov.br/chamadas-publicas/chamadaspublicas?situacao=aberta",
+    "pagina_editais": "https://www.finep.gov.br/oportunidades",
     "tipo_coleta": "html",
     "ativo": true,
     "parser": "generic",
@@ -290,7 +290,7 @@
     "sigla": "FAPEMAT",
     "uf": "MT",
     "site_oficial": "https://www.fapemat.mt.gov.br",
-    "pagina_editais": "https://www.fapemat.mt.gov.br/aberto",
+    "pagina_editais": "https://www.fapemat.mt.gov.br/pt/aberto_old",
     "tipo_coleta": "html",
     "ativo": true,
     "parser": "generic",
@@ -446,7 +446,7 @@
     "sigla": "FAPERN",
     "uf": "RN",
     "site_oficial": "https://www.fapern.rn.gov.br",
-    "pagina_editais": "https://www.fapern.rn.gov.br",
+    "pagina_editais": "https://www.fapern.rn.gov.br/",
     "tipo_coleta": "api",
     "ativo": true,
     "parser": "generic",

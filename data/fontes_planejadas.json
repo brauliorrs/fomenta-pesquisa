@@ -66,9 +66,24 @@
     {
       "sigla": "ABDI",
       "nome": "Agencia Brasileira de Desenvolvimento Industrial",
-      "status_integracao": "pendente",
+      "status_integracao": "descoberta_viavel",
       "prioridade": "ativa",
-      "estrategia": "avaliar_bloqueio_cloudflare"
+      "estrategia": "avaliar_bloqueio_cloudflare",
+      "ultima_descoberta": "2026-05-06T20:38:54.497801-03:00",
+      "site_oficial_detectado": "https://www.abdi.com.br",
+      "pagina_editais_detectada": "https://www.abdi.com.br/noticias/",
+      "motivo_descoberta": "Pagina oficial com sinais de edital aberto e parse generico viavel."
+    },
+    {
+      "sigla": "ANEEL",
+      "nome": "Agencia Nacional de Energia Eletrica - Pesquisa e Desenvolvimento",
+      "status_integracao": "pendente",
+      "prioridade": "mensal",
+      "estrategia": "descoberta_mensal",
+      "ultima_descoberta": "2026-05-06T20:38:54.497801-03:00",
+      "site_oficial_detectado": "https://www.gov.br/aneel/pt-br",
+      "pagina_editais_detectada": "https://www.gov.br/aneel/pt-br/assuntos/programa-de-pesquisa-desenvolvimento-e-inovacao/chamadas-de-projetos-de-pdi-estrategicos",
+      "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."
     }
   ],
   "estaduais": [
@@ -262,6 +277,28 @@
       "status_integracao": "integrada",
       "prioridade": "ativa",
       "estrategia": "parser_dedicado"
+    },
+    {
+      "sigla": "FUNBIO",
+      "nome": "Fundo Brasileiro para a Biodiversidade",
+      "status_integracao": "pendente",
+      "prioridade": "mensal",
+      "estrategia": "descoberta_mensal",
+      "ultima_descoberta": "2026-05-06T20:38:54.497801-03:00",
+      "site_oficial_detectado": "https://www.funbio.org.br",
+      "pagina_editais_detectada": "https://www.funbio.org.br/chamadas-de-projetos/",
+      "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."
+    },
+    {
+      "sigla": "FGB",
+      "nome": "Fundacao Grupo Boticario de Protecao a Natureza",
+      "status_integracao": "pendente",
+      "prioridade": "mensal",
+      "estrategia": "descoberta_mensal",
+      "ultima_descoberta": "2026-05-06T20:38:54.497801-03:00",
+      "site_oficial_detectado": "https://www.fundacaogrupoboticario.org.br",
+      "pagina_editais_detectada": "https://fundacaogrupoboticario.org.br/noticias/",
+      "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."
     }
   ],
   "observacoes": {

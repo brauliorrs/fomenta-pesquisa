@@ -1,0 +1,118 @@
+[
+  {
+    "segmento": "federais",
+    "sigla": "ABDI",
+    "nome": "Agencia Brasileira de Desenvolvimento Industrial",
+    "uf": "BR",
+    "site_oficial": "https://www.abdi.com.br",
+    "pagina_editais_hint": "https://www.abdi.com.br/editalnib/",
+    "candidate_paths": [
+      "/editais/",
+      "/editalnib/",
+      "/"
+    ],
+    "anchor_keywords": [
+      "edital",
+      "chamada",
+      "inovacao",
+      "inovação"
+    ],
+    "tipo_coleta": "html",
+    "parser": "generic_discovery",
+    "selectors": {
+      "item": "article, .elementor-post, .post, .card, a[href*='edital']",
+      "title": "h2, h3, h4, .entry-title, .elementor-heading-title",
+      "link": "a[href]",
+      "summary": "p, .excerpt, .entry-excerpt"
+    },
+    "prioridade": "ativa",
+    "estrategia": "avaliar_bloqueio_cloudflare",
+    "activation_mode": "review_when_viable"
+  },
+  {
+    "segmento": "federais",
+    "sigla": "ANEEL",
+    "nome": "Agencia Nacional de Energia Eletrica - Pesquisa e Desenvolvimento",
+    "uf": "BR",
+    "site_oficial": "https://www.gov.br/aneel/pt-br",
+    "pagina_editais_hint": "https://www.gov.br/aneel/pt-br/assuntos/pesquisa-e-desenvolvimento",
+    "candidate_paths": [
+      "/assuntos/pesquisa-e-desenvolvimento",
+      "/"
+    ],
+    "anchor_keywords": [
+      "pesquisa",
+      "desenvolvimento",
+      "edital",
+      "chamada"
+    ],
+    "tipo_coleta": "html",
+    "parser": "generic_discovery",
+    "selectors": {
+      "item": "a.summary.url, article, .tileItem"
+    },
+    "prioridade": "mensal",
+    "estrategia": "descoberta_mensal",
+    "activation_mode": "review_when_viable"
+  },
+  {
+    "segmento": "privados",
+    "sigla": "FUNBIO",
+    "nome": "Fundo Brasileiro para a Biodiversidade",
+    "uf": "BR",
+    "site_oficial": "https://www.funbio.org.br",
+    "pagina_editais_hint": "https://www.funbio.org.br/oportunidades/",
+    "candidate_paths": [
+      "/oportunidades/",
+      "/editais/",
+      "/"
+    ],
+    "anchor_keywords": [
+      "oportunidade",
+      "edital",
+      "chamada",
+      "selecao"
+    ],
+    "tipo_coleta": "html",
+    "parser": "generic_discovery",
+    "selectors": {
+      "item": "article, .post, .card, .entry",
+      "title": "h2, h3, .entry-title",
+      "link": "a[href]",
+      "summary": "p"
+    },
+    "prioridade": "mensal",
+    "estrategia": "descoberta_mensal",
+    "activation_mode": "review_when_viable"
+  },
+  {
+    "segmento": "privados",
+    "sigla": "FGB",
+    "nome": "Fundacao Grupo Boticario de Protecao a Natureza",
+    "uf": "BR",
+    "site_oficial": "https://www.fundacaogrupoboticario.org.br",
+    "pagina_editais_hint": "https://www.fundacaogrupoboticario.org.br/editais/",
+    "candidate_paths": [
+      "/editais/",
+      "/oportunidades/",
+      "/"
+    ],
+    "anchor_keywords": [
+      "edital",
+      "chamada",
+      "pesquisa",
+      "natureza"
+    ],
+    "tipo_coleta": "html",
+    "parser": "generic_discovery",
+    "selectors": {
+      "item": "article, .post, .card, .elementor-post",
+      "title": "h2, h3, .entry-title",
+      "link": "a[href]",
+      "summary": "p"
+    },
+    "prioridade": "mensal",
+    "estrategia": "descoberta_mensal",
+    "activation_mode": "review_when_viable"
+  }
+]

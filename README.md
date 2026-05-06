@@ -12,6 +12,7 @@ Bot em Python para monitorar editais de pesquisa, manter memória em arquivos ve
 - Geração de card visual (`.jpg`) e mock textual (`.txt`) em `posts/`
 - Painel local para visualizar editais em `dashboard/`
 - Workflow do GitHub Actions para execução agendada e manual
+- Workflow mensal de descoberta de novas fontes e auditoria de páginas oficiais
 - Catálogo de expansão de fontes em `data/fontes_planejadas.json`
 
 ## Estrutura
@@ -53,6 +54,7 @@ Depois de rodar a coleta, você passa a ter:
 - `data/historico_postagens.csv`: histórico do mock de publicação
 - `posts/*.jpg`: card visual automático temporário para revisão e publicação
 - `posts/*.txt`: mock textual temporário com legenda pronta para revisão
+- `data/fontes_descobertas.json`: diagnóstico mensal de novas fontes candidatas e páginas oficiais auditadas
 
 ## Painel local de editais
 
@@ -162,6 +164,10 @@ O workflow já usa `github.repository` e `github.token`, então não é necessá
 - A extração de prazos usa heurísticas, leitura de PDF e alguns endpoints auxiliares quando a página oficial expõe cronograma fora do HTML principal.
 - Quando não houver mudanças, o workflow evita falha no commit.
 - O workflow do GitHub Actions está configurado em UTC para equivaler a `00:00` e `12:00` de `America/Sao_Paulo` no cenário atual, usando `0 3,15 * * *`.
+- O workflow `Descobrir Fontes` roda mensalmente e faz duas coisas:
+  - audita as páginas oficiais das fontes já ativas para detectar mudança de URL relevante
+  - avalia o catálogo de candidatas em `data/fontes_candidatas.json` para procurar páginas viáveis de editais e registrar a descoberta em `data/fontes_descobertas.json`
+- A promoção automática para monitoramento ativo só acontece quando a candidata estiver configurada para `generic_discovery` e a validação mensal indicar que a página é parseável com segurança. O restante entra no hall de descoberta com status de revisão.
 
 ## Primeira carga de publicacao
 

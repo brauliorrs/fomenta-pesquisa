@@ -55,6 +55,7 @@ from src.sources.faps import FAPSource
 from src.sources.fundeci import FUNDECISource
 from src.sources.funcap import FUNCAPSource
 from src.sources.fundect import FUNDECTSource
+from src.sources.generic_discovery import GenericDiscoverySource
 from src.sources.ipea import IPEASource
 from src.sources.serrapilheira import SERRAPILHEIRASource
 
@@ -145,6 +146,12 @@ class ScraperService:
             'SERRAPILHEIRA': SERRAPILHEIRASource,
         }
         source_class = mapping.get(config.sigla.upper())
+        if source_class is None:
+            parser_mapping = {
+                'generic': GenericDiscoverySource,
+                'generic_discovery': GenericDiscoverySource,
+            }
+            source_class = parser_mapping.get((config.parser or '').strip().lower())
         if source_class is None:
             raise ValueError(f'Fonte nao suportada: {config.sigla}')
         return source_class(config)
