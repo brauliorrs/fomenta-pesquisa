@@ -2,7 +2,7 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__fa083577
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-05-15
+prazo: 2026-05-25
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__fa083577.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__fa083577_story.jpg
 
@@ -13,8 +13,8 @@ Oportunidade no radar: Chamada de Propostas FAPESP/NSFC – Fundação Nacional 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas
 Tipo: Pesquisa
-Abertura das inscrições: 23/04/2026
-Prazo final: 15/05/2026
+Abertura das inscrições: 07/05/2026
+Prazo final: 25/05/2026
 
 Link oficial do edital:
 https://fapesp.br/18122/
