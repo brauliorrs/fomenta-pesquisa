@@ -8,7 +8,7 @@ card_story: draft_fundacao_araucaria_de_apoio_ao_desenvolv_ca57dcf5_story.jpg
 
 Oportunidade no radar: CP 08/26: Nexus Inovação
 
-A " Chamada Pública 08/2026 - Programa Nexus Inovação ” tem por objetivo contribuir com o fortalecimento do ecossistema de inovação voltado à pesquisa em genômica aplicada ao agronegócio.
+A " Chamada Pública 08/2026 - Programa Nexus Inovação ” é voltada à pesquisa em genômica aplicada ao agronegócio.
 
 Instituição: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana
 Público-alvo: Pesquisadores, ICTs e instituições do Paraná
