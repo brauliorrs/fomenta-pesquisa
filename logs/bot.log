@@ -10068,3 +10068,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-08 16:44:45,470 [INFO] Expirados removidos da base: 0
 2026-05-08 16:44:45,470 [INFO] Erros por fonte: 0
 2026-05-08 16:44:45,470 [INFO] Fim da execucao
+2026-05-08 16:46:01,734 [INFO] Tentando publicar carrossel de feed com 2 item(ns): fundacao_de_apoio_a_pesquisa_e_a_inovaca_f002731b, coordenacao_de_aperfeicoamento_de_pessoa_f3dd99f7
+2026-05-08 16:46:23,161 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_09570bc0 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_09570bc0.jpg
+2026-05-08 16:46:27,450 [INFO] Tentativas de publicacao apos sync: 3
+2026-05-08 16:46:27,450 [INFO] Publicacoes concluidas apos sync: 3
+2026-05-08 16:46:27,450 [INFO] Novos editais publicados no feed hoje: 2/10.
