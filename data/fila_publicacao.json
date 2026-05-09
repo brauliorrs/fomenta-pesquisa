@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T03:21:41.662430-03:00",
+  "generated_at": "2026-05-09T12:55:11.413869-03:00",
   "total_prontos": 78,
   "itens": [
     {
@@ -405,7 +405,7 @@
       "fonte": "FAPESP",
       "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
       "prazo": "2026-05-18",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-05-09T03:21:41.662430-03:00",
       "quantidade_postagens": 1,
@@ -999,7 +999,7 @@
       "fonte": "FAPITEC",
       "orgao": "Fundação de Apoio a Pesquisa e a Inovacao Tecnologica do Estado de Sergipe",
       "prazo": "2026-06-05",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-05-08T13:46:01.708541-03:00",
       "quantidade_postagens": 1,
@@ -1395,7 +1395,7 @@
       "fonte": "FAPESP",
       "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
       "prazo": "2026-07-21",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-05-09T03:21:41.662430-03:00",
       "quantidade_postagens": 1,
