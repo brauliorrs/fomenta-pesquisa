@@ -10512,3 +10512,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-11 17:54:52,305 [INFO] Expirados removidos da base: 0
 2026-05-11 17:54:52,305 [INFO] Erros por fonte: 0
 2026-05-11 17:54:52,305 [INFO] Fim da execucao
+2026-05-11 17:56:12,086 [INFO] Tentando publicar carrossel de feed com 2 item(ns): fundacao_de_apoio_ao_desenvolvimento_do__6ad54d1f, fundacao_de_apoio_ao_desenvolvimento_do__a520a1bf
+2026-05-11 17:56:42,940 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_a_pesquisa_do_estado_d_29af5496 usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_29af5496.jpg
+2026-05-11 17:56:52,623 [INFO] Tentativas de publicacao apos sync: 3
+2026-05-11 17:56:52,623 [INFO] Publicacoes concluidas apos sync: 3
+2026-05-11 17:56:52,623 [INFO] Novos editais publicados no feed hoje: 2/10.
