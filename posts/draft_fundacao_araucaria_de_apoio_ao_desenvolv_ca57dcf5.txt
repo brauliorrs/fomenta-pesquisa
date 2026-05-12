@@ -6,7 +6,7 @@ prazo: 2026-07-03
 card_feed: draft_fundacao_araucaria_de_apoio_ao_desenvolv_ca57dcf5.jpg
 card_story: draft_fundacao_araucaria_de_apoio_ao_desenvolv_ca57dcf5_story.jpg
 
-Oportunidade no radar: CP 08/26: Nexus Inovação
+Oportunidade no radar: CP 08/26: Programa Nexus Inovação
 
 A " Chamada Pública 08/2026 - Programa Nexus Inovação ” é voltada à pesquisa em genômica aplicada ao agronegócio.
 

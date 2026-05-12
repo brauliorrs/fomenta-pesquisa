@@ -12,6 +12,8 @@ from src.utils.hashing import slugify
 
 
 class RenderService:
+    SHORT_CODE_TITLE_PATTERN = re.compile(r'^(?P<code>(?:CP|PI)\s+\d{1,2}/\d{2,4})\s*:?\s*(?P<label>.+)$', re.I)
+
     def __init__(self) -> None:
         self.normalize_service = NormalizeService()
 
@@ -389,13 +391,62 @@ class RenderService:
 
     def _preferred_title(self, edital: Edital) -> str:
         original_title = self._display_text(edital.titulo)
-        if not self._looks_like_fragment(original_title):
-            return original_title
+        preferred_title = original_title
+        if self._looks_like_fragment(original_title):
+            link_title = self._title_from_link(edital.link, edital.fonte)
+            if link_title and not self._looks_like_fragment(link_title):
+                preferred_title = link_title
 
-        link_title = self._title_from_link(edital.link, edital.fonte)
-        if link_title and not self._looks_like_fragment(link_title):
-            return link_title
-        return original_title
+        preferred_title = self._expand_source_specific_title(edital, preferred_title)
+        return preferred_title or original_title
+
+    def _expand_source_specific_title(self, edital: Edital, title: str) -> str:
+        if self._display_text(edital.fonte).upper() != 'FAPPR':
+            return title
+
+        match = self.SHORT_CODE_TITLE_PATTERN.match(title)
+        if not match:
+            return title
+
+        label = match.group('label').strip(' -:;')
+        if len(label) > 24 and len(label.split()) > 3:
+            return title
+
+        descriptor = self._extract_fappr_descriptor(edital.resumo, match.group('code'))
+        if not descriptor:
+            return title
+
+        return f'{match.group("code")}: {descriptor}'
+
+    def _extract_fappr_descriptor(self, summary: str | None, code: str) -> str:
+        cleaned_summary = self._display_text(summary)
+        if not cleaned_summary:
+            return ''
+
+        code_match = re.search(r'(\d{1,2})/(\d{2,4})', code)
+        if code_match:
+            code_number = str(int(code_match.group(1)))
+            code_year = code_match.group(2)
+            year_variants = {code_year}
+            if len(code_year) == 2:
+                year_variants.add(f'20{code_year}')
+            elif len(code_year) == 4:
+                year_variants.add(code_year[2:])
+
+            for year_variant in year_variants:
+                pattern = (
+                    rf'Chamada\s+P[ÚU]blica\s+0?{re.escape(code_number)}/{re.escape(year_variant)}\s*[-:–—]\s*'
+                    r'(.+?)(?:\s*["”]|,\s*destina-se|\s+destina-se)'
+                )
+                match = re.search(pattern, cleaned_summary, flags=re.I)
+                if not match:
+                    continue
+
+                descriptor = ' '.join(match.group(1).split()).strip(' -:;,.')
+                if descriptor and not self._looks_like_fragment(descriptor):
+                    return descriptor
+
+        return ''
 
     def _title_from_link(self, link: str | None, fonte: str | None) -> str:
         cleaned_link = self._display_text(link)
