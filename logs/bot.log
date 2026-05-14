@@ -10800,3 +10800,61 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-13 17:52:15,921 [INFO] Tentativas de publicacao apos sync: 1
 2026-05-13 17:52:15,921 [INFO] Publicacoes concluidas apos sync: 1
 2026-05-13 17:52:15,921 [INFO] Novos editais publicados no feed hoje: 3/10.
+2026-05-14 06:26:10,510 [INFO] Inicio da execucao
+2026-05-14 06:26:17,029 [INFO] Fonte ANP retornou 2 itens
+2026-05-14 06:26:23,112 [INFO] Fonte CNPQ retornou 2 itens
+2026-05-14 06:26:25,386 [INFO] Fonte CAPES retornou 5 itens
+2026-05-14 06:26:32,159 [INFO] Fonte CONFAP retornou 9 itens
+2026-05-14 06:28:24,109 [WARNING] Falha ao enriquecer item https://www.to.gov.br/fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f969c975250>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))
+2026-05-14 06:28:48,894 [WARNING] Falha ao enriquecer item https://fapergs.rs.gov.br/edital-fapergs-04-2026-probic-probiti-edicao-2026-2028: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-05-14 06:28:53,997 [INFO] Fonte IPEA retornou 10 itens
+2026-05-14 06:29:16,976 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-14 06:29:37,766 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-14 06:29:39,715 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-14 06:29:41,946 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-14 06:29:48,405 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-14 06:29:51,368 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-14 06:29:52,791 [INFO] Fonte BASA retornou 0 itens
+2026-05-14 06:29:54,096 [INFO] Fonte BNDES retornou 8 itens
+2026-05-14 06:30:07,247 [INFO] Fonte FINEP retornou 0 itens
+2026-05-14 06:30:08,076 [INFO] Fonte DECIT retornou 0 itens
+2026-05-14 06:30:09,642 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-14 06:30:51,521 [INFO] Fonte FAPERJ retornou 15 itens
+2026-05-14 06:30:53,529 [INFO] Fonte FACEPE retornou 89 itens
+2026-05-14 06:33:44,036 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-14 06:36:13,463 [INFO] Fonte FAPEAL retornou 0 itens
+2026-05-14 06:36:21,838 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-14 06:36:37,517 [INFO] Fonte FAPES retornou 0 itens
+2026-05-14 06:37:24,407 [INFO] Fonte FAPEG retornou 9 itens
+2026-05-14 06:38:02,988 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-14 06:38:04,755 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-14 06:38:13,702 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-14 06:38:58,405 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-14 06:39:23,162 [INFO] Fonte FAPESQ retornou 10 itens
+2026-05-14 06:39:40,401 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-14 06:40:40,512 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-14 06:41:31,651 [INFO] Fonte FAPEAM retornou 5 itens
+2026-05-14 06:41:37,669 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/04/Edital-CD-014-2026-LIDERA-CIENTISTA-AM-Resolucao-017-20261.pdf
+2026-05-14 06:41:43,433 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/03/Edital-CD-013-2026-AMAZoNIDAS-Meninas-e-Mulheres-Resolucao-016-2026.pdf
+2026-05-14 06:41:55,996 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-009-2026-SOCIO-TECH-FAPEAM.pdf
+2026-05-14 06:42:02,405 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/04/Resolucao-CD-008-2026-Edital-008-2026-PROVIDA-AM-FAPEAM.pdf
+2026-05-14 06:42:17,868 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-002-2026-POPCTI.pdf
+2026-05-14 06:42:25,881 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-14 06:44:00,849 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-14 06:44:02,932 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-05-14 06:44:10,078 [INFO] Fonte FAPPR retornou 10 itens
+2026-05-14 06:44:38,358 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-14 06:47:46,646 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-14 06:47:48,170 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-14 06:49:22,436 [INFO] Fonte FAPITEC retornou 0 itens
+2026-05-14 06:53:57,731 [INFO] Fonte FAPT retornou 0 itens
+2026-05-14 06:54:10,618 [INFO] Fonte FAPESC retornou 17 itens
+2026-05-14 06:55:11,984 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-14 06:56:25,304 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-14 06:56:25,324 [INFO] Total coletado: 121
+2026-05-14 06:56:25,324 [INFO] Novos: 7 | Prorrogados: 1 | Atualizados: 113 | Mantidos: 0 | Deduplicados por chave: 24
+2026-05-14 06:56:25,324 [INFO] Repostados/Publicados: 0
+2026-05-14 06:56:25,324 [INFO] Bloqueados para postagem: 0
+2026-05-14 06:56:25,324 [INFO] Expirados removidos da base: 1
+2026-05-14 06:56:25,324 [INFO] Erros por fonte: 0
+2026-05-14 06:56:25,324 [INFO] Fim da execucao
