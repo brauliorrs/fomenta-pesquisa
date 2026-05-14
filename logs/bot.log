@@ -10863,3 +10863,86 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-14 06:57:43,273 [INFO] Tentativas de publicacao apos sync: 4
 2026-05-14 06:57:43,273 [INFO] Publicacoes concluidas apos sync: 4
 2026-05-14 06:57:43,273 [INFO] Novos editais publicados no feed hoje: 3/10.
+2026-05-14 17:03:18,450 [INFO] Inicio da execucao
+2026-05-14 17:03:26,865 [INFO] Fonte ANP retornou 2 itens
+2026-05-14 17:03:33,387 [INFO] Fonte CNPQ retornou 2 itens
+2026-05-14 17:03:35,879 [INFO] Fonte CAPES retornou 5 itens
+2026-05-14 17:03:44,519 [INFO] Fonte CONFAP retornou 9 itens
+2026-05-14 17:04:16,219 [WARNING] Falha ao enriquecer item https://www.facepe.br/wp-content/uploads/2026/04/2026.04.28-Compet-Superior.pdf: HTTPSConnectionPool(host='www.facepe.br', port=443): Max retries exceeded with url: /wp-content/uploads/2026/04/2026.04.28-Compet-Superior.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.facepe.br', port=443) at 0x7f793bcf2310>, 'Connection to www.facepe.br timed out. (connect timeout=30)'))
+2026-05-14 17:05:58,713 [WARNING] Falha ao enriquecer item https://www.to.gov.br/fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f793c8db090>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))
+2026-05-14 17:06:28,501 [WARNING] Falha ao enriquecer item https://fapergs.rs.gov.br/edital-fapergs-04-2026-probic-probiti-edicao-2026-2028: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-05-14 17:06:30,346 [INFO] Fonte IPEA retornou 10 itens
+2026-05-14 17:06:48,352 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-14 17:07:13,634 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-14 17:07:16,070 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-14 17:07:19,395 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-14 17:07:26,389 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-14 17:07:30,252 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-14 17:07:31,749 [INFO] Fonte BASA retornou 0 itens
+2026-05-14 17:07:33,020 [INFO] Fonte BNDES retornou 8 itens
+2026-05-14 17:07:48,285 [INFO] Fonte FINEP retornou 0 itens
+2026-05-14 17:07:49,153 [INFO] Fonte DECIT retornou 0 itens
+2026-05-14 17:07:50,558 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-14 17:08:31,500 [INFO] Fonte FAPERJ retornou 15 itens
+2026-05-14 17:10:04,899 [INFO] Fonte FACEPE retornou 0 itens
+2026-05-14 17:10:07,262 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-14 17:11:27,591 [INFO] Fonte FAPEAL retornou 24 itens
+2026-05-14 17:11:28,739 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2026/05/confira-as-novas-turmas/
+2026-05-14 17:11:29,871 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2026/05/pibic-jr-2026/
+2026-05-14 17:11:31,030 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2026/05/edital-01-2026-bolsas/
+2026-05-14 17:11:32,567 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2026/01/edital-consultores-adhoc/
+2026-05-14 17:12:04,129 [WARNING] Falha ao enriquecer item https://www.fapeal.br/2025/03/chamada-mobility-confap-italy-2025/: HTTPSConnectionPool(host='www.fapeal.br', port=443): Read timed out.
+2026-05-14 17:12:05,492 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/03/chamada-multitematica-eu-lac-2025/
+2026-05-14 17:12:06,831 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/03/chamada-confap-cdti-2025-2026/
+2026-05-14 17:12:08,189 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2026/04/aorc-2026/
+2026-05-14 17:12:09,948 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2026/04/edital-02-26-excelencia-academica/
+2026-05-14 17:12:11,106 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/12/edital-fapeal-cnpq-07-2025-ppp/
+2026-05-14 17:12:12,523 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/12/mtestrados-profissionais-ifal/
+2026-05-14 17:12:13,703 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/10/ppsus-2025/
+2026-05-14 17:12:15,097 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/10/pacquali/
+2026-05-14 17:12:16,513 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/07/aorc-2025/
+2026-05-14 17:12:17,967 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/06/edital-01-2025-bolsas-ppgs/
+2026-05-14 17:12:19,368 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2025/06/edital-03-25-excelencia-academica/
+2026-05-14 17:12:20,790 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2024/04/edital-seduc-07-2024/
+2026-05-14 17:12:22,560 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2023/07/edital-fapeal-09/
+2026-05-14 17:12:24,291 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2023/06/edital-fapeal-no-06-2023-auxilio-a-organizacao-de-eventos-cientificos-aorc-2023/
+2026-05-14 17:12:25,827 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2023/06/arc-2023/
+2026-05-14 17:12:27,540 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2023/06/pibic-jr-2023/
+2026-05-14 17:12:28,744 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2023/02/jovens-doutores-al/
+2026-05-14 17:12:30,339 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2022/12/edital-02-2022-edufal-fapeal-edital-para-publicacao-teses-e-dissertacoes/
+2026-05-14 17:12:31,937 [INFO] Fallback SSL sem verificacao usado para https://www.fapeal.br/2022/12/chamada-transnacional-conjunta-ord-apoio-a-ciencia-aberta/
+2026-05-14 17:12:40,367 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-14 17:12:59,516 [INFO] Fonte FAPES retornou 0 itens
+2026-05-14 17:13:29,164 [INFO] Fonte FAPEG retornou 9 itens
+2026-05-14 17:14:15,124 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-14 17:14:16,944 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-14 17:14:26,208 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-14 17:15:14,411 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-14 17:15:42,133 [INFO] Fonte FAPESQ retornou 10 itens
+2026-05-14 17:16:02,103 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-14 17:17:09,123 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-14 17:18:29,614 [INFO] Fonte FAPEAM retornou 5 itens
+2026-05-14 17:18:47,058 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/04/Edital-CD-014-2026-LIDERA-CIENTISTA-AM-Resolucao-017-20261.pdf
+2026-05-14 17:19:02,584 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/03/Edital-CD-013-2026-AMAZoNIDAS-Meninas-e-Mulheres-Resolucao-016-2026.pdf
+2026-05-14 17:19:17,008 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-009-2026-SOCIO-TECH-FAPEAM.pdf
+2026-05-14 17:19:27,458 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/04/Resolucao-CD-008-2026-Edital-008-2026-PROVIDA-AM-FAPEAM.pdf
+2026-05-14 17:19:34,802 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-002-2026-POPCTI.pdf
+2026-05-14 17:19:43,417 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-14 17:21:17,868 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-14 17:21:20,700 [INFO] Fonte FAPEMIG retornou 3 itens
+2026-05-14 17:21:32,314 [INFO] Fonte FAPPR retornou 10 itens
+2026-05-14 17:22:03,928 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-14 17:25:12,113 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-14 17:25:15,058 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-14 17:25:19,088 [INFO] Fonte FAPITEC retornou 1 itens
+2026-05-14 17:30:02,065 [INFO] Fonte FAPT retornou 0 itens
+2026-05-14 17:30:18,804 [INFO] Fonte FAPESC retornou 20 itens
+2026-05-14 17:31:51,898 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-14 17:33:27,599 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-14 17:33:27,620 [INFO] Total coletado: 119
+2026-05-14 17:33:27,620 [INFO] Novos: 14 | Prorrogados: 1 | Atualizados: 104 | Mantidos: 0 | Deduplicados por chave: 32
+2026-05-14 17:33:27,620 [INFO] Repostados/Publicados: 0
+2026-05-14 17:33:27,620 [INFO] Bloqueados para postagem: 0
+2026-05-14 17:33:27,620 [INFO] Expirados removidos da base: 0
+2026-05-14 17:33:27,620 [INFO] Erros por fonte: 0
+2026-05-14 17:33:27,620 [INFO] Fim da execucao
