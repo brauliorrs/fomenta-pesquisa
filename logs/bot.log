@@ -11033,3 +11033,59 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-15 07:07:51,842 [INFO] Tentativas de publicacao apos sync: 5
 2026-05-15 07:07:51,842 [INFO] Publicacoes concluidas apos sync: 5
 2026-05-15 07:07:51,842 [INFO] Novos editais publicados no feed hoje: 4/10.
+2026-05-15 16:52:32,856 [INFO] Inicio da execucao
+2026-05-15 16:52:41,102 [INFO] Fonte ANP retornou 2 itens
+2026-05-15 16:52:46,904 [INFO] Fonte CNPQ retornou 2 itens
+2026-05-15 16:52:49,628 [INFO] Fonte CAPES retornou 4 itens
+2026-05-15 16:52:57,481 [INFO] Fonte CONFAP retornou 9 itens
+2026-05-15 16:54:56,708 [WARNING] Falha ao enriquecer item https://www.to.gov.br/fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f410c913690>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))
+2026-05-15 16:55:30,027 [WARNING] Falha ao enriquecer item https://fapergs.rs.gov.br/edital-fapergs-04-2026-probic-probiti-edicao-2026-2028: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-05-15 16:55:32,143 [INFO] Fonte IPEA retornou 10 itens
+2026-05-15 16:55:45,007 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-15 16:56:08,599 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-15 16:56:10,401 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-15 16:56:12,915 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-15 16:56:20,333 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-15 16:56:23,344 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-15 16:56:24,985 [INFO] Fonte BASA retornou 0 itens
+2026-05-15 16:56:26,651 [INFO] Fonte BNDES retornou 8 itens
+2026-05-15 16:56:43,277 [INFO] Fonte FINEP retornou 0 itens
+2026-05-15 16:56:44,221 [INFO] Fonte DECIT retornou 0 itens
+2026-05-15 16:56:45,563 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-15 16:57:29,502 [INFO] Fonte FAPERJ retornou 15 itens
+2026-05-15 16:57:32,248 [INFO] Fonte FACEPE retornou 89 itens
+2026-05-15 17:00:48,039 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-15 17:03:50,353 [INFO] Fonte FAPEAL retornou 0 itens
+2026-05-15 17:03:59,528 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-15 17:04:15,901 [INFO] Fonte FAPES retornou 0 itens
+2026-05-15 17:04:49,316 [INFO] Fonte FAPEG retornou 9 itens
+2026-05-15 17:05:59,529 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-15 17:06:01,642 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-15 17:06:11,614 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-15 17:07:06,681 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-15 17:07:38,933 [INFO] Fonte FAPESQ retornou 10 itens
+2026-05-15 17:07:57,964 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-15 17:09:01,928 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-15 17:09:52,813 [INFO] Fonte FAPEAM retornou 3 itens
+2026-05-15 17:10:06,089 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/05/Diretrizes-Especificas-FAPEAM-019-2026-Suico-Brasileiro-SWISSNEX.pdf
+2026-05-15 17:10:20,487 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/03/Edital-CD-013-2026-AMAZoNIDAS-Meninas-e-Mulheres-Resolucao-016-2026.pdf
+2026-05-15 17:10:34,148 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-002-2026-POPCTI.pdf
+2026-05-15 17:10:42,399 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-15 17:12:16,876 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-15 17:12:19,091 [INFO] Fonte FAPEMIG retornou 3 itens
+2026-05-15 17:12:32,654 [INFO] Fonte FAPPR retornou 10 itens
+2026-05-15 17:13:02,766 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-15 17:16:10,117 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-15 17:16:12,321 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-15 17:16:16,057 [INFO] Fonte FAPITEC retornou 1 itens
+2026-05-15 17:20:54,348 [INFO] Fonte FAPT retornou 0 itens
+2026-05-15 17:21:11,363 [INFO] Fonte FAPESC retornou 20 itens
+2026-05-15 17:22:44,571 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-15 17:24:13,947 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-15 17:24:13,967 [INFO] Total coletado: 123
+2026-05-15 17:24:13,967 [INFO] Novos: 1 | Prorrogados: 1 | Atualizados: 121 | Mantidos: 0 | Deduplicados por chave: 31
+2026-05-15 17:24:13,967 [INFO] Repostados/Publicados: 0
+2026-05-15 17:24:13,968 [INFO] Bloqueados para postagem: 0
+2026-05-15 17:24:13,968 [INFO] Expirados removidos da base: 0
+2026-05-15 17:24:13,968 [INFO] Erros por fonte: 0
+2026-05-15 17:24:13,968 [INFO] Fim da execucao
