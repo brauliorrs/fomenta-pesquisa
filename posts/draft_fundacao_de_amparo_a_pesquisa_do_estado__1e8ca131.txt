@@ -7,7 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__1e8ca131.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__1e8ca131_story.jpg
 
 Oportunidade no radar: Chamada 004/2026 - Participação Coletiva em Eventos Técnicos no País - 1ª entrada
-Prazo encerra em 3 dias.
+Prazo encerra em 2 dias.
 
 Incentivar a divulgação de resultados de pesquisas científicas, tecnológicas e de inovação desenvolvidas por pesquisadores das ICTs-MG e contribuir para a promoção do intercâmbio científico e tecnológico por meio do apoio à participação coletiva em eventos de natureza técnico-científica.
 
