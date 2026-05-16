@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T03:25:16.619752-03:00",
+  "generated_at": "2026-05-16T12:59:42.820871-03:00",
   "total_prontos": 80,
   "itens": [
     {
@@ -383,7 +383,7 @@
       "fonte": "FAPEAM",
       "orgao": "Fundação de Amparo à Pesquisa do Estado do Amazonas",
       "prazo": "2026-05-24",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
