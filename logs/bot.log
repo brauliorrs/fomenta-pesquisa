@@ -11270,3 +11270,60 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-17 06:53:21,290 [INFO] Tentativas de publicacao apos sync: 1
 2026-05-17 06:53:21,290 [INFO] Publicacoes concluidas apos sync: 1
 2026-05-17 06:53:21,291 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-05-17 16:00:28,876 [INFO] Inicio da execucao
+2026-05-17 16:00:36,086 [INFO] Fonte ANP retornou 2 itens
+2026-05-17 16:00:41,295 [INFO] Fonte CNPQ retornou 2 itens
+2026-05-17 16:00:43,156 [INFO] Fonte CAPES retornou 4 itens
+2026-05-17 16:00:48,431 [INFO] Fonte CONFAP retornou 8 itens
+2026-05-17 16:02:35,536 [WARNING] Falha ao enriquecer item https://www.to.gov.br/fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7fcdd603be50>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))
+2026-05-17 16:03:36,748 [WARNING] Falha ao enriquecer item https://fapesp.br/publicacoes/2024/csc.pdf: HTTPSConnectionPool(host='fapesp.br', port=443): Read timed out. (read timeout=30)
+2026-05-17 16:03:48,301 [WARNING] Falha ao enriquecer item https://fapesc.sc.gov.br/edital-de-chamada-publica-fapesc-n-o-18-2026-proeventos-2027-fase-i/: HTTPSConnectionPool(host='fapesc.sc.gov.br', port=443): Max retries exceeded with url: /edital-de-chamada-publica-fapesc-n-o-18-2026-proeventos-2027-fase-i/ (Caused by NameResolutionError("HTTPSConnection(host='fapesc.sc.gov.br', port=443): Failed to resolve 'fapesc.sc.gov.br' ([Errno -3] Temporary failure in name resolution)"))
+2026-05-17 16:03:49,172 [INFO] Fonte IPEA retornou 10 itens
+2026-05-17 16:03:58,453 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-17 16:04:13,295 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-17 16:04:14,957 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-17 16:04:16,802 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-17 16:04:21,646 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-17 16:04:27,334 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-17 16:04:28,375 [INFO] Fonte BASA retornou 0 itens
+2026-05-17 16:04:29,432 [INFO] Fonte BNDES retornou 8 itens
+2026-05-17 16:04:41,894 [INFO] Fonte FINEP retornou 0 itens
+2026-05-17 16:04:42,508 [INFO] Fonte DECIT retornou 0 itens
+2026-05-17 16:06:40,056 [INFO] Fonte FAPESP retornou 0 itens
+2026-05-17 16:06:40,974 [INFO] Fonte FAPERJ retornou 15 itens
+2026-05-17 16:06:42,922 [INFO] Fonte FACEPE retornou 90 itens
+2026-05-17 16:09:16,642 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-17 16:10:31,689 [INFO] Fonte FAPEAL retornou 24 itens
+2026-05-17 16:11:02,833 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-17 16:11:16,468 [INFO] Fonte FAPES retornou 0 itens
+2026-05-17 16:11:44,591 [INFO] Fonte FAPEG retornou 9 itens
+2026-05-17 16:12:26,893 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-17 16:12:27,976 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-17 16:12:37,057 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-17 16:12:45,995 [INFO] Fonte FAPESPA retornou 0 itens
+2026-05-17 16:12:47,641 [INFO] Fonte FAPESQ retornou 10 itens
+2026-05-17 16:13:00,370 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-17 16:13:49,833 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-17 16:15:04,376 [INFO] Fonte FAPEAM retornou 3 itens
+2026-05-17 16:15:13,027 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/05/DIRETR1.pdf
+2026-05-17 16:15:26,843 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/05/Diretrizes-Especificas-FAPEAM-019-2026-Suico-Brasileiro-SWISSNEX.pdf
+2026-05-17 16:15:38,407 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-002-2026-POPCTI.pdf
+2026-05-17 16:15:45,762 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-17 16:17:19,985 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-17 16:17:21,690 [INFO] Fonte FAPEMIG retornou 3 itens
+2026-05-17 16:17:31,663 [INFO] Fonte FAPPR retornou 10 itens
+2026-05-17 16:18:54,404 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-17 16:22:01,921 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-17 16:22:03,131 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-17 16:22:05,785 [INFO] Fonte FAPITEC retornou 1 itens
+2026-05-17 16:26:43,395 [INFO] Fonte FAPT retornou 0 itens
+2026-05-17 16:27:16,479 [INFO] Fonte FAPESC retornou 0 itens
+2026-05-17 16:27:16,981 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-17 16:28:52,486 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-17 16:28:52,506 [INFO] Total coletado: 92
+2026-05-17 16:28:52,506 [INFO] Novos: 0 | Prorrogados: 1 | Atualizados: 91 | Mantidos: 0 | Deduplicados por chave: 33
+2026-05-17 16:28:52,506 [INFO] Repostados/Publicados: 0
+2026-05-17 16:28:52,507 [INFO] Bloqueados para postagem: 0
+2026-05-17 16:28:52,507 [INFO] Expirados removidos da base: 0
+2026-05-17 16:28:52,507 [INFO] Erros por fonte: 0
+2026-05-17 16:28:52,507 [INFO] Fim da execucao
