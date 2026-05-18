@@ -11444,3 +11444,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-18 18:06:06,967 [INFO] Expirados removidos da base: 0
 2026-05-18 18:06:06,967 [INFO] Erros por fonte: 0
 2026-05-18 18:06:06,967 [INFO] Fim da execucao
+2026-05-18 18:07:35,568 [INFO] Ja houve publicacao de feed hoje. Novos editais aguardam o proximo carrossel diario.
+2026-05-18 18:07:35,569 [INFO] Tentando repostar story diario para edital valido conselho_nacional_de_desenvolvimento_cie_27e0230f usando asset publico draft_conselho_nacional_de_desenvolvimento_cie_27e0230f.jpg
+2026-05-18 18:07:46,998 [INFO] Tentativas de publicacao apos sync: 1
+2026-05-18 18:07:46,998 [INFO] Publicacoes concluidas apos sync: 1
+2026-05-18 18:07:46,998 [INFO] Novos editais publicados no feed hoje: 1/10.
