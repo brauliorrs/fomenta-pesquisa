@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-18T04:28:48.588975-03:00",
-  "total_prontos": 80,
+  "generated_at": "2026-05-18T14:30:29.182489-03:00",
+  "total_prontos": 81,
   "itens": [
     {
       "posicao_fila": 1,
@@ -1192,6 +1192,28 @@
     },
     {
       "posicao_fila": 55,
+      "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b",
+      "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/SEPLAN N.º 29/2026 PROGRAMA DE PLANEJAMENTO TERRITORIAL RESILIENTE DE SANTA CATARINA",
+      "fonte": "FAPESC",
+      "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
+      "prazo": "2026-06-19",
+      "status": "novo",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 32,
+      "link": "https://fapesc.sc.gov.br/wp-content/uploads/2026/05/Edital-29.2026-SEPLAN-DIPT.pdf",
+      "caption": "Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC/SEPLAN N.º 29/2026 PROGRAMA DE PLANEJAMENTO TERRITORIAL RESILIENTE DE SANTA CATARINA\n\nA oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 18/05/2026 e prazo final em 19/06/2026.\n\nInstituição: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina\nPúblico-alvo: Empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina\nTipo: Inovacao\nAbertura das inscrições: 18/05/2026\nPrazo final: 19/06/2026\n\nLink oficial do edital:\nhttps://fapesc.sc.gov.br/wp-content/uploads/2026/05/Edital-29.2026-SEPLAN-DIPT.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesc #Projetosdepesquisa #Selecao #Chamadapublica #Inovacao",
+      "card_header": "EDITAL FAPESC",
+      "card_title": "EDITAL DE CHAMADA PÚBLICA FAPESC/SEPLAN N.º 29/2026 PROGRAMA DE PLANEJAMENTO TERRITORIAL",
+      "card_deadline": "PRAZO: 19/06",
+      "card_summary": "Voltado a empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina. Prazo final em 19/06/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 56,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__296f3a63",
       "titulo": "Chamada FAPESP – Fundação Bracell – Fundação Itaú: Auxílio à Pesquisa para o Fortalecimento da Educação na Pré-Escola",
       "fonte": "FAPESP",
@@ -1213,7 +1235,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 56,
+      "posicao_fila": 57,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 16/2026 PROGRAMA DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO DE APOIO AOS GRUPOS DE PESQUISA DA ASSOCIAÇÃO CATARINENSE DAS FUNDAÇÕES EDUCACIONAIS (ACAFE)",
       "fonte": "FAPESC",
@@ -1235,7 +1257,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 57,
+      "posicao_fila": 58,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89071ad5",
       "titulo": "Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular",
       "fonte": "FAPESP",
@@ -1257,7 +1279,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 58,
+      "posicao_fila": 59,
       "id": "financiadora_de_estudos_e_projetos_agric_26c7babc",
       "titulo": "Agricultura familiar para ICTs 2026",
       "fonte": "FINEP",
@@ -1279,7 +1301,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 59,
+      "posicao_fila": 60,
       "id": "fundacao_araucaria_de_apoio_ao_desenvolv_da7bb4f9",
       "titulo": "CP 09/26: Interconexões Catalunha",
       "fonte": "FAPPR",
@@ -1301,7 +1323,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 60,
+      "posicao_fila": 61,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 15/2026 PRÊMIO INOVAÇÃO CATARINENSE PROFESSOR CASPAR ERICH STEMMER EDIÇÃO 2026",
       "fonte": "FAPESC",
@@ -1323,7 +1345,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 61,
+      "posicao_fila": 62,
       "id": "fundacao_araucaria_de_apoio_ao_desenvolv_ca57dcf5",
       "titulo": "CP 08/26: Nexus Inovação",
       "fonte": "FAPPR",
@@ -1345,7 +1367,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 62,
+      "posicao_fila": 63,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__474d25de",
       "titulo": "Chamada de Propostas – Programa de Pesquisa em Políticas Públicas (PPPP) 2025/2026",
       "fonte": "FAPESP",
@@ -1367,7 +1389,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 63,
+      "posicao_fila": 64,
       "id": "coordenacao_de_aperfeicoamento_de_pessoa_21491403",
       "titulo": "Abertas inscrições para parceria com a França em Engenharia",
       "fonte": "CAPES",
@@ -1389,7 +1411,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 64,
+      "posicao_fila": 65,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__29f76fbf",
       "titulo": "CHAMADA FAPEMIG 06/2026 - Programa Santos Dumont",
       "fonte": "FAPEMIG",
@@ -1411,7 +1433,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 65,
+      "posicao_fila": 66,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__3890078f",
       "titulo": "Chamada de Propostas FAPESP e Fundo para o Desenvolvimento da Ciência e da Tecnologia de Macau (FDCT) 2026",
       "fonte": "FAPESP",
@@ -1433,7 +1455,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 66,
+      "posicao_fila": 67,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a",
       "titulo": "13/2026 -",
       "fonte": "FACEPE",
@@ -1455,7 +1477,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 67,
+      "posicao_fila": 68,
       "id": "financiadora_de_estudos_e_projetos_finep_315d632a",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
       "fonte": "FINEP",
@@ -1477,7 +1499,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 68,
+      "posicao_fila": 69,
       "id": "financiadora_de_estudos_e_projetos_finep_064113e0",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
       "fonte": "FINEP",
@@ -1499,7 +1521,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 69,
+      "posicao_fila": 70,
       "id": "financiadora_de_estudos_e_projetos_finep_32a33550",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
       "fonte": "FINEP",
@@ -1521,7 +1543,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 70,
+      "posicao_fila": 71,
       "id": "financiadora_de_estudos_e_projetos_finep_f6a3506d",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
       "fonte": "FINEP",
@@ -1543,7 +1565,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 71,
+      "posicao_fila": 72,
       "id": "financiadora_de_estudos_e_projetos_finep_1d63ef7c",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
       "fonte": "FINEP",
@@ -1565,7 +1587,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 72,
+      "posicao_fila": 73,
       "id": "financiadora_de_estudos_e_projetos_finep_74b0dc4f",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
       "fonte": "FINEP",
@@ -1587,7 +1609,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 73,
+      "posicao_fila": 74,
       "id": "financiadora_de_estudos_e_projetos_finep_35401209",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
       "fonte": "FINEP",
@@ -1609,7 +1631,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 74,
+      "posicao_fila": 75,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25",
       "titulo": "FAPESP / M-ERA.NET 2026",
       "fonte": "FAPESP",
@@ -1631,7 +1653,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 75,
+      "posicao_fila": 76,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -1653,7 +1675,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 76,
+      "posicao_fila": 77,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -1675,7 +1697,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 77,
+      "posicao_fila": 78,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -1697,7 +1719,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 78,
+      "posicao_fila": 79,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1719,7 +1741,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 79,
+      "posicao_fila": 80,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1741,7 +1763,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 80,
+      "posicao_fila": 81,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
