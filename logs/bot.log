@@ -11449,3 +11449,57 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-18 18:07:46,998 [INFO] Tentativas de publicacao apos sync: 1
 2026-05-18 18:07:46,998 [INFO] Publicacoes concluidas apos sync: 1
 2026-05-18 18:07:46,998 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-05-19 06:50:24,826 [INFO] Inicio da execucao
+2026-05-19 06:50:32,095 [INFO] Fonte ANP retornou 2 itens
+2026-05-19 06:50:36,911 [INFO] Fonte CNPQ retornou 1 itens
+2026-05-19 06:50:38,281 [INFO] Fonte CAPES retornou 3 itens
+2026-05-19 06:50:44,998 [INFO] Fonte CONFAP retornou 8 itens
+2026-05-19 06:52:30,097 [WARNING] Falha ao enriquecer item https://www.to.gov.br/fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f7d8773ee90>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))
+2026-05-19 06:52:54,181 [INFO] Fonte IPEA retornou 10 itens
+2026-05-19 06:53:03,266 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-19 06:53:19,555 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-19 06:53:21,092 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-19 06:53:23,765 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-19 06:53:28,798 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-19 06:53:31,428 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-19 06:53:32,531 [INFO] Fonte BASA retornou 0 itens
+2026-05-19 06:53:33,498 [INFO] Fonte BNDES retornou 8 itens
+2026-05-19 06:53:44,301 [INFO] Fonte FINEP retornou 0 itens
+2026-05-19 06:53:44,924 [INFO] Fonte DECIT retornou 0 itens
+2026-05-19 06:53:46,461 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-19 06:54:54,776 [INFO] Fonte FAPERJ retornou 15 itens
+2026-05-19 06:54:57,468 [INFO] Fonte FACEPE retornou 90 itens
+2026-05-19 06:57:31,019 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-19 06:58:45,779 [INFO] Fonte FAPEAL retornou 23 itens
+2026-05-19 06:59:18,843 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-19 06:59:32,623 [INFO] Fonte FAPES retornou 0 itens
+2026-05-19 07:00:23,524 [INFO] Fonte FAPEG retornou 8 itens
+2026-05-19 07:00:53,753 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-19 07:00:54,867 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-19 07:01:03,227 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-19 07:01:45,629 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-19 07:02:08,984 [INFO] Fonte FAPESQ retornou 10 itens
+2026-05-19 07:02:24,076 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-19 07:03:11,632 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-19 07:03:54,094 [INFO] Fonte FAPEAM retornou 2 itens
+2026-05-19 07:04:08,037 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/05/Diretrizes-Especificas-Resolucao-CD-021-2026-Chamada-CONFAP-Brasillinois-2026.pdf
+2026-05-19 07:04:19,114 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/05/DIRETR1.pdf
+2026-05-19 07:04:26,267 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-19 07:06:01,245 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-19 07:06:05,662 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-05-19 07:06:10,844 [INFO] Fonte FAPPR retornou 10 itens
+2026-05-19 07:07:30,570 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-19 07:10:38,170 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-19 07:10:39,352 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-19 07:12:14,043 [INFO] Fonte FAPITEC retornou 0 itens
+2026-05-19 07:16:49,435 [INFO] Fonte FAPT retornou 0 itens
+2026-05-19 07:17:02,448 [INFO] Fonte FAPESC retornou 21 itens
+2026-05-19 07:18:19,680 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-19 07:19:52,445 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-19 07:19:52,464 [INFO] Total coletado: 135
+2026-05-19 07:19:52,465 [INFO] Novos: 8 | Prorrogados: 1 | Atualizados: 126 | Mantidos: 0 | Deduplicados por chave: 46
+2026-05-19 07:19:52,465 [INFO] Repostados/Publicados: 0
+2026-05-19 07:19:52,465 [INFO] Bloqueados para postagem: 0
+2026-05-19 07:19:52,465 [INFO] Expirados removidos da base: 6
+2026-05-19 07:19:52,465 [INFO] Erros por fonte: 0
+2026-05-19 07:19:52,465 [INFO] Fim da execucao
