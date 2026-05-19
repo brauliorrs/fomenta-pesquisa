@@ -11508,3 +11508,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-19 07:21:57,983 [INFO] Tentativas de publicacao apos sync: 4
 2026-05-19 07:21:57,983 [INFO] Publicacoes concluidas apos sync: 4
 2026-05-19 07:21:57,983 [INFO] Novos editais publicados no feed hoje: 3/10.
+2026-05-19 17:38:55,034 [INFO] Inicio da execucao
+2026-05-19 17:39:02,837 [INFO] Fonte ANP retornou 2 itens
+2026-05-19 17:39:07,522 [INFO] Fonte CNPQ retornou 1 itens
+2026-05-19 17:39:08,706 [INFO] Fonte CAPES retornou 3 itens
+2026-05-19 17:39:13,795 [INFO] Fonte CONFAP retornou 8 itens
+2026-05-19 17:41:03,081 [WARNING] Falha ao enriquecer item https://www.to.gov.br/fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/edital-no-042026-faptsemarh-vagas-suplementares-de-bolsistas/3wiuqw8omas7 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f535f59cc50>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))
+2026-05-19 17:41:23,319 [INFO] Fonte IPEA retornou 10 itens
+2026-05-19 17:41:33,462 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-19 17:42:00,190 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-19 17:42:02,248 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_INDUZIDA_BAG_21_24.pdf/f9185b2e-55a8-3c26-f723-56eab3882163
+2026-05-19 17:42:04,601 [INFO] Fallback SSL sem verificacao usado para https://www.embrapa.br/documents/1355737/90285395/CHAMADA_GERAL_22_2024.pdf/8dd99c4d-49c0-ee53-2c37-d0ee25186a3e
+2026-05-19 17:42:09,734 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-19 17:42:11,573 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-19 17:42:12,728 [INFO] Fonte BASA retornou 0 itens
+2026-05-19 17:42:13,582 [INFO] Fonte BNDES retornou 8 itens
+2026-05-19 17:42:24,439 [INFO] Fonte FINEP retornou 0 itens
+2026-05-19 17:42:24,948 [INFO] Fonte DECIT retornou 0 itens
+2026-05-19 17:42:26,274 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-19 17:43:30,042 [INFO] Fonte FAPERJ retornou 15 itens
+2026-05-19 17:43:32,495 [INFO] Fonte FACEPE retornou 90 itens
+2026-05-19 17:46:48,561 [INFO] Fonte FAPAC retornou 23 itens
+2026-05-19 17:48:08,759 [INFO] Fonte FAPEAL retornou 23 itens
+2026-05-19 17:48:42,099 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-19 17:48:56,254 [INFO] Fonte FAPES retornou 0 itens
+2026-05-19 17:49:24,414 [INFO] Fonte FAPEG retornou 11 itens
+2026-05-19 17:50:31,584 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-19 17:50:32,862 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-19 17:50:43,043 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-19 17:51:20,838 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-19 17:51:45,193 [INFO] Fonte FAPESQ retornou 6 itens
+2026-05-19 17:51:57,359 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-19 17:53:02,936 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-19 17:53:36,258 [INFO] Fonte FAPEAM retornou 0 itens
+2026-05-19 17:53:42,341 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-19 17:55:17,366 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-19 17:55:19,236 [INFO] Fonte FAPEMIG retornou 3 itens
+2026-05-19 17:55:29,699 [INFO] Fonte FAPPR retornou 10 itens
+2026-05-19 17:55:52,152 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-19 17:58:59,603 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-19 17:59:01,429 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-19 18:00:35,480 [INFO] Fonte FAPITEC retornou 0 itens
+2026-05-19 18:05:10,093 [INFO] Fonte FAPT retornou 0 itens
+2026-05-19 18:05:26,420 [INFO] Fonte FAPESC retornou 21 itens
+2026-05-19 18:07:25,568 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-19 18:08:56,111 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-19 18:08:56,149 [INFO] Total coletado: 135
+2026-05-19 18:08:56,150 [INFO] Novos: 3 | Prorrogados: 0 | Atualizados: 132 | Mantidos: 0 | Deduplicados por chave: 55
+2026-05-19 18:08:56,150 [INFO] Repostados/Publicados: 0
+2026-05-19 18:08:56,150 [INFO] Bloqueados para postagem: 0
+2026-05-19 18:08:56,150 [INFO] Expirados removidos da base: 0
+2026-05-19 18:08:56,150 [INFO] Erros por fonte: 0
+2026-05-19 18:08:56,150 [INFO] Fim da execucao
