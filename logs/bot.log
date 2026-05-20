@@ -11617,3 +11617,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-20 07:20:12,533 [INFO] Expirados removidos da base: 1
 2026-05-20 07:20:12,533 [INFO] Erros por fonte: 0
 2026-05-20 07:20:12,533 [INFO] Fim da execucao
+2026-05-20 07:21:43,157 [INFO] Tentando publicar carrossel de feed com 5 item(ns): banco_nacional_de_desenvolvimento_econom_57e74d9e, fundacao_de_amparo_a_pesquisa_do_estado__e47c012f, conselho_nacional_das_fundacoes_estaduai_19cdb479, fundacao_de_amparo_a_pesquisa_e_inovacao_1eb2d017, fundacao_de_amparo_a_pesquisa_do_estado__6a4f64ba
+2026-05-20 07:22:43,847 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044.jpg
+2026-05-20 07:22:48,476 [INFO] Tentativas de publicacao apos sync: 6
+2026-05-20 07:22:48,476 [INFO] Publicacoes concluidas apos sync: 6
+2026-05-20 07:22:48,476 [INFO] Novos editais publicados no feed hoje: 5/10.
