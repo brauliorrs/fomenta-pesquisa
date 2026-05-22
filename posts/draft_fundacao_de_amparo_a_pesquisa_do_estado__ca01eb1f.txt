@@ -2,20 +2,19 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-05-22
+prazo: 2026-11-18
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f_story.jpg
 
 Oportunidade no radar: Programa Nacional de Apoio à Geração de Empreendimentos Inovadores Programa Centelha 3 São Paulo
-Prazo encerra amanhã.
 
 Área: Inovação.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-Público-alvo: Empresas inovadoras, startups e pesquisadores
+Público-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas
 Tipo: Inovacao
 Abertura das inscrições: 07/04/2026
-Prazo final: 22/05/2026
+Prazo final: 18/11/2026
 
 Link oficial do edital:
 https://fapesp.br/18109
