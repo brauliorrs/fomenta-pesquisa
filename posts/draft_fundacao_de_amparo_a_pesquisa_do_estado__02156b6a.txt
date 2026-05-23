@@ -2,12 +2,11 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__02156b6a
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-05-22
+prazo: 2026-07-22
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__02156b6a.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__02156b6a_story.jpg
 
 Oportunidade no radar: Chamada de Propostas para o Programa PIPE Jornada Tecnológica - Saúde – Fase 1
-Último dia de inscrição.
 
 Área: Inovação.
 
@@ -15,7 +14,7 @@ Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Empresas inovadoras, startups e pesquisadores
 Tipo: Inovacao
 Abertura das inscrições: 22/04/2026
-Prazo final: 22/05/2026
+Prazo final: 22/07/2026
 
 Link oficial do edital:
 https://fapesp.br/18131
