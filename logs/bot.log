@@ -11963,3 +11963,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-23 06:41:41,037 [INFO] Expirados removidos da base: 3
 2026-05-23 06:41:41,037 [INFO] Erros por fonte: 0
 2026-05-23 06:41:41,037 [INFO] Fim da execucao
+2026-05-23 06:42:42,718 [INFO] Tentando publicar carrossel de feed com 2 item(ns): fundacao_araucaria_de_apoio_ao_desenvolv_4f02fbc0, fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e
+2026-05-23 06:43:15,435 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_156c8378 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_156c8378.jpg
+2026-05-23 06:43:24,384 [INFO] Tentativas de publicacao apos sync: 3
+2026-05-23 06:43:24,384 [INFO] Publicacoes concluidas apos sync: 3
+2026-05-23 06:43:24,385 [INFO] Novos editais publicados no feed hoje: 2/10.
