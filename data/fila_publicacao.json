@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T03:42:42.695039-03:00",
+  "generated_at": "2026-05-23T13:03:03.207892-03:00",
   "total_prontos": 80,
   "itens": [
     {
@@ -933,7 +933,7 @@
       "fonte": "FAPPR",
       "orgao": "Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana",
       "prazo": "2026-06-22",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-05-23T03:42:42.695039-03:00",
       "quantidade_postagens": 1,
@@ -1263,7 +1263,7 @@
       "fonte": "FAPESP",
       "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
       "prazo": "2026-07-22",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-05-01T03:43:12.917803-03:00",
       "quantidade_postagens": 2,
