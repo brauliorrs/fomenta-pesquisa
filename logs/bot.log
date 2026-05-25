@@ -12251,3 +12251,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-25 17:39:07,665 [INFO] Expirados removidos da base: 0
 2026-05-25 17:39:07,665 [INFO] Erros por fonte: 0
 2026-05-25 17:39:07,665 [INFO] Fim da execucao
+2026-05-25 17:40:39,623 [INFO] Tentando publicar carrossel de feed com 2 item(ns): fundacao_de_amparo_a_pesquisa_do_estado__dae92af6, fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f
+2026-05-25 17:41:16,091 [INFO] Tentando repostar story diario para edital valido fundacao_araucaria_de_apoio_ao_desenvolv_cd7d86a3 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_cd7d86a3.jpg
+2026-05-25 17:41:25,338 [INFO] Tentativas de publicacao apos sync: 3
+2026-05-25 17:41:25,338 [INFO] Publicacoes concluidas apos sync: 3
+2026-05-25 17:41:25,338 [INFO] Novos editais publicados no feed hoje: 2/10.
