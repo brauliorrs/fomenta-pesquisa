@@ -12194,3 +12194,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-25 07:47:16,173 [INFO] Expirados removidos da base: 1
 2026-05-25 07:47:16,173 [INFO] Erros por fonte: 0
 2026-05-25 07:47:16,173 [INFO] Fim da execucao
+2026-05-25 07:47:37,174 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_ao_desenvolvimento_do__6ad54d1f usando asset publico draft_fundacao_de_apoio_ao_desenvolvimento_do__6ad54d1f.jpg
+2026-05-25 07:47:48,140 [INFO] Tentativas de publicacao apos sync: 1
+2026-05-25 07:47:48,140 [INFO] Publicacoes concluidas apos sync: 1
+2026-05-25 07:47:48,140 [INFO] Novos editais publicados no feed hoje: 0/10.
