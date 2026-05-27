@@ -2,19 +2,19 @@
 id: fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b
 fonte: FAPESC
 orgao: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina
-prazo: 2026-06-19
+prazo: 2026-06-26
 card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC/SEPLAN N.º 29/2026 PROGRAMA DE PLANEJAMENTO TERRITORIAL RESILIENTE DE SANTA CATARINA
 
-A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 18/05/2026 e prazo final em 19/06/2026.
+A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 18/05/2026 e prazo final em 26/06/2026.
 
 Instituição: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina
 Público-alvo: Empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina
 Tipo: Inovacao
 Abertura das inscrições: 18/05/2026
-Prazo final: 19/06/2026
+Prazo final: 26/06/2026
 
 Link oficial do edital:
 https://fapesc.sc.gov.br/wp-content/uploads/2026/05/Edital-29.2026-SEPLAN-DIPT.pdf
