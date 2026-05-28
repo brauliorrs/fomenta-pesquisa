@@ -12536,3 +12536,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-28 07:30:10,189 [INFO] Tentativas de publicacao apos sync: 4
 2026-05-28 07:30:10,189 [INFO] Publicacoes concluidas apos sync: 4
 2026-05-28 07:30:10,189 [INFO] Novos editais publicados no feed hoje: 3/10.
+2026-05-28 18:13:50,344 [INFO] Inicio da execucao
+2026-05-28 18:13:56,949 [INFO] Fonte ANP retornou 2 itens
+2026-05-28 18:14:02,616 [INFO] Fonte CNPQ retornou 2 itens
+2026-05-28 18:14:04,454 [INFO] Fonte CAPES retornou 4 itens
+2026-05-28 18:14:13,919 [INFO] Fonte CONFAP retornou 8 itens
+2026-05-28 18:15:11,824 [INFO] Fonte IPEA retornou 10 itens
+2026-05-28 18:16:19,749 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-28 18:16:47,811 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-28 18:16:59,791 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-28 18:17:04,768 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-28 18:17:06,286 [INFO] Fonte BASA retornou 0 itens
+2026-05-28 18:17:07,485 [INFO] Fonte BNDES retornou 8 itens
+2026-05-28 18:17:45,631 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Festudo-de-mobilidade-urbana: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-05-28 18:17:51,734 [INFO] Fonte FINEP retornou 0 itens
+2026-05-28 18:17:52,597 [INFO] Fonte DECIT retornou 0 itens
+2026-05-28 18:17:53,816 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-28 18:18:30,880 [INFO] Fonte FAPERJ retornou 16 itens
+2026-05-28 18:18:33,229 [INFO] Fonte FACEPE retornou 91 itens
+2026-05-28 18:21:54,111 [INFO] Fonte FAPAC retornou 24 itens
+2026-05-28 18:23:47,042 [INFO] Fonte FAPEAL retornou 22 itens
+2026-05-28 18:24:22,327 [INFO] Fonte FAPEPI retornou 3 itens
+2026-05-28 18:24:38,665 [INFO] Fonte FAPES retornou 0 itens
+2026-05-28 18:24:59,941 [INFO] Fonte FAPEG retornou 11 itens
+2026-05-28 18:25:37,257 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-28 18:25:38,830 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-28 18:25:50,077 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-28 18:26:41,140 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-28 18:27:08,052 [INFO] Fonte FAPESQ retornou 2 itens
+2026-05-28 18:27:16,969 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-28 18:28:14,444 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-28 18:28:47,509 [INFO] Fonte FAPEAM retornou 0 itens
+2026-05-28 18:28:54,985 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-28 18:30:29,449 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-28 18:30:31,922 [INFO] Fonte FAPEMIG retornou 5 itens
+2026-05-28 18:30:49,288 [INFO] Fonte FAPPR retornou 7 itens
+2026-05-28 18:31:20,674 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-28 18:34:29,613 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-28 18:34:30,902 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-28 18:36:06,143 [INFO] Fonte FAPITEC retornou 0 itens
+2026-05-28 18:40:43,071 [INFO] Fonte FAPT retornou 0 itens
+2026-05-28 18:41:04,237 [INFO] Fonte FAPESC retornou 24 itens
+2026-05-28 18:42:35,699 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-28 18:43:38,969 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-28 18:43:38,983 [INFO] Total coletado: 134
+2026-05-28 18:43:38,983 [INFO] Novos: 9 | Prorrogados: 1 | Atualizados: 124 | Mantidos: 0 | Deduplicados por chave: 44
+2026-05-28 18:43:38,983 [INFO] Repostados/Publicados: 0
+2026-05-28 18:43:38,983 [INFO] Bloqueados para postagem: 0
+2026-05-28 18:43:38,983 [INFO] Expirados removidos da base: 0
+2026-05-28 18:43:38,983 [INFO] Erros por fonte: 0
+2026-05-28 18:43:38,983 [INFO] Fim da execucao
