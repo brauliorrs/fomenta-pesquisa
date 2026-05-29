@@ -12695,3 +12695,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-29 18:40:39,263 [INFO] Expirados removidos da base: 0
 2026-05-29 18:40:39,263 [INFO] Erros por fonte: 0
 2026-05-29 18:40:39,263 [INFO] Fim da execucao
+2026-05-29 18:41:43,333 [INFO] Ja houve publicacao de feed hoje. Novos editais aguardam o proximo carrossel diario.
+2026-05-29 18:41:43,333 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_ecoss_0f287840 usando asset publico draft_financiadora_de_estudos_e_projetos_ecoss_0f287840.jpg
+2026-05-29 18:41:53,913 [INFO] Tentativas de publicacao apos sync: 1
+2026-05-29 18:41:53,913 [INFO] Publicacoes concluidas apos sync: 1
+2026-05-29 18:41:53,913 [INFO] Novos editais publicados no feed hoje: 2/10.
