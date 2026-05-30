@@ -12754,3 +12754,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-05-30 06:54:22,047 [INFO] Tentativas de publicacao apos sync: 1
 2026-05-30 06:54:22,048 [INFO] Publicacoes concluidas apos sync: 1
 2026-05-30 06:54:22,048 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-05-30 16:05:39,796 [INFO] Inicio da execucao
+2026-05-30 16:05:47,842 [INFO] Fonte ANP retornou 2 itens
+2026-05-30 16:05:54,782 [INFO] Fonte CNPQ retornou 1 itens
+2026-05-30 16:05:56,323 [INFO] Fonte CAPES retornou 4 itens
+2026-05-30 16:06:03,616 [INFO] Fonte CONFAP retornou 8 itens
+2026-05-30 16:06:46,815 [INFO] Fonte IPEA retornou 10 itens
+2026-05-30 16:07:00,397 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-05-30 16:07:23,378 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-05-30 16:07:34,386 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-05-30 16:07:37,261 [INFO] Fonte FUNDECI retornou 0 itens
+2026-05-30 16:07:38,794 [INFO] Fonte BASA retornou 0 itens
+2026-05-30 16:07:40,303 [INFO] Fonte BNDES retornou 8 itens
+2026-05-30 16:08:13,281 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2026-certificacao-credito-de-carbono: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-05-30 16:08:24,554 [INFO] Fonte FINEP retornou 0 itens
+2026-05-30 16:08:25,757 [INFO] Fonte DECIT retornou 0 itens
+2026-05-30 16:08:27,277 [INFO] Fonte FAPESP retornou 15 itens
+2026-05-30 16:09:06,438 [INFO] Fonte FAPERJ retornou 16 itens
+2026-05-30 16:09:09,027 [INFO] Fonte FACEPE retornou 92 itens
+2026-05-30 16:12:28,071 [INFO] Fonte FAPAC retornou 24 itens
+2026-05-30 16:14:25,062 [INFO] Fonte FAPEAL retornou 22 itens
+2026-05-30 16:15:00,434 [INFO] Fonte FAPEPI retornou 4 itens
+2026-05-30 16:15:20,111 [INFO] Fonte FAPES retornou 0 itens
+2026-05-30 16:15:55,862 [INFO] Fonte FAPEG retornou 11 itens
+2026-05-30 16:16:36,087 [INFO] Fonte FAPEMA retornou 0 itens
+2026-05-30 16:16:37,961 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-05-30 16:16:50,767 [INFO] Fonte FUNDECT retornou 6 itens
+2026-05-30 16:17:35,042 [INFO] Fonte FAPESPA retornou 21 itens
+2026-05-30 16:18:07,033 [INFO] Fonte FAPESQ retornou 2 itens
+2026-05-30 16:18:19,873 [INFO] Fonte FAPESB retornou 10 itens
+2026-05-30 16:19:18,647 [INFO] Fonte FUNCAP retornou 0 itens
+2026-05-30 16:19:51,712 [INFO] Fonte FAPEAM retornou 0 itens
+2026-05-30 16:19:58,904 [INFO] Fonte FAPEAP retornou 0 itens
+2026-05-30 16:21:33,943 [INFO] Fonte FAPDF retornou 0 itens
+2026-05-30 16:21:37,112 [INFO] Fonte FAPEMIG retornou 5 itens
+2026-05-30 16:21:51,844 [INFO] Fonte FAPPR retornou 7 itens
+2026-05-30 16:22:25,938 [INFO] Fonte FAPERGS retornou 0 itens
+2026-05-30 16:25:34,256 [INFO] Fonte FAPERN retornou 0 itens
+2026-05-30 16:25:35,582 [INFO] Fonte FAPERO retornou 0 itens
+2026-05-30 16:25:38,990 [INFO] Fonte FAPITEC retornou 1 itens
+2026-05-30 16:30:18,878 [INFO] Fonte FAPT retornou 0 itens
+2026-05-30 16:30:38,993 [INFO] Fonte FAPESC retornou 24 itens
+2026-05-30 16:32:18,839 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-05-30 16:33:39,073 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-05-30 16:33:39,090 [INFO] Total coletado: 134
+2026-05-30 16:33:39,091 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 134 | Mantidos: 0 | Deduplicados por chave: 52
+2026-05-30 16:33:39,091 [INFO] Repostados/Publicados: 0
+2026-05-30 16:33:39,091 [INFO] Bloqueados para postagem: 0
+2026-05-30 16:33:39,091 [INFO] Expirados removidos da base: 0
+2026-05-30 16:33:39,091 [INFO] Erros por fonte: 0
+2026-05-30 16:33:39,091 [INFO] Fim da execucao
