@@ -13073,3 +13073,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-02 07:54:25,290 [INFO] Expirados removidos da base: 4
 2026-06-02 07:54:25,290 [INFO] Erros por fonte: 0
 2026-06-02 07:54:25,290 [INFO] Fim da execucao
+2026-06-02 07:54:33,784 [INFO] Tentando publicar carrossel de feed com 1 item(ns): banco_nacional_de_desenvolvimento_econom_57e74d9e
+2026-06-02 07:54:57,620 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_156c8378 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_156c8378.jpg
+2026-06-02 07:55:07,086 [INFO] Tentativas de publicacao apos sync: 2
+2026-06-02 07:55:07,086 [INFO] Publicacoes concluidas apos sync: 2
+2026-06-02 07:55:07,086 [INFO] Novos editais publicados no feed hoje: 1/10.
