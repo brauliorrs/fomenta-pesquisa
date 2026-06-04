@@ -13305,3 +13305,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-04 08:11:07,139 [INFO] Tentativas de publicacao apos sync: 5
 2026-06-04 08:11:07,139 [INFO] Publicacoes concluidas apos sync: 5
 2026-06-04 08:11:07,139 [INFO] Novos editais publicados no feed hoje: 4/10.
+2026-06-04 17:46:20,095 [INFO] Inicio da execucao
+2026-06-04 17:47:53,610 [INFO] Fonte ANP retornou 0 itens
+2026-06-04 17:47:54,841 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-04 17:49:28,759 [INFO] Fonte CAPES retornou 0 itens
+2026-06-04 17:49:30,421 [INFO] Fonte CONFAP retornou 7 itens
+2026-06-04 17:50:11,318 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/reda/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /reda/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f14c8fdfed0>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-04 17:50:43,961 [WARNING] Falha ao enriquecer item http://montenegro.funcap.ce.gov.br/sugba/edital/792.pdf: HTTPConnectionPool(host='montenegro.funcap.ce.gov.br', port=80): Max retries exceeded with url: /sugba/edital/792.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='montenegro.funcap.ce.gov.br', port=80) at 0x7f14caa4d050>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-06-04 17:53:53,313 [INFO] Fonte IPEA retornou 0 itens
+2026-06-04 17:55:26,677 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-04 17:55:30,821 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-06-04 17:55:40,228 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-06-04 17:57:10,362 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-04 17:57:11,173 [INFO] Fonte BASA retornou 0 itens
+2026-06-04 17:57:19,610 [INFO] Fonte BNDES retornou 0 itens
+2026-06-04 17:57:20,264 [INFO] Fonte FINEP retornou 0 itens
+2026-06-04 17:57:50,291 [INFO] Fonte DECIT retornou 0 itens
+2026-06-04 17:57:52,687 [INFO] Fonte FAPESP retornou 13 itens
+2026-06-04 17:58:27,326 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-04 17:58:30,146 [INFO] Fonte FACEPE retornou 92 itens
+2026-06-04 18:04:42,235 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-04 18:05:18,921 [INFO] Fonte FAPEAL retornou 22 itens
+2026-06-04 18:07:22,242 [INFO] Fonte FAPEPI retornou 0 itens
+2026-06-04 18:07:32,340 [INFO] Fonte FAPES retornou 0 itens
+2026-06-04 18:10:36,663 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-04 18:10:38,697 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-04 18:12:12,362 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-04 18:12:15,994 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-04 18:12:58,112 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-04 18:15:11,114 [INFO] Fonte FAPESQ retornou 0 itens
+2026-06-04 18:16:57,090 [INFO] Fonte FAPESB retornou 0 itens
+2026-06-04 18:17:01,964 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-04 18:17:38,833 [INFO] Fonte FAPEAM retornou 2 itens
+2026-06-04 18:17:53,913 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/06/Edital-015-2026-PDPG.pdf
+2026-06-04 18:18:09,219 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-003-2026-PAREV-Edicao-2026-2027.pdf
+2026-06-04 18:18:17,259 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-04 18:19:51,798 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-04 18:19:54,005 [INFO] Fonte FAPEMIG retornou 6 itens
+2026-06-04 18:20:13,360 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-04 18:20:41,475 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-04 18:23:49,674 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-04 18:23:51,148 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-04 18:25:25,378 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-04 18:30:01,326 [INFO] Fonte FAPT retornou 0 itens
+2026-06-04 18:30:20,929 [INFO] Fonte FAPESC retornou 26 itens
+2026-06-04 18:32:00,959 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-04 18:33:16,689 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-04 18:33:16,704 [INFO] Total coletado: 112
+2026-06-04 18:33:16,704 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 112 | Mantidos: 0 | Deduplicados por chave: 41
+2026-06-04 18:33:16,704 [INFO] Repostados/Publicados: 0
+2026-06-04 18:33:16,704 [INFO] Bloqueados para postagem: 0
+2026-06-04 18:33:16,704 [INFO] Expirados removidos da base: 0
+2026-06-04 18:33:16,704 [INFO] Erros por fonte: 0
+2026-06-04 18:33:16,705 [INFO] Fim da execucao
