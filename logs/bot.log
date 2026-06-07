@@ -13899,3 +13899,76 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-07 16:47:40,846 [INFO] Expirados removidos da base: 0
 2026-06-07 16:47:40,846 [INFO] Erros por fonte: 0
 2026-06-07 16:47:40,846 [INFO] Fim da execucao
+2026-06-07 16:51:34,513 [INFO] Tentando publicar carrossel de feed com 1 item(ns): coordenacao_de_aperfeicoamento_de_pessoa_276be974
+2026-06-07 16:51:34,779 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__67d95ec9.jpg
+2026-06-07 16:51:34,862 [INFO] Tentando repostar story diario para edital valido banco_nacional_de_desenvolvimento_econom_d1c58d8e usando asset publico draft_banco_nacional_de_desenvolvimento_econom_d1c58d8e.jpg
+2026-06-07 16:51:34,949 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_ca90b1f9.jpg
+2026-06-07 16:51:35,041 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e9ec2044.jpg
+2026-06-07 16:51:35,135 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_f3dd99f7 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_f3dd99f7.jpg
+2026-06-07 16:51:35,223 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_55d2b149 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_55d2b149.jpg
+2026-06-07 16:51:35,307 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__b413872b usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__b413872b.jpg
+2026-06-07 16:51:35,392 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_3ff268eb usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3ff268eb.jpg
+2026-06-07 16:51:35,478 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_15ba1b8b usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_15ba1b8b.jpg
+2026-06-07 16:51:35,564 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_19a33240 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_19a33240.jpg
+2026-06-07 16:51:35,647 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_8c4da79a usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8c4da79a.jpg
+2026-06-07 16:51:35,732 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_a7fa7908 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_a7fa7908.jpg
+2026-06-07 16:51:35,814 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_3f63393b usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3f63393b.jpg
+2026-06-07 16:51:35,907 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_a_pesquisa_do_estado_d_c4c4cf3a usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_c4c4cf3a.jpg
+2026-06-07 16:51:35,990 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_1ec38e82 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_1ec38e82.jpg
+2026-06-07 16:51:36,077 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__b56b0091 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__b56b0091.jpg
+2026-06-07 16:51:36,162 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_a_pesquisa_do_estado_d_af3ad51e usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_af3ad51e.jpg
+2026-06-07 16:51:36,248 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_a_pesquisa_do_estado_d_c10b643c usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_c10b643c.jpg
+2026-06-07 16:51:36,333 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__296f3a63 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__296f3a63.jpg
+2026-06-07 16:51:36,422 [INFO] Tentando repostar story diario para edital valido fundacao_araucaria_de_apoio_ao_desenvolv_4f02fbc0 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_4f02fbc0.jpg
+2026-06-07 16:51:36,510 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca.jpg
+2026-06-07 16:51:36,599 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_9d17f676 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_9d17f676.jpg
+2026-06-07 16:51:36,682 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_3ea68420 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3ea68420.jpg
+2026-06-07 16:51:36,774 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__6988d841 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__6988d841.jpg
+2026-06-07 16:51:36,857 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__89071ad5 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__89071ad5.jpg
+2026-06-07 16:51:36,960 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_agric_26c7babc usando asset publico draft_financiadora_de_estudos_e_projetos_agric_26c7babc.jpg
+2026-06-07 16:51:37,049 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b.jpg
+2026-06-07 16:51:37,133 [INFO] Tentando repostar story diario para edital valido fundacao_araucaria_de_apoio_ao_desenvolv_da7bb4f9 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_da7bb4f9.jpg
+2026-06-07 16:51:37,220 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f.jpg
+2026-06-07 16:51:37,302 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__35e10f81 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__35e10f81.jpg
+2026-06-07 16:51:37,394 [INFO] Tentando repostar story diario para edital valido fundacao_araucaria_de_apoio_ao_desenvolv_ca57dcf5 usando asset publico draft_fundacao_araucaria_de_apoio_ao_desenvolv_ca57dcf5.jpg
+2026-06-07 16:51:37,482 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_727e39be usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_727e39be.jpg
+2026-06-07 16:51:37,569 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__cfb486c4 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__cfb486c4.jpg
+2026-06-07 16:51:37,655 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_9cdd4396 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_9cdd4396.jpg
+2026-06-07 16:51:37,740 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__dae92af6 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__dae92af6.jpg
+2026-06-07 16:51:37,830 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__474d25de usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__474d25de.jpg
+2026-06-07 16:51:37,913 [INFO] Tentando repostar story diario para edital valido coordenacao_de_aperfeicoamento_de_pessoa_21491403 usando asset publico draft_coordenacao_de_aperfeicoamento_de_pessoa_21491403.jpg
+2026-06-07 16:51:38,000 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_0fb5727d usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_0fb5727d.jpg
+2026-06-07 16:51:38,083 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__22945c15 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__22945c15.jpg
+2026-06-07 16:51:38,224 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__3b96ec84 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__3b96ec84.jpg
+2026-06-07 16:51:38,310 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__b1d1890a usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__b1d1890a.jpg
+2026-06-07 16:51:38,397 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__660f68cf usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__660f68cf.jpg
+2026-06-07 16:51:38,506 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__3890078f usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__3890078f.jpg
+2026-06-07 16:51:38,596 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__02156b6a usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__02156b6a.jpg
+2026-06-07 16:51:38,682 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__50c8b218 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__50c8b218.jpg
+2026-06-07 16:51:38,769 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_19cdb479 usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_19cdb479.jpg
+2026-06-07 16:51:38,856 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a.jpg
+2026-06-07 16:51:38,951 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__352aa8ae usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__352aa8ae.jpg
+2026-06-07 16:51:39,036 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_1eb2d017 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_1eb2d017.jpg
+2026-06-07 16:51:39,122 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__6a4f64ba usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__6a4f64ba.jpg
+2026-06-07 16:51:39,208 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_315d632a usando asset publico draft_financiadora_de_estudos_e_projetos_finep_315d632a.jpg
+2026-06-07 16:51:39,291 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_064113e0 usando asset publico draft_financiadora_de_estudos_e_projetos_finep_064113e0.jpg
+2026-06-07 16:51:39,377 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_32a33550 usando asset publico draft_financiadora_de_estudos_e_projetos_finep_32a33550.jpg
+2026-06-07 16:51:39,460 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_f6a3506d usando asset publico draft_financiadora_de_estudos_e_projetos_finep_f6a3506d.jpg
+2026-06-07 16:51:39,544 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_1d63ef7c usando asset publico draft_financiadora_de_estudos_e_projetos_finep_1d63ef7c.jpg
+2026-06-07 16:51:39,632 [INFO] Tentando repostar story diario para edital valido conselho_nacional_de_desenvolvimento_cie_00bf0afc usando asset publico draft_conselho_nacional_de_desenvolvimento_cie_00bf0afc.jpg
+2026-06-07 16:51:39,718 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_74b0dc4f usando asset publico draft_financiadora_de_estudos_e_projetos_finep_74b0dc4f.jpg
+2026-06-07 16:51:39,799 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_35401209 usando asset publico draft_financiadora_de_estudos_e_projetos_finep_35401209.jpg
+2026-06-07 16:51:39,884 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_0e43c66f usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_0e43c66f.jpg
+2026-06-07 16:51:39,965 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f.jpg
+2026-06-07 16:51:40,051 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25.jpg
+2026-06-07 16:51:40,138 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f.jpg
+2026-06-07 16:51:40,224 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b usando asset publico draft_fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b.jpg
+2026-06-07 16:51:40,317 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce.jpg
+2026-06-07 16:51:40,404 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__562385ad usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__562385ad.jpg
+2026-06-07 16:51:40,491 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d.jpg
+2026-06-07 16:51:40,575 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8.jpg
+2026-06-07 16:51:40,662 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d.jpg
+2026-06-07 16:51:40,750 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e.jpg
+2026-06-07 16:51:40,856 [INFO] Tentativas de publicacao apos sync: 70
+2026-06-07 16:51:40,856 [INFO] Publicacoes concluidas apos sync: 0
+2026-06-07 16:51:40,856 [INFO] Novos editais publicados no feed hoje: 0/10.
