@@ -13724,3 +13724,54 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-06 16:36:02,549 [INFO] Tentativas de publicacao apos sync: 70
 2026-06-06 16:36:02,549 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-06 16:36:02,549 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-07 07:06:43,772 [INFO] Inicio da execucao
+2026-06-07 07:08:17,060 [INFO] Fonte ANP retornou 0 itens
+2026-06-07 07:08:17,841 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-07 07:09:51,622 [INFO] Fonte CAPES retornou 0 itens
+2026-06-07 07:09:53,842 [INFO] Fonte CONFAP retornou 6 itens
+2026-06-07 07:10:42,104 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/reda/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /reda/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f3b487a3550>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-07 07:11:14,552 [WARNING] Falha ao enriquecer item http://montenegro.funcap.ce.gov.br/sugba/edital/792.pdf: HTTPConnectionPool(host='montenegro.funcap.ce.gov.br', port=80): Max retries exceeded with url: /sugba/edital/792.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='montenegro.funcap.ce.gov.br', port=80) at 0x7f3b48448390>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-06-07 07:14:20,488 [INFO] Fonte IPEA retornou 0 itens
+2026-06-07 07:15:54,521 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-07 07:15:57,059 [INFO] Fonte EMBRAPA retornou 2 itens
+2026-06-07 07:16:05,237 [INFO] Fonte EMBRAPII retornou 7 itens
+2026-06-07 07:17:39,875 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-07 07:17:40,570 [INFO] Fonte BASA retornou 0 itens
+2026-06-07 07:17:49,168 [INFO] Fonte BNDES retornou 0 itens
+2026-06-07 07:17:49,899 [INFO] Fonte FINEP retornou 0 itens
+2026-06-07 07:18:19,932 [INFO] Fonte DECIT retornou 0 itens
+2026-06-07 07:18:21,580 [INFO] Fonte FAPESP retornou 13 itens
+2026-06-07 07:18:58,059 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-07 07:19:00,430 [INFO] Fonte FACEPE retornou 92 itens
+2026-06-07 07:24:47,431 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-07 07:25:13,816 [INFO] Fonte FAPEAL retornou 22 itens
+2026-06-07 07:25:46,680 [INFO] Fonte FAPEPI retornou 3 itens
+2026-06-07 07:26:01,025 [INFO] Fonte FAPES retornou 0 itens
+2026-06-07 07:29:05,200 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-07 07:29:06,995 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-07 07:30:40,681 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-07 07:30:44,477 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-07 07:30:48,091 [INFO] Fonte FAPESPA retornou 0 itens
+2026-06-07 07:30:51,153 [INFO] Fonte FAPESQ retornou 5 itens
+2026-06-07 07:32:36,108 [INFO] Fonte FAPESB retornou 0 itens
+2026-06-07 07:32:39,735 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-07 07:33:12,789 [INFO] Fonte FAPEAM retornou 0 itens
+2026-06-07 07:33:19,143 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-07 07:34:53,684 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-07 07:34:56,551 [INFO] Fonte FAPEMIG retornou 6 itens
+2026-06-07 07:35:15,243 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-07 07:36:39,584 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-07 07:39:47,409 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-07 07:39:48,603 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-07 07:41:22,592 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-07 07:45:58,012 [INFO] Fonte FAPT retornou 0 itens
+2026-06-07 07:46:14,878 [INFO] Fonte FAPESC retornou 26 itens
+2026-06-07 07:47:47,890 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-07 07:49:06,846 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-07 07:49:06,863 [INFO] Total coletado: 95
+2026-06-07 07:49:06,863 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 95 | Mantidos: 0 | Deduplicados por chave: 23
+2026-06-07 07:49:06,863 [INFO] Repostados/Publicados: 0
+2026-06-07 07:49:06,863 [INFO] Bloqueados para postagem: 0
+2026-06-07 07:49:06,863 [INFO] Expirados removidos da base: 0
+2026-06-07 07:49:06,863 [INFO] Erros por fonte: 0
+2026-06-07 07:49:06,863 [INFO] Fim da execucao
