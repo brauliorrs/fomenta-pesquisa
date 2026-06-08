@@ -7,6 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3ff268eb.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3ff268eb_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC N.º 24/2026 PROGRAMA NASCER DE PRÉ-INCUBAÇÃO DE IDEIAS INOVADORAS PARA O ECOSSISTEMA CATARINENSE DE INOVAÇÃO — VII EDIÇÃO
+Prazo encerra em 7 dias.
 
 A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 04/05/2026 e prazo final em 15/06/2026.
 

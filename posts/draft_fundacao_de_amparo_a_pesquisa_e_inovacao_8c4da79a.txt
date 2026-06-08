@@ -7,6 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8c4da79a.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8c4da79a_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC N.º 28/2026 PROJETO ESTRUTURANTE PARA INTEGRAÇÃO E DESENVOLVIMENTO DO ATLAS DE BIOENERGIA DE SANTA CATARINA
+Prazo encerra em 7 dias.
 
 A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 14/05/2026 e prazo final em 15/06/2026.
 
