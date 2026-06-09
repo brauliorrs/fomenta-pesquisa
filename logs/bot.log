@@ -14220,3 +14220,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-08 18:24:15,528 [INFO] Tentativas de publicacao apos sync: 72
 2026-06-08 18:24:15,529 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-08 18:24:15,529 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-09 06:51:41,335 [INFO] Inicio da execucao
+2026-06-09 06:51:48,575 [INFO] Fonte ANP retornou 2 itens
+2026-06-09 06:51:53,518 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-09 06:51:54,684 [INFO] Fonte CAPES retornou 5 itens
+2026-06-09 06:52:03,386 [INFO] Fonte CONFAP retornou 6 itens
+2026-06-09 06:52:43,895 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/reda/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /reda/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f42be770c50>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-09 06:52:54,637 [INFO] Fonte IPEA retornou 10 itens
+2026-06-09 06:53:22,607 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-06-09 06:53:37,147 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-09 06:53:42,512 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-09 06:53:45,798 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-09 06:53:46,861 [INFO] Fonte BASA retornou 0 itens
+2026-06-09 06:53:56,210 [INFO] Fonte BNDES retornou 0 itens
+2026-06-09 06:53:56,701 [INFO] Fonte FINEP retornou 0 itens
+2026-06-09 06:53:57,328 [INFO] Fonte DECIT retornou 0 itens
+2026-06-09 06:53:58,563 [INFO] Fonte FAPESP retornou 13 itens
+2026-06-09 06:54:29,838 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-09 06:54:31,852 [INFO] Fonte FACEPE retornou 93 itens
+2026-06-09 07:00:15,563 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-09 07:00:41,371 [INFO] Fonte FAPEAL retornou 22 itens
+2026-06-09 07:01:13,016 [INFO] Fonte FAPEPI retornou 3 itens
+2026-06-09 07:01:27,806 [INFO] Fonte FAPES retornou 0 itens
+2026-06-09 07:02:06,929 [INFO] Fonte FAPEG retornou 1 itens
+2026-06-09 07:02:11,593 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-09 07:02:12,685 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-09 07:02:16,675 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-09 07:02:51,004 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-09 07:03:17,961 [INFO] Fonte FAPESQ retornou 5 itens
+2026-06-09 07:05:05,012 [INFO] Fonte FAPESB retornou 0 itens
+2026-06-09 07:05:07,120 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-09 07:05:55,251 [INFO] Fonte FAPEAM retornou 2 itens
+2026-06-09 07:06:09,007 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/06/Edital-015-2026-PDPG.pdf
+2026-06-09 07:06:25,379 [INFO] Fallback SSL sem verificacao usado para https://www.fapeam.am.gov.br/wp-content/uploads/2026/02/Edital-003-2026-PAREV-Edicao-2026-2027.pdf
+2026-06-09 07:06:32,982 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-09 07:08:07,008 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-09 07:08:08,770 [INFO] Fonte FAPEMIG retornou 6 itens
+2026-06-09 07:08:27,786 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-09 07:08:54,293 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-09 07:12:02,036 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-09 07:12:03,129 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-09 07:13:37,773 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-09 07:18:12,643 [INFO] Fonte FAPT retornou 0 itens
+2026-06-09 07:18:29,858 [INFO] Fonte FAPESC retornou 26 itens
+2026-06-09 07:20:03,496 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-09 07:21:31,070 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-09 07:21:31,091 [INFO] Total coletado: 124
+2026-06-09 07:21:31,091 [INFO] Novos: 1 | Prorrogados: 0 | Atualizados: 123 | Mantidos: 0 | Deduplicados por chave: 43
+2026-06-09 07:21:31,091 [INFO] Repostados/Publicados: 0
+2026-06-09 07:21:31,091 [INFO] Bloqueados para postagem: 0
+2026-06-09 07:21:31,091 [INFO] Expirados removidos da base: 1
+2026-06-09 07:21:31,091 [INFO] Erros por fonte: 0
+2026-06-09 07:21:31,091 [INFO] Fim da execucao
