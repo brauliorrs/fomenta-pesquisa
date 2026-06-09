@@ -14344,3 +14344,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-09 07:25:31,371 [INFO] Tentativas de publicacao apos sync: 72
 2026-06-09 07:25:31,371 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-09 07:25:31,371 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-09 17:25:31,947 [INFO] Inicio da execucao
+2026-06-09 17:27:05,197 [INFO] Fonte ANP retornou 0 itens
+2026-06-09 17:27:06,291 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-09 17:28:40,060 [INFO] Fonte CAPES retornou 0 itens
+2026-06-09 17:28:42,115 [INFO] Fonte CONFAP retornou 6 itens
+2026-06-09 17:29:28,556 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/reda/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /reda/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7fe86e888990>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-09 17:30:00,900 [WARNING] Falha ao enriquecer item http://montenegro.funcap.ce.gov.br/sugba/edital/792.pdf: HTTPConnectionPool(host='montenegro.funcap.ce.gov.br', port=80): Max retries exceeded with url: /sugba/edital/792.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='montenegro.funcap.ce.gov.br', port=80) at 0x7fe86e88a690>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-06-09 17:33:09,162 [INFO] Fonte IPEA retornou 0 itens
+2026-06-09 17:34:42,979 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-09 17:34:44,704 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-09 17:34:49,918 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-09 17:36:25,606 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-09 17:36:26,712 [INFO] Fonte BASA retornou 0 itens
+2026-06-09 17:36:35,092 [INFO] Fonte BNDES retornou 0 itens
+2026-06-09 17:36:35,538 [INFO] Fonte FINEP retornou 0 itens
+2026-06-09 17:37:05,552 [INFO] Fonte DECIT retornou 0 itens
+2026-06-09 17:37:06,886 [INFO] Fonte FAPESP retornou 12 itens
+2026-06-09 17:37:42,232 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-09 17:37:44,194 [INFO] Fonte FACEPE retornou 94 itens
+2026-06-09 17:43:50,837 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-09 17:44:21,636 [INFO] Fonte FAPEAL retornou 22 itens
+2026-06-09 17:44:56,041 [INFO] Fonte FAPEPI retornou 3 itens
+2026-06-09 17:45:09,225 [INFO] Fonte FAPES retornou 0 itens
+2026-06-09 17:48:12,956 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-09 17:48:14,716 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-09 17:49:48,743 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-09 17:49:53,096 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-09 17:50:33,285 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-09 17:50:57,276 [INFO] Fonte FAPESQ retornou 5 itens
+2026-06-09 17:52:46,530 [INFO] Fonte FAPESB retornou 0 itens
+2026-06-09 17:52:49,298 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-09 17:54:12,135 [INFO] Fonte FAPEAM retornou 2 itens
+2026-06-09 17:54:20,694 [WARNING] Falha ao enriquecer item https://temporario.fapeam.am.gov.br/editais/edital-n-o-0152026-edital-fapeam-de-pre-selecao-de-redes-estrategicas-de-pesquisa-e-pos-graduacao-da-amazonia-legal-programa-de-desenvolvimento-da-pos-graduacao-pdpg-parcerias-estrat/: HTTPSConnectionPool(host='temporario.fapeam.am.gov.br', port=443): Max retries exceeded with url: /editais/edital-n-o-0152026-edital-fapeam-de-pre-selecao-de-redes-estrategicas-de-pesquisa-e-pos-graduacao-da-amazonia-legal-programa-de-desenvolvimento-da-pos-graduacao-pdpg-parcerias-estrat/ (Caused by NameResolutionError("HTTPSConnection(host='temporario.fapeam.am.gov.br', port=443): Failed to resolve 'temporario.fapeam.am.gov.br' ([Errno -2] Name or service not known)"))
+2026-06-09 17:54:30,715 [WARNING] Falha ao enriquecer item https://temporario.fapeam.am.gov.br/editais/edital-n-o-0032026-programa-de-apoio-a-realizacao-de-eventos-cientificos-e-tecnologicos-no-estado-do-amazonas-parev-2026-chamadas-i-e-ii/: HTTPSConnectionPool(host='temporario.fapeam.am.gov.br', port=443): Max retries exceeded with url: /editais/edital-n-o-0032026-programa-de-apoio-a-realizacao-de-eventos-cientificos-e-tecnologicos-no-estado-do-amazonas-parev-2026-chamadas-i-e-ii/ (Caused by NameResolutionError("HTTPSConnection(host='temporario.fapeam.am.gov.br', port=443): Failed to resolve 'temporario.fapeam.am.gov.br' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-09 17:54:36,917 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-09 17:56:11,694 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-09 17:56:13,601 [INFO] Fonte FAPEMIG retornou 6 itens
+2026-06-09 17:56:35,255 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-09 17:57:57,789 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-09 18:01:05,493 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-09 18:01:07,112 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-09 18:02:41,418 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-09 18:07:16,828 [INFO] Fonte FAPT retornou 0 itens
+2026-06-09 18:08:51,138 [INFO] Fonte FAPESC retornou 27 itens
+2026-06-09 18:10:34,129 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-09 18:12:04,387 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-09 18:12:04,408 [INFO] Total coletado: 122
+2026-06-09 18:12:04,408 [INFO] Novos: 2 | Prorrogados: 0 | Atualizados: 120 | Mantidos: 0 | Deduplicados por chave: 45
+2026-06-09 18:12:04,408 [INFO] Repostados/Publicados: 0
+2026-06-09 18:12:04,408 [INFO] Bloqueados para postagem: 0
+2026-06-09 18:12:04,408 [INFO] Expirados removidos da base: 0
+2026-06-09 18:12:04,408 [INFO] Erros por fonte: 0
+2026-06-09 18:12:04,408 [INFO] Fim da execucao
