@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-11T05:36:26.870937-03:00",
-  "total_prontos": 71,
+  "generated_at": "2026-06-11T15:16:10.644780-03:00",
+  "total_prontos": 73,
   "itens": [
     {
       "posicao_fila": 1,
@@ -862,6 +862,28 @@
     },
     {
       "posicao_fila": 40,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__0415385e",
+      "titulo": "Chamada Pública Complementar Fapeg/Confap/ERC nº 12/2026 - EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
+      "fonte": "FAPEG",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado de Goias",
+      "prazo": "2026-07-10",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 29,
+      "link": "https://goias.gov.br/fapeg/wp-content/uploads/sites/5/2026/06/Chamada_Publica_12.2026___Edital_Complementar_a_Chamada_ERC_CONFAP_2026___2_.pdf",
+      "caption": "Oportunidade no radar: Chamada Pública Complementar Fapeg/Confap/ERC nº 12/2026 - EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026\n\nEDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Goias\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições de ciencia e tecnologia de Goias\nTipo: Pesquisa\nAbertura das inscrições: 11/06/2026\nPrazo final: 10/07/2026\n\nLink oficial do edital:\nhttps://goias.gov.br/fapeg/wp-content/uploads/sites/5/2026/06/Chamada_Publica_12.2026___Edital_Complementar_a_Chamada_ERC_CONFAP_2026___2_.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapeg #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FAPEG",
+      "card_title": "Complementar Fapeg/Confap/ERC nº 12/2026 - EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
+      "card_deadline": "PRAZO: 10/07",
+      "card_summary": "EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 41,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__22945c15",
       "titulo": "CHAMADA FAPEMIG 006/2026 - Programa Santos Dumont",
       "fonte": "FAPEMIG",
@@ -883,7 +905,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 41,
+      "posicao_fila": 42,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__cdab3d5e",
       "titulo": "EDITAL N.º 003/2026 - PROGRAMA DE APOIO À REALIZAÇÃO DE EVENTOS CIENTÍFICOS E TECNOLÓGICOS NO ESTADO DO AMAZONAS – PAREV 2026 – CHAMADA II",
       "fonte": "FAPEAM",
@@ -905,7 +927,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 42,
+      "posicao_fila": 43,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__b1d1890a",
       "titulo": "Programa Centelha 3 - Programa Nacional de Apoio à Geração de Empreendimentos Inovadores",
       "fonte": "FAPEMIG",
@@ -927,7 +949,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 43,
+      "posicao_fila": 44,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__44ae30e3",
       "titulo": "EDITAL N.º 015/2026 - EDITAL FAPEAM DE PRÉ-SELEÇÃO DE REDES ESTRATÉGICAS DE PESQUISA E PÓS-GRADUAÇÃO DA AMAZÔNIA LEGAL - PROGRAMA DE DESENVOLVIMENTO DA PÓS-GRADUAÇÃO (PDPG) – PARCERIAS ESTRATÉGICAS NOS ESTADOS V",
       "fonte": "FAPEAM",
@@ -949,7 +971,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 44,
+      "posicao_fila": 45,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__3890078f",
       "titulo": "Chamada de Propostas FAPESP e Fundo para o Desenvolvimento da Ciência e da Tecnologia de Macau (FDCT) 2026",
       "fonte": "FAPESP",
@@ -971,7 +993,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 45,
+      "posicao_fila": 46,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__02156b6a",
       "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica - Saúde – Fase 1",
       "fonte": "FAPESP",
@@ -993,13 +1015,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 46,
+      "posicao_fila": 47,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__76b1ef5f",
       "titulo": "CHAMADA PÚBLICA N.º 002/2026 - PROGRAMA DE APOIO A PESQUISAS E AÇÕES ESTRATÉGICAS PARA A BIOECONOMIA INCLUSIVA NO AMAZONAS E NO PARANÁ - FUNDAÇÃO ARAUCÁRIA/FAPEAM",
       "fonte": "FAPEAM",
       "orgao": "Fundação de Amparo à Pesquisa do Estado do Amazonas",
       "prazo": "2026-07-27",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -1015,7 +1037,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 47,
+      "posicao_fila": 48,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__50c8b218",
       "titulo": "CHAMADA FAPEMIG 007/2026 - Organização de Eventos de Caráter Técnico-Científico - OET 1ª Entrada",
       "fonte": "FAPEMIG",
@@ -1037,7 +1059,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 48,
+      "posicao_fila": 49,
       "id": "conselho_nacional_das_fundacoes_estaduai_19cdb479",
       "titulo": "Faperr abre inscrições para editais de apoio a eventos científicos e pesquisas em Roraima",
       "fonte": "CONFAP",
@@ -1059,7 +1081,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 49,
+      "posicao_fila": 50,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a",
       "titulo": "13/2026 -",
       "fonte": "FACEPE",
@@ -1081,7 +1103,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 50,
+      "posicao_fila": 51,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__352aa8ae",
       "titulo": "Chamada de Propostas do Programa FAPESP para o Atlântico Sul e Antártica",
       "fonte": "FAPESP",
@@ -1103,7 +1125,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 51,
+      "posicao_fila": 52,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_1eb2d017",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 30/2026 PROGRAMA DE APOIO AOS GRUPOS DE PESQUISA DO UniSENAI/SC",
       "fonte": "FAPESC",
@@ -1125,7 +1147,29 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 52,
+      "posicao_fila": 53,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__b10e5be6",
+      "titulo": "Chamada do Programa Aristides Pacheco Leão de Estímulo a Vocações Científicas",
+      "fonte": "FAPESP",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
+      "prazo": "2026-08-14",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 64,
+      "link": "https://fapesp.br/18223",
+      "caption": "Oportunidade no radar: Chamada do Programa Aristides Pacheco Leão de Estímulo a Vocações Científicas\n\nÁreas: consulte a chamada.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas\nTipo: Pesquisa\nAbertura das inscrições: 11/06/2026\nPrazo final: 14/08/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18223\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FAPESP",
+      "card_title": "Chamada do Programa Aristides Pacheco Leão de Estímulo a Vocações Científicas",
+      "card_deadline": "PRAZO: 14/08",
+      "card_summary": "Áreas: consulte a chamada.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 54,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__6a4f64ba",
       "titulo": "Chamada FAPEMIG 004/2026 - Participação Coletiva em Eventos Técnicos no País - 2ª Entrada",
       "fonte": "FAPEMIG",
@@ -1147,7 +1191,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 53,
+      "posicao_fila": 55,
       "id": "financiadora_de_estudos_e_projetos_finep_315d632a",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
       "fonte": "FINEP",
@@ -1169,7 +1213,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 54,
+      "posicao_fila": 56,
       "id": "financiadora_de_estudos_e_projetos_finep_064113e0",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
       "fonte": "FINEP",
@@ -1191,7 +1235,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 55,
+      "posicao_fila": 57,
       "id": "financiadora_de_estudos_e_projetos_finep_32a33550",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
       "fonte": "FINEP",
@@ -1213,7 +1257,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 56,
+      "posicao_fila": 58,
       "id": "financiadora_de_estudos_e_projetos_finep_f6a3506d",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
       "fonte": "FINEP",
@@ -1235,7 +1279,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 57,
+      "posicao_fila": 59,
       "id": "financiadora_de_estudos_e_projetos_finep_1d63ef7c",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
       "fonte": "FINEP",
@@ -1257,7 +1301,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 58,
+      "posicao_fila": 60,
       "id": "conselho_nacional_de_desenvolvimento_cie_00bf0afc",
       "titulo": "PROGRAMA DE COOPERAÇÃO AFRO-BRASILEIRA EM CIÊNCIA E TECNOLOGIA - PROAFRICA",
       "fonte": "CNPQ",
@@ -1279,7 +1323,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 59,
+      "posicao_fila": 61,
       "id": "financiadora_de_estudos_e_projetos_finep_74b0dc4f",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
       "fonte": "FINEP",
@@ -1301,7 +1345,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 60,
+      "posicao_fila": 62,
       "id": "financiadora_de_estudos_e_projetos_finep_35401209",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
       "fonte": "FINEP",
@@ -1323,7 +1367,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 61,
+      "posicao_fila": 63,
       "id": "conselho_nacional_das_fundacoes_estaduai_0e43c66f",
       "titulo": "Facepe lança edital Mães Cientistas de Pernambuco (nº 16/2026)",
       "fonte": "CONFAP",
@@ -1345,7 +1389,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 62,
+      "posicao_fila": 64,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f",
       "titulo": "16/2026 -",
       "fonte": "FACEPE",
@@ -1367,7 +1411,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 63,
+      "posicao_fila": 65,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25",
       "titulo": "FAPESP / M-ERA.NET 2026",
       "fonte": "FAPESP",
@@ -1389,7 +1433,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 64,
+      "posicao_fila": 66,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f",
       "titulo": "Programa Nacional de Apoio à Geração de Empreendimentos Inovadores Programa Centelha 3 São Paulo",
       "fonte": "FAPESP",
@@ -1411,7 +1455,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 65,
+      "posicao_fila": 67,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -1433,7 +1477,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 66,
+      "posicao_fila": 68,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -1455,7 +1499,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 67,
+      "posicao_fila": 69,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -1477,7 +1521,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 68,
+      "posicao_fila": 70,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1499,7 +1543,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 69,
+      "posicao_fila": 71,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1521,7 +1565,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 70,
+      "posicao_fila": 72,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
@@ -1543,7 +1587,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 71,
+      "posicao_fila": 73,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e",
       "titulo": "Fapern lança edital para vaga remanescente com atuação em Mossoró",
       "fonte": "FAPERN",
