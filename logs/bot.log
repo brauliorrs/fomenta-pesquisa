@@ -15065,3 +15065,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-12 07:54:54,287 [INFO] Tentativas de publicacao apos sync: 72
 2026-06-12 07:54:54,287 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-12 07:54:54,287 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-12 17:38:26,017 [INFO] Inicio da execucao
+2026-06-12 17:38:32,928 [INFO] Fonte ANP retornou 2 itens
+2026-06-12 17:38:38,485 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-12 17:38:39,671 [INFO] Fonte CAPES retornou 4 itens
+2026-06-12 17:38:50,137 [INFO] Fonte CONFAP retornou 9 itens
+2026-06-12 17:39:41,945 [INFO] Fonte IPEA retornou 10 itens
+2026-06-12 17:40:13,304 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-06-12 17:40:29,293 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-12 17:40:34,425 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-12 17:40:36,711 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-12 17:40:37,748 [INFO] Fonte BASA retornou 0 itens
+2026-06-12 17:40:38,675 [INFO] Fonte BNDES retornou 8 itens
+2026-06-12 17:40:47,897 [INFO] Fonte FINEP retornou 0 itens
+2026-06-12 17:40:48,549 [INFO] Fonte DECIT retornou 0 itens
+2026-06-12 17:40:50,757 [INFO] Fonte FAPESP retornou 14 itens
+2026-06-12 17:41:32,012 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-12 17:41:34,142 [INFO] Fonte FACEPE retornou 94 itens
+2026-06-12 17:44:25,624 [INFO] Fonte FAPAC retornou 24 itens
+2026-06-12 17:46:03,920 [INFO] Fonte FAPEAL retornou 22 itens
+2026-06-12 17:46:35,709 [INFO] Fonte FAPEPI retornou 3 itens
+2026-06-12 17:46:51,038 [INFO] Fonte FAPES retornou 0 itens
+2026-06-12 17:47:08,680 [INFO] Fonte FAPEG retornou 2 itens
+2026-06-12 17:47:16,862 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-12 17:47:18,035 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-12 17:47:22,043 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-12 17:48:13,890 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-12 17:48:42,609 [INFO] Fonte FAPESQ retornou 6 itens
+2026-06-12 17:48:53,184 [INFO] Fonte FAPESB retornou 10 itens
+2026-06-12 17:49:51,428 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /edital-fapesb-n-052026-move-2026-participacao-de-pesquisadores-em-eventos-no-exterior/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f5b5f0b8d10>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-12 17:50:25,611 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /edital-fapesbsectiiel-no-0042026-chamada-estrategica-fapesbsectiiel/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f5b5eb491d0>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-12 17:50:59,802 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/edital-fapesbsecti-no-0032026-apoio-a-pesquisas-e-inovacoes-para-a-defesa-nacional-e-a-seguranca-publica/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /edital-fapesbsecti-no-0032026-apoio-a-pesquisas-e-inovacoes-para-a-defesa-nacional-e-a-seguranca-publica/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f5b5f056d10>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-12 17:51:05,739 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-12 17:51:12,201 [INFO] Fonte FAPEAM retornou 1 itens
+2026-06-12 17:51:24,974 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-12 17:52:59,093 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-12 17:53:01,077 [INFO] Fonte FAPEMIG retornou 6 itens
+2026-06-12 17:53:29,386 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-12 17:53:57,191 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-12 17:57:04,932 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-12 17:57:06,548 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-12 17:57:09,317 [INFO] Fonte FAPITEC retornou 1 itens
+2026-06-12 18:01:46,132 [INFO] Fonte FAPT retornou 0 itens
+2026-06-12 18:02:12,640 [INFO] Fonte FAPESC retornou 27 itens
+2026-06-12 18:03:45,397 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-12 18:05:09,013 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-12 18:05:09,036 [INFO] Total coletado: 143
+2026-06-12 18:05:09,037 [INFO] Novos: 5 | Prorrogados: 1 | Atualizados: 137 | Mantidos: 0 | Deduplicados por chave: 43
+2026-06-12 18:05:09,037 [INFO] Repostados/Publicados: 0
+2026-06-12 18:05:09,037 [INFO] Bloqueados para postagem: 0
+2026-06-12 18:05:09,037 [INFO] Expirados removidos da base: 0
+2026-06-12 18:05:09,037 [INFO] Erros por fonte: 0
+2026-06-12 18:05:09,037 [INFO] Fim da execucao
