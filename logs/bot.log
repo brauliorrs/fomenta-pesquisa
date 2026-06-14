@@ -15416,3 +15416,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-13 16:39:45,820 [INFO] Tentativas de publicacao apos sync: 73
 2026-06-13 16:39:45,820 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-13 16:39:45,820 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-14 07:24:25,117 [INFO] Inicio da execucao
+2026-06-14 07:24:31,882 [INFO] Fonte ANP retornou 2 itens
+2026-06-14 07:24:40,397 [INFO] Fonte CNPQ retornou 0 itens
+2026-06-14 07:24:40,891 [INFO] Fonte CAPES retornou 4 itens
+2026-06-14 07:24:50,544 [INFO] Fonte CONFAP retornou 9 itens
+2026-06-14 07:26:06,472 [WARNING] Falha ao enriquecer item http://montenegro.funcap.ce.gov.br/sugba/edital/792.pdf: HTTPConnectionPool(host='montenegro.funcap.ce.gov.br', port=80): Max retries exceeded with url: /sugba/edital/792.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='montenegro.funcap.ce.gov.br', port=80) at 0x7f6be8543e90>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-06-14 07:29:10,280 [INFO] Fonte IPEA retornou 0 itens
+2026-06-14 07:30:43,819 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-14 07:30:45,265 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-14 07:30:50,475 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-14 07:32:29,761 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-14 07:32:31,002 [INFO] Fonte BASA retornou 0 itens
+2026-06-14 07:32:31,851 [INFO] Fonte BNDES retornou 8 itens
+2026-06-14 07:32:43,036 [INFO] Fonte FINEP retornou 0 itens
+2026-06-14 07:32:43,661 [INFO] Fonte DECIT retornou 0 itens
+2026-06-14 07:32:44,895 [INFO] Fonte FAPESP retornou 14 itens
+2026-06-14 07:33:20,345 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-14 07:33:21,987 [INFO] Fonte FACEPE retornou 94 itens
+2026-06-14 07:39:08,973 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-14 07:39:13,718 [INFO] Fonte FAPEAL retornou 3 itens
+2026-06-14 07:39:27,368 [INFO] Fonte FAPEPI retornou 4 itens
+2026-06-14 07:39:43,840 [INFO] Fonte FAPES retornou 0 itens
+2026-06-14 07:42:47,947 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-14 07:42:49,914 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-14 07:44:23,472 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-14 07:44:27,718 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-14 07:45:00,215 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-14 07:47:01,640 [INFO] Fonte FAPESQ retornou 0 itens
+2026-06-14 07:47:06,686 [INFO] Fonte FAPESB retornou 10 itens
+2026-06-14 07:47:53,688 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-14 07:47:58,558 [INFO] Fonte FAPEAM retornou 1 itens
+2026-06-14 07:48:10,993 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-14 07:49:45,163 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-14 07:49:46,806 [INFO] Fonte FAPEMIG retornou 6 itens
+2026-06-14 07:50:08,213 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-14 07:50:34,088 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-14 07:53:41,256 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-14 07:53:42,183 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-14 07:55:15,976 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-14 07:59:50,776 [INFO] Fonte FAPT retornou 0 itens
+2026-06-14 08:00:07,420 [INFO] Fonte FAPESC retornou 27 itens
+2026-06-14 08:01:35,191 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-14 08:03:02,532 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-14 08:03:02,559 [INFO] Total coletado: 108
+2026-06-14 08:03:02,559 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 108 | Mantidos: 0 | Deduplicados por chave: 32
+2026-06-14 08:03:02,559 [INFO] Repostados/Publicados: 0
+2026-06-14 08:03:02,559 [INFO] Bloqueados para postagem: 0
+2026-06-14 08:03:02,559 [INFO] Expirados removidos da base: 0
+2026-06-14 08:03:02,559 [INFO] Erros por fonte: 0
+2026-06-14 08:03:02,559 [INFO] Fim da execucao
