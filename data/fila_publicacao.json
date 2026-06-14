@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T05:03:12.133427-03:00",
+  "generated_at": "2026-06-14T13:24:11.016503-03:00",
   "total_prontos": 74,
   "itens": [
     {
@@ -493,7 +493,7 @@
       "fonte": "FAPESQ",
       "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
       "prazo": "2026-06-26",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
