@@ -8,7 +8,7 @@ from src.utils.logger import configure_logger
 
 
 def main() -> None:
-    logger = configure_logger(settings.log_file_path)
+    logger = configure_logger(settings.discover_log_file_path)
     storage = StorageService()
     discovery_service = SourceDiscoveryService(logger)
 
