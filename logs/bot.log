@@ -16418,3 +16418,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-18 08:36:58,026 [INFO] Tentativas de publicacao apos sync: 63
 2026-06-18 08:36:58,026 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-18 08:36:58,026 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-18 18:06:04,904 [INFO] Inicio da execucao
+2026-06-18 18:07:38,237 [INFO] Fonte ANP retornou 0 itens
+2026-06-18 18:07:39,614 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-18 18:09:13,460 [INFO] Fonte CAPES retornou 0 itens
+2026-06-18 18:09:15,324 [INFO] Fonte CONFAP retornou 9 itens
+2026-06-18 18:10:19,722 [WARNING] Falha ao enriquecer item https://www.fapesb.ba.gov.br/reda/: HTTPSConnectionPool(host='www.fapesb.ba.gov.br', port=443): Max retries exceeded with url: /reda/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapesb.ba.gov.br', port=443) at 0x7f170b2bc190>, 'Connection to www.fapesb.ba.gov.br timed out. (connect timeout=30)'))
+2026-06-18 18:10:53,134 [WARNING] Falha ao enriquecer item http://montenegro.funcap.ce.gov.br/sugba/edital/792.pdf: HTTPConnectionPool(host='montenegro.funcap.ce.gov.br', port=80): Max retries exceeded with url: /sugba/edital/792.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='montenegro.funcap.ce.gov.br', port=80) at 0x7f170b610ad0>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-06-18 18:13:57,287 [INFO] Fonte IPEA retornou 0 itens
+2026-06-18 18:15:30,979 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-18 18:15:32,496 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-18 18:15:37,685 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-18 18:16:04,902 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-18 18:16:10,331 [INFO] Fonte BASA retornou 0 itens
+2026-06-18 18:16:11,345 [INFO] Fonte BNDES retornou 8 itens
+2026-06-18 18:16:20,759 [INFO] Fonte FINEP retornou 0 itens
+2026-06-18 18:16:50,791 [INFO] Fonte DECIT retornou 0 itens
+2026-06-18 18:16:52,083 [INFO] Fonte FAPESP retornou 14 itens
+2026-06-18 18:17:21,732 [INFO] Fonte FAPERJ retornou 16 itens
+2026-06-18 18:17:23,898 [INFO] Fonte FACEPE retornou 94 itens
+2026-06-18 18:23:53,907 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-18 18:24:00,093 [INFO] Fonte FAPEAL retornou 3 itens
+2026-06-18 18:24:14,921 [INFO] Fonte FAPEPI retornou 4 itens
+2026-06-18 18:24:30,742 [INFO] Fonte FAPES retornou 0 itens
+2026-06-18 18:27:34,611 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-18 18:27:36,288 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-18 18:29:10,827 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-18 18:29:15,540 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-18 18:29:52,263 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-18 18:31:54,869 [INFO] Fonte FAPESQ retornou 0 itens
+2026-06-18 18:33:33,672 [INFO] Fonte FAPESB retornou 0 itens
+2026-06-18 18:33:35,927 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-18 18:34:24,882 [INFO] Fonte FAPEAM retornou 5 itens
+2026-06-18 18:35:17,028 [WARNING] Falha ao enriquecer item https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/20032026_Edital_2787827_SEI_2787352_Edital_6_2026.pdf: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /capes/pt-br/centrais-de-conteudo/editais/20032026_Edital_2787827_SEI_2787352_Edital_6_2026.pdf (Caused by NewConnectionError("HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-06-18 18:35:26,962 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-18 18:37:01,676 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-18 18:37:03,550 [INFO] Fonte FAPEMIG retornou 7 itens
+2026-06-18 18:37:33,093 [INFO] Fonte FAPPR retornou 7 itens
+2026-06-18 18:38:59,130 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-18 18:42:07,140 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-18 18:42:08,156 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-18 18:43:42,021 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-18 18:48:17,255 [INFO] Fonte FAPT retornou 0 itens
+2026-06-18 18:48:35,385 [INFO] Fonte FAPESC retornou 16 itens
+2026-06-18 18:49:36,729 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-18 18:51:01,018 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-18 18:51:01,047 [INFO] Total coletado: 107
+2026-06-18 18:51:01,047 [INFO] Novos: 8 | Prorrogados: 0 | Atualizados: 99 | Mantidos: 0 | Deduplicados por chave: 26
+2026-06-18 18:51:01,047 [INFO] Repostados/Publicados: 0
+2026-06-18 18:51:01,047 [INFO] Bloqueados para postagem: 0
+2026-06-18 18:51:01,047 [INFO] Expirados removidos da base: 0
+2026-06-18 18:51:01,047 [INFO] Erros por fonte: 0
+2026-06-18 18:51:01,047 [INFO] Fim da execucao
