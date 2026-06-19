@@ -16527,3 +16527,54 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-18 18:52:13,717 [INFO] Tentativas de publicacao apos sync: 63
 2026-06-18 18:52:13,717 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-18 18:52:13,717 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-19 08:33:30,199 [INFO] Inicio da execucao
+2026-06-19 08:35:03,758 [INFO] Fonte ANP retornou 0 itens
+2026-06-19 08:35:04,959 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-19 08:36:38,785 [INFO] Fonte CAPES retornou 0 itens
+2026-06-19 08:36:41,023 [INFO] Fonte CONFAP retornou 9 itens
+2026-06-19 08:37:49,268 [WARNING] Falha ao enriquecer item http://montenegro.funcap.ce.gov.br/sugba/edital/792.pdf: HTTPConnectionPool(host='montenegro.funcap.ce.gov.br', port=80): Max retries exceeded with url: /sugba/edital/792.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='montenegro.funcap.ce.gov.br', port=80) at 0x7f4f3497c550>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-06-19 08:40:53,499 [INFO] Fonte IPEA retornou 0 itens
+2026-06-19 08:42:27,481 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-19 08:42:29,265 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-19 08:42:35,782 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-19 08:44:11,994 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-19 08:44:12,865 [INFO] Fonte BASA retornou 0 itens
+2026-06-19 08:44:13,956 [INFO] Fonte BNDES retornou 8 itens
+2026-06-19 08:44:28,123 [INFO] Fonte FINEP retornou 0 itens
+2026-06-19 08:44:58,155 [INFO] Fonte DECIT retornou 0 itens
+2026-06-19 08:44:59,681 [INFO] Fonte FAPESP retornou 14 itens
+2026-06-19 08:45:32,688 [INFO] Fonte FAPERJ retornou 17 itens
+2026-06-19 08:45:38,974 [INFO] Fonte FACEPE retornou 94 itens
+2026-06-19 08:51:41,747 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-19 08:51:47,461 [INFO] Fonte FAPEAL retornou 3 itens
+2026-06-19 08:52:07,502 [INFO] Fonte FAPEPI retornou 5 itens
+2026-06-19 08:52:28,324 [INFO] Fonte FAPES retornou 0 itens
+2026-06-19 08:55:32,815 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-19 08:55:34,818 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-19 08:57:09,442 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-19 08:57:13,392 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-19 08:57:48,989 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-19 08:59:53,145 [INFO] Fonte FAPESQ retornou 0 itens
+2026-06-19 08:59:57,005 [INFO] Fonte FAPESB retornou 10 itens
+2026-06-19 09:00:48,872 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-19 09:01:11,979 [INFO] Fonte FAPEAM retornou 5 itens
+2026-06-19 09:01:56,739 [WARNING] Falha ao enriquecer item https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/20032026_Edital_2787827_SEI_2787352_Edital_6_2026.pdf: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /capes/pt-br/centrais-de-conteudo/editais/20032026_Edital_2787827_SEI_2787352_Edital_6_2026.pdf (Caused by NewConnectionError("HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-06-19 09:02:06,462 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-19 09:03:40,977 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-19 09:03:43,227 [INFO] Fonte FAPEMIG retornou 7 itens
+2026-06-19 09:04:08,792 [INFO] Fonte FAPPR retornou 8 itens
+2026-06-19 09:04:43,120 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-19 09:07:51,076 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-19 09:07:52,216 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-19 09:09:26,292 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-19 09:14:01,415 [INFO] Fonte FAPT retornou 0 itens
+2026-06-19 09:14:14,503 [INFO] Fonte FAPESC retornou 16 itens
+2026-06-19 09:15:15,913 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-19 09:16:20,097 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-19 09:16:20,121 [INFO] Total coletado: 109
+2026-06-19 09:16:20,122 [INFO] Novos: 2 | Prorrogados: 0 | Atualizados: 107 | Mantidos: 0 | Deduplicados por chave: 34
+2026-06-19 09:16:20,122 [INFO] Repostados/Publicados: 0
+2026-06-19 09:16:20,122 [INFO] Bloqueados para postagem: 0
+2026-06-19 09:16:20,122 [INFO] Expirados removidos da base: 0
+2026-06-19 09:16:20,122 [INFO] Erros por fonte: 0
+2026-06-19 09:16:20,122 [INFO] Fim da execucao
