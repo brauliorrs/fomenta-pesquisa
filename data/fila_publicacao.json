@@ -1,31 +1,9 @@
 {
-  "generated_at": "2026-06-22T06:55:34.937424-03:00",
+  "generated_at": "2026-06-22T15:47:08.220205-03:00",
   "total_prontos": 75,
   "itens": [
     {
       "posicao_fila": 1,
-      "id": "fundacao_araucaria_de_apoio_ao_desenvolv_4f02fbc0",
-      "titulo": "CP 14/26: Centelha III",
-      "fonte": "FAPPR",
-      "orgao": "Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana",
-      "prazo": "2026-06-22",
-      "status": "atualizado",
-      "score_editorial": 100,
-      "ultima_postagem": "2026-05-23T03:42:42.695039-03:00",
-      "quantidade_postagens": 1,
-      "instagram_feed_publicado": true,
-      "urgencia_dias": 0,
-      "link": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/arquivos_restritos/files/documento/2026-05/minutacpcentelha3prfinal190526.pdf_-_minutacpcentelha3prfinal190526.pdf",
-      "caption": "Oportunidade no radar: CP 14/26: Programa Nacional de Apoio à Geração de Empreendimentos Inovadores - Programa Centelha III\nÚltimo dia de inscrição.\n\nA oportunidade está aberta para pesquisadores, ICTs e instituições do Paraná na categoria bolsa, com abertura registrada em 21/05/2025 e prazo final em 22/06/2026.\n\nInstituição: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana\nPúblico-alvo: Pesquisadores, ICTs e instituições do Paraná\nTipo: Bolsa\nAbertura das inscrições: 21/05/2025\nPrazo final: 22/06/2026\n\nLink oficial do edital:\nhttps://www.fappr.pr.gov.br/sites/fundação-araucaria/arquivos_restritos/files/documento/2026-05/minutacpcentelha3prfinal190526.pdf_-_minutacpcentelha3prfinal190526.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fundacaoaraucaria #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Inovacao",
-      "card_header": "EDITAL FAPPR",
-      "card_title": "CP 14/26: Programa Nacional de Apoio à Geração de Empreendimentos Inovadores - Programa",
-      "card_deadline": "ÚLTIMO DIA",
-      "card_summary": "Voltado a pesquisadores, ICTs e instituições do Paraná. Prazo final em 22/06/2026. Confira os critérios no edital.",
-      "card_handle": "@editais.pesquisa",
-      "card_footer_note": "Link do edital e detalhes abaixo."
-    },
-    {
-      "posicao_fila": 2,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_e97fecca",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 16/2026 PROGRAMA DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO DE APOIO AOS GRUPOS DE PESQUISA DA ASSOCIAÇÃO CATARINENSE DAS FUNDAÇÕES EDUCACIONAIS (ACAFE)",
       "fonte": "FAPESC",
@@ -47,7 +25,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 3,
+      "posicao_fila": 2,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_9d17f676",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 31/2026 PROGRAMA ACELERA STARTUP SC – 6ª Edição",
       "fonte": "FAPESC",
@@ -69,7 +47,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 4,
+      "posicao_fila": 3,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__296f3a63",
       "titulo": "Chamada FAPESP – Fundação Bracell – Fundação Itaú: Auxílio à Pesquisa para o Fortalecimento da Educação na Pré-Escola",
       "fonte": "FAPESP",
@@ -91,7 +69,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 5,
+      "posicao_fila": 4,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__6988d841",
       "titulo": "Chamada Pública Fapeg/CBC/Votorantim nº 11/2026 - Legado Verdes do Cerrado - 2ª Edição",
       "fonte": "FAPEG",
@@ -113,7 +91,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 6,
+      "posicao_fila": 5,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89071ad5",
       "titulo": "Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular",
       "fonte": "FAPESP",
@@ -135,7 +113,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 7,
+      "posicao_fila": 6,
       "id": "fundacao_araucaria_de_apoio_ao_desenvolv_409867a2",
       "titulo": "PI 19/26: Ação de Internacionalização do Paraná",
       "fonte": "FAPPR",
@@ -157,7 +135,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 8,
+      "posicao_fila": 7,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ecc45817",
       "titulo": "DIRETRIZES ESPECÍFICAS DA FAPEAM - CHAMADA CNPq/MMA/CONFAP/FAPs N.º 15/2025 - “CHAMADA SINBIOSE 2025”",
       "fonte": "FAPEAM",
@@ -179,7 +157,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 9,
+      "posicao_fila": 8,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_c91f7d53",
       "titulo": "EDITAL N° 34/2026 - AUXÍLIO ÀS INSTITUIÇÕES DE ENSINO SUPERIOR PARA REALIZAÇÃO E PARTICIPAÇÃO EM EVENTOS SOBRE INTERNACIONALIZAÇÃO",
       "fonte": "FAPESQ",
@@ -201,7 +179,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 10,
+      "posicao_fila": 9,
       "id": "financiadora_de_estudos_e_projetos_agric_26c7babc",
       "titulo": "Agricultura familiar para ICTs 2026",
       "fonte": "FINEP",
@@ -223,7 +201,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 11,
+      "posicao_fila": 10,
       "id": "empresa_brasileira_de_pesquisa_e_inovaca_6d5a0de7",
       "titulo": "Chamada interna nº 01/2026 para a seleção de Unidades e Centros de Competência Embrapii para atuação no Programa Jornada do Conhecimento para pesquisadores de INCTs",
       "fonte": "EMBRAPII",
@@ -245,7 +223,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 12,
+      "posicao_fila": 11,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_81fcf35d",
       "titulo": "EDITAL Nº 31/2026 – SELEÇÃO PARA PESQUISADOR ASSISTENTE DO PROJETO RESGATANDO A PRESENÇA DOS POVOS CIGANOS NA PARAÍBA E OS DESAFIOS INTERCULTURAIS",
       "fonte": "FAPESQ",
@@ -267,7 +245,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 13,
+      "posicao_fila": 12,
       "id": "fundacao_araucaria_de_apoio_ao_desenvolv_b218ccb9",
       "titulo": "PI 17/26: Confap & ERC",
       "fonte": "FAPPR",
@@ -280,11 +258,33 @@
       "instagram_feed_publicado": false,
       "urgencia_dias": 4,
       "link": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/arquivos_restritos/files/documento/2026-05/pi_17-2026_-_confap_erc_2025.pdf",
-      "caption": "Oportunidade no radar: PI 17/26: Confap & ERC\nPrazo encerra em 4 dias.\n\nO PI 17/2026 visa promover cooperação internacional, interdisciplinar e intersetorial de projeto aprovado na Chamada ERC - CONFAP 2025.\n\nInstituição: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana\nPúblico-alvo: Pesquisadores, ICTs e instituições do Paraná\nTipo: Pesquisa\nAbertura das inscrições: 25/05/2026\nPrazo final: 26/06/2026\n\nLink oficial do edital:\nhttps://www.fappr.pr.gov.br/sites/fundação-araucaria/arquivos_restritos/files/documento/2026-05/pi_17-2026_-_confap_erc_2025.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fundacaoaraucaria #Projetosdepesquisa #Chamadapublica #Cooperacaocientifica #Pesquisadores",
+      "caption": "Oportunidade no radar: PI 17/26: Confap & ERC\nPrazo encerra em 4 dias.\n\nO \" PI 17/2026 - CONFAP & ERC \" visa promover cooperação internacional, interdisciplinar e intersetorial de projeto aprovado na Chamada ERC - CONFAP 2025.\n\nInstituição: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana\nPúblico-alvo: Pesquisadores, ICTs e instituições do Paraná\nTipo: Pesquisa\nAbertura das inscrições: 25/05/2026\nPrazo final: 26/06/2026\n\nLink oficial do edital:\nhttps://www.fappr.pr.gov.br/sites/fundação-araucaria/arquivos_restritos/files/documento/2026-05/pi_17-2026_-_confap_erc_2025.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fundacaoaraucaria #Projetosdepesquisa #Chamadapublica #Cooperacaocientifica #Pesquisadores",
       "card_header": "EDITAL FAPPR",
       "card_title": "PI 17/26: Confap & ERC",
       "card_deadline": "PRAZO: 26/06",
-      "card_summary": "O PI 17/2026 visa promover cooperação internacional, interdisciplinar e intersetorial de projeto aprovado na Chamada ERC - CONFAP 2025.",
+      "card_summary": "O \" PI 17/2026 - CONFAP & ERC \" visa promover cooperação internacional, interdisciplinar e intersetorial de projeto aprovado na Chamada ERC - CONFAP 2025.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 13,
+      "id": "fundacao_araucaria_de_apoio_ao_desenvolv_4f02fbc0",
+      "titulo": "CP 14/26: Centelha III",
+      "fonte": "FAPPR",
+      "orgao": "Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana",
+      "prazo": "2026-06-29",
+      "status": "prorrogado",
+      "score_editorial": 100,
+      "ultima_postagem": "2026-05-23T03:42:42.695039-03:00",
+      "quantidade_postagens": 1,
+      "instagram_feed_publicado": true,
+      "urgencia_dias": 7,
+      "link": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/arquivos_restritos/files/documento/2026-05/minutacpcentelha3prfinal190526.pdf_-_minutacpcentelha3prfinal190526.pdf",
+      "caption": "Oportunidade no radar: CP 14/26: Programa Nacional de Apoio à Geração de Empreendimentos Inovadores - Programa Centelha III\nPrazo encerra em 7 dias.\n\nA oportunidade está aberta para pesquisadores, ICTs e instituições do Paraná na categoria bolsa, com abertura registrada em 21/05/2025 e prazo final em 29/06/2026.\n\nInstituição: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana\nPúblico-alvo: Pesquisadores, ICTs e instituições do Paraná\nTipo: Bolsa\nAbertura das inscrições: 21/05/2025\nPrazo final: 29/06/2026\n\nLink oficial do edital:\nhttps://www.fappr.pr.gov.br/sites/fundação-araucaria/arquivos_restritos/files/documento/2026-05/minutacpcentelha3prfinal190526.pdf_-_minutacpcentelha3prfinal190526.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fundacaoaraucaria #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Inovacao",
+      "card_header": "EDITAL FAPPR",
+      "card_title": "CP 14/26: Programa Nacional de Apoio à Geração de Empreendimentos Inovadores - Programa",
+      "card_deadline": "PRAZO: 29/06",
+      "card_summary": "Voltado a pesquisadores, ICTs e instituições do Paraná. Prazo final em 29/06/2026. Confira os critérios no edital.",
       "card_handle": "@editais.pesquisa",
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
