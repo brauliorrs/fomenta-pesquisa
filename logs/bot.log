@@ -17372,3 +17372,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-22 19:14:53,948 [INFO] Tentativas de publicacao apos sync: 61
 2026-06-22 19:14:53,948 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-22 19:14:53,948 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-23 06:52:20,648 [INFO] Inicio da execucao
+2026-06-23 06:53:54,134 [INFO] Fonte ANP retornou 0 itens
+2026-06-23 06:53:55,269 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-23 06:55:29,062 [INFO] Fonte CAPES retornou 0 itens
+2026-06-23 06:55:31,672 [INFO] Fonte CONFAP retornou 9 itens
+2026-06-23 06:59:30,595 [INFO] Fonte IPEA retornou 0 itens
+2026-06-23 07:01:04,498 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-23 07:02:42,717 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-23 07:02:49,003 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-23 07:04:08,335 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-23 07:04:09,518 [INFO] Fonte BASA retornou 0 itens
+2026-06-23 07:04:12,302 [INFO] Fonte BNDES retornou 8 itens
+2026-06-23 07:04:24,770 [INFO] Fonte FINEP retornou 0 itens
+2026-06-23 07:04:54,802 [INFO] Fonte DECIT retornou 0 itens
+2026-06-23 07:04:56,073 [INFO] Fonte FAPESP retornou 13 itens
+2026-06-23 07:05:25,351 [INFO] Fonte FAPERJ retornou 17 itens
+2026-06-23 07:05:32,337 [INFO] Fonte FACEPE retornou 95 itens
+2026-06-23 07:11:35,726 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-23 07:11:40,777 [INFO] Fonte FAPEAL retornou 3 itens
+2026-06-23 07:11:56,746 [INFO] Fonte FAPEPI retornou 5 itens
+2026-06-23 07:12:16,313 [INFO] Fonte FAPES retornou 0 itens
+2026-06-23 07:15:20,293 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-23 07:15:21,931 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-23 07:16:55,979 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-23 07:16:59,342 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-23 07:17:30,947 [INFO] Fonte FAPESPA retornou 21 itens
+2026-06-23 07:18:00,590 [INFO] Fonte FAPESQ retornou 12 itens
+2026-06-23 07:18:20,785 [INFO] Fonte FAPESB retornou 10 itens
+2026-06-23 07:19:08,200 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-23 07:19:35,053 [INFO] Fonte FAPEAM retornou 5 itens
+2026-06-23 07:20:22,166 [WARNING] Falha ao enriquecer item https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/20032026_Edital_2787827_SEI_2787352_Edital_6_2026.pdf: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /capes/pt-br/centrais-de-conteudo/editais/20032026_Edital_2787827_SEI_2787352_Edital_6_2026.pdf (Caused by NewConnectionError("HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-06-23 07:20:35,371 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-23 07:22:09,330 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-23 07:22:13,568 [INFO] Fonte FAPEMIG retornou 7 itens
+2026-06-23 07:22:39,925 [INFO] Fonte FAPPR retornou 8 itens
+2026-06-23 07:23:10,997 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-23 07:26:19,286 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-23 07:26:20,251 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-23 07:27:54,332 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-23 07:32:29,308 [INFO] Fonte FAPT retornou 0 itens
+2026-06-23 07:32:42,159 [INFO] Fonte FAPESC retornou 17 itens
+2026-06-23 07:33:37,725 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-23 07:34:54,734 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-23 07:34:54,766 [INFO] Total coletado: 115
+2026-06-23 07:34:54,766 [INFO] Novos: 6 | Prorrogados: 0 | Atualizados: 109 | Mantidos: 0 | Deduplicados por chave: 27
+2026-06-23 07:34:54,766 [INFO] Repostados/Publicados: 0
+2026-06-23 07:34:54,766 [INFO] Bloqueados para postagem: 0
+2026-06-23 07:34:54,766 [INFO] Expirados removidos da base: 3
+2026-06-23 07:34:54,766 [INFO] Erros por fonte: 0
+2026-06-23 07:34:54,766 [INFO] Fim da execucao
