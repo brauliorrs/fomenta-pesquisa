@@ -2,7 +2,7 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__dae92af6
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-07-13
+prazo: 2026-08-24
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__dae92af6.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__dae92af6_story.jpg
 
@@ -14,7 +14,7 @@ Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Empresas inovadoras, startups e pesquisadores
 Tipo: Inovacao
 Abertura das inscrições: 08/06/2026
-Prazo final: 13/07/2026
+Prazo final: 24/08/2026
 
 Link oficial do edital:
 https://fapesp.br/18203
