@@ -18021,3 +18021,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-26 07:40:36,578 [INFO] Tentativas de publicacao apos sync: 56
 2026-06-26 07:40:36,578 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-26 07:40:36,578 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-26 17:01:08,718 [INFO] Inicio da execucao
+2026-06-26 17:01:23,034 [INFO] Fonte ANP retornou 2 itens
+2026-06-26 17:01:28,545 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-26 17:01:29,933 [INFO] Fonte CAPES retornou 0 itens
+2026-06-26 17:01:32,577 [INFO] Fonte CONFAP retornou 10 itens
+2026-06-26 17:02:23,311 [INFO] Fonte IPEA retornou 10 itens
+2026-06-26 17:02:33,563 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-06-26 17:03:18,983 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-26 17:03:25,865 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-26 17:03:29,189 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-26 17:03:30,488 [INFO] Fonte BASA retornou 0 itens
+2026-06-26 17:03:31,507 [INFO] Fonte BNDES retornou 8 itens
+2026-06-26 17:03:42,659 [INFO] Fonte FINEP retornou 0 itens
+2026-06-26 17:03:43,216 [INFO] Fonte DECIT retornou 0 itens
+2026-06-26 17:03:44,580 [INFO] Fonte FAPESP retornou 13 itens
+2026-06-26 17:04:24,553 [INFO] Fonte FAPERJ retornou 17 itens
+2026-06-26 17:04:31,872 [INFO] Fonte FACEPE retornou 95 itens
+2026-06-26 17:07:33,996 [INFO] Fonte FAPAC retornou 24 itens
+2026-06-26 17:08:39,468 [INFO] Fonte FAPEAL retornou 3 itens
+2026-06-26 17:08:59,544 [INFO] Fonte FAPEPI retornou 6 itens
+2026-06-26 17:09:22,298 [INFO] Fonte FAPES retornou 0 itens
+2026-06-26 17:09:38,240 [INFO] Fonte FAPEG retornou 3 itens
+2026-06-26 17:09:55,715 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-26 17:09:57,047 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-26 17:10:00,841 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-26 17:10:06,308 [INFO] Fonte FAPESPA retornou 0 itens
+2026-06-26 17:10:08,881 [INFO] Fonte FAPESQ retornou 11 itens
+2026-06-26 17:10:34,425 [INFO] Fonte FAPESB retornou 10 itens
+2026-06-26 17:11:50,177 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-26 17:13:35,263 [INFO] Fonte FAPEAM retornou 0 itens
+2026-06-26 17:13:43,838 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-26 17:15:18,343 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-26 17:15:20,530 [INFO] Fonte FAPEMIG retornou 7 itens
+2026-06-26 17:15:43,303 [INFO] Fonte FAPPR retornou 8 itens
+2026-06-26 17:16:14,017 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-26 17:16:20,073 [INFO] Fonte FAPERN retornou 35 itens
+2026-06-26 17:16:23,243 [WARNING] Falha ao enriquecer item https://www.fapern.rn.gov.br/documentos/Editais/Editais%202026/Edital%2011-2026%20SEMI%C3%81RIDO%20-%20Chamada%20P%C3%BAblica/: 404 Client Error: Not Found for url: https://www.fapern.rn.gov.br/documentos/Editais/Editais%202026/Edital%2011-2026%20SEMI%C3%81RIDO%20-%20Chamada%20P%C3%BAblica/
+2026-06-26 17:16:55,729 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-26 17:18:30,906 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-26 17:23:08,294 [INFO] Fonte FAPT retornou 0 itens
+2026-06-26 17:23:20,157 [INFO] Fonte FAPESC retornou 16 itens
+2026-06-26 17:24:24,926 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-26 17:25:29,651 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-26 17:25:29,684 [INFO] Total coletado: 124
+2026-06-26 17:25:29,684 [INFO] Novos: 13 | Prorrogados: 0 | Atualizados: 111 | Mantidos: 0 | Deduplicados por chave: 9
+2026-06-26 17:25:29,684 [INFO] Repostados/Publicados: 0
+2026-06-26 17:25:29,684 [INFO] Bloqueados para postagem: 0
+2026-06-26 17:25:29,684 [INFO] Expirados removidos da base: 0
+2026-06-26 17:25:29,684 [INFO] Erros por fonte: 0
+2026-06-26 17:25:29,684 [INFO] Fim da execucao
