@@ -18220,3 +18220,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-06-27 07:00:46,835 [INFO] Tentativas de publicacao apos sync: 55
 2026-06-27 07:00:46,835 [INFO] Publicacoes concluidas apos sync: 0
 2026-06-27 07:00:46,835 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-06-27 16:06:30,879 [INFO] Inicio da execucao
+2026-06-27 16:08:04,445 [INFO] Fonte ANP retornou 0 itens
+2026-06-27 16:08:05,717 [INFO] Fonte CNPQ retornou 1 itens
+2026-06-27 16:09:39,631 [INFO] Fonte CAPES retornou 0 itens
+2026-06-27 16:09:42,222 [INFO] Fonte CONFAP retornou 10 itens
+2026-06-27 16:10:20,510 [WARNING] Falha ao enriquecer item https://www.gov.br/capes/pt-br: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /capes/pt-br (Caused by NewConnectionError("HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-06-27 16:14:16,669 [INFO] Fonte IPEA retornou 0 itens
+2026-06-27 16:15:50,692 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-06-27 16:15:52,515 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-06-27 16:15:59,166 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-06-27 16:17:34,272 [INFO] Fonte FUNDECI retornou 0 itens
+2026-06-27 16:17:35,676 [INFO] Fonte BASA retornou 0 itens
+2026-06-27 16:17:36,815 [INFO] Fonte BNDES retornou 8 itens
+2026-06-27 16:17:50,948 [INFO] Fonte FINEP retornou 0 itens
+2026-06-27 16:18:20,975 [INFO] Fonte DECIT retornou 0 itens
+2026-06-27 16:18:22,618 [INFO] Fonte FAPESP retornou 14 itens
+2026-06-27 16:18:59,968 [INFO] Fonte FAPERJ retornou 17 itens
+2026-06-27 16:19:07,117 [INFO] Fonte FACEPE retornou 96 itens
+2026-06-27 16:25:17,405 [INFO] Fonte FAPAC retornou 0 itens
+2026-06-27 16:25:23,195 [INFO] Fonte FAPEAL retornou 3 itens
+2026-06-27 16:25:44,213 [INFO] Fonte FAPEPI retornou 6 itens
+2026-06-27 16:26:06,466 [INFO] Fonte FAPES retornou 0 itens
+2026-06-27 16:29:11,005 [INFO] Fonte FAPEG retornou 0 itens
+2026-06-27 16:29:12,967 [INFO] Fonte FAPEMA retornou 0 itens
+2026-06-27 16:30:47,206 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-06-27 16:30:52,060 [INFO] Fonte FUNDECT retornou 1 itens
+2026-06-27 16:30:56,663 [INFO] Fonte FAPESPA retornou 0 itens
+2026-06-27 16:30:58,366 [INFO] Fonte FAPESQ retornou 11 itens
+2026-06-27 16:32:45,236 [INFO] Fonte FAPESB retornou 0 itens
+2026-06-27 16:32:48,955 [INFO] Fonte FUNCAP retornou 0 itens
+2026-06-27 16:34:25,693 [INFO] Fonte FAPEAM retornou 0 itens
+2026-06-27 16:34:32,540 [INFO] Fonte FAPEAP retornou 0 itens
+2026-06-27 16:36:06,950 [INFO] Fonte FAPDF retornou 0 itens
+2026-06-27 16:36:09,179 [INFO] Fonte FAPEMIG retornou 7 itens
+2026-06-27 16:36:39,995 [INFO] Fonte FAPPR retornou 8 itens
+2026-06-27 16:37:12,789 [INFO] Fonte FAPERGS retornou 0 itens
+2026-06-27 16:40:20,669 [INFO] Fonte FAPERN retornou 0 itens
+2026-06-27 16:40:21,871 [INFO] Fonte FAPERO retornou 0 itens
+2026-06-27 16:41:55,862 [INFO] Fonte FAPITEC retornou 0 itens
+2026-06-27 16:46:31,133 [INFO] Fonte FAPT retornou 0 itens
+2026-06-27 16:46:44,555 [INFO] Fonte FAPESC retornou 17 itens
+2026-06-27 16:47:50,974 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-06-27 16:48:52,848 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-06-27 16:48:52,880 [INFO] Total coletado: 91
+2026-06-27 16:48:52,880 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 91 | Mantidos: 0 | Deduplicados por chave: 13
+2026-06-27 16:48:52,880 [INFO] Repostados/Publicados: 0
+2026-06-27 16:48:52,880 [INFO] Bloqueados para postagem: 0
+2026-06-27 16:48:52,880 [INFO] Expirados removidos da base: 0
+2026-06-27 16:48:52,880 [INFO] Erros por fonte: 0
+2026-06-27 16:48:52,880 [INFO] Fim da execucao

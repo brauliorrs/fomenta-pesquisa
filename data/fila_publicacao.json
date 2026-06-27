@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:00:36.436809-03:00",
+  "generated_at": "2026-06-27T13:06:30.879418-03:00",
   "total_prontos": 69,
   "itens": [
     {
@@ -185,7 +185,7 @@
       "fonte": "FACEPE",
       "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
       "prazo": "2026-07-06",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -735,7 +735,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-07-27",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -1109,7 +1109,7 @@
       "fonte": "FAPESP",
       "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
       "prazo": "2026-09-01",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
