@@ -1,24 +1,23 @@
 [MOCK INSTAGRAM DRAFT]
-id: fundacao_de_amparo_a_pesquisa_do_estado__35e10f81
+id: fundacao_de_amparo_a_pesquisa_do_estado__feaa58d3
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-06-30
-card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__35e10f81.jpg
-card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__35e10f81_story.jpg
+prazo: 2026-09-01
+card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__feaa58d3.jpg
+card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__feaa58d3_story.jpg
 
-Oportunidade no radar: Chamada FAPESP – National Research Foundation of Korea
-Prazo encerra em 3 dias.
+Oportunidade no radar: Chamada de Propostas – Programa Desafios da Amazônia
 
-Áreas: todas.
+Área: Sociobioeconomia.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas
 Tipo: Pesquisa
-Abertura das inscrições: 20/05/2026
-Prazo final: 30/06/2026
+Abertura das inscrições: 26/06/2026
+Prazo final: 01/09/2026
 
 Link oficial do edital:
-https://fapesp.br/18200
+https://fapesp.br/18249
 
 Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
 No post, o link do edital e os detalhes ficam logo abaixo na legenda.
