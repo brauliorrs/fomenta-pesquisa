@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T04:22:51.698068-03:00",
-  "total_prontos": 73,
+  "generated_at": "2026-07-02T13:50:58.383774-03:00",
+  "total_prontos": 77,
   "itens": [
     {
       "posicao_fila": 1,
@@ -1258,12 +1258,34 @@
     },
     {
       "posicao_fila": 58,
+      "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_94bd526f",
+      "titulo": "22/2026 -",
+      "fonte": "FACEPE",
+      "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
+      "prazo": "2026-09-24",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 84,
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/2026.07.01-Global-PE-Espanha.pdf",
+      "caption": "Oportunidade no radar: Global-PE-Espanha\n\n22/2026.\n\nInstituição: Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições de Pernambuco\nTipo: Pesquisa\nAbertura das inscrições: 02/07/2026\nPrazo final: 24/09/2026\n\nLink oficial do edital:\nhttps://www.facepe.br/wp-content/uploads/2026/07/2026.07.01-Global-PE-Espanha.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Facepe #Projetosdepesquisa #Pesquisadores #Instituicoesdepesquisa #Pesquisape",
+      "card_header": "EDITAL FACEPE",
+      "card_title": "Global-PE-Espanha",
+      "card_deadline": "PRAZO: 24/09",
+      "card_summary": "22/2026.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 59,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_221541db",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 39/2026 NÚCLEO CATARINENSE DE MOBILIDADE ELÉTRICA (NCME)",
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-09-28",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -1279,7 +1301,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 59,
+      "posicao_fila": 60,
       "id": "financiadora_de_estudos_e_projetos_finep_74b0dc4f",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
       "fonte": "FINEP",
@@ -1301,7 +1323,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 60,
+      "posicao_fila": 61,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89a27b18",
       "titulo": "Edital do Programa FICA-SP (Fixação e Incentivo à Carreira Acadêmica em São Paulo)",
       "fonte": "FAPESP",
@@ -1323,7 +1345,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 61,
+      "posicao_fila": 62,
       "id": "financiadora_de_estudos_e_projetos_finep_35401209",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
       "fonte": "FINEP",
@@ -1345,7 +1367,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 62,
+      "posicao_fila": 63,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__b1d1890a",
       "titulo": "Programa Centelha 3 - Programa Nacional de Apoio à Geração de Empreendimentos Inovadores",
       "fonte": "FAPEMIG",
@@ -1367,7 +1389,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 63,
+      "posicao_fila": 64,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89071ad5",
       "titulo": "Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular",
       "fonte": "FAPESP",
@@ -1389,7 +1411,29 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 64,
+      "posicao_fila": 65,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__ae2113c8",
+      "titulo": "EDITAL Nº 003/2026 – PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL ( PROFIX-CB)",
+      "fonte": "FAPEPI",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado do Piaui",
+      "prazo": "2026-10-30",
+      "status": "novo",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 120,
+      "link": "https://www.fapepi.pi.gov.br/wp-content/uploads/2026/05/Edital_FAPEPI_PROFIX_003_2026.pdf",
+      "caption": "Oportunidade no radar: EDITAL Nº 003/2026 – PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL ( PROFIX-CB)\n\nA oportunidade está aberta para estudantes, bolsistas e pesquisadores vinculados a instituições do Piaui na categoria bolsa, com abertura registrada em 20/12/1993 e prazo final em 30/10/2026.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado do Piaui\nPúblico-alvo: Estudantes, bolsistas e pesquisadores vinculados a instituições do Piaui\nTipo: Bolsa\nAbertura das inscrições: 20/12/1993\nPrazo final: 30/10/2026\n\nLink oficial do edital:\nhttps://www.fapepi.pi.gov.br/wp-content/uploads/2026/05/Edital_FAPEPI_PROFIX_003_2026.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapepi #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Cooperacaocientifica",
+      "card_header": "EDITAL FAPEPI",
+      "card_title": "EDITAL Nº 003/2026 – PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL ( PROFIX-CB)",
+      "card_deadline": "PRAZO: 30/10",
+      "card_summary": "Voltado a estudantes, bolsistas e pesquisadores vinculados a instituições do Piaui. Prazo final em 30/10/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 66,
       "id": "conselho_nacional_das_fundacoes_estaduai_0e43c66f",
       "titulo": "Facepe lança edital Mães Cientistas de Pernambuco (nº 16/2026)",
       "fonte": "CONFAP",
@@ -1411,7 +1455,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 65,
+      "posicao_fila": 67,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f",
       "titulo": "16/2026 -",
       "fonte": "FACEPE",
@@ -1433,7 +1477,29 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 66,
+      "posicao_fila": 68,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__84be84f4",
+      "titulo": "EDITAL Nº 006/2026 – PROGRAMA DE BOLSAS DE INICIAÇÃO CIENTÍFICA DA FAPEPI – PBIC",
+      "fonte": "FAPEPI",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado do Piaui",
+      "prazo": "2026-11-06",
+      "status": "novo",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 127,
+      "link": "https://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-N•-0062026-PROGRAMA-DE-BOLSAS-DE-INICIACAO-CIENTIFICA-DA-FAPEPI-PBIC.pdf",
+      "caption": "Oportunidade no radar: EDITAL Nº 006/2026 – PROGRAMA DE BOLSAS DE INICIAÇÃO CIENTÍFICA DA FAPEPI – PBIC\n\nA oportunidade está aberta para estudantes, bolsistas e pesquisadores vinculados a instituições do Piaui na categoria bolsa, com abertura registrada em 20/12/1993 e prazo final em 06/11/2026.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado do Piaui\nPúblico-alvo: Estudantes, bolsistas e pesquisadores vinculados a instituições do Piaui\nTipo: Bolsa\nAbertura das inscrições: 20/12/1993\nPrazo final: 06/11/2026\n\nLink oficial do edital:\nhttps://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-N•-0062026-PROGRAMA-DE-BOLSAS-DE-INICIACAO-CIENTIFICA-DA-FAPEPI-PBIC.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapepi #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Pesquisadores",
+      "card_header": "EDITAL FAPEPI",
+      "card_title": "EDITAL Nº 006/2026 – PROGRAMA DE BOLSAS DE INICIAÇÃO CIENTÍFICA DA FAPEPI – PBIC",
+      "card_deadline": "PRAZO: 06/11",
+      "card_summary": "Voltado a estudantes, bolsistas e pesquisadores vinculados a instituições do Piaui. Prazo final em 06/11/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 69,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25",
       "titulo": "FAPESP / M-ERA.NET 2026",
       "fonte": "FAPESP",
@@ -1455,7 +1521,29 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 67,
+      "posicao_fila": 70,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef",
+      "titulo": "EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO PIAUÍ (PDCTR-PI)",
+      "fonte": "FAPEPI",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado do Piaui",
+      "prazo": "2026-12-21",
+      "status": "novo",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 172,
+      "link": "https://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-007-2026.pdf",
+      "caption": "Oportunidade no radar: EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO PIAUÍ (PDCTR-PI)\n\nA oportunidade está aberta para empresas, empreendedores, pesquisadores e ICTs do Piaui na categoria bolsa, com abertura registrada em 20/12/1993 e prazo final em 21/12/2026.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado do Piaui\nPúblico-alvo: Empresas, empreendedores, pesquisadores e ICTs do Piaui\nTipo: Bolsa\nAbertura das inscrições: 20/12/1993\nPrazo final: 21/12/2026\n\nLink oficial do edital:\nhttps://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-007-2026.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapepi #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Inovacao",
+      "card_header": "EDITAL FAPEPI",
+      "card_title": "EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO",
+      "card_deadline": "PRAZO: 21/12",
+      "card_summary": "Voltado a empresas, empreendedores, pesquisadores e ICTs do Piaui. Prazo final em 21/12/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 71,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -1477,7 +1565,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 68,
+      "posicao_fila": 72,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -1499,7 +1587,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 69,
+      "posicao_fila": 73,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -1521,7 +1609,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 70,
+      "posicao_fila": 74,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1543,7 +1631,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 71,
+      "posicao_fila": 75,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1565,7 +1653,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 72,
+      "posicao_fila": 76,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
@@ -1587,7 +1675,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 73,
+      "posicao_fila": 77,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e",
       "titulo": "Fapern lança edital para vaga remanescente com atuação em Mossoró",
       "fonte": "FAPERN",
