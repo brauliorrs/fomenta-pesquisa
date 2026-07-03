@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T03:34:12.336699-03:00",
-  "total_prontos": 84,
+  "generated_at": "2026-07-03T13:26:07.422735-03:00",
+  "total_prontos": 89,
   "itens": [
     {
       "posicao_fila": 1,
@@ -26,6 +26,28 @@
     },
     {
       "posicao_fila": 2,
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_3bd06e00",
+      "titulo": "EDITAL Nº 32/2026 – Edital de Fluxo Contínuo FAPESQ e Unidades EMBRAPII",
+      "fonte": "FAPESQ",
+      "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
+      "prazo": "2026-07-03",
+      "status": "atualizado",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 0,
+      "link": "https://fapesq.rpp.br/../../editais/2026/edital-no-32-2026-2013-edital-de-fluxo-continuo-fapesq-e-unidades-embrapii",
+      "caption": "Oportunidade no radar: EDITAL Nº 32/2026 – Edital de Fluxo Contínuo FAPESQ e Unidades EMBRAPII\nÚltimo dia de inscrição.\n\nEDITAL Nº 32/2026 – Edital de Fluxo Contínuo FAPESQ e Unidades EMBRAPII Inscrições até 06/11 (17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: 11/06/2026\nPrazo final: 03/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/../../editais/2026/edital-no-32-2026-2013-edital-de-fluxo-continuo-fapesq-e-unidades-embrapii\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FAPESQ",
+      "card_title": "EDITAL Nº 32/2026 – Edital de Fluxo Contínuo FAPESQ e Unidades EMBRAPII",
+      "card_deadline": "ÚLTIMO DIA",
+      "card_summary": "EDITAL Nº 32/2026 – Edital de Fluxo Contínuo FAPESQ e Unidades EMBRAPII Inscrições até 06/11 (17h).",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 3,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_4e525748",
       "titulo": "23/2026 -",
       "fonte": "FACEPE",
@@ -47,7 +69,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 3,
+      "posicao_fila": 4,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__cfb486c4",
       "titulo": "CHAMADA FAPEMIG 08/2026 - BOLSAS DE PÓS-GRADUAÇÃO, DOUTORADO SANDUÍCHE E ESTÁGIO PÓS-DOUTORAL NO EXTERIOR PELO PROGRAMA DE CAPACITAÇÃO DE RECURSOS HUMANOS - PCRH",
       "fonte": "FAPEMIG",
@@ -69,7 +91,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 4,
+      "posicao_fila": 5,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_9cdd4396",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 34/2026 PROGRAMA DE APOIO À CONSOLIDAÇÃO DE NÚCLEOS DE INOVAÇÃO TECNOLÓGICA 4ª EDIÇÃO",
       "fonte": "FAPESC",
@@ -91,20 +113,20 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 5,
-      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_88f07a9e",
+      "posicao_fila": 6,
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_ffcce572",
       "titulo": "EDITAL Nº 44 /2026 – VAGAS REMANECENTES - EMPAER/FAPESQ/PB SELEÇÃO DE PESQUISADORES PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL",
       "fonte": "FAPESQ",
       "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
       "prazo": "2026-07-06",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
       "instagram_feed_publicado": false,
       "urgencia_dias": 3,
-      "link": "https://fapesq.rpp.br/editais/2026/edital-no-44-2026-2013-vagas-remanecentes-empaer-fapesq-pb-selecao-de-pesquisadores-para-o-programa-de-apoio-ao-desenvolvimento-rural-sustentavel",
-      "caption": "Oportunidade no radar: EDITAL Nº 44 /2026 – VAGAS REMANECENTES - EMPAER/FAPESQ/PB SELEÇÃO DE PESQUISADORES PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL\nPrazo encerra em 3 dias.\n\nEDITAL Nº 44 /2026 – VAGAS REMANECENTES - EMPAER/FAPESQ/PB SELEÇÃO DE PESQUISADORES PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL Inscrições: 06/07/2026 a 03/08/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: 02/07/2026\nPrazo final: 06/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/editais/2026/edital-no-44-2026-2013-vagas-remanecentes-empaer-fapesq-pb-seleção-de-pesquisadores-para-o-programa-de-apoio-ao-desenvolvimento-rural-sustentavel\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Selecao #Chamadapublica #Pesquisadores",
+      "link": "https://fapesq.rpp.br/../../editais/2026/edital-no-44-2026-2013-vagas-remanecentes-empaer-fapesq-pb-selecao-de-pesquisadores-para-o-programa-de-apoio-ao-desenvolvimento-rural-sustentavel",
+      "caption": "Oportunidade no radar: EDITAL Nº 44 /2026 – VAGAS REMANECENTES - EMPAER/FAPESQ/PB SELEÇÃO DE PESQUISADORES PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL\nPrazo encerra em 3 dias.\n\nEDITAL Nº 44 /2026 – VAGAS REMANECENTES - EMPAER/FAPESQ/PB SELEÇÃO DE PESQUISADORES PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL Inscrições: 06/07/2026 a 03/08/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: 02/07/2026\nPrazo final: 06/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/../../editais/2026/edital-no-44-2026-2013-vagas-remanecentes-empaer-fapesq-pb-seleção-de-pesquisadores-para-o-programa-de-apoio-ao-desenvolvimento-rural-sustentavel\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Selecao #Chamadapublica #Pesquisadores",
       "card_header": "EDITAL FAPESQ",
       "card_title": "EDITAL Nº 44 /2026 – VAGAS REMANECENTES - EMPAER/FAPESQ/PB SELEÇÃO DE PESQUISADORES PARA",
       "card_deadline": "PRAZO: 06/07",
@@ -113,13 +135,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 6,
+      "posicao_fila": 7,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_4326689f",
       "titulo": "EDITAL Nº 45/2026 - VAGAS REMANECENTES SELEÇÃO DE PESQUISADOR EXTENSIONISTA PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL",
       "fonte": "FAPESQ",
       "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
       "prazo": "2026-07-06",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -135,7 +157,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 7,
+      "posicao_fila": 8,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_19b1a5e3",
       "titulo": "20/2026 -",
       "fonte": "FACEPE",
@@ -157,7 +179,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 8,
+      "posicao_fila": 9,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__474d25de",
       "titulo": "Chamada de Propostas – Programa de Pesquisa em Políticas Públicas (PPPP) 2025/2026",
       "fonte": "FAPESP",
@@ -179,7 +201,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 9,
+      "posicao_fila": 10,
       "id": "coordenacao_de_aperfeicoamento_de_pessoa_21491403",
       "titulo": "Abertas inscrições para parceria com a França em Engenharia",
       "fonte": "CAPES",
@@ -201,7 +223,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 10,
+      "posicao_fila": 11,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_c0a065c9",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/SEA N.º 19/2026 PROGRAMA DE APOIO AO DESENVOLVIMENTO DA GESTÃO DA SEA",
       "fonte": "FAPESC",
@@ -223,7 +245,29 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 11,
+      "posicao_fila": 12,
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_6eb0cea1",
+      "titulo": "EDITAL Nº 48/2026 — SELEÇÃO DE PESQUISADORES BOLSISTAS PARA O PROJETO: ESTUDOS DE VIABILIDADE TÉCNICA, ECONÔMICA E SOCIAL DE UMA PLATAFORMA DE CERTIFICAÇÃO DE CRÉDITOS DE CARBONO PARA O BIOMA CAATINGA",
+      "fonte": "FAPESQ",
+      "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
+      "prazo": "2026-07-08",
+      "status": "novo",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 5,
+      "link": "https://fapesq.rpp.br/../../editais/2026/edital-no-48-2026-2014-selecao-de-pesquisadores-bolsistas-para-o-projeto-estudos-de-viabilidade-tecnica-economica-e-social-de-uma-plataforma-de-certificacao-de-creditos-de-carbono-para-o-bioma-caatinga",
+      "caption": "Oportunidade no radar: EDITAL Nº 48/2026 — SELEÇÃO DE PESQUISADORES BOLSISTAS PARA O PROJETO: ESTUDOS DE VIABILIDADE TÉCNICA, ECONÔMICA E SOCIAL DE UMA PLATAFORMA DE CERTIFICAÇÃO DE CRÉDITOS DE CARBONO PARA O BIOMA CAATINGA\nPrazo encerra em 5 dias.\n\nEDITAL Nº 48/2026 — SELEÇÃO DE PESQUISADORES BOLSISTAS PARA O PROJETO: ESTUDOS DE VIABILIDADE TÉCNICA, ECONÔMICA E SOCIAL DE UMA PLATAFORMA DE CERTIFICAÇÃO DE CRÉDITOS DE CARBONO PARA O BIOMA CAATINGA Inscrições: 08/07/2026 a 20/07/2026.\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: 03/07/2026\nPrazo final: 08/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/../../editais/2026/edital-no-48-2026-2014-seleção-de-pesquisadores-bolsistas-para-o-projeto-estudos-de-viabilidade-tecnica-economica-e-social-de-uma-plataforma-de-certificacao-de-creditos-de-carbono-para-o-bioma-caatinga\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Selecao #Chamadapublica #Pesquisadores",
+      "card_header": "EDITAL FAPESQ",
+      "card_title": "EDITAL Nº 48/2026 — SELEÇÃO DE PESQUISADORES BOLSISTAS PARA O PROJETO: ESTUDOS DE",
+      "card_deadline": "PRAZO: 08/07",
+      "card_summary": "Voltado a pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba. Prazo final em 08/07/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 13,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_90791a62",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 35/2026 CREDENCIAMENTO DE INCUBADORAS DE EMPRESAS DO ESTADO DE SANTA CATARINA",
       "fonte": "FAPESC",
@@ -245,7 +289,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 12,
+      "posicao_fila": 14,
       "id": "conselho_nacional_das_fundacoes_estaduai_0fb5727d",
       "titulo": "CONFAP e Conselho Europeu de Pesquisa lançam chamada 2026 para apoiar a mobilidade de pesquisadores doutores do Brasil para a Europa",
       "fonte": "CONFAP",
@@ -267,7 +311,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 13,
+      "posicao_fila": 15,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__f3c6e8a2",
       "titulo": "DIRETRIZES ESPECÍFICAS DA FAPEAM - CHAMADA ERC-CONFAP 2026: OPORTUNIDADES DE PESQUISA NA EUROPA PARA PESQUISADORES DOUTORES ATIVOS NO BRASIL“CHAMADA ERC 2026”",
       "fonte": "FAPEAM",
@@ -289,7 +333,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 14,
+      "posicao_fila": 16,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_cafe9c35",
       "titulo": "18/2026 -",
       "fonte": "FACEPE",
@@ -311,7 +355,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 15,
+      "posicao_fila": 17,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__0415385e",
       "titulo": "Chamada Pública Complementar Fapeg/Confap/ERC nº 12/2026 - EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
       "fonte": "FAPEG",
@@ -333,7 +377,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 16,
+      "posicao_fila": 18,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__22945c15",
       "titulo": "CHAMADA FAPEMIG 006/2026 - Programa Santos Dumont",
       "fonte": "FAPEMIG",
@@ -355,7 +399,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 17,
+      "posicao_fila": 19,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__a12ac96d",
       "titulo": "Chamada Auxílio à Inovação Regular – Iniciação Tecnológica",
       "fonte": "FAPESP",
@@ -377,7 +421,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 18,
+      "posicao_fila": 20,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_9a17fc8f",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 15/2026 PRÊMIO INOVAÇÃO CATARINENSE PROFESSOR CASPAR ERICH STEMMER EDIÇÃO 2026",
       "fonte": "FAPESC",
@@ -399,7 +443,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 19,
+      "posicao_fila": 21,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ed0460aa",
       "titulo": "EDITAL N.º 003/2026 - PROGRAMA DE APOIO À REALIZAÇÃO DE EVENTOS CIENTÍFICOS E TECNOLÓGICOS NO ESTADO DO AMAZONAS – PAREV 2026 – CHAMADA II",
       "fonte": "FAPEAM",
@@ -421,7 +465,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 20,
+      "posicao_fila": 22,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_c4c4cf3a",
       "titulo": "EDITAL Nº 26/2026 - SECTIES/FAPESQ/PB SELEÇÃO DE EQUIPES PARA O PROGRAMA CELSO FURTADO DE INOVAÇÃO EDUCACIONAL E DESENVOLVIMENTO REGIONAL",
       "fonte": "FAPESQ",
@@ -443,7 +487,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 21,
+      "posicao_fila": 23,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_7d6a5f2b",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/SEPLAN N.º 29/2026 PROGRAMA DE PLANEJAMENTO TERRITORIAL RESILIENTE DE SANTA CATARINA",
       "fonte": "FAPESC",
@@ -465,7 +509,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 22,
+      "posicao_fila": 24,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__6244932f",
       "titulo": "Chamada conjunta FAPESP - NERC Global Partnerships Seedcorn Fund 2026",
       "fonte": "FAPESP",
@@ -487,7 +531,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 23,
+      "posicao_fila": 25,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__c2bca72d",
       "titulo": "EDITAL N.º 015/2026 - EDITAL FAPEAM DE PRÉ-SELEÇÃO DE REDES ESTRATÉGICAS DE PESQUISA E PÓS-GRADUAÇÃO DA AMAZÔNIA LEGAL - PROGRAMA DE DESENVOLVIMENTO DA PÓS-GRADUAÇÃO (PDPG) – PARCERIAS ESTRATÉGICAS NOS ESTADOS V",
       "fonte": "FAPEAM",
@@ -509,7 +553,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 24,
+      "posicao_fila": 26,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_bc690cba",
       "titulo": "EDITAL Nº 33/2026 - SELEÇÃO DE EQUIPES PARA O PROGRAMA CELSO FURTADO DE INOVAÇÃO EDUCACIONAL E DESENVOLVIMENTO REGIONAL NO SISTEMA PRISIONAL",
       "fonte": "FAPESQ",
@@ -531,7 +575,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 25,
+      "posicao_fila": 27,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_18a9857a",
       "titulo": "EDITAL Nº 36/2026 – SELEÇÃO DE EQUIPE DE APOIO À COORDENAÇÃO DO COMITÊ ESTADUAL DE BUSCA ATIVA ESCOLAR",
       "fonte": "FAPESQ",
@@ -553,7 +597,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 26,
+      "posicao_fila": 28,
       "id": "fundacao_carlos_chagas_filho_de_amparo_a_f340d5bf",
       "titulo": "Edital FAPERJ Nº 12/2026 – Programa Nacional de Apoio à Geração de Empreendimentos Inovadores (Programa Centelha 3 RJ)",
       "fonte": "FAPERJ",
@@ -575,7 +619,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 27,
+      "posicao_fila": 29,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_bf48f9db",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 36/2026 PROGRAMA DE ESTRUTURAÇÃO E PLANEJAMENTO DE UM BANCO DE MATERIAL BIOLÓGICO (BIOBANCO) NO ESTADO DE SANTA CATARINA",
       "fonte": "FAPESC",
@@ -597,7 +641,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 28,
+      "posicao_fila": 30,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_727e39be",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/SEPLAN N.º 33/2026 PROGRAMA SEPLAN DE PESQUISA, DESENVOLVIMENTO E INOVAÇÃO (PDI)",
       "fonte": "FAPESC",
@@ -619,7 +663,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 29,
+      "posicao_fila": 31,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__3890078f",
       "titulo": "Chamada de Propostas FAPESP e Fundo para o Desenvolvimento da Ciência e da Tecnologia de Macau (FDCT) 2026",
       "fonte": "FAPESP",
@@ -641,7 +685,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 30,
+      "posicao_fila": 32,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__02156b6a",
       "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica - Saúde – Fase 1",
       "fonte": "FAPESP",
@@ -663,7 +707,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 31,
+      "posicao_fila": 33,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_3ea68420",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 32/2026 PROGRAMA DE ESTÍMULO A TECNOLOGIAS DE INTERESSE PARA A SOBERANIA E DEFESA NACIONAIS – 2ª EDIÇÃO",
       "fonte": "FAPESC",
@@ -685,20 +729,20 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 32,
-      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_5ec465f8",
+      "posicao_fila": 34,
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_da347986",
       "titulo": "EDITAL Nº 50/2026 – PROCESSO SELETIVO DE ESTUDANTES INTERNACIONAIS PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA",
       "fonte": "FAPESQ",
       "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
       "prazo": "2026-07-24",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
       "instagram_feed_publicado": false,
       "urgencia_dias": 21,
-      "link": "https://fapesq.rpp.br/editais/2026/edital-no-50-2026-2013-processo-seletivo-de-estudantes-internacionais-para-o-programa-casa-do-estudante-bolsa-permanencia",
-      "caption": "Oportunidade no radar: EDITAL Nº 50/2026 – PROCESSO SELETIVO DE ESTUDANTES INTERNACIONAIS PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA\n\nEDITAL Nº 50/2026 – PROCESSO SELETIVO DE ESTUDANTES INTERNACIONAIS PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA Inscrições: 08 a 24/07/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Estudantes, bolsistas e pesquisadores vinculados a instituições da Paraiba\nTipo: Bolsa\nAbertura das inscrições: 02/07/2026\nPrazo final: 24/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/editais/2026/edital-no-50-2026-2013-processo-seletivo-de-estudantes-internacionais-para-o-programa-casa-do-estudante-bolsa-permanencia\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Pesquisadores",
+      "link": "https://fapesq.rpp.br/../../editais/2026/edital-no-50-2026-2013-processo-seletivo-de-estudantes-internacionais-para-o-programa-casa-do-estudante-bolsa-permanencia",
+      "caption": "Oportunidade no radar: EDITAL Nº 50/2026 – PROCESSO SELETIVO DE ESTUDANTES INTERNACIONAIS PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA\n\nEDITAL Nº 50/2026 – PROCESSO SELETIVO DE ESTUDANTES INTERNACIONAIS PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA Inscrições: 08 a 24/07/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Estudantes, bolsistas e pesquisadores vinculados a instituições da Paraiba\nTipo: Bolsa\nAbertura das inscrições: 02/07/2026\nPrazo final: 24/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/../../editais/2026/edital-no-50-2026-2013-processo-seletivo-de-estudantes-internacionais-para-o-programa-casa-do-estudante-bolsa-permanencia\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Pesquisadores",
       "card_header": "EDITAL FAPESQ",
       "card_title": "EDITAL Nº 50/2026 – PROCESSO SELETIVO DE ESTUDANTES INTERNACIONAIS PARA O PROGRAMA CASA",
       "card_deadline": "PRAZO: 24/07",
@@ -707,9 +751,31 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 33,
-      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_388f5f78",
+      "posicao_fila": 35,
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_6a93399f",
       "titulo": "EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL",
+      "fonte": "FAPESQ",
+      "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
+      "prazo": "2026-07-24",
+      "status": "atualizado",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 21,
+      "link": "https://fapesq.rpp.br/../../editais/2026/edital-no-51-2026-2013-processo-seletivo-de-professores-para-o-projeto-limite-do-visivel",
+      "caption": "Oportunidade no radar: EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL\n\nEDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL Inscrições: 08 a 24/07/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: 02/07/2026\nPrazo final: 24/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/../../editais/2026/edital-no-51-2026-2013-processo-seletivo-de-professores-para-o-projeto-limite-do-visivel\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FAPESQ",
+      "card_title": "EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL",
+      "card_deadline": "PRAZO: 24/07",
+      "card_summary": "EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL Inscrições: 08 a 24/07/2026 (Até 17h).",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 36,
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_9957fdad",
+      "titulo": "EDITAL Nº 52/2026 – SECTIES/FAPESQ/PB PROCESSO SELETIVO DE ESTUDANTES PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA",
       "fonte": "FAPESQ",
       "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
       "prazo": "2026-07-24",
@@ -719,17 +785,17 @@
       "quantidade_postagens": 0,
       "instagram_feed_publicado": false,
       "urgencia_dias": 21,
-      "link": "https://fapesq.rpp.br/editais/2026/edital-no-51-2026-2013-processo-seletivo-de-professores-para-o-projeto-limite-do-visivel",
-      "caption": "Oportunidade no radar: EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL\n\nEDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL Inscrições: 08 a 24/07/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: 02/07/2026\nPrazo final: 24/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/editais/2026/edital-no-51-2026-2013-processo-seletivo-de-professores-para-o-projeto-limite-do-visivel\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "link": "https://fapesq.rpp.br/editais/editais-2026/03_07_26-dital-52-2026-secties-fapesq-pb-processo-seletivo-de-estudantes-para-o-programa-casa-do-estudante-de-bolsa-permanencia.pdf",
+      "caption": "Oportunidade no radar: EDITAL Nº 52/2026 – SECTIES/FAPESQ/PB PROCESSO SELETIVO DE ESTUDANTES PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA\n\nEDITAL Nº 52/2026 – SECTIES/FAPESQ/PB PROCESSO SELETIVO DE ESTUDANTES PARA O PROGRAMA CASA DO ESTUDANTE - BOLSA PERMANÊNCIA Inscrições: 08 a 24/07/2026 (Até 17h).\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Estudantes, bolsistas e pesquisadores vinculados a instituições da Paraiba\nTipo: Bolsa\nAbertura das inscrições: 20/12/1999\nPrazo final: 24/07/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/editais/editais-2026/03_07_26-dital-52-2026-secties-fapesq-pb-processo-seletivo-de-estudantes-para-o-programa-casa-do-estudante-de-bolsa-permanencia.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Bolsapesquisa #Chamadapublica #Pesquisadores",
       "card_header": "EDITAL FAPESQ",
-      "card_title": "EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL",
+      "card_title": "EDITAL Nº 52/2026 – SECTIES/FAPESQ/PB PROCESSO SELETIVO DE ESTUDANTES PARA O PROGRAMA",
       "card_deadline": "PRAZO: 24/07",
-      "card_summary": "EDITAL Nº 51/2026 – PROCESSO SELETIVO DE PROFESSORES PARA O PROJETO LIMITE DO VISÍVEL Inscrições: 08 a 24/07/2026 (Até 17h).",
+      "card_summary": "Voltado a estudantes, bolsistas e pesquisadores vinculados a instituições da Paraiba. Prazo final em 24/07/2026. Confira os critérios no edital.",
       "card_handle": "@editais.pesquisa",
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 34,
+      "posicao_fila": 37,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__76b1ef5f",
       "titulo": "CHAMADA PÚBLICA N.º 002/2026 - PROGRAMA DE APOIO A PESQUISAS E AÇÕES ESTRATÉGICAS PARA A BIOECONOMIA INCLUSIVA NO AMAZONAS E NO PARANÁ - FUNDAÇÃO ARAUCÁRIA/FAPEAM",
       "fonte": "FAPEAM",
@@ -751,7 +817,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 35,
+      "posicao_fila": 38,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_b65cbe39",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 38/2026 PROGRAMA ECONOMIA AZUL: DESENVOLVIMENTO TECNOLÓGICO E RESILIÊNCIA DA AQUICULTURA EM SANTA CATARINA",
       "fonte": "FAPESC",
@@ -773,7 +839,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 36,
+      "posicao_fila": 39,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__50c8b218",
       "titulo": "CHAMADA FAPEMIG 007/2026 - Organização de Eventos de Caráter Técnico-Científico - OET 1ª Entrada",
       "fonte": "FAPEMIG",
@@ -795,7 +861,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 37,
+      "posicao_fila": 40,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__70b5579d",
       "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica 1ª Rodada 2026 – Fase 1",
       "fonte": "FAPESP",
@@ -817,7 +883,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 38,
+      "posicao_fila": 41,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__93842355",
       "titulo": "CHAMADA FAPEMIG/SEDE - 011/2026 - COMPETE MINAS",
       "fonte": "FAPEMIG",
@@ -839,7 +905,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 39,
+      "posicao_fila": 42,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__da5076f6",
       "titulo": "CHAMADA FAPEMIG 12/2026 - TREINAMENTOS INDIVIDUAIS E COLETIVOS PELO PROGRAMA DE CAPACITAÇÃO DE RECURSOS HUMANOS - PCRH",
       "fonte": "FAPEMIG",
@@ -861,7 +927,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 40,
+      "posicao_fila": 43,
       "id": "conselho_nacional_das_fundacoes_estaduai_19cdb479",
       "titulo": "Faperr abre inscrições para editais de apoio a eventos científicos e pesquisas em Roraima",
       "fonte": "CONFAP",
@@ -883,13 +949,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 41,
+      "posicao_fila": 44,
       "id": "conselho_nacional_das_fundacoes_estaduai_8569cb0a",
       "titulo": "Fapesc e Udesc lançam edital para fomentar com R$ 10 milhões a pesquisa na área de mobilidade elétrica em Santa Catarina",
       "fonte": "CONFAP",
       "orgao": "Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa",
       "prazo": "2026-08-06",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -905,7 +971,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 42,
+      "posicao_fila": 45,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a",
       "titulo": "13/2026 -",
       "fonte": "FACEPE",
@@ -927,7 +993,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 43,
+      "posicao_fila": 46,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__352aa8ae",
       "titulo": "Chamada de Propostas do Programa FAPESP para o Atlântico Sul e Antártica",
       "fonte": "FAPESP",
@@ -949,7 +1015,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 44,
+      "posicao_fila": 47,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__38815a0b",
       "titulo": "CHAMADA FAPEMIG/SEDE 007/2026- EVENTECH - ORGANIZAÇÃO DE EVENTOS DE INOVAÇÃO E EMPREENDEDORISMO TECNOLÓGICO",
       "fonte": "FAPEMIG",
@@ -971,8 +1037,8 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 45,
-      "id": "fundacao_de_amparo_a_pesquisa_do_estado__6476a7d8",
+      "posicao_fila": 48,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__8791875f",
       "titulo": "CHAMADA FAPEMIG/SEDE 009/2026- EVENTECH - ORGANIZAÇÃO DE EVENTOS DE INOVAÇÃO E EMPREENDEDORISMO TECNOLÓGICO",
       "fonte": "FAPEMIG",
       "orgao": "Fundação de Amparo à Pesquisa do Estado de Minas Gerais",
@@ -983,8 +1049,8 @@
       "quantidade_postagens": 0,
       "instagram_feed_publicado": false,
       "urgencia_dias": 41,
-      "link": "https://api.site.fapemig.br/wp-content/uploads/chamada-Eventech-009-2026.pdf",
-      "caption": "Oportunidade no radar: CHAMADA FAPEMIG/SEDE 009/2026- EVENTECH - ORGANIZAÇÃO DE EVENTOS DE INOVAÇÃO E EMPREENDEDORISMO TECNOLÓGICO\n\nApoiar a realização de eventos voltados à promoção do empreendedorismo tecnológico e da inovação em Minas Gerais, estimulando a disseminação de tecnologias e conhecimentos junto ao setor produtivo e contribuindo para o fortalecimento da cultura empreendedora e inovadora no ecossistema mineiro.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Minas Gerais\nPúblico-alvo: Pessoas físicas vinculadas às Instituições de Ciência, Tecnologia, Instituições de Ensino Superior, ambientes promotores da inovação, cooperativas e empresas localizadas no estado de Minas Gerais\nTipo: Divulgacao\nAbertura das inscrições: 29/06/2026\nPrazo final: 13/08/2026\n\nLink oficial do edital:\nhttps://api.site.fapemig.br/wp-content/uploads/chamada-Eventech-009-2026.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapemig #Chamadapublica #Inovacao #Empreendedorismo #Eventoscientificos",
+      "link": "https://api.site.fapemig.br/wp-content/uploads/Ato-Retificacao-Chamada-Eventech.pdf",
+      "caption": "Oportunidade no radar: CHAMADA FAPEMIG/SEDE 009/2026- EVENTECH - ORGANIZAÇÃO DE EVENTOS DE INOVAÇÃO E EMPREENDEDORISMO TECNOLÓGICO\n\nApoiar a realização de eventos voltados à promoção do empreendedorismo tecnológico e da inovação em Minas Gerais, estimulando a disseminação de tecnologias e conhecimentos junto ao setor produtivo e contribuindo para o fortalecimento da cultura empreendedora e inovadora no ecossistema mineiro.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Minas Gerais\nPúblico-alvo: Pessoas físicas vinculadas às Instituições de Ciência, Tecnologia, Instituições de Ensino Superior, ambientes promotores da inovação, cooperativas e empresas localizadas no estado de Minas Gerais\nTipo: Divulgacao\nAbertura das inscrições: 29/06/2026\nPrazo final: 13/08/2026\n\nLink oficial do edital:\nhttps://api.site.fapemig.br/wp-content/uploads/Ato-Retificacao-Chamada-Eventech.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapemig #Chamadapublica #Inovacao #Empreendedorismo #Eventoscientificos",
       "card_header": "EDITAL FAPEMIG",
       "card_title": "CHAMADA FAPEMIG/SEDE 009/2026- EVENTECH - ORGANIZAÇÃO DE EVENTOS DE INOVAÇÃO E",
       "card_deadline": "PRAZO: 13/08",
@@ -993,7 +1059,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 46,
+      "posicao_fila": 49,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_1eb2d017",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 30/2026 PROGRAMA DE APOIO AOS GRUPOS DE PESQUISA DO UniSENAI/SC",
       "fonte": "FAPESC",
@@ -1015,7 +1081,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 47,
+      "posicao_fila": 50,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__a21b8706",
       "titulo": "Chamada de Propostas FAPESP e Conselho Superior de Pesquisas Científicas (CSIC)",
       "fonte": "FAPESP",
@@ -1037,7 +1103,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 48,
+      "posicao_fila": 51,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__b10e5be6",
       "titulo": "Chamada do Programa Aristides Pacheco Leão de Estímulo a Vocações Científicas",
       "fonte": "FAPESP",
@@ -1059,7 +1125,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 49,
+      "posicao_fila": 52,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__6a4f64ba",
       "titulo": "Chamada FAPEMIG 004/2026 - Participação Coletiva em Eventos Técnicos no País - 2ª Entrada",
       "fonte": "FAPEMIG",
@@ -1081,13 +1147,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 50,
+      "posicao_fila": 53,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_838b4252",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 40/2026 EVENTOS DE INOVAÇÃO, EMPREENDEDORISMO E TECNOLOGIA NO ESTADO DE SANTA CATARINA — REDE CATARINENSE DE CENTROS DE INOVAÇÃO",
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-08-24",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -1103,7 +1169,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 51,
+      "posicao_fila": 54,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__dae92af6",
       "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica Soberania Digital – Fase 1",
       "fonte": "FAPESP",
@@ -1125,7 +1191,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 52,
+      "posicao_fila": 55,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ca01eb1f",
       "titulo": "Programa Nacional de Apoio à Geração de Empreendimentos Inovadores Programa Centelha 3 São Paulo",
       "fonte": "FAPESP",
@@ -1147,7 +1213,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 53,
+      "posicao_fila": 56,
       "id": "financiadora_de_estudos_e_projetos_finep_315d632a",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
       "fonte": "FINEP",
@@ -1169,7 +1235,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 54,
+      "posicao_fila": 57,
       "id": "financiadora_de_estudos_e_projetos_finep_064113e0",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
       "fonte": "FINEP",
@@ -1191,7 +1257,29 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 55,
+      "posicao_fila": 58,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__3878c0d9",
+      "titulo": "Chamada Pública FAPESP-FACEPE 2026 – Tecnologias Quânticas e Transição Energética",
+      "fonte": "FAPESP",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
+      "prazo": "2026-08-31",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 59,
+      "link": "https://fapesp.br/18262",
+      "caption": "Oportunidade no radar: Chamada Pública FAPESP-FACEPE 2026 – Tecnologias Quânticas e Transição Energética\n\nÁreas: Tecnologias Quânticas e Transição Energética.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas\nTipo: Pesquisa\nAbertura das inscrições: 03/07/2026\nPrazo final: 31/08/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18262\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FAPESP",
+      "card_title": "FAPESP-FACEPE 2026 – Tecnologias Quânticas e Transição Energética",
+      "card_deadline": "PRAZO: 31/08",
+      "card_summary": "Áreas: Tecnologias Quânticas e Transição Energética.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 59,
       "id": "financiadora_de_estudos_e_projetos_finep_32a33550",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
       "fonte": "FINEP",
@@ -1213,7 +1301,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 56,
+      "posicao_fila": 60,
       "id": "financiadora_de_estudos_e_projetos_finep_f6a3506d",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
       "fonte": "FINEP",
@@ -1235,7 +1323,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 57,
+      "posicao_fila": 61,
       "id": "financiadora_de_estudos_e_projetos_finep_1d63ef7c",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
       "fonte": "FINEP",
@@ -1257,7 +1345,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 58,
+      "posicao_fila": 62,
       "id": "conselho_nacional_de_desenvolvimento_cie_00bf0afc",
       "titulo": "PROGRAMA DE COOPERAÇÃO AFRO-BRASILEIRA EM CIÊNCIA E TECNOLOGIA - PROAFRICA",
       "fonte": "CNPQ",
@@ -1279,7 +1367,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 59,
+      "posicao_fila": 63,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__feaa58d3",
       "titulo": "Chamada de Propostas – Programa Desafios da Amazônia",
       "fonte": "FAPESP",
@@ -1301,7 +1389,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 60,
+      "posicao_fila": 64,
       "id": "conselho_nacional_das_fundacoes_estaduai_5ff5b6f8",
       "titulo": "DAAD lança chamada de 2026 do programa de auxílio para doutorandos brasileiros com bolsa nacional",
       "fonte": "CONFAP",
@@ -1323,7 +1411,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 61,
+      "posicao_fila": 65,
       "id": "coordenacao_de_aperfeicoamento_de_pessoa_f15cf213",
       "titulo": "Programa de auxílio para doutorandos na Alemanha abre inscrições",
       "fonte": "CAPES",
@@ -1345,7 +1433,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 62,
+      "posicao_fila": 66,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_e7d9da05",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 37/2026 PROGRAMA DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO PARA APOIO AOS GRUPOS DE PESQUISA DA UDESC",
       "fonte": "FAPESC",
@@ -1367,7 +1455,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 63,
+      "posicao_fila": 67,
       "id": "conselho_nacional_das_fundacoes_estaduai_c1fe5c3d",
       "titulo": "Lançada a 1ª chamada da Parceria de Matérias-Primas para a Transição Verde e Digital (RAMP)",
       "fonte": "CONFAP",
@@ -1389,7 +1477,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 64,
+      "posicao_fila": 68,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_94bd526f",
       "titulo": "22/2026 -",
       "fonte": "FACEPE",
@@ -1411,13 +1499,35 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 65,
+      "posicao_fila": 69,
+      "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_29324757",
+      "titulo": "• Lançamento Edital Global.PE: Espanha (nº 22/2026) atualizado em 03.07.2026",
+      "fonte": "FACEPE",
+      "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
+      "prazo": "2026-09-24",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 83,
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/2026.07.02-Global-PE-Espanha-1.pdf",
+      "caption": "Oportunidade no radar: • Lançamento Edital Global.PE: Espanha (nº 22/2026) atualizado em 03.07.2026\n\nA oportunidade está aberta para pesquisadores, grupos de pesquisa e instituições de Pernambuco na categoria pesquisa, com abertura registrada em 02/07/2026 e prazo final em 24/09/2026.\n\nInstituição: Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições de Pernambuco\nTipo: Pesquisa\nAbertura das inscrições: 02/07/2026\nPrazo final: 24/09/2026\n\nLink oficial do edital:\nhttps://www.facepe.br/wp-content/uploads/2026/07/2026.07.02-Global-PE-Espanha-1.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Facepe #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
+      "card_header": "EDITAL FACEPE",
+      "card_title": "• Lançamento Global.PE: Espanha (nº 22/2026) atualizado em 03.07.2026",
+      "card_deadline": "PRAZO: 24/09",
+      "card_summary": "Voltado a pesquisadores, grupos de pesquisa e instituições de Pernambuco. Prazo final em 24/09/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 70,
       "id": "fundacao_carlos_chagas_filho_de_amparo_a_f0bddd04",
       "titulo": "Edital FAPERJ Nº15/2026 – Programa Prioridade Indústria RJ 4.0",
       "fonte": "FAPERJ",
       "orgao": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
       "prazo": "2026-09-25",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -1433,7 +1543,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 66,
+      "posicao_fila": 71,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_221541db",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 39/2026 NÚCLEO CATARINENSE DE MOBILIDADE ELÉTRICA (NCME)",
       "fonte": "FAPESC",
@@ -1455,7 +1565,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 67,
+      "posicao_fila": 72,
       "id": "financiadora_de_estudos_e_projetos_finep_74b0dc4f",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
       "fonte": "FINEP",
@@ -1477,7 +1587,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 68,
+      "posicao_fila": 73,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89a27b18",
       "titulo": "Edital do Programa FICA-SP (Fixação e Incentivo à Carreira Acadêmica em São Paulo)",
       "fonte": "FAPESP",
@@ -1499,7 +1609,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 69,
+      "posicao_fila": 74,
       "id": "financiadora_de_estudos_e_projetos_finep_35401209",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
       "fonte": "FINEP",
@@ -1521,7 +1631,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 70,
+      "posicao_fila": 75,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__b1d1890a",
       "titulo": "Programa Centelha 3 - Programa Nacional de Apoio à Geração de Empreendimentos Inovadores",
       "fonte": "FAPEMIG",
@@ -1543,7 +1653,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 71,
+      "posicao_fila": 76,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89071ad5",
       "titulo": "Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular",
       "fonte": "FAPESP",
@@ -1565,7 +1675,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 72,
+      "posicao_fila": 77,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ae2113c8",
       "titulo": "EDITAL Nº 003/2026 – PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL ( PROFIX-CB)",
       "fonte": "FAPEPI",
@@ -1587,7 +1697,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 73,
+      "posicao_fila": 78,
       "id": "conselho_nacional_das_fundacoes_estaduai_0e43c66f",
       "titulo": "Facepe lança edital Mães Cientistas de Pernambuco (nº 16/2026)",
       "fonte": "CONFAP",
@@ -1609,7 +1719,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 74,
+      "posicao_fila": 79,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f",
       "titulo": "16/2026 -",
       "fonte": "FACEPE",
@@ -1631,7 +1741,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 75,
+      "posicao_fila": 80,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__84be84f4",
       "titulo": "EDITAL Nº 006/2026 – PROGRAMA DE BOLSAS DE INICIAÇÃO CIENTÍFICA DA FAPEPI – PBIC",
       "fonte": "FAPEPI",
@@ -1653,7 +1763,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 76,
+      "posicao_fila": 81,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25",
       "titulo": "FAPESP / M-ERA.NET 2026",
       "fonte": "FAPESP",
@@ -1675,7 +1785,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 77,
+      "posicao_fila": 82,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef",
       "titulo": "EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO PIAUÍ (PDCTR-PI)",
       "fonte": "FAPEPI",
@@ -1697,7 +1807,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 78,
+      "posicao_fila": 83,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -1719,7 +1829,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 79,
+      "posicao_fila": 84,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -1732,16 +1842,16 @@
       "instagram_feed_publicado": true,
       "urgencia_dias": 181,
       "link": "https://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf",
-      "caption": "Oportunidade no radar: EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025\n\nEDITAL CHAMADA PUBLICA DO PPSUS – PROGRAMA PESQUISA PARA O SUS ERRATA CHAMADA PÚBLICA PPSUS Nº 02/2025 – PROGRAMA PESQUISA PARA O SUS – DOE 13.998 , 8 de abril de 2025 ERRATA PPSUS Nº 02/2025 – EDITAL CHAMADA PÚBLICA PPSUS – – PROGRAMA PESQUISA PARA O SUS – Republicado por Incorreção – DOE 13.999, 09 de abril de 2025.\n\nInstituição: Fundação de Amparo à Pesquisa do Acre\nPúblico-alvo: Pesquisadores, bolsistas, mentores e empreendedores do Acre\nTipo: Inovacao\nAbertura das inscrições: 17/02/2012\nPrazo final: 31/12/2026\n\nLink oficial do edital:\nhttps://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapac #Projetosdepesquisa #Bolsapesquisa #Selecao #Chamadapublica",
+      "caption": "Oportunidade no radar: EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025\n\nCHAMAMENTO PÚBLICO PARA A SELEÇÃO DE ORGANIZAÇÕES DA SOCIEDADE CIVIL.\n\nInstituição: Fundação de Amparo à Pesquisa do Acre\nPúblico-alvo: Pesquisadores, bolsistas, mentores e empreendedores do Acre\nTipo: Inovacao\nAbertura das inscrições: 17/02/2012\nPrazo final: 31/12/2026\n\nLink oficial do edital:\nhttps://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapac #Projetosdepesquisa #Bolsapesquisa #Selecao #Chamadapublica",
       "card_header": "EDITAL FAPAC",
       "card_title": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "card_deadline": "PRAZO: 31/12",
-      "card_summary": "Voltado a pesquisadores, bolsistas, mentores e empreendedores do Acre. Prazo final em 31/12/2026. Confira os critérios no edital.",
+      "card_summary": "CHAMAMENTO PÚBLICO PARA A SELEÇÃO DE ORGANIZAÇÕES DA SOCIEDADE CIVIL.",
       "card_handle": "@editais.pesquisa",
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 80,
+      "posicao_fila": 85,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -1763,7 +1873,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 81,
+      "posicao_fila": 86,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1785,7 +1895,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 82,
+      "posicao_fila": 87,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -1807,7 +1917,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 83,
+      "posicao_fila": 88,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
@@ -1829,7 +1939,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 84,
+      "posicao_fila": 89,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e",
       "titulo": "Fapern lança edital para vaga remanescente com atuação em Mossoró",
       "fonte": "FAPERN",
