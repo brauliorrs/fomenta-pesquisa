@@ -1,24 +1,23 @@
 [MOCK INSTAGRAM DRAFT]
-id: fundacao_de_amparo_a_pesquisa_do_estado__a12ac96d
+id: fundacao_de_amparo_a_pesquisa_do_estado__0d3a0a20
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-07-13
-card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__a12ac96d.jpg
-card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__a12ac96d_story.jpg
+prazo: 2026-07-20
+card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__0d3a0a20.jpg
+card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__0d3a0a20_story.jpg
 
-Oportunidade no radar: Chamada Auxílio à Inovação Regular – Iniciação Tecnológica
-Prazo encerra em 6 dias.
+Oportunidade no radar: Chamada de Propostas – Programa de Pesquisa em Políticas Públicas (PPP) 2025/2026
 
-Área: Inovação.
+Área: Políticas Públicas.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Empresas inovadoras, startups e pesquisadores
 Tipo: Inovacao
-Abertura das inscrições: 17/06/2026
-Prazo final: 13/07/2026
+Abertura das inscrições: 06/07/2026
+Prazo final: 20/07/2026
 
 Link oficial do edital:
-https://fapesp.br/18231
+https://fapesp.br/17812
 
 Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
 No post, o link do edital e os detalhes ficam logo abaixo na legenda.
