@@ -7,6 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__3890078f.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__3890078f_story.jpg
 
 Oportunidade no radar: Chamada de Propostas FAPESP e Fundo para o Desenvolvimento da Ciência e da Tecnologia de Macau (FDCT) 2026
+Prazo encerra em 7 dias.
 
 Áreas: Biotecnologia; Biodiversidade; Produção Alimentar Sustentável e Segurança Alimentar; Transição Energética; Transição Digital; Inteligência Artificial; Tecnologia Quântica; Tecnologia dos Oceanos; Tecnologia Espacial; Saúde Humana e Animal; e Segurança Pública.
 
