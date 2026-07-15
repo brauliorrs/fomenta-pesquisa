@@ -1,0 +1,51 @@
+name: Refresh Instagram Token
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 9 * * 1"
+
+jobs:
+  refresh-token:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh Instagram token
+        id: instagram_token
+        env:
+          INSTAGRAM_PUBLISH_MODE: ${{ vars.INSTAGRAM_PUBLISH_MODE || 'real' }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_API_HOST: ${{ vars.INSTAGRAM_API_HOST || 'https://graph.instagram.com' }}
+          META_APP_ID: ${{ vars.META_APP_ID || '' }}
+          META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+          INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS: ${{ vars.INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS || '14' }}
+        run: python -m src.instagram_token_maintenance refresh
+
+      - name: Persist refreshed token
+        if: steps.instagram_token.outputs.token_refreshed == 'true' && secrets.GITHUB_SECRETS_ADMIN_TOKEN != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_SECRETS_ADMIN_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NEW_TOKEN: ${{ steps.instagram_token.outputs.access_token }}
+        run: gh secret set INSTAGRAM_ACCESS_TOKEN --repo "$GH_REPO" --body "$NEW_TOKEN"
+
+      - name: Fail when refreshed token could not be persisted
+        if: steps.instagram_token.outputs.token_refreshed == 'true' && secrets.GITHUB_SECRETS_ADMIN_TOKEN == ''
+        run: |
+          echo "## Persistência do token" >> "$GITHUB_STEP_SUMMARY"
+          echo "- O token foi renovado, mas não pôde ser salvo no secret \`INSTAGRAM_ACCESS_TOKEN\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Adicione o secret \`GITHUB_SECRETS_ADMIN_TOKEN\` para habilitar a rotação automática completa." >> "$GITHUB_STEP_SUMMARY"
+          exit 1

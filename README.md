@@ -293,6 +293,7 @@ INSTAGRAM_PUBLISH_TARGET=both
 INSTAGRAM_REPOST_TARGET=story
 INSTAGRAM_PUBLISH_STORIES=false
 INSTAGRAM_MAX_NEW_PUBLICATIONS_PER_DAY=10
+INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS=14
 META_APP_ID=
 META_APP_SECRET=
 TIMEZONE=America/Sao_Paulo
@@ -307,6 +308,28 @@ Em produção no GitHub Actions, configure:
 ```text
 Settings > Secrets and variables > Actions
 ```
+
+**Secrets**
+
+- `INSTAGRAM_ACCESS_TOKEN`
+- `INSTAGRAM_BUSINESS_ACCOUNT_ID`
+- `META_APP_SECRET`
+- `GITHUB_SECRETS_ADMIN_TOKEN` (opcional, mas recomendado para rotação automática do token)
+
+**Variables**
+
+- `INSTAGRAM_PUBLISH_MODE`
+- `INSTAGRAM_API_HOST`
+- `INSTAGRAM_API_VERSION`
+- `INSTAGRAM_BOOTSTRAP_PUBLISH_ALL`
+- `PUBLIC_ASSET_BASE_URL`
+- `INSTAGRAM_PUBLISH_TARGET`
+- `INSTAGRAM_REPOST_TARGET`
+- `INSTAGRAM_PUBLISH_STORIES`
+- `INSTAGRAM_MAX_NEW_PUBLICATIONS_PER_DAY`
+- `INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS`
+- `META_APP_ID`
+- `TIMEZONE`
 
 Use **Secrets** para dados sensíveis e **Variables** para parâmetros públicos ou operacionais.
 
@@ -334,6 +357,14 @@ Nesse modo, o projeto pode enviar publicações usando a API oficial configurada
 
 A publicação real depende de token válido, conta profissional compatível, URL pública para a mídia, permissões adequadas na API e configuração correta dos secrets.
 
+### Observações do token
+
+- O fluxo padrão do projeto para publicação real usa `https://graph.instagram.com`.
+- O token de `INSTAGRAM_ACCESS_TOKEN` no fluxo `Instagram Login` dura cerca de 60 dias e precisa ser renovado antes de expirar.
+- O workflow `Refresh Instagram Token` roda semanalmente, renova o token e pode salvar a nova versão de volta no secret do GitHub se `GITHUB_SECRETS_ADMIN_TOKEN` estiver configurado.
+- `INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS` define quantos dias antes do vencimento o workflow principal pode tentar renovar o token em tempo de execução. O padrão atual é `14`.
+- Se o token da Meta já estiver expirado, a automação de refresh não consegue recuperá-lo; nesse caso, gere um novo token manualmente e atualize `INSTAGRAM_ACCESS_TOKEN` uma vez.
+
 ---
 
 ## Ciclo de automação
@@ -343,6 +374,15 @@ O projeto pode operar com dois tipos principais de workflow:
 ### Workflow operacional
 
 Executa coleta, atualização da fila editorial, geração de cards e publicação em modo mock ou real. Pode ser acionado manualmente ou por agendamento.
+
+### Workflow de rotação do token
+
+Executado semanalmente para:
+
+- inspecionar o estado do `INSTAGRAM_ACCESS_TOKEN`;
+- renovar o token usando o endpoint oficial do `Instagram Login`;
+- persistir o token renovado no GitHub quando `GITHUB_SECRETS_ADMIN_TOKEN` estiver configurado;
+- antecipar falhas de expiração antes que o workflow operacional caia.
 
 ### Workflow de descoberta de fontes
 

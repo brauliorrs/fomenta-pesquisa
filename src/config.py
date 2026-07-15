@@ -52,6 +52,7 @@ class Settings:
     instagram_publish_stories: bool = env_flag("INSTAGRAM_PUBLISH_STORIES", default=False)
     instagram_bootstrap_publish_all: bool = env_flag("INSTAGRAM_BOOTSTRAP_PUBLISH_ALL", default=False)
     instagram_max_new_publications_per_day: int = env_int("INSTAGRAM_MAX_NEW_PUBLICATIONS_PER_DAY", 10)
+    instagram_token_refresh_threshold_days: int = env_int("INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS", 14)
     meta_app_id: str = env_or_default("META_APP_ID", "")
     meta_app_secret: str = env_or_default("META_APP_SECRET", "")
     github_repository: str = env_or_default("GITHUB_REPOSITORY", "")
