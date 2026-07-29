@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      HAS_GITHUB_SECRETS_ADMIN_TOKEN: ${{ secrets.GITHUB_SECRETS_ADMIN_TOKEN }}
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         run: python -m src.instagram_token_maintenance refresh
 
       - name: Persist refreshed token
-        if: steps.instagram_token.outputs.token_refreshed == 'true' && secrets.GITHUB_SECRETS_ADMIN_TOKEN != ''
+        if: steps.instagram_token.outputs.token_refreshed == 'true' && env.HAS_GITHUB_SECRETS_ADMIN_TOKEN != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_SECRETS_ADMIN_TOKEN }}
           GH_REPO: ${{ github.repository }}
@@ -43,7 +45,7 @@ jobs:
         run: gh secret set INSTAGRAM_ACCESS_TOKEN --repo "$GH_REPO" --body "$NEW_TOKEN"
 
       - name: Fail when refreshed token could not be persisted
-        if: steps.instagram_token.outputs.token_refreshed == 'true' && secrets.GITHUB_SECRETS_ADMIN_TOKEN == ''
+        if: steps.instagram_token.outputs.token_refreshed == 'true' && env.HAS_GITHUB_SECRETS_ADMIN_TOKEN == ''
         run: |
           echo "## Persistência do token" >> "$GITHUB_STEP_SUMMARY"
           echo "- O token foi renovado, mas não pôde ser salvo no secret \`INSTAGRAM_ACCESS_TOKEN\`." >> "$GITHUB_STEP_SUMMARY"
