@@ -21,7 +21,7 @@ jobs:
     permissions:
       contents: write
     env:
-      HAS_GITHUB_SECRETS_ADMIN_TOKEN: ${{ secrets.GITHUB_SECRETS_ADMIN_TOKEN }}
+      HAS_REPOSITORY_SECRETS_PAT: ${{ secrets.REPOSITORY_SECRETS_PAT }}
 
     steps:
       - name: Checkout
@@ -49,19 +49,19 @@ jobs:
         run: python -m src.instagram_token_maintenance ensure
 
       - name: Persist refreshed Instagram token
-        if: steps.instagram_token.outputs.token_refreshed == 'true' && env.HAS_GITHUB_SECRETS_ADMIN_TOKEN != ''
+        if: steps.instagram_token.outputs.token_refreshed == 'true' && env.HAS_REPOSITORY_SECRETS_PAT != ''
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_SECRETS_ADMIN_TOKEN }}
+          GH_TOKEN: ${{ secrets.REPOSITORY_SECRETS_PAT }}
           GH_REPO: ${{ github.repository }}
           NEW_TOKEN: ${{ steps.instagram_token.outputs.access_token }}
         run: gh secret set INSTAGRAM_ACCESS_TOKEN --repo "$GH_REPO" --body "$NEW_TOKEN"
 
       - name: Warn when refreshed token could not be persisted
-        if: steps.instagram_token.outputs.token_refreshed == 'true' && env.HAS_GITHUB_SECRETS_ADMIN_TOKEN == ''
+        if: steps.instagram_token.outputs.token_refreshed == 'true' && env.HAS_REPOSITORY_SECRETS_PAT == ''
         run: |
           echo "## Persistência do token" >> "$GITHUB_STEP_SUMMARY"
           echo "- O token foi renovado nesta execução, mas não foi salvo de volta no secret \`INSTAGRAM_ACCESS_TOKEN\`." >> "$GITHUB_STEP_SUMMARY"
-          echo "- Para automatizar a rotação, adicione o secret \`GITHUB_SECRETS_ADMIN_TOKEN\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Para automatizar a rotação, adicione o secret \`REPOSITORY_SECRETS_PAT\`." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Run bot
         env:

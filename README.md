@@ -314,7 +314,7 @@ Settings > Secrets and variables > Actions
 - `INSTAGRAM_ACCESS_TOKEN`
 - `INSTAGRAM_BUSINESS_ACCOUNT_ID`
 - `META_APP_SECRET`
-- `GITHUB_SECRETS_ADMIN_TOKEN` (opcional, mas recomendado para rotação automática do token)
+- `REPOSITORY_SECRETS_PAT` (opcional, mas recomendado para rotação automática do token)
 
 **Variables**
 
@@ -361,7 +361,7 @@ A publicação real depende de token válido, conta profissional compatível, UR
 
 - O fluxo padrão do projeto para publicação real usa `https://graph.instagram.com`.
 - O token de `INSTAGRAM_ACCESS_TOKEN` no fluxo `Instagram Login` dura cerca de 60 dias e precisa ser renovado antes de expirar.
-- O workflow `Refresh Instagram Token` roda semanalmente, renova o token e pode salvar a nova versão de volta no secret do GitHub se `GITHUB_SECRETS_ADMIN_TOKEN` estiver configurado.
+- O workflow `Refresh Instagram Token` roda semanalmente, renova o token e pode salvar a nova versão de volta no secret do GitHub se `REPOSITORY_SECRETS_PAT` estiver configurado.
 - `INSTAGRAM_TOKEN_REFRESH_THRESHOLD_DAYS` define quantos dias antes do vencimento o workflow principal pode tentar renovar o token em tempo de execução. O padrão atual é `14`.
 - Se o token da Meta já estiver expirado, a automação de refresh não consegue recuperá-lo; nesse caso, gere um novo token manualmente e atualize `INSTAGRAM_ACCESS_TOKEN` uma vez.
 
@@ -381,7 +381,7 @@ Executado semanalmente para:
 
 - inspecionar o estado do `INSTAGRAM_ACCESS_TOKEN`;
 - renovar o token usando o endpoint oficial do `Instagram Login`;
-- persistir o token renovado no GitHub quando `GITHUB_SECRETS_ADMIN_TOKEN` estiver configurado;
+- persistir o token renovado no GitHub quando `REPOSITORY_SECRETS_PAT` estiver configurado;
 - antecipar falhas de expiração antes que o workflow operacional caia.
 
 ### Workflow de descoberta de fontes
