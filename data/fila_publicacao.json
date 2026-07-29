@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:05:32.625757-03:00",
+  "generated_at": "2026-07-29T19:18:59.691204-03:00",
   "total_prontos": 65,
   "itens": [
     {
@@ -163,7 +163,7 @@
       "fonte": "IPEA",
       "orgao": "Instituto de Pesquisa Economica Aplicada",
       "prazo": "2026-08-03",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -449,7 +449,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-08-24",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -537,7 +537,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-08-28",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
@@ -581,7 +581,7 @@
       "fonte": "FAPESC",
       "orgao": "Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina",
       "prazo": "2026-08-31",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
