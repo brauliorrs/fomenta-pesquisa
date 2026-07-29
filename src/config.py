@@ -47,6 +47,7 @@ class Settings:
     instagram_api_host: str = env_or_default("INSTAGRAM_API_HOST", "https://graph.instagram.com")
     instagram_api_version: str = env_or_default("INSTAGRAM_API_VERSION", "v24.0")
     public_asset_base_url: str = env_or_default("PUBLIC_ASSET_BASE_URL", "")
+    public_asset_wait_timeout_seconds: int = env_int("PUBLIC_ASSET_WAIT_TIMEOUT_SECONDS", 900)
     instagram_publish_target: str = env_or_default("INSTAGRAM_PUBLISH_TARGET", "both").lower()
     instagram_repost_target: str = env_or_default("INSTAGRAM_REPOST_TARGET", "story").lower()
     instagram_publish_stories: bool = env_flag("INSTAGRAM_PUBLISH_STORIES", default=False)

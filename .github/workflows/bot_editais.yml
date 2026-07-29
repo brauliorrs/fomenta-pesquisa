@@ -111,6 +111,7 @@ jobs:
         if: steps.commit_assets.outputs.assets_changed == 'true'
         env:
           PUBLIC_ASSET_BASE_URL: ${{ vars.PUBLIC_ASSET_BASE_URL || '' }}
+          PUBLIC_ASSET_WAIT_TIMEOUT_SECONDS: ${{ vars.PUBLIC_ASSET_WAIT_TIMEOUT_SECONDS || '900' }}
         run: python -m src.wait_for_public_assets
 
       - name: Publish ready items

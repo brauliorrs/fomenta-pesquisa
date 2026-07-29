@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -10,7 +11,10 @@ from src.services.storage_service import StorageService
 
 
 def is_public_image(url: str) -> bool:
-    response = requests.get(url, stream=True, timeout=30)
+    try:
+        response = requests.get(url, stream=True, timeout=30)
+    except requests.RequestException:
+        return False
     try:
         return response.status_code == 200 and response.headers.get('content-type', '').startswith('image/')
     finally:
@@ -18,6 +22,10 @@ def is_public_image(url: str) -> bool:
 
 
 def main() -> None:
+    base_url = settings.public_asset_base_url.rstrip('/')
+    if not base_url:
+        raise ValueError('PUBLIC_ASSET_BASE_URL nao configurada.')
+
     storage = StorageService()
     editais = storage.read_json(settings.editais_path, default=[])
     ready_assets = sorted(
@@ -33,16 +41,20 @@ def main() -> None:
         print('Nenhum asset pronto para validar no ambiente publico.')
         return
 
-    timeout_seconds = 300
+    pending_urls = [f'{base_url}/{asset_name}' for asset_name in ready_assets]
+    timeout_seconds = max(60, settings.public_asset_wait_timeout_seconds)
     interval_seconds = 15
     start = time.time()
 
-    while True:
-        pending_urls = [
-            settings.public_asset_base_url.rstrip('/') + '/' + asset_name
-            for asset_name in ready_assets
-            if not is_public_image(settings.public_asset_base_url.rstrip('/') + '/' + asset_name)
-        ]
+    while pending_urls:
+        workers = min(8, len(pending_urls))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            availability = executor.map(is_public_image, pending_urls)
+            pending_urls = [
+                url
+                for url, is_available in zip(pending_urls, availability)
+                if not is_available
+            ]
         if not pending_urls:
             print(f'Assets publicos disponiveis: {len(ready_assets)}')
             return
