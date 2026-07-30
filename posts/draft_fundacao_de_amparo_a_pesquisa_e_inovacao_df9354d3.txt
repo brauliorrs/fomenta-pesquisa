@@ -7,7 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_df9354d3.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_df9354d3_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC N.º 44/2026 PROGRAMA DE FOMENTO À PÓS-GRADUAÇÃO EM INSTITUIÇÕES DE ENSINO SUPERIOR DO ESTADO DE SANTA CATARINA (IES/SC)
-Prazo encerra em 5 dias.
+Prazo encerra em 4 dias.
 
 A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria bolsa, com abertura registrada em 03/07/2026 e prazo final em 03/08/2026.
 
