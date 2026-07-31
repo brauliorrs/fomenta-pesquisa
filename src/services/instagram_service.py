@@ -766,7 +766,11 @@ class InstagramService:
         max_lines: int,
         allow_overflow: bool = True,
     ) -> list[str]:
-        words = (value or "").split()
+        words = [
+            fragment
+            for word in (value or "").split()
+            for fragment in self._split_word_to_width(word, font, max_width)
+        ]
         if not words:
             return [""]
 
@@ -793,6 +797,29 @@ class InstagramService:
         last_line = self._truncate_line_to_width(" ".join(remaining_words), font, max_width)
         truncated.append(last_line)
         return truncated
+
+    def _split_word_to_width(
+        self,
+        word: str,
+        font: ImageFont.ImageFont | ImageFont.FreeTypeFont,
+        max_width: int,
+    ) -> list[str]:
+        if self._text_width(word, font) <= max_width:
+            return [word]
+
+        fragments: list[str] = []
+        current = ""
+        for character in word:
+            candidate = current + character
+            if current and self._text_width(candidate, font) > max_width:
+                fragments.append(current)
+                current = character
+                continue
+            current = candidate
+
+        if current:
+            fragments.append(current)
+        return fragments or [word]
 
     def _truncate_line_to_width(
         self,

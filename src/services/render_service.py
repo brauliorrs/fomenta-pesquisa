@@ -464,6 +464,8 @@ class RenderService:
         title = re.sub(r'\bFINAL\b', '', title, flags=re.I)
         title = re.sub(r'\bEdital[ -]+0*(\d{1,2})[ -]+(\d{4})\b', r'Edital \1/\2', title, flags=re.I)
         title = re.sub(r'\b0*(\d{1,2})[ -]+(\d{4})\b', r'\1/\2', title)
+        title = re.sub(r'(?<=\w)-(?=\w)', ' ', title)
+        title = re.sub(r'\b(?:ajustado|atualizado|revisado)\b', '', title, flags=re.I)
         if fonte:
             title = re.sub(rf'\b{re.escape(fonte)}\b', '', title, flags=re.I)
         title = re.sub(r'\bcatedras\b', 'Cátedras', title, flags=re.I)
@@ -539,7 +541,7 @@ class RenderService:
     def _extract_summary_excerpt(self, edital: Edital, max_chars: int) -> str:
         title = self._display_text(edital.titulo)
         summary = self._sanitize_summary(edital.resumo)
-        if not summary or summary == title:
+        if not summary or summary == title or self._looks_like_number_only_summary(summary):
             return ''
 
         sentences = self._split_sentences(summary)
@@ -563,6 +565,15 @@ class RenderService:
         if len(first_sentence) <= max_chars:
             return first_sentence
         return ''
+
+    def _looks_like_number_only_summary(self, value: str) -> bool:
+        return bool(
+            re.fullmatch(
+                r'(?:edital\s*)?(?:n[.º°o]?\s*)?\d{1,3}/\d{4}[.!]?',
+                value.strip(),
+                flags=re.I,
+            )
+        )
 
     def _sanitize_summary(self, value: str | None) -> str:
         summary = self._display_text(value)
