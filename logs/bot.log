@@ -21996,3 +21996,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-01 06:18:33,937 [INFO] Expirados removidos da base: 2
 2026-08-01 06:18:33,937 [INFO] Erros por fonte: 0
 2026-08-01 06:18:33,937 [INFO] Fim da execucao
+2026-08-01 06:18:37,200 [INFO] Tentando publicar carrossel de feed com 10 item(ns): fundacao_de_amparo_a_ciencia_e_tecnologi_a7f1c3e8, fundacao_carlos_chagas_filho_de_amparo_a_f0bddd04, fundacao_de_amparo_a_pesquisa_e_inovacao_221541db, fundacao_de_amparo_a_pesquisa_do_estado__70b5579d, fundacao_de_amparo_a_pesquisa_do_estado__89a27b18, conselho_nacional_das_fundacoes_estaduai_22a86411, fundacao_de_amparo_a_pesquisa_do_estado__89071ad5, fundacao_de_amparo_a_pesquisa_do_estado__ae2113c8, fundacao_de_amparo_a_pesquisa_do_estado__84be84f4, fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef
+2026-08-01 06:21:03,266 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_f44520ad usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_f44520ad.jpg
+2026-08-01 06:21:08,200 [INFO] Tentativas de publicacao apos sync: 11
+2026-08-01 06:21:08,200 [INFO] Publicacoes concluidas apos sync: 11
+2026-08-01 06:21:08,201 [INFO] Novos editais publicados no feed hoje: 10/10.
