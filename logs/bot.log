@@ -22216,3 +22216,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-03 06:49:14,243 [INFO] Tentativas de publicacao apos sync: 1
 2026-08-03 06:49:14,243 [INFO] Publicacoes concluidas apos sync: 1
 2026-08-03 06:49:14,243 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-08-03 17:08:12,589 [INFO] Inicio da execucao
+2026-08-03 17:08:21,942 [INFO] Fonte ANP retornou 2 itens
+2026-08-03 17:08:27,591 [INFO] Fonte CNPQ retornou 1 itens
+2026-08-03 17:08:34,132 [INFO] Fonte CAPES retornou 0 itens
+2026-08-03 17:08:37,407 [INFO] Fonte CONFAP retornou 11 itens
+2026-08-03 17:09:42,953 [INFO] Fonte IPEA retornou 10 itens
+2026-08-03 17:10:25,440 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-08-03 17:10:50,199 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-08-03 17:10:57,701 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-08-03 17:11:00,204 [INFO] Fonte FUNDECI retornou 0 itens
+2026-08-03 17:11:01,719 [INFO] Fonte BASA retornou 0 itens
+2026-08-03 17:11:06,514 [INFO] Fonte BNDES retornou 8 itens
+2026-08-03 17:11:14,836 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffepsegfinanceira: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Max retries exceeded with url: /?1dmy&urile=wcm%3Apath%3A%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffepsegfinanceira (Caused by NewConnectionError("HTTPSConnection(host='www.bndes.gov.br', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-08-03 17:11:55,933 [INFO] Fonte FINEP retornou 0 itens
+2026-08-03 17:11:56,577 [INFO] Fonte DECIT retornou 0 itens
+2026-08-03 17:11:57,911 [INFO] Fonte FAPESP retornou 12 itens
+2026-08-03 17:12:30,905 [INFO] Fonte FAPERJ retornou 19 itens
+2026-08-03 17:12:36,764 [INFO] Fonte FACEPE retornou 100 itens
+2026-08-03 17:16:20,207 [INFO] Fonte FAPAC retornou 29 itens
+2026-08-03 17:18:04,294 [INFO] Fonte FAPEAL retornou 3 itens
+2026-08-03 17:18:12,767 [INFO] Fonte FAPEPI retornou 0 itens
+2026-08-03 17:18:24,601 [INFO] Fonte FAPES retornou 0 itens
+2026-08-03 17:18:40,178 [INFO] Fonte FAPEG retornou 5 itens
+2026-08-03 17:18:59,036 [INFO] Fonte FAPEMA retornou 0 itens
+2026-08-03 17:19:00,454 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-08-03 17:19:10,487 [INFO] Fonte FUNDECT retornou 1 itens
+2026-08-03 17:19:25,078 [INFO] Fonte FAPESPA retornou 0 itens
+2026-08-03 17:19:26,329 [INFO] Fonte FAPESQ retornou 0 itens
+2026-08-03 17:19:30,050 [INFO] Fonte FAPESB retornou 10 itens
+2026-08-03 17:20:35,652 [INFO] Fonte FUNCAP retornou 0 itens
+2026-08-03 17:22:14,293 [INFO] Fonte FAPEAM retornou 0 itens
+2026-08-03 17:22:16,539 [INFO] Fonte FAPEAP retornou 0 itens
+2026-08-03 17:23:52,418 [INFO] Fonte FAPDF retornou 0 itens
+2026-08-03 17:23:55,381 [INFO] Fonte FAPEMIG retornou 4 itens
+2026-08-03 17:24:09,213 [INFO] Fonte FAPPR retornou 3 itens
+2026-08-03 17:24:20,815 [INFO] Fonte FAPERGS retornou 0 itens
+2026-08-03 17:27:28,354 [INFO] Fonte FAPERN retornou 0 itens
+2026-08-03 17:27:29,980 [INFO] Fonte FAPERO retornou 0 itens
+2026-08-03 17:29:05,795 [INFO] Fonte FAPITEC retornou 0 itens
+2026-08-03 17:33:42,272 [INFO] Fonte FAPT retornou 0 itens
+2026-08-03 17:33:56,518 [INFO] Fonte FAPESC retornou 16 itens
+2026-08-03 17:35:14,355 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-08-03 17:36:27,479 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-08-03 17:36:27,513 [INFO] Total coletado: 84
+2026-08-03 17:36:27,513 [INFO] Novos: 2 | Prorrogados: 0 | Atualizados: 82 | Mantidos: 0 | Deduplicados por chave: 9
+2026-08-03 17:36:27,513 [INFO] Repostados/Publicados: 0
+2026-08-03 17:36:27,513 [INFO] Bloqueados para postagem: 0
+2026-08-03 17:36:27,513 [INFO] Expirados removidos da base: 0
+2026-08-03 17:36:27,513 [INFO] Erros por fonte: 0
+2026-08-03 17:36:27,513 [INFO] Fim da execucao
