@@ -22373,3 +22373,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-04 17:21:32,386 [INFO] Expirados removidos da base: 0
 2026-08-04 17:21:32,386 [INFO] Erros por fonte: 0
 2026-08-04 17:21:32,386 [INFO] Fim da execucao
+2026-08-04 17:22:25,383 [INFO] Tentando publicar carrossel de feed com 1 item(ns): instituto_de_pesquisa_economica_aplicada_3a00d21f
+2026-08-04 17:22:48,893 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_8569cb0a usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_8569cb0a.jpg
+2026-08-04 17:22:58,834 [INFO] Tentativas de publicacao apos sync: 2
+2026-08-04 17:22:58,834 [INFO] Publicacoes concluidas apos sync: 2
+2026-08-04 17:22:58,835 [INFO] Novos editais publicados no feed hoje: 1/10.
