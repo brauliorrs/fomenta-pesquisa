@@ -22591,3 +22591,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-07 05:22:00,972 [INFO] Expirados removidos da base: 1
 2026-08-07 05:22:00,973 [INFO] Erros por fonte: 0
 2026-08-07 05:22:00,973 [INFO] Fim da execucao
+2026-08-07 05:22:06,185 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a usando asset publico draft_fundacao_de_amparo_a_ciencia_e_tecnologi_6d94601a.jpg
+2026-08-07 05:22:15,261 [INFO] Tentativas de publicacao apos sync: 1
+2026-08-07 05:22:15,261 [INFO] Publicacoes concluidas apos sync: 1
+2026-08-07 05:22:15,261 [INFO] Novos editais publicados no feed hoje: 0/10.
