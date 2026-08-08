@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T01:40:40.182268-03:00",
+  "generated_at": "2026-08-08T12:27:54.428711-03:00",
   "total_prontos": 65,
   "itens": [
     {
@@ -955,7 +955,7 @@
       "fonte": "FAPEG",
       "orgao": "Fundação de Amparo à Pesquisa do Estado de Goias",
       "prazo": "2026-09-30",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-08-08T01:40:40.182268-03:00",
       "quantidade_postagens": 1,
@@ -1197,7 +1197,7 @@
       "fonte": "FACEPE",
       "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
       "prazo": "2026-11-02",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-08-08T01:40:40.182268-03:00",
       "quantidade_postagens": 1,
