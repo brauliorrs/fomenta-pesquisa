@@ -22863,3 +22863,52 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-09 15:58:35,287 [INFO] Tentativas de publicacao apos sync: 1
 2026-08-09 15:58:35,287 [INFO] Publicacoes concluidas apos sync: 1
 2026-08-09 15:58:35,287 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-08-10 04:28:23,106 [INFO] Inicio da execucao
+2026-08-10 04:28:30,382 [INFO] Fonte ANP retornou 2 itens
+2026-08-10 04:28:35,492 [INFO] Fonte CNPQ retornou 1 itens
+2026-08-10 04:28:37,053 [INFO] Fonte CAPES retornou 0 itens
+2026-08-10 04:28:41,272 [INFO] Fonte CONFAP retornou 0 itens
+2026-08-10 04:28:46,046 [INFO] Fonte IPEA retornou 10 itens
+2026-08-10 04:31:26,820 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-08-10 04:33:16,140 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-08-10 04:33:36,871 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-08-10 04:33:39,368 [INFO] Fonte FUNDECI retornou 0 itens
+2026-08-10 04:33:40,731 [INFO] Fonte BASA retornou 0 itens
+2026-08-10 04:33:41,658 [INFO] Fonte BNDES retornou 8 itens
+2026-08-10 04:33:52,896 [INFO] Fonte FINEP retornou 0 itens
+2026-08-10 04:33:53,421 [INFO] Fonte DECIT retornou 0 itens
+2026-08-10 04:33:54,850 [INFO] Fonte FAPESP retornou 14 itens
+2026-08-10 04:34:26,655 [INFO] Fonte FAPERJ retornou 19 itens
+2026-08-10 04:34:32,524 [INFO] Fonte FACEPE retornou 101 itens
+2026-08-10 04:37:42,374 [INFO] Fonte FAPAC retornou 29 itens
+2026-08-10 04:38:55,598 [INFO] Fonte FAPEAL retornou 3 itens
+2026-08-10 04:39:02,932 [INFO] Fonte FAPEPI retornou 0 itens
+2026-08-10 04:39:13,408 [INFO] Fonte FAPES retornou 0 itens
+2026-08-10 04:39:51,759 [INFO] Fonte FAPEG retornou 6 itens
+2026-08-10 04:40:10,417 [INFO] Fonte FAPEMA retornou 0 itens
+2026-08-10 04:40:11,664 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-08-10 04:40:15,375 [INFO] Fonte FUNDECT retornou 1 itens
+2026-08-10 04:40:19,609 [INFO] Fonte FAPESPA retornou 0 itens
+2026-08-10 04:40:21,159 [INFO] Fonte FAPESQ retornou 0 itens
+2026-08-10 04:40:24,675 [INFO] Fonte FAPESB retornou 10 itens
+2026-08-10 04:41:05,046 [INFO] Fonte FUNCAP retornou 0 itens
+2026-08-10 04:42:42,450 [INFO] Fonte FAPEAM retornou 0 itens
+2026-08-10 04:42:44,309 [INFO] Fonte FAPEAP retornou 0 itens
+2026-08-10 04:44:19,452 [INFO] Fonte FAPDF retornou 0 itens
+2026-08-10 04:44:24,779 [INFO] Fonte FAPEMIG retornou 4 itens
+2026-08-10 04:44:37,667 [INFO] Fonte FAPPR retornou 3 itens
+2026-08-10 04:46:19,356 [INFO] Fonte FAPERGS retornou 0 itens
+2026-08-10 04:49:28,006 [INFO] Fonte FAPERN retornou 0 itens
+2026-08-10 04:49:29,069 [INFO] Fonte FAPERO retornou 0 itens
+2026-08-10 04:51:02,622 [INFO] Fonte FAPITEC retornou 0 itens
+2026-08-10 04:55:38,155 [INFO] Fonte FAPT retornou 0 itens
+2026-08-10 04:55:49,085 [INFO] Fonte FAPESC retornou 15 itens
+2026-08-10 04:56:52,526 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-08-10 04:58:07,862 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-08-10 04:58:07,894 [INFO] Total coletado: 78
+2026-08-10 04:58:07,894 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 78 | Mantidos: 0 | Deduplicados por chave: 9
+2026-08-10 04:58:07,894 [INFO] Repostados/Publicados: 0
+2026-08-10 04:58:07,894 [INFO] Bloqueados para postagem: 0
+2026-08-10 04:58:07,894 [INFO] Expirados removidos da base: 0
+2026-08-10 04:58:07,894 [INFO] Erros por fonte: 0
+2026-08-10 04:58:07,894 [INFO] Fim da execucao
