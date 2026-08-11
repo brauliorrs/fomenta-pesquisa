@@ -22999,3 +22999,81 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-10 16:28:31,068 [INFO] Tentativas de publicacao apos sync: 1
 2026-08-10 16:28:31,068 [INFO] Publicacoes concluidas apos sync: 1
 2026-08-10 16:28:31,068 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-08-11 04:18:18,319 [INFO] Inicio da execucao
+2026-08-11 04:18:24,694 [INFO] Fonte ANP retornou 2 itens
+2026-08-11 04:18:30,862 [INFO] Fonte CNPQ retornou 1 itens
+2026-08-11 04:18:32,924 [INFO] Fonte CAPES retornou 0 itens
+2026-08-11 04:18:35,941 [INFO] Fonte CONFAP retornou 10 itens
+2026-08-11 04:20:01,603 [INFO] Fonte IPEA retornou 10 itens
+2026-08-11 04:22:46,413 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-08-11 04:24:39,426 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-08-11 04:25:03,581 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-08-11 04:25:06,632 [INFO] Fonte FUNDECI retornou 0 itens
+2026-08-11 04:25:08,303 [INFO] Fonte BASA retornou 0 itens
+2026-08-11 04:25:09,922 [INFO] Fonte BNDES retornou 8 itens
+2026-08-11 04:25:26,605 [INFO] Fonte FINEP retornou 0 itens
+2026-08-11 04:25:27,254 [INFO] Fonte DECIT retornou 0 itens
+2026-08-11 04:25:28,970 [INFO] Fonte FAPESP retornou 14 itens
+2026-08-11 04:26:08,993 [INFO] Fonte FAPERJ retornou 19 itens
+2026-08-11 04:26:14,748 [INFO] Fonte FACEPE retornou 101 itens
+2026-08-11 04:29:55,325 [INFO] Fonte FAPAC retornou 29 itens
+2026-08-11 04:29:58,063 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/09/EDITAL-PUBLICACAO-DOE.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/09/EDITAL-PUBLICACAO-DOE.pdf
+2026-08-11 04:29:59,242 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/09/Safari.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/09/Safari.pdf
+2026-08-11 04:30:00,550 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/09/EDITAL-004-2025.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/09/EDITAL-004-2025.pdf
+2026-08-11 04:30:01,470 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/06/DOE-LANCAMENTO-17-10-2024.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/06/DOE-LANCAMENTO-17-10-2024.pdf
+2026-08-11 04:30:02,826 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/07/DO17828625823956-3.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/07/DO17828625823956-3.pdf
+2026-08-11 04:30:04,159 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/07/DO17829147612704-INCORRECAO-1.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/07/DO17829147612704-INCORRECAO-1.pdf
+2026-08-11 04:30:05,080 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/07/ANEXO-I-PROJETO-2026-1.docx: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/07/ANEXO-I-PROJETO-2026-1.docx
+2026-08-11 04:30:06,439 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/05/Chamamento-publico-Programa-Mentes-Azuis.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/05/Chamamento-publico-Programa-Mentes-Azuis.pdf
+2026-08-11 04:30:08,014 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-1o-Publicacao-Mentes-Azuis.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-1o-Publicacao-Mentes-Azuis.pdf
+2026-08-11 04:30:09,372 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-2o-Republicacao-Mentes-Azuis-2.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-2o-Republicacao-Mentes-Azuis-2.pdf
+2026-08-11 04:30:10,705 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-3a-Republicacao-Mentes-Azuis.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-3a-Republicacao-Mentes-Azuis.pdf
+2026-08-11 04:30:11,650 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-4a-Republicacao-Mentes-Azuis.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/02/DOE-4a-Republicacao-Mentes-Azuis.pdf
+2026-08-11 04:30:12,596 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/03/5a-RETIFICACAO-MENTES-AZUIS.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/03/5a-RETIFICACAO-MENTES-AZUIS.pdf
+2026-08-11 04:30:13,543 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/02/ANEXO-I-PROJETO-MENTES-Azuis.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/02/ANEXO-I-PROJETO-MENTES-Azuis.pdf
+2026-08-11 04:30:14,464 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/03/ANEXO-I-PROJETO-MENTES-Azuis-1.docx: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/03/ANEXO-I-PROJETO-MENTES-Azuis-1.docx
+2026-08-11 04:30:15,779 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/07/DO17828625823956-4.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/07/DO17828625823956-4.pdf
+2026-08-11 04:30:17,095 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/07/ANEXO-I-PROJETO-MENTES-Azuis.docx: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/07/ANEXO-I-PROJETO-MENTES-Azuis.docx
+2026-08-11 04:30:18,423 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/03/MINUTA-EDITAL-CHAMAMENTO-PUBLICO-PPSUS-FINAL-1.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/03/MINUTA-EDITAL-CHAMAMENTO-PUBLICO-PPSUS-FINAL-1.pdf
+2026-08-11 04:30:19,747 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/03/EDITAL-CENTELHA-3-ACRE-Ultima-versao-25-FEV-2.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/03/EDITAL-CENTELHA-3-ACRE-Ultima-versao-25-FEV-2.pdf
+2026-08-11 04:30:20,666 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/10/Edital-005.2025-Retificado-03.10.2025.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/10/Edital-005.2025-Retificado-03.10.2025.pdf
+2026-08-11 04:30:21,588 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/10/Anexos-Edital-Programa-Cadeia-Produtiva-Especial-novo.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/10/Anexos-Edital-Programa-Cadeia-Produtiva-Especial-novo.pdf
+2026-08-11 04:30:22,923 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2024/11/EDITAL-DE-CHAMAMENTO-PUBLICO-No-002-2024-MOSTRA-CULTURAL-DE-BIOECONOMIA-ACREANA.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2024/11/EDITAL-DE-CHAMAMENTO-PUBLICO-No-002-2024-MOSTRA-CULTURAL-DE-BIOECONOMIA-ACREANA.pdf
+2026-08-11 04:30:23,846 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2024/11/Edital-No-002-2023-PPP-6.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2024/11/Edital-No-002-2023-PPP-6.pdf
+2026-08-11 04:30:24,792 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2024/11/2-EDITAL-FAPAC-CNPq-No-003_2021-PDCTR-1.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2024/11/2-EDITAL-FAPAC-CNPq-No-003_2021-PDCTR-1.pdf
+2026-08-11 04:30:25,738 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2024/11/Edital-CHAMADA-DE-PROPOSTAS-No-003-2022-Amazonia10.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2024/11/Edital-CHAMADA-DE-PROPOSTAS-No-003-2022-Amazonia10.pdf
+2026-08-11 04:30:26,683 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2024/11/EditalCompilado_Expedicoes-aumento-recurso-Fapac.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2024/11/EditalCompilado_Expedicoes-aumento-recurso-Fapac.pdf
+2026-08-11 04:30:27,605 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/02/EDITAL-CHAMANENTO.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/02/EDITAL-CHAMANENTO.pdf
+2026-08-11 04:30:28,526 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf
+2026-08-11 04:30:29,473 [WARNING] Falha ao enriquecer item https://fapac.ac.gov.br/wp-content/uploads/2026/05/EDITAL-PDPG-01.2026-pdf-724x1024.jpg: 404 Client Error: Not Found for url: https://fapac.ac.gov.br/wp-content/uploads/2026/05/EDITAL-PDPG-01.2026-pdf-724x1024.jpg
+2026-08-11 04:30:38,980 [INFO] Fonte FAPEAL retornou 3 itens
+2026-08-11 04:30:47,265 [INFO] Fonte FAPEPI retornou 0 itens
+2026-08-11 04:30:57,238 [INFO] Fonte FAPES retornou 0 itens
+2026-08-11 04:31:25,830 [INFO] Fonte FAPEG retornou 6 itens
+2026-08-11 04:31:52,754 [INFO] Fonte FAPEMA retornou 0 itens
+2026-08-11 04:31:54,375 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-08-11 04:31:58,777 [INFO] Fonte FUNDECT retornou 1 itens
+2026-08-11 04:32:09,067 [INFO] Fonte FAPESPA retornou 0 itens
+2026-08-11 04:32:10,840 [INFO] Fonte FAPESQ retornou 0 itens
+2026-08-11 04:32:15,016 [INFO] Fonte FAPESB retornou 10 itens
+2026-08-11 04:33:00,510 [INFO] Fonte FUNCAP retornou 0 itens
+2026-08-11 04:34:37,655 [INFO] Fonte FAPEAM retornou 0 itens
+2026-08-11 04:34:39,549 [INFO] Fonte FAPEAP retornou 0 itens
+2026-08-11 04:36:14,243 [INFO] Fonte FAPDF retornou 0 itens
+2026-08-11 04:36:17,662 [INFO] Fonte FAPEMIG retornou 4 itens
+2026-08-11 04:36:26,096 [INFO] Fonte FAPPR retornou 3 itens
+2026-08-11 04:36:40,574 [INFO] Fonte FAPERGS retornou 0 itens
+2026-08-11 04:39:52,908 [INFO] Fonte FAPERN retornou 0 itens
+2026-08-11 04:39:54,330 [INFO] Fonte FAPERO retornou 0 itens
+2026-08-11 04:41:28,511 [INFO] Fonte FAPITEC retornou 0 itens
+2026-08-11 04:46:03,884 [INFO] Fonte FAPT retornou 0 itens
+2026-08-11 04:46:16,831 [INFO] Fonte FAPESC retornou 15 itens
+2026-08-11 04:47:25,039 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-08-11 04:48:37,341 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-08-11 04:48:37,373 [INFO] Total coletado: 104
+2026-08-11 04:48:37,374 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 104 | Mantidos: 0 | Deduplicados por chave: 8
+2026-08-11 04:48:37,374 [INFO] Repostados/Publicados: 0
+2026-08-11 04:48:37,374 [INFO] Bloqueados para postagem: 0
+2026-08-11 04:48:37,374 [INFO] Expirados removidos da base: 2
+2026-08-11 04:48:37,374 [INFO] Erros por fonte: 0
+2026-08-11 04:48:37,374 [INFO] Fim da execucao
