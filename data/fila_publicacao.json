@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T01:18:18.319043-03:00",
+  "generated_at": "2026-08-11T01:48:42.667618-03:00",
   "total_prontos": 63,
   "itens": [
     {
@@ -11,8 +11,8 @@
       "prazo": "2026-08-13",
       "status": "atualizado",
       "score_editorial": 100,
-      "ultima_postagem": "2026-07-30T03:22:43.512643-03:00",
-      "quantidade_postagens": 1,
+      "ultima_postagem": "2026-08-11T01:48:42.667618-03:00",
+      "quantidade_postagens": 2,
       "instagram_feed_publicado": true,
       "urgencia_dias": 2,
       "link": "https://api.site.fapemig.br/wp-content/uploads/Chamada-Eventech.pdf",
