@@ -23839,3 +23839,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-18 04:07:16,235 [INFO] Expirados removidos da base: 1
 2026-08-18 04:07:16,235 [INFO] Erros por fonte: 0
 2026-08-18 04:07:16,235 [INFO] Fim da execucao
+2026-08-18 04:07:21,155 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__a21b8706 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__a21b8706.jpg
+2026-08-18 04:07:32,015 [INFO] Tentativas de publicacao apos sync: 1
+2026-08-18 04:07:32,015 [INFO] Publicacoes concluidas apos sync: 1
+2026-08-18 04:07:32,015 [INFO] Novos editais publicados no feed hoje: 0/10.
