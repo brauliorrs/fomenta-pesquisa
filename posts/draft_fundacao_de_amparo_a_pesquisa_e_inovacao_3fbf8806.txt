@@ -2,19 +2,19 @@
 id: fundacao_de_amparo_a_pesquisa_e_inovacao_3fbf8806
 fonte: FAPESC
 orgao: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina
-prazo: 2026-09-14
+prazo: 2026-09-18
 card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3fbf8806.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3fbf8806_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC/SCTI N.º 50/2026 PROGRAMA DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO – SC INOVADORA
 
-A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 13/08/2026 e prazo final em 14/09/2026.
+A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 13/08/2026 e prazo final em 18/09/2026.
 
 Instituição: Fundação de Amparo à Pesquisa e Inovacao do Estado de Santa Catarina
 Público-alvo: Empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina
 Tipo: Inovacao
 Abertura das inscrições: 13/08/2026
-Prazo final: 14/09/2026
+Prazo final: 18/09/2026
 
 Link oficial do edital:
 https://fapesc.sc.gov.br/wp-content/uploads/2026/08/Edital-50.2026-SCTI.pdf
