@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T01:17:16.352135-03:00",
+  "generated_at": "2026-08-21T12:30:40.144813-03:00",
   "total_prontos": 63,
   "itens": [
     {
@@ -427,7 +427,7 @@
       "fonte": "FAPPR",
       "orgao": "Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana",
       "prazo": "2026-09-01",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": null,
       "quantidade_postagens": 0,
