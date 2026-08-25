@@ -24545,3 +24545,63 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-24 16:01:52,038 [INFO] Tentativas de publicacao apos sync: 1
 2026-08-24 16:01:52,038 [INFO] Publicacoes concluidas apos sync: 1
 2026-08-24 16:01:52,038 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-08-25 03:46:38,632 [INFO] Inicio da execucao
+2026-08-25 03:46:48,875 [INFO] Fonte ANP retornou 1 itens
+2026-08-25 03:46:53,508 [INFO] Fonte CNPQ retornou 1 itens
+2026-08-25 03:46:54,959 [INFO] Fonte CAPES retornou 0 itens
+2026-08-25 03:46:56,958 [INFO] Fonte CONFAP retornou 11 itens
+2026-08-25 03:47:02,994 [WARNING] Falha ao enriquecer item https://news.confap.org.br/premio-internacional-science-she-says-recebe-indicacoes/: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-25 03:47:03,902 [WARNING] Falha ao enriquecer item https://news.confap.org.br/34a-edicao-do-programa-bolsas-de-verao-do-cnpem-seleciona-universitarios-da-america-latina-e-do-caribe/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /34a-edicao-do-programa-bolsas-de-verao-do-cnpem-seleciona-universitarios-da-america-latina-e-do-caribe/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,022 [WARNING] Falha ao enriquecer item https://news.confap.org.br/inscricoes-abertas-para-o-1o-premio-nacional-de-protecao-integral-de-criancas-e-adolescentes-em-situacao-de-rua/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /inscricoes-abertas-para-o-1o-premio-nacional-de-protecao-integral-de-criancas-e-adolescentes-em-situacao-de-rua/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,144 [WARNING] Falha ao enriquecer item https://news.confap.org.br/inscricoes-abertas-para-o-3o-premio-mulheres-e-ciencia/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /inscricoes-abertas-para-o-3o-premio-mulheres-e-ciencia/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,262 [WARNING] Falha ao enriquecer item https://news.confap.org.br/estao-abertas-as-inscricoes-para-o-programa-researcher-challenges-grants-2026-promovido-pelo-british-council/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /estao-abertas-as-inscricoes-para-o-programa-researcher-challenges-grants-2026-promovido-pelo-british-council/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,381 [WARNING] Falha ao enriquecer item https://news.confap.org.br/confap-e-cdti-lancam-chamada-2026-2027-para-apoiar-projetos-colaborativos-de-pesquisa-e-inovacao-tecnologica-entre-instituicoes-do-brasil-e-da-espanha/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /confap-e-cdti-lancam-chamada-2026-2027-para-apoiar-projetos-colaborativos-de-pesquisa-e-inovacao-tecnologica-entre-instituicoes-do-brasil-e-da-espanha/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,518 [WARNING] Falha ao enriquecer item https://news.confap.org.br/edital-das-academias-sediadas-no-rj-e-lancado-em-cerimonia-oficial-na-abl/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /edital-das-academias-sediadas-no-rj-e-lancado-em-cerimonia-oficial-na-abl/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,683 [WARNING] Falha ao enriquecer item https://news.confap.org.br/fapesc-e-udesc-lancam-edital-para-fomentar-com-r-10-milhoes-a-pesquisa-na-area-de-mobilidade-eletrica-em-santa-catarina/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /fapesc-e-udesc-lancam-edital-para-fomentar-com-r-10-milhoes-a-pesquisa-na-area-de-mobilidade-eletrica-em-santa-catarina/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,802 [WARNING] Falha ao enriquecer item https://news.confap.org.br/fulbright-brasil-tem-inscricoes-abertas-para-mais-de-80-bolsas-de-estudo-nos-eua-com-foco-em-doutorandos-e-pesquisadores/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /fulbright-brasil-tem-inscricoes-abertas-para-mais-de-80-bolsas-de-estudo-nos-eua-com-foco-em-doutorandos-e-pesquisadores/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:04,920 [WARNING] Falha ao enriquecer item https://news.confap.org.br/programa-de-estimulo-a-vocacoes-cientificas-tem-nova-chamada/: HTTPSConnectionPool(host='news.confap.org.br', port=443): Max retries exceeded with url: /programa-de-estimulo-a-vocacoes-cientificas-tem-nova-chamada/ (Caused by NewConnectionError("HTTPSConnection(host='news.confap.org.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-08-25 03:47:05,765 [INFO] Fonte IPEA retornou 10 itens
+2026-08-25 03:47:43,533 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16429-chamada-publica-022-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16429-chamada-publica-022-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f48f1316d90>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-08-25 03:47:44,640 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-08-25 03:48:01,352 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-08-25 03:48:06,639 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-08-25 03:48:08,951 [INFO] Fonte FUNDECI retornou 0 itens
+2026-08-25 03:48:09,976 [INFO] Fonte BASA retornou 0 itens
+2026-08-25 03:48:13,250 [INFO] Fonte BNDES retornou 8 itens
+2026-08-25 03:48:32,694 [INFO] Fonte FINEP retornou 0 itens
+2026-08-25 03:48:33,150 [INFO] Fonte DECIT retornou 0 itens
+2026-08-25 03:48:34,472 [INFO] Fonte FAPESP retornou 10 itens
+2026-08-25 03:48:55,749 [INFO] Fonte FAPERJ retornou 19 itens
+2026-08-25 03:49:00,785 [INFO] Fonte FACEPE retornou 101 itens
+2026-08-25 03:51:58,158 [INFO] Fonte FAPAC retornou 29 itens
+2026-08-25 03:53:07,283 [INFO] Fonte FAPEAL retornou 3 itens
+2026-08-25 03:53:15,052 [INFO] Fonte FAPEPI retornou 0 itens
+2026-08-25 03:53:23,431 [INFO] Fonte FAPES retornou 0 itens
+2026-08-25 03:53:37,143 [INFO] Fonte FAPEG retornou 7 itens
+2026-08-25 03:53:57,347 [INFO] Fonte FAPEMA retornou 0 itens
+2026-08-25 03:53:59,228 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-08-25 03:54:03,255 [INFO] Fonte FUNDECT retornou 1 itens
+2026-08-25 03:54:12,372 [INFO] Fonte FAPESPA retornou 0 itens
+2026-08-25 03:54:13,687 [INFO] Fonte FAPESQ retornou 0 itens
+2026-08-25 03:54:20,223 [INFO] Fonte FAPESB retornou 10 itens
+2026-08-25 03:55:17,847 [INFO] Fonte FUNCAP retornou 0 itens
+2026-08-25 03:56:53,267 [INFO] Fonte FAPEAM retornou 0 itens
+2026-08-25 03:56:59,504 [INFO] Fonte FAPEAP retornou 0 itens
+2026-08-25 03:58:33,654 [INFO] Fonte FAPDF retornou 0 itens
+2026-08-25 03:58:38,503 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-08-25 03:58:44,565 [INFO] Fonte FAPPR retornou 4 itens
+2026-08-25 03:59:00,351 [INFO] Fonte FAPERGS retornou 0 itens
+2026-08-25 04:02:08,372 [INFO] Fonte FAPERN retornou 0 itens
+2026-08-25 04:02:09,807 [INFO] Fonte FAPERO retornou 0 itens
+2026-08-25 04:03:43,940 [INFO] Fonte FAPITEC retornou 0 itens
+2026-08-25 04:08:18,316 [INFO] Fonte FAPT retornou 0 itens
+2026-08-25 04:08:27,536 [INFO] Fonte FAPESC retornou 14 itens
+2026-08-25 04:09:14,504 [INFO] Fonte SERRAPILHEIRA retornou 17 itens
+2026-08-25 04:10:26,959 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-08-25 04:10:26,989 [INFO] Total coletado: 81
+2026-08-25 04:10:26,989 [INFO] Novos: 10 | Prorrogados: 0 | Atualizados: 71 | Mantidos: 0 | Deduplicados por chave: 7
+2026-08-25 04:10:26,989 [INFO] Repostados/Publicados: 0
+2026-08-25 04:10:26,989 [INFO] Bloqueados para postagem: 0
+2026-08-25 04:10:26,989 [INFO] Expirados removidos da base: 4
+2026-08-25 04:10:26,989 [INFO] Erros por fonte: 0
+2026-08-25 04:10:26,989 [INFO] Fim da execucao
