@@ -25220,3 +25220,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-30 18:50:53,359 [INFO] Tentativas de publicacao apos sync: 1
 2026-08-30 18:50:53,359 [INFO] Publicacoes concluidas apos sync: 1
 2026-08-30 18:50:53,360 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-08-31 09:20:16,880 [INFO] Inicio da execucao
+2026-08-31 09:20:22,918 [INFO] Fonte ANP retornou 1 itens
+2026-08-31 09:20:29,308 [INFO] Fonte CNPQ retornou 1 itens
+2026-08-31 09:20:31,592 [INFO] Fonte CAPES retornou 0 itens
+2026-08-31 09:20:34,505 [INFO] Fonte CONFAP retornou 12 itens
+2026-08-31 09:21:33,743 [INFO] Fallback SSL sem verificacao usado para https://fapesc.sc.gov.br/edital-de-chamada-publica-fapesc-n-o-39-2026-nucleo-catarinense-de-mobilidade-eletrica-ncme/
+2026-08-31 09:21:37,603 [INFO] Fallback SSL sem verificacao usado para https://fapesc.sc.gov.br/wp-content/uploads/2026/06/CP39_2026_Mobilidade_Eletrica.pdf
+2026-08-31 09:22:01,810 [WARNING] Falha ao enriquecer item https://fulbright.org.br/bolsas-para-brasileiros/: 522 Server Error: <none> for url: https://fulbright.org.br/bolsas-para-brasileiros/
+2026-08-31 09:22:03,008 [INFO] Fonte IPEA retornou 10 itens
+2026-08-31 09:22:46,109 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16429-chamada-publica-022-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16429-chamada-publica-022-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f181f136790>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-08-31 09:22:47,669 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-08-31 09:23:09,734 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-08-31 09:23:17,611 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-08-31 09:23:20,418 [INFO] Fonte FUNDECI retornou 0 itens
+2026-08-31 09:23:21,981 [INFO] Fonte BASA retornou 0 itens
+2026-08-31 09:23:23,218 [INFO] Fonte BNDES retornou 8 itens
+2026-08-31 09:23:38,121 [INFO] Fonte FINEP retornou 0 itens
+2026-08-31 09:23:38,792 [INFO] Fonte DECIT retornou 0 itens
+2026-08-31 09:23:40,533 [INFO] Fonte FAPESP retornou 9 itens
+2026-08-31 09:24:09,140 [INFO] Fonte FAPERJ retornou 19 itens
+2026-08-31 09:24:15,557 [INFO] Fonte FACEPE retornou 104 itens
+2026-08-31 09:28:07,343 [INFO] Fonte FAPAC retornou 29 itens
+2026-08-31 09:29:37,794 [INFO] Fonte FAPEAL retornou 3 itens
+2026-08-31 09:29:46,402 [INFO] Fonte FAPEPI retornou 0 itens
+2026-08-31 09:29:55,861 [INFO] Fonte FAPES retornou 0 itens
+2026-08-31 09:30:06,510 [INFO] Fonte FAPEG retornou 7 itens
+2026-08-31 09:30:31,799 [INFO] Fonte FAPEMA retornou 0 itens
+2026-08-31 09:30:34,932 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-08-31 09:30:39,323 [INFO] Fonte FUNDECT retornou 1 itens
+2026-08-31 09:30:46,512 [INFO] Fonte FAPESPA retornou 0 itens
+2026-08-31 09:30:48,335 [INFO] Fonte FAPESQ retornou 0 itens
+2026-08-31 09:31:01,254 [INFO] Fonte FAPESB retornou 10 itens
+2026-08-31 09:31:49,243 [INFO] Fonte FUNCAP retornou 0 itens
+2026-08-31 09:33:26,933 [INFO] Fonte FAPEAM retornou 0 itens
+2026-08-31 09:33:34,649 [INFO] Fonte FAPEAP retornou 0 itens
+2026-08-31 09:35:09,661 [INFO] Fonte FAPDF retornou 0 itens
+2026-08-31 09:35:12,549 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-08-31 09:35:21,487 [INFO] Fonte FAPPR retornou 4 itens
+2026-08-31 09:35:36,202 [INFO] Fonte FAPERGS retornou 0 itens
+2026-08-31 09:35:40,444 [INFO] Fonte FAPERN retornou 0 itens
+2026-08-31 09:35:42,104 [INFO] Fonte FAPERO retornou 0 itens
+2026-08-31 09:37:16,895 [INFO] Fonte FAPITEC retornou 0 itens
+2026-08-31 09:41:53,117 [INFO] Fonte FAPT retornou 0 itens
+2026-08-31 09:41:59,580 [INFO] Fonte FAPESC retornou 0 itens
+2026-08-31 09:42:00,162 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-08-31 09:43:11,973 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-08-31 09:43:12,003 [INFO] Total coletado: 65
+2026-08-31 09:43:12,003 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 65 | Mantidos: 0 | Deduplicados por chave: 8
+2026-08-31 09:43:12,003 [INFO] Repostados/Publicados: 0
+2026-08-31 09:43:12,003 [INFO] Bloqueados para postagem: 0
+2026-08-31 09:43:12,003 [INFO] Expirados removidos da base: 1
+2026-08-31 09:43:12,003 [INFO] Erros por fonte: 0
+2026-08-31 09:43:12,003 [INFO] Fim da execucao
