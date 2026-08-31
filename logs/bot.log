@@ -25327,3 +25327,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-08-31 21:05:33,538 [INFO] Expirados removidos da base: 0
 2026-08-31 21:05:33,538 [INFO] Erros por fonte: 0
 2026-08-31 21:05:33,539 [INFO] Fim da execucao
+2026-08-31 21:05:38,018 [INFO] Tentando repostar story diario para edital valido financiadora_de_estudos_e_projetos_finep_315d632a usando asset publico draft_financiadora_de_estudos_e_projetos_finep_315d632a.jpg
+2026-08-31 21:05:51,191 [INFO] Tentativas de publicacao apos sync: 1
+2026-08-31 21:05:51,191 [INFO] Publicacoes concluidas apos sync: 1
+2026-08-31 21:05:51,191 [INFO] Novos editais publicados no feed hoje: 0/10.
