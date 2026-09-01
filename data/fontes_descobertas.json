@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T13:16:52.333755-03:00",
+  "generated_at": "2026-09-01T15:38:00.300446-03:00",
   "sumario": {
     "fontes_ativas_auditadas": 40,
     "candidatas_avaliadas": 4,
@@ -20,7 +20,7 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 35,
-      "preview_anchor_hits": 941
+      "preview_anchor_hits": 947
     },
     {
       "sigla": "CNPQ",
@@ -57,26 +57,26 @@
       "site_oficial_detectado": "https://confap.org.br",
       "pagina_editais_anterior": "https://news.confap.org.br/tag/editais/",
       "pagina_editais_detectada": "https://news.confap.org.br/tag/editais/",
-      "score": 4,
+      "score": 83,
       "status_code": 200,
-      "motivo": "Pagina sem sinais editoriais fortes de edital.",
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 1
+      "keyword_hits": 72,
+      "preview_anchor_hits": 78
     },
     {
       "sigla": "IPEA",
       "nome": "Instituto de Pesquisa Economica Aplicada",
-      "status": "atencao",
+      "status": "ok",
       "site_oficial_detectado": "https://www.ipea.gov.br/portal",
       "pagina_editais_anterior": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa",
       "pagina_editais_detectada": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa",
-      "score": 0,
-      "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Read timed out. (read timeout=30)",
+      "score": 104,
+      "status_code": 200,
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 0
+      "keyword_hits": 96,
+      "preview_anchor_hits": 345
     },
     {
       "sigla": "FIOCRUZ",
@@ -85,11 +85,11 @@
       "site_oficial_detectado": "https://fomentoapesquisa.fiocruz.br",
       "pagina_editais_anterior": "https://fomentoapesquisa.fiocruz.br/editais",
       "pagina_editais_detectada": "https://fomentoapesquisa.fiocruz.br/editais",
-      "score": 67,
+      "score": 68,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 56,
+      "keyword_hits": 57,
       "preview_anchor_hits": 18
     },
     {
@@ -169,26 +169,26 @@
       "site_oficial_detectado": "https://www.finep.gov.br",
       "pagina_editais_anterior": "https://www.finep.gov.br/oportunidades",
       "pagina_editais_detectada": "https://www.finep.gov.br/oportunidades",
-      "score": 47,
+      "score": 49,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 34,
-      "preview_anchor_hits": 99
+      "keyword_hits": 36,
+      "preview_anchor_hits": 101
     },
     {
       "sigla": "DECIT",
       "nome": "Departamento de Ciencia e Tecnologia do Ministerio da Saude",
       "status": "ok",
       "site_oficial_detectado": "https://www.gov.br/saude",
-      "pagina_editais_anterior": "https://www.gov.br/saude/pt-br/assuntos/noticias",
+      "pagina_editais_anterior": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms",
       "pagina_editais_detectada": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms",
-      "score": 15,
+      "score": 12,
       "status_code": 200,
       "motivo": "",
-      "atualizada": true,
-      "keyword_hits": 5,
-      "preview_anchor_hits": 400
+      "atualizada": false,
+      "keyword_hits": 2,
+      "preview_anchor_hits": 413
     },
     {
       "sigla": "FAPESP",
@@ -197,12 +197,12 @@
       "site_oficial_detectado": "https://fapesp.br",
       "pagina_editais_anterior": "https://fapesp.br/chamadas/",
       "pagina_editais_detectada": "https://fapesp.br/chamadas/",
-      "score": 237,
+      "score": 207,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 226,
-      "preview_anchor_hits": 322
+      "keyword_hits": 196,
+      "preview_anchor_hits": 314
     },
     {
       "sigla": "FAPERJ",
@@ -211,12 +211,12 @@
       "site_oficial_detectado": "https://www.faperj.br",
       "pagina_editais_anterior": "https://www.faperj.br/?id=28.5.7",
       "pagina_editais_detectada": "https://www.faperj.br/?id=28.5.7",
-      "score": 259,
+      "score": 264,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 251,
-      "preview_anchor_hits": 268
+      "keyword_hits": 256,
+      "preview_anchor_hits": 280
     },
     {
       "sigla": "FACEPE",
@@ -225,12 +225,12 @@
       "site_oficial_detectado": "https://www.facepe.br",
       "pagina_editais_anterior": "https://www.facepe.br/editais/todos/",
       "pagina_editais_detectada": "https://www.facepe.br/editais/todos/",
-      "score": 144,
+      "score": 158,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 133,
-      "preview_anchor_hits": 667
+      "keyword_hits": 147,
+      "preview_anchor_hits": 700
     },
     {
       "sigla": "FAPAC",
@@ -267,12 +267,12 @@
       "site_oficial_detectado": "https://www.fapepi.pi.gov.br",
       "pagina_editais_anterior": "https://www.fapepi.pi.gov.br/editais-abertos/",
       "pagina_editais_detectada": "https://www.fapepi.pi.gov.br/editais-abertos/",
-      "score": 16,
+      "score": 17,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 4,
-      "preview_anchor_hits": 9
+      "preview_anchor_hits": 13
     },
     {
       "sigla": "FAPES",
@@ -280,13 +280,13 @@
       "status": "ok",
       "site_oficial_detectado": "https://fapes.es.gov.br",
       "pagina_editais_anterior": "https://fapes.es.gov.br/editais-abertos-2",
-      "pagina_editais_detectada": "https://fapes.es.gov.br/editais-abertos-2",
-      "score": 73,
+      "pagina_editais_detectada": "https://fapes.es.gov.br/Editais/Resultados",
+      "score": 1836,
       "status_code": 200,
       "motivo": "",
-      "atualizada": false,
-      "keyword_hits": 62,
-      "preview_anchor_hits": 348
+      "atualizada": true,
+      "keyword_hits": 1825,
+      "preview_anchor_hits": 2915
     },
     {
       "sigla": "FAPEG",
@@ -295,12 +295,12 @@
       "site_oficial_detectado": "https://goias.gov.br/fapeg",
       "pagina_editais_anterior": "https://goias.gov.br/fapeg/editais/inscricoes-abertas/",
       "pagina_editais_detectada": "https://goias.gov.br/fapeg/editais/inscricoes-abertas/",
-      "score": 40,
+      "score": 45,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 29,
-      "preview_anchor_hits": 197
+      "keyword_hits": 34,
+      "preview_anchor_hits": 200
     },
     {
       "sigla": "FAPEMA",
@@ -322,13 +322,13 @@
       "status": "ok",
       "site_oficial_detectado": "https://www.fapemat.mt.gov.br",
       "pagina_editais_anterior": "https://www.fapemat.mt.gov.br/editais",
-      "pagina_editais_detectada": "https://www.fapemat.mt.gov.br/editais",
-      "score": 4,
+      "pagina_editais_detectada": "https://www.fapemat.mt.gov.br/pt/aberto_old",
+      "score": 16,
       "status_code": 200,
-      "motivo": "Pagina sem sinais editoriais fortes de edital.",
-      "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 1
+      "motivo": "",
+      "atualizada": true,
+      "keyword_hits": 8,
+      "preview_anchor_hits": 78
     },
     {
       "sigla": "FUNDECT",
@@ -356,21 +356,21 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 10,
-      "preview_anchor_hits": 49
+      "preview_anchor_hits": 52
     },
     {
       "sigla": "FAPESQ",
       "nome": "Fundacao de Apoio a Pesquisa do Estado da Paraiba",
       "status": "ok",
       "site_oficial_detectado": "https://fapesq.rpp.br",
-      "pagina_editais_anterior": "https://fapesq.rpp.br/noticias/editais-com-prazo-de-submissao-de-propostas-aberto",
+      "pagina_editais_anterior": "https://fapesq.rpp.br/noticias/@@electoral_period_blocked",
       "pagina_editais_detectada": "https://fapesq.rpp.br/noticias/@@electoral_period_blocked",
-      "score": 15,
+      "score": 19,
       "status_code": 200,
       "motivo": "",
-      "atualizada": true,
-      "keyword_hits": 7,
-      "preview_anchor_hits": 147
+      "atualizada": false,
+      "keyword_hits": 11,
+      "preview_anchor_hits": 169
     },
     {
       "sigla": "FAPESB",
@@ -379,12 +379,12 @@
       "site_oficial_detectado": "https://www.fapesb.ba.gov.br",
       "pagina_editais_anterior": "https://www.fapesb.ba.gov.br/category/edital/aberto/",
       "pagina_editais_detectada": "https://www.fapesb.ba.gov.br/category/edital/aberto/",
-      "score": 139,
+      "score": 143,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 128,
-      "preview_anchor_hits": 204
+      "keyword_hits": 132,
+      "preview_anchor_hits": 200
     },
     {
       "sigla": "FUNCAP",
@@ -409,7 +409,7 @@
       "pagina_editais_detectada": "https://www.fapeam.am.gov.br/editais/?aba=editais-abertos",
       "score": 0,
       "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.fapeam.am.gov.br', port=443): Max retries exceeded with url: /editais/?aba=editais-abertos (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapeam.am.gov.br', port=443) at 0x7f595b903e50>, 'Connection to www.fapeam.am.gov.br timed out. (connect timeout=30)'))",
+      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.fapeam.am.gov.br', port=443): Max retries exceeded with url: /editais/?aba=editais-abertos (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapeam.am.gov.br', port=443) at 0x7fc3e3f01390>, 'Connection to www.fapeam.am.gov.br timed out. (connect timeout=30)'))",
       "atualizada": false,
       "keyword_hits": 0,
       "preview_anchor_hits": 0
@@ -417,16 +417,16 @@
     {
       "sigla": "FAPEAP",
       "nome": "Fundacao de Amparo a Pesquisa do Estado do Amapa",
-      "status": "ok",
+      "status": "atencao",
       "site_oficial_detectado": "https://fapeap.portal.ap.gov.br",
       "pagina_editais_anterior": "https://fapeap.portal.ap.gov.br/",
       "pagina_editais_detectada": "https://fapeap.portal.ap.gov.br/",
-      "score": 39,
-      "status_code": 200,
-      "motivo": "",
+      "score": 0,
+      "status_code": null,
+      "motivo": "Falha HTTP: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "atualizada": false,
-      "keyword_hits": 31,
-      "preview_anchor_hits": 113
+      "keyword_hits": 0,
+      "preview_anchor_hits": 0
     },
     {
       "sigla": "FAPDF",
@@ -454,7 +454,7 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 17,
-      "preview_anchor_hits": 44
+      "preview_anchor_hits": 45
     },
     {
       "sigla": "FAPPR",
@@ -463,26 +463,26 @@
       "site_oficial_detectado": "https://www.fappr.pr.gov.br",
       "pagina_editais_anterior": "https://www.fappr.pr.gov.br/Programas-Abertos",
       "pagina_editais_detectada": "https://www.fappr.pr.gov.br/Programas-Abertos",
-      "score": 79,
+      "score": 89,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 71,
-      "preview_anchor_hits": 239
+      "keyword_hits": 81,
+      "preview_anchor_hits": 245
     },
     {
       "sigla": "FAPERGS",
       "nome": "Fundacao de Amparo a Pesquisa do Estado do Rio Grande do Sul",
-      "status": "atencao",
+      "status": "ok",
       "site_oficial_detectado": "https://fapergs.rs.gov.br",
       "pagina_editais_anterior": "https://fapergs.rs.gov.br/abertos",
       "pagina_editais_detectada": "https://fapergs.rs.gov.br/abertos",
-      "score": 0,
-      "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='fapergs.rs.gov.br', port=443): Max retries exceeded with url: /abertos (Caused by NewConnectionError(\"HTTPSConnection(host='fapergs.rs.gov.br', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "score": 30,
+      "status_code": 200,
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 0
+      "keyword_hits": 22,
+      "preview_anchor_hits": 141
     },
     {
       "sigla": "FAPERN",
@@ -493,7 +493,7 @@
       "pagina_editais_detectada": "https://www.fapern.rn.gov.br/",
       "score": 0,
       "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.fapern.rn.gov.br', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapern.rn.gov.br', port=443) at 0x7f595ad52a10>, 'Connection to www.fapern.rn.gov.br timed out. (connect timeout=30)'))",
+      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.fapern.rn.gov.br', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fapern.rn.gov.br', port=443) at 0x7fc3e3a61f90>, 'Connection to www.fapern.rn.gov.br timed out. (connect timeout=30)'))",
       "atualizada": false,
       "keyword_hits": 0,
       "preview_anchor_hits": 0
@@ -521,7 +521,7 @@
       "pagina_editais_detectada": "https://fapitec.se.gov.br/editais-abertos/",
       "score": 0,
       "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='fapitec.se.gov.br', port=443): Max retries exceeded with url: /editais-abertos/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapitec.se.gov.br', port=443) at 0x7f595b2290d0>, 'Connection to fapitec.se.gov.br timed out. (connect timeout=30)'))",
+      "motivo": "Falha HTTP: HTTPSConnectionPool(host='fapitec.se.gov.br', port=443): Max retries exceeded with url: /editais-abertos/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapitec.se.gov.br', port=443) at 0x7fc3e1d13990>, 'Connection to fapitec.se.gov.br timed out. (connect timeout=30)'))",
       "atualizada": false,
       "keyword_hits": 0,
       "preview_anchor_hits": 0
@@ -529,16 +529,16 @@
     {
       "sigla": "FAPT",
       "nome": "Fundacao de Amparo a Pesquisa do Estado do Tocantins",
-      "status": "atencao",
+      "status": "ok",
       "site_oficial_detectado": "https://www.to.gov.br/fapt",
       "pagina_editais_anterior": "https://www.to.gov.br/fapt/01-editais-abertos/5sy36y0lf49g",
       "pagina_editais_detectada": "https://www.to.gov.br/fapt/01-editais-abertos/5sy36y0lf49g",
-      "score": 0,
-      "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/01-editais-abertos/5sy36y0lf49g (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f595b228ad0>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))",
+      "score": 26,
+      "status_code": 200,
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 0
+      "keyword_hits": 13,
+      "preview_anchor_hits": 23
     },
     {
       "sigla": "FAPESC",
@@ -547,12 +547,12 @@
       "site_oficial_detectado": "https://fapesc.sc.gov.br",
       "pagina_editais_anterior": "https://fapesc.sc.gov.br/chamadas-abertas/",
       "pagina_editais_detectada": "https://fapesc.sc.gov.br/chamadas-abertas/",
-      "score": 147,
+      "score": 122,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 136,
-      "preview_anchor_hits": 132
+      "keyword_hits": 111,
+      "preview_anchor_hits": 120
     },
     {
       "sigla": "SERRAPILHEIRA",
@@ -561,12 +561,12 @@
       "site_oficial_detectado": "https://serrapilheira.org",
       "pagina_editais_anterior": "https://serrapilheira.org/todas-as-chamadas/",
       "pagina_editais_detectada": "https://serrapilheira.org/todas-as-chamadas/",
-      "score": 39,
+      "score": 38,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 26,
-      "preview_anchor_hits": 141
+      "keyword_hits": 25,
+      "preview_anchor_hits": 142
     }
   ],
   "candidatas": [
@@ -579,11 +579,11 @@
       "auto_activated": false,
       "site_oficial_detectado": "https://www.abdi.com.br",
       "pagina_editais_detectada": "https://www.abdi.com.br/noticias/",
-      "score": 92,
+      "score": 90,
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-08-01T13:16:52.333755-03:00"
+      "checked_at": "2026-09-01T15:38:00.300446-03:00"
     },
     {
       "sigla": "ANEEL",
@@ -598,7 +598,7 @@
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-08-01T13:16:52.333755-03:00"
+      "checked_at": "2026-09-01T15:38:00.300446-03:00"
     },
     {
       "sigla": "FUNBIO",
@@ -608,12 +608,12 @@
       "viavel_monitoramento": false,
       "auto_activated": false,
       "site_oficial_detectado": "https://www.funbio.org.br",
-      "pagina_editais_detectada": "https://www.funbio.org.br/editais/",
-      "score": 42,
+      "pagina_editais_detectada": "https://www.funbio.org.br/programas_e_projetos/acordo-bilateral-tfca/oportunidades-de-criacao-de-unidades-de-conservacao-na-caatinga/",
+      "score": 25,
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-08-01T13:16:52.333755-03:00"
+      "checked_at": "2026-09-01T15:38:00.300446-03:00"
     },
     {
       "sigla": "FGB",
@@ -628,7 +628,7 @@
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-08-01T13:16:52.333755-03:00"
+      "checked_at": "2026-09-01T15:38:00.300446-03:00"
     }
   ]
 }
