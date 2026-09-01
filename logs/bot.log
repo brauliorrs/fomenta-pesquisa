@@ -25386,3 +25386,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-01 08:44:49,402 [INFO] Tentativas de publicacao apos sync: 2
 2026-09-01 08:44:49,403 [INFO] Publicacoes concluidas apos sync: 2
 2026-09-01 08:44:49,403 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-09-01 18:09:32,191 [INFO] Inicio da execucao
+2026-09-01 18:09:37,119 [INFO] Fonte ANP retornou 1 itens
+2026-09-01 18:09:41,879 [INFO] Fonte CNPQ retornou 0 itens
+2026-09-01 18:09:42,743 [INFO] Fonte CAPES retornou 0 itens
+2026-09-01 18:09:44,512 [INFO] Fonte CONFAP retornou 12 itens
+2026-09-01 18:11:04,970 [WARNING] Falha ao enriquecer item https://fulbright.org.br/bolsas-para-brasileiros/: HTTPSConnectionPool(host='fulbright.org.br', port=443): Read timed out. (read timeout=30)
+2026-09-01 18:12:38,913 [INFO] Fonte IPEA retornou 0 itens
+2026-09-01 18:12:40,117 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-09-01 18:12:56,211 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-09-01 18:13:01,588 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-09-01 18:13:06,022 [INFO] Fonte FUNDECI retornou 0 itens
+2026-09-01 18:13:07,117 [INFO] Fonte BASA retornou 0 itens
+2026-09-01 18:13:07,937 [INFO] Fonte BNDES retornou 8 itens
+2026-09-01 18:13:20,074 [INFO] Fonte FINEP retornou 0 itens
+2026-09-01 18:13:20,528 [INFO] Fonte DECIT retornou 0 itens
+2026-09-01 18:13:21,766 [INFO] Fonte FAPESP retornou 8 itens
+2026-09-01 18:13:40,578 [INFO] Fonte FAPERJ retornou 19 itens
+2026-09-01 18:13:45,993 [INFO] Fonte FACEPE retornou 104 itens
+2026-09-01 18:16:48,973 [INFO] Fonte FAPAC retornou 29 itens
+2026-09-01 18:18:03,222 [INFO] Fonte FAPEAL retornou 3 itens
+2026-09-01 18:18:09,364 [INFO] Fonte FAPEPI retornou 0 itens
+2026-09-01 18:18:16,467 [INFO] Fonte FAPES retornou 0 itens
+2026-09-01 18:18:40,036 [INFO] Fonte FAPEG retornou 7 itens
+2026-09-01 18:19:00,833 [INFO] Fonte FAPEMA retornou 0 itens
+2026-09-01 18:19:02,952 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-09-01 18:19:06,478 [INFO] Fonte FUNDECT retornou 1 itens
+2026-09-01 18:19:10,130 [INFO] Fonte FAPESPA retornou 0 itens
+2026-09-01 18:19:11,055 [INFO] Fonte FAPESQ retornou 0 itens
+2026-09-01 18:19:17,686 [INFO] Fonte FAPESB retornou 10 itens
+2026-09-01 18:20:07,084 [INFO] Fonte FUNCAP retornou 0 itens
+2026-09-01 18:21:47,000 [INFO] Fonte FAPEAM retornou 0 itens
+2026-09-01 18:21:53,575 [INFO] Fonte FAPEAP retornou 0 itens
+2026-09-01 18:23:27,475 [INFO] Fonte FAPDF retornou 0 itens
+2026-09-01 18:23:29,934 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-09-01 18:23:36,271 [INFO] Fonte FAPPR retornou 4 itens
+2026-09-01 18:23:45,137 [INFO] Fonte FAPERGS retornou 0 itens
+2026-09-01 18:26:53,040 [INFO] Fonte FAPERN retornou 0 itens
+2026-09-01 18:26:53,854 [INFO] Fonte FAPERO retornou 0 itens
+2026-09-01 18:28:27,705 [INFO] Fonte FAPITEC retornou 0 itens
+2026-09-01 18:33:02,622 [INFO] Fonte FAPT retornou 0 itens
+2026-09-01 18:33:14,050 [INFO] Fonte FAPESC retornou 12 itens
+2026-09-01 18:33:54,146 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-09-01 18:34:56,960 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-09-01 18:34:56,983 [INFO] Total coletado: 69
+2026-09-01 18:34:56,983 [INFO] Novos: 1 | Prorrogados: 0 | Atualizados: 68 | Mantidos: 0 | Deduplicados por chave: 8
+2026-09-01 18:34:56,983 [INFO] Repostados/Publicados: 0
+2026-09-01 18:34:56,983 [INFO] Bloqueados para postagem: 0
+2026-09-01 18:34:56,983 [INFO] Expirados removidos da base: 0
+2026-09-01 18:34:56,983 [INFO] Erros por fonte: 0
+2026-09-01 18:34:56,983 [INFO] Fim da execucao
