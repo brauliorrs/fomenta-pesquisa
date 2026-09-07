@@ -26041,3 +26041,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-07 08:21:17,650 [INFO] Tentativas de publicacao apos sync: 1
 2026-09-07 08:21:17,650 [INFO] Publicacoes concluidas apos sync: 1
 2026-09-07 08:21:17,650 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-09-07 18:59:23,472 [INFO] Inicio da execucao
+2026-09-07 19:00:56,945 [INFO] Fonte ANP retornou 0 itens
+2026-09-07 19:00:58,483 [INFO] Fonte CNPQ retornou 0 itens
+2026-09-07 19:02:31,537 [INFO] Fonte CAPES retornou 0 itens
+2026-09-07 19:02:34,436 [INFO] Fonte CONFAP retornou 12 itens
+2026-09-07 19:03:12,458 [WARNING] Falha ao enriquecer item https://www.gov.br/cnpq/pt-br: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /cnpq/pt-br (Caused by NewConnectionError("HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-09-07 19:03:45,288 [WARNING] Falha ao enriquecer item https://montenegro.funcap.ce.gov.br/sugba/edital/814.pdf: HTTPSConnectionPool(host='montenegro.funcap.ce.gov.br', port=443): Max retries exceeded with url: /sugba/edital/814.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='montenegro.funcap.ce.gov.br', port=443) at 0x7f576e6ed690>, 'Connection to montenegro.funcap.ce.gov.br timed out. (connect timeout=30)'))
+2026-09-07 19:04:29,941 [WARNING] Falha ao enriquecer item https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premio-mulheres-ciencia/Edital: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premio-mulheres-ciencia/Edital (Caused by NewConnectionError("HTTPSConnection(host='www.gov.br', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-09-07 19:06:20,961 [INFO] Fonte IPEA retornou 0 itens
+2026-09-07 19:07:55,305 [INFO] Fonte FIOCRUZ retornou 0 itens
+2026-09-07 19:07:58,316 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-09-07 19:08:05,732 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-09-07 19:09:18,896 [INFO] Fonte FUNDECI retornou 0 itens
+2026-09-07 19:09:20,378 [INFO] Fonte BASA retornou 0 itens
+2026-09-07 19:09:21,519 [INFO] Fonte BNDES retornou 8 itens
+2026-09-07 19:09:35,496 [INFO] Fonte FINEP retornou 0 itens
+2026-09-07 19:10:05,512 [INFO] Fonte DECIT retornou 0 itens
+2026-09-07 19:10:07,156 [INFO] Fonte FAPESP retornou 8 itens
+2026-09-07 19:10:33,691 [INFO] Fonte FAPERJ retornou 19 itens
+2026-09-07 19:10:39,829 [INFO] Fonte FACEPE retornou 105 itens
+2026-09-07 19:17:27,264 [INFO] Fonte FAPAC retornou 0 itens
+2026-09-07 19:17:35,428 [INFO] Fonte FAPEAL retornou 3 itens
+2026-09-07 19:17:42,719 [INFO] Fonte FAPEPI retornou 0 itens
+2026-09-07 19:17:54,712 [INFO] Fonte FAPES retornou 0 itens
+2026-09-07 19:20:59,431 [INFO] Fonte FAPEG retornou 0 itens
+2026-09-07 19:21:01,649 [INFO] Fonte FAPEMA retornou 0 itens
+2026-09-07 19:22:35,820 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-09-07 19:22:40,581 [INFO] Fonte FUNDECT retornou 1 itens
+2026-09-07 19:22:54,939 [INFO] Fonte FAPESPA retornou 0 itens
+2026-09-07 19:24:32,604 [INFO] Fonte FAPESQ retornou 0 itens
+2026-09-07 19:24:36,914 [INFO] Fonte FAPESB retornou 10 itens
+2026-09-07 19:25:25,492 [INFO] Fonte FUNCAP retornou 0 itens
+2026-09-07 19:25:34,338 [INFO] Fonte FAPEAM retornou 0 itens
+2026-09-07 19:25:37,212 [INFO] Fonte FAPEAP retornou 0 itens
+2026-09-07 19:27:12,413 [INFO] Fonte FAPDF retornou 0 itens
+2026-09-07 19:27:17,120 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-09-07 19:27:24,666 [INFO] Fonte FAPPR retornou 4 itens
+2026-09-07 19:27:38,120 [INFO] Fonte FAPERGS retornou 0 itens
+2026-09-07 19:30:46,610 [INFO] Fonte FAPERN retornou 0 itens
+2026-09-07 19:35:26,247 [INFO] Fonte FAPERO retornou 0 itens
+2026-09-07 19:37:00,243 [INFO] Fonte FAPITEC retornou 0 itens
+2026-09-07 19:41:35,671 [INFO] Fonte FAPT retornou 0 itens
+2026-09-07 19:41:52,303 [INFO] Fonte FAPESC retornou 14 itens
+2026-09-07 19:42:44,186 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-09-07 19:43:42,588 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-09-07 19:43:42,612 [INFO] Total coletado: 59
+2026-09-07 19:43:42,612 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 59 | Mantidos: 0 | Deduplicados por chave: 9
+2026-09-07 19:43:42,612 [INFO] Repostados/Publicados: 0
+2026-09-07 19:43:42,612 [INFO] Bloqueados para postagem: 0
+2026-09-07 19:43:42,612 [INFO] Expirados removidos da base: 0
+2026-09-07 19:43:42,612 [INFO] Erros por fonte: 0
+2026-09-07 19:43:42,612 [INFO] Fim da execucao
