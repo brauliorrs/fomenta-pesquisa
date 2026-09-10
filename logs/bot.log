@@ -26430,3 +26430,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-10 18:30:11,039 [INFO] Expirados removidos da base: 0
 2026-09-10 18:30:11,039 [INFO] Erros por fonte: 0
 2026-09-10 18:30:11,039 [INFO] Fim da execucao
+2026-09-10 18:30:16,159 [INFO] Ja houve publicacao de feed hoje. Novos editais aguardam o proximo carrossel diario.
+2026-09-10 18:30:16,159 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_e_inovacao_3a5cf529 usando asset publico draft_fundacao_de_amparo_a_pesquisa_e_inovacao_3a5cf529.jpg
+2026-09-10 18:30:29,567 [INFO] Tentativas de publicacao apos sync: 1
+2026-09-10 18:30:29,567 [INFO] Publicacoes concluidas apos sync: 1
+2026-09-10 18:30:29,567 [INFO] Novos editais publicados no feed hoje: 1/10.
