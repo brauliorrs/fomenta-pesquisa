@@ -7,7 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e7d9da05.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_e7d9da05_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC N.º 37/2026 PROGRAMA DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO PARA APOIO AOS GRUPOS DE PESQUISA DA UDESC
-Prazo encerra em 7 dias.
+Prazo encerra em 6 dias.
 
 A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 18/06/2026 e prazo final em 17/09/2026.
 
