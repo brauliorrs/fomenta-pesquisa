@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T05:08:24.266459-03:00",
+  "generated_at": "2026-09-12T14:40:54.181509-03:00",
   "total_prontos": 53,
   "itens": [
     {
@@ -53,7 +53,7 @@
       "fonte": "FAPERJ",
       "orgao": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
       "prazo": "2026-09-15",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-09-12T05:08:24.266459-03:00",
       "quantidade_postagens": 1,
@@ -75,7 +75,7 @@
       "fonte": "FAPERJ",
       "orgao": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
       "prazo": "2026-09-15",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-09-12T05:08:24.266459-03:00",
       "quantidade_postagens": 1,
@@ -97,7 +97,7 @@
       "fonte": "FAPERJ",
       "orgao": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
       "prazo": "2026-09-15",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-09-12T05:08:24.266459-03:00",
       "quantidade_postagens": 1,
@@ -119,7 +119,7 @@
       "fonte": "FAPERJ",
       "orgao": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
       "prazo": "2026-09-15",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-09-12T05:08:24.266459-03:00",
       "quantidade_postagens": 1,
