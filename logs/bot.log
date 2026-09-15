@@ -26870,3 +26870,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-14 20:11:53,337 [INFO] Tentativas de publicacao apos sync: 3
 2026-09-14 20:11:53,337 [INFO] Publicacoes concluidas apos sync: 3
 2026-09-14 20:11:53,337 [INFO] Novos editais publicados no feed hoje: 2/10.
+2026-09-15 08:23:34,282 [INFO] Inicio da execucao
+2026-09-15 08:23:37,974 [INFO] Fonte ANP retornou 1 itens
+2026-09-15 08:23:44,981 [INFO] Fonte CNPQ retornou 0 itens
+2026-09-15 08:23:45,713 [INFO] Fonte CAPES retornou 0 itens
+2026-09-15 08:25:05,673 [INFO] Fonte CONFAP retornou 0 itens
+2026-09-15 08:25:06,497 [INFO] Fonte IPEA retornou 10 itens
+2026-09-15 08:25:44,769 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16434-chamada-publica-n-023-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16434-chamada-publica-n-023-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f2c2652d410>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-09-15 08:25:45,802 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-09-15 08:26:01,164 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-09-15 08:26:06,474 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-09-15 08:26:09,006 [INFO] Fonte FUNDECI retornou 0 itens
+2026-09-15 08:26:10,214 [INFO] Fonte BASA retornou 0 itens
+2026-09-15 08:26:11,209 [INFO] Fonte BNDES retornou 8 itens
+2026-09-15 08:26:20,861 [INFO] Fonte FINEP retornou 0 itens
+2026-09-15 08:26:21,327 [INFO] Fonte DECIT retornou 0 itens
+2026-09-15 08:26:22,607 [INFO] Fonte FAPESP retornou 10 itens
+2026-09-15 08:26:47,191 [INFO] Fonte FAPERJ retornou 23 itens
+2026-09-15 08:27:04,436 [INFO] Fonte FACEPE retornou 107 itens
+2026-09-15 08:30:10,807 [INFO] Fonte FAPAC retornou 29 itens
+2026-09-15 08:31:25,263 [INFO] Fonte FAPEAL retornou 3 itens
+2026-09-15 08:31:33,961 [INFO] Fonte FAPEPI retornou 0 itens
+2026-09-15 08:31:41,412 [INFO] Fonte FAPES retornou 0 itens
+2026-09-15 08:32:03,705 [INFO] Fonte FAPEG retornou 6 itens
+2026-09-15 08:32:19,266 [INFO] Fonte FAPEMA retornou 0 itens
+2026-09-15 08:32:21,617 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-09-15 08:32:25,152 [INFO] Fonte FUNDECT retornou 1 itens
+2026-09-15 08:32:37,405 [INFO] Fonte FAPESPA retornou 0 itens
+2026-09-15 08:34:13,023 [INFO] Fonte FAPESQ retornou 0 itens
+2026-09-15 08:34:20,630 [INFO] Fonte FAPESB retornou 10 itens
+2026-09-15 08:35:09,455 [INFO] Fonte FUNCAP retornou 0 itens
+2026-09-15 08:35:20,305 [INFO] Fonte FAPEAM retornou 0 itens
+2026-09-15 08:35:22,689 [INFO] Fonte FAPEAP retornou 0 itens
+2026-09-15 08:36:56,852 [INFO] Fonte FAPDF retornou 0 itens
+2026-09-15 08:36:59,714 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-09-15 08:37:07,353 [INFO] Fonte FAPPR retornou 4 itens
+2026-09-15 08:37:18,046 [INFO] Fonte FAPERGS retornou 0 itens
+2026-09-15 08:40:25,732 [INFO] Fonte FAPERN retornou 0 itens
+2026-09-15 08:40:27,088 [INFO] Fonte FAPERO retornou 0 itens
+2026-09-15 08:42:00,897 [INFO] Fonte FAPITEC retornou 0 itens
+2026-09-15 08:46:35,809 [INFO] Fonte FAPT retornou 0 itens
+2026-09-15 08:46:44,544 [INFO] Fonte FAPESC retornou 13 itens
+2026-09-15 08:47:24,599 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-09-15 08:48:27,496 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-09-15 08:48:27,519 [INFO] Total coletado: 71
+2026-09-15 08:48:27,519 [INFO] Novos: 6 | Prorrogados: 0 | Atualizados: 65 | Mantidos: 0 | Deduplicados por chave: 3
+2026-09-15 08:48:27,519 [INFO] Repostados/Publicados: 0
+2026-09-15 08:48:27,519 [INFO] Bloqueados para postagem: 0
+2026-09-15 08:48:27,519 [INFO] Expirados removidos da base: 3
+2026-09-15 08:48:27,519 [INFO] Erros por fonte: 0
+2026-09-15 08:48:27,519 [INFO] Fim da execucao
