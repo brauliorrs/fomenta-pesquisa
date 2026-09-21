@@ -27520,3 +27520,57 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-20 18:22:16,507 [INFO] Tentativas de publicacao apos sync: 1
 2026-09-20 18:22:16,508 [INFO] Publicacoes concluidas apos sync: 1
 2026-09-20 18:22:16,508 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-09-21 08:35:08,158 [INFO] Inicio da execucao
+2026-09-21 08:35:13,047 [INFO] Fonte ANP retornou 1 itens
+2026-09-21 08:35:17,674 [INFO] Fonte CNPQ retornou 0 itens
+2026-09-21 08:35:18,466 [INFO] Fonte CAPES retornou 0 itens
+2026-09-21 08:35:20,637 [INFO] Fonte CONFAP retornou 13 itens
+2026-09-21 08:35:48,036 [WARNING] Falha ao enriquecer item https://news.confap.org.br/divulgados-os-finalistas-do-premio-confap-de-cienciatecnologia-inovacao-professora-niede-guidon-5a-edicao/: 503 Server Error: Service Unavailable for url: https://news.confap.org.br/divulgados-os-finalistas-do-premio-confap-de-cienciatecnologia-inovacao-professora-niede-guidon-5a-edicao/
+2026-09-21 08:35:48,514 [WARNING] Falha ao enriquecer item https://news.confap.org.br/profix-cb-faps-de-16-estados-ja-lancaram-chamadas-de-fixacao-de-doutores-confira-os-editais/: 503 Server Error: Service Unavailable for url: https://news.confap.org.br/profix-cb-faps-de-16-estados-ja-lancaram-chamadas-de-fixacao-de-doutores-confira-os-editais/
+2026-09-21 08:36:03,475 [INFO] Fonte IPEA retornou 10 itens
+2026-09-21 08:36:37,942 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16472-chamada-publica-n-026-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16472-chamada-publica-n-026-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f8abe40ff90>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-09-21 08:37:09,809 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16464-processo-seletivo-simplificado-para-pesquisadores-internacionais-ipea-pipa: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16464-processo-seletivo-simplificado-para-pesquisadores-internacionais-ipea-pipa (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f8abf371290>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-09-21 08:37:40,046 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16457-chamada-publica-025-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16457-chamada-publica-025-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f8abf3706d0>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-09-21 08:37:41,285 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-09-21 08:37:58,086 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-09-21 08:38:03,162 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-09-21 08:38:05,069 [INFO] Fonte FUNDECI retornou 0 itens
+2026-09-21 08:38:06,161 [INFO] Fonte BASA retornou 0 itens
+2026-09-21 08:38:07,152 [INFO] Fonte BNDES retornou 8 itens
+2026-09-21 08:38:23,138 [INFO] Fonte FINEP retornou 0 itens
+2026-09-21 08:38:23,609 [INFO] Fonte DECIT retornou 0 itens
+2026-09-21 08:38:24,882 [INFO] Fonte FAPESP retornou 12 itens
+2026-09-21 08:38:52,508 [INFO] Fonte FAPERJ retornou 23 itens
+2026-09-21 08:40:30,312 [INFO] Fonte FACEPE retornou 0 itens
+2026-09-21 08:40:32,416 [INFO] Fonte FAPAC retornou 29 itens
+2026-09-21 08:41:49,388 [INFO] Fonte FAPEAL retornou 3 itens
+2026-09-21 08:41:58,026 [INFO] Fonte FAPEPI retornou 0 itens
+2026-09-21 08:42:05,395 [INFO] Fonte FAPES retornou 0 itens
+2026-09-21 08:42:40,878 [INFO] Fonte FAPEG retornou 6 itens
+2026-09-21 08:42:58,222 [INFO] Fonte FAPEMA retornou 0 itens
+2026-09-21 08:43:00,120 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-09-21 08:43:03,282 [INFO] Fonte FUNDECT retornou 1 itens
+2026-09-21 08:43:11,141 [INFO] Fonte FAPESPA retornou 0 itens
+2026-09-21 08:44:46,799 [INFO] Fonte FAPESQ retornou 0 itens
+2026-09-21 08:44:51,114 [INFO] Fonte FAPESB retornou 10 itens
+2026-09-21 08:45:39,104 [INFO] Fonte FUNCAP retornou 0 itens
+2026-09-21 08:45:46,978 [INFO] Fonte FAPEAM retornou 0 itens
+2026-09-21 08:45:49,194 [INFO] Fonte FAPEAP retornou 0 itens
+2026-09-21 08:47:23,938 [INFO] Fonte FAPDF retornou 0 itens
+2026-09-21 08:47:25,930 [INFO] Fonte FAPEMIG retornou 2 itens
+2026-09-21 08:47:33,350 [INFO] Fonte FAPPR retornou 4 itens
+2026-09-21 08:47:44,486 [INFO] Fonte FAPERGS retornou 0 itens
+2026-09-21 08:50:52,156 [INFO] Fonte FAPERN retornou 0 itens
+2026-09-21 08:50:53,120 [INFO] Fonte FAPERO retornou 0 itens
+2026-09-21 08:52:27,478 [INFO] Fonte FAPITEC retornou 0 itens
+2026-09-21 08:57:02,413 [INFO] Fonte FAPT retornou 0 itens
+2026-09-21 08:57:11,077 [INFO] Fonte FAPESC retornou 13 itens
+2026-09-21 08:57:44,105 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-09-21 08:58:40,962 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-09-21 08:58:40,985 [INFO] Total coletado: 55
+2026-09-21 08:58:40,985 [INFO] Novos: 2 | Prorrogados: 0 | Atualizados: 53 | Mantidos: 0 | Deduplicados por chave: 10
+2026-09-21 08:58:40,985 [INFO] Repostados/Publicados: 0
+2026-09-21 08:58:40,985 [INFO] Bloqueados para postagem: 0
+2026-09-21 08:58:40,985 [INFO] Expirados removidos da base: 1
+2026-09-21 08:58:40,985 [INFO] Erros por fonte: 0
+2026-09-21 08:58:40,985 [INFO] Fim da execucao
