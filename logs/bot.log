@@ -27631,3 +27631,54 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-21 20:14:25,642 [INFO] Tentativas de publicacao apos sync: 1
 2026-09-21 20:14:25,642 [INFO] Publicacoes concluidas apos sync: 1
 2026-09-21 20:14:25,642 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-09-22 08:14:59,574 [INFO] Inicio da execucao
+2026-09-22 08:15:04,398 [INFO] Fonte ANP retornou 1 itens
+2026-09-22 08:15:09,137 [INFO] Fonte CNPQ retornou 0 itens
+2026-09-22 08:15:10,065 [INFO] Fonte CAPES retornou 0 itens
+2026-09-22 08:15:12,294 [INFO] Fonte CONFAP retornou 13 itens
+2026-09-22 08:16:06,859 [INFO] Fonte IPEA retornou 10 itens
+2026-09-22 08:16:39,455 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16503-chamada-publica-n-029-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16503-chamada-publica-n-029-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7fe517d03750>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-09-22 08:17:12,969 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16471-selecao-publica-ipead-n-04-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16471-selecao-publica-ipead-n-04-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7fe517976f50>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-09-22 08:17:15,054 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-09-22 08:17:30,676 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-09-22 08:17:35,864 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-09-22 08:17:37,659 [INFO] Fonte FUNDECI retornou 0 itens
+2026-09-22 08:17:38,773 [INFO] Fonte BASA retornou 0 itens
+2026-09-22 08:17:39,605 [INFO] Fonte BNDES retornou 8 itens
+2026-09-22 08:17:51,772 [INFO] Fonte FINEP retornou 0 itens
+2026-09-22 08:17:52,241 [INFO] Fonte DECIT retornou 0 itens
+2026-09-22 08:18:54,926 [INFO] Fonte FAPESP retornou 12 itens
+2026-09-22 08:22:56,801 [INFO] Fonte FAPERJ retornou 23 itens
+2026-09-22 08:23:02,608 [INFO] Fonte FACEPE retornou 108 itens
+2026-09-22 08:26:11,119 [INFO] Fonte FAPAC retornou 29 itens
+2026-09-22 08:27:22,668 [INFO] Fonte FAPEAL retornou 3 itens
+2026-09-22 08:27:30,475 [INFO] Fonte FAPEPI retornou 0 itens
+2026-09-22 08:27:37,973 [INFO] Fonte FAPES retornou 0 itens
+2026-09-22 08:27:49,007 [INFO] Fonte FAPEG retornou 6 itens
+2026-09-22 08:28:05,141 [INFO] Fonte FAPEMA retornou 0 itens
+2026-09-22 08:28:06,938 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-09-22 08:28:37,431 [INFO] Fonte FUNDECT retornou 0 itens
+2026-09-22 08:28:39,663 [INFO] Fonte FAPESPA retornou 0 itens
+2026-09-22 08:30:14,924 [INFO] Fonte FAPESQ retornou 0 itens
+2026-09-22 08:30:23,686 [INFO] Fonte FAPESB retornou 10 itens
+2026-09-22 08:31:14,947 [INFO] Fonte FUNCAP retornou 0 itens
+2026-09-22 08:31:22,136 [INFO] Fonte FAPEAM retornou 0 itens
+2026-09-22 08:31:24,332 [INFO] Fonte FAPEAP retornou 0 itens
+2026-09-22 08:32:58,510 [INFO] Fonte FAPDF retornou 0 itens
+2026-09-22 08:33:04,250 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-09-22 08:33:06,242 [INFO] Fonte FAPPR retornou 4 itens
+2026-09-22 08:33:17,422 [INFO] Fonte FAPERGS retornou 0 itens
+2026-09-22 08:36:25,310 [INFO] Fonte FAPERN retornou 0 itens
+2026-09-22 08:36:26,253 [INFO] Fonte FAPERO retornou 0 itens
+2026-09-22 08:37:59,966 [INFO] Fonte FAPITEC retornou 0 itens
+2026-09-22 08:42:35,803 [INFO] Fonte FAPT retornou 0 itens
+2026-09-22 08:42:41,477 [INFO] Fonte FAPESC retornou 8 itens
+2026-09-22 08:43:13,713 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-09-22 08:44:16,578 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-09-22 08:44:16,601 [INFO] Total coletado: 70
+2026-09-22 08:44:16,601 [INFO] Novos: 1 | Prorrogados: 1 | Atualizados: 68 | Mantidos: 0 | Deduplicados por chave: 8
+2026-09-22 08:44:16,601 [INFO] Repostados/Publicados: 0
+2026-09-22 08:44:16,601 [INFO] Bloqueados para postagem: 0
+2026-09-22 08:44:16,602 [INFO] Expirados removidos da base: 0
+2026-09-22 08:44:16,602 [INFO] Erros por fonte: 0
+2026-09-22 08:44:16,602 [INFO] Fim da execucao
