@@ -1,9 +1,31 @@
 {
-  "generated_at": "2026-09-25T05:56:21.470623-03:00",
-  "total_prontos": 45,
+  "generated_at": "2026-09-25T16:07:41.422373-03:00",
+  "total_prontos": 46,
   "itens": [
     {
       "posicao_fila": 1,
+      "id": "conselho_nacional_das_fundacoes_estaduai_c98f3518",
+      "titulo": "Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I",
+      "fonte": "CONFAP",
+      "orgao": "Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa",
+      "prazo": "2026-09-25",
+      "status": "novo",
+      "score_editorial": 100,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 0,
+      "link": "https://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/",
+      "caption": "Oportunidade no radar: Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I\nÚltimo dia de inscrição.\n\nA oportunidade está aberta para pesquisadores e instituições de pesquisa na categoria pesquisa, com prazo final em 25/09/2026.\n\nInstituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa\nPúblico-alvo: Pesquisadores e instituições de pesquisa\nTipo: Pesquisa\nAbertura das inscrições: Não informado\nPrazo final: 25/09/2026\n\nLink oficial do edital:\nhttps://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Confap #Projetosdepesquisa #Inovacao #Empreendedorismo #Pesquisadores",
+      "card_header": "EDITAL CONFAP",
+      "card_title": "Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à",
+      "card_deadline": "ÚLTIMO DIA",
+      "card_summary": "Voltado a pesquisadores e instituições de pesquisa. Prazo final em 25/09/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 2,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_24896245",
       "titulo": "• Prazo de envio de propostas prorrogado até o dia 25 de setembro de 2026- Dispensa Eletrônica nº0227-09/26 – Contratação de Consultoria e Mentoria para Suporte à Execução do Programa Centelha PE",
       "fonte": "FACEPE",
@@ -25,7 +47,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 2,
+      "posicao_fila": 3,
       "id": "fundacao_carlos_chagas_filho_de_amparo_a_f0bddd04",
       "titulo": "Edital FAPERJ Nº15/2026 – Programa Prioridade Indústria RJ 4.0",
       "fonte": "FAPERJ",
@@ -47,13 +69,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 3,
+      "posicao_fila": 4,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_f8577d41",
       "titulo": "• Novo prazo de submissão do Edital nº 28/2026 – APQ Universal",
       "fonte": "FACEPE",
       "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
       "prazo": "2026-09-26",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-09-21T05:58:45.253972-03:00",
       "quantidade_postagens": 4,
@@ -69,7 +91,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 4,
+      "posicao_fila": 5,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_221541db",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC N.º 39/2026 NÚCLEO CATARINENSE DE MOBILIDADE ELÉTRICA (NCME)",
       "fonte": "FAPESC",
@@ -91,7 +113,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 5,
+      "posicao_fila": 6,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__70b5579d",
       "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica 1ª Rodada 2026 – Fase 1",
       "fonte": "FAPESP",
@@ -113,7 +135,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 6,
+      "posicao_fila": 7,
       "id": "financiadora_de_estudos_e_projetos_finep_74b0dc4f",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
       "fonte": "FINEP",
@@ -135,7 +157,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 7,
+      "posicao_fila": 8,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__c8236564",
       "titulo": "Chamada Pública Complementar nº 17/2026 - Edital Complementar à Chamada CONFAP-WBI (Wallonie Bruxelles International)",
       "fonte": "FAPEG",
@@ -157,7 +179,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 8,
+      "posicao_fila": 9,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89a27b18",
       "titulo": "Edital do Programa FICA-SP (Fixação e Incentivo à Carreira Acadêmica em São Paulo)",
       "fonte": "FAPESP",
@@ -179,7 +201,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 9,
+      "posicao_fila": 10,
       "id": "financiadora_de_estudos_e_projetos_finep_35401209",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
       "fonte": "FINEP",
@@ -201,7 +223,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 10,
+      "posicao_fila": 11,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__14b56b04",
       "titulo": "Chamada Pública Fapeg/CNPq/Capes nº 16/2026 - Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
       "fonte": "FAPEG",
@@ -223,7 +245,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 11,
+      "posicao_fila": 12,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_c10cf2b8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 52/2026 À CHAMADA CONJUNTA CONFAP SERRAPILHEIRA 09/2025 “GRANDE CIÊNCIA SE FAZ COM GRANDES PERGUNTAS” APOIO A PROJETOS DE PESQUISA",
       "fonte": "FAPESC",
@@ -245,7 +267,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 12,
+      "posicao_fila": 13,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_4be24772",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 53/2026 AO PROGRAMA DE MOBILIDADE INTERNACIONAL DO GCUB (GCUB-MOB)",
       "fonte": "FAPESC",
@@ -267,7 +289,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 13,
+      "posicao_fila": 14,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__551c4408",
       "titulo": "Auxílio à Inovação Regular – Iniciação Tecnológica",
       "fonte": "FAPESP",
@@ -289,7 +311,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 14,
+      "posicao_fila": 15,
       "id": "conselho_nacional_das_fundacoes_estaduai_22a86411",
       "titulo": "CONFAP e CDTI lançam chamada 2026-2027 para apoiar projetos colaborativos de pesquisa e inovação tecnológica entre instituições do Brasil e da Espanha",
       "fonte": "CONFAP",
@@ -311,7 +333,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 15,
+      "posicao_fila": 16,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__9ae53a59",
       "titulo": "PIPE Jornada Tecnológica Indústria do Futuro – Fase 1",
       "fonte": "FAPESP",
@@ -333,7 +355,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 16,
+      "posicao_fila": 17,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_0908e50b",
       "titulo": "30/2026 -",
       "fonte": "FACEPE",
@@ -355,13 +377,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 17,
+      "posicao_fila": 18,
       "id": "fundacao_carlos_chagas_filho_de_amparo_a_e0b7d488",
       "titulo": "Edital FAPERJ Nº 18/2026 – Programa de Auxílio à Pesquisa em Obesidade Para Pesquisadores CNE/FAPERJ ou CNPq Níveis A ou B com Experiência Comprovada em Redes de Pesquisas Consolidadas com no Mínimo 5 Pesquisadores Associados",
       "fonte": "FAPERJ",
       "orgao": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
       "prazo": "2026-10-12",
-      "status": "novo",
+      "status": "atualizado",
       "score_editorial": 100,
       "ultima_postagem": "2026-09-25T05:56:21.470623-03:00",
       "quantidade_postagens": 1,
@@ -377,7 +399,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 18,
+      "posicao_fila": 19,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__c86a28c9",
       "titulo": "Chamada Pública Fapeg/ Senar GO nº 18/2026 - Programa Acelera Campo 2026",
       "fonte": "FAPEG",
@@ -399,7 +421,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 19,
+      "posicao_fila": 20,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ecd29fa0",
       "titulo": "Chamada de Propostas para o Programa \"Generic Call for Proposals 2027\"",
       "fonte": "FAPESP",
@@ -421,7 +443,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 20,
+      "posicao_fila": 21,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_a1e235ea",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/SSP N.º 41/2026 PROGRAMA DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA EM SEGURANÇA PÚBLICA DE SANTA CATARINA — INOVASEG/SC",
       "fonte": "FAPESC",
@@ -443,7 +465,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 21,
+      "posicao_fila": 22,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__b1d1890a",
       "titulo": "Programa Centelha 3 - Programa Nacional de Apoio à Geração de Empreendimentos Inovadores",
       "fonte": "FAPEMIG",
@@ -465,7 +487,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 22,
+      "posicao_fila": 23,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__a00484ba",
       "titulo": "Programa de Apoio à Formação de Núcleos de Excelência – FAPESP-MCTI/CNPq-PRONEX – Chamada 2026",
       "fonte": "FAPESP",
@@ -487,7 +509,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 23,
+      "posicao_fila": 24,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_fdfc63b1",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/SED N.º 54/2026 PROGRAMA DE FOMENTO À PESQUISA E INOVAÇÃO PARA O DESENVOLVIMENTO DA EDUCAÇÃO CATARINENSE",
       "fonte": "FAPESC",
@@ -509,7 +531,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 24,
+      "posicao_fila": 25,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89071ad5",
       "titulo": "Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular",
       "fonte": "FAPESP",
@@ -531,7 +553,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 25,
+      "posicao_fila": 26,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__c286716f",
       "titulo": "SPRINT 2026",
       "fonte": "FAPESP",
@@ -553,7 +575,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 26,
+      "posicao_fila": 27,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ae2113c8",
       "titulo": "EDITAL Nº 003/2026 – PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL ( PROFIX-CB)",
       "fonte": "FAPEPI",
@@ -575,7 +597,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 27,
+      "posicao_fila": 28,
       "id": "conselho_nacional_das_fundacoes_estaduai_0e43c66f",
       "titulo": "Facepe lança edital Mães Cientistas de Pernambuco (nº 16/2026)",
       "fonte": "CONFAP",
@@ -597,7 +619,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 28,
+      "posicao_fila": 29,
       "id": "conselho_nacional_das_fundacoes_estaduai_dde3686e",
       "titulo": "SBPC abre inscrições para o 8º Prêmio Carolina Bori Ciência & Mulher",
       "fonte": "CONFAP",
@@ -619,7 +641,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 29,
+      "posicao_fila": 30,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_e0fbc64f",
       "titulo": "16/2026 -",
       "fonte": "FACEPE",
@@ -641,7 +663,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 30,
+      "posicao_fila": 31,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_01b454f4",
       "titulo": "• Novo Cronograma do Edital Nº 18/2025-Facepe 3ª fase do Pró-Startups Operação",
       "fonte": "FACEPE",
@@ -663,7 +685,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 31,
+      "posicao_fila": 32,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__e6c3cdfa",
       "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica Transição Energética – Fase 1",
       "fonte": "FAPESP",
@@ -685,7 +707,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 32,
+      "posicao_fila": 33,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8f0abe05",
       "titulo": "EDITAL DE CHAMADA PÚBLICA FAPESC/CNPq/CAPES N.º 55/2026 PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL – PROFIX-CB",
       "fonte": "FAPESC",
@@ -707,7 +729,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 33,
+      "posicao_fila": 34,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__84be84f4",
       "titulo": "EDITAL Nº 006/2026 – PROGRAMA DE BOLSAS DE INICIAÇÃO CIENTÍFICA DA FAPEPI – PBIC",
       "fonte": "FAPEPI",
@@ -729,7 +751,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 34,
+      "posicao_fila": 35,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__7140ef22",
       "titulo": "Aperfeiçoamento de especialistas que atuam em museus e instituições de salvaguarda e comunicação de acervos",
       "fonte": "FAPESP",
@@ -751,7 +773,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 35,
+      "posicao_fila": 36,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25",
       "titulo": "FAPESP / M-ERA.NET 2026",
       "fonte": "FAPESP",
@@ -773,7 +795,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 36,
+      "posicao_fila": 37,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89490f8a",
       "titulo": "Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais",
       "fonte": "FAPESP",
@@ -795,7 +817,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 37,
+      "posicao_fila": 38,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__feaa58d3",
       "titulo": "Chamada de Propostas – Programa Desafios da Amazônia",
       "fonte": "FAPESP",
@@ -817,7 +839,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 38,
+      "posicao_fila": 39,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef",
       "titulo": "EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO PIAUÍ (PDCTR-PI)",
       "fonte": "FAPEPI",
@@ -839,7 +861,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 39,
+      "posicao_fila": 40,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -861,7 +883,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 40,
+      "posicao_fila": 41,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -883,7 +905,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 41,
+      "posicao_fila": 42,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -905,7 +927,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 42,
+      "posicao_fila": 43,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -927,7 +949,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 43,
+      "posicao_fila": 44,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -949,7 +971,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 44,
+      "posicao_fila": 45,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
@@ -971,7 +993,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 45,
+      "posicao_fila": 46,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e",
       "titulo": "Fapern lança edital para vaga remanescente com atuação em Mossoró",
       "fonte": "FAPERN",
