@@ -28060,3 +28060,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-09-25 19:29:43,824 [INFO] Expirados removidos da base: 0
 2026-09-25 19:29:43,824 [INFO] Erros por fonte: 0
 2026-09-25 19:29:43,824 [INFO] Fim da execucao
+2026-09-25 19:30:48,612 [INFO] Ja houve publicacao de feed hoje. Novos editais aguardam o proximo carrossel diario.
+2026-09-25 19:30:48,612 [INFO] Tentando repostar story diario para edital valido fundacao_carlos_chagas_filho_de_amparo_a_f0bddd04 usando asset publico draft_fundacao_carlos_chagas_filho_de_amparo_a_f0bddd04.jpg
+2026-09-25 19:31:01,397 [INFO] Tentativas de publicacao apos sync: 1
+2026-09-25 19:31:01,397 [INFO] Publicacoes concluidas apos sync: 1
+2026-09-25 19:31:01,397 [INFO] Novos editais publicados no feed hoje: 1/10.
