@@ -1,23 +1,23 @@
 [MOCK INSTAGRAM DRAFT]
-id: fundacao_de_amparo_a_pesquisa_do_estado__89490f8a
+id: fundacao_de_amparo_a_pesquisa_do_estado__9d78ff4b
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-11-19
-card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__89490f8a.jpg
-card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__89490f8a_story.jpg
+prazo: 2026-12-11
+card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__9d78ff4b.jpg
+card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__9d78ff4b_story.jpg
 
-Oportunidade no radar: Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais
+Oportunidade no radar: Chamada de Propostas Bolsa Estágio de Pesquisa no Exterior (BEPE) Iniciação Científica
 
-Áreas: consultar chamada.
+Áreas: todas.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas
-Tipo: Bolsa
-Abertura das inscrições: Não informado
-Prazo final: 19/11/2026
+Tipo: Pesquisa
+Abertura das inscrições: 28/09/2026
+Prazo final: 11/12/2026
 
 Link oficial do edital:
-https://fapesp.br/18389
+https://fapesp.br/18416
 
 Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
 No post, o link do edital e os detalhes ficam logo abaixo na legenda.
