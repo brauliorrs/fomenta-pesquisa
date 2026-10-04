@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T06:47:42.345764-03:00",
+  "generated_at": "2026-10-04T15:31:46.461826-03:00",
   "total_prontos": 44,
   "itens": [
     {
@@ -97,7 +97,7 @@
       "fonte": "FACEPE",
       "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
       "prazo": "2026-10-05",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-10-03T15:56:11.273590-03:00",
       "quantidade_postagens": 7,
@@ -686,7 +686,7 @@
     },
     {
       "posicao_fila": 32,
-      "id": "conselho_nacional_das_fundacoes_estaduai_f9806f47",
+      "id": "conselho_nacional_das_fundacoes_estaduai_f1f378cb",
       "titulo": "Parceria Europeia FOREST lança sua primeira Chamada Transnacional Conjunta",
       "fonte": "CONFAP",
       "orgao": "Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa",
@@ -697,8 +697,8 @@
       "quantidade_postagens": 1,
       "instagram_feed_publicado": true,
       "urgencia_dias": 59,
-      "link": "https://forest-partnership.eu/jointcall2026/",
-      "caption": "Oportunidade no radar: Parceria Europeia FOREST lança sua primeira Chamada Transnacional Conjunta\n\nA oportunidade está aberta para pesquisadores e instituições de pesquisa na categoria pesquisa, com abertura registrada em 15/09/2026 e prazo final em 02/12/2026.\n\nInstituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa\nPúblico-alvo: Pesquisadores e instituições de pesquisa\nTipo: Pesquisa\nAbertura das inscrições: 15/09/2026\nPrazo final: 02/12/2026\n\nLink oficial do edital:\nhttps://forest-partnership.eu/jointcall2026/\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Confap #Projetosdepesquisa #Chamadapublica #Inovacao #Empreendedorismo",
+      "link": "https://forest-partnership.eu/wp-content/uploads/2026/10/FOREST_JC2026_National_Webinars.pdf",
+      "caption": "Oportunidade no radar: Parceria Europeia FOREST lança sua primeira Chamada Transnacional Conjunta\n\nA oportunidade está aberta para pesquisadores e instituições de pesquisa na categoria pesquisa, com abertura registrada em 15/09/2026 e prazo final em 02/12/2026.\n\nInstituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa\nPúblico-alvo: Pesquisadores e instituições de pesquisa\nTipo: Pesquisa\nAbertura das inscrições: 15/09/2026\nPrazo final: 02/12/2026\n\nLink oficial do edital:\nhttps://forest-partnership.eu/wp-content/uploads/2026/10/FOREST_JC2026_National_Webinars.pdf\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Confap #Projetosdepesquisa #Chamadapublica #Pesquisadores #Instituicoesdepesquisa",
       "card_header": "EDITAL CONFAP",
       "card_title": "Parceria Europeia FOREST lança sua primeira Transnacional Conjunta",
       "card_deadline": "PRAZO: 02/12",
