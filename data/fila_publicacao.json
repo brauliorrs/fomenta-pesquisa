@@ -1,9 +1,31 @@
 {
-  "generated_at": "2026-10-05T07:26:10.869296-03:00",
+  "generated_at": "2026-10-05T18:49:27.050270-03:00",
   "total_prontos": 44,
   "itens": [
     {
       "posicao_fila": 1,
+      "id": "conselho_nacional_das_fundacoes_estaduai_c98f3518",
+      "titulo": "Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I",
+      "fonte": "CONFAP",
+      "orgao": "Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa",
+      "prazo": "2026-10-05",
+      "status": "prorrogado",
+      "score_editorial": 100,
+      "ultima_postagem": "2026-09-29T06:53:30.322707-03:00",
+      "quantidade_postagens": 1,
+      "instagram_feed_publicado": true,
+      "urgencia_dias": 0,
+      "link": "https://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/",
+      "caption": "Oportunidade no radar: Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I\nÚltimo dia de inscrição.\n\nA oportunidade está aberta para pesquisadores e instituições de pesquisa na categoria pesquisa, com prazo final em 05/10/2026.\n\nInstituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa\nPúblico-alvo: Pesquisadores e instituições de pesquisa\nTipo: Pesquisa\nAbertura das inscrições: Não informado\nPrazo final: 05/10/2026\n\nLink oficial do edital:\nhttps://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Confap #Projetosdepesquisa #Inovacao #Empreendedorismo #Pesquisadores",
+      "card_header": "EDITAL CONFAP",
+      "card_title": "Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à",
+      "card_deadline": "ÚLTIMO DIA",
+      "card_summary": "Voltado a pesquisadores e instituições de pesquisa. Prazo final em 05/10/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 2,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_4be24772",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 53/2026 AO PROGRAMA DE MOBILIDADE INTERNACIONAL DO GCUB (GCUB-MOB)",
       "fonte": "FAPESC",
@@ -25,7 +47,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 2,
+      "posicao_fila": 3,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_346e6852",
       "titulo": "32/2026 -",
       "fonte": "FACEPE",
@@ -47,7 +69,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 3,
+      "posicao_fila": 4,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_06fadc9a",
       "titulo": "33/2026 -",
       "fonte": "FACEPE",
@@ -69,7 +91,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 4,
+      "posicao_fila": 5,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__551c4408",
       "titulo": "Auxílio à Inovação Regular – Iniciação Tecnológica",
       "fonte": "FAPESP",
@@ -91,13 +113,13 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 5,
+      "posicao_fila": 6,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_f8577d41",
       "titulo": "• Novo prazo de submissão do Edital nº 28/2026 – APQ Universal",
       "fonte": "FACEPE",
       "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
       "prazo": "2026-10-06",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-10-03T15:56:11.273590-03:00",
       "quantidade_postagens": 7,
@@ -113,7 +135,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 6,
+      "posicao_fila": 7,
       "id": "conselho_nacional_das_fundacoes_estaduai_22a86411",
       "titulo": "CONFAP e CDTI lançam chamada 2026-2027 para apoiar projetos colaborativos de pesquisa e inovação tecnológica entre instituições do Brasil e da Espanha",
       "fonte": "CONFAP",
@@ -135,7 +157,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 7,
+      "posicao_fila": 8,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__9ae53a59",
       "titulo": "PIPE Jornada Tecnológica Indústria do Futuro – Fase 1",
       "fonte": "FAPESP",
@@ -157,7 +179,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 8,
+      "posicao_fila": 9,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_0908e50b",
       "titulo": "30/2026 -",
       "fonte": "FACEPE",
@@ -179,7 +201,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 9,
+      "posicao_fila": 10,
       "id": "fundacao_carlos_chagas_filho_de_amparo_a_e0b7d488",
       "titulo": "Edital FAPERJ Nº 18/2026 – Programa de Auxílio à Pesquisa em Obesidade Para Pesquisadores CNE/FAPERJ ou CNPq Níveis A ou B com Experiência Comprovada em Redes de Pesquisas Consolidadas com no Mínimo 5 Pesquisadores Associados",
       "fonte": "FAPERJ",
@@ -201,7 +223,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 10,
+      "posicao_fila": 11,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__c86a28c9",
       "titulo": "Chamada Pública Fapeg/ Senar GO nº 18/2026 - Programa Acelera Campo 2026",
       "fonte": "FAPEG",
@@ -223,7 +245,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 11,
+      "posicao_fila": 12,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__ecd29fa0",
       "titulo": "Chamada de Propostas para o Programa \"Generic Call for Proposals 2027\"",
       "fonte": "FAPESP",
@@ -241,28 +263,6 @@
       "card_title": "Chamada de Propostas para o Programa \"Generic Call for Proposals 2027\"",
       "card_deadline": "PRAZO: 13/10",
       "card_summary": "Área: Consulte a chamada.",
-      "card_handle": "@editais.pesquisa",
-      "card_footer_note": "Link do edital e detalhes abaixo."
-    },
-    {
-      "posicao_fila": 12,
-      "id": "conselho_nacional_das_fundacoes_estaduai_c98f3518",
-      "titulo": "Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I",
-      "fonte": "CONFAP",
-      "orgao": "Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa",
-      "prazo": "2026-10-15",
-      "status": "atualizado",
-      "score_editorial": 100,
-      "ultima_postagem": "2026-09-29T06:53:30.322707-03:00",
-      "quantidade_postagens": 1,
-      "instagram_feed_publicado": true,
-      "urgencia_dias": 10,
-      "link": "https://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/",
-      "caption": "Oportunidade no radar: Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I\n\nA oportunidade está aberta para pesquisadores e instituições de pesquisa na categoria pesquisa, com prazo final em 15/10/2026.\n\nInstituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa\nPúblico-alvo: Pesquisadores e instituições de pesquisa\nTipo: Pesquisa\nAbertura das inscrições: Não informado\nPrazo final: 15/10/2026\n\nLink oficial do edital:\nhttps://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Confap #Projetosdepesquisa #Inovacao #Empreendedorismo #Pesquisadores",
-      "card_header": "EDITAL CONFAP",
-      "card_title": "Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à",
-      "card_deadline": "PRAZO: 15/10",
-      "card_summary": "Voltado a pesquisadores e instituições de pesquisa. Prazo final em 15/10/2026. Confira os critérios no edital.",
       "card_handle": "@editais.pesquisa",
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
