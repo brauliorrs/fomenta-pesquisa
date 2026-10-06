@@ -29160,3 +29160,54 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-05 22:12:48,395 [INFO] Tentativas de publicacao apos sync: 1
 2026-10-05 22:12:48,395 [INFO] Publicacoes concluidas apos sync: 1
 2026-10-05 22:12:48,395 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-10-06 09:46:43,577 [INFO] Inicio da execucao
+2026-10-06 09:46:48,558 [INFO] Fonte ANP retornou 1 itens
+2026-10-06 09:46:53,041 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-06 09:46:53,791 [INFO] Fonte CAPES retornou 0 itens
+2026-10-06 09:46:55,989 [INFO] Fonte CONFAP retornou 11 itens
+2026-10-06 09:47:27,941 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-06 09:48:13,384 [INFO] Fonte IPEA retornou 10 itens
+2026-10-06 09:48:51,729 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16470-selecao-publica-ipead-n-05-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16470-selecao-publica-ipead-n-05-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7fb96864c650>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-10-06 09:48:52,679 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-06 09:49:08,896 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-06 09:49:14,067 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-06 09:49:16,342 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-06 09:49:17,485 [INFO] Fonte BASA retornou 0 itens
+2026-10-06 09:49:18,368 [INFO] Fonte BNDES retornou 8 itens
+2026-10-06 09:49:28,956 [INFO] Fonte FINEP retornou 0 itens
+2026-10-06 09:49:29,420 [INFO] Fonte DECIT retornou 0 itens
+2026-10-06 09:49:30,728 [INFO] Fonte FAPESP retornou 13 itens
+2026-10-06 09:50:01,563 [INFO] Fonte FAPERJ retornou 24 itens
+2026-10-06 09:50:07,766 [INFO] Fonte FACEPE retornou 114 itens
+2026-10-06 09:53:28,619 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-06 09:54:39,065 [INFO] Fonte FAPEAL retornou 3 itens
+2026-10-06 09:54:46,403 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-06 09:54:53,498 [INFO] Fonte FAPES retornou 0 itens
+2026-10-06 09:55:46,653 [INFO] Fonte FAPEG retornou 6 itens
+2026-10-06 09:56:03,811 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-06 09:56:05,669 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-06 09:56:09,086 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-06 09:56:13,241 [INFO] Fonte FAPESPA retornou 0 itens
+2026-10-06 09:56:14,586 [INFO] Fonte FAPESQ retornou 0 itens
+2026-10-06 09:56:20,326 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-06 09:57:07,737 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-06 09:57:15,177 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-06 09:57:21,652 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-06 09:58:55,808 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-06 09:58:59,904 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-06 09:59:02,153 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-06 09:59:13,268 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-06 10:02:19,543 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-06 10:02:20,369 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-06 10:03:54,663 [INFO] Fonte FAPITEC retornou 0 itens
+2026-10-06 10:08:29,581 [INFO] Fonte FAPT retornou 0 itens
+2026-10-06 10:08:36,497 [INFO] Fonte FAPESC retornou 9 itens
+2026-10-06 10:09:01,456 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-06 10:09:54,639 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-06 10:09:54,660 [INFO] Total coletado: 69
+2026-10-06 10:09:54,661 [INFO] Novos: 6 | Prorrogados: 1 | Atualizados: 62 | Mantidos: 0 | Deduplicados por chave: 3
+2026-10-06 10:09:54,661 [INFO] Repostados/Publicados: 0
+2026-10-06 10:09:54,661 [INFO] Bloqueados para postagem: 0
+2026-10-06 10:09:54,661 [INFO] Expirados removidos da base: 5
+2026-10-06 10:09:54,661 [INFO] Erros por fonte: 0
+2026-10-06 10:09:54,661 [INFO] Fim da execucao
