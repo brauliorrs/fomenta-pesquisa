@@ -29271,3 +29271,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-06 20:23:08,168 [INFO] Tentativas de publicacao apos sync: 3
 2026-10-06 20:23:08,168 [INFO] Publicacoes concluidas apos sync: 3
 2026-10-06 20:23:08,168 [INFO] Novos editais publicados no feed hoje: 2/10.
+2026-10-07 09:49:21,116 [INFO] Inicio da execucao
+2026-10-07 09:49:26,170 [INFO] Fonte ANP retornou 1 itens
+2026-10-07 09:49:30,630 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-07 09:49:31,377 [INFO] Fonte CAPES retornou 0 itens
+2026-10-07 09:49:33,690 [INFO] Fonte CONFAP retornou 11 itens
+2026-10-07 09:50:05,659 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-07 09:50:55,991 [INFO] Fonte IPEA retornou 10 itens
+2026-10-07 09:51:17,312 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-07 09:51:33,404 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-07 09:51:38,866 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-07 09:51:41,114 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-07 09:51:42,201 [INFO] Fonte BASA retornou 0 itens
+2026-10-07 09:51:43,317 [INFO] Fonte BNDES retornou 8 itens
+2026-10-07 09:52:14,108 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffepsegfinanceira: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-07 09:52:45,271 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2026-certificacao-credito-de-carbono: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-07 09:53:15,923 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2025-fep-naval: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-07 09:53:40,682 [INFO] Fonte FINEP retornou 0 itens
+2026-10-07 09:53:41,180 [INFO] Fonte DECIT retornou 0 itens
+2026-10-07 09:53:42,410 [INFO] Fonte FAPESP retornou 13 itens
+2026-10-07 09:54:13,139 [INFO] Fonte FAPERJ retornou 24 itens
+2026-10-07 09:54:18,285 [INFO] Fonte FACEPE retornou 114 itens
+2026-10-07 09:57:38,653 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-07 09:58:48,205 [INFO] Fonte FAPEAL retornou 3 itens
+2026-10-07 09:58:55,865 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-07 09:59:03,010 [INFO] Fonte FAPES retornou 0 itens
+2026-10-07 09:59:05,644 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-07 09:59:14,362 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-07 09:59:16,142 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-07 09:59:46,695 [INFO] Fonte FUNDECT retornou 0 itens
+2026-10-07 09:59:49,148 [INFO] Fonte FAPESPA retornou 0 itens
+2026-10-07 09:59:50,606 [INFO] Fonte FAPESQ retornou 4 itens
+2026-10-07 10:00:03,916 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-07 10:00:56,824 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-07 10:01:04,349 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-07 10:01:10,775 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-07 10:02:44,984 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-07 10:02:49,954 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-07 10:02:52,138 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-07 10:03:03,367 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-07 10:06:09,746 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-07 10:06:10,690 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-07 10:07:44,568 [INFO] Fonte FAPITEC retornou 0 itens
+2026-10-07 10:12:19,500 [INFO] Fonte FAPT retornou 0 itens
+2026-10-07 10:12:25,781 [INFO] Fonte FAPESC retornou 9 itens
+2026-10-07 10:12:50,570 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-07 10:13:46,979 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-07 10:13:47,000 [INFO] Total coletado: 68
+2026-10-07 10:13:47,000 [INFO] Novos: 0 | Prorrogados: 1 | Atualizados: 67 | Mantidos: 0 | Deduplicados por chave: 9
+2026-10-07 10:13:47,000 [INFO] Repostados/Publicados: 0
+2026-10-07 10:13:47,000 [INFO] Bloqueados para postagem: 0
+2026-10-07 10:13:47,000 [INFO] Expirados removidos da base: 2
+2026-10-07 10:13:47,000 [INFO] Erros por fonte: 0
+2026-10-07 10:13:47,001 [INFO] Fim da execucao
