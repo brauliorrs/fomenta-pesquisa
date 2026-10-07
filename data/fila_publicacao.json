@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T07:13:51.315026-03:00",
-  "total_prontos": 39,
+  "generated_at": "2026-10-07T17:25:24.152480-03:00",
+  "total_prontos": 40,
   "itens": [
     {
       "posicao_fila": 1,
@@ -53,7 +53,7 @@
       "fonte": "FACEPE",
       "orgao": "Fundação de Amparo a Ciencia e Tecnologia do Estado de Pernambuco",
       "prazo": "2026-10-08",
-      "status": "prorrogado",
+      "status": "atualizado",
       "score_editorial": 90,
       "ultima_postagem": "2026-10-06T07:09:58.461857-03:00",
       "quantidade_postagens": 8,
@@ -302,7 +302,7 @@
       "instagram_feed_publicado": true,
       "urgencia_dias": 19,
       "link": "https://fapesp.br/18407",
-      "caption": "Oportunidade no radar: SPRINT 2026\n\nÁreas: todas.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas\nTipo: Pesquisa\nAbertura das inscrições: 01/10/2026\nPrazo final: 26/10/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18407\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Pesquisadores #Instituicoesdepesquisa #Pesquisasp",
+      "caption": "Oportunidade no radar: SPRINT 2026\n\nÁreas: todas.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas\nTipo: Pesquisa\nAbertura das inscrições: 07/10/2026\nPrazo final: 26/10/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18407\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Pesquisadores #Instituicoesdepesquisa #Pesquisasp",
       "card_header": "EDITAL FAPESP",
       "card_title": "SPRINT 2026",
       "card_deadline": "PRAZO: 26/10",
@@ -532,6 +532,28 @@
     },
     {
       "posicao_fila": 25,
+      "id": "instituto_de_pesquisa_economica_aplicada_7b38f057",
+      "titulo": "Chamada Pública 033/2026",
+      "fonte": "IPEA",
+      "orgao": "Instituto de Pesquisa Economica Aplicada",
+      "prazo": "2026-11-09",
+      "status": "novo",
+      "score_editorial": 90,
+      "ultima_postagem": null,
+      "quantidade_postagens": 0,
+      "instagram_feed_publicado": false,
+      "urgencia_dias": 33,
+      "link": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16518-chamada-publica-033-2026",
+      "caption": "Oportunidade no radar: Chamada Pública 033/2026\n\nIpea - Instituto de Pesquisa Econômica Aplicada.\n\nInstituição: Instituto de Pesquisa Economica Aplicada\nPúblico-alvo: Pesquisadores e bolsistas\nTipo: Pesquisa\nAbertura das inscrições: 31/12/1969\nPrazo final: 09/11/2026\n\nLink oficial do edital:\nhttps://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16518-chamada-publica-033-2026\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Ipea #Projetosdepesquisa #Chamadapublica #Pesquisadores",
+      "card_header": "EDITAL IPEA",
+      "card_title": "Chamada Pública 033/2026",
+      "card_deadline": "PRAZO: 09/11",
+      "card_summary": "Ipea - Instituto de Pesquisa Econômica Aplicada.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 26,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__afb6cd25",
       "titulo": "FAPESP / M-ERA.NET 2026",
       "fonte": "FAPESP",
@@ -553,7 +575,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 26,
+      "posicao_fila": 27,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89490f8a",
       "titulo": "Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais",
       "fonte": "FAPESP",
@@ -575,7 +597,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 27,
+      "posicao_fila": 28,
       "id": "conselho_nacional_das_fundacoes_estaduai_f1f378cb",
       "titulo": "Parceria Europeia FOREST lança sua primeira Chamada Transnacional Conjunta",
       "fonte": "CONFAP",
@@ -597,7 +619,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 28,
+      "posicao_fila": 29,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__feaa58d3",
       "titulo": "Chamada de Propostas – Programa Desafios da Amazônia",
       "fonte": "FAPESP",
@@ -619,7 +641,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 29,
+      "posicao_fila": 30,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__9d78ff4b",
       "titulo": "Chamada de Propostas Bolsa Estágio de Pesquisa no Exterior (BEPE) Iniciação Científica",
       "fonte": "FAPESP",
@@ -641,7 +663,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 30,
+      "posicao_fila": 31,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__fdfeed1c",
       "titulo": "Chamada de Propostas Bolsa Estágio de Pesquisa no Exterior (BEPE) Mestrado",
       "fonte": "FAPESP",
@@ -663,7 +685,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 31,
+      "posicao_fila": 32,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef",
       "titulo": "EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO PIAUÍ (PDCTR-PI)",
       "fonte": "FAPEPI",
@@ -685,7 +707,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 32,
+      "posicao_fila": 33,
       "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
       "titulo": "PROGRAMA CENTELHA MS",
       "fonte": "FUNDECT",
@@ -707,7 +729,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 33,
+      "posicao_fila": 34,
       "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
       "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
       "fonte": "FAPAC",
@@ -729,7 +751,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 34,
+      "posicao_fila": 35,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
       "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
       "fonte": "FAPEMIG",
@@ -751,7 +773,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 35,
+      "posicao_fila": 36,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__89a27b18",
       "titulo": "Edital do Programa FICA-SP (Fixação e Incentivo à Carreira Acadêmica em São Paulo)",
       "fonte": "FAPESP",
@@ -773,7 +795,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 36,
+      "posicao_fila": 37,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_8e9b374d",
       "titulo": "EDITAL SUPLEMENTAR DE SUBVENÇÃO ECONÔMICA FAPESC N.º 65/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -795,7 +817,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 37,
+      "posicao_fila": 38,
       "id": "fundacao_de_amparo_a_pesquisa_e_inovacao_77bc2ae8",
       "titulo": "EDITAL SUPLEMENTAR FAPESC N.º 66/2025 PROGRAMA HORIZONTE EUROPA (2026–2027)",
       "fonte": "FAPESC",
@@ -817,7 +839,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 38,
+      "posicao_fila": 39,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_77a2b77d",
       "titulo": "10/2026 -",
       "fonte": "FACEPE",
@@ -839,7 +861,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 39,
+      "posicao_fila": 40,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_271e831e",
       "titulo": "Fapern lança edital para vaga remanescente com atuação em Mossoró",
       "fonte": "FAPERN",
