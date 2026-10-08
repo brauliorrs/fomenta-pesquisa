@@ -29384,3 +29384,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-07 20:52:33,739 [INFO] Tentativas de publicacao apos sync: 2
 2026-10-07 20:52:33,739 [INFO] Publicacoes concluidas apos sync: 2
 2026-10-07 20:52:33,739 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-10-08 10:00:23,009 [INFO] Inicio da execucao
+2026-10-08 10:00:28,649 [INFO] Fonte ANP retornou 1 itens
+2026-10-08 10:00:33,646 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-08 10:00:34,472 [INFO] Fonte CAPES retornou 0 itens
+2026-10-08 10:00:37,355 [INFO] Fonte CONFAP retornou 11 itens
+2026-10-08 10:01:10,137 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-08 10:02:05,110 [INFO] Fonte IPEA retornou 10 itens
+2026-10-08 10:02:27,816 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-08 10:02:44,000 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-08 10:02:51,183 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-08 10:02:53,292 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-08 10:02:54,706 [INFO] Fonte BASA retornou 0 itens
+2026-10-08 10:02:55,768 [INFO] Fonte BNDES retornou 8 itens
+2026-10-08 10:03:33,829 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2026-certificacao-credito-de-carbono: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-08 10:04:24,806 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Festudo-de-mobilidade-urbana: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-08 10:04:55,967 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2022-formacao-bioeconomia-amazonia: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-08 10:05:01,876 [INFO] Fonte FINEP retornou 0 itens
+2026-10-08 10:05:02,491 [INFO] Fonte DECIT retornou 0 itens
+2026-10-08 10:05:04,028 [INFO] Fonte FAPESP retornou 13 itens
+2026-10-08 10:05:38,765 [INFO] Fonte FAPERJ retornou 24 itens
+2026-10-08 10:05:44,793 [INFO] Fonte FACEPE retornou 114 itens
+2026-10-08 10:09:14,222 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-08 10:10:28,218 [INFO] Fonte FAPEAL retornou 3 itens
+2026-10-08 10:10:37,028 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-08 10:10:45,030 [INFO] Fonte FAPES retornou 0 itens
+2026-10-08 10:10:55,186 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-08 10:11:05,373 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-08 10:11:07,646 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-08 10:11:12,498 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-08 10:12:03,735 [INFO] Fonte FAPESPA retornou 21 itens
+2026-10-08 10:12:37,953 [INFO] Fonte FAPESQ retornou 2 itens
+2026-10-08 10:12:45,841 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-08 10:13:42,457 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-08 10:13:50,349 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-08 10:13:57,347 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-08 10:15:31,947 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-08 10:15:33,378 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-08 10:15:36,361 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-08 10:15:48,595 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-08 10:18:55,061 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-08 10:18:56,207 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-08 10:20:30,277 [INFO] Fonte FAPITEC retornou 0 itens
+2026-10-08 10:25:05,007 [INFO] Fonte FAPT retornou 0 itens
+2026-10-08 10:25:10,435 [INFO] Fonte FAPESC retornou 6 itens
+2026-10-08 10:25:34,282 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-08 10:26:18,230 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-08 10:26:18,247 [INFO] Total coletado: 92
+2026-10-08 10:26:18,247 [INFO] Novos: 1 | Prorrogados: 1 | Atualizados: 90 | Mantidos: 0 | Deduplicados por chave: 28
+2026-10-08 10:26:18,247 [INFO] Repostados/Publicados: 0
+2026-10-08 10:26:18,247 [INFO] Bloqueados para postagem: 0
+2026-10-08 10:26:18,247 [INFO] Expirados removidos da base: 0
+2026-10-08 10:26:18,247 [INFO] Erros por fonte: 0
+2026-10-08 10:26:18,247 [INFO] Fim da execucao
