@@ -29554,3 +29554,61 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-09 10:29:37,737 [INFO] Tentativas de publicacao apos sync: 1
 2026-10-09 10:29:37,738 [INFO] Publicacoes concluidas apos sync: 1
 2026-10-09 10:29:37,738 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-10-09 19:59:49,088 [INFO] Inicio da execucao
+2026-10-09 19:59:54,718 [INFO] Fonte ANP retornou 1 itens
+2026-10-09 20:00:00,293 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-09 20:00:01,272 [INFO] Fonte CAPES retornou 0 itens
+2026-10-09 20:00:03,069 [INFO] Fonte CONFAP retornou 10 itens
+2026-10-09 20:00:35,110 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:01:11,714 [INFO] Fonte IPEA retornou 10 itens
+2026-10-09 20:01:52,093 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16486-chamada-publica-n-027-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16486-chamada-publica-n-027-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f69f9429090>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-10-09 20:01:53,386 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-09 20:02:10,663 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-09 20:02:17,609 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-09 20:02:20,466 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-09 20:02:22,545 [INFO] Fonte BASA retornou 0 itens
+2026-10-09 20:02:24,026 [INFO] Fonte BNDES retornou 8 itens
+2026-10-09 20:02:54,702 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fepsegfinanceira/!ut/p/z0/fY67DoJAEEV_RYstzYyE-CgJhca4BR1uY1YYYHzMgrv4-HuR1sTu3uTk3AsGcjBiH1zbwE7sdegHszgus026TeL5HrVeYYZxppN4jXEawQ7Mf2AwRHed6hpMa0MzY6kc5BW1nuqKxUpBfLdfjM9dZxIwhZNArwD5SUryRxYfOPTFeEhh426kcGAaKvhGEpzClnzXs7cTmpS2dF4h-dCPYXTMhjmFP5vtxZzez2T6ASrNc0o!/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:03:25,384 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2026-certificacao-credito-de-carbono/!ut/p/z0/nY67TsQwEEV_ZSlcWjMbRQuUUYpFCBfpgpuVY082w8OTxA6Pv8fkAyjo5mquzj1goQcb3QdfXWaJ7q3kZ3u63Hbn9qGpj09ozB12WHemqe-xbit4BPt3oRCq1bTmCnZ2edIcR4F-pFmP8k4xi8ajrrA6aU9r5pG98060XylweQbS3q2DRPkl8cuy2Aasl5jpK0M_xEDpwjFlzpvfnRVOBaywdCbyvG8onCktGyd3oENwQZJCSnnbj52hi5HC_2jNr3b4_mxufgAbgqdI/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:03:56,471 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2025-fep-naval/!ut/p/z0/fY65DoMwEER_hRQurV0QuUpEkSiKCzriBhkw4Bw2xCbH38eQnm5nNXpvgEMOXIuXaoVTRou7zxe-KbbZIT0mcXhGxnaYYZyxJN5jnEZwAr5c8IToyVLWAu-F66jSjYG8kT1tzENqZyiGNMJoTaefl_-t6joMPAFeGe3kx0Fe6lraQmnrlBureR3BziMI-k4nKzXTCPbSDqOyIpBBLWpjCUrrxvmYGZOH4PKA_sbL7ztZ_QCRCaEh/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:04:27,296 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2024-projeto-piloto-do-planejamento-espacial-marinho-pem-norte/!ut/p/z0/rU-7boQwEPyVS-HS8h6yLkmJKBJF54KOuDntwXIsAdtgk8ffxyF9qlQ7ox3NQ1nVKOvwnW-Y2DucMn-1p8t9_VQ9l_p4BmMeoAZdm1I_gq4K9aLs34LsUKymMjdlA6ZBsuu9anoKsvczueQlHGUBhZZh9SNlHnjy-XQZTehoxF8ZxYAt4yRnXNkN-UuzdH5N9JPB47LYUtnWu0SfSTVX11G8sIuJ09buawQMOVJA1gzU8m4rIFBcNo54oEOHnY8CKKZtB7uHzF0F_G_h8GavXx_l3TeX-jq3/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:04:58,081 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/estudo-de-mobilidade-urbana/!ut/p/z0/fY47D4JAEIT_ChaUZE9CfJSEQmO8gg6vIQessAp3wB0-_r0nxs7YzUxmv1kQkIFQ8ka1tKSVbJ0_iVW-TnfJPo6WR8b5hqUsSnkcbVmUhHAA8b_gCOHIE16D6KVtAlJnDRkaO1U6qDDodEEtVdLJaSykku8LugyDiEGUWll8WMgKVaHJSRlLdirn33zW6A595joNltShstpnPZphIiM99BxTG599ppyYGcEZ-2_2e76_iuJ5jxcvrQDW2Q!!/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:05:28,867 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2022-formacao-bioeconomia-amazonia/!ut/p/z0/lY67bsMwDEV_JR00CmIEI21Hw0OLIhq8OVoC2qZjtrVoR3L6-Pqq_oAC3XjBi3OP8aYxPuCNL5hYAr7nfPKH8339VD2Xxf4Izj1ADUXtyuIRisqaF-P_LmSCvbrKXYyfMY2awyCmGWjWg0wUkmjYawvW5nydsEPRLQt1EmRi1DjhtwTGXw6_Losvjc-_RJ_JNG3oKZ45xMRp7TZjBWPGKsidkTreFhTMFJeVI-5o12MvUQHFtG7HxtDZR8H_peY33359lHc_D1M_vQ!!/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:05:59,497 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/iniciativa-producao-de-carne-e-leite-bovinos-de-baixo-carbono-selecao-publica-bndes-fep-fomento-2-2022/!ut/p/z0/vY-7ToVAEIZf5VhQTnYlxEtJKDRGCjrc5mR3GQ6jOLOwCx7fXqCwtLSbyX_58iujWmXYrnSxiYTtuP1v5u583zxVz2Vx-6rr-kE3umjqsnjURZWrF2X-NmwN-VxX9UWZYNMAxL2olpg8bZDVQpilW7wV6BC8nRkBYURKCE5WYom74CxdZZedsEDEEfdEWNxI3oLjDiP0GKCXT-QkkEOu8wNO79NkSmW8cMJrUu1hPhPHRGnxx8xMD1su05tnQE9HRaYDxmmhaE946mwnMdMY03Icv8BM_9OS8GHc91d58wNi4_Cp/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-10-09 20:06:29,489 [INFO] Fonte FINEP retornou 0 itens
+2026-10-09 20:06:30,551 [INFO] Fonte DECIT retornou 0 itens
+2026-10-09 20:06:32,070 [INFO] Fonte FAPESP retornou 13 itens
+2026-10-09 20:07:03,498 [INFO] Fonte FAPERJ retornou 24 itens
+2026-10-09 20:07:09,769 [INFO] Fonte FACEPE retornou 114 itens
+2026-10-09 20:10:50,227 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-09 20:12:10,744 [INFO] Fonte FAPEAL retornou 3 itens
+2026-10-09 20:12:18,496 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-09 20:12:25,918 [INFO] Fonte FAPES retornou 0 itens
+2026-10-09 20:12:30,166 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-09 20:12:40,954 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-09 20:12:43,662 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-09 20:12:48,442 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-09 20:13:31,332 [INFO] Fonte FAPESPA retornou 21 itens
+2026-10-09 20:14:05,935 [INFO] Fonte FAPESQ retornou 2 itens
+2026-10-09 20:14:13,434 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-09 20:15:04,611 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-09 20:15:12,425 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-09 20:15:20,103 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-09 20:16:54,704 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-09 20:16:55,971 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-09 20:16:58,918 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-09 20:17:14,895 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-09 20:20:21,377 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-09 20:20:22,564 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-09 20:21:56,655 [INFO] Fonte FAPITEC retornou 0 itens
+2026-10-09 20:26:32,057 [INFO] Fonte FAPT retornou 0 itens
+2026-10-09 20:26:37,498 [INFO] Fonte FAPESC retornou 6 itens
+2026-10-09 20:27:03,647 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-09 20:28:10,740 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-09 20:28:10,761 [INFO] Total coletado: 93
+2026-10-09 20:28:10,761 [INFO] Novos: 8 | Prorrogados: 0 | Atualizados: 85 | Mantidos: 0 | Deduplicados por chave: 23
+2026-10-09 20:28:10,761 [INFO] Repostados/Publicados: 0
+2026-10-09 20:28:10,761 [INFO] Bloqueados para postagem: 0
+2026-10-09 20:28:10,761 [INFO] Expirados removidos da base: 0
+2026-10-09 20:28:10,761 [INFO] Erros por fonte: 0
+2026-10-09 20:28:10,761 [INFO] Fim da execucao
