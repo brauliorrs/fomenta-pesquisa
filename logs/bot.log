@@ -30001,3 +30001,53 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-13 10:32:02,205 [INFO] Tentativas de publicacao apos sync: 2
 2026-10-13 10:32:02,205 [INFO] Publicacoes concluidas apos sync: 2
 2026-10-13 10:32:02,205 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-10-13 20:30:17,065 [INFO] Inicio da execucao
+2026-10-13 20:30:22,691 [INFO] Fonte ANP retornou 1 itens
+2026-10-13 20:30:28,095 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-13 20:30:29,204 [INFO] Fonte CAPES retornou 0 itens
+2026-10-13 20:30:30,644 [INFO] Fonte CONFAP retornou 10 itens
+2026-10-13 20:31:01,758 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-13 20:31:45,413 [INFO] Fonte IPEA retornou 10 itens
+2026-10-13 20:32:17,311 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-13 20:32:37,192 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-13 20:32:46,726 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-13 20:32:49,384 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-13 20:32:50,820 [INFO] Fonte BASA retornou 0 itens
+2026-10-13 20:32:51,894 [INFO] Fonte BNDES retornou 8 itens
+2026-10-13 20:33:04,740 [INFO] Fonte FINEP retornou 0 itens
+2026-10-13 20:33:05,381 [INFO] Fonte DECIT retornou 0 itens
+2026-10-13 20:33:06,907 [INFO] Fonte FAPESP retornou 13 itens
+2026-10-13 20:33:40,058 [INFO] Fonte FAPERJ retornou 24 itens
+2026-10-13 20:33:42,360 [INFO] Fonte FACEPE retornou 114 itens
+2026-10-13 20:37:18,807 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-13 20:39:04,778 [INFO] Fonte FAPEAL retornou 16 itens
+2026-10-13 20:39:42,905 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-13 20:39:50,474 [INFO] Fonte FAPES retornou 0 itens
+2026-10-13 20:39:54,313 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-13 20:40:12,024 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-13 20:40:13,964 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-13 20:40:18,648 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-13 20:40:54,583 [INFO] Fonte FAPESPA retornou 21 itens
+2026-10-13 20:41:24,983 [INFO] Fonte FAPESQ retornou 2 itens
+2026-10-13 20:41:36,023 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-13 20:42:37,679 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-13 20:42:45,441 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-13 20:42:52,371 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-13 20:44:26,948 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-13 20:44:28,647 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-13 20:44:31,800 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-13 20:46:15,944 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-13 20:49:22,385 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-13 20:49:23,564 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-13 20:50:57,674 [INFO] Fonte FAPITEC retornou 0 itens
+2026-10-13 20:55:32,319 [INFO] Fonte FAPT retornou 0 itens
+2026-10-13 20:55:37,871 [INFO] Fonte FAPESC retornou 6 itens
+2026-10-13 20:56:03,485 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-13 20:56:47,358 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-13 20:56:47,379 [INFO] Total coletado: 102
+2026-10-13 20:56:47,380 [INFO] Novos: 1 | Prorrogados: 0 | Atualizados: 101 | Mantidos: 0 | Deduplicados por chave: 41
+2026-10-13 20:56:47,380 [INFO] Repostados/Publicados: 0
+2026-10-13 20:56:47,380 [INFO] Bloqueados para postagem: 0
+2026-10-13 20:56:47,380 [INFO] Expirados removidos da base: 0
+2026-10-13 20:56:47,380 [INFO] Erros por fonte: 0
+2026-10-13 20:56:47,380 [INFO] Fim da execucao
