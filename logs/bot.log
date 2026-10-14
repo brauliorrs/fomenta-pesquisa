@@ -30056,3 +30056,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-13 20:58:20,181 [INFO] Tentativas de publicacao apos sync: 1
 2026-10-13 20:58:20,181 [INFO] Publicacoes concluidas apos sync: 1
 2026-10-13 20:58:20,181 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-10-14 08:23:39,874 [INFO] Inicio da execucao
+2026-10-14 08:23:45,421 [INFO] Fonte ANP retornou 1 itens
+2026-10-14 08:23:50,612 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-14 08:23:51,442 [INFO] Fonte CAPES retornou 0 itens
+2026-10-14 08:23:52,544 [INFO] Fonte CONFAP retornou 10 itens
+2026-10-14 08:24:23,462 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-14 08:24:38,363 [WARNING] Falha ao enriquecer item https://www.bluepartnership.eu/funding-opportunity/sustainable-blue-economy-partnerships-fourth-joint-transnational-call: 503 Server Error: Service Unavailable for url: https://www.bluepartnership.eu/funding-opportunity/sustainable-blue-economy-partnerships-fourth-joint-transnational-call
+2026-10-14 08:24:58,942 [INFO] Fonte IPEA retornou 10 itens
+2026-10-14 08:25:37,460 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16486-chamada-publica-n-027-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16486-chamada-publica-n-027-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f3c39b75e50>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-10-14 08:25:38,614 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-14 08:25:54,856 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-14 08:26:00,822 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-14 08:26:03,448 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-14 08:26:04,684 [INFO] Fonte BASA retornou 0 itens
+2026-10-14 08:26:05,643 [INFO] Fonte BNDES retornou 8 itens
+2026-10-14 08:26:18,142 [INFO] Fonte FINEP retornou 0 itens
+2026-10-14 08:26:18,677 [INFO] Fonte DECIT retornou 0 itens
+2026-10-14 08:26:20,049 [INFO] Fonte FAPESP retornou 13 itens
+2026-10-14 08:26:48,034 [INFO] Fonte FAPERJ retornou 24 itens
+2026-10-14 08:26:50,247 [INFO] Fonte FACEPE retornou 114 itens
+2026-10-14 08:30:22,264 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-14 08:32:06,748 [INFO] Fonte FAPEAL retornou 16 itens
+2026-10-14 08:32:47,397 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-14 08:32:57,388 [INFO] Fonte FAPES retornou 0 itens
+2026-10-14 08:33:08,264 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-14 08:33:25,437 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-14 08:33:27,343 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-14 08:33:30,712 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-14 08:34:13,951 [INFO] Fonte FAPESPA retornou 21 itens
+2026-10-14 08:34:39,023 [INFO] Fonte FAPESQ retornou 2 itens
+2026-10-14 08:34:55,579 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-14 08:35:45,358 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-14 08:35:53,970 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-14 08:36:00,541 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-14 08:37:34,670 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-14 08:37:36,115 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-14 08:37:38,596 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-14 08:37:50,401 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-14 08:40:56,823 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-14 08:40:58,528 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-14 08:42:32,885 [INFO] Fonte FAPITEC retornou 0 itens
+2026-10-14 08:47:08,552 [INFO] Fonte FAPT retornou 0 itens
+2026-10-14 08:47:13,886 [INFO] Fonte FAPESC retornou 6 itens
+2026-10-14 08:47:39,824 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-14 08:48:29,410 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-14 08:48:29,432 [INFO] Total coletado: 101
+2026-10-14 08:48:29,432 [INFO] Novos: 0 | Prorrogados: 1 | Atualizados: 100 | Mantidos: 0 | Deduplicados por chave: 42
+2026-10-14 08:48:29,432 [INFO] Repostados/Publicados: 0
+2026-10-14 08:48:29,432 [INFO] Bloqueados para postagem: 0
+2026-10-14 08:48:29,432 [INFO] Expirados removidos da base: 2
+2026-10-14 08:48:29,432 [INFO] Erros por fonte: 0
+2026-10-14 08:48:29,432 [INFO] Fim da execucao
