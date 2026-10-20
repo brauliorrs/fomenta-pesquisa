@@ -30783,3 +30783,55 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-20 08:46:39,344 [INFO] Tentativas de publicacao apos sync: 1
 2026-10-20 08:46:39,345 [INFO] Publicacoes concluidas apos sync: 1
 2026-10-20 08:46:39,345 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-10-20 18:54:06,532 [INFO] Inicio da execucao
+2026-10-20 18:54:11,622 [INFO] Fonte ANP retornou 1 itens
+2026-10-20 18:54:16,526 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-20 18:54:17,319 [INFO] Fonte CAPES retornou 0 itens
+2026-10-20 18:54:19,315 [INFO] Fonte CONFAP retornou 10 itens
+2026-10-20 18:54:30,962 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-10-20 18:55:10,361 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-20 18:55:43,056 [INFO] Fonte IPEA retornou 10 itens
+2026-10-20 18:56:21,267 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16503-chamada-publica-n-029-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16503-chamada-publica-n-029-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f13e1e75bd0>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-10-20 18:56:22,576 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-20 18:56:39,391 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-20 18:56:45,061 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-20 18:57:19,240 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-20 18:57:20,334 [INFO] Fonte BASA retornou 0 itens
+2026-10-20 18:57:21,394 [INFO] Fonte BNDES retornou 8 itens
+2026-10-20 18:57:33,254 [INFO] Fonte FINEP retornou 0 itens
+2026-10-20 18:57:33,728 [INFO] Fonte DECIT retornou 0 itens
+2026-10-20 18:57:36,260 [INFO] Fonte FAPESP retornou 14 itens
+2026-10-20 18:58:17,535 [INFO] Fonte FAPERJ retornou 27 itens
+2026-10-20 18:58:26,233 [INFO] Fonte FACEPE retornou 117 itens
+2026-10-20 19:01:50,177 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-20 19:03:23,943 [INFO] Fonte FAPEAL retornou 16 itens
+2026-10-20 19:03:57,467 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-20 19:04:03,820 [INFO] Fonte FAPES retornou 0 itens
+2026-10-20 19:04:06,721 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-20 19:04:28,811 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-20 19:04:30,636 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-20 19:04:34,166 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-20 19:09:09,136 [INFO] Fonte FAPESPA retornou 21 itens
+2026-10-20 19:13:38,264 [INFO] Fonte FAPESQ retornou 2 itens
+2026-10-20 19:13:45,461 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-20 19:14:29,503 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-20 19:14:36,924 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-20 19:14:44,783 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-20 19:16:20,403 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-20 19:16:21,836 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-20 19:16:24,273 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-20 19:16:33,390 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-20 19:19:40,011 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-20 19:19:41,667 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-20 19:19:45,612 [INFO] Fonte FAPITEC retornou 1 itens
+2026-10-20 19:24:22,628 [INFO] Fonte FAPT retornou 0 itens
+2026-10-20 19:24:26,326 [INFO] Fonte FAPESC retornou 5 itens
+2026-10-20 19:24:44,880 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-20 19:25:42,712 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-20 19:25:42,733 [INFO] Total coletado: 104
+2026-10-20 19:25:42,733 [INFO] Novos: 2 | Prorrogados: 0 | Atualizados: 102 | Mantidos: 0 | Deduplicados por chave: 42
+2026-10-20 19:25:42,733 [INFO] Repostados/Publicados: 0
+2026-10-20 19:25:42,733 [INFO] Bloqueados para postagem: 0
+2026-10-20 19:25:42,733 [INFO] Expirados removidos da base: 0
+2026-10-20 19:25:42,733 [INFO] Erros por fonte: 0
+2026-10-20 19:25:42,733 [INFO] Fim da execucao
