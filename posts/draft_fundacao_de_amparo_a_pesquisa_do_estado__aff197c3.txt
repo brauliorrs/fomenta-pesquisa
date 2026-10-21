@@ -1,24 +1,23 @@
 [MOCK INSTAGRAM DRAFT]
-id: fundacao_de_amparo_a_pesquisa_do_estado__89071ad5
+id: fundacao_de_amparo_a_pesquisa_do_estado__aff197c3
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-10-20
-card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__89071ad5.jpg
-card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__89071ad5_story.jpg
+prazo: 2027-03-04
+card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__aff197c3.jpg
+card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__aff197c3_story.jpg
 
-Oportunidade no radar: Chamada conjunta FAPESP-NWO 2026: Biorrefinarias Integradas para um Futuro Circular
-Último dia de inscrição.
+Oportunidade no radar: Chamada de Propostas FAPESP e Instituto Pasteur de Montevideo 2026
 
-Área: Biorrefinarias.
+Área: Biomedicina.
 
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas
 Tipo: Pesquisa
-Abertura das inscrições: 25/08/2026
-Prazo final: 20/10/2026
+Abertura das inscrições: 20/10/2026
+Prazo final: 04/03/2027
 
 Link oficial do edital:
-https://fapesp.br/17977
+https://fapesp.br/18455
 
 Salve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.
 No post, o link do edital e os detalhes ficam logo abaixo na legenda.
