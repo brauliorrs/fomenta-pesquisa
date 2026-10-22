@@ -31011,3 +31011,58 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-10-22 08:53:33,793 [INFO] Tentativas de publicacao apos sync: 3
 2026-10-22 08:53:33,794 [INFO] Publicacoes concluidas apos sync: 3
 2026-10-22 08:53:33,794 [INFO] Novos editais publicados no feed hoje: 2/10.
+2026-10-22 19:02:49,995 [INFO] Inicio da execucao
+2026-10-22 19:02:56,829 [INFO] Fonte ANP retornou 1 itens
+2026-10-22 19:03:01,633 [INFO] Fonte CNPQ retornou 0 itens
+2026-10-22 19:03:02,578 [INFO] Fonte CAPES retornou 0 itens
+2026-10-22 19:03:06,294 [INFO] Fonte CONFAP retornou 10 itens
+2026-10-22 19:03:39,078 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7f0068ef2310>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-10-22 19:03:43,481 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-10-22 19:04:25,577 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-10-22 19:04:45,819 [WARNING] Falha ao enriquecer item https://proposals.etag.ee/biodiversa/2026/partner-search: HTTPSConnectionPool(host='proposals.etag.ee', port=443): Max retries exceeded with url: /biodiversa/2026/partner-search (Caused by NewConnectionError("HTTPSConnection(host='proposals.etag.ee', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-10-22 19:04:47,843 [WARNING] Falha ao enriquecer item https://proposals.etag.ee/water4all/2026/partner-search: HTTPSConnectionPool(host='proposals.etag.ee', port=443): Max retries exceeded with url: /water4all/2026/partner-search (Caused by NewConnectionError("HTTPSConnection(host='proposals.etag.ee', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-10-22 19:04:48,844 [INFO] Fonte IPEA retornou 10 itens
+2026-10-22 19:05:27,387 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16503-chamada-publica-n-029-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16503-chamada-publica-n-029-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7f0068b523d0>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-10-22 19:05:28,968 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-10-22 19:05:45,021 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-10-22 19:05:51,334 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-10-22 19:05:53,280 [INFO] Fonte FUNDECI retornou 0 itens
+2026-10-22 19:05:54,635 [INFO] Fonte BASA retornou 0 itens
+2026-10-22 19:05:55,975 [INFO] Fonte BNDES retornou 8 itens
+2026-10-22 19:06:08,782 [INFO] Fonte FINEP retornou 0 itens
+2026-10-22 19:06:09,296 [INFO] Fonte DECIT retornou 0 itens
+2026-10-22 19:06:10,369 [INFO] Fonte FAPESP retornou 12 itens
+2026-10-22 19:06:43,460 [INFO] Fonte FAPERJ retornou 28 itens
+2026-10-22 19:06:55,285 [INFO] Fonte FACEPE retornou 121 itens
+2026-10-22 19:11:28,528 [INFO] Fonte FAPAC retornou 29 itens
+2026-10-22 19:13:07,311 [INFO] Fonte FAPEAL retornou 15 itens
+2026-10-22 19:13:43,877 [INFO] Fonte FAPEPI retornou 0 itens
+2026-10-22 19:13:51,957 [INFO] Fonte FAPES retornou 0 itens
+2026-10-22 19:14:05,816 [INFO] Fonte FAPEG retornou 2 itens
+2026-10-22 19:14:28,194 [INFO] Fonte FAPEMA retornou 0 itens
+2026-10-22 19:14:29,855 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-10-22 19:14:34,754 [INFO] Fonte FUNDECT retornou 1 itens
+2026-10-22 19:20:37,010 [INFO] Fonte FAPESPA retornou 21 itens
+2026-10-22 19:27:02,198 [INFO] Fonte FAPESQ retornou 0 itens
+2026-10-22 19:27:08,531 [INFO] Fonte FAPESB retornou 10 itens
+2026-10-22 19:28:11,067 [INFO] Fonte FUNCAP retornou 0 itens
+2026-10-22 19:28:17,969 [INFO] Fonte FAPEAM retornou 0 itens
+2026-10-22 19:28:55,362 [INFO] Fonte FAPEAP retornou 0 itens
+2026-10-22 19:30:29,932 [INFO] Fonte FAPDF retornou 0 itens
+2026-10-22 19:30:31,335 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-10-22 19:30:34,495 [INFO] Fonte FAPPR retornou 4 itens
+2026-10-22 19:30:47,298 [INFO] Fonte FAPERGS retornou 0 itens
+2026-10-22 19:33:53,787 [INFO] Fonte FAPERN retornou 0 itens
+2026-10-22 19:33:55,165 [INFO] Fonte FAPERO retornou 0 itens
+2026-10-22 19:33:59,645 [INFO] Fonte FAPITEC retornou 1 itens
+2026-10-22 19:38:37,842 [INFO] Fonte FAPT retornou 0 itens
+2026-10-22 19:38:42,540 [INFO] Fonte FAPESC retornou 5 itens
+2026-10-22 19:38:56,857 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-10-22 19:39:30,855 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-10-22 19:39:30,868 [INFO] Total coletado: 105
+2026-10-22 19:39:30,868 [INFO] Novos: 2 | Prorrogados: 1 | Atualizados: 102 | Mantidos: 0 | Deduplicados por chave: 43
+2026-10-22 19:39:30,868 [INFO] Repostados/Publicados: 0
+2026-10-22 19:39:30,868 [INFO] Bloqueados para postagem: 0
+2026-10-22 19:39:30,868 [INFO] Expirados removidos da base: 0
+2026-10-22 19:39:30,868 [INFO] Erros por fonte: 0
+2026-10-22 19:39:30,868 [INFO] Fim da execucao
