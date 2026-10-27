@@ -2,7 +2,7 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__7140ef22
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-11-06
+prazo: 2026-11-23
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__7140ef22.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__7140ef22_story.jpg
 
@@ -13,8 +13,8 @@ Oportunidade no radar: Aperfeiçoamento de especialistas que atuam em museus e i
 Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Empresas inovadoras, startups e pesquisadores
 Tipo: Inovacao
-Abertura das inscrições: 23/10/2026
-Prazo final: 06/11/2026
+Abertura das inscrições: 27/10/2026
+Prazo final: 23/11/2026
 
 Link oficial do edital:
 https://fapesp.br/18387
