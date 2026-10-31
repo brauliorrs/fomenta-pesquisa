@@ -7,7 +7,7 @@ card_feed: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8f0abe05.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_e_inovacao_8f0abe05_story.jpg
 
 Oportunidade no radar: EDITAL DE CHAMADA PÚBLICA FAPESC/CNPq/CAPES N.º 55/2026 PROGRAMA DE APOIO À FIXAÇÃO DE DOUTORES NO BRASIL – PROFIX-CB
-Prazo encerra em 7 dias.
+Prazo encerra em 6 dias.
 
 A oportunidade está aberta para empresas, startups, pesquisadores e ambientes de inovacao de Santa Catarina na categoria inovacao, com abertura registrada em 23/09/2026 e prazo final em 06/11/2026.
 
