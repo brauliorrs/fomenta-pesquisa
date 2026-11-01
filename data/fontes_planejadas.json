@@ -66,13 +66,13 @@
     {
       "sigla": "ABDI",
       "nome": "Agencia Brasileira de Desenvolvimento Industrial",
-      "status_integracao": "pendente",
+      "status_integracao": "descoberta_viavel",
       "prioridade": "ativa",
       "estrategia": "avaliar_bloqueio_cloudflare",
-      "ultima_descoberta": "2026-10-01T17:22:47.261888-03:00",
+      "ultima_descoberta": "2026-11-01T16:46:32.777012-03:00",
       "site_oficial_detectado": "https://www.abdi.com.br",
       "pagina_editais_detectada": "https://www.abdi.com.br/noticias/",
-      "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."
+      "motivo_descoberta": "Pagina oficial com sinais de edital aberto e parse generico viavel."
     },
     {
       "sigla": "ANEEL",
@@ -80,9 +80,9 @@
       "status_integracao": "pendente",
       "prioridade": "mensal",
       "estrategia": "descoberta_mensal",
-      "ultima_descoberta": "2026-10-01T17:22:47.261888-03:00",
+      "ultima_descoberta": "2026-11-01T16:46:32.777012-03:00",
       "site_oficial_detectado": "https://www.gov.br/aneel/pt-br",
-      "pagina_editais_detectada": "https://www.gov.br/aneel/pt-br/assuntos/programa-de-pesquisa-desenvolvimento-e-inovacao/chamadas-de-projetos-de-pdi-estrategicos",
+      "pagina_editais_detectada": "https://www.gov.br/aneel/pt-br/assuntos/programa-de-pesquisa-desenvolvimento-e-inovacao",
       "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."
     }
   ],
@@ -284,7 +284,7 @@
       "status_integracao": "pendente",
       "prioridade": "mensal",
       "estrategia": "descoberta_mensal",
-      "ultima_descoberta": "2026-10-01T17:22:47.261888-03:00",
+      "ultima_descoberta": "2026-11-01T16:46:32.777012-03:00",
       "site_oficial_detectado": "https://www.funbio.org.br",
       "pagina_editais_detectada": "https://www.funbio.org.br/",
       "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."
@@ -295,7 +295,7 @@
       "status_integracao": "pendente",
       "prioridade": "mensal",
       "estrategia": "descoberta_mensal",
-      "ultima_descoberta": "2026-10-01T17:22:47.261888-03:00",
+      "ultima_descoberta": "2026-11-01T16:46:32.777012-03:00",
       "site_oficial_detectado": "https://www.fundacaogrupoboticario.org.br",
       "pagina_editais_detectada": "https://fundacaogrupoboticario.org.br/noticias/",
       "motivo_descoberta": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico."

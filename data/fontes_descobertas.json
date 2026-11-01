@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01T17:22:47.261888-03:00",
+  "generated_at": "2026-11-01T16:46:32.777012-03:00",
   "sumario": {
     "fontes_ativas_auditadas": 40,
     "candidatas_avaliadas": 4,
-    "fontes_ativas_atualizadas": 0,
-    "candidatas_viaveis": 0,
+    "fontes_ativas_atualizadas": 2,
+    "candidatas_viaveis": 1,
     "candidatas_auto_ativadas": 0
   },
   "fontes_ativas": [
@@ -15,12 +15,12 @@
       "site_oficial_detectado": "https://www.gov.br/anp/pt-br",
       "pagina_editais_anterior": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/pesquisa-desenvolvimento-inovacao",
       "pagina_editais_detectada": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/pesquisa-desenvolvimento-inovacao",
-      "score": 43,
+      "score": 59,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 35,
-      "preview_anchor_hits": 957
+      "keyword_hits": 51,
+      "preview_anchor_hits": 1050
     },
     {
       "sigla": "CNPQ",
@@ -39,16 +39,16 @@
     {
       "sigla": "CAPES",
       "nome": "Coordenacao de Aperfeicoamento de Pessoal de Nivel Superior",
-      "status": "atencao",
+      "status": "ok",
       "site_oficial_detectado": "https://www.gov.br/capes/pt-br",
       "pagina_editais_anterior": "https://www.gov.br/capes/pt-br/assuntos/noticias",
       "pagina_editais_detectada": "https://www.gov.br/capes/pt-br/assuntos/noticias",
-      "score": 0,
-      "status_code": null,
-      "motivo": "Falha HTTP: 401 Client Error:  for url: https://www.gov.br/capes/pt-br/assuntos/noticias",
+      "score": 11,
+      "status_code": 200,
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 0
+      "keyword_hits": 3,
+      "preview_anchor_hits": 75
     },
     {
       "sigla": "CONFAP",
@@ -57,11 +57,11 @@
       "site_oficial_detectado": "https://confap.org.br",
       "pagina_editais_anterior": "https://news.confap.org.br/tag/editais/",
       "pagina_editais_detectada": "https://news.confap.org.br/tag/editais/",
-      "score": 85,
+      "score": 91,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 74,
+      "keyword_hits": 80,
       "preview_anchor_hits": 78
     },
     {
@@ -71,12 +71,12 @@
       "site_oficial_detectado": "https://www.ipea.gov.br/portal",
       "pagina_editais_anterior": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa",
       "pagina_editais_detectada": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa",
-      "score": 105,
+      "score": 108,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 97,
-      "preview_anchor_hits": 339
+      "keyword_hits": 100,
+      "preview_anchor_hits": 342
     },
     {
       "sigla": "FIOCRUZ",
@@ -85,11 +85,11 @@
       "site_oficial_detectado": "https://fomentoapesquisa.fiocruz.br",
       "pagina_editais_anterior": "https://fomentoapesquisa.fiocruz.br/editais",
       "pagina_editais_detectada": "https://fomentoapesquisa.fiocruz.br/editais",
-      "score": 69,
+      "score": 68,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 58,
+      "keyword_hits": 57,
       "preview_anchor_hits": 18
     },
     {
@@ -118,7 +118,7 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 47,
-      "preview_anchor_hits": 95
+      "preview_anchor_hits": 94
     },
     {
       "sigla": "FUNDECI",
@@ -127,11 +127,11 @@
       "site_oficial_detectado": "https://www.bnb.gov.br",
       "pagina_editais_anterior": "https://www.bnb.gov.br/fundeci/editais",
       "pagina_editais_detectada": "https://www.bnb.gov.br/fundeci/editais",
-      "score": 42,
+      "score": 41,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 31,
+      "keyword_hits": 30,
       "preview_anchor_hits": 161
     },
     {
@@ -160,7 +160,7 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 28,
-      "preview_anchor_hits": 92
+      "preview_anchor_hits": 100
     },
     {
       "sigla": "FINEP",
@@ -182,13 +182,13 @@
       "status": "ok",
       "site_oficial_detectado": "https://www.gov.br/saude",
       "pagina_editais_anterior": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms",
-      "pagina_editais_detectada": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms",
+      "pagina_editais_detectada": "https://www.gov.br/saude/acl_users/credentials_cookie_auth/require_login?came_from=https%3A//www.gov.br/saude/pt-br/assuntos/noticias-ms",
       "score": 13,
       "status_code": 200,
       "motivo": "",
-      "atualizada": false,
+      "atualizada": true,
       "keyword_hits": 3,
-      "preview_anchor_hits": 419
+      "preview_anchor_hits": 401
     },
     {
       "sigla": "FAPESP",
@@ -197,12 +197,12 @@
       "site_oficial_detectado": "https://fapesp.br",
       "pagina_editais_anterior": "https://fapesp.br/chamadas/",
       "pagina_editais_detectada": "https://fapesp.br/chamadas/",
-      "score": 288,
+      "score": 286,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 277,
-      "preview_anchor_hits": 335
+      "keyword_hits": 275,
+      "preview_anchor_hits": 336
     },
     {
       "sigla": "FAPERJ",
@@ -211,12 +211,12 @@
       "site_oficial_detectado": "https://www.faperj.br",
       "pagina_editais_anterior": "https://www.faperj.br/?id=28.5.7",
       "pagina_editais_detectada": "https://www.faperj.br/?id=28.5.7",
-      "score": 307,
+      "score": 329,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 299,
-      "preview_anchor_hits": 307
+      "keyword_hits": 321,
+      "preview_anchor_hits": 319
     },
     {
       "sigla": "FACEPE",
@@ -224,13 +224,13 @@
       "status": "ok",
       "site_oficial_detectado": "https://www.facepe.br",
       "pagina_editais_anterior": "https://www.facepe.br/editais/todos/",
-      "pagina_editais_detectada": "https://www.facepe.br/editais/todos/",
-      "score": 171,
+      "pagina_editais_detectada": "https://www2.facepe.br/editais/todos/",
+      "score": 219,
       "status_code": 200,
       "motivo": "",
-      "atualizada": false,
-      "keyword_hits": 160,
-      "preview_anchor_hits": 739
+      "atualizada": true,
+      "keyword_hits": 208,
+      "preview_anchor_hits": 668
     },
     {
       "sigla": "FAPAC",
@@ -253,12 +253,12 @@
       "site_oficial_detectado": "https://www.fapeal.br",
       "pagina_editais_anterior": "https://www.fapeal.br/pesquisador/editais/",
       "pagina_editais_detectada": "https://www.fapeal.br/pesquisador/editais/",
-      "score": 59,
+      "score": 78,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 48,
-      "preview_anchor_hits": 177
+      "keyword_hits": 67,
+      "preview_anchor_hits": 215
     },
     {
       "sigla": "FAPEPI",
@@ -267,12 +267,12 @@
       "site_oficial_detectado": "https://www.fapepi.pi.gov.br",
       "pagina_editais_anterior": "https://www.fapepi.pi.gov.br/editais-abertos/",
       "pagina_editais_detectada": "https://www.fapepi.pi.gov.br/editais-abertos/",
-      "score": 17,
+      "score": 41,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 4,
-      "preview_anchor_hits": 13
+      "keyword_hits": 28,
+      "preview_anchor_hits": 70
     },
     {
       "sigla": "FAPES",
@@ -281,12 +281,12 @@
       "site_oficial_detectado": "https://fapes.es.gov.br",
       "pagina_editais_anterior": "https://fapes.es.gov.br/Editais/Resultados",
       "pagina_editais_detectada": "https://fapes.es.gov.br/Editais/Resultados",
-      "score": 1832,
+      "score": 1881,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 1821,
-      "preview_anchor_hits": 2898
+      "keyword_hits": 1870,
+      "preview_anchor_hits": 2945
     },
     {
       "sigla": "FAPEG",
@@ -295,12 +295,12 @@
       "site_oficial_detectado": "https://goias.gov.br/fapeg",
       "pagina_editais_anterior": "https://goias.gov.br/fapeg/editais/inscricoes-abertas/",
       "pagina_editais_detectada": "https://goias.gov.br/fapeg/editais/inscricoes-abertas/",
-      "score": 41,
+      "score": 32,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 30,
-      "preview_anchor_hits": 199
+      "keyword_hits": 21,
+      "preview_anchor_hits": 201
     },
     {
       "sigla": "FAPEMA",
@@ -328,21 +328,21 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 8,
-      "preview_anchor_hits": 80
+      "preview_anchor_hits": 81
     },
     {
       "sigla": "FUNDECT",
       "nome": "Fundacao de Apoio ao Desenvolvimento do Ensino, Ciencia e Tecnologia do Estado de Mato Grosso do Sul",
-      "status": "atencao",
+      "status": "ok",
       "site_oficial_detectado": "https://www.fundect.ms.gov.br",
       "pagina_editais_anterior": "https://www.fundect.ms.gov.br/category/chamadas-abertas/",
       "pagina_editais_detectada": "https://www.fundect.ms.gov.br/category/chamadas-abertas/",
-      "score": 0,
-      "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.fundect.ms.gov.br', port=443): Max retries exceeded with url: /category/chamadas-abertas/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundect.ms.gov.br', port=443) at 0x7f8079ae9210>, 'Connection to www.fundect.ms.gov.br timed out. (connect timeout=30)'))",
+      "score": 20,
+      "status_code": 200,
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 0
+      "keyword_hits": 7,
+      "preview_anchor_hits": 43
     },
     {
       "sigla": "FAPESPA",
@@ -351,26 +351,26 @@
       "site_oficial_detectado": "https://www.fapespa.pa.gov.br",
       "pagina_editais_anterior": "https://www.fapespa.pa.gov.br/category/editais/",
       "pagina_editais_detectada": "https://www.fapespa.pa.gov.br/category/editais/",
-      "score": 23,
+      "score": 62,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 10,
-      "preview_anchor_hits": 53
+      "keyword_hits": 51,
+      "preview_anchor_hits": 193
     },
     {
       "sigla": "FAPESQ",
       "nome": "Fundacao de Apoio a Pesquisa do Estado da Paraiba",
-      "status": "ok",
+      "status": "atencao",
       "site_oficial_detectado": "https://fapesq.rpp.br",
       "pagina_editais_anterior": "https://fapesq.rpp.br/noticias/@@electoral_period_blocked",
       "pagina_editais_detectada": "https://fapesq.rpp.br/noticias/@@electoral_period_blocked",
-      "score": 17,
-      "status_code": 200,
-      "motivo": "",
+      "score": 0,
+      "status_code": null,
+      "motivo": "Falha HTTP: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /noticias/@@electoral_period_blocked (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7f41c058e810>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))",
       "atualizada": false,
-      "keyword_hits": 9,
-      "preview_anchor_hits": 172
+      "keyword_hits": 0,
+      "preview_anchor_hits": 0
     },
     {
       "sigla": "FAPESB",
@@ -384,21 +384,21 @@
       "motivo": "",
       "atualizada": false,
       "keyword_hits": 125,
-      "preview_anchor_hits": 200
+      "preview_anchor_hits": 201
     },
     {
       "sigla": "FUNCAP",
       "nome": "Fundacao Cearense de Apoio ao Desenvolvimento Cientifico e Tecnologico",
-      "status": "atencao",
+      "status": "ok",
       "site_oficial_detectado": "https://www.funcap.ce.gov.br",
       "pagina_editais_anterior": "https://www.ce.gov.br/funcap/editais/",
       "pagina_editais_detectada": "https://www.ce.gov.br/funcap/editais/",
-      "score": 0,
-      "status_code": null,
-      "motivo": "Falha HTTP: 403 Client Error: Forbidden for url: https://www.ce.gov.br/funcap/editais/",
+      "score": 24,
+      "status_code": 200,
+      "motivo": "",
       "atualizada": false,
-      "keyword_hits": 0,
-      "preview_anchor_hits": 0
+      "keyword_hits": 13,
+      "preview_anchor_hits": 74
     },
     {
       "sigla": "FAPEAM",
@@ -423,7 +423,7 @@
       "pagina_editais_detectada": "https://fapeap.portal.ap.gov.br/",
       "score": 0,
       "status_code": null,
-      "motivo": "Falha HTTP: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "motivo": "Falha SSL/HTTP: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "atualizada": false,
       "keyword_hits": 0,
       "preview_anchor_hits": 0
@@ -463,12 +463,12 @@
       "site_oficial_detectado": "https://www.fappr.pr.gov.br",
       "pagina_editais_anterior": "https://www.fappr.pr.gov.br/Programas-Abertos",
       "pagina_editais_detectada": "https://www.fappr.pr.gov.br/Programas-Abertos",
-      "score": 127,
+      "score": 130,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 119,
-      "preview_anchor_hits": 287
+      "keyword_hits": 122,
+      "preview_anchor_hits": 288
     },
     {
       "sigla": "FAPERGS",
@@ -477,12 +477,12 @@
       "site_oficial_detectado": "https://fapergs.rs.gov.br",
       "pagina_editais_anterior": "https://fapergs.rs.gov.br/abertos",
       "pagina_editais_detectada": "https://fapergs.rs.gov.br/abertos",
-      "score": 30,
+      "score": 38,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 22,
-      "preview_anchor_hits": 141
+      "keyword_hits": 30,
+      "preview_anchor_hits": 159
     },
     {
       "sigla": "FAPERN",
@@ -505,12 +505,12 @@
       "site_oficial_detectado": "https://rondonia.ro.gov.br/fapero",
       "pagina_editais_anterior": "https://rondonia.ro.gov.br/fapero/publicacoes/2026-2/",
       "pagina_editais_detectada": "https://rondonia.ro.gov.br/fapero/publicacoes/2026-2/",
-      "score": 68,
+      "score": 90,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 60,
-      "preview_anchor_hits": 473
+      "keyword_hits": 82,
+      "preview_anchor_hits": 570
     },
     {
       "sigla": "FAPITEC",
@@ -521,7 +521,7 @@
       "pagina_editais_detectada": "https://fapitec.se.gov.br/editais-abertos/",
       "score": 0,
       "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='fapitec.se.gov.br', port=443): Max retries exceeded with url: /editais-abertos/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapitec.se.gov.br', port=443) at 0x7f807a2b6cd0>, 'Connection to fapitec.se.gov.br timed out. (connect timeout=30)'))",
+      "motivo": "Falha HTTP: HTTPSConnectionPool(host='fapitec.se.gov.br', port=443): Max retries exceeded with url: /editais-abertos/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapitec.se.gov.br', port=443) at 0x7f41c060a850>, 'Connection to fapitec.se.gov.br timed out. (connect timeout=30)'))",
       "atualizada": false,
       "keyword_hits": 0,
       "preview_anchor_hits": 0
@@ -535,7 +535,7 @@
       "pagina_editais_detectada": "https://www.to.gov.br/fapt/01-editais-abertos/5sy36y0lf49g",
       "score": 0,
       "status_code": null,
-      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/01-editais-abertos/5sy36y0lf49g (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f8079dc6910>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))",
+      "motivo": "Falha HTTP: HTTPSConnectionPool(host='www.to.gov.br', port=443): Max retries exceeded with url: /fapt/01-editais-abertos/5sy36y0lf49g (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.to.gov.br', port=443) at 0x7f41c05f1650>, 'Connection to www.to.gov.br timed out. (connect timeout=30)'))",
       "atualizada": false,
       "keyword_hits": 0,
       "preview_anchor_hits": 0
@@ -547,12 +547,12 @@
       "site_oficial_detectado": "https://fapesc.sc.gov.br",
       "pagina_editais_anterior": "https://fapesc.sc.gov.br/chamadas-abertas/",
       "pagina_editais_detectada": "https://fapesc.sc.gov.br/chamadas-abertas/",
-      "score": 96,
+      "score": 71,
       "status_code": 200,
       "motivo": "",
       "atualizada": false,
-      "keyword_hits": 85,
-      "preview_anchor_hits": 111
+      "keyword_hits": 60,
+      "preview_anchor_hits": 100
     },
     {
       "sigla": "SERRAPILHEIRA",
@@ -574,16 +574,21 @@
       "sigla": "ABDI",
       "nome": "Agencia Brasileira de Desenvolvimento Industrial",
       "segmento": "federais",
-      "status": "pendente",
-      "viavel_monitoramento": false,
+      "status": "viavel",
+      "viavel_monitoramento": true,
       "auto_activated": false,
       "site_oficial_detectado": "https://www.abdi.com.br",
       "pagina_editais_detectada": "https://www.abdi.com.br/noticias/",
-      "score": 95,
-      "preview_count": 0,
-      "preview_titulos": [],
-      "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-10-01T17:22:47.261888-03:00"
+      "score": 103,
+      "preview_count": 4,
+      "preview_titulos": [
+        "ABDI e CBA lançam edital para acelerar cooperativas da bioeconomia amazônica",
+        "Ler Mais",
+        "Ler mais",
+        "Leia Mais"
+      ],
+      "motivo": "Pagina oficial com sinais de edital aberto e parse generico viavel.",
+      "checked_at": "2026-11-01T16:46:32.777012-03:00"
     },
     {
       "sigla": "ANEEL",
@@ -593,12 +598,12 @@
       "viavel_monitoramento": false,
       "auto_activated": false,
       "site_oficial_detectado": "https://www.gov.br/aneel/pt-br",
-      "pagina_editais_detectada": "https://www.gov.br/aneel/pt-br/assuntos/programa-de-pesquisa-desenvolvimento-e-inovacao/chamadas-de-projetos-de-pdi-estrategicos",
-      "score": 94,
+      "pagina_editais_detectada": "https://www.gov.br/aneel/pt-br/assuntos/programa-de-pesquisa-desenvolvimento-e-inovacao",
+      "score": 23,
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-10-01T17:22:47.261888-03:00"
+      "checked_at": "2026-11-01T16:46:32.777012-03:00"
     },
     {
       "sigla": "FUNBIO",
@@ -609,11 +614,11 @@
       "auto_activated": false,
       "site_oficial_detectado": "https://www.funbio.org.br",
       "pagina_editais_detectada": "https://www.funbio.org.br/",
-      "score": 73,
+      "score": 67,
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-10-01T17:22:47.261888-03:00"
+      "checked_at": "2026-11-01T16:46:32.777012-03:00"
     },
     {
       "sigla": "FGB",
@@ -628,7 +633,7 @@
       "preview_count": 0,
       "preview_titulos": [],
       "motivo": "Nao foi possivel validar uma pagina oficial viavel para monitoramento automatico.",
-      "checked_at": "2026-10-01T17:22:47.261888-03:00"
+      "checked_at": "2026-11-01T16:46:32.777012-03:00"
     }
   ]
 }
