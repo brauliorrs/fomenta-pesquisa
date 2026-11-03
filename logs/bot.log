@@ -32334,3 +32334,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-02 23:27:13,353 [INFO] Tentativas de publicacao apos sync: 2
 2026-11-02 23:27:13,353 [INFO] Publicacoes concluidas apos sync: 2
 2026-11-02 23:27:13,353 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-11-03 10:27:50,240 [INFO] Inicio da execucao
+2026-11-03 10:27:55,986 [INFO] Fonte ANP retornou 1 itens
+2026-11-03 10:28:01,027 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-03 10:28:01,618 [INFO] Fonte CAPES retornou 0 itens
+2026-11-03 10:28:06,053 [INFO] Fonte CONFAP retornou 10 itens
+2026-11-03 10:28:38,831 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7effb6a9e5d0>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-03 10:28:43,124 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-03 10:29:23,604 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-03 10:29:52,617 [INFO] Fonte IPEA retornou 10 itens
+2026-11-03 10:30:31,359 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16505-chamada-publica-n-030-2026: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16505-chamada-publica-n-030-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7effb61d1cd0>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-03 10:30:32,312 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-03 10:30:48,484 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-03 10:30:54,461 [INFO] Fonte EMBRAPII retornou 8 itens
+2026-11-03 10:30:56,730 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-03 10:30:58,046 [INFO] Fonte BASA retornou 0 itens
+2026-11-03 10:30:58,856 [INFO] Fonte BNDES retornou 8 itens
+2026-11-03 10:31:10,564 [INFO] Fonte FINEP retornou 0 itens
+2026-11-03 10:31:11,102 [INFO] Fonte DECIT retornou 0 itens
+2026-11-03 10:31:12,129 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-03 10:31:34,227 [INFO] Fonte FAPERJ retornou 29 itens
+2026-11-03 10:31:53,544 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-03 10:31:55,829 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-03 10:34:00,156 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-03 10:35:03,264 [INFO] Fonte FAPEPI retornou 6 itens
+2026-11-03 10:35:37,791 [INFO] Fonte FAPES retornou 0 itens
+2026-11-03 10:35:43,281 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-03 10:35:48,677 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-03 10:35:50,800 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-03 10:35:54,549 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-03 10:41:23,834 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-03 10:47:42,458 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-03 10:47:49,678 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-03 10:48:33,927 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-03 10:48:40,649 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-03 10:49:18,241 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-03 10:50:52,666 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-03 10:50:54,295 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-03 10:50:56,490 [INFO] Fonte FAPPR retornou 5 itens
+2026-11-03 10:51:12,075 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-03 10:54:19,968 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-03 10:54:21,046 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-03 10:55:55,169 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-03 11:00:29,982 [INFO] Fonte FAPT retornou 0 itens
+2026-11-03 11:00:35,803 [INFO] Fonte FAPESC retornou 5 itens
+2026-11-03 11:00:53,248 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-03 11:01:44,563 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-03 11:01:44,583 [INFO] Total coletado: 87
+2026-11-03 11:01:44,583 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 87 | Mantidos: 0 | Deduplicados por chave: 45
+2026-11-03 11:01:44,583 [INFO] Repostados/Publicados: 0
+2026-11-03 11:01:44,583 [INFO] Bloqueados para postagem: 0
+2026-11-03 11:01:44,583 [INFO] Expirados removidos da base: 2
+2026-11-03 11:01:44,583 [INFO] Erros por fonte: 0
+2026-11-03 11:01:44,583 [INFO] Fim da execucao
