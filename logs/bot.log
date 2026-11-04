@@ -32447,3 +32447,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-03 21:21:52,259 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-03 21:21:52,259 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-03 21:21:52,259 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-04 10:29:43,236 [INFO] Inicio da execucao
+2026-11-04 10:29:49,728 [INFO] Fonte ANP retornou 1 itens
+2026-11-04 10:29:55,105 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-04 10:29:55,992 [INFO] Fonte CAPES retornou 0 itens
+2026-11-04 10:29:59,416 [INFO] Fonte CONFAP retornou 10 itens
+2026-11-04 10:30:33,399 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7f83b1983590>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-04 10:30:38,865 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-04 10:31:19,247 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-04 10:33:26,383 [INFO] Fonte IPEA retornou 0 itens
+2026-11-04 10:33:27,600 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-04 10:33:46,295 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-04 10:33:54,368 [INFO] Fonte EMBRAPII retornou 9 itens
+2026-11-04 10:33:58,267 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-04 10:33:59,748 [INFO] Fonte BASA retornou 0 itens
+2026-11-04 10:34:01,208 [INFO] Fonte BNDES retornou 8 itens
+2026-11-04 10:34:15,860 [INFO] Fonte FINEP retornou 0 itens
+2026-11-04 10:34:16,484 [INFO] Fonte DECIT retornou 0 itens
+2026-11-04 10:34:17,886 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-04 10:34:53,615 [INFO] Fonte FAPERJ retornou 29 itens
+2026-11-04 10:35:23,966 [WARNING] Falha ao enriquecer item https://www.faperj.br/rp/downloads/Edital_FAPERJ_Nº_27_2026_–_Bolsa_de_Iniciação_Tecnológica_(IT).pdf: HTTPSConnectionPool(host='www.faperj.br', port=443): Max retries exceeded with url: /rp/downloads/Edital_FAPERJ_N%C2%BA_27_2026_%E2%80%93_Bolsa_de_Inicia%C3%A7%C3%A3o_Tecnol%C3%B3gica_(IT).pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.faperj.br', port=443) at 0x7f83b1500450>, 'Connection to www.faperj.br timed out. (connect timeout=30)'))
+2026-11-04 10:36:34,552 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-04 10:36:37,265 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-04 10:38:01,868 [INFO] Fonte FAPEAL retornou 0 itens
+2026-11-04 10:38:22,448 [INFO] Fonte FAPEPI retornou 6 itens
+2026-11-04 10:38:48,710 [INFO] Fonte FAPES retornou 0 itens
+2026-11-04 10:38:50,952 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-04 10:38:57,702 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-04 10:39:00,154 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-04 10:39:04,549 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-04 10:44:39,700 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-04 10:51:02,946 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-04 10:51:11,790 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-04 10:52:00,080 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-04 10:52:08,752 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-04 10:52:18,174 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-04 10:53:53,040 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-04 10:53:58,836 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-04 10:54:02,009 [INFO] Fonte FAPPR retornou 5 itens
+2026-11-04 10:54:21,016 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-04 10:57:27,461 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-04 10:57:28,926 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-04 10:59:02,742 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-04 11:03:39,221 [INFO] Fonte FAPT retornou 0 itens
+2026-11-04 11:03:44,234 [INFO] Fonte FAPESC retornou 5 itens
+2026-11-04 11:04:00,167 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-04 11:04:47,755 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-04 11:04:47,776 [INFO] Total coletado: 71
+2026-11-04 11:04:47,776 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 71 | Mantidos: 0 | Deduplicados por chave: 31
+2026-11-04 11:04:47,776 [INFO] Repostados/Publicados: 0
+2026-11-04 11:04:47,776 [INFO] Bloqueados para postagem: 0
+2026-11-04 11:04:47,776 [INFO] Expirados removidos da base: 2
+2026-11-04 11:04:47,776 [INFO] Erros por fonte: 0
+2026-11-04 11:04:47,776 [INFO] Fim da execucao
