@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:03:43.263813-03:00",
+  "generated_at": "2026-11-04T18:37:55.367776-03:00",
   "total_prontos": 42,
   "itens": [
     {
@@ -11,9 +11,9 @@
       "prazo": "2026-11-04",
       "status": "novo",
       "score_editorial": 100,
-      "ultima_postagem": null,
-      "quantidade_postagens": 0,
-      "instagram_feed_publicado": false,
+      "ultima_postagem": "2026-11-04T18:37:55.367776-03:00",
+      "quantidade_postagens": 1,
+      "instagram_feed_publicado": true,
       "urgencia_dias": 0,
       "link": "https://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/",
       "caption": "Oportunidade no radar: Divulgados os finalistas da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I\nÚltimo dia de inscrição.\n\nA oportunidade está aberta para pesquisadores e instituições de pesquisa na categoria pesquisa, com prazo final em 04/11/2026.\n\nInstituição: Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa\nPúblico-alvo: Pesquisadores e instituições de pesquisa\nTipo: Pesquisa\nAbertura das inscrições: Não informado\nPrazo final: 04/11/2026\n\nLink oficial do edital:\nhttps://news.confap.org.br/divulgados-os-finalistas-da-5a-edicao-do-premio-confap-de-boas-praticas-em-fomento-a-cti/\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Confap #Projetosdepesquisa #Inovacao #Empreendedorismo #Pesquisadores",
@@ -55,8 +55,8 @@
       "prazo": "2026-11-06",
       "status": "atualizado",
       "score_editorial": 100,
-      "ultima_postagem": "2026-08-01T03:18:37.167196-03:00",
-      "quantidade_postagens": 1,
+      "ultima_postagem": "2026-11-04T18:37:55.367776-03:00",
+      "quantidade_postagens": 2,
       "instagram_feed_publicado": true,
       "urgencia_dias": 2,
       "link": "https://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-N•-0062026-PROGRAMA-DE-BOLSAS-DE-INICIACAO-CIENTIFICA-DA-FAPEPI-PBIC.pdf",
