@@ -32672,3 +32672,8 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-05 21:54:48,570 [INFO] Expirados removidos da base: 0
 2026-11-05 21:54:48,570 [INFO] Erros por fonte: 0
 2026-11-05 21:54:48,570 [INFO] Fim da execucao
+2026-11-05 21:56:22,925 [INFO] Tentando publicar carrossel de feed com 2 item(ns): conselho_nacional_das_fundacoes_estaduai_c98f3518, fundacao_carlos_chagas_filho_de_amparo_a_0f43357d
+2026-11-05 21:57:06,949 [INFO] Tentando repostar story diario para edital valido fundacao_de_amparo_a_pesquisa_do_estado__84be84f4 usando asset publico draft_fundacao_de_amparo_a_pesquisa_do_estado__84be84f4.jpg
+2026-11-05 21:57:20,074 [INFO] Tentativas de publicacao apos sync: 3
+2026-11-05 21:57:20,074 [INFO] Publicacoes concluidas apos sync: 3
+2026-11-05 21:57:20,074 [INFO] Novos editais publicados no feed hoje: 2/10.
