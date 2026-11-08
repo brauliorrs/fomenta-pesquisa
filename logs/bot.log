@@ -33013,3 +33013,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-08 19:42:07,138 [INFO] Expirados removidos da base: 0
 2026-11-08 19:42:07,138 [INFO] Erros por fonte: 0
 2026-11-08 19:42:07,139 [INFO] Fim da execucao
+2026-11-08 19:42:10,776 [INFO] Tentando repostar story diario para edital valido instituto_de_pesquisa_economica_aplicada_7b38f057 usando asset publico draft_instituto_de_pesquisa_economica_aplicada_7b38f057.jpg
+2026-11-08 19:42:19,512 [INFO] Tentativas de publicacao apos sync: 1
+2026-11-08 19:42:19,512 [INFO] Publicacoes concluidas apos sync: 1
+2026-11-08 19:42:19,512 [INFO] Novos editais publicados no feed hoje: 0/10.
