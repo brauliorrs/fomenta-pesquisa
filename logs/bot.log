@@ -33017,3 +33017,61 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-08 19:42:19,512 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-08 19:42:19,512 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-08 19:42:19,512 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-09 10:54:44,202 [INFO] Inicio da execucao
+2026-11-09 10:54:49,289 [INFO] Fonte ANP retornou 1 itens
+2026-11-09 10:54:53,761 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-09 10:54:54,400 [INFO] Fonte CAPES retornou 0 itens
+2026-11-09 10:54:55,316 [INFO] Fonte CONFAP retornou 10 itens
+2026-11-09 10:55:28,026 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7f0d23cbf0d0>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-09 10:55:30,587 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-09 10:56:07,413 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-09 10:56:33,503 [INFO] Fonte IPEA retornou 10 itens
+2026-11-09 10:57:18,656 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-09 10:57:33,184 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-09 10:57:39,273 [INFO] Fonte EMBRAPII retornou 9 itens
+2026-11-09 10:57:41,531 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-09 10:57:42,688 [INFO] Fonte BASA retornou 0 itens
+2026-11-09 10:57:44,768 [INFO] Fonte BNDES retornou 8 itens
+2026-11-09 10:57:53,616 [INFO] Fonte FINEP retornou 0 itens
+2026-11-09 10:57:54,082 [INFO] Fonte DECIT retornou 0 itens
+2026-11-09 10:57:54,905 [INFO] Fonte FAPESP retornou 12 itens
+2026-11-09 10:58:15,236 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-09 10:58:32,392 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-09 10:58:34,785 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-09 10:59:51,273 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-09 11:00:14,380 [INFO] Fonte FAPEPI retornou 6 itens
+2026-11-09 11:00:17,605 [INFO] Fallback SSL sem verificacao usado para https://www.fapepi.pi.gov.br/edital/edital-de-chamamento-publico-09-2026-2/
+2026-11-09 11:00:20,991 [INFO] Fallback SSL sem verificacao usado para https://www.fapepi.pi.gov.br/edital/edital-fapepi-008-2026-pdpg-parcerias-estrategicas-nos-estados-vi-rede-de-pesquisa-e-desenvolvimento-da-regiao-nordeste/
+2026-11-09 11:00:24,479 [INFO] Fallback SSL sem verificacao usado para https://www.fapepi.pi.gov.br/edital/edital-no-007-2026-programa-de-desenvolvimento-cientifico-e-tecnologico-regional-do-piaui-pdctr-pi/
+2026-11-09 11:00:27,668 [INFO] Fallback SSL sem verificacao usado para https://www.fapepi.pi.gov.br/edital/edital-no-006-2026-programa-de-bolsas-de-iniciacao-cientifica-da-fapepi-pbic/
+2026-11-09 11:00:30,837 [INFO] Fallback SSL sem verificacao usado para https://www.fapepi.pi.gov.br/edital/edital-no-005-2026-programa-de-apoio-a-pos-graduacao-stricto-sensu-papg-bolsas-de-mestrado-e-doutorado/
+2026-11-09 11:00:33,837 [INFO] Fallback SSL sem verificacao usado para https://www.fapepi.pi.gov.br/edital/edital-no-003-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-profix-cb/
+2026-11-09 11:00:40,305 [INFO] Fonte FAPES retornou 0 itens
+2026-11-09 11:00:42,244 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-09 11:00:46,940 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-09 11:00:48,738 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-09 11:00:53,049 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-09 11:01:25,954 [INFO] Fonte FAPESPA retornou 0 itens
+2026-11-09 11:03:00,981 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-09 11:03:05,380 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-09 11:03:58,454 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-09 11:04:05,634 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-09 11:04:12,140 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-09 11:05:46,542 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-09 11:05:50,160 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-09 11:05:52,424 [INFO] Fonte FAPPR retornou 5 itens
+2026-11-09 11:06:06,493 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-09 11:09:12,956 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-09 11:09:14,070 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-09 11:10:47,747 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-09 11:15:23,291 [INFO] Fonte FAPT retornou 0 itens
+2026-11-09 11:15:26,923 [INFO] Fonte FAPESC retornou 5 itens
+2026-11-09 11:15:36,243 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-09 11:16:22,573 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-09 11:16:22,592 [INFO] Total coletado: 60
+2026-11-09 11:16:22,592 [INFO] Novos: 6 | Prorrogados: 0 | Atualizados: 54 | Mantidos: 0 | Deduplicados por chave: 15
+2026-11-09 11:16:22,592 [INFO] Repostados/Publicados: 0
+2026-11-09 11:16:22,592 [INFO] Bloqueados para postagem: 0
+2026-11-09 11:16:22,593 [INFO] Expirados removidos da base: 0
+2026-11-09 11:16:22,593 [INFO] Erros por fonte: 0
+2026-11-09 11:16:22,593 [INFO] Fim da execucao
