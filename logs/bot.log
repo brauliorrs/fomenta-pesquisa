@@ -33640,3 +33640,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-14 10:22:08,989 [INFO] Expirados removidos da base: 5
 2026-11-14 10:22:08,989 [INFO] Erros por fonte: 0
 2026-11-14 10:22:08,989 [INFO] Fim da execucao
+2026-11-14 10:22:12,796 [INFO] Tentando repostar story diario para edital valido conselho_nacional_das_fundacoes_estaduai_76e5a10e usando asset publico draft_conselho_nacional_das_fundacoes_estaduai_76e5a10e.jpg
+2026-11-14 10:22:19,869 [INFO] Tentativas de publicacao apos sync: 1
+2026-11-14 10:22:19,869 [INFO] Publicacoes concluidas apos sync: 1
+2026-11-14 10:22:19,869 [INFO] Novos editais publicados no feed hoje: 0/10.
