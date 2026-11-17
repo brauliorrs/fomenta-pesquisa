@@ -1,11 +1,12 @@
 ﻿from __future__ import annotations
 
-from datetime import date
 from pathlib import Path
 from typing import Any
 
+from src.config import settings
+from src.services.opportunity_guard import opportunity_gate
 from src.services.storage_service import StorageService
-from src.utils.dates import parse_date
+from src.utils.dates import now_in_timezone, parse_date
 
 
 class PublicationQueueService:
@@ -14,7 +15,12 @@ class PublicationQueueService:
         self.queue_path = queue_path
 
     def export(self, editais: list[dict[str, Any]], generated_at: str) -> None:
-        ready_items = [item for item in editais if item.get('pronto_para_postagem') and item.get('status') != 'encerrado']
+        ready_items = [
+            item for item in editais
+            if item.get('pronto_para_postagem')
+            and item.get('status') != 'encerrado'
+            and opportunity_gate(item, timezone_name=settings.timezone)[0]
+        ]
         ready_items.sort(key=self._sort_key)
 
         payload = {
@@ -60,4 +66,4 @@ class PublicationQueueService:
         parsed = parse_date(expiration_date)
         if not parsed:
             return None
-        return (parsed.date() - date.today()).days
+        return (parsed.date() - now_in_timezone(settings.timezone).date()).days

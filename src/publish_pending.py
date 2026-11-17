@@ -7,6 +7,7 @@ from src.config import settings
 from src.models import Edital, PublicationResult
 from src.services.history_service import prune_history_rows
 from src.services.instagram_service import InstagramService
+from src.services.opportunity_guard import opportunity_gate
 from src.services.publication_queue_service import PublicationQueueService
 from src.services.render_service import RenderService
 from src.services.storage_service import StorageService
@@ -71,12 +72,14 @@ def queue_positions(storage: StorageService) -> dict[str, int]:
     return positions
 
 
+def eligible_for_publication(edital: dict[str, Any]) -> bool:
+    allowed, _, _ = opportunity_gate(edital, timezone_name=settings.timezone)
+    return bool(edital.get('pronto_para_postagem')) and edital.get('status') != 'encerrado' and allowed
+
+
 def ready_editais(editais: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return [
-        edital
-        for edital in editais
-        if edital.get('status') != 'encerrado' and edital.get('pronto_para_postagem')
-    ]
+    # Nao confiar apenas no flag persistido: pode estar desatualizado na hora da postagem.
+    return [edital for edital in editais if eligible_for_publication(edital)]
 
 
 def has_real_feed_publication(edital: dict[str, Any]) -> bool:
@@ -220,6 +223,10 @@ def attempt_publication(
     logger,
     reason: str,
 ) -> Any | None:
+    allowed, reason_guard, _ = opportunity_gate(edital, timezone_name=settings.timezone)
+    if not allowed:
+        logger.warning('Publicacao impedida para %s: %s', edital.get('id'), reason_guard)
+        return None
     asset_path = edital.get('instagram_asset') or ''
     if not asset_path:
         logger.warning('Item %s sem asset preparado para publicacao.', edital.get('id'))
@@ -249,11 +256,18 @@ def attempt_feed_batch_publication(
     logger,
     story_enabled: bool,
 ) -> list[PublicationResult]:
-    publishable_batch = [edital for edital in edital_batch if str(edital.get('instagram_asset') or '').strip()]
+    publishable_batch = [
+        edital for edital in edital_batch
+        if eligible_for_publication(edital) and str(edital.get('instagram_asset') or '').strip()
+    ]
     skipped_batch = [edital for edital in edital_batch if edital not in publishable_batch]
 
     for edital in skipped_batch:
-        logger.warning('Item %s sem asset preparado para entrar no carrossel.', edital.get('id'))
+        _, reason_guard, _ = opportunity_gate(edital, timezone_name=settings.timezone)
+        logger.warning(
+            'Item %s impedido de entrar no carrossel: %s',
+            edital.get('id'), reason_guard or 'Asset ausente ou item nao liberado.',
+        )
 
     if not publishable_batch:
         return []
@@ -282,7 +296,7 @@ def attempt_feed_batch_publication(
         errors: list[str] = []
         published_targets = ['feed']
 
-        if story_enabled:
+        if story_enabled and opportunity_gate(edital, timezone_name=settings.timezone)[0]:
             story_result = instagram_service.publish_story_prepared_asset(
                 Edital(**edital),
                 story_image_path=edital.get('instagram_story_asset', ''),
@@ -292,6 +306,8 @@ def attempt_feed_batch_publication(
                 published_targets.append('story')
             else:
                 errors.append(story_result.message)
+        elif story_enabled:
+            errors.append('Story suspenso: prazo de inscricao encerrado ou nao confirmado.')
 
         payload = {
             'id': edital.get('id', ''),

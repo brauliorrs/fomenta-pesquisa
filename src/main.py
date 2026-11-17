@@ -7,6 +7,9 @@ from src.models import Edital, SourceConfig
 from src.services.dedup_service import DedupService
 from src.services.history_service import prune_history_rows
 from src.services.instagram_service import InstagramService
+from src.services.opportunity_guard import (
+    CLOSED, NOT_OPPORTUNITY, UNKNOWN_CLOSING_TIME, UNKNOWN_DEADLINE, opportunity_gate,
+)
 from src.services.normalize_service import NormalizeService
 from src.services.publication_queue_service import PublicationQueueService
 from src.services.render_service import RenderService
@@ -17,8 +20,8 @@ from src.utils.dates import now_in_timezone
 from src.utils.logger import configure_logger
 
 
-CONFAP_INCLUDE = ('edital', 'chamada', 'inscri', 'prêmio', 'premio', 'centelha', 'bolsa', 'compet')
-CONFAP_EXCLUDE = ('resultado', 'fórum', 'forum', 'publicada na', 'investiga', 'usa novas tecnologias', 'projeto apoiado')
+CONFAP_INCLUDE = ('edital', 'chamada', 'inscri', 'centelha', 'bolsa', 'submiss', 'propostas')
+CONFAP_EXCLUDE = ('resultado', 'finalista', 'prêmio', 'premio', 'premiaç', 'premiac', 'vencedor', 'fórum', 'forum', 'publicada na', 'investiga', 'usa novas tecnologias', 'projeto apoiado')
 CAPES_STRICT_REVIEW = ('prorroga prazo', 'prorroga o prazo', 'chamamento')
 CAPES_EXCLUDE = ('cadastramento de bolsas', 'cadastramento', 'registro de informações', 'registro de informacoes', 'instabilidade no sistema', 'instabilidade constatada no sistema')
 GENERIC_TITLE_FLAGS = ('resultado', 'lista final', 'seminário', 'seminario', 'webinar', 'fórum', 'forum', 'governo anuncia')
@@ -32,6 +35,7 @@ def load_source_configs(storage: StorageService) -> list[SourceConfig]:
 
 DEFINITIVE_BLOCK_REASONS = (
     'Edital encerrado.',
+    NOT_OPPORTUNITY,
     'Link oficial ausente.',
     'Titulo ausente.',
     'Resumo ausente.',
@@ -42,7 +46,10 @@ DEFINITIVE_BLOCK_REASONS = (
 )
 
 REVIEW_REASONS = (
-    'Prazo final nao identificado.',
+    UNKNOWN_DEADLINE,
+    UNKNOWN_CLOSING_TIME,
+    'Prazo final invalido; revisar fonte oficial.',
+    'Inscricoes ainda nao abertas.',
     'Item da CAPES precisa de revisao manual de prazo antes da postagem.',
 )
 
@@ -71,8 +78,14 @@ def apply_publication_result(edital: dict, result, now_iso: str) -> None:
 def evaluate_editorial_quality(edital: dict) -> tuple[int, list[str], bool, bool]:
     pendencias: list[str] = []
     score = 100
+    permitido, motivo_guard, definitivo_guard = opportunity_gate(
+        edital, timezone_name=settings.timezone
+    )
+    if not permitido:
+        pendencias.append(motivo_guard)
+        score -= 100 if definitivo_guard else 35
 
-    if edital.get('status') == 'encerrado':
+    if edital.get('status') == 'encerrado' and CLOSED not in pendencias:
         pendencias.append('Edital encerrado.')
         score -= 100
 
@@ -92,8 +105,8 @@ def evaluate_editorial_quality(edital: dict) -> tuple[int, list[str], bool, bool
         pendencias.append('Resumo curto para postagem automatica.')
         score -= 10
 
-    if not edital.get('data_expiracao'):
-        pendencias.append('Prazo final nao identificado.')
+    if not edital.get('data_expiracao') and UNKNOWN_DEADLINE not in pendencias:
+        pendencias.append(UNKNOWN_DEADLINE)
         score -= 20
     if not edital.get('publico_alvo'):
         pendencias.append('Publico-alvo nao identificado.')
@@ -126,8 +139,8 @@ def evaluate_editorial_quality(edital: dict) -> tuple[int, list[str], bool, bool
             score -= 60
 
     score = max(score, 0)
-    bloqueio_definitivo = any(pending in DEFINITIVE_BLOCK_REASONS for pending in pendencias)
-    revisao_humana = (not bloqueio_definitivo) and any(pending in REVIEW_REASONS for pending in pendencias)
+    bloqueio_definitivo = definitivo_guard or any(pending in DEFINITIVE_BLOCK_REASONS for pending in pendencias)
+    revisao_humana = (not bloqueio_definitivo) and (not permitido or any(pending in REVIEW_REASONS for pending in pendencias))
     return score, pendencias, revisao_humana, bloqueio_definitivo
 
 

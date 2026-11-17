@@ -5,10 +5,11 @@ from src.sources.base_source import BaseSource
 
 class CONFAPSource(BaseSource):
     INCLUDE_KEYWORDS = (
-        'edital', 'chamada', 'inscri', 'prêmio', 'premio', 'centelha', 'bolsa', 'compet'
+        'edital', 'chamada', 'inscri', 'centelha', 'bolsa', 'submiss', 'propostas'
     )
     EXCLUDE_KEYWORDS = (
-        'resultado', 'fórum', 'forum', 'publicada na', 'investiga', 'usa novas tecnologias', 'projeto apoiado'
+        'resultado', 'finalista', 'prêmio', 'premio', 'premiaç', 'premiac', 'vencedor',
+        'fórum', 'forum', 'publicada na', 'investiga', 'usa novas tecnologias', 'projeto apoiado'
     )
 
     def parse(self, raw_content: str) -> list[dict]:
