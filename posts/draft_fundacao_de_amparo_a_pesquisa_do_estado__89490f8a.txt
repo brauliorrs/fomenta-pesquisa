@@ -2,12 +2,11 @@
 id: fundacao_de_amparo_a_pesquisa_do_estado__89490f8a
 fonte: FAPESP
 orgao: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
-prazo: 2026-11-19
+prazo: 2026-12-03
 card_feed: draft_fundacao_de_amparo_a_pesquisa_do_estado__89490f8a.jpg
 card_story: draft_fundacao_de_amparo_a_pesquisa_do_estado__89490f8a_story.jpg
 
 Oportunidade no radar: Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais
-Prazo encerra em 2 dias.
 
 Áreas: consultar chamada.
 
@@ -15,7 +14,7 @@ Instituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo
 Público-alvo: Empresas inovadoras, startups e pesquisadores
 Tipo: Inovacao
 Abertura das inscrições: 01/04/2025
-Prazo final: 19/11/2026
+Prazo final: 03/12/2026
 
 Link oficial do edital:
 https://fapesp.br/18389

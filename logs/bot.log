@@ -33994,3 +33994,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-17 12:01:13,562 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-17 12:01:13,562 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-17 12:01:13,562 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-17 22:46:15,614 [INFO] Inicio da execucao
+2026-11-17 22:46:20,155 [INFO] Fonte ANP retornou 1 itens
+2026-11-17 22:46:25,943 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-17 22:46:26,780 [INFO] Fonte CAPES retornou 0 itens
+2026-11-17 22:46:29,878 [INFO] Fonte CONFAP retornou 8 itens
+2026-11-17 22:47:05,709 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7baae9fd78d0>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-17 22:47:09,900 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-17 22:47:48,190 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 22:48:08,311 [INFO] Fonte IPEA retornou 10 itens
+2026-11-17 22:48:47,677 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7baae94a4f50>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-17 22:48:48,874 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-17 22:49:04,150 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-17 22:49:12,532 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-17 22:49:16,621 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-17 22:49:18,009 [INFO] Fonte BASA retornou 0 itens
+2026-11-17 22:49:19,215 [INFO] Fonte BNDES retornou 8 itens
+2026-11-17 22:49:29,479 [INFO] Fonte FINEP retornou 0 itens
+2026-11-17 22:49:59,886 [INFO] Fonte DECIT retornou 0 itens
+2026-11-17 22:50:00,871 [INFO] Fonte FAPESP retornou 14 itens
+2026-11-17 22:50:29,782 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-17 22:50:35,000 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-17 22:50:37,321 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-17 22:52:03,005 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-17 22:52:33,111 [INFO] Fonte FAPEPI retornou 6 itens
+2026-11-17 22:52:49,931 [INFO] Fonte FAPES retornou 0 itens
+2026-11-17 22:52:52,749 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-17 22:52:56,157 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-17 22:52:58,348 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-17 22:53:02,283 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-17 22:58:38,352 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-17 23:05:06,087 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-17 23:05:11,317 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-17 23:06:03,074 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-17 23:06:11,076 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-17 23:06:18,131 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-17 23:07:52,692 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-17 23:07:57,582 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-17 23:07:59,799 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-17 23:08:19,197 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-17 23:11:25,597 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-17 23:11:26,725 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-17 23:13:00,739 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-17 23:17:35,905 [INFO] Fonte FAPT retornou 0 itens
+2026-11-17 23:17:39,209 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-17 23:17:48,913 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-17 23:18:30,840 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-17 23:18:30,854 [INFO] Total coletado: 87
+2026-11-17 23:18:30,854 [INFO] Novos: 1 | Prorrogados: 1 | Atualizados: 85 | Mantidos: 0 | Deduplicados por chave: 46
+2026-11-17 23:18:30,854 [INFO] Repostados/Publicados: 0
+2026-11-17 23:18:30,854 [INFO] Bloqueados para postagem: 0
+2026-11-17 23:18:30,854 [INFO] Expirados removidos da base: 0
+2026-11-17 23:18:30,854 [INFO] Erros por fonte: 0
+2026-11-17 23:18:30,855 [INFO] Fim da execucao

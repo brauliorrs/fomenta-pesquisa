@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T09:01:02.027297-03:00",
+  "generated_at": "2026-11-17T19:46:15.614119-03:00",
   "total_prontos": 33,
   "itens": [
     {
@@ -26,28 +26,6 @@
     },
     {
       "posicao_fila": 2,
-      "id": "fundacao_de_amparo_a_pesquisa_do_estado__89490f8a",
-      "titulo": "Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais",
-      "fonte": "FAPESP",
-      "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
-      "prazo": "2026-11-19",
-      "status": "atualizado",
-      "score_editorial": 90,
-      "ultima_postagem": "2026-09-17T05:47:15.882668-03:00",
-      "quantidade_postagens": 1,
-      "instagram_feed_publicado": true,
-      "urgencia_dias": 2,
-      "link": "https://fapesp.br/18389",
-      "caption": "Oportunidade no radar: Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais\nPrazo encerra em 2 dias.\n\nÁreas: consultar chamada.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Empresas inovadoras, startups e pesquisadores\nTipo: Inovacao\nAbertura das inscrições: 01/04/2025\nPrazo final: 19/11/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18389\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Chamadapublica #Inovacao #Empreendedorismo",
-      "card_header": "EDITAL FAPESP",
-      "card_title": "Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais",
-      "card_deadline": "PRAZO: 19/11",
-      "card_summary": "Áreas: consultar chamada.",
-      "card_handle": "@editais.pesquisa",
-      "card_footer_note": "Link do edital e detalhes abaixo."
-    },
-    {
-      "posicao_fila": 3,
       "id": "fundacao_araucaria_de_apoio_ao_desenvolv_93c4751c",
       "titulo": "CP 20/26: Top Managers Fase II",
       "fonte": "FAPPR",
@@ -69,7 +47,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 4,
+      "posicao_fila": 3,
       "id": "fundacao_de_amparo_a_pesquisa_do_estado__7140ef22",
       "titulo": "Aperfeiçoamento de especialistas que atuam em museus e instituições de salvaguarda e comunicação de acervos",
       "fonte": "FAPESP",
@@ -91,7 +69,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 5,
+      "posicao_fila": 4,
       "id": "instituto_de_pesquisa_economica_aplicada_b39f146d",
       "titulo": "Processo Seletivo Simplificado PROCIN 002/2026 -",
       "fonte": "IPEA",
@@ -113,7 +91,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 6,
+      "posicao_fila": 5,
       "id": "instituto_de_pesquisa_economica_aplicada_8f2f8b18",
       "titulo": "Processo Seletivo Simplificado PROCIN 003/2026 -",
       "fonte": "IPEA",
@@ -135,7 +113,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 7,
+      "posicao_fila": 6,
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_c1e58004",
       "titulo": "EDITAIS LANÇADOS E/OU COM PRAZO DE SUBMISSÃO DE PROPOSTAS ABERTO",
       "fonte": "FAPESQ",
@@ -157,7 +135,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 8,
+      "posicao_fila": 7,
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_9b3d6105",
       "titulo": "• Edital n°32/2025 Programa Centelha 3 PE com Novo Cronograma",
       "fonte": "FACEPE",
@@ -179,7 +157,7 @@
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
     {
-      "posicao_fila": 9,
+      "posicao_fila": 8,
       "id": "conselho_nacional_das_fundacoes_estaduai_f1f378cb",
       "titulo": "Parceria Europeia FOREST lança sua primeira Chamada Transnacional Conjunta",
       "fonte": "CONFAP",
@@ -197,6 +175,28 @@
       "card_title": "Parceria Europeia FOREST lança sua primeira Transnacional Conjunta",
       "card_deadline": "PRAZO: 02/12",
       "card_summary": "Voltado a pesquisadores e instituições de pesquisa. Prazo final em 02/12/2026. Confira os critérios no edital.",
+      "card_handle": "@editais.pesquisa",
+      "card_footer_note": "Link do edital e detalhes abaixo."
+    },
+    {
+      "posicao_fila": 9,
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__89490f8a",
+      "titulo": "Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais",
+      "fonte": "FAPESP",
+      "orgao": "Fundação de Amparo à Pesquisa do Estado de Sao Paulo",
+      "prazo": "2026-12-03",
+      "status": "prorrogado",
+      "score_editorial": 90,
+      "ultima_postagem": "2026-09-17T05:47:15.882668-03:00",
+      "quantidade_postagens": 1,
+      "instagram_feed_publicado": true,
+      "urgencia_dias": 16,
+      "link": "https://fapesp.br/18389",
+      "caption": "Oportunidade no radar: Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais\n\nÁreas: consultar chamada.\n\nInstituição: Fundação de Amparo à Pesquisa do Estado de Sao Paulo\nPúblico-alvo: Empresas inovadoras, startups e pesquisadores\nTipo: Inovacao\nAbertura das inscrições: 01/04/2025\nPrazo final: 03/12/2026\n\nLink oficial do edital:\nhttps://fapesp.br/18389\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesp #Projetosdepesquisa #Chamadapublica #Inovacao #Empreendedorismo",
+      "card_header": "EDITAL FAPESP",
+      "card_title": "Auxílio à Pesquisa Jovens Pesquisadores para Pesquisadores Internacionais",
+      "card_deadline": "PRAZO: 03/12",
+      "card_summary": "Áreas: consultar chamada.",
       "card_handle": "@editais.pesquisa",
       "card_footer_note": "Link do edital e detalhes abaixo."
     },
