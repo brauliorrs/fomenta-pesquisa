@@ -33931,3 +33931,62 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-17 00:12:36,881 [INFO] Tentativas de publicacao apos sync: 3
 2026-11-17 00:12:36,881 [INFO] Publicacoes concluidas apos sync: 3
 2026-11-17 00:12:36,881 [INFO] Novos editais publicados no feed hoje: 2/10.
+2026-11-17 11:29:15,737 [INFO] Inicio da execucao
+2026-11-17 11:29:20,264 [INFO] Fonte ANP retornou 1 itens
+2026-11-17 11:29:26,536 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-17 11:29:27,528 [INFO] Fonte CAPES retornou 0 itens
+2026-11-17 11:29:30,704 [INFO] Fonte CONFAP retornou 9 itens
+2026-11-17 11:30:05,957 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7afc31455b10>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-17 11:30:11,255 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-17 11:30:51,870 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:31:13,585 [INFO] Fonte IPEA retornou 10 itens
+2026-11-17 11:31:51,566 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7afc30e65210>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-17 11:31:53,120 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-17 11:32:11,938 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-17 11:32:20,323 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-17 11:32:23,321 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-17 11:32:24,944 [INFO] Fonte BASA retornou 0 itens
+2026-11-17 11:32:26,484 [INFO] Fonte BNDES retornou 8 itens
+2026-11-17 11:32:38,324 [INFO] Fonte FINEP retornou 0 itens
+2026-11-17 11:32:39,368 [INFO] Fonte DECIT retornou 0 itens
+2026-11-17 11:32:40,387 [INFO] Fonte FAPESP retornou 14 itens
+2026-11-17 11:33:12,598 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-17 11:33:18,866 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-17 11:33:21,274 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-17 11:34:59,540 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-17 11:35:27,374 [INFO] Fonte FAPEPI retornou 6 itens
+2026-11-17 11:35:40,104 [INFO] Fonte FAPES retornou 0 itens
+2026-11-17 11:35:42,631 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-17 11:35:45,800 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-17 11:35:48,091 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-17 11:35:54,846 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-17 11:41:31,264 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-17 11:47:51,440 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-17 11:47:57,935 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-17 11:48:48,598 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-17 11:48:54,051 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-17 11:49:00,007 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-17 11:49:04,268 [INFO] Fonte FAPDF retornou 17 itens
+2026-11-17 11:49:34,509 [WARNING] Falha ao enriquecer item https://www.fap.df.gov.br/documents/d/fap/edital-n-02-2026-fapdf-participa-pdf: HTTPSConnectionPool(host='www.fap.df.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:50:04,726 [WARNING] Falha ao enriquecer item https://www.fap.df.gov.br/documents/d/fap/edital-n-03-2026-fapdf-movimenta-pdf: HTTPSConnectionPool(host='www.fap.df.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:50:34,965 [WARNING] Falha ao enriquecer item https://www.fap.df.gov.br/documents/d/fap/edital-de-chamamento-publico-de-servidores-n-01-2026-pdf: HTTPSConnectionPool(host='www.fap.df.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:51:05,207 [WARNING] Falha ao enriquecer item https://www.fap.df.gov.br/documents/d/fap/sei_gdf-207047077-edital-n-11-2026-programa-fapdf-start-bsb-3-ciclo-pdf: HTTPSConnectionPool(host='www.fap.df.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:51:35,452 [WARNING] Falha ao enriquecer item https://www.fap.df.gov.br/documents/d/fap/chamada-publica-fapdf-n-12-2026-selecao-de-bolsistas-para-atuacao-no-apoio-e-desenvolvimento-do-tecnova-iii-pdf: HTTPSConnectionPool(host='www.fap.df.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:52:05,695 [WARNING] Falha ao enriquecer item https://www.fap.df.gov.br/documents/d/fap/sei_212973162_chamada_publica_63-pdf: HTTPSConnectionPool(host='www.fap.df.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-17 11:52:15,070 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-17 11:52:17,110 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-17 11:52:33,626 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-17 11:55:40,459 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-17 11:55:42,338 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-17 11:55:44,861 [INFO] Fonte FAPITEC retornou 1 itens
+2026-11-17 12:00:19,695 [INFO] Fonte FAPT retornou 0 itens
+2026-11-17 12:00:23,572 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-17 12:00:34,954 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-17 12:00:57,570 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-17 12:00:57,583 [INFO] Total coletado: 94
+2026-11-17 12:00:57,583 [INFO] Novos: 12 | Prorrogados: 0 | Atualizados: 82 | Mantidos: 0 | Deduplicados por chave: 40
+2026-11-17 12:00:57,583 [INFO] Repostados/Publicados: 0
+2026-11-17 12:00:57,583 [INFO] Bloqueados para postagem: 0
+2026-11-17 12:00:57,583 [INFO] Expirados removidos da base: 3
+2026-11-17 12:00:57,583 [INFO] Erros por fonte: 0
+2026-11-17 12:00:57,583 [INFO] Fim da execucao
