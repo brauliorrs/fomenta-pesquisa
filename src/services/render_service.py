@@ -1,13 +1,13 @@
 ﻿from __future__ import annotations
 
-from datetime import date
 from pathlib import Path
 import re
 from urllib.parse import urlparse
 
+from src.config import settings
 from src.models import Edital
 from src.services.normalize_service import NormalizeService
-from src.utils.dates import parse_date
+from src.utils.dates import now_in_timezone, parse_date
 from src.utils.hashing import slugify
 
 
@@ -104,7 +104,7 @@ class RenderService:
         parsed = parse_date(expiration_date)
         if not parsed:
             return ''
-        days_left = (parsed.date() - date.today()).days
+        days_left = (parsed.date() - now_in_timezone(settings.timezone).date()).days
         if days_left < 0:
             return 'Prazo encerrado.'
         if days_left == 0:
@@ -119,7 +119,7 @@ class RenderService:
         parsed = parse_date(expiration_date)
         if not parsed:
             return None
-        return (parsed.date() - date.today()).days
+        return (parsed.date() - now_in_timezone(settings.timezone).date()).days
 
     def _build_hashtags(self, edital: Edital) -> str:
         tags: list[str] = []
@@ -485,7 +485,7 @@ class RenderService:
         if not parsed:
             return ''
 
-        days_left = (parsed.date() - date.today()).days
+        days_left = (parsed.date() - now_in_timezone(settings.timezone).date()).days
         if days_left < 0:
             return 'PRAZO ENCERRADO'
         if days_left == 0:
