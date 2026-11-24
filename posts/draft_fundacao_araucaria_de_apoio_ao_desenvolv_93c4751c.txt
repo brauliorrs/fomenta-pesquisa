@@ -2,20 +2,20 @@
 id: fundacao_araucaria_de_apoio_ao_desenvolv_93c4751c
 fonte: FAPPR
 orgao: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana
-prazo: 2026-11-23
+prazo: 2026-11-30
 card_feed: draft_fundacao_araucaria_de_apoio_ao_desenvolv_93c4751c.jpg
 card_story: draft_fundacao_araucaria_de_apoio_ao_desenvolv_93c4751c_story.jpg
 
 Oportunidade no radar: CP 20/26: Programa Institucional Profissionais Top Managers em Gestão de Ciência, Tecnologia e Inovação/Fase II
-Prazo encerra amanhã.
+Prazo encerra em 7 dias.
 
-A oportunidade está aberta para pesquisadores, ICTs e instituições do Paraná na categoria inovacao, com abertura registrada em 27/10/2026 e prazo final em 23/11/2026.
+A oportunidade está aberta para pesquisadores, ICTs e instituições do Paraná na categoria inovacao, com abertura registrada em 27/10/2026 e prazo final em 30/11/2026.
 
 Instituição: Fundação Araucaria de Apoio ao Desenvolvimento Científico e Tecnológico do Estado do Parana
 Público-alvo: Pesquisadores, ICTs e instituições do Paraná
 Tipo: Inovacao
 Abertura das inscrições: 27/10/2026
-Prazo final: 23/11/2026
+Prazo final: 30/11/2026
 
 Link oficial do edital:
 https://www.fappr.pr.gov.br/sites/fundação-araucaria/files/documento/2026-10/cp_20-2026_top_manager_ii.pdf
