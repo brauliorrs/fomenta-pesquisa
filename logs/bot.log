@@ -34793,3 +34793,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-24 13:50:35,055 [INFO] Expirados removidos da base: 1
 2026-11-24 13:50:35,055 [INFO] Erros por fonte: 0
 2026-11-24 13:50:35,055 [INFO] Fim da execucao
+2026-11-24 13:50:38,824 [INFO] Tentando repostar story diario para edital valido fundacao_de_apoio_a_pesquisa_do_estado_d_c1e58004 usando asset publico draft_fundacao_de_apoio_a_pesquisa_do_estado_d_c1e58004.jpg
+2026-11-24 13:50:51,016 [INFO] Tentativas de publicacao apos sync: 1
+2026-11-24 13:50:51,016 [INFO] Publicacoes concluidas apos sync: 1
+2026-11-24 13:50:51,016 [INFO] Novos editais publicados no feed hoje: 0/10.
