@@ -34859,3 +34859,62 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-25 00:18:33,354 [INFO] Tentativas de publicacao apos sync: 2
 2026-11-25 00:18:33,355 [INFO] Publicacoes concluidas apos sync: 2
 2026-11-25 00:18:33,355 [INFO] Novos editais publicados no feed hoje: 1/10.
+2026-11-25 12:07:51,047 [INFO] Inicio da execucao
+2026-11-25 12:08:25,616 [INFO] Fonte ANP retornou 0 itens
+2026-11-25 12:08:26,640 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-25 12:09:00,790 [INFO] Fonte CAPES retornou 0 itens
+2026-11-25 12:09:05,373 [INFO] Fonte CONFAP retornou 8 itens
+2026-11-25 12:09:41,218 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x7ef1459aba50>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-25 12:09:46,323 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-25 12:10:27,041 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-25 12:10:49,907 [INFO] Fonte IPEA retornou 10 itens
+2026-11-25 12:11:30,271 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x7ef1455f9ad0>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-25 12:11:31,546 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-25 12:11:49,547 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-25 12:11:58,759 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-25 12:12:02,373 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-25 12:12:03,870 [INFO] Fonte BASA retornou 0 itens
+2026-11-25 12:12:05,453 [INFO] Fonte BNDES retornou 8 itens
+2026-11-25 12:12:59,675 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2025-fep-naval: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-25 12:13:47,495 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-01-2024-projeto-piloto-do-planejamento-espacial-marinho-pem-norte: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-25 12:15:26,808 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Finiciativa-producao-de-carne-e-leite-bovinos-de-baixo-carbono-selecao-publica-bndes-fep-fomento-2-2022: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-25 12:15:48,676 [INFO] Fonte FINEP retornou 0 itens
+2026-11-25 12:15:59,060 [INFO] Fonte DECIT retornou 0 itens
+2026-11-25 12:16:00,520 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-25 12:16:30,334 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-25 12:16:36,806 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-25 12:16:39,481 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-25 12:18:14,912 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-25 12:18:36,703 [INFO] Fonte FAPEPI retornou 0 itens
+2026-11-25 12:18:46,750 [INFO] Fonte FAPES retornou 0 itens
+2026-11-25 12:18:49,502 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-25 12:18:52,863 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-25 12:18:55,122 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-25 12:19:03,768 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-25 12:24:54,893 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-25 12:31:22,500 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-25 12:31:30,603 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-25 12:32:37,265 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-25 12:32:45,438 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-25 12:32:52,216 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-25 12:34:26,958 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-25 12:34:30,926 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-25 12:34:32,864 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-25 12:34:46,240 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-25 12:34:54,801 [INFO] Fonte FAPERN retornou 32 itens
+2026-11-25 12:35:10,307 [WARNING] Falha ao enriquecer item https://transforma.fbb.org.br/metodologia-cientifica-ao-alcance-de-todos-mcat/generate-pdf?id=263: 403 Client Error: Forbidden for url: https://transforma.fbb.org.br/metodologia-cientifica-ao-alcance-de-todos-mcat/generate-pdf?id=263
+2026-11-25 12:35:18,793 [WARNING] Falha ao enriquecer item https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252010-2026%2520PROREG%2FEdital%2520de%2520Abertura.pdf: 404 Client Error: Not Found for url: https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252010-2026%2520PROREG%2FEdital%2520de%2520Abertura.pdf
+2026-11-25 12:35:20,540 [WARNING] Falha ao enriquecer item https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252008-2026%2520RAIZES%2520DA%2520INOVA%25c3%2587%25c3%2583O%2FEdital%2520de%2520Abertura.pdf: 404 Client Error: Not Found for url: https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252008-2026%2520RAIZES%2520DA%2520INOVA%25c3%2587%25c3%2583O%2FEdital%2520de%2520Abertura.pdf
+2026-11-25 12:35:23,861 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-25 12:36:57,863 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-25 12:41:33,328 [INFO] Fonte FAPT retornou 0 itens
+2026-11-25 12:41:43,116 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-25 12:41:54,984 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-25 12:42:37,390 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-25 12:42:37,409 [INFO] Total coletado: 96
+2026-11-25 12:42:37,409 [INFO] Novos: 0 | Prorrogados: 0 | Atualizados: 96 | Mantidos: 0 | Deduplicados por chave: 42
+2026-11-25 12:42:37,409 [INFO] Repostados/Publicados: 0
+2026-11-25 12:42:37,409 [INFO] Bloqueados para postagem: 0
+2026-11-25 12:42:37,409 [INFO] Expirados removidos da base: 2
+2026-11-25 12:42:37,409 [INFO] Erros por fonte: 0
+2026-11-25 12:42:37,409 [INFO] Fim da execucao
