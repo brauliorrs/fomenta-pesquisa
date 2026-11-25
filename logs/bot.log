@@ -34797,3 +34797,60 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-24 13:50:51,016 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-24 13:50:51,016 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-24 13:50:51,016 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-24 23:45:25,880 [INFO] Inicio da execucao
+2026-11-24 23:46:00,201 [INFO] Fonte ANP retornou 0 itens
+2026-11-24 23:46:01,392 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-24 23:46:35,264 [INFO] Fonte CAPES retornou 0 itens
+2026-11-24 23:46:39,908 [INFO] Fonte CONFAP retornou 8 itens
+2026-11-24 23:47:15,089 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x77b2e4e15110>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-24 23:47:19,097 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-24 23:48:00,614 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-24 23:48:20,837 [INFO] Fonte IPEA retornou 10 itens
+2026-11-24 23:48:59,400 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x77b2e4cd8ad0>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-24 23:49:00,556 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-24 23:50:49,015 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-24 23:50:56,025 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-24 23:50:58,981 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-24 23:51:00,193 [INFO] Fonte BASA retornou 0 itens
+2026-11-24 23:51:01,169 [INFO] Fonte BNDES retornou 8 itens
+2026-11-24 23:51:40,691 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2022-formacao-bioeconomia-amazonia/!ut/p/z0/lY69TsQwEIRf5ShcWt6zIn7KKAUI4SJdcHPaJJvLAvYmZ4e_p8fkAZBoVjPSzLdjvOmMj_jOZ8wsEd-Kf_bXp5v2vnmoq-MTOHcLLVStq6s7qBprHo3_O1AI_LKuvjZ-kJjpM5uujyOlE8eUOW_D_knBLIEUlMxMAweKWRQslNaNEx7oMOIoSQGlvO1iZ-iJFgXl6En2ioajtmBt8ZeAA4ruWahAJTBqDPgtkfF3lL24xp2NXzDPmuMkpvs_Z3n1_ddHffUDNHnAjg!!/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-24 23:51:44,445 [INFO] Fonte FINEP retornou 0 itens
+2026-11-24 23:51:54,739 [INFO] Fonte DECIT retornou 0 itens
+2026-11-24 23:51:55,881 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-24 23:52:22,020 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-24 23:52:27,031 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-24 23:52:29,238 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-24 23:53:55,734 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-24 23:54:13,843 [INFO] Fonte FAPEPI retornou 0 itens
+2026-11-24 23:54:21,698 [INFO] Fonte FAPES retornou 0 itens
+2026-11-24 23:54:27,690 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-24 23:54:29,992 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-24 23:54:31,887 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-24 23:54:37,299 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-25 00:00:04,459 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-25 00:06:22,376 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-25 00:06:30,231 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-25 00:07:25,825 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-25 00:07:33,473 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-25 00:07:39,735 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-25 00:09:13,840 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-25 00:09:16,753 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-25 00:09:18,100 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-25 00:09:32,905 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-25 00:09:42,790 [INFO] Fonte FAPERN retornou 32 itens
+2026-11-25 00:09:56,776 [WARNING] Falha ao enriquecer item https://transforma.fbb.org.br/metodologia-cientifica-ao-alcance-de-todos-mcat/generate-pdf?id=263: 403 Client Error: Forbidden for url: https://transforma.fbb.org.br/metodologia-cientifica-ao-alcance-de-todos-mcat/generate-pdf?id=263
+2026-11-25 00:10:04,734 [WARNING] Falha ao enriquecer item https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252010-2026%2520PROREG%2FEdital%2520de%2520Abertura.pdf: 404 Client Error: Not Found for url: https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252010-2026%2520PROREG%2FEdital%2520de%2520Abertura.pdf
+2026-11-25 00:10:06,797 [WARNING] Falha ao enriquecer item https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252008-2026%2520RAIZES%2520DA%2520INOVA%25c3%2587%25c3%2583O%2FEdital%2520de%2520Abertura.pdf: 404 Client Error: Not Found for url: https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252008-2026%2520RAIZES%2520DA%2520INOVA%25c3%2587%25c3%2583O%2FEdital%2520de%2520Abertura.pdf
+2026-11-25 00:10:09,803 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-25 00:11:44,456 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-25 00:16:19,700 [INFO] Fonte FAPT retornou 0 itens
+2026-11-25 00:16:22,291 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-25 00:16:32,761 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-25 00:17:07,428 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-25 00:17:07,448 [INFO] Total coletado: 98
+2026-11-25 00:17:07,448 [INFO] Novos: 15 | Prorrogados: 0 | Atualizados: 83 | Mantidos: 0 | Deduplicados por chave: 35
+2026-11-25 00:17:07,448 [INFO] Repostados/Publicados: 0
+2026-11-25 00:17:07,448 [INFO] Bloqueados para postagem: 0
+2026-11-25 00:17:07,448 [INFO] Expirados removidos da base: 0
+2026-11-25 00:17:07,448 [INFO] Erros por fonte: 0
+2026-11-25 00:17:07,448 [INFO] Fim da execucao
