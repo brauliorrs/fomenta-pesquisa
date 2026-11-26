@@ -1,0 +1,63 @@
+{
+  "verificado_em": "2026-11-26",
+  "escopo": "amostra_dirigida_de_cinco_registros_do_catalogo;nao_e_auditoria_dos_212",
+  "automacao_publicacao": "nao_autorizada_por_este_arquivo",
+  "regras": "Evidencia e data de fase de inscricao prevalecem sobre datas de contratacao, resultados ou eventos; checar erratas.",
+  "registros": [
+    {
+      "id": "conselho_nacional_das_fundacoes_estaduai_9117e575",
+      "titulo": "Governo de Minas lança edital de R$ 20 milhões para solucionar desafios do setor público",
+      "fonte": "CONFAP",
+      "prazo_cadastrado": null,
+      "data_limite_proposta": "2026-12-09",
+      "fase": "submissao_de_projetos",
+      "avaliacao": "candidato_a_recuperacao",
+      "fundamento": "A FAPEMIG indica limite para submissão em 09/12/2026 no HubMG GOV; registro do bot não tinha prazo.",
+      "fonte_oficial": "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-018-2026-hubmg-gov-resolucao-de-desafios-publicos-por-meio-de-inovacao-aberta"
+    },
+    {
+      "id": "empresa_brasileira_de_pesquisa_e_inovaca_d7e4e002",
+      "titulo": "Chamada Interna nº 02 para Projetos de Alto Impacto em Economia Circular – Petrobras",
+      "fonte": "EMBRAPII",
+      "prazo_cadastrado": null,
+      "data_inicio": "2026-11-18",
+      "data_limite_proposta": "2027-01-08",
+      "fase": "submissao_de_pre_propostas",
+      "avaliacao": "candidato_a_recuperacao",
+      "fundamento": "A Embrapii informa que o envio de pré-propostas por Unidades Embrapii vai de 18/11/2026 a 08/01/2027.",
+      "fonte_oficial": "https://embrapii.org.br/chamadas-publicas/chamada-publica-n02-2026-para-projetos-de-alto-impacto-em-economia-circular/"
+    },
+    {
+      "id": "conselho_nacional_das_fundacoes_estaduai_8e8d3a6a",
+      "titulo": "CONFAP lança chamada de apoio complementar à MSCA Doctoral Networks 2026",
+      "fonte": "CONFAP",
+      "prazo_cadastrado": null,
+      "data_limite_proposta": "2026-11-24T17:00:00+01:00",
+      "fase": "submissao_de_propostas",
+      "avaliacao": "encerrado_nao_recuperar",
+      "fundamento": "A organização MSCA declara encerramento em 24/11/2026 às 17h CET; eventual apoio complementar CONFAP requer checagem independente de regras nacionais.",
+      "fonte_oficial": "https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks"
+    },
+    {
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_a5176b09",
+      "titulo": "Fapern incentiva a cultura científica na educação básica com a II FECITERN",
+      "fonte": "FAPERN",
+      "prazo_cadastrado": "2026-11-26",
+      "avaliacao": "nao_comprovada_como_oportunidade_de_inscricao",
+      "fundamento": "As datas 25 e 26/11/2026 se referem à realização da feira, não a um prazo de submissão na notícia oficial analisada.",
+      "fonte_oficial": "https://www.fapern.rn.gov.br/materia/fecitern-2026-reune-estudantes-e-celebra-a-ciencia-produzida-nas-escolas-potiguares/"
+    },
+    {
+      "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_9b3d6105",
+      "titulo": "Edital nº 32/2025 Programa Centelha 3 PE com Novo Cronograma",
+      "fonte": "FACEPE",
+      "prazo_cadastrado": "2026-11-27",
+      "data_limite_inscricoes_iniciais": "2026-01-20",
+      "fase": "contratacao_de_projetos_selecionados",
+      "avaliacao": "inscricao_inicial_encerrada",
+      "fundamento": "Prazo original das ideias terminou em 20/01/2026; o cronograma de novembro altera contratação, não abre novas ideias.",
+      "fonte_oficial": "https://www2.facepe.br/facepe-publica-novo-cronograma-do-edital-no-32-2025-programa-centelha-pe-3-devido-a-manutencao-no-agilfap/",
+      "fonte_de_inscricoes": "https://www2.facepe.br/facepe-prorroga-inscricoes-para-a-terceira-edicao-do-programa-centelha-pernambuco/"
+    }
+  ]
+}
