@@ -1,7 +1,13 @@
 import logging
 import unittest
+from types import SimpleNamespace
+from unittest.mock import patch
+
 
 from src.services.deadline_audit_service import DeadlineAuditService
+from src.services.scraper_service import ScraperService
+from src.services.normalize_service import NormalizeService
+from src.services.render_service import RenderService
 from src.services.deadline_evidence import (
     assess_deadline, extract_registration_deadlines, parse_date_token,
 )
@@ -112,6 +118,42 @@ class EvidenceTests(unittest.TestCase):
         )
         audit.run([edital], {}, '2026-11-26T09:00:00-03:00')
         self.assertEqual(edital, original)
+
+
+    def test_integracao_scraper_nao_adota_ultima_data_da_pagina(self):
+        service = ScraperService(
+            logging.getLogger('test-scraper'), NormalizeService(), RenderService(),
+        )
+        response = SimpleNamespace(
+            url='https://fap.org.br/noticias/feira',
+            headers={'content-type': 'text/html'},
+            text='<main><p>Feira cientifica em 26/11/2026.</p>'
+                 '<p>Prazo da contratacao: 30/11/2026.</p></main>',
+        )
+        with patch.object(service, '_request', return_value=response):
+            edital = service._enrich_item(
+                {'link': response.url, 'fonte': 'FAP', 'titulo': 'Feira cientifica'},
+                '2026-11-26T09:00:00-03:00',
+            )
+        self.assertIsNone(edital.get('data_expiracao'))
+        self.assertIsNone(edital.get('data_abertura'))
+
+    def test_integracao_scraper_recupera_prazo_com_evidencia(self):
+        service = ScraperService(
+            logging.getLogger('test-scraper'), NormalizeService(), RenderService(),
+        )
+        response = SimpleNamespace(
+            url='https://fap.org.br/editais/14',
+            headers={'content-type': 'text/html'},
+            text='<main><p>As inscricoes para a chamada estao abertas '
+                 'ate 14/12/2026.</p><p>Resultado em 20/12/2026</p></main>',
+        )
+        with patch.object(service, '_request', return_value=response):
+            edital = service._enrich_item(
+                {'link': response.url, 'fonte': 'FAP', 'titulo': 'Chamada de pesquisa'},
+                '2026-11-26T09:00:00-03:00',
+            )
+        self.assertEqual(edital['data_expiracao'], '2026-12-14')
 
 
 if __name__ == '__main__':
