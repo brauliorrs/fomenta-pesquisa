@@ -61,6 +61,7 @@ class Settings:
     fontes_path: Path = DATA_DIR / "fontes.json"
     fontes_candidatas_path: Path = DATA_DIR / "fontes_candidatas.json"
     fontes_descobertas_path: Path = DATA_DIR / "fontes_descobertas.json"
+    fontes_expansao_path: Path = DATA_DIR / "fontes_expansao.json"
     fontes_planejadas_path: Path = DATA_DIR / "fontes_planejadas.json"
     editais_path: Path = DATA_DIR / "editais.json"
     historico_postagens_path: Path = DATA_DIR / "historico_postagens.csv"
