@@ -16,6 +16,7 @@ from requests.exceptions import SSLError
 from src.models import Edital, SourceConfig
 from src.services.normalize_service import NormalizeService
 from src.services.opportunity_guard import is_listing_page
+from src.services.deadline_evidence import extract_registration_deadlines
 from src.services.render_service import RenderService
 from src.sources.anp import ANPSource
 from src.sources.basa import BASASource
@@ -241,32 +242,23 @@ class ScraperService:
         if description and (not item.get('resumo') or item.get('resumo') == item.get('titulo')):
             item['resumo'] = description
 
+        # Datas de resultados, eventos, contratacao ou cronograma geral nao
+        # devem virar prazos de INSCRICAO. Restringir a periodos explicitos
+        # ou evidencias textuais com rotulo de submissao/inscricao.
         range_opening, range_expiration = self._extract_explicit_range(extraction_text)
         if range_opening and not item.get('data_abertura'):
             item['data_abertura'] = range_opening
-        if range_expiration and not item.get('data_expiracao'):
-            item['data_expiracao'] = range_expiration
 
-        opening_date, expiration_date = self._extract_contextual_dates(extraction_line_text, collected_at, description)
-        if opening_date and not item.get('data_abertura'):
-            item['data_abertura'] = opening_date
-        if expiration_date and not item.get('data_expiracao'):
-            item['data_expiracao'] = expiration_date
-
-        if item.get('link') and 'programacentelha.com.br' in item['link'] and not item.get('data_expiracao'):
-            countdown_expiration = self._extract_centelha_deadline(item['link'])
-            if countdown_expiration:
-                item['data_expiracao'] = countdown_expiration
-
-        extracted_dates = self._extract_dates(extraction_text, collected_at, description)
-        if source not in self.STRICT_CONTEXT_SOURCES and extracted_dates and not item.get('data_abertura'):
-            item['data_abertura'] = extracted_dates[0]
-        if extracted_dates and not item.get('data_expiracao'):
-            if len(extracted_dates) > 1 and source not in self.STRICT_CONTEXT_SOURCES:
-                item['data_expiracao'] = extracted_dates[-1]
-            elif description and any(token in description.lower() for token in self.DEADLINE_HINTS):
-                item['data_expiracao'] = extracted_dates[-1]
-
+        evidence = extract_registration_deadlines(extraction_line_text)
+        explicit_deadlines = {entry['data'] for entry in evidence}
+        if not item.get('data_expiracao'):
+            if len(explicit_deadlines) == 1:
+                item['data_expiracao'] = next(iter(explicit_deadlines))
+            elif range_expiration and not explicit_deadlines:
+                item['data_expiracao'] = range_expiration
+            # Varios prazos em fases diferentes exigem verificacao humana.
+            # Nao usar a ultima data generica da pagina nem prazos de
+            # fases 2/3 de um contador Centelha como prazo de candidatura.
         return item
 
     def _request(self, url: str) -> requests.Response | None:
