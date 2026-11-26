@@ -2,6 +2,12 @@ name: Auditar Prazos de Inscricao
 
 on:
   workflow_dispatch:
+  # A merge da rotina tambem executa uma primeira auditoria; o JSON gerado
+  # nao dispara nova execucao, evitando ciclos de workflow.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit_prazos.yml'
   schedule:
     # 09h20 no horario de Brasilia (12h20 UTC).
     - cron: "20 12 * * *"
