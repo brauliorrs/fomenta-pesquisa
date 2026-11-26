@@ -6,6 +6,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
+from src.services.opportunity_guard import is_listing_page
 from src.sources.base_source import BaseSource
 
 
@@ -27,13 +28,16 @@ class FAPESQSource(BaseSource):
                 if not title or not href:
                     continue
 
+                full_href = urljoin(self.config.site_oficial, href)
+                if is_listing_page(title, full_href):
+                    continue
+
                 combined = f'{title} {context}'.lower()
                 if any(hint in combined for hint in self.EXCLUDE_HINTS):
                     continue
                 if not any(hint in combined for hint in self.INCLUDE_HINTS):
                     continue
 
-                full_href = urljoin(self.config.site_oficial, href)
                 dedupe_key = f'{title}|{full_href}'
                 if dedupe_key in seen:
                     continue
