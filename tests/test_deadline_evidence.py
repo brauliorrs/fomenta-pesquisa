@@ -156,5 +156,57 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(edital['data_expiracao'], '2026-12-14')
 
 
+    def test_recurso_administrativo_nao_conta_como_prazo_de_inscricao(self):
+        raw = (
+            '10.5 Prazo para recurso referente às propostas inelegíveis '
+            'Até 2 (dois) dias úteis após a divulgação de elegibilidade; '
+            '10.6 Divulgação final das propostas elegíveis '
+            'A partir de 01 de dezembro de 2026;'
+        )
+        self.assertEqual(extract_registration_deadlines(raw), [])
+        row = assess_deadline(
+            item('fappr', '2026-11-30'), raw,
+            '2026-11-26T19:00:00-03:00', 'https://fappr.pr.gov.br/cp20.pdf'
+        )
+        self.assertEqual(row['classificacao'], 'sem_evidencia_de_inscricao')
+
+    def test_rodizio_sem_prazo_amostra_fontes_diversas(self):
+        sampled_sources = []
+        def fetch(url):
+            sampled_sources.append(url.split('/')[-2])
+            return '', url, ''
+        audit = DeadlineAuditService(logging.getLogger('test'), fetch)
+        audit.MAX_MISSING = 3
+        registros = []
+        for fonte in ('A', 'B', 'C'):
+            for x in range(5):
+                item_x = item(f'{fonte.lower()}-{x}')
+                item_x['fonte'] = fonte
+                item_x['link'] = f'https://fap.org.br/{fonte}/{x}'
+                registros.append(item_x)
+        report = audit.run(registros, {}, '2026-11-26T19:00:00-03:00')
+        self.assertEqual(set(sampled_sources), {'A', 'B', 'C'})
+        self.assertEqual(report['sumario']['fontes_distintas_sem_prazo_consultadas'], 3)
+
+    def test_prazo_divergente_reavaliado_no_mesmo_dia(self):
+        count = []
+        def fetch(url):
+            count.append(url)
+            return ('Prazo de recurso referente às propostas elegíveis '
+                    '01/12/2026', url, '')
+        audit = DeadlineAuditService(logging.getLogger('test'), fetch)
+        edital = item('fappr', '2026-11-30', True)
+        old = {'registros': {
+            'fappr': {
+                'classificacao': 'prazo_divergente',
+                'verificado_em': '2026-11-26T19:00:00-03:00',
+            }
+        }}
+        report = audit.run([edital], old, '2026-11-26T19:15:00-03:00')
+        self.assertEqual(len(count), 1)
+        self.assertEqual(report['registros']['fappr']['classificacao'],
+                         'sem_evidencia_de_inscricao')
+
+
 if __name__ == '__main__':
     unittest.main()

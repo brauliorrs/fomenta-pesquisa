@@ -32,7 +32,9 @@ DATE_TOKEN = re.compile(
 )
 REGISTRATION = re.compile(
     r'\b(?:inscric(?:ao|oes)|submiss(?:ao|oes)|submeter|'
-    r'candidatur(?:a|as)|propostas?|proposals?|'
+    r'candidatur(?:a|as)|'
+    r'(?:recepcao|envio|entrega|apresentacao)\s+de\s+propostas?|'
+    r'(?:receipt|submission)\s+of\s+proposals?|'
     r'application(?:s)?|submission(?:s)?)\b',
     re.IGNORECASE,
 )
@@ -48,7 +50,11 @@ NEGATIVE_PHASE = re.compile(
     r'prestacao\s+de\s+contas|resultado(?:s)?|'
     r'homologac(?:ao|oes)|realizacao\s+(?:do|da)\s+(?:evento|feira)|'
     r'divulgacao\s+(?:do|dos|da)\s+resultado|'
-    r'publicacao\s+do\s+resultado)\b',
+    r'publicacao\s+do\s+resultado|'
+    r'recursos?|contestac(?:ao|oes)|impugnac(?:ao|oes)|'
+    r'inelegiv(?:el|eis)|elegiv(?:el|eis)|elegibilidade|'
+    r'divulgacao\s+(?:final|preliminar)|'
+    r'analise\s+de\s+merito|prestacao\s+de\s+contas)\b',
     re.IGNORECASE,
 )
 
@@ -122,7 +128,7 @@ def extract_registration_deadlines(text: str) -> list[dict[str, str]]:
                 continue
             # O contexto de fase deve estar no mesmo rotulo, nao misturado
             # com uma data de contratacao/resultado na linha.
-            local = normalized_evidence[max(0, label_offset + m.start() - 95): label_offset + m.start()]
+            local = normalized_evidence[max(0, label_offset + m.start() - 135): label_offset + m.start()]
             if NEGATIVE_PHASE.search(local):
                 continue
             found.setdefault(parsed, {

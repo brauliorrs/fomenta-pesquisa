@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import io
 import ipaddress
+import re
 import logging
 from datetime import date, timedelta
 from typing import Any, Callable
@@ -129,10 +130,22 @@ class DeadlineAuditService:
         )
         # O grupo de itens sem prazo avanca por cursor. Nenhum item bloqueado
         # e descartado por nao ser considerado "promissor" pelo algoritmo.
-        missing = sorted(
-            (x for x in known if not x.get('data_expiracao')),
-            key=lambda x: str(x.get('id')),
-        )
+        # Rodizio entre instituicoes: evita uma primeira amostra composta
+        # quase exclusivamente por editais antigos de uma unica fonte.
+        # O cursor percorre a lista COMPLETA sem descartar fontes ou datas.
+        source_groups: dict[str, list[dict[str, Any]]] = {}
+        for record in known:
+            if not record.get('data_expiracao'):
+                source_groups.setdefault(str(record.get('fonte') or ''), []).append(record)
+        for records in source_groups.values():
+            records.sort(key=lambda item: str(item.get('id') or ''))
+        maximum_depth = max((len(group) for group in source_groups.values()), default=0)
+        missing = [
+            source_groups[source][offset]
+            for offset in range(maximum_depth)
+            for source in sorted(source_groups)
+            if offset < len(source_groups[source])
+        ]
         total_missing = len(missing)
         cursor = int(old_state.get('cursor_sem_prazo') or 0) % total_missing if total_missing else 0
         rotated = missing[cursor:] + missing[:cursor]
@@ -143,7 +156,12 @@ class DeadlineAuditService:
         # mesmo registro no mesmo dia numa execucao manual.
         ready_to_check = [
             x for x in ready
-            if str(prior.get(x['id'], {}).get('verificado_em') or '')[:10] != now_iso[:10]
+            if (
+                str(prior.get(x['id'], {}).get('verificado_em') or '')[:10] != now_iso[:10]
+                or prior.get(x['id'], {}).get('classificacao') in {
+                    'prazo_divergente', 'multiplos_prazos_revisao'
+                }
+            )
         ][:self.MAX_READY]
         selected = ready_to_check + selected_missing
         checked = 0
@@ -184,6 +202,9 @@ class DeadlineAuditService:
                 'sem_prazo_elegiveis_para_auditoria': total_missing,
                 'triados_com_prazo_vigente': len(ready),
                 'consultados_nesta_execucao': checked,
+                'fontes_distintas_sem_prazo_consultadas': len({
+                    str(x.get('fonte') or '') for x in selected_missing
+                }),
                 'novos_candidatos_a_recuperacao': new_recoveries,
                 'novas_divergencias': divergences,
                 'registros_auditados_acumulados': len(prior),
