@@ -8,6 +8,8 @@ on:
       - 'tests/test_source_expansion.py'
       - 'tests/test_publication_queue.py'
       - 'tests/test_deadline_evidence.py'
+      - 'tests/test_published_editorial_guard.py'
+      - 'data/decisoes_editoriais_publicados.json'
       - '.github/workflows/opportunity_guard_tests.yml'
   workflow_dispatch:
 
@@ -30,3 +32,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_source_expansion.py' -v
           python -m unittest discover -s tests -p 'test_publication_queue.py' -v
           python -m unittest discover -s tests -p 'test_deadline_evidence.py' -v
+          python -m unittest discover -s tests -p 'test_published_editorial_guard.py' -v

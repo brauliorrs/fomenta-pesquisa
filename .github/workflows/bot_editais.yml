@@ -66,6 +66,9 @@ jobs:
       - name: Validate editorial opportunity gate
         run: python -m unittest discover -s tests -p 'test_opportunity_guard.py'
 
+      - name: Validate published editorial holds
+        run: python -m unittest discover -s tests -p 'test_published_editorial_guard.py'
+
       - name: Run bot
         env:
           INSTAGRAM_PUBLISH_MODE: ${{ vars.INSTAGRAM_PUBLISH_MODE || 'mock' }}

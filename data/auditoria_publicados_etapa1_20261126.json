@@ -33,7 +33,16 @@
       "prioridade": "critica",
       "resultado_extrator_existente": null,
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_evento",
+      "motivo_final_da_decisao": "FECITERN é feira de 25–26/11, não período de inscrições de candidatos.",
+      "fase_editorial": "nao_comprovada",
+      "fonte_evidencia_etapa1": "https://www.fapern.rn.gov.br/materia/fapern-incentiva-a-cultura-cientifica-na-educacao-basica-com-a-ii-fecitern/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 2,
@@ -56,7 +65,16 @@
       "prioridade": "critica",
       "resultado_extrator_existente": "falha_http_ou_documento",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_fase_contratacao",
+      "motivo_final_da_decisao": "Prazo de 27/11 corresponde à contratação dos contemplados; ideias da fase inicial encerraram em janeiro.",
+      "fase_editorial": "contratacao",
+      "fonte_evidencia_etapa1": "https://www2.facepe.br/facepe-publica-novo-cronograma-do-edital-no-32-2025-programa-centelha-pe-3-devido-a-manutencao-no-agilfap/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 3,
@@ -79,7 +97,16 @@
       "prioridade": "alta",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_restrito",
+      "motivo_final_da_decisao": "Inscrição até 30/11/2026 consta em Programas Abertos; restringir público a profissionais e instituições elegíveis e verificar retificações.",
+      "fase_editorial": "inscricao",
+      "fonte_evidencia_etapa1": "https://www.fappr.pr.gov.br/Programas-Abertos",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 4,
@@ -101,7 +128,16 @@
       "prioridade": "critica",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_link_e_publico",
+      "motivo_final_da_decisao": "Chamada FOREST fecha em 02/12/2026 às 13h CET, mas URL no catálogo é PDF de webinars; há regras nacionais no Annex IV.",
+      "fase_editorial": "preproposta",
+      "fonte_evidencia_etapa1": "https://forest-partnership.eu/jointcall2026/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 5,
@@ -124,7 +160,16 @@
       "prioridade": "alta",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_restrito",
+      "motivo_final_da_decisao": "Chamada a pesquisadores internacionais com submissão até 03/12/2026; confirmar elegibilidade e prorrogações.",
+      "fase_editorial": "proposta",
+      "fonte_evidencia_etapa1": "https://fapesp.br/en/18389/call-for-proposals-fapesp-young-investigator-grant-for-international-researchers",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 6,
@@ -146,7 +191,16 @@
       "prioridade": "alta",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_preproposta",
+      "motivo_final_da_decisao": "04/12 é prazo de consulta de elegibilidade/pré-proposta; etapa final prevista em 22/02/2027 aos elegíveis.",
+      "fase_editorial": "preproposta",
+      "fonte_evidencia_etapa1": "https://fapesp.br/18456/chamada-de-propostas-biota-sintese-e-transformacao",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 7,
@@ -168,7 +222,16 @@
       "prioridade": "alta",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_fase2",
+      "motivo_final_da_decisao": "Entrada inicial de Desafios da Amazônia terminou em 01/09/2026; 08/12 vale somente para propostas aprovadas na Fase 1.",
+      "fase_editorial": "proposta_final_restrita",
+      "fonte_evidencia_etapa1": "https://fapesp.br/18249/chamada-de-propostas-programa-desafios-da-amazonia",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 8,
@@ -188,7 +251,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_fase2",
+      "motivo_final_da_decisao": "PIPE Indústria do Futuro: pré-proposta terminou 08/10; 09/12 é envio de proposta completa de projetos enquadrados.",
+      "fase_editorial": "proposta_final_restrita",
+      "fonte_evidencia_etapa1": "https://fapesp.br/pipe/jornada-futuro-2026",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 9,
@@ -208,7 +280,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_restrito",
+      "motivo_final_da_decisao": "BEPE Mestrado até 11/12/2026: apenas bolsistas FAPESP de mestrado com bolsa do país aprovada até 31/08/2026.",
+      "fase_editorial": "proposta",
+      "fonte_evidencia_etapa1": "https://fapesp.br/index.php/18417/chamada-de-propostas-bolsa-estagio-de-pesquisa-no-exterior-bepe-mestrado-2026",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 10,
@@ -228,7 +309,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_restrito",
+      "motivo_final_da_decisao": "BEPE Iniciação Científica até 11/12/2026: bolsistas FAPESP IC com bolsa no país aprovada até 31/08/2026.",
+      "fase_editorial": "proposta",
+      "fonte_evidencia_etapa1": "https://fapesp.br/index.php/18416/chamada-de-propostas-bolsa-estagio-de-pesquisa-no-exterior-bepe-iniciacao-cientifica-2026",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 11,
@@ -250,7 +340,16 @@
       "prioridade": "alta",
       "resultado_extrator_existente": "prazo_corroborado_por_trecho",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_abertura_invalida",
+      "motivo_final_da_decisao": "Submissão FAPERJ até 21/12/2026 corroborada por edital; abertura de 20/02/2017 no banco é inconsistente.",
+      "fase_editorial": "proposta",
+      "fonte_evidencia_etapa1": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_Nº_35_2026_–_Programa_de_Atração_de_Grupos_de_Pesquisa_do_Cone_Sul.pdf",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 12,
@@ -270,7 +369,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_selecao_em_andamento",
+      "motivo_final_da_decisao": "FAPEPI PDCTR já tem resultados de análise de mérito em novembro; 21/12 não é comprovado como prazo de novas inscrições.",
+      "fase_editorial": "selecao",
+      "fonte_evidencia_etapa1": "https://www.fapepi.pi.gov.br/fapepi-divulga-resultado-preliminar-da-avaliacao-de-merito-do-edital-pdctr-pi/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 13,
@@ -290,7 +398,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_prazo_sem_comprovacao",
+      "motivo_final_da_decisao": "Portal Fundect divulga o Centelha 3 MS e retificação de cronograma, mas o link publicado não corrobora 30/12 como prazo de novas ideias.",
+      "fase_editorial": "a_confirmar",
+      "fonte_evidencia_etapa1": "https://www.fundect.ms.gov.br/programa-centelha-ms/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 14,
@@ -310,7 +427,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_prazo_sem_comprovacao",
+      "motivo_final_da_decisao": "INOV@GOV 01/2025 consta no catálogo de editais da FAPAC; não foi comprovado que 31/12/2026 é prazo de inscrição.",
+      "fase_editorial": "a_confirmar",
+      "fonte_evidencia_etapa1": "https://fapac.ac.gov.br/98-2/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 15,
@@ -330,7 +456,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_institucional",
+      "motivo_final_da_decisao": "Portaria PCRH é credenciamento de ICT/órgãos públicos mineiros, não candidatura individual; página FAPEMIG informa até 31/12/2026.",
+      "fase_editorial": "credenciamento",
+      "fonte_evidencia_etapa1": "https://fapemig.br/oportunidades/chamadas-e-editais/portaria-fapemig-pre-no-010-2023-credenciamento-ao-programa-de-capacitacao-de-recursos-humanos-pcrh-10671",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 16,
@@ -350,7 +485,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_restrito",
+      "motivo_final_da_decisao": "Edital Comunicar Ciência recebe propostas até 06/01/2027 via SAGe, destinado a atuação em divulgação científica sob regras do edital.",
+      "fase_editorial": "proposta",
+      "fonte_evidencia_etapa1": "https://fapesp.br/18498",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 17,
@@ -370,7 +514,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "falha_http_ou_documento",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_titulo_incompleto",
+      "motivo_final_da_decisao": "FACEPE PBPG 35/2026 é edital para coordenações de programas de pós-graduação; encerramento 11/01/2027 deve ser validado integralmente no PDF, título armazenado incompleto.",
+      "fase_editorial": "proposta_institucional",
+      "fonte_evidencia_etapa1": "https://www2.facepe.br/facepe-publica-edital-do-programa-de-bolsas-de-pos-graduacao-2027-1-no-35-2026/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 18,
@@ -390,7 +543,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_fase2",
+      "motivo_final_da_decisao": "PIPE Tecnologias Educacionais: pré-propostas encerradas em 12/11; 13/01/2027 é só entrega de proposta completa aos enquadrados.",
+      "fase_editorial": "proposta_final_restrita",
+      "fonte_evidencia_etapa1": "https://fapesp.br/18434",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 19,
@@ -410,7 +572,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_preproposta",
+      "motivo_final_da_decisao": "PIPE Jornada 2ª Rodada aceita pré-propostas até 26/01/2027; propostas completas apenas depois, para enquadradas.",
+      "fase_editorial": "preproposta",
+      "fonte_evidencia_etapa1": "https://agencia.fapesp.br/fapesp-lanca-segunda-rodada-da-chamada-pipe-jornada-tecnologica/59652",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 20,
@@ -430,7 +601,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_institucional",
+      "motivo_final_da_decisao": "EMBRAPII interna nº 03 só aceita propostas de Unidade EMBRAPII coordenadora; prazo 29/01/2027 às 23h59 BRT.",
+      "fase_editorial": "proposta_institucional",
+      "fonte_evidencia_etapa1": "https://embrapii.org.br/chamadas-publicas/chamada-interna-no-03-para-projetos-de-alto-impacto-em-descarbonizacao-do-setor-de-aco-e-cimento-giz/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 21,
@@ -450,7 +630,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_ciclo2",
+      "motivo_final_da_decisao": "SPRINT 2026: primeiro ciclo encerrou 26/10, mas segundo recebe propostas até 22/02/2027 via SAGe.",
+      "fase_editorial": "proposta_ciclo2",
+      "fonte_evidencia_etapa1": "https://fapesp.br/sprint/chamada2026",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 22,
@@ -470,7 +659,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_restrito",
+      "motivo_final_da_decisao": "Plataformas digitais livres e protocolos abertos: chamadas oficiais FAPESP informam 22/02/2027 para proposta completa.",
+      "fase_editorial": "proposta",
+      "fonte_evidencia_etapa1": "https://fapesp.br/chamadas/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 23,
@@ -490,7 +688,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "vigente_ciclo2",
+      "motivo_final_da_decisao": "FICA-SP: ciclo 1 encerrou 30/09/2026; ciclo 2 recebe propostas até 26/02/2027.",
+      "fase_editorial": "proposta_ciclo2",
+      "fonte_evidencia_etapa1": "https://fapesp.br/18238",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "CORROBORADO_COM_RESTRICOES",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 24,
@@ -510,7 +717,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": "sem_evidencia_de_inscricao",
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_prova_complementar",
+      "motivo_final_da_decisao": "Prazo 04/03/2027 reportado por compiladores; pendente validação da página oficial da FAPESP e condições com Instituto Pasteur.",
+      "fase_editorial": "a_confirmar",
+      "fonte_evidencia_etapa1": "https://fapesp.br/18455",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 25,
@@ -530,7 +746,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": null,
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_prazo_fase",
+      "motivo_final_da_decisao": "FAPEAM FOREST: 02/06/2027 não foi confirmado como prazo de candidatura inicial; chamada transnacional FOREST prepropostas até 02/12/2026.",
+      "fase_editorial": "fase_a_confirmar",
+      "fonte_evidencia_etapa1": "https://forest-partnership.eu/jointcall2026/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 26,
@@ -550,7 +775,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": null,
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_data_catalogada_incorreta",
+      "motivo_final_da_decisao": "FAPESC 66/2025 é suplementar para participantes de projetos Horizonte Europa, fluxo contínuo até 30/06/2028 (não 2027), com elegibilidade prévia.",
+      "fase_editorial": "apoio_condicionado",
+      "fonte_evidencia_etapa1": "https://fapesc.sc.gov.br/edital-suplementar-fapesc-n-o-66-2025-programa-horizonte-europa-2026-2027/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 27,
@@ -570,7 +804,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": null,
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "hold_data_catalogada_incorreta",
+      "motivo_final_da_decisao": "FAPESC 65/2025 é suplementar para empresas de SC em projeto Horizonte Europa, fluxo contínuo até 30/06/2028 (não 2027).",
+      "fase_editorial": "apoio_condicionado",
+      "fonte_evidencia_etapa1": "https://fapesc.sc.gov.br/edital-suplementar-de-subvencao-economica-fapesc-n-o-65-2025-programa-horizonte-europa-2026-2027/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 28,
@@ -590,7 +833,16 @@
       "prioridade": "normal",
       "resultado_extrator_existente": null,
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_fase_resultado",
+      "motivo_final_da_decisao": "FACEPE Edital Cátedras 10/2026 tinha inscrições em 2026 e já publicou resultado preliminar em junho; 31/12/2027 não é prazo de novas propostas.",
+      "fase_editorial": "resultado",
+      "fonte_evidencia_etapa1": "https://www2.facepe.br/editais/todos/?c=resultados",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     },
     {
       "posicao_inventario": 29,
@@ -610,7 +862,23 @@
       "prioridade": "normal",
       "resultado_extrator_existente": null,
       "verificacao_integral_concluida": false,
-      "aprovado_para_republicacao": false
+      "aprovado_para_republicacao": false,
+      "decisao_editorial_etapa1": "bloqueio_vigencia_bolsa",
+      "motivo_final_da_decisao": "FAPERN Mossoró aceita inscrições até 23/03/2026; 31/10/2028 é fim da vigência do termo da bolsa, não prazo de inscrição.",
+      "fase_editorial": "vigencia_bolsa",
+      "fonte_evidencia_etapa1": "https://www.fapern.rn.gov.br/materia/fapern-lanca-edital-para-vaga-remanescente-com-atuacao-em-mossoro/",
+      "autorizacao_de_repostagem": false,
+      "pode_repostar_story": false,
+      "revisao_concluida_com_homologacao_parcial": true,
+      "situacao_editorial": "HOLD",
+      "revisao_documental_integral_concluida": false
     }
-  ]
+  ],
+  "revisao_etapa1_em": "2026-11-26",
+  "metodologia_final": "29 casos receberam decisão individual: corroborado com restrições ou HOLD fundamentado. Revisão integral de todos os anexos não foi presumida; nenhum está autorizado a ser republicado como novo nem em story.",
+  "total_decisoes_individuais": 29,
+  "repostagens_liberadas": 0,
+  "decisao_de_seguranca_aplicavel_a_todos": true,
+  "total_hold": 17,
+  "total_com_prazo_corroborado_condicionado": 12
 }
