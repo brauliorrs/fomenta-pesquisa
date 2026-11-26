@@ -50,7 +50,7 @@ def _fold(value: Any) -> str:
     )
 
 
-# Listagens sao fontes para descobrir oportunidades, nunca um edital individual.
+# Paginas com varias oportunidades sao fontes de descoberta, nao editais.
 COLLECTION_TITLE = re.compile(
     r'^(?:(?:editais|chamadas|oportunidades)\s+'
     r'(?:lancad[oa]s?|abert[oa]s?|vigentes|disponiveis|'
@@ -61,65 +61,7 @@ COLLECTION_TITLE = re.compile(
 )
 COLLECTION_URLS = re.compile(
     r'^/(?:noticias/editais-com-prazo-de-submissao-de-propostas-aberto|'
-    r'editais|chamadas|oportunidades)/?
-    text = str(value or '').strip()
-    if not text:
-        return None
-    if re.fullmatch(r'\d{2}/\d{2}/\d{4}', text):
-        return datetime.strptime(text, '%d/%m/%Y').replace(tzinfo=timezone), False
-    try:
-        parsed = datetime.fromisoformat(text.replace('Z', '+00:00'))
-    except ValueError:
-        return None
-    has_time = 'T' in text or bool(re.search(r'\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}', text))
-    parsed = parsed.replace(tzinfo=timezone) if parsed.tzinfo is None else parsed.astimezone(timezone)
-    return parsed, has_time
-
-
-def opportunity_gate(
-    edital: dict[str, Any],
-    now: datetime | None = None,
-    timezone_name: str = 'America/Sao_Paulo',
-) -> tuple[bool, str, bool]:
-    """Retorna (pode_publicar, motivo, bloqueio_definitivo)."""
-    zone = ZoneInfo(timezone_name)
-    now = now or datetime.now(zone)
-    now = now.replace(tzinfo=zone) if now.tzinfo is None else now.astimezone(zone)
-    title = _fold(edital.get('titulo'))
-    summary = _fold(edital.get('resumo'))
-    status = _fold(edital.get('status')).strip()
-
-    if is_listing_page(edital.get('titulo'), edital.get('link')):
-        return False, COLLECTION_PAGE, True
-    if POST_SELECTION.search(title):
-        return False, NOT_OPPORTUNITY, True
-    if status in CLOSED_STATUSES:
-        return False, CLOSED, True
-    if CLOSED_REGISTRATION.search(title) or CLOSED_REGISTRATION.search(summary):
-        return False, CLOSED, True
-
-    opening = _parse(edital.get('data_abertura'), zone)
-    if opening:
-        start, has_time = opening
-        if (start > now) if has_time else (start.date() > now.date()):
-            return False, 'Inscricoes ainda nao abertas.', False
-
-    expiration = _parse(edital.get('data_expiracao'), zone)
-    if not expiration:
-        reason = UNKNOWN_DEADLINE if not edital.get('data_expiracao') else 'Prazo final invalido; revisar fonte oficial.'
-        return False, reason, False
-
-    deadline, has_time = expiration
-    if has_time:
-        if now >= deadline:
-            return False, CLOSED, True
-    else:
-        if now.date() > deadline.date():
-            return False, CLOSED, True
-        if now.date() == deadline.date():
-            return False, UNKNOWN_CLOSING_TIME, False
-    return True, '', False
-,
+    r'editais|chamadas|oportunidades)/?$',
     re.IGNORECASE,
 )
 
@@ -159,6 +101,8 @@ def opportunity_gate(
     summary = _fold(edital.get('resumo'))
     status = _fold(edital.get('status')).strip()
 
+    if is_listing_page(edital.get('titulo'), edital.get('link')):
+        return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
         return False, NOT_OPPORTUNITY, True
     if status in CLOSED_STATUSES:
