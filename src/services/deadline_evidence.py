@@ -142,7 +142,7 @@ def assess_deadline(
     evidences = extract_registration_deadlines(source_text)
     dates = [e['data'] for e in evidences]
     stored = str(edital.get('data_expiracao') or '').strip()[:10]
-    today = date.fromisoformat(checked_at[:10])
+    today = date.fromisoformat(checked_at[:10]).isoformat()
     if not evidences:
         status = 'sem_evidencia_de_inscricao'
     elif len(dates) > 1:
