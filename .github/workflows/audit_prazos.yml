@@ -2,6 +2,9 @@ name: Auditar Prazos de Inscricao
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/audit_prazos.yml'
   # A merge da rotina tambem executa uma primeira auditoria; o JSON gerado
   # nao dispara nova execucao, evitando ciclos de workflow.
   push:
@@ -40,7 +43,17 @@ jobs:
         env:
           TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
         run: python -m src.audit_deadlines
+      - name: Mostrar resultado diagnostico desta execucao
+        run: |
+          python - <<'PY'
+          import json
+          report = json.load(open('data/auditoria_prazos.json', encoding='utf-8'))
+          print('RESUMO_AUDITORIA=' + json.dumps(report['sumario'], ensure_ascii=False))
+          for record in report.get('registros', {}).values():
+              print('EVIDENCIA_AUDITORIA=' + json.dumps({k: record.get(k) for k in ('id', 'titulo', 'fonte', 'classificacao', 'prazo_cadastrado', 'datas_identificadas', 'link_cadastrado', 'evidencias')}, ensure_ascii=False))
+          PY
       - name: Persist audit report without publishing
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
