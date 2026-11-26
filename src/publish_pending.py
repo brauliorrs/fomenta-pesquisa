@@ -8,6 +8,7 @@ from src.models import Edital, PublicationResult
 from src.services.history_service import prune_history_rows
 from src.services.instagram_service import InstagramService
 from src.services.opportunity_guard import opportunity_gate
+from src.services.published_editorial_guard import published_repost_block_reason
 from src.services.publication_queue_service import PublicationQueueService, published_feed_ids
 from src.services.render_service import RenderService
 from src.services.storage_service import StorageService
@@ -73,6 +74,8 @@ def queue_positions(storage: StorageService) -> dict[str, int]:
 
 
 def eligible_for_publication(edital: dict[str, Any]) -> bool:
+    if published_repost_block_reason(edital):
+        return False
     allowed, _, _ = opportunity_gate(edital, timezone_name=settings.timezone)
     return bool(edital.get('pronto_para_postagem')) and edital.get('status') != 'encerrado' and allowed
 
@@ -223,6 +226,10 @@ def attempt_publication(
     logger,
     reason: str,
 ) -> Any | None:
+    block_reason = published_repost_block_reason(edital)
+    if block_reason:
+        logger.warning('Publicacao impedida para %s: %s', edital.get('id'), block_reason)
+        return None
     allowed, reason_guard, _ = opportunity_gate(edital, timezone_name=settings.timezone)
     if not allowed:
         logger.warning('Publicacao impedida para %s: %s', edital.get('id'), reason_guard)
