@@ -11,7 +11,7 @@ from src.services.opportunity_guard import (
     CLOSED, NOT_OPPORTUNITY, UNKNOWN_CLOSING_TIME, UNKNOWN_DEADLINE, opportunity_gate,
 )
 from src.services.normalize_service import NormalizeService
-from src.services.publication_queue_service import PublicationQueueService
+from src.services.publication_queue_service import PublicationQueueService, published_feed_ids
 from src.services.render_service import RenderService
 from src.services.repost_service import RepostService
 from src.services.scraper_service import ScraperService
@@ -297,17 +297,20 @@ def main() -> None:
     normalize_payload_text_fields(merged_payload, normalize_service)
     normalize_payload_ids(merged_payload, normalize_service)
     normalize_publication_state(merged_payload)
+    history_rows = prune_history_rows(
+        storage.read_csv(settings.historico_postagens_path), merged_payload,
+    )
+    # Corrigir flags perdidos usando a trilha de publicacao efetiva do feed.
+    known_feed_ids = published_feed_ids(history_rows)
+    for item in merged_payload:
+        if str(item.get('id') or '') in known_feed_ids:
+            item['instagram_feed_publicado'] = True
     rebuild_captions(merged_payload, render_service)
     expired_count = mark_expired(merged_payload, today)
     active_payload, expired_payload = prune_expired_editais(merged_payload, today)
     cleanup_expired_assets(expired_payload, active_payload)
     sync_draft_assets(active_payload, instagram_service)
-    publication_queue_service.export(active_payload, now_iso)
-
-    history_rows = prune_history_rows(
-        storage.read_csv(settings.historico_postagens_path),
-        active_payload,
-    )
+    publication_queue_service.export(active_payload, now_iso, history_rows)
     reposted = 0
     blocked = 0
     if settings.instagram_defer_publish:

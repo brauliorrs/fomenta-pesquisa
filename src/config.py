@@ -66,6 +66,7 @@ class Settings:
     editais_path: Path = DATA_DIR / "editais.json"
     historico_postagens_path: Path = DATA_DIR / "historico_postagens.csv"
     publication_queue_path: Path = DATA_DIR / "fila_publicacao.json"
+    fila_ja_publicados_path: Path = DATA_DIR / "fila_ja_publicados.json"
     log_file_path: Path = LOGS_DIR / "bot.log"
     discover_log_file_path: Path = LOGS_DIR / "discover_sources.log"
     posts_dir: Path = POSTS_DIR
