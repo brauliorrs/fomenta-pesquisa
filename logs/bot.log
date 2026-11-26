@@ -34979,3 +34979,59 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-26 00:06:19,856 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-26 00:06:19,856 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-26 00:06:19,856 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-26 11:53:47,410 [INFO] Inicio da execucao
+2026-11-26 11:54:21,923 [INFO] Fonte ANP retornou 0 itens
+2026-11-26 11:54:23,176 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-26 11:54:57,326 [INFO] Fonte CAPES retornou 0 itens
+2026-11-26 11:55:01,316 [INFO] Fonte CONFAP retornou 8 itens
+2026-11-26 11:55:39,993 [WARNING] Falha ao enriquecer item https://fapesq.rpp.br/editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado: HTTPSConnectionPool(host='fapesq.rpp.br', port=443): Max retries exceeded with url: /editais/2026/edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado (Caused by ConnectTimeoutError(<HTTPSConnection(host='fapesq.rpp.br', port=443) at 0x76f4a2bf32d0>, 'Connection to fapesq.rpp.br timed out. (connect timeout=30)'))
+2026-11-26 11:55:45,142 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-26 11:56:25,218 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-26 11:56:43,473 [WARNING] Falha ao enriquecer item https://www.bluepartnership.eu/funding-opportunity/sustainable-blue-economy-partnerships-fourth-joint-transnational-call: 403 Client Error: Forbidden for url: https://www.bluepartnership.eu/funding-opportunity/sustainable-blue-economy-partnerships-fourth-joint-transnational-call
+2026-11-26 11:56:44,778 [INFO] Fonte IPEA retornou 10 itens
+2026-11-26 11:57:25,431 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x76f4a2ec1090>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-26 11:57:26,593 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-26 11:59:22,096 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-26 11:59:31,397 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-26 11:59:34,772 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-26 11:59:36,296 [INFO] Fonte BASA retornou 0 itens
+2026-11-26 11:59:37,804 [INFO] Fonte BNDES retornou 8 itens
+2026-11-26 12:00:08,657 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fepsegfinanceira/!ut/p/z0/fY27DoJAEEV_RYstzYyE-CgJhca4BR1uY1YYYHzMgrv4-HuR1sTm5t7k5FwwkIMR--DaBnZir8M-mMVxmW3SbRLP96j1CjOMM53Ea4zTCHZg_gODgc9dZxIwhZNArwD5SUryRxYfOPTF-KSwcTdSODANFXwjCU5hS77r2dsJTUpbOq-QfOjHMjpmFbUKh_BUVyxWCuK7_X5Gd53qGkxrQzNjqRzkP1h7Maf3M5l-AJgvoMs!/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-26 12:01:46,989 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/iniciativa-producao-de-carne-e-leite-bovinos-de-baixo-carbono-selecao-publica-bndes-fep-fomento-2-2022/!ut/p/z0/vY-9coQwDIRf5VJQauwwTH5K5orLZEJBR9zcyEYcSjjLYEMubx-gSJkynTS7-naljGqU8bjwBROLx2Hd383D-bE-HV_K4v5NV9WTrnVRV2XxrItjrl6V-duwEvhjHE2pjBOf6JZUY31L8cw-Jk6z25My3cuVMr16enJ8JZ8k04HiOHPEAx1abCVmmmKa92FnQEch0-zZ8dp4QQiTtLNDgZbA4eQJCAbiRGBlYS9xEyzyTTbZiheINNB2EWY7sEP4BUMnew3IIdf5_kk-VcfqokzA1AP7TlTzT-Hh09jvr_LuB_0zwIo!/: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-26 12:01:51,327 [INFO] Fonte FINEP retornou 0 itens
+2026-11-26 12:02:01,717 [INFO] Fonte DECIT retornou 0 itens
+2026-11-26 12:02:02,800 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-26 12:02:31,089 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-26 12:02:38,062 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-26 12:02:40,484 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-26 12:04:18,157 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-26 12:04:42,380 [INFO] Fonte FAPEPI retornou 0 itens
+2026-11-26 12:04:50,017 [INFO] Fonte FAPES retornou 0 itens
+2026-11-26 12:04:52,639 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-26 12:04:56,487 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-26 12:04:59,023 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-26 12:05:06,765 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-26 12:10:58,462 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-26 12:17:40,925 [INFO] Fonte FAPESQ retornou 0 itens
+2026-11-26 12:17:50,247 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-26 12:18:48,558 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-26 12:20:26,609 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-26 12:20:36,342 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-26 12:22:11,200 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-26 12:22:15,798 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-26 12:22:17,988 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-26 12:22:38,866 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-26 12:25:45,361 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-26 12:25:46,672 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-26 12:27:22,520 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-26 12:31:58,682 [INFO] Fonte FAPT retornou 0 itens
+2026-11-26 12:32:02,528 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-26 12:32:14,343 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-26 12:32:56,643 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-26 12:32:56,662 [INFO] Total coletado: 78
+2026-11-26 12:32:56,662 [INFO] Novos: 6 | Prorrogados: 0 | Atualizados: 72 | Mantidos: 0 | Deduplicados por chave: 36
+2026-11-26 12:32:56,662 [INFO] Repostados/Publicados: 0
+2026-11-26 12:32:56,662 [INFO] Bloqueados para postagem: 0
+2026-11-26 12:32:56,662 [INFO] Expirados removidos da base: 1
+2026-11-26 12:32:56,662 [INFO] Erros por fonte: 0
+2026-11-26 12:32:56,662 [INFO] Fim da execucao
