@@ -58,6 +58,7 @@ class SourceConfig:
     ativo: bool = True
     parser: str = 'generic'
     selectors: dict[str, str] = field(default_factory=dict)
+    sigla_publicacao: str = ''
 
 
 @dataclass

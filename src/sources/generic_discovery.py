@@ -32,7 +32,7 @@ class GenericDiscoverySource(BaseSource):
                 {
                     'titulo': title,
                     'orgao': self.config.nome,
-                    'fonte': self.config.sigla,
+                    'fonte': self.config.sigla_publicacao or self.config.sigla,
                     'uf': self.config.uf,
                     'categoria': category,
                     'link': full_href,
