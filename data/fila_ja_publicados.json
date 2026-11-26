@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T08:53:47.410433-03:00",
+  "generated_at": "2026-11-26T09:33:01.513463-03:00",
   "criterio": "triagem_automatica_nao_equivale_a_inscricoes_confirmadas",
   "total_elegiveis_automaticamente": 28,
   "tipo_fila": "fila_2_ja_publicados",
@@ -15,8 +15,8 @@
       "prazo": "2026-11-27",
       "status": "atualizado",
       "score_editorial": 90,
-      "ultima_postagem": "2026-11-24T21:17:59.628116-03:00",
-      "quantidade_postagens": 2,
+      "ultima_postagem": "2026-11-26T09:33:01.513463-03:00",
+      "quantidade_postagens": 3,
       "instagram_feed_publicado": true,
       "validacao_inscricoes": "triagem_automatica_sem_homologacao_do_prazo_oficial",
       "urgencia_dias": 1,
