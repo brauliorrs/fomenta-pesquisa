@@ -46,7 +46,7 @@ class TestSourceExpansion(unittest.TestCase):
             [source()], [], {}, '2026-11-25T08:00:00-03:00'
         )
         self.assertEqual(len(active), 1)
-        self.assertEqual(len(candidates), 1, f"links={service.links_from_page(SEED_HTML, SEED)} normalized={service.clean_url('/editais-abertos/', SEED)} qualifies={service.is_listing_candidate('Editais abertos', LISTING)} called={called} state={report}")
+        self.assertEqual(len(candidates), 1)
         self.assertEqual(candidates[0]['pagina_editais_hint'], LISTING)
         self.assertEqual(candidates[0]['activation_mode'], 'review_when_viable')
         self.assertEqual(report['paginas'][LISTING]['validacoes'], 1)
@@ -96,6 +96,14 @@ class TestSourceExpansion(unittest.TestCase):
         links = svc.links_from_page(SEED_HTML, SEED)
         self.assertNotIn(ROOT + '/editais/2026/edital-no-99',
                          [link for link, _ in links])
+
+    def test_normalizacao_de_url_de_pagina_institucional(self):
+        svc, _ = make_service({})
+        self.assertEqual(svc.clean_url('/editais-abertos/', SEED), LISTING)
+        self.assertEqual(
+            svc.clean_url('/editais?utm_source=x&status=abertas', ROOT),
+            ROOT + '/editais?status=abertas',
+        )
 
     def test_nao_seguir_links_para_rede_local_ou_perfis_com_credenciais(self):
         svc, _ = make_service({})
