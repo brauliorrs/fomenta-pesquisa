@@ -2,8 +2,8 @@ name: Auditar Prazos de Inscricao
 
 on:
   workflow_dispatch:
-  # A merge da rotina tambem executa uma primeira auditoria; o JSON gerado
-  # nao dispara nova execucao, evitando ciclos de workflow.
+  # Atualizacoes do workflow executam auditoria de verificacao sem loops;
+  # o relatorio JSON gravado pela rotina nao dispara a mesma acao.
   push:
     branches: [main]
     paths:
