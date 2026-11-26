@@ -208,5 +208,36 @@ class EvidenceTests(unittest.TestCase):
                          'sem_evidencia_de_inscricao')
 
 
+    def test_intervalo_explicito_ipea_tem_um_prazo_final(self):
+        texto = 'Prazo de inscrição: 06/10/2026 a 19/10/2026'
+        evidencias = extract_registration_deadlines(texto)
+        self.assertEqual([x['data'] for x in evidencias], ['2026-10-19'])
+        registro = assess_deadline(
+            item('ipea'), texto, '2026-11-26T19:00:00-03:00',
+            'https://ipea.gov.br/chamada-032',
+        )
+        self.assertEqual(registro['classificacao'], 'prazo_de_inscricao_ja_decorrido')
+
+    def test_caso_ambiguo_sem_prazo_reavaliado_fora_do_rodizio(self):
+        vistos = []
+        def fetch(url):
+            vistos.append(url)
+            return 'Prazo de inscricao: 06/10/2026 a 19/10/2026', url, ''
+        audit = DeadlineAuditService(logging.getLogger('test'), fetch)
+        audit.MAX_MISSING = 1
+        lista = [item('a'), item('b'), item('c')]
+        old = {
+            'cursor_sem_prazo': 0,
+            'registros': {
+                'c': {'classificacao': 'multiplos_prazos_revisao',
+                      'verificado_em': '2026-11-26T19:00:00-03:00'},
+            },
+        }
+        result = audit.run(lista, old, '2026-11-26T19:26:00-03:00')
+        self.assertEqual(result['sumario']['revisoes_ambiguas_nesta_execucao'], 1)
+        self.assertEqual(result['registros']['c']['classificacao'], 'prazo_de_inscricao_ja_decorrido')
+        self.assertEqual(len(vistos), 2)
+
+
 if __name__ == '__main__':
     unittest.main()

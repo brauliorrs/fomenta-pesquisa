@@ -121,6 +121,13 @@ def extract_registration_deadlines(text: str) -> list[dict[str, str]]:
             parsed = parse_date_token(token)
             if not parsed:
                 continue
+            # "Prazo de inscricao: 06/10 a 19/10" representa um
+            # INTERVALO, nao dois encerramentos. O primeiro extremo
+            # e abertura; apenas o segundo pode ser prazo final.
+            following = normalized_evidence[label_offset + m.end():]
+            connector = re.match(r'\s*(?:a|ate|[-–])\s+', following)
+            if connector and DATE_TOKEN.match(following[connector.end():]):
+                continue
             before = normalized_evidence[max(0, label_offset + m.start() - 180): label_offset + m.start()]
             registration = REGISTRATION.search(before)
             end_marker = DEADLINE.search(before) or RANGE_END.search(before)
