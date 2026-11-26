@@ -163,7 +163,16 @@ class DeadlineAuditService:
                 }
             )
         ][:self.MAX_READY]
-        selected = ready_to_check + selected_missing
+        # Reexaminar ate dois casos ambiguos fora do rodizio: uma
+        # correcao do extrator nao deve manter falsos alertas por dias.
+        selected_ids = {str(x.get('id')) for x in ready_to_check + selected_missing}
+        ambiguity_rechecks = [
+            x for x in known
+            if str(x.get('id')) not in selected_ids
+            and prior.get(str(x.get('id')), {}).get('classificacao')
+            in {'multiplos_prazos_revisao', 'prazo_divergente'}
+        ][:2]
+        selected = ready_to_check + selected_missing + ambiguity_rechecks
         checked = 0
         new_recoveries = 0
         divergences = 0
@@ -205,6 +214,7 @@ class DeadlineAuditService:
                 'fontes_distintas_sem_prazo_consultadas': len({
                     str(x.get('fonte') or '') for x in selected_missing
                 }),
+                'revisoes_ambiguas_nesta_execucao': len(ambiguity_rechecks),
                 'novos_candidatos_a_recuperacao': new_recoveries,
                 'novas_divergencias': divergences,
                 'registros_auditados_acumulados': len(prior),

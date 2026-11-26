@@ -2,7 +2,7 @@ name: Auditar Prazos de Inscricao
 
 on:
   workflow_dispatch:
-  # Atualizacoes do workflow executam auditoria de verificacao sem loops;
+  # Atualizacoes do workflow executam auditoria e revisam intervalos sem loops;
   # o relatorio JSON gravado pela rotina nao dispara a mesma acao.
   push:
     branches: [main]
