@@ -1,21 +1,23 @@
 {
-  "generated_at": "2026-11-26T19:21:41.414976-03:00",
+  "generated_at": "2026-11-26T19:24:33.694471-03:00",
   "metodologia": "evidencia_textual_em_link_cadastrado_sem_alterar_publicacao",
-  "cursor_sem_prazo": 12,
+  "cursor_sem_prazo": 24,
   "sumario": {
     "total_catalogo": 212,
     "sem_prazo_catalogados": 183,
     "sem_prazo_elegiveis_para_auditoria": 170,
     "triados_com_prazo_vigente": 28,
     "consultados_nesta_execucao": 20,
+    "fontes_distintas_sem_prazo_consultadas": 12,
     "novos_candidatos_a_recuperacao": 0,
-    "novas_divergencias": 1,
-    "registros_auditados_acumulados": 20,
+    "novas_divergencias": 0,
+    "registros_auditados_acumulados": 37,
     "classificacoes_acumuladas": {
-      "falha_http_ou_documento": 1,
+      "falha_http_ou_documento": 5,
+      "multiplos_prazos_revisao": 1,
+      "prazo_corroborado_por_trecho": 1,
       "prazo_de_inscricao_ja_decorrido": 1,
-      "prazo_divergente": 1,
-      "sem_evidencia_de_inscricao": 17
+      "sem_evidencia_de_inscricao": 29
     }
   },
   "registros": {
@@ -38,18 +40,11 @@
       "fonte": "FAPPR",
       "link_cadastrado": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/files/documento/2026-10/cp_20-2026_top_manager_ii.pdf",
       "url_consultada": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/files/documento/2026-10/cp_20-2026_top_manager_ii.pdf",
-      "verificado_em": "2026-11-26T19:21:41.414976-03:00",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
       "prazo_cadastrado": "2026-11-30",
-      "datas_identificadas": [
-        "2026-12-01"
-      ],
-      "evidencias": [
-        {
-          "data": "2026-12-01",
-          "trecho": "10.5 Prazo para recurso referente às propostas inelegíveis Até 2 (dois) dias úteis após a divulgação de elegibilidade; 10.6 Divulgação final das propostas elegíveis A partir de 01 de dezembro de 2026;"
-        }
-      ],
-      "classificacao": "prazo_divergente",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
       "publicacao_autorizada_pela_auditoria": false,
       "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
@@ -157,7 +152,7 @@
       "fonte": "BNDES",
       "link_cadastrado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fepsegfinanceira/!ut/p/z0/fY27DoJAEEV_RYstzYyE-CgJhca4BR1uY1YYYHzMgrv4-HuR1sTm5t7k5FwwkIMR--DaBnZir8M-mMVxmW3SbRLP96j1CjOMM53Ea4zTCHZg_gODgc9dZxIwhZNArwD5SUryRxYfOPTF-KSwcTdSODANFXwjCU5hS77r2dsJTUpbOq-QfOjHMjpmFbUKh_BUVyxWCuK7_X5Gd53qGkxrQzNjqRzkP1h7Maf3M5l-AJgvoMs!/",
       "url_consultada": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fepsegfinanceira/!ut/p/z0/fY27DoJAEEV_RYstzYyE-CgJhca4BR1uY1YYYHzMgrv4-HuR1sTm5t7k5FwwkIMR--DaBnZir8M-mMVxmW3SbRLP96j1CjOMM53Ea4zTCHZg_gODgc9dZxIwhZNArwD5SUryRxYfOPTF-KSwcTdSODANFXwjCU5hS77r2dsJTUpbOq-QfOjHMjpmFbUKh_BUVyxWCuK7_X5Gd53qGkxrQzNjqRzkP1h7Maf3M5l-AJgvoMs!/",
-      "verificado_em": "2026-11-26T19:21:41.414976-03:00",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
       "prazo_cadastrado": null,
       "datas_identificadas": [
         "2026-06-10"
@@ -276,7 +271,7 @@
       "fonte": "CONFAP",
       "link_cadastrado": "https://news.confap.org.br/fapepi-amplia-aporte-de-financiamento-de-projetos-de-extensao-no-piaui-e-lanca-edital-de-r-225-milhoes/",
       "url_consultada": "https://news.confap.org.br/fapepi-amplia-aporte-de-financiamento-de-projetos-de-extensao-no-piaui-e-lanca-edital-de-r-225-milhoes/",
-      "verificado_em": "2026-11-26T19:21:41.414976-03:00",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
       "prazo_cadastrado": null,
       "datas_identificadas": [],
       "evidencias": [],
@@ -311,6 +306,259 @@
       "classificacao": "sem_evidencia_de_inscricao",
       "publicacao_autorizada_pela_auditoria": false,
       "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_amparo_a_pesquisa_do_estado__fdfeed1c": {
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__fdfeed1c",
+      "titulo": "Chamada de Propostas Bolsa Estágio de Pesquisa no Exterior (BEPE) Mestrado",
+      "fonte": "FAPESP",
+      "link_cadastrado": "https://fapesp.br/18417",
+      "url_consultada": "https://fapesp.br/18417",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2026-12-11",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_carlos_chagas_filho_de_amparo_a_0f43357d": {
+      "id": "fundacao_carlos_chagas_filho_de_amparo_a_0f43357d",
+      "titulo": "Edital FAPERJ Nº 35/2026 – Programa de Atração de Grupos de Pesquisa do Cone Sul",
+      "fonte": "FAPERJ",
+      "link_cadastrado": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_Nº_35_2026_–_Programa_de_Atração_de_Grupos_de_Pesquisa_do_Cone_Sul.pdf",
+      "url_consultada": "https://www.faperj.br/rp/downloads/Edital_FAPERJ_Nº_35_2026_–_Programa_de_Atração_de_Grupos_de_Pesquisa_do_Cone_Sul.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2026-12-21",
+      "datas_identificadas": [
+        "2026-12-21"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-12-21",
+          "trecho": "Prazo final para submissão das propostas 21/12/2026"
+        }
+      ],
+      "classificacao": "prazo_corroborado_por_trecho",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef": {
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__72a7bbef",
+      "titulo": "EDITAL Nº 007/2026 – PROGRAMA DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO REGIONAL DO PIAUÍ (PDCTR-PI)",
+      "fonte": "FAPEPI",
+      "link_cadastrado": "https://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-007-2026.pdf",
+      "url_consultada": "https://www.fapepi.pi.gov.br/wp-content/uploads/2026/06/EDITAL-007-2026.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2026-12-21",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b": {
+      "id": "fundacao_de_apoio_ao_desenvolvimento_do__9e4e6a8b",
+      "titulo": "PROGRAMA CENTELHA MS",
+      "fonte": "FUNDECT",
+      "link_cadastrado": "https://www.fundect.ms.gov.br/wp-content/uploads/2026/03/Programa-Centelha-3-MS.pdf",
+      "url_consultada": "https://www.fundect.ms.gov.br/wp-content/uploads/2026/03/Programa-Centelha-3-MS.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2026-12-30",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce": {
+      "id": "fundacao_de_amparo_a_pesquisa_do_acre_ed_d2203dce",
+      "titulo": "EDITAL INOV@GOV 01/2025 – DOE 14.021 – PAGINAS 21à 24 – 14 de maio de 2025",
+      "fonte": "FAPAC",
+      "link_cadastrado": "https://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf",
+      "url_consultada": "https://fapac.ac.gov.br/wp-content/uploads/2025/05/EDITAL.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2026-12-31",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_amparo_a_pesquisa_do_estado__562385ad": {
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__562385ad",
+      "titulo": "Portaria FAPEMIG PRE nº 010/2023 - Credenciamento ao Programa de Capacitação de Recursos Humanos (PCRH)",
+      "fonte": "FAPEMIG",
+      "link_cadastrado": "https://api.site.fapemig.br/wp-content/uploads/10671_PORTARIA-PRE-N°-0102023.pdf",
+      "url_consultada": "https://api.site.fapemig.br/wp-content/uploads/10671_PORTARIA-PRE-N°-0102023.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2026-12-31",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_amparo_a_pesquisa_do_estado__8fa9c825": {
+      "id": "fundacao_de_amparo_a_pesquisa_do_estado__8fa9c825",
+      "titulo": "Edital Comunicar Ciência – 2026",
+      "fonte": "FAPESP",
+      "link_cadastrado": "https://fapesp.br/18498",
+      "url_consultada": "https://fapesp.br/18498",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": "2027-01-06",
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_237b204e": {
+      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_237b204e",
+      "titulo": "EDITAL Nº 46/2026 – SELEÇÃO DE EQUIPES PARA PARTICIPAÇÃO NO PROGRAMA DE EDUCAÇÃO PARA INOVAÇÃO E EMPREENDEDORISMO NA REDE ESTADUAL DE ENSINO - OUSE CRIAR",
+      "fonte": "FAPESQ",
+      "link_cadastrado": "https://fapesq.rpp.br/../../editais/2026/edital-no-46-2026-2013-selecao-de-equipes-para-participacao-no-programa-de-educacao-para-inovacao-e-empreendedorismo-na-rede-estadual-de-ensino-ouse-criar",
+      "url_consultada": "https://fapesq.rpp.br/../../editais/2026/edital-no-46-2026-2013-selecao-de-equipes-para-participacao-no-programa-de-educacao-para-inovacao-e-empreendedorismo-na-rede-estadual-de-ensino-ouse-criar",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_apoio_a_pesquisa_e_a_inovaca_2e97ebe9": {
+      "id": "fundacao_de_apoio_a_pesquisa_e_a_inovaca_2e97ebe9",
+      "titulo": "EDITAL FAPITEC/SE/SEAD Nº 13/2026 – PROGRAMA DE APOIO À PESQUISA E DESENVOLVIMENTO TECNOLÓGICO EM INSTITUIÇÕES ESTADUAIS (BOLSAS DTI)",
+      "fonte": "FAPITEC",
+      "prazo_cadastrado": null,
+      "link_cadastrado": "https://fapitec.se.gov.br/editais-e-ou-chamadas-de-instituicoes-parceiras/",
+      "url_consultada": "https://fapitec.se.gov.br/editais-e-ou-chamadas-de-instituicoes-parceiras/",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "classificacao": "falha_http_ou_documento",
+      "publicacao_autorizada_pela_auditoria": false,
+      "datas_identificadas": [],
+      "evidencias": []
+    },
+    "fundacao_araucaria_de_apoio_ao_desenvolv_204c917f": {
+      "id": "fundacao_araucaria_de_apoio_ao_desenvolv_204c917f",
+      "titulo": "CP 15/24: Permanência de Ucranianos",
+      "fonte": "FAPPR",
+      "link_cadastrado": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/files/documento/2024-06/cp_15-2024_permanencia_pesq_ucranianos.pdf",
+      "url_consultada": "https://www.fappr.pr.gov.br/sites/fundacao-araucaria/files/documento/2024-06/cp_15-2024_permanencia_pesq_ucranianos.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_apoio_ao_desenvolvimento_do__034e2581": {
+      "id": "fundacao_de_apoio_ao_desenvolvimento_do__034e2581",
+      "titulo": "Chamadas em andamento",
+      "fonte": "FUNDECT",
+      "link_cadastrado": "https://www.fundect.ms.gov.br/category/chamadas-em-andamento/",
+      "url_consultada": "https://www.fundect.ms.gov.br/category/chamadas-em-andamento/",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "instituto_de_pesquisa_economica_aplicada_10a40e88": {
+      "id": "instituto_de_pesquisa_economica_aplicada_10a40e88",
+      "titulo": "Chamada Pública nº 032/2026",
+      "fonte": "IPEA",
+      "link_cadastrado": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16517-chamada-publica-032-2026",
+      "url_consultada": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16517-chamada-publica-032-2026",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [
+        "2026-10-06",
+        "2026-10-19"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-10-06",
+          "trecho": "Prazo de inscrição: 06/10/2026 a 19/10/2026"
+        },
+        {
+          "data": "2026-10-19",
+          "trecho": "Prazo de inscrição: 06/10/2026 a 19/10/2026"
+        }
+      ],
+      "classificacao": "multiplos_prazos_revisao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "instituto_serrapilheira_chamada_publica__5096baf4": {
+      "id": "instituto_serrapilheira_chamada_publica__5096baf4",
+      "titulo": "Chamada pública: O papel da ciência no Brasil de amanhã",
+      "fonte": "SERRAPILHEIRA",
+      "link_cadastrado": "https://serrapilheira.org/ano/chamada-publica-para-projetos-jornalisticos-o-papel-da-ciencia-no-brasil-de-amanha/",
+      "url_consultada": "https://serrapilheira.org/ano/chamada-publica-para-projetos-jornalisticos-o-papel-da-ciencia-no-brasil-de-amanha/",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "coordenacao_de_aperfeicoamento_de_pessoa_2aa48737": {
+      "id": "coordenacao_de_aperfeicoamento_de_pessoa_2aa48737",
+      "titulo": "Programa de universidades do BRICS registra 30 inscrições",
+      "fonte": "CAPES",
+      "prazo_cadastrado": null,
+      "link_cadastrado": "https://www.gov.br/capes/pt-br/assuntos/noticias/programa-de-universidades-do-brics-registra-30-inscricoes",
+      "url_consultada": "https://www.gov.br/capes/pt-br/assuntos/noticias/programa-de-universidades-do-brics-registra-30-inscricoes",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "classificacao": "falha_http_ou_documento",
+      "publicacao_autorizada_pela_auditoria": false,
+      "datas_identificadas": [],
+      "evidencias": []
+    },
+    "fundacao_de_amparo_a_ciencia_e_tecnologi_122ffd27": {
+      "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_122ffd27",
+      "titulo": "40/2024 -",
+      "fonte": "FACEPE",
+      "prazo_cadastrado": null,
+      "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2024/12/2024.12.20-Cientista-Arretado.pdf",
+      "url_consultada": "https://www.facepe.br/wp-content/uploads/2024/12/2024.12.20-Cientista-Arretado.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "classificacao": "falha_http_ou_documento",
+      "publicacao_autorizada_pela_auditoria": false,
+      "datas_identificadas": [],
+      "evidencias": []
+    },
+    "fundacao_de_amparo_a_pesquisa_do_acre_co_1db7695b": {
+      "id": "fundacao_de_amparo_a_pesquisa_do_acre_co_1db7695b",
+      "titulo": "COMISSÃO DE SELEÇÃO E JULGAMENTO DAS PROPOSTAS DO EDITAL DE CHAMAMENTO PÚBLICO NO 03/2025",
+      "fonte": "FAPAC",
+      "link_cadastrado": "https://fapac.ac.gov.br/wp-content/uploads/2025/09/Safari.pdf",
+      "url_consultada": "https://fapac.ac.gov.br/wp-content/uploads/2025/09/Safari.pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [],
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
+    },
+    "fundacao_de_apoio_a_pesquisa_do_distrito_2fb40e2f": {
+      "id": "fundacao_de_apoio_a_pesquisa_do_distrito_2fb40e2f",
+      "titulo": "CHAMADA PÚBLICA FAPDF Nº 12/2026 SELEÇÃO DE BOLSISTAS PARA ATUAÇÃO NO APOIO E DESENVOLVIMENTO DO TECNOVA III NO DISTRITO FEDERAL E CADASTRO RESERVA AÇÃO TRANSVERSAL - 1ª CHAMADA",
+      "fonte": "FAPDF",
+      "prazo_cadastrado": null,
+      "link_cadastrado": "https://www.fap.df.gov.br/documents/d/fap/chamada-publica-fapdf-n-12-2026-selecao-de-bolsistas-para-atuacao-no-apoio-e-desenvolvimento-do-tecnova-iii-pdf",
+      "url_consultada": "https://www.fap.df.gov.br/documents/d/fap/chamada-publica-fapdf-n-12-2026-selecao-de-bolsistas-para-atuacao-no-apoio-e-desenvolvimento-do-tecnova-iii-pdf",
+      "verificado_em": "2026-11-26T19:24:33.694471-03:00",
+      "classificacao": "falha_http_ou_documento",
+      "publicacao_autorizada_pela_auditoria": false,
+      "datas_identificadas": [],
+      "evidencias": []
     }
   }
 }
