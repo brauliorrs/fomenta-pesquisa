@@ -7,6 +7,7 @@ from src.services.published_editorial_guard import (
     POLICY_PATH, published_repost_block_reason, read_published_decisions,
 )
 from src.publish_pending import eligible_for_publication, ready_editais
+from src.services.publication_queue_service import PublicationQueueService
 
 
 class PublishedEditorialGuardTests(unittest.TestCase):
@@ -50,6 +51,14 @@ class PublishedEditorialGuardTests(unittest.TestCase):
         }
         self.assertEqual(published_repost_block_reason(item), '')
         self.assertTrue(eligible_for_publication(item))
+
+    def test_monitoring_retains_published_with_explicit_hold(self):
+        service = PublicationQueueService(None, Path('/tmp/unused-queue.json'))
+        item = self.by_id[next(iter(self.data['registros']))]
+        rendered = service._to_queue_item(item, 1, True)
+        self.assertTrue(rendered['instagram_feed_publicado'])
+        self.assertTrue(rendered['repostagem_bloqueada'])
+        self.assertEqual(rendered['validacao_inscricoes'], 'HOLD_editorial_repostagem_suspensa')
 
     def test_policy_malformed_fails_closed(self):
         with patch('src.services.published_editorial_guard.read_published_decisions', side_effect=ValueError('malformed')):
