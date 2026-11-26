@@ -6,6 +6,7 @@ on:
       - 'src/**'
       - 'tests/test_opportunity_guard.py'
       - 'tests/test_source_expansion.py'
+      - 'tests/test_publication_queue.py'
       - '.github/workflows/opportunity_guard_tests.yml'
   workflow_dispatch:
 
@@ -26,3 +27,4 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_opportunity_guard.py' -v
           python -m unittest discover -s tests -p 'test_source_expansion.py' -v
+          python -m unittest discover -s tests -p 'test_publication_queue.py' -v

@@ -8,7 +8,7 @@ from src.models import Edital, PublicationResult
 from src.services.history_service import prune_history_rows
 from src.services.instagram_service import InstagramService
 from src.services.opportunity_guard import opportunity_gate
-from src.services.publication_queue_service import PublicationQueueService
+from src.services.publication_queue_service import PublicationQueueService, published_feed_ids
 from src.services.render_service import RenderService
 from src.services.storage_service import StorageService
 from src.utils.dates import parse_date
@@ -358,6 +358,11 @@ def main() -> None:
         storage.read_csv(settings.historico_postagens_path),
         editais,
     )
+    # Evitar republicar no feed se um flag persistido foi perdido.
+    prior_feed_ids = published_feed_ids(history_rows)
+    for edital in editais:
+        if str(edital.get('id') or '') in prior_feed_ids:
+            edital['instagram_feed_publicado'] = True
     positions = queue_positions(storage)
     publish_targets = normalized_targets(settings.instagram_publish_target, settings.instagram_publish_stories)
     repost_targets = normalized_targets(settings.instagram_repost_target, settings.instagram_publish_stories)
@@ -418,7 +423,7 @@ def main() -> None:
                 published += 1
                 posted_story_today_ids.add(edital.get('id', ''))
 
-        queue_service.export(editais, now_iso)
+        queue_service.export(editais, now_iso, history_rows)
         storage.write_json(settings.editais_path, editais)
         storage.write_csv(
             settings.historico_postagens_path,
@@ -486,7 +491,7 @@ def main() -> None:
             published += 1
             break
 
-    queue_service.export(editais, now_iso)
+    queue_service.export(editais, now_iso, history_rows)
     storage.write_json(settings.editais_path, editais)
     storage.write_csv(
         settings.historico_postagens_path,
