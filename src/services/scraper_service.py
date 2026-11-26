@@ -15,6 +15,7 @@ from requests.exceptions import SSLError
 
 from src.models import Edital, SourceConfig
 from src.services.normalize_service import NormalizeService
+from src.services.opportunity_guard import is_listing_page
 from src.services.render_service import RenderService
 from src.sources.anp import ANPSource
 from src.sources.basa import BASASource
@@ -169,9 +170,15 @@ class ScraperService:
                 raw_items = source.collect()
                 self.logger.info('Fonte %s retornou %s itens', config.sigla, len(raw_items))
                 for item in raw_items:
+                    if is_listing_page(item.get('titulo'), item.get('link')):
+                        self.logger.info('Listagem ignorada como edital: %s', item.get('titulo'))
+                        continue
                     if self._should_skip_closed_item(item, current_date):
                         continue
                     enriched_item = self._enrich_item(item, collected_at)
+                    if is_listing_page(enriched_item.get('titulo'), enriched_item.get('link')):
+                        self.logger.info('Listagem ignorada apos enriquecimento: %s', enriched_item.get('titulo'))
+                        continue
                     if self._should_skip_closed_item(enriched_item, current_date):
                         continue
                     edital = self._to_edital(enriched_item, collected_at)

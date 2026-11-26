@@ -4,7 +4,9 @@ from zoneinfo import ZoneInfo
 
 from src.services.opportunity_guard import (
     NOT_OPPORTUNITY,
+    COLLECTION_PAGE,
     UNKNOWN_CLOSING_TIME,
+    is_listing_page,
     opportunity_gate,
 )
 
@@ -27,6 +29,45 @@ class TestOpportunityGuard(unittest.TestCase):
         self.assertFalse(allowed)
         self.assertEqual(reason, NOT_OPPORTUNITY)
         self.assertTrue(definitive)
+
+    def test_fapesq_lista_com_prazo_atribuido_nao_pode_publicar(self):
+        item = edital('EDITAIS LANÇADOS E/OU COM PRAZO DE SUBMISSÃO DE PROPOSTAS ABERTO',
+                      due='2026-11-26')
+        item['status'] = 'prorrogado'
+        item['pronto_para_postagem'] = True
+        item['link'] = 'https://fapesq.rpp.br/noticias/editais-com-prazo-de-submissao-de-propostas-aberto'
+        allowed, reason, definitive = opportunity_gate(item, NOW)
+        self.assertEqual((allowed, reason, definitive), (False, COLLECTION_PAGE, True))
+
+    def test_titulos_e_urls_de_listagens_sao_filtrados(self):
+        for title in ('Editais lançados e/ou com prazo',
+                      'Editais com inscrições abertas',
+                      'Lista de chamadas de pesquisa',
+                      'Oportunidades disponíveis'):
+            with self.subTest(title=title):
+                self.assertTrue(is_listing_page(title))
+        self.assertTrue(is_listing_page('Atualização', 
+            'https://fapesq.rpp.br/noticias/editais-com-prazo-de-submissao-de-propostas-aberto'))
+        self.assertFalse(is_listing_page('EDITAL Nº 72/2026 - Seleção de equipes',
+            'https://fapesq.rpp.br/editais/2026/edital-no-72-2026'))
+
+    def test_fapesq_coletor_nao_publica_pagina_agrupadora(self):
+        from src.models import SourceConfig
+        from src.sources.fapesq import FAPESQSource
+        cfg = SourceConfig(
+            nome='FAPESQ', sigla='FAPESQ', uf='PB', site_oficial='https://fapesq.rpp.br',
+            pagina_editais='https://fapesq.rpp.br/noticias', tipo_coleta='html')
+        raw = (
+            '<main>'
+            '<article><a href="/noticias/editais-com-prazo-de-submissao-de-propostas-aberto">'
+            'EDITAIS LANÇADOS E/OU COM PRAZO DE SUBMISSÃO DE PROPOSTAS ABERTO</a></article>'
+            '<article><a href="/editais/2026/edital-no-72-2026">'
+            'EDITAL Nº 72/2026 - Seleção de equipes</a></article>'
+            '</main>'
+        )
+        items = FAPESQSource(cfg).parse(raw)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]['titulo'], 'EDITAL Nº 72/2026 - Seleção de equipes')
 
     def test_resultados_e_homologacoes_sao_bloqueados(self):
         for title in ('Resultado final de bolsa', 'Homologação dos selecionados',

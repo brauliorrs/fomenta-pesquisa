@@ -10,6 +10,7 @@ import re
 import unicodedata
 from datetime import datetime
 from typing import Any
+from urllib.parse import unquote, urlsplit
 from zoneinfo import ZoneInfo
 
 
@@ -17,6 +18,7 @@ NOT_OPPORTUNITY = 'Noticia de resultados, finalistas ou premiacoes; nao e uma op
 CLOSED = 'Edital encerrado.'
 UNKNOWN_DEADLINE = 'Prazo final nao identificado.'
 UNKNOWN_CLOSING_TIME = 'Prazo final hoje sem horario de encerramento confirmado.'
+COLLECTION_PAGE = 'Pagina agregadora de editais; nao representa oportunidade individual.'
 
 # O titulo da fase processual importa; um edital valido pode descrever
 # "resultados esperados" no resumo e nao deve ser bloqueado por isso.
@@ -48,6 +50,29 @@ def _fold(value: Any) -> str:
     )
 
 
+# Paginas com varias oportunidades sao fontes de descoberta, nao editais.
+COLLECTION_TITLE = re.compile(
+    r'^(?:(?:editais|chamadas|oportunidades)\s+'
+    r'(?:lancad[oa]s?|abert[oa]s?|vigentes|disponiveis|'
+    r'com\s+(?:prazo|inscric(?:ao|oes)))\b|'
+    r'(?:lista|relacao|catalogo|portal|pagina)\s+(?:de|dos|das)\s+'
+    r'(?:editais|chamadas|oportunidades)\b)',
+    re.IGNORECASE,
+)
+COLLECTION_URLS = re.compile(
+    r'^/(?:noticias/editais-com-prazo-de-submissao-de-propostas-aberto|'
+    r'editais|chamadas|oportunidades)/?$',
+    re.IGNORECASE,
+)
+
+
+def is_listing_page(title: Any, link: Any = '') -> bool:
+    if COLLECTION_TITLE.search(_fold(title).strip()):
+        return True
+    path = _fold(unquote(urlsplit(str(link or '')).path)).rstrip('/')
+    return bool(COLLECTION_URLS.fullmatch(path))
+
+
 def _parse(value: Any, timezone: ZoneInfo) -> tuple[datetime, bool] | None:
     text = str(value or '').strip()
     if not text:
@@ -76,6 +101,8 @@ def opportunity_gate(
     summary = _fold(edital.get('resumo'))
     status = _fold(edital.get('status')).strip()
 
+    if is_listing_page(edital.get('titulo'), edital.get('link')):
+        return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
         return False, NOT_OPPORTUNITY, True
     if status in CLOSED_STATUSES:
