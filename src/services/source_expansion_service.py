@@ -96,10 +96,10 @@ class SourceExpansionService:
             path = parts.path.rstrip('/') or '/'
             if path.lower().endswith(cls.EXCLUDED_EXTENSIONS):
                 return ''
-            query = urlencode(
+            query = urlencode([
                 (k, v) for k, v in parse_qsl(parts.query, keep_blank_values=False)
                 if k.lower() in cls.QUERY_KEYS
-            )
+            ])
             return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, query, ''))
         except (ValueError, TypeError):
             return ''
