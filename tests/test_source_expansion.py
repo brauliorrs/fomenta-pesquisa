@@ -46,7 +46,7 @@ class TestSourceExpansion(unittest.TestCase):
             [source()], [], {}, '2026-11-25T08:00:00-03:00'
         )
         self.assertEqual(len(active), 1)
-        self.assertEqual(len(candidates), 1, f'links={service.links_from_page(SEED_HTML, SEED)} normalized={service.clean_url('/editais-abertos/', SEED)} qualifies={service.is_listing_candidate('Editais abertos', LISTING)} called={called} state={report}')
+        self.assertEqual(len(candidates), 1, f"links={service.links_from_page(SEED_HTML, SEED)} normalized={service.clean_url('/editais-abertos/', SEED)} qualifies={service.is_listing_candidate('Editais abertos', LISTING)} called={called} state={report}")
         self.assertEqual(candidates[0]['pagina_editais_hint'], LISTING)
         self.assertEqual(candidates[0]['activation_mode'], 'review_when_viable')
         self.assertEqual(report['paginas'][LISTING]['validacoes'], 1)
