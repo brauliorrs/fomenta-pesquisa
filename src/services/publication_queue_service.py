@@ -5,6 +5,7 @@ from typing import Any
 
 from src.config import settings
 from src.services.opportunity_guard import opportunity_gate
+from src.services.published_editorial_guard import published_repost_block_reason
 from src.services.storage_service import StorageService
 from src.utils.dates import now_in_timezone, parse_date
 
@@ -109,7 +110,14 @@ class PublicationQueueService:
             'ultima_postagem': item.get('ultima_postagem'),
             'quantidade_postagens': item.get('quantidade_postagens', 0),
             'instagram_feed_publicado': published,
-            'validacao_inscricoes': 'triagem_automatica_sem_homologacao_do_prazo_oficial',
+            'validacao_inscricoes': (
+                'HOLD_editorial_repostagem_suspensa'
+                if published and published_repost_block_reason(item)
+                else 'triagem_automatica_sem_homologacao_do_prazo_oficial'
+            ),
+            'repostagem_bloqueada': bool(
+                published and published_repost_block_reason(item)
+            ),
             'urgencia_dias': self._days_left(item.get('data_expiracao')),
             'link': item.get('link'),
             'caption': item.get('instagram_caption'),
