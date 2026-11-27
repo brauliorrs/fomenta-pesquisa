@@ -2,7 +2,7 @@ name: Auditar Prazos de Inscricao
 
 on:
   workflow_dispatch:
-  # Atualizacoes do workflow executam auditoria e revisam intervalos sem loops;
+  # Etapa 2: prioriza revisao ampliada com inventario dos casos sem prazo;
   # o relatorio JSON gravado pela rotina nao dispara a mesma acao.
   push:
     branches: [main]
@@ -36,6 +36,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_deadline_evidence.py' -v
           python -m unittest discover -s tests -p 'test_opportunity_guard.py' -v
+          python -m unittest discover -s tests -p 'test_stage2_inventory.py' -v
       - name: Audit original registered URLs
         env:
           TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
@@ -44,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/auditoria_prazos.json
+          git add data/auditoria_prazos.json data/inventario_sem_prazo_etapa2.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "audit: prazos de inscricao $(date -u +'%Y-%m-%d %H:%M')"
           pushed=false
