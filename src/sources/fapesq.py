@@ -7,6 +7,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 from src.services.opportunity_guard import is_listing_page
+from src.services.deadline_evidence import extract_registration_deadlines
 from src.sources.base_source import BaseSource
 
 
@@ -63,10 +64,9 @@ class FAPESQSource(BaseSource):
         return items
 
     def _extract_deadline(self, text: str) -> str | None:
-        match = re.search(r'(\d{2}/\d{2}/\d{4})', text)
-        if match:
-            return match.group(1)
-        return None
+        # A primeira data da página pode ser publicação ou resultado.
+        dates = {entry['data'] for entry in extract_registration_deadlines(text)}
+        return next(iter(dates)) if len(dates) == 1 else None
 
     def _infer_categoria(self, title: str, summary: str) -> str:
         combined = f'{title} {summary}'.lower()

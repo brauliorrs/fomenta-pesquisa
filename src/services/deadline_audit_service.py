@@ -26,6 +26,7 @@ class DeadlineAuditService:
     MAX_MISSING = 48
     MAX_BYTES = 5_000_000
     MAX_PDF_PAGES = 14
+    MAX_RETRIES_TRANSIENT = 1
 
     def __init__(
         self, logger: logging.Logger,
@@ -63,7 +64,10 @@ class DeadlineAuditService:
             return '', '', 'link_invalido'
         original_host = (urlsplit(url).hostname or '').lower()
         current = url
-        for _ in range(4):
+        retries = 0
+        # Repetir no máximo uma vez falhas transitórias do mesmo domínio,
+        # sem tentar contornar respostas 401/403, CAPTCHA ou anti-bot.
+        for _ in range(5):
             try:
                 r = requests.get(
                     current, timeout=(5, 14),
@@ -79,6 +83,9 @@ class DeadlineAuditService:
                         return '', current, 'redirecionamento_de_dominio_externo'
                     current = target
                     continue
+                if r.status_code in (502, 503, 504) and retries < self.MAX_RETRIES_TRANSIENT:
+                    retries += 1
+                    continue
                 r.raise_for_status()
                 if len(r.content) > self.MAX_BYTES:
                     return '', current, 'documento_muito_grande'
@@ -88,6 +95,8 @@ class DeadlineAuditService:
                     pages = min(self.MAX_PDF_PAGES, len(reader.pages))
                     raw = '\n'.join((reader.pages[i].extract_text() or '') for i in range(pages))
                     return raw, current, '' if raw.strip() else 'pdf_sem_texto_extraivel'
+                if ctype.startswith('image/') or urlsplit(current).path.lower().endswith(('.jpg','.jpeg','.png','.webp','.gif')):
+                    return '', current, 'imagem_nao_e_documento_textual'
                 if ctype and 'text/html' not in ctype and 'application/xhtml' not in ctype:
                     return '', current, 'tipo_de_documento_nao_suportado'
                 soup = BeautifulSoup(r.text, 'html.parser')
@@ -99,6 +108,21 @@ class DeadlineAuditService:
                 status = exc.response.status_code if exc.response is not None else None
                 self.logger.warning('HTTP %s na auditoria da URL %s', status, current)
                 return '', current, f'falha_http_{status}' if status else 'falha_http_ou_documento'
+            except requests.Timeout as exc:
+                self.logger.warning('Timeout na auditoria do link %s: %s', current, exc)
+                if retries < self.MAX_RETRIES_TRANSIENT:
+                    retries += 1
+                    continue
+                return '', current, 'timeout_http'
+            except requests.exceptions.SSLError as exc:
+                self.logger.warning('Falha TLS na auditoria do link %s: %s', current, exc)
+                return '', current, 'falha_tls_verificacao'
+            except requests.ConnectionError as exc:
+                self.logger.warning('Conexao falhou na auditoria do link %s: %s', current, exc)
+                if retries < self.MAX_RETRIES_TRANSIENT:
+                    retries += 1
+                    continue
+                return '', current, 'falha_conexao_http'
             except (requests.RequestException, ValueError, KeyError) as exc:
                 self.logger.warning('Falha de auditoria no link %s: %s', current, exc)
                 return '', current, 'falha_http_ou_documento'
@@ -165,7 +189,16 @@ class DeadlineAuditService:
             if str(x.get('id')) in prior
             and prior[str(x.get('id'))].get('link_cadastrado') == x.get('link')
         ]
-        selected_missing = (first_pass + remaining)[:self.MAX_MISSING]
+        # Após cobrir links ainda não visitados, dar preferência à
+        # recuperação de falhas transitórias. 403 e documentos-imagem não
+        # são contornados por repetição incessante.
+        transient = {'falha_http_502','falha_http_503','falha_http_504',
+                     'falha_http_429','falha_conexao_http','timeout_http',
+                     'falha_http_ou_documento'}
+        retryable = [x for x in remaining if
+                     str(prior.get(str(x.get('id')), {}).get('classificacao') or '') in transient]
+        other = [x for x in remaining if x not in retryable]
+        selected_missing = (first_pass + retryable + other)[:self.MAX_MISSING]
         next_cursor = (cursor + len(selected_missing)) % total_missing if total_missing else 0
 
         # Reavaliar prioritariamente vencimentos proximos; nao repetir o
@@ -213,6 +246,38 @@ class DeadlineAuditService:
             new_recoveries += record['classificacao'] == 'possivel_recuperacao'
             divergences += record['classificacao'] == 'prazo_divergente'
 
+        def category(error: str) -> str:
+            if error in {'falha_http_502','falha_http_503','falha_http_504',
+                         'falha_conexao_http','timeout_http','falha_http_429'}:
+                return 'transitoria_reatentar'
+            if error.startswith(('falha_http_401','falha_http_403','falha_tls')):
+                return 'acesso_restrito_ou_tls'
+            if error in {'tipo_de_documento_nao_suportado',
+                         'imagem_nao_e_documento_textual',
+                         'pdf_sem_texto_extraivel','documento_muito_grande'}:
+                return 'formato_ou_documento_nao_textual'
+            if error.startswith(('falha_', 'excesso_redirecionamentos')):
+                return 'erro_generico_revisar'
+            return ''
+
+        recovered_access = 0
+        for edital in selected:
+            key = str(edital.get('id') or '')
+            old = old_state.get('registros', {}).get(key, {})
+            current = prior.get(key, {})
+            if category(str(old.get('classificacao') or '')) and not category(
+                str(current.get('classificacao') or '')
+            ):
+                recovered_access += 1
+        failure_sources: dict[str, dict[str, int]] = {}
+        for record in prior.values():
+            if not isinstance(record, dict):
+                continue
+            error_class = category(str(record.get('classificacao') or ''))
+            if error_class:
+                source = str(record.get('fonte') or 'desconhecida')
+                by_source = failure_sources.setdefault(source, {})
+                by_source[error_class] = by_source.get(error_class, 0) + 1
         tally: dict[str, int] = {}
         for row in prior.values():
             state = str(row.get('classificacao') or 'indefinida')
@@ -233,6 +298,8 @@ class DeadlineAuditService:
                 'revisoes_ambiguas_nesta_execucao': len(ambiguity_rechecks),
                 'novos_candidatos_a_recuperacao': new_recoveries,
                 'novas_divergencias': divergences,
+                'falhas_por_fonte':dict(sorted(failure_sources.items())),
+                'falhas_de_acesso_recuperadas_na_execucao':recovered_access,
                 'registros_auditados_acumulados': len(prior),
                 'classificacoes_acumuladas': dict(sorted(tally.items())),
             },

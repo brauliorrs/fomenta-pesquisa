@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -42,6 +42,9 @@ class FAPACSource(BaseSource):
                 continue
 
             full_href = urljoin(self.config.site_oficial, href) if href else self.config.pagina_editais
+            # Miniaturas de imagens não são documentos de texto do edital.
+            if urlsplit(full_href).path.lower().endswith(('.jpg', '.jpeg', '.png', '.webp', '.gif')):
+                continue
             if full_href in seen:
                 continue
             seen.add(full_href)

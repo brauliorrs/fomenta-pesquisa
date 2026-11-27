@@ -7,6 +7,8 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup
 
+from src.services.deadline_evidence import extract_registration_deadlines
+
 from src.sources.base_source import BaseSource
 
 
@@ -172,33 +174,10 @@ class FAPERNSource(BaseSource):
         return best_href
 
     def _extract_deadline(self, summary: str, content: str, opening_date: str | None) -> str | None:
-        combined = f'{summary} {content}'
-
-        numeric_matches = re.findall(r'(\d{1,2}/\d{1,2}/\d{4})', combined)
-        if numeric_matches:
-            return numeric_matches[-1]
-
-        base_year = int(opening_date[:4]) if opening_date else None
-
-        range_match = re.search(
-            r'(\d{1,2})[ºo]?\s+a\s+(\d{1,2})\s+de\s+([A-Za-zçãéíóúâêôà]+)(?:\s+de\s+(\d{4}))?',
-            combined,
-            flags=re.I,
-        )
-        if range_match:
-            _, end_day, month_name, explicit_year = range_match.groups()
-            return self._format_date(end_day, month_name, explicit_year or base_year)
-
-        until_match = re.search(
-            r'at[eé]\s+(?:as\s+\d{1,2}h\d{0,2}\s+)?(\d{1,2})\s+de\s+([A-Za-zçãéíóúâêôà]+)(?:\s+de\s+(\d{4}))?',
-            combined,
-            flags=re.I,
-        )
-        if until_match:
-            day, month_name, explicit_year = until_match.groups()
-            return self._format_date(day, month_name, explicit_year or base_year)
-
-        return None
+        # A última data da notícia pode ser resultado, contratação ou bolsa.
+        matches = extract_registration_deadlines(summary + '\n' + content)
+        dates = {entry['data'] for entry in matches}
+        return next(iter(dates)) if len(dates) == 1 else None
 
     def _format_date(self, day: str, month_name: str, year: str | int | None) -> str | None:
         if year is None:
