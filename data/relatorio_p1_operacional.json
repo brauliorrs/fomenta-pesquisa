@@ -1,0 +1,168 @@
+{
+  "versao": 1,
+  "gerado_em": "2026-11-27T16:39:22.583123-03:00",
+  "escopo": "P1 operacao diagnostica; sem alteracao do catalogo ou autorizacao de publicacao",
+  "baseline_sem_prazo_2026_11_27": 208,
+  "catalogo_total": 237,
+  "sem_prazo": 206,
+  "elegiveis_para_visita": 192,
+  "visitados_elegiveis": 192,
+  "pendentes_de_visita_elegiveis": 0,
+  "ids_pendentes_visita": [],
+  "excluidos_da_visita_por_filtro_editorial": {
+    "bloqueio_editorial_a_conferir": 13,
+    "pagina_agregadora_nao_e_edital": 1
+  },
+  "novos_links_visitados_nesta_execucao": 0,
+  "ids_primeira_visita": [],
+  "falhas_de_acesso_recuperadas_nesta_execucao": 10,
+  "ids_acesso_recuperado": [
+    "conselho_nacional_das_fundacoes_estaduai_438c1f8d",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_7e452c30",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_9ca53523",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_b31b9191",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_b6d552ff",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_c2fb711e",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_d9017d7a",
+    "fundacao_de_apoio_a_pesquisa_do_estado_d_d9f78020",
+    "instituto_de_pesquisa_economica_aplicada_45b97278",
+    "instituto_de_pesquisa_economica_aplicada_4ff45c5c"
+  ],
+  "erros_de_acesso_ou_formato_atuais": 70,
+  "fontes_sem_prazo_extraivel_atuais": 70,
+  "fontes": {
+    "BNDES": {
+      "elegiveis_para_visita": 2,
+      "prazo_encerrado": 1,
+      "sem_prazo": 2,
+      "sem_prazo_extraivel": 1,
+      "visitados": 2
+    },
+    "CAPES": {
+      "elegiveis_para_visita": 4,
+      "excluidos_da_auditoria": 3,
+      "falha_de_acesso_ou_formato": 4,
+      "sem_prazo": 7,
+      "visitados": 4
+    },
+    "CONFAP": {
+      "acesso_recuperado_na_execucao": 1,
+      "elegiveis_para_visita": 22,
+      "excluidos_da_auditoria": 5,
+      "falha_de_acesso_ou_formato": 2,
+      "prazo_encerrado": 4,
+      "sem_prazo": 27,
+      "sem_prazo_extraivel": 16,
+      "visitados": 22
+    },
+    "FACEPE": {
+      "elegiveis_para_visita": 19,
+      "excluidos_da_auditoria": 1,
+      "falha_de_acesso_ou_formato": 19,
+      "sem_prazo": 20,
+      "visitados": 19
+    },
+    "FAPAC": {
+      "elegiveis_para_visita": 28,
+      "falha_de_acesso_ou_formato": 4,
+      "prazo_encerrado": 13,
+      "sem_prazo": 28,
+      "sem_prazo_extraivel": 11,
+      "visitados": 28
+    },
+    "FAPDF": {
+      "elegiveis_para_visita": 6,
+      "falha_de_acesso_ou_formato": 6,
+      "sem_prazo": 6,
+      "visitados": 6
+    },
+    "FAPEAL": {
+      "elegiveis_para_visita": 1,
+      "sem_prazo": 1,
+      "sem_prazo_extraivel": 1,
+      "visitados": 1
+    },
+    "FAPEG": {
+      "elegiveis_para_visita": 1,
+      "sem_prazo": 1,
+      "sem_prazo_extraivel": 1,
+      "visitados": 1
+    },
+    "FAPEPI": {
+      "elegiveis_para_visita": 2,
+      "sem_prazo": 2,
+      "sem_prazo_extraivel": 2,
+      "visitados": 2
+    },
+    "FAPERN": {
+      "elegiveis_para_visita": 35,
+      "excluidos_da_auditoria": 4,
+      "falha_de_acesso_ou_formato": 35,
+      "sem_prazo": 39,
+      "visitados": 35
+    },
+    "FAPESB": {
+      "elegiveis_para_visita": 12,
+      "prazo_encerrado": 2,
+      "sem_prazo": 12,
+      "sem_prazo_extraivel": 10,
+      "visitados": 12
+    },
+    "FAPESC": {
+      "elegiveis_para_visita": 1,
+      "sem_prazo": 1,
+      "sem_prazo_extraivel": 1,
+      "visitados": 1
+    },
+    "FAPESPA": {
+      "elegiveis_para_visita": 1,
+      "sem_prazo": 1,
+      "sem_prazo_extraivel": 1,
+      "visitados": 1
+    },
+    "FAPESQ": {
+      "acesso_recuperado_na_execucao": 7,
+      "elegiveis_para_visita": 15,
+      "outra_classificacao": 1,
+      "prazo_encerrado": 1,
+      "sem_prazo": 15,
+      "sem_prazo_extraivel": 13,
+      "visitados": 15
+    },
+    "FAPITEC": {
+      "elegiveis_para_visita": 1,
+      "sem_prazo": 1,
+      "sem_prazo_extraivel": 1,
+      "visitados": 1
+    },
+    "FAPPR": {
+      "elegiveis_para_visita": 3,
+      "sem_prazo": 3,
+      "sem_prazo_extraivel": 3,
+      "visitados": 3
+    },
+    "FUNDECT": {
+      "elegiveis_para_visita": 2,
+      "excluidos_da_auditoria": 1,
+      "sem_prazo": 3,
+      "sem_prazo_extraivel": 2,
+      "visitados": 2
+    },
+    "IPEA": {
+      "acesso_recuperado_na_execucao": 2,
+      "elegiveis_para_visita": 23,
+      "prazo_encerrado": 20,
+      "sem_prazo": 23,
+      "sem_prazo_extraivel": 3,
+      "visitados": 23
+    },
+    "SERRAPILHEIRA": {
+      "elegiveis_para_visita": 14,
+      "prazo_encerrado": 10,
+      "sem_prazo": 14,
+      "sem_prazo_extraivel": 4,
+      "visitados": 14
+    }
+  },
+  "observacao": "Um acesso recuperado significa leitura concluída, NÃO nova inscrição vigente. Caso sem prazo extraível continua em HOLD."
+}

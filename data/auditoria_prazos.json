@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-27T16:23:25.069264-03:00",
+  "generated_at": "2026-11-27T16:39:22.583123-03:00",
   "metodologia": "evidencia_textual_em_link_cadastrado_sem_alterar_publicacao",
-  "cursor_sem_prazo": 36,
+  "cursor_sem_prazo": 84,
   "sumario": {
     "total_catalogo": 237,
     "sem_prazo_catalogados": 206,
     "sem_prazo_elegiveis_para_auditoria": 192,
     "triados_com_prazo_vigente": 28,
-    "consultados_nesta_execucao": 53,
-    "fontes_distintas_sem_prazo_consultadas": 16,
+    "consultados_nesta_execucao": 48,
+    "fontes_distintas_sem_prazo_consultadas": 7,
     "revisoes_ambiguas_nesta_execucao": 0,
     "novos_candidatos_a_recuperacao": 0,
     "novas_divergencias": 0,
@@ -17,12 +17,12 @@
         "transitoria_reatentar": 4
       },
       "CONFAP": {
-        "erro_generico_revisar": 2,
+        "transitoria_reatentar": 1,
         "acesso_restrito_ou_tls": 1
       },
       "FACEPE": {
-        "erro_generico_revisar": 15,
-        "transitoria_reatentar": 7
+        "erro_generico_revisar": 2,
+        "transitoria_reatentar": 20
       },
       "FAPAC": {
         "formato_ou_documento_nao_textual": 4
@@ -34,32 +34,30 @@
         "transitoria_reatentar": 1
       },
       "FAPERN": {
-        "transitoria_reatentar": 17,
-        "erro_generico_revisar": 17,
+        "transitoria_reatentar": 29,
         "formato_ou_documento_nao_textual": 1,
+        "erro_generico_revisar": 5,
         "acesso_restrito_ou_tls": 1
       },
       "FAPESC": {
         "formato_ou_documento_nao_textual": 2
       },
       "FAPESQ": {
-        "erro_generico_revisar": 8
-      },
-      "IPEA": {
-        "erro_generico_revisar": 2
+        "erro_generico_revisar": 1
       }
     },
-    "falhas_de_acesso_recuperadas_na_execucao": 2,
+    "falhas_de_acesso_recuperadas_na_execucao": 10,
     "registros_auditados_acumulados": 229,
     "classificacoes_acumuladas": {
       "documento_muito_grande": 3,
-      "falha_conexao_http": 17,
+      "falha_conexao_http": 29,
       "falha_http_403": 2,
-      "falha_http_ou_documento": 44,
+      "falha_http_ou_documento": 8,
+      "multiplos_prazos_revisao": 1,
       "prazo_corroborado_por_trecho": 1,
-      "prazo_de_inscricao_ja_decorrido": 46,
-      "sem_evidencia_de_inscricao": 94,
-      "timeout_http": 18,
+      "prazo_de_inscricao_ja_decorrido": 50,
+      "sem_evidencia_de_inscricao": 99,
+      "timeout_http": 32,
       "tipo_de_documento_nao_suportado": 4
     }
   },
@@ -868,7 +866,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fap.df.gov.br/documents/d/fap/edital-de-chamamento-publico-de-servidores-n-01-2026-pdf",
       "url_consultada": "https://www.fap.df.gov.br/documents/d/fap/edital-de-chamamento-publico-de-servidores-n-01-2026-pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -881,7 +879,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/fapern-celebra-23-anos-de-contribuicao-a-ciencia-e-ao-desenvolvimento-do-rn/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/fapern-celebra-23-anos-de-contribuicao-a-ciencia-e-ao-desenvolvimento-do-rn/",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -983,7 +981,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.gov.br/capes/pt-br/assuntos/noticias/projeto-estatueta-capes-recebe-inscricoes-ate-o-dia-22",
       "url_consultada": "https://www.gov.br/capes/pt-br/assuntos/noticias/projeto-estatueta-capes-recebe-inscricoes-ate-o-dia-22",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -996,7 +994,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/10/2026.10.22-Cientista-Arretado-Atualizado.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/10/2026.10.22-Cientista-Arretado-Atualizado.pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1030,7 +1028,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fap.df.gov.br/documents/d/fap/edital-n-02-2026-fapdf-participa-pdf",
       "url_consultada": "https://www.fap.df.gov.br/documents/d/fap/edital-n-02-2026-fapdf-participa-pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1043,7 +1041,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/asteroid-day-mobiliza-estudantes-em-angicos-com-apoio-da-fapern/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/asteroid-day-mobiliza-estudantes-em-angicos-com-apoio-da-fapern/",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1147,7 +1145,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2024/07/2024.08.20-Tecnova-III-Adendo-01.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2024/07/2024.08.20-Tecnova-III-Adendo-01.pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1181,7 +1179,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fap.df.gov.br/documents/d/fap/edital-n-03-2026-fapdf-movimenta-pdf",
       "url_consultada": "https://www.fap.df.gov.br/documents/d/fap/edital-n-03-2026-fapdf-movimenta-pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1194,7 +1192,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/desafios-da-mulher-na-pesquisa-cientifica-marcam-o-elas-na-ciencia/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/desafios-da-mulher-na-pesquisa-cientifica-marcam-o-elas-na-ciencia/",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1277,7 +1275,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/02/Enquadramento_BIA40_2025-1.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/02/Enquadramento_BIA40_2025-1.pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1311,7 +1309,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fap.df.gov.br/documents/d/fap/sei_212973162_chamada_publica_63-pdf",
       "url_consultada": "https://www.fap.df.gov.br/documents/d/fap/sei_212973162_chamada_publica_63-pdf",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1324,7 +1322,7 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/fapern-tem-proposta-aprovada-em-chamamento-do-cnpq/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/fapern-tem-proposta-aprovada-em-chamamento-do-cnpq/",
-      "verificado_em": "2026-11-27T16:23:25.069264-03:00",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
       "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
@@ -1362,14 +1360,22 @@
       "id": "instituto_de_pesquisa_economica_aplicada_45b97278",
       "titulo": "Seleção Pública Ipead nº 04/2026",
       "fonte": "IPEA",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16471-selecao-publica-ipead-n-04-2026",
       "url_consultada": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16471-selecao-publica-ipead-n-04-2026",
-      "verificado_em": "2026-11-27T00:14:09.014096-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [
+        "2026-08-03"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-08-03",
+          "trecho": "Prazo de inscrição: 27/07/2026 a 03/08/2026"
+        }
+      ],
+      "classificacao": "prazo_de_inscricao_ja_decorrido",
       "publicacao_autorizada_pela_auditoria": false,
-      "datas_identificadas": [],
-      "evidencias": []
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_serrapilheira_chamada_publica__4b6a8da5": {
       "id": "instituto_serrapilheira_chamada_publica__4b6a8da5",
@@ -1425,8 +1431,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2024/07/Anexo_III.DeclaracaoAmbiental__1_.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2024/07/Anexo_III.DeclaracaoAmbiental__1_.pdf",
-      "verificado_em": "2026-11-27T00:14:09.014096-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1459,8 +1465,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252008-2026%2520RAIZES%2520DA%2520INOVA%25c3%2587%25c3%2583O%2FEdital%2520de%2520Abertura.pdf",
       "url_consultada": "https://www.fapern.rn.gov.br/wp-json/nextcloud/v1/download?filePath=%2Fremote.php%2Fdav%2Ffiles%2Fgovernodorn%2FFAPERN-GOVRN%2FEditais%2FEditais%25202026%2FEdital%252008-2026%2520RAIZES%2520DA%2520INOVA%25c3%2587%25c3%2583O%2FEdital%2520de%2520Abertura.pdf",
-      "verificado_em": "2026-11-27T00:14:09.014096-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1497,14 +1503,22 @@
       "id": "instituto_de_pesquisa_economica_aplicada_4ff45c5c",
       "titulo": "Chamada Pública 020/2026",
       "fonte": "IPEA",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16393-chamada-publica-020-2026",
       "url_consultada": "https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16393-chamada-publica-020-2026",
-      "verificado_em": "2026-11-27T00:14:09.014096-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [
+        "2026-06-08"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-06-08",
+          "trecho": "Prazo de inscrição: 25/05/2026 a 08/06/2026"
+        }
+      ],
+      "classificacao": "prazo_de_inscricao_ja_decorrido",
       "publicacao_autorizada_pela_auditoria": false,
-      "datas_identificadas": [],
-      "evidencias": []
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_serrapilheira_chamada_publica__506ef73c": {
       "id": "instituto_serrapilheira_chamada_publica__506ef73c",
@@ -1536,14 +1550,22 @@
       "id": "conselho_nacional_das_fundacoes_estaduai_438c1f8d",
       "titulo": "Governo da Paraíba lança três editais para bolsas de pós-graduação com investimento de R$ 37,1 milhões",
       "fonte": "CONFAP",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/editais/editais-2026/01_07_26-edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado.pdf",
       "url_consultada": "https://fapesq.rpp.br/editais/editais-2026/01_07_26-edital-no-42-2026-concessao-de-bolsas-de-pos-doutorado.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [
+        "2026-11-09"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-11-09",
+          "trecho": "Término do prazo para submissão de propostas (até às 17h) 09/11/2026"
+        }
+      ],
+      "classificacao": "prazo_de_inscricao_ja_decorrido",
       "publicacao_autorizada_pela_auditoria": false,
-      "datas_identificadas": [],
-      "evidencias": []
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "fundacao_de_amparo_a_ciencia_e_tecnologi_80f0e9d8": {
       "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_80f0e9d8",
@@ -1552,8 +1574,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2025/11/Resultado_Final_da_2__fase_da_13__Rodada__Adendo_02__do_CIENTISTA_ARRETADO.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2025/11/Resultado_Final_da_2__fase_da_13__Rodada__Adendo_02__do_CIENTISTA_ARRETADO.pdf",
-      "verificado_em": "2026-11-27T00:14:09.014096-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1604,8 +1626,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/fapern-participa-de-reuniao-que-avalia-fecitern-2025-e-projeta-2026/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/fapern-participa-de-reuniao-que-avalia-fecitern-2025-e-projeta-2026/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1628,14 +1650,15 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_7e452c30",
       "titulo": "EDITAL Nº 66/2025 – APOIO À ORGANIZAÇÃO E REALIZAÇÃO DE EVENTOS CIENTÍFICOS, TECNOLÓGICOS E DE INOVAÇÃO",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/../../editais/2025/edital-no-66-2025-2013-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao",
       "url_consultada": "https://fapesq.rpp.br/../../editais/2025/edital-no-66-2025-2013-apoio-a-organizacao-e-realizacao-de-eventos-cientificos-tecnologicos-e-de-inovacao",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
-      "publicacao_autorizada_pela_auditoria": false,
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
       "datas_identificadas": [],
-      "evidencias": []
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_5af5ab92": {
       "id": "instituto_de_pesquisa_economica_aplicada_5af5ab92",
@@ -1670,8 +1693,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://drive.rn.gov.br/index.php/s/dYdrcTiSC5kxFbt",
       "url_consultada": "https://drive.rn.gov.br/index.php/s/dYdrcTiSC5kxFbt",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1683,8 +1706,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2024/05/2024.05.17-Cientista-Arretado.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2024/05/2024.05.17-Cientista-Arretado.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1710,8 +1733,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/ciencia-perto-da-comunidade-reune-mais-de-400-estudantes-em-serra-de-sao-bento/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/ciencia-perto-da-comunidade-reune-mais-de-400-estudantes-em-serra-de-sao-bento/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1734,14 +1757,22 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_9ca53523",
       "titulo": "Chamada ERC-CONFAP-2026 (Critérios adotados pela Fapesq)",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/../../editais/2026/chamada-erc-confap-2026-criterios-adotados-pela-fapesq",
-      "url_consultada": "https://fapesq.rpp.br/../../editais/2026/chamada-erc-confap-2026-criterios-adotados-pela-fapesq",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "url_consultada": "https://fapesq.rpp.br/editais/editais-2026/erc-confap-fapesq-2026-european-research-council.pdf",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [
+        "2026-07-10"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-07-10",
+          "trecho": "Lançamento da Chamada 06 de maio de 2026 Data limite para envio de propostas 10 de julho de 2026 Início da mobilidade dos pesquisadores com projetos aprovados"
+        }
+      ],
+      "classificacao": "prazo_de_inscricao_ja_decorrido",
       "publicacao_autorizada_pela_auditoria": false,
-      "datas_identificadas": [],
-      "evidencias": []
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_6029939a": {
       "id": "instituto_de_pesquisa_economica_aplicada_6029939a",
@@ -1799,8 +1830,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2025/10/ENQUADRAMENTO_Transforma-PE.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2025/10/ENQUADRAMENTO_Transforma-PE.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1826,8 +1857,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/fapern-inicia-ciclo-de-encontros-do-mais-cultura-cientifica-no-rn/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/fapern-inicia-ciclo-de-encontros-do-mais-cultura-cientifica-no-rn/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1850,14 +1881,15 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_b31b9191",
       "titulo": "Chamada Marie Skłodowska-Curie (Intercâmbio de Pessoal) 2026 Critérios Adotados pela FAPESQ-PB",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/../../editais/2026/chamada-marie-sklodowska-curie-intercambio-de-pessoal-2026-criterios-adotados-pela-fapesq-pb",
       "url_consultada": "https://fapesq.rpp.br/../../editais/2026/chamada-marie-sklodowska-curie-intercambio-de-pessoal-2026-criterios-adotados-pela-fapesq-pb",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
-      "publicacao_autorizada_pela_auditoria": false,
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
       "datas_identificadas": [],
-      "evidencias": []
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_70f7b808": {
       "id": "instituto_de_pesquisa_economica_aplicada_70f7b808",
@@ -1927,8 +1959,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2024/07/Anexo_II.AcoesColetivas__1_.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2024/07/Anexo_II.AcoesColetivas__1_.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1954,8 +1986,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/inscricoes-do-ppsus-encerram-nesta-sexta-feira-27/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/inscricoes-do-ppsus-encerram-nesta-sexta-feira-27/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -1964,14 +1996,15 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_b6d552ff",
       "titulo": "EDITAL Nº 40/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO ACADÊMICOS",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/../../editais/2026/edital-no-40-2026-concessao-de-bolsas-de-mestrado-e-doutorado-academicos",
       "url_consultada": "https://fapesq.rpp.br/../../editais/2026/edital-no-40-2026-concessao-de-bolsas-de-mestrado-e-doutorado-academicos",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
-      "publicacao_autorizada_pela_auditoria": false,
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
       "datas_identificadas": [],
-      "evidencias": []
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_7c03140d": {
       "id": "instituto_de_pesquisa_economica_aplicada_7c03140d",
@@ -2045,8 +2078,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/02/Edital_04_2026_Conexão-PE-Sichuan-1.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/02/Edital_04_2026_Conexão-PE-Sichuan-1.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2079,8 +2112,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/centelha-3-rn-mobiliza-empreendedores-de-46-municipios-potiguares/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/centelha-3-rn-mobiliza-empreendedores-de-46-municipios-potiguares/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2103,14 +2136,15 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_c2fb711e",
       "titulo": "EDITAL Nº 37/2026 – SELEÇÃO DE ESTUDANTES DE GRADUAÇÃO PARA O PROJETO DE PESQUISA LABORATÓRIO DE PESQUISAS E PRÁTICAS JURÍDICAS EM DIREITOS HUMANOS",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/../../editais/2026/edital-no-37-2026-2013-selecao-de-estudantes-de-graduacao-para-o-projeto-de-pesquisa-laboratorio-de-pesquisas-e-praticas-juridicas-em-direitos-humanos",
       "url_consultada": "https://fapesq.rpp.br/../../editais/2026/edital-no-37-2026-2013-selecao-de-estudantes-de-graduacao-para-o-projeto-de-pesquisa-laboratorio-de-pesquisas-e-praticas-juridicas-em-direitos-humanos",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
-      "publicacao_autorizada_pela_auditoria": false,
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
       "datas_identificadas": [],
-      "evidencias": []
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_8f2f8b18": {
       "id": "instituto_de_pesquisa_economica_aplicada_8f2f8b18",
@@ -2173,8 +2207,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/05/Edital_FACEPE_09_2026_PBPP_Int_2026___Resultado_da_Etapa_I__enquadramento_.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/05/Edital_FACEPE_09_2026_PBPP_Int_2026___Resultado_da_Etapa_I__enquadramento_.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2207,8 +2241,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/encontro-reune-pesquisadores-bolsistas-da-fapern-que-atuam-no-instituto-internacional-de-fisica-da-ufrn/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/encontro-reune-pesquisadores-bolsistas-da-fapern-que-atuam-no-instituto-internacional-de-fisica-da-ufrn/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2231,14 +2265,15 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_d9017d7a",
       "titulo": "Chamada Bolsa Mulheres em STEM na Paraíba",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/../../editais/2026/chamada-bolsa-mulheres-em-stem-na-paraiba-fapesq-e-british-council",
       "url_consultada": "https://fapesq.rpp.br/../../editais/2026/chamada-bolsa-mulheres-em-stem-na-paraiba-fapesq-e-british-council",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
-      "publicacao_autorizada_pela_auditoria": false,
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
       "datas_identificadas": [],
-      "evidencias": []
+      "evidencias": [],
+      "classificacao": "sem_evidencia_de_inscricao",
+      "publicacao_autorizada_pela_auditoria": false,
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_97cf5a3e": {
       "id": "instituto_de_pesquisa_economica_aplicada_97cf5a3e",
@@ -2289,8 +2324,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/09/Aviso_de_contratar_Dispensa-Licitação_Centelha-PE-3.docx.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/09/Aviso_de_contratar_Dispensa-Licitação_Centelha-PE-3.docx.pdf",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2323,8 +2358,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/elas-na-ciencia-2a-edicao-reune-pesquisadoras-para-debate/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/elas-na-ciencia-2a-edicao-reune-pesquisadoras-para-debate/",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2333,14 +2368,27 @@
       "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_d9f78020",
       "titulo": "Governo da Paraíba abre chamada internacional para pesquisas sobre ecossistemas florestais diante das alterações climáticas",
       "fonte": "FAPESQ",
-      "prazo_cadastrado": null,
       "link_cadastrado": "https://fapesq.rpp.br/noticias/governo-da-paraiba-abre-chamada-para-pesquisas-sobre-ecossistemas-florestais-diante-das-alteracoes-climaticas",
       "url_consultada": "https://fapesq.rpp.br/noticias/governo-da-paraiba-abre-chamada-para-pesquisas-sobre-ecossistemas-florestais-diante-das-alteracoes-climaticas",
-      "verificado_em": "2026-11-27T09:31:05.264285-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "prazo_cadastrado": null,
+      "datas_identificadas": [
+        "2026-12-02",
+        "2027-06-02"
+      ],
+      "evidencias": [
+        {
+          "data": "2026-12-02",
+          "trecho": "- Encerramento do prazo para submissão das pré-propostas (1ª fase): 02 de dezembro de 2026."
+        },
+        {
+          "data": "2027-06-02",
+          "trecho": "- Encerramento do prazo para submissão das propostas completas: 02 de junho de 2027."
+        }
+      ],
+      "classificacao": "multiplos_prazos_revisao",
       "publicacao_autorizada_pela_auditoria": false,
-      "datas_identificadas": [],
-      "evidencias": []
+      "observacao": "Evidencia automatica no link cadastrado; verificar fase, documento completo, erratas e oficialidade antes de corrigir a base."
     },
     "instituto_de_pesquisa_economica_aplicada_9e5674f6": {
       "id": "instituto_de_pesquisa_economica_aplicada_9e5674f6",
@@ -2405,8 +2453,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/10/Edital_FACEPE_30-2026-PDPG-Redes-CAPES-ADENDO_01-1.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/10/Edital_FACEPE_30-2026-PDPG-Redes-CAPES-ADENDO_01-1.pdf",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2449,8 +2497,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/fapern-participa-do-xv-consad-com-trabalho-sobre-transformacao-digital/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/fapern-participa-do-xv-consad-com-trabalho-sobre-transformacao-digital/",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2511,8 +2559,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2025/11/Resultado_Final_da_1__fase_da_14__Rodada__Adendo_03__do_CIENTISTA_ARRETADO-1.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2025/11/Resultado_Final_da_1__fase_da_14__Rodada__Adendo_03__do_CIENTISTA_ARRETADO-1.pdf",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2579,8 +2627,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/06/2026.06.19-Espaços-CRIA-Anexo-I-Atualizado.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/06/2026.06.19-Espaços-CRIA-Anexo-I-Atualizado.pdf",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2606,8 +2654,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/popularizacao-da-ciencia-e-destaque-no-encontro-nordeste-2025-na-ufrn/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/popularizacao-da-ciencia-e-destaque-no-encontro-nordeste-2025-na-ufrn/",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2654,8 +2702,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2025/05/2025.05.27-Transforma-PE-Atualizado-em-2025.06.03.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2025/05/2025.05.27-Transforma-PE-Atualizado-em-2025.06.03.pdf",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2680,8 +2728,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/fapern-realiza-2a-edicao-do-elas-na-ciencia-no-alto-oeste-potiguar/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/fapern-realiza-2a-edicao-do-elas-na-ciencia-no-alto-oeste-potiguar/",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2728,8 +2776,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.facepe.br/wp-content/uploads/2026/10/2026.09.30-Cientista-Arretado.pdf",
       "url_consultada": "https://www.facepe.br/wp-content/uploads/2026/10/2026.09.30-Cientista-Arretado.pdf",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "timeout_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
@@ -2762,8 +2810,8 @@
       "prazo_cadastrado": null,
       "link_cadastrado": "https://www.fapern.rn.gov.br/materia/equipe-da-fapern-promove-formacao-do-semiarido-mais-cientifico-na-ufersa/",
       "url_consultada": "https://www.fapern.rn.gov.br/materia/equipe-da-fapern-promove-formacao-do-semiarido-mais-cientifico-na-ufersa/",
-      "verificado_em": "2026-11-27T09:35:50.699219-03:00",
-      "classificacao": "falha_http_ou_documento",
+      "verificado_em": "2026-11-27T16:39:22.583123-03:00",
+      "classificacao": "falha_conexao_http",
       "publicacao_autorizada_pela_auditoria": false,
       "datas_identificadas": [],
       "evidencias": []
