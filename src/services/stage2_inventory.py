@@ -17,7 +17,19 @@ def _automatic_classification(
     if is_listing_page(item.get('titulo'), item.get('link')):
         return ('pagina_agregadora_nao_e_edital', 'URL de listagem; verificar edital individual.', False)
     if item.get('bloqueio_editorial_definitivo'):
-        return ('bloqueio_editorial_a_conferir', 'O edital foi excluido da auditoria automatica; revisar motivo.', False)
+        # Preservar o motivo específico registrado no catálogo, inclusive
+        # quando a primeira pendência era apenas o prazo desconhecido.
+        reasons = [
+            str(reason).strip()
+            for reason in item.get('pendencias_editoriais') or []
+            if reason and 'prazo final nao identificado' not in str(reason).lower()
+        ]
+        reason = '; '.join(dict.fromkeys(reasons)) or str(
+            item.get('motivo_bloqueio_postagem') or 'Bloqueio editorial sem justificativa específica.'
+        )
+        return ('bloqueio_editorial_a_conferir',
+                'Excluido pela triagem editorial: ' + reason
+                + ' Confirmar o enquadramento antes de qualquer reconsideracao.', False)
     if not item.get('link'):
         return ('link_ausente', 'Sem URL de documento oficial para conferencia.', False)
     if not evidence:
@@ -77,6 +89,7 @@ def build_stage2_inventory(
                 (evidence.get('datas_identificadas') or [None])[-1] if evidence else None
             ),
             'fase': official.get('fase') if official else None,
+            'pendencias_editoriais_de_origem': item.get('pendencias_editoriais') or [],
             'auditoria_automatica_executada': visited,
             'ultima_verificacao_automatica': evidence.get('verificado_em') if evidence else None,
             'evidencia_extrator': (evidence.get('evidencias') or [])[:3] if evidence else [],
