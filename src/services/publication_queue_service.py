@@ -118,6 +118,7 @@ class PublicationQueueService:
 
     def _to_queue_item(
         self, item: dict[str, Any], position: int, published: bool,
+        reference_now: datetime | None = None,
     ) -> dict[str, Any]:
         return {
             'posicao_fila': position,
