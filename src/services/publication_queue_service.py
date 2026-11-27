@@ -49,27 +49,45 @@ class PublicationQueueService:
         history_rows: list[dict[str, Any]] | None = None,
     ) -> None:
         published_ids = published_feed_ids(history_rows or [])
-        candidates = [
-            item for item in editais
-            if item.get('pronto_para_postagem')
-            and item.get('status') != 'encerrado'
-            and opportunity_gate(item, timezone_name=settings.timezone)[0]
+        # A fila de monitoramento preserva o feed historico mesmo apos o vencimento.
+        by_id: dict[str, dict[str, Any]] = {}
+        for item in editais:
+            key = str(item.get('id') or '').strip()
+            if not key:
+                continue
+            previous = by_id.get(key)
+            if previous is None or (
+                already_published(item, published_ids)
+                and not already_published(previous, published_ids)
+            ):
+                by_id[key] = item
+        distinct = list(by_id.values())
+        publicados = sorted(
+            (item for item in distinct if already_published(item, published_ids)),
+            key=self._sort_key,
+        )
+        unpublished = [
+            item for item in distinct if not already_published(item, published_ids)
         ]
         ineditos = sorted(
-            (item for item in candidates if not already_published(item, published_ids)),
+            (item for item in unpublished
+             if item.get('pronto_para_postagem')
+             and item.get('status') != 'encerrado'
+             and opportunity_gate(item, timezone_name=settings.timezone)[0]),
             key=self._sort_key,
         )
-        publicados = sorted(
-            (item for item in candidates if already_published(item, published_ids)),
-            key=self._sort_key,
-        )
-        original_count = len(candidates)
-        assert len(ineditos) + len(publicados) == original_count
+        assert not ({item['id'] for item in ineditos} & {item['id'] for item in publicados})
 
         common = {
             'generated_at': generated_at,
             'criterio': 'triagem_automatica_nao_equivale_a_inscricoes_confirmadas',
-            'total_elegiveis_automaticamente': original_count,
+            'total_elegiveis_automaticamente': len(ineditos),
+            'total_registros_catalogo_distintos': len(distinct),
+            'total_bloqueados_ou_sem_prazo': len(unpublished) - len(ineditos),
+            'total_encerrados_monitorados': sum(
+                not opportunity_gate(item, timezone_name=settings.timezone)[0]
+                for item in publicados
+            ),
         }
         pending_payload = {
             **common,
@@ -113,7 +131,8 @@ class PublicationQueueService:
             'validacao_inscricoes': (
                 'HOLD_editorial_repostagem_suspensa'
                 if published and published_repost_block_reason(item)
-                else 'triagem_automatica_sem_homologacao_do_prazo_oficial'
+                else ('monitoramento_historico_nao_autoriza_repostagem'
+                      if published else 'triagem_automatica_sem_homologacao_do_prazo_oficial')
             ),
             'repostagem_bloqueada': bool(
                 published and published_repost_block_reason(item)
