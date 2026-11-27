@@ -42,6 +42,10 @@ class Edital:
     bloqueio_editorial_definitivo: bool = False
     score_editorial: int = 0
     pendencias_editoriais: list[str] = field(default_factory=list)
+    bloqueio_recuperacao_prazo: bool = False
+    prazo_fase_recuperada: str = ''
+    prazo_fonte_documental: str = ''
+    prazo_documentacao_adicional: str = ''
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

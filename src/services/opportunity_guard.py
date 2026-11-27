@@ -102,6 +102,9 @@ def opportunity_gate(
     summary = _fold(edital.get('resumo'))
     status = _fold(edital.get('status')).strip()
 
+    # Recuperar uma data não autoriza postagem: pendência persiste entre coletas.
+    if edital.get('bloqueio_recuperacao_prazo') is True:
+        return False, 'Prazo recuperado: revisao editorial de fase e publico pendente.', False
     if is_listing_page(edital.get('titulo'), edital.get('link')):
         return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
