@@ -110,7 +110,7 @@ def _enrich_with_evidence(
         row['anomalias'].append('sem_evidencia_de_inscricao')
     if status == 'prazo_de_inscricao_ja_decorrido' and row.get('decisao') == 'inedito_apto':
         row['anomalias'].append('possivel_fase_encerrada')
-    if evidence.get('prazo_cadastrado') != item.get('data_expiracao'):
+    if evidence.get('prazo_cadastrado') and evidence.get('prazo_cadastrado') != item.get('data_expiracao'):
         row['anomalias'].append('prazo_alterado_apos_auditoria')
 
 
