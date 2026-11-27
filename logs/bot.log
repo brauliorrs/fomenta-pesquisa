@@ -35204,3 +35204,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-27 23:47:42,649 [INFO] Expirados removidos da base: 0
 2026-11-27 23:47:42,649 [INFO] Erros por fonte: 0
 2026-11-27 23:47:42,649 [INFO] Fim da execucao
+2026-11-27 23:47:46,123 [INFO] Excecao editorial etapa 6: excecao_desabilitada; itens aprovados=0
+2026-11-27 23:47:46,185 [INFO] Tentativas de publicacao apos sync: 0
+2026-11-27 23:47:46,185 [INFO] Publicacoes concluidas apos sync: 0
+2026-11-27 23:47:46,185 [INFO] Novos editais publicados no feed hoje: 0/10.

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T20:13:19.141229-03:00",
+  "generated_at": "2026-11-27T20:47:46.080169-03:00",
   "criterio": "triagem_automatica_nao_equivale_a_inscricoes_confirmadas",
   "total_elegiveis_automaticamente": 0,
   "previsao_capacidade": {
-    "gerado_em": "2026-11-27T20:47:42.587077-03:00",
+    "gerado_em": "2026-11-27T20:47:46.123869-03:00",
     "modelo": "previsao_conservadora_um_carrossel_por_dia_sem_postagem_automatica",
     "capacidade_diaria": 10,
     "publicacoes_feed_hoje": 0,
