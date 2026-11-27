@@ -125,6 +125,39 @@ class Stage2InventoryTests(unittest.TestCase):
         candidato['data_expiracao'] = None
         self.assertFalse(opportunity_gate(candidato, now=now)[0])
 
+    def test_resumo_p1_distingue_exclusao_editorial_de_link_nao_visitado(self):
+        from src.services.p1_operational_report import build_p1_operational_report
+        records = [
+            {'id':'a','fonte':'FAP','link':'https://fap.org.br/a',
+             'data_expiracao':None},
+            {'id':'b','fonte':'FAP','link':'https://fap.org.br/b',
+             'data_expiracao':None},
+            {'id':'premio','fonte':'CAPES','link':'https://capes.gov.br/premio',
+             'data_expiracao':None},
+        ]
+        previous={'registros':{'a':{'link_cadastrado':records[0]['link'],
+                         'classificacao':'falha_http_503'}}}
+        current={'generated_at':'2026-11-27T16:00:00-03:00',
+                 'registros':{'a':{'link_cadastrado':records[0]['link'],
+                           'classificacao':'sem_evidencia_de_inscricao'}}}
+        inventory={'registros':[
+            {'id':'a','fonte':'FAP','status':'nao_extraido_do_link',
+             'auditoria_automatica_executada':True},
+            {'id':'b','fonte':'FAP','status':'nao_verificado',
+             'auditoria_automatica_executada':False},
+            {'id':'premio','fonte':'CAPES',
+             'status':'bloqueio_editorial_a_conferir',
+             'auditoria_automatica_executada':False}
+        ], 'sumario':{'status_por_categoria':{'nao_extraido_do_link':1}}}
+        report=build_p1_operational_report(records,previous,current,inventory)
+        self.assertEqual(report['elegiveis_para_visita'],2)
+        self.assertEqual(report['visitados_elegiveis'],1)
+        self.assertEqual(report['pendentes_de_visita_elegiveis'],1)
+        self.assertEqual(report['ids_pendentes_visita'],['b'])
+        self.assertEqual(report['falhas_de_acesso_recuperadas_nesta_execucao'],1)
+        self.assertEqual(report['excluidos_da_visita_por_filtro_editorial'],{
+            'bloqueio_editorial_a_conferir':1})
+
 
 if __name__ == '__main__':
     unittest.main()
