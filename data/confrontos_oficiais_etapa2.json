@@ -1,0 +1,46 @@
+{
+  "versao": 1,
+  "atualizado_em": "2026-11-27",
+  "uso": "proveniencia_de_confronto_sem_promocao_automatica",
+  "registros": {
+    "conselho_nacional_das_fundacoes_estaduai_9117e575": {
+      "titulo": "FAPEMIG — SEDE 018/2026 HubMG GOV",
+      "decisao": "retificacao_em_conflito_exige_conciliacao",
+      "fundamento": "A página oficial apresenta 09/12/2026 no quadro-resumo, mas aviso de retificação de 26/11 informa 11/12 para envio ao órgão demandante, 18/12 para manifestação e 23/12 para submissão eletrônica na FAPEMIG. Identificar qual prazo rege novas propostas e analisar PDF de retificação; item não consta mais no catálogo atual.",
+      "prazo_candidato": null,
+      "fase": "submissao_com_retificacao",
+      "datas_oficiais_em_conflito": [
+        {
+          "etapa": "resumo",
+          "prazo": "2026-12-09"
+        },
+        {
+          "etapa": "envio_ao_orgao_demandante",
+          "prazo": "2026-12-11"
+        },
+        {
+          "etapa": "manifestacao",
+          "prazo": "2026-12-18"
+        },
+        {
+          "etapa": "submissao_eletronica_fapemig",
+          "prazo": "2026-12-23"
+        }
+      ],
+      "fontes_oficiais": [
+        "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-018-2026-hubmg-gov-resolucao-de-desafios-publicos-por-meio-de-inovacao-aberta%C2%A0"
+      ]
+    },
+    "empresa_brasileira_de_pesquisa_e_inovaca_d7e4e002": {
+      "titulo": "EMBRAPII/Petrobras — chamada 02/2026 Economia Circular",
+      "decisao": "prazo_encontrado_necessita_homologacao_editorial",
+      "fundamento": "Cronograma oficial da Comunidade EMBRAPII: pré-propostas pelas Unidades EMBRAPII de 18/11/2026 a 08/01/2027. Restringir público, identificar desafio correspondente e confirmar documentos completos antes de alterar catálogo ou publicar.",
+      "prazo_candidato": "2027-01-08",
+      "fase": "pre_propostas_unidades_embrapii",
+      "fontes_oficiais": [
+        "https://comunidade.embrapii.org.br/c/petrobras/desafio-petrobras-1",
+        "https://embrapii.org.br/chamadas-publicas/chamada-publica-n02-2026-para-projetos-de-alto-impacto-em-economia-circular/"
+      ]
+    }
+  }
+}

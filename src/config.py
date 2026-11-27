@@ -68,6 +68,8 @@ class Settings:
     publication_queue_path: Path = DATA_DIR / "fila_publicacao.json"
     fila_ja_publicados_path: Path = DATA_DIR / "fila_ja_publicados.json"
     deadline_audit_path: Path = DATA_DIR / "auditoria_prazos.json"
+    stage2_inventory_path: Path = DATA_DIR / "inventario_sem_prazo_etapa2.json"
+    stage2_official_checks_path: Path = DATA_DIR / "confrontos_oficiais_etapa2.json"
     log_file_path: Path = LOGS_DIR / "bot.log"
     discover_log_file_path: Path = LOGS_DIR / "discover_sources.log"
     posts_dir: Path = POSTS_DIR

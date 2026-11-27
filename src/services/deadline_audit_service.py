@@ -23,7 +23,7 @@ from src.services.opportunity_guard import is_listing_page
 
 class DeadlineAuditService:
     MAX_READY = 8
-    MAX_MISSING = 12
+    MAX_MISSING = 48
     MAX_BYTES = 5_000_000
     MAX_PDF_PAGES = 14
 
