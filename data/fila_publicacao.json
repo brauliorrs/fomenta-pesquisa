@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-26T21:06:00.747847-03:00",
+  "generated_at": "2026-11-27T08:46:37.779178-03:00",
   "criterio": "triagem_automatica_nao_equivale_a_inscricoes_confirmadas",
-  "total_elegiveis_automaticamente": 29,
+  "total_elegiveis_automaticamente": 28,
   "tipo_fila": "fila_1_ineditos",
   "total_prontos": 0,
   "total_ineditos": 0,
-  "total_ja_publicados": 29,
+  "total_ja_publicados": 28,
   "itens": []
 }
