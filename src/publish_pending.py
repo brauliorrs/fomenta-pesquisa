@@ -11,6 +11,7 @@ from src.services.opportunity_guard import opportunity_gate
 from src.services.published_editorial_guard import published_repost_block_reason
 from src.services.publication_queue_service import PublicationQueueService, published_feed_ids
 from src.services.render_service import RenderService
+from src.services.stage6_urgent_exception import read_exception_policy, select_urgent_exception
 from src.services.storage_service import StorageService
 from src.utils.dates import parse_date
 from src.utils.dates import now_in_timezone
@@ -476,6 +477,30 @@ def main() -> None:
                     )
                     feed_already_published_today = True
                 if 'story' in published_targets:
+                    posted_story_today_ids.add(result.payload.get('id', ''))
+
+    # Excecao do segundo carrossel: desabilitada por padrao e independente
+    # do bootstrap. Decisao por data/IDs e urgencia sao revalidadas na hora.
+    approved_urgent, exception_reason = select_urgent_exception(
+        select_feed_batch_candidates(ordered_candidates),
+        history_rows, now, max_new_publications_per_day,
+        settings.instagram_urgent_exception_enabled,
+        read_exception_policy(),
+        settings.timezone,
+    )
+    logger.info('Excecao editorial etapa 6: %s; itens aprovados=%s',
+                exception_reason, len(approved_urgent))
+    if approved_urgent:
+        attempted += len(approved_urgent)
+        attempted_ids.update(str(item.get('id') or '') for item in approved_urgent)
+        extra_results = attempt_feed_batch_publication(
+            approved_urgent, instagram_service, render_service,
+            now_iso, history_rows, logger, story_enabled,
+        )
+        published += len(extra_results)
+        for result in extra_results:
+            for target in result.payload.get('published_targets', []):
+                if target == 'story':
                     posted_story_today_ids.add(result.payload.get('id', ''))
 
     for edital in select_story_repost_candidates(
