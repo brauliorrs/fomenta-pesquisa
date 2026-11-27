@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 from pathlib import Path
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from typing import Any
 
 from src.config import settings
-from src.services.opportunity_guard import opportunity_gate
+from src.services.opportunity_guard import opportunity_gate, _parse
 from src.services.published_editorial_guard import published_repost_block_reason
 from src.services.storage_service import StorageService
 from src.utils.dates import now_in_timezone, parse_date
@@ -62,9 +64,10 @@ class PublicationQueueService:
             ):
                 by_id[key] = item
         distinct = list(by_id.values())
+        ordering_now = now_in_timezone(settings.timezone)
         publicados = sorted(
             (item for item in distinct if already_published(item, published_ids)),
-            key=self._sort_key,
+            key=lambda item: self._sort_key(item, ordering_now),
         )
         unpublished = [
             item for item in distinct if not already_published(item, published_ids)
@@ -74,7 +77,7 @@ class PublicationQueueService:
              if item.get('pronto_para_postagem')
              and item.get('status') != 'encerrado'
              and opportunity_gate(item, timezone_name=settings.timezone)[0]),
-            key=self._sort_key,
+            key=lambda item: self._sort_key(item, ordering_now),
         )
         assert not ({item['id'] for item in ineditos} & {item['id'] for item in publicados})
 
@@ -96,7 +99,7 @@ class PublicationQueueService:
             'total_ineditos': len(ineditos),
             'total_ja_publicados': len(publicados),
             'itens': [
-                self._to_queue_item(item, i + 1, False)
+                self._to_queue_item(item, i + 1, False, ordering_now)
                 for i, item in enumerate(ineditos)
             ],
         }
@@ -106,7 +109,7 @@ class PublicationQueueService:
             'total_ja_publicados': len(publicados),
             'total_ineditos': len(ineditos),
             'itens': [
-                self._to_queue_item(item, i + 1, True)
+                self._to_queue_item(item, i + 1, True, ordering_now)
                 for i, item in enumerate(publicados)
             ],
         }
@@ -115,6 +118,7 @@ class PublicationQueueService:
 
     def _to_queue_item(
         self, item: dict[str, Any], position: int, published: bool,
+        reference_now: datetime | None = None,
     ) -> dict[str, Any]:
         return {
             'posicao_fila': position,
@@ -137,7 +141,9 @@ class PublicationQueueService:
             'repostagem_bloqueada': bool(
                 published and published_repost_block_reason(item)
             ),
-            'urgencia_dias': self._days_left(item.get('data_expiracao')),
+            'urgencia_dias': self._days_left(item.get('data_expiracao'), reference_now),
+            'risco_vencimento': self._risk_label(item.get('data_expiracao'), reference_now),
+            'prazo_com_horario': self._deadline(item.get('data_expiracao'))[1],
             'link': item.get('link'),
             'caption': item.get('instagram_caption'),
             'card_header': item.get('card_header'),
@@ -148,14 +154,54 @@ class PublicationQueueService:
             'card_footer_note': item.get('card_footer_note'),
         }
 
-    def _sort_key(self, item: dict[str, Any]) -> tuple[int, int, str]:
-        days_left = self._days_left(item.get('data_expiracao'))
-        days_rank = days_left if days_left is not None else 9999
-        score = int(item.get('score_editorial', 0) or 0)
-        return (days_rank, -score, str(item.get('titulo') or ''))
+    def _deadline(self, value: str | None) -> tuple[datetime | None, bool]:
+        """Prazo com hora usa instante real; sem hora usa limite conservador
+        APENAS PARA ORDENAÇÃO (não confirma horário de fechamento).
+        """
+        zone = ZoneInfo(settings.timezone)
+        parsed = _parse(value, zone)
+        if parsed is None:
+            return None, False
+        deadline, precise = parsed
+        if not precise:
+            deadline = datetime.combine(
+                deadline.date() + timedelta(days=1), datetime.min.time(),
+                tzinfo=zone,
+            )
+        return deadline.astimezone(timezone.utc), precise
 
-    def _days_left(self, expiration_date: str | None) -> int | None:
-        parsed = parse_date(expiration_date)
+    def _sort_key(
+        self, item: dict[str, Any], reference_now: datetime | None = None,
+    ) -> tuple[datetime, int, int, str]:
+        deadline, precise = self._deadline(item.get('data_expiracao'))
+        score = int(item.get('score_editorial', 0) or 0)
+        # A data, incluindo hora/fuso quando conhecidos, precede o score.
+        return (deadline or datetime.max.replace(tzinfo=timezone.utc),
+                0 if precise else 1, -score, str(item.get('titulo') or ''))
+
+    def _risk_label(
+        self, value: str | None, reference_now: datetime | None = None,
+    ) -> str:
+        now = reference_now or now_in_timezone(settings.timezone)
+        parsed = _parse(value, ZoneInfo(settings.timezone))
+        if parsed is None:
+            return 'prazo_desconhecido'
+        deadline, precise = parsed
+        if not precise:
+            if now.date() >= deadline.date():
+                return 'vence_hoje_horario_desconhecido' if now.date() == deadline.date() else 'vencido'
+            return 'vence_amanha' if (deadline.date() - now.date()).days == 1 else 'prazo_futuro_sem_horario'
+        if now >= deadline:
+            return 'vencido'
+        if (deadline - now).total_seconds() <= 24 * 3600:
+            return 'iminente_24h'
+        return 'prazo_futuro_confirmado_com_horario'
+
+    def _days_left(
+        self, expiration_date: str | None, reference_now: datetime | None = None,
+    ) -> int | None:
+        parsed = _parse(expiration_date, ZoneInfo(settings.timezone))
         if not parsed:
             return None
-        return (parsed.date() - now_in_timezone(settings.timezone).date()).days
+        now = reference_now or now_in_timezone(settings.timezone)
+        return (parsed[0].date() - now.date()).days

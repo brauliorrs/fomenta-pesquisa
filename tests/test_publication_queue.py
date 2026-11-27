@@ -116,6 +116,41 @@ class PublicationQueueTests(unittest.TestCase):
         self.assertEqual(f1['total_ineditos'], 0)
         self.assertEqual(f2['total_ja_publicados'], 1)
 
+    def test_prioridade_instante_real_e_fuso(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        now = datetime(2026, 11, 27, 10, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        items = [
+            call('segundo', deadline='2026-11-29T10:00:00-03:00'),
+            call('primeiro', deadline='2026-11-29T09:00:00-03:00'),
+            call('primeiro_mesmo_instante', deadline='2026-11-29T12:00:00+00:00'),
+            call('sem_hora', deadline='2026-11-29'),
+        ]
+        ranked = sorted(items, key=lambda x: self.service._sort_key(x, now))
+        self.assertEqual([x['id'] for x in ranked],
+                         ['primeiro', 'primeiro_mesmo_instante', 'segundo', 'sem_hora'])
+
+    def test_prorrogacao_reordena_sem_persistir_risco_antigo(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        now = datetime(2026, 11, 27, 10, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        a = call('prorrogado', deadline='2026-11-28')
+        b = call('normal', deadline='2026-11-30')
+        self.assertEqual(sorted([a,b],key=lambda x:self.service._sort_key(x,now))[0]['id'],'prorrogado')
+        a['data_expiracao']='2026-12-10'
+        self.assertEqual(sorted([a,b],key=lambda x:self.service._sort_key(x,now))[0]['id'],'normal')
+
+    def test_riscos_iminente_sem_hora_e_vencido(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        now = datetime(2026, 11, 27, 10, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        risk=self.service._risk_label
+        self.assertEqual(risk('2026-11-27T15:00:00-03:00',now),'iminente_24h')
+        self.assertEqual(risk('2026-11-27',now),'vence_hoje_horario_desconhecido')
+        self.assertEqual(risk('2026-11-26',now),'vencido')
+        self.assertEqual(risk(None,now),'prazo_desconhecido')
+        self.assertEqual(risk('2026-11-28',now),'vence_amanha')
+
 
 if __name__ == '__main__':
     unittest.main()
