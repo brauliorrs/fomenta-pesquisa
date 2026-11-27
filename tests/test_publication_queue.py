@@ -200,6 +200,27 @@ class PublicationQueueTests(unittest.TestCase):
         edital['data_expiracao']='2026-12-04'
         self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],1)
 
+    def test_excecao_urgente_nao_aciona_sem_autorizacao(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.stage6_urgent_exception import select_urgent_exception
+        now=datetime(2026,11,27,14,tzinfo=ZoneInfo('America/Sao_Paulo'))
+        item=call('novo',deadline='2026-11-28')
+        hist=[{'edital_id':'anterior','status':'success',
+               'feed_media_id':'mid_1','data_publicacao':'2026-11-27T10:00:00-03:00'}]
+        decision={'versao':1,'data':'2026-11-27','autorizada':True,
+                  'responsavel':'editor','justificativa':'Risco comprovado de encerramento iminente.',
+                  'ids_autorizados':['novo']}
+        self.assertFalse(select_urgent_exception([item],hist,now,10,False,decision)[0])
+        self.assertEqual([x['id'] for x in
+            select_urgent_exception([item],hist,now,10,True,decision)[0]],['novo'])
+        self.assertFalse(select_urgent_exception([item],hist,now,10,True,
+            dict(decision,autorizada=False))[0])
+        self.assertFalse(select_urgent_exception([item],hist,now,10,True,
+            dict(decision,ids_autorizados=['nao_existe']))[0])
+        self.assertFalse(select_urgent_exception([item],hist+[
+            dict(hist[0],feed_media_id='mid_2')],now,10,True,decision)[0])
+
 
 if __name__ == '__main__':
     unittest.main()
