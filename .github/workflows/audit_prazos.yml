@@ -12,6 +12,8 @@ on:
       - 'src/services/deadline_evidence.py'
       - 'src/services/deadline_audit_service.py'
       - 'src/services/stage2_inventory.py'
+      - 'src/services/p1_operational_report.py'
+      - 'src/audit_deadlines.py'
   schedule:
     # 09h20 no horario de Brasilia (12h20 UTC).
     - cron: "20 12 * * *"
@@ -45,11 +47,33 @@ jobs:
         env:
           TIMEZONE: ${{ vars.TIMEZONE || 'America/Sao_Paulo' }}
         run: python -m src.audit_deadlines
+      - name: Resumo operacional P1 por instituicao
+        run: |
+          python - <<'PY'
+          import json, os
+          with open('data/relatorio_p1_operacional.json', encoding='utf-8') as f:
+              r = json.load(f)
+          lines = [
+              '## P1 — Auditoria de prazos sem publicacao',
+              f"- Gerado em: {r['gerado_em']}",
+              f"- Elegiveis consultados: {r['visitados_elegiveis']}/{r['elegiveis_para_visita']}",
+              f"- Pendentes elegiveis: {r['pendentes_de_visita_elegiveis']}",
+              f"- Excluidos por filtro editorial ou listagem: {r['excluidos_da_visita_por_filtro_editorial']}",
+              f"- Primeiras visitas neste ciclo: {r['novos_links_visitados_nesta_execucao']}",
+              f"- Acessos recuperados neste ciclo: {r['falhas_de_acesso_recuperadas_nesta_execucao']}",
+              f"- Falhas de acesso/formato: {r['erros_de_acesso_ou_formato_atuais']}",
+              f"- Sem prazo extraivel do documento: {r['fontes_sem_prazo_extraivel_atuais']}",
+              '- Este job nao altera editais, flags, filas nem autoriza Instagram.',
+          ]
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              summary.write('\n'.join(lines) + '\n')
+          print(' | '.join(lines[1:9]))
+          PY
       - name: Persist audit report without publishing
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/auditoria_prazos.json data/inventario_sem_prazo_etapa2.json
+          git add data/auditoria_prazos.json data/inventario_sem_prazo_etapa2.json data/relatorio_p1_operacional.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "audit: prazos de inscricao $(date -u +'%Y-%m-%d %H:%M')"
           pushed=false

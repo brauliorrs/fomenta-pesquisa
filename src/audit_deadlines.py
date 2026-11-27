@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from src.config import settings
 from src.services.deadline_audit_service import DeadlineAuditService
+from src.services.p1_operational_report import build_p1_operational_report
 from src.services.stage2_inventory import build_stage2_inventory
 from src.services.storage_service import StorageService
 from src.utils.dates import now_in_timezone
@@ -20,6 +21,13 @@ def main() -> None:
     confrontos = storage.read_json(settings.stage2_official_checks_path, default={})
     inventory = build_stage2_inventory(editais, report, confrontos, now_iso)
     storage.write_json(settings.stage2_inventory_path, inventory)
+    # Métricas de cobertura por fonte. Este relatório é somente diagnóstico.
+    p1_report = build_p1_operational_report(editais, previous, report, inventory)
+    storage.write_json(settings.deadline_audit_path.parent / 'relatorio_p1_operacional.json', p1_report)
+    logger.info('P1 auditoria operacional: %s elegiveis visitados; %s pendentes; %s recuperacoes de acesso',
+                p1_report['visitados_elegiveis'],
+                p1_report['pendentes_de_visita_elegiveis'],
+                p1_report['falhas_de_acesso_recuperadas_nesta_execucao'])
     logger.info('Inventario etapa 2: %s', inventory['sumario'])
     logger.info('Auditoria de prazos: %s', report['sumario'])
 
