@@ -11,7 +11,6 @@ import unicodedata
 from datetime import datetime
 from typing import Any
 
-from src.services.stage2_publication_guard import stage2_block_reason
 from urllib.parse import unquote, urlsplit
 from zoneinfo import ZoneInfo
 
@@ -107,10 +106,6 @@ def opportunity_gate(
         return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
         return False, NOT_OPPORTUNITY, True
-    stage2_reason = stage2_block_reason(edital)
-    if stage2_reason:
-        return False, stage2_reason, False
-
     if status in CLOSED_STATUSES:
         return False, CLOSED, True
     if CLOSED_REGISTRATION.search(title) or CLOSED_REGISTRATION.search(summary):
@@ -122,6 +117,8 @@ def opportunity_gate(
         if (start > now) if has_time else (start.date() > now.date()):
             return False, 'Inscricoes ainda nao abertas.', False
 
+    # A data de encerramento atualizada no catalogo e verificada a cada tentativa.
+    # Nao depender de aprovacao manual da antiga etapa 2 para avaliar vigencia.
     expiration = _parse(edital.get('data_expiracao'), zone)
     if not expiration:
         reason = UNKNOWN_DEADLINE if not edital.get('data_expiracao') else 'Prazo final invalido; revisar fonte oficial.'
