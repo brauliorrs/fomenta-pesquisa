@@ -10,6 +10,8 @@ import re
 import unicodedata
 from datetime import datetime
 from typing import Any
+
+from src.services.stage2_publication_guard import stage2_block_reason
 from urllib.parse import unquote, urlsplit
 from zoneinfo import ZoneInfo
 
@@ -105,6 +107,10 @@ def opportunity_gate(
         return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
         return False, NOT_OPPORTUNITY, True
+    stage2_reason = stage2_block_reason(edital)
+    if stage2_reason:
+        return False, stage2_reason, False
+
     if status in CLOSED_STATUSES:
         return False, CLOSED, True
     if CLOSED_REGISTRATION.search(title) or CLOSED_REGISTRATION.search(summary):
