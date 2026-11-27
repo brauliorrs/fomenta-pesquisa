@@ -1,34 +1,10 @@
 {
-  "generated_at": "2026-11-26T20:29:03.512739-03:00",
+  "generated_at": "2026-11-26T21:06:00.747847-03:00",
   "criterio": "triagem_automatica_nao_equivale_a_inscricoes_confirmadas",
   "total_elegiveis_automaticamente": 29,
   "tipo_fila": "fila_1_ineditos",
-  "total_prontos": 1,
-  "total_ineditos": 1,
-  "total_ja_publicados": 28,
-  "itens": [
-    {
-      "posicao_fila": 1,
-      "id": "fundacao_de_apoio_a_pesquisa_do_estado_d_3b688abf",
-      "titulo": "Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest",
-      "fonte": "FAPESQ",
-      "orgao": "Fundação de Apoio a Pesquisa do Estado da Paraiba",
-      "prazo": "2026-12-18",
-      "status": "novo",
-      "score_editorial": 90,
-      "ultima_postagem": null,
-      "quantidade_postagens": 0,
-      "instagram_feed_publicado": false,
-      "validacao_inscricoes": "triagem_automatica_sem_homologacao_do_prazo_oficial",
-      "urgencia_dias": 22,
-      "link": "https://fapesq.rpp.br/noticias/governo-da-paraiba-abre-inscricoes-para-a-3a-edicao-do-game-dev-quest",
-      "caption": "Oportunidade no radar: Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest\n\nA oportunidade está aberta para pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba na categoria pesquisa, com prazo final em 18/12/2026.\n\nInstituição: Fundação de Apoio a Pesquisa do Estado da Paraiba\nPúblico-alvo: Pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba\nTipo: Pesquisa\nAbertura das inscrições: Não informado\nPrazo final: 18/12/2026\n\nLink oficial do edital:\nhttps://fapesq.rpp.br/noticias/governo-da-paraiba-abre-inscrições-para-a-3a-edicao-do-game-dev-quest\n\nSalve este post para consultar depois e compartilhe com quem pode aproveitar esta oportunidade.\nNo post, o link do edital e os detalhes ficam logo abaixo na legenda.\n\n#Editalaberto #Fomentopesquisa #Pesquisa #Ciencia #Oportunidadeacademica #Fapesq #Projetosdepesquisa #Pesquisadores #Instituicoesdepesquisa #Pesquisapb",
-      "card_header": "EDITAL FAPESQ",
-      "card_title": "Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest",
-      "card_deadline": "PRAZO: 18/12",
-      "card_summary": "Voltado a pesquisadores, grupos de pesquisa e instituições cientificas da Paraiba. Prazo final em 18/12/2026. Confira os critérios no edital.",
-      "card_handle": "@editais.pesquisa",
-      "card_footer_note": "Link do edital e detalhes abaixo."
-    }
-  ]
+  "total_prontos": 0,
+  "total_ineditos": 0,
+  "total_ja_publicados": 29,
+  "itens": []
 }

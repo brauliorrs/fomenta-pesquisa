@@ -35092,3 +35092,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-27 00:05:10,207 [INFO] Expirados removidos da base: 0
 2026-11-27 00:05:10,207 [INFO] Erros por fonte: 0
 2026-11-27 00:05:10,207 [INFO] Fim da execucao
+2026-11-27 00:06:00,775 [INFO] Tentando publicar carrossel de feed com 1 item(ns): fundacao_de_apoio_a_pesquisa_do_estado_d_3b688abf
+2026-11-27 00:06:14,725 [INFO] Tentativas de publicacao apos sync: 1
+2026-11-27 00:06:14,725 [INFO] Publicacoes concluidas apos sync: 1
+2026-11-27 00:06:14,725 [INFO] Novos editais publicados no feed hoje: 1/10.
