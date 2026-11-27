@@ -17,7 +17,7 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
-from src.services.deadline_evidence import assess_deadline
+from src.services.deadline_evidence import assess_deadline, extract_registration_deadlines
 from src.services.opportunity_guard import is_listing_page
 
 
@@ -26,6 +26,7 @@ class DeadlineAuditService:
     MAX_MISSING = 48
     MAX_BYTES = 5_000_000
     MAX_PDF_PAGES = 14
+    MAX_PDF_PAGES_SECOND_PASS = 40
     MAX_RETRIES_TRANSIENT = 1
 
     def __init__(
@@ -59,7 +60,31 @@ class DeadlineAuditService:
         except ValueError:
             return False
 
-    def _fetch_text(self, url: str) -> tuple[str, str, str]:
+    @classmethod
+    def _single_official_pdf(cls, soup: BeautifulSoup, base_url: str) -> str | None:
+        """Somente um anexo PDF identificável na MESMA origem oficial.
+
+        Páginas com vários editais ou anexos são ambíguas e não fornecem
+        prazo automaticamente. Não seguir documentos externos ou imagens.
+        """
+        host = (urlsplit(base_url).hostname or '').lower()
+        candidates: set[str] = set()
+        for anchor in soup.select('a[href]'):
+            label = anchor.get_text(' ', strip=True).casefold()
+            if not any(term in label for term in ('edital', 'chamada', 'errata', 'retifica')):
+                continue
+            candidate = urljoin(base_url, str(anchor.get('href') or ''))
+            parsed = urlsplit(candidate)
+            if not parsed.path.lower().endswith('.pdf'):
+                continue
+            if (parsed.hostname or '').lower() != host or not cls.safe_url(candidate):
+                continue
+            candidates.add(candidate)
+            if len(candidates) > 1:
+                return None
+        return next(iter(candidates)) if candidates else None
+
+    def _fetch_text(self, url: str, follow_pdf: bool = True) -> tuple[str, str, str]:
         if not self.safe_url(url):
             return '', '', 'link_invalido'
         original_host = (urlsplit(url).hostname or '').lower()
@@ -94,6 +119,14 @@ class DeadlineAuditService:
                     reader = PdfReader(io.BytesIO(r.content), strict=False)
                     pages = min(self.MAX_PDF_PAGES, len(reader.pages))
                     raw = '\n'.join((reader.pages[i].extract_text() or '') for i in range(pages))
+                    # Algumas instituições põem o cronograma depois das
+                    # páginas iniciais. Segunda passagem limitada a 40 páginas
+                    # apenas quando a primeira não trouxe prazo de inscrição.
+                    if not extract_registration_deadlines(raw) and len(reader.pages) > pages:
+                        end = min(self.MAX_PDF_PAGES_SECOND_PASS, len(reader.pages))
+                        raw += '\n' + '\n'.join(
+                            (reader.pages[i].extract_text() or '') for i in range(pages, end)
+                        )
                     return raw, current, '' if raw.strip() else 'pdf_sem_texto_extraivel'
                 if ctype.startswith('image/') or urlsplit(current).path.lower().endswith(('.jpg','.jpeg','.png','.webp','.gif')):
                     return '', current, 'imagem_nao_e_documento_textual'
@@ -103,7 +136,16 @@ class DeadlineAuditService:
                 for node in soup.select('script, style, nav, footer, header'):
                     node.decompose()
                 section = soup.select_one('main, article, .entry-content') or soup.body or soup
-                return section.get_text('\n', strip=True)[:600_000], current, ''
+                original = section.get_text('\n', strip=True)[:600_000]
+                if follow_pdf and not extract_registration_deadlines(original):
+                    linked = self._single_official_pdf(section, current)
+                    if linked:
+                        # Não aceitar um PDF de outro órgão ou uma página
+                        # agregadora contendo vários anexos de editais.
+                        extended, retrieved, err = self._fetch_text(linked, follow_pdf=False)
+                        if not err and extract_registration_deadlines(extended):
+                            return extended, retrieved, ''
+                return original, current, ''
             except requests.HTTPError as exc:
                 status = exc.response.status_code if exc.response is not None else None
                 self.logger.warning('HTTP %s na auditoria da URL %s', status, current)
