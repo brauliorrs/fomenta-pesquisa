@@ -1,0 +1,9 @@
+{
+  "versao": 1,
+  "data": null,
+  "autorizada": false,
+  "responsavel": null,
+  "justificativa": null,
+  "ids_autorizados": [],
+  "observacao": "A exceção é desabilitada por padrão. Somente uma autorização explícita para data e IDs, associada à flag operacional, permite segundo carrossel; até 10 itens e urgência em até 48h."
+}
