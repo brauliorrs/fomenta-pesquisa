@@ -372,6 +372,56 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(report['sumario']['novos_candidatos_a_recuperacao'],1)
         self.assertFalse(report['registros']['id']['publicacao_autorizada_pela_auditoria'])
 
+    def test_p1_anexo_pdf_unico_e_mesmo_dominio(self):
+        from bs4 import BeautifulSoup
+        audit = DeadlineAuditService(logging.getLogger('pdf-link-test'))
+        base='https://fap.org.br/chamada/2026'
+        single=BeautifulSoup('<article><a href="/edital-01.pdf">Edital completo</a></article>','html.parser')
+        self.assertEqual(audit._single_official_pdf(single,base),
+                         'https://fap.org.br/edital-01.pdf')
+        foreign=BeautifulSoup('<a href="https://externo.org/edital.pdf">Edital</a>','html.parser')
+        self.assertIsNone(audit._single_official_pdf(foreign,base))
+        multiple=BeautifulSoup(
+            '<a href="/a.pdf">Edital 1</a><a href="/b.pdf">Edital 2</a>',
+            'html.parser')
+        self.assertIsNone(audit._single_official_pdf(multiple,base))
+
+    def test_p1_html_recupera_prazo_no_anexo_oficial_unico(self):
+        from unittest.mock import Mock
+        from types import SimpleNamespace
+        audit=DeadlineAuditService(logging.getLogger('pdf-fallback'))
+        html=Mock(status_code=200, headers={'content-type':'text/html'},
+                  content=b'<main><a href="/edital.pdf">Edital</a></main>',
+                  text='<main><a href="/edital.pdf">Edital</a></main>')
+        pdf=Mock(status_code=200, headers={'content-type':'application/pdf'},
+                 content=b'fake-pdf', text='')
+        pages=[SimpleNamespace(extract_text=lambda: '') for i in range(14)]
+        pages.append(SimpleNamespace(extract_text=lambda:
+            'Prazo final de inscricoes ate 18/12/2026'))
+        with patch('src.services.deadline_audit_service.requests.get',
+                   side_effect=[html,pdf]) as get, patch(
+                   'src.services.deadline_audit_service.PdfReader',
+                   return_value=SimpleNamespace(pages=pages)):
+            text,url,error=audit._fetch_text('https://fap.org.br/chamada')
+        self.assertEqual(error,'')
+        self.assertEqual(url,'https://fap.org.br/edital.pdf')
+        self.assertIn('18/12/2026',text)
+        self.assertEqual(get.call_count,2)
+
+    def test_p1_multiplos_anexos_nao_sao_adivinhados(self):
+        from unittest.mock import Mock
+        audit=DeadlineAuditService(logging.getLogger('no-guess'))
+        body=('<main><a href="/a.pdf">Edital 1</a>'
+              '<a href="/b.pdf">Edital 2</a></main>')
+        html=Mock(status_code=200,headers={'content-type':'text/html'},
+                  content=body.encode(),text=body)
+        with patch('src.services.deadline_audit_service.requests.get',
+                   return_value=html) as get:
+            text,url,error=audit._fetch_text('https://fap.org.br/listagem')
+        self.assertEqual(error,'')
+        self.assertEqual(url,'https://fap.org.br/listagem')
+        self.assertEqual(get.call_count,1)
+
 
 if __name__ == '__main__':
     unittest.main()
