@@ -7,8 +7,8 @@
     "total_catalogo": 238,
     "sem_prazo_atuais": 208,
     "linha_de_base_historica": 168,
-    "com_auditoria_de_link": 0,
-    "nao_visitados_automaticamente": 208,
+    "com_auditoria_de_link": 25,
+    "nao_visitados_automaticamente": 183,
     "status_por_categoria": {
       "nao_verificado": 168,
       "bloqueio_editorial_a_conferir": 14,
