@@ -149,6 +149,31 @@ class Stage2InventoryTests(unittest.TestCase):
         candidato['data_expiracao'] = '2026-10-08T17:00:00-03:00'
         self.assertFalse(opportunity_gate(candidato, now=now)[0])
 
+    def test_confrontos_dirigidos_nao_reabrem_noticias_ou_resultados(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        with (root / 'data/confrontos_oficiais_etapa2.json').open(encoding='utf-8') as handle:
+            official = json.load(handle)
+        keys = (
+            'coordenacao_de_aperfeicoamento_de_pessoa_2aa48737',
+            'fundacao_de_amparo_a_ciencia_e_tecnologi_0cf96fa2',
+        )
+        decisions = official['registros']
+        self.assertEqual(
+            decisions[keys[0]]['decisao'],
+            'noticia_pos_inscricoes_sem_chamada_aberta',
+        )
+        self.assertEqual(
+            decisions[keys[1]]['decisao'],
+            'documento_de_resultado_sem_abertura_de_inscricoes',
+        )
+        self.assertTrue(all(decisions[key].get('fontes_oficiais') for key in keys))
+        catalog = [entry(key) for key in keys]
+        result = build_stage2_inventory(catalog, {}, official, '2026-11-27T13:00:00-03:00')
+        self.assertTrue(all(not row['publicacao_autorizada'] for row in result['registros']))
+        self.assertEqual(result['sumario']['confrontos_oficiais_no_catalogo'], 2)
+
 
 if __name__ == '__main__':
     unittest.main()
