@@ -5,8 +5,8 @@
   "registros": {
     "conselho_nacional_das_fundacoes_estaduai_9117e575": {
       "titulo": "FAPEMIG — SEDE 018/2026 HubMG GOV",
-      "decisao": "retificacao_em_conflito_exige_conciliacao",
-      "fundamento": "A página oficial apresenta 09/12/2026 no quadro-resumo, mas aviso de retificação de 26/11 informa 11/12 para envio ao órgão demandante, 18/12 para manifestação e 23/12 para submissão eletrônica na FAPEMIG. Identificar qual prazo rege novas propostas e analisar PDF de retificação; item não consta mais no catálogo atual.",
+      "decisao": "retificacao_oficial_identificada_cronograma_resumo_desatualizado",
+      "fundamento": "Confronto de 27/11/2026: a página oficial da FAPEMIG exibe prazos retificados 11/12/2026 (envio ao órgão demandante), 18/12/2026 (manifestação) e 23/12/2026 (submissão eletrônica). Na mesma página, quadro-resumo e cronograma inferior ainda apresentam 09/12 e 27/11. A retificação de 26/11 é indicada. A fase inicial e o enquadramento territorial precisam ser preservados, e o caso segue fora do catálogo sem autorização de publicação.",
       "prazo_candidato": null,
       "fase": "submissao_com_retificacao",
       "datas_oficiais_em_conflito": [
@@ -28,13 +28,14 @@
         }
       ],
       "fontes_oficiais": [
-        "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-018-2026-hubmg-gov-resolucao-de-desafios-publicos-por-meio-de-inovacao-aberta%C2%A0"
+        "https://fapemig.br/oportunidades/chamadas-e-editais/chamada-fapemig-sede-018-2026-hubmg-gov-resolucao-de-desafios-publicos-por-meio-de-inovacao-aberta%C2%A0",
+        "https://fapemig.br/files/Retifica%25C3%25A7%25C3%25A3o-da-Chamada-HUBMG-GOV?title=Retifica%C3%A7%C3%A3o+da+Chamada+HUBMG+GOV&url=https%3A%2F%2Fapi.site.fapemig.br%2Fwp-content%2Fuploads%2F2026-11-26__195__13122__sei_154244542_ato_74__Aw9XbVpX.pdf"
       ]
     },
     "empresa_brasileira_de_pesquisa_e_inovaca_d7e4e002": {
       "titulo": "EMBRAPII/Petrobras — chamada 02/2026 Economia Circular",
       "decisao": "prazo_encontrado_necessita_homologacao_editorial",
-      "fundamento": "Cronograma oficial da Comunidade EMBRAPII: pré-propostas pelas Unidades EMBRAPII de 18/11/2026 a 08/01/2027. Restringir público, identificar desafio correspondente e confirmar documentos completos antes de alterar catálogo ou publicar.",
+      "fundamento": "Página oficial Comunidade EMBRAPII consultada em 27/11/2026 confirma etapa (4) de pré-propostas de 18/11/2026 a 08/01/2027, com envio pelas Unidades EMBRAPII. Interessados não devem ser confundidos com proponentes autorizados a enviar diretamente. Falta revisão editorial integral do edital e demais desafios; sem publicação.",
       "prazo_candidato": "2027-01-08",
       "fase": "pre_propostas_unidades_embrapii",
       "fontes_oficiais": [
@@ -66,6 +67,26 @@
       "fontes_oficiais": [
         "https://www.fapesb.ba.gov.br/edital-no-0192026-ciencia-na-mesa-5-base-de-dados-e-sistemas-de-informacoes-para-tomada-de-decisao-em-soberania-alimentar-e-nutricional/",
         "https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Errata_4_CNM_5.pdf"
+      ]
+    },
+    "coordenacao_de_aperfeicoamento_de_pessoa_2aa48737": {
+      "titulo": "Programa de universidades do BRICS registra 30 inscrições",
+      "decisao": "noticia_pos_inscricoes_sem_chamada_aberta",
+      "fundamento": "Página oficial CAPES de 07/04/2026 relata 30 inscrições recebidas e orienta participantes já inscritos sobre conferência de lista até 09/04/2026. É notícia de acompanhamento de inscrições anteriores, não um novo período de candidatura. Falha automática HTTP não indica oportunidade recuperável.",
+      "prazo_candidato": null,
+      "fase": "conferencia_de_inscricoes_ja_realizadas",
+      "fontes_oficiais": [
+        "https://www.gov.br/capes/pt-br/assuntos/noticias/programa-de-universidades-do-brics-registra-30-inscricoes"
+      ]
+    },
+    "fundacao_de_amparo_a_ciencia_e_tecnologi_0cf96fa2": {
+      "titulo": "FACEPE 01/2026 - Resultado da Etapa I PIBIC",
+      "decisao": "documento_de_resultado_sem_abertura_de_inscricoes",
+      "fundamento": "Página oficial da FACEPE anuncia resultado da primeira etapa de análise de enquadramento do PIBIC 2026. O PDF catalogado é resultado de etapa de seleção, não documento que abre candidaturas. Não republicar como edital com inscrições abertas.",
+      "prazo_candidato": null,
+      "fase": "resultado_enquadramento",
+      "fontes_oficiais": [
+        "https://www2.facepe.br/facepe-divulga-resultados-da-primeira-etapa-de-analise-de-enquadramento-do-pibic/"
       ]
     }
   }
