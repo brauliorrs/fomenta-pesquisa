@@ -422,6 +422,32 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(url,'https://fap.org.br/listagem')
         self.assertEqual(get.call_count,1)
 
+    def test_p1_concorrencia_limitada_por_host_e_sem_duplicidade(self):
+        import time
+        from threading import Lock
+        counter={'active':0,'max_active':0}
+        lock=Lock()
+        def fetch(url):
+            with lock:
+                counter['active'] += 1
+                counter['max_active'] = max(counter['max_active'],counter['active'])
+            time.sleep(0.02)
+            with lock:
+                counter['active'] -= 1
+            return 'Prazo final de inscricoes ate 14/12/2026',url,''
+        service=DeadlineAuditService(logging.getLogger('parallel-audit'))
+        service.fetch_text=fetch
+        service._parallel_fetch=True
+        service.MAX_MISSING=6
+        rows=[item(f'host-{x}') for x in range(6)]
+        result=service.run(rows,{},'2026-11-27T16:00:00-03:00')
+        self.assertEqual(result['sumario']['consultados_nesta_execucao'],6)
+        self.assertEqual(len(result['registros']),6)
+        self.assertLessEqual(counter['max_active'],2)
+        self.assertGreaterEqual(counter['max_active'],1)
+        self.assertTrue(all(r['classificacao']=='possivel_recuperacao'
+                            for r in result['registros'].values()))
+
 
 if __name__ == '__main__':
     unittest.main()
