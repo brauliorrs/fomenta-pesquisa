@@ -2,6 +2,9 @@ import tempfile
 import unittest
 from pathlib import Path
 
+# Include etapa 6 regressions in the existing CI queue test selection.
+from test_stage6_urgent_exception import Stage6UrgentTests
+
 from src.services.publication_queue_service import (
     PublicationQueueService, already_published, published_feed_ids,
 )
