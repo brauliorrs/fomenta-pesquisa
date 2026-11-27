@@ -1,0 +1,31 @@
+{
+  "versao": 1,
+  "data": "2026-11-27",
+  "escopo": "verificacao dirigida por paginas oficiais, nao auditoria integral dos 208",
+  "classificacoes_confirmadas_sem_publicacao": [
+    {
+      "id": "coordenacao_de_aperfeicoamento_de_pessoa_2aa48737",
+      "origem": "falha_de_acesso_ou_formato",
+      "resultado": "noticia_pos_inscricoes_sem_chamada_aberta",
+      "url": "https://www.gov.br/capes/pt-br/assuntos/noticias/programa-de-universidades-do-brics-registra-30-inscricoes"
+    },
+    {
+      "id": "fundacao_de_amparo_a_ciencia_e_tecnologi_0cf96fa2",
+      "origem": "nao_verificado",
+      "resultado": "documento_de_resultado_sem_abertura_de_inscricoes",
+      "url": "https://www2.facepe.br/facepe-divulga-resultados-da-primeira-etapa-de-analise-de-enquadramento-do-pibic/"
+    }
+  ],
+  "casos_em_revisao": [
+    "FAPESB 019/2026 - formulario prorrogado; revisar edital e erratas",
+    "EMBRAPII/Petrobras 02/2026 - pré-propostas somente por Unidades EMBRAPII",
+    "FAPEMIG HubMG GOV - retificação da página oficial diverge do quadro-resumo; fora do catálogo"
+  ],
+  "criterio": "Toda decisão individual requer link, fase, fundamento; campo de autorização permanece falso; sem escrita nas filas ou catálogo.",
+  "totais_snapshot": {
+    "sem_prazo": 208,
+    "consultados_automaticamente": 166,
+    "sem_consulta_automatica": 42
+  },
+  "publicacoes_autorizadas": 0
+}
