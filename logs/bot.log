@@ -35151,3 +35151,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-27 12:22:50,824 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-27 12:22:50,824 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-27 12:22:50,824 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-27 23:13:19,141 [INFO] Inicio da execucao
+2026-11-27 23:13:53,712 [INFO] Fonte ANP retornou 0 itens
+2026-11-27 23:13:54,745 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-27 23:14:28,922 [INFO] Fonte CAPES retornou 0 itens
+2026-11-27 23:14:31,868 [INFO] Fonte CONFAP retornou 8 itens
+2026-11-27 23:14:46,105 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-27 23:15:25,348 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-27 23:15:46,956 [INFO] Fonte IPEA retornou 10 itens
+2026-11-27 23:16:28,586 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x74ddb4cc1a50>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-27 23:16:30,618 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-27 23:16:49,455 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-27 23:16:58,787 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-27 23:17:05,927 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-27 23:17:07,799 [INFO] Fonte BASA retornou 0 itens
+2026-11-27 23:17:09,008 [INFO] Fonte BNDES retornou 8 itens
+2026-11-27 23:17:20,834 [INFO] Fonte FINEP retornou 0 itens
+2026-11-27 23:17:31,227 [INFO] Fonte DECIT retornou 0 itens
+2026-11-27 23:17:32,666 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-27 23:18:05,562 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-27 23:19:43,800 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-27 23:19:46,395 [INFO] Fonte FAPAC retornou 28 itens
+2026-11-27 23:21:24,269 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-27 23:21:47,654 [INFO] Fonte FAPEPI retornou 0 itens
+2026-11-27 23:21:57,831 [INFO] Fonte FAPES retornou 0 itens
+2026-11-27 23:22:00,639 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-27 23:22:03,705 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-27 23:22:06,547 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-27 23:22:13,327 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-27 23:27:48,561 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-27 23:32:38,917 [INFO] Fonte FAPESQ retornou 2 itens
+2026-11-27 23:32:51,762 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-27 23:33:49,442 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-27 23:35:26,489 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-27 23:35:33,781 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-27 23:37:08,023 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-27 23:37:13,390 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-27 23:37:15,914 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-27 23:37:30,621 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-27 23:40:37,573 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-27 23:40:38,683 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-27 23:42:12,707 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-27 23:46:49,024 [INFO] Fonte FAPT retornou 0 itens
+2026-11-27 23:46:52,750 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-27 23:47:03,454 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-27 23:47:18,018 [INFO] Prazos recuperados documentalmente (sob HOLD): {'documentados': 2, 'aplicados': 2, 'links_divergentes': 0, 'invalidos': 0}
+2026-11-27 23:47:42,632 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-27 23:47:42,649 [INFO] Total coletado: 117
+2026-11-27 23:47:42,649 [INFO] Novos: 6 | Prorrogados: 0 | Atualizados: 111 | Mantidos: 0 | Deduplicados por chave: 36
+2026-11-27 23:47:42,649 [INFO] Repostados/Publicados: 0
+2026-11-27 23:47:42,649 [INFO] Bloqueados para postagem: 0
+2026-11-27 23:47:42,649 [INFO] Expirados removidos da base: 0
+2026-11-27 23:47:42,649 [INFO] Erros por fonte: 0
+2026-11-27 23:47:42,649 [INFO] Fim da execucao
