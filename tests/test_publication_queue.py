@@ -151,6 +151,23 @@ class PublicationQueueTests(unittest.TestCase):
         self.assertEqual(risk(None,now),'prazo_desconhecido')
         self.assertEqual(risk('2026-11-28',now),'vence_amanha')
 
+    def test_previsao_exportada_alerta_15_para_10(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from unittest.mock import patch
+        now = datetime(2026, 11, 27, 14, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        entries = [call(f'novo_{i}', deadline='2026-11-28') for i in range(15)]
+        with patch('src.services.publication_queue_service.now_in_timezone', return_value=now), patch(
+            'src.services.publication_queue_service.settings.instagram_max_new_publications_per_day',10
+        ):
+            f1, f2 = self.export(entries)
+        preview = f1['previsao_capacidade']
+        self.assertEqual(f1['total_ineditos'], 15)
+        self.assertEqual(preview['capacidade_restante_hoje'],10)
+        self.assertEqual(preview['em_risco_antes_do_vencimento'],5)
+        self.assertTrue(preview['alerta_gargalo'])
+        self.assertEqual(f2['previsao_capacidade']['em_risco_antes_do_vencimento'],5)
+
 
 if __name__ == '__main__':
     unittest.main()
