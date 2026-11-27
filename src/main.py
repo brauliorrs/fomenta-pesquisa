@@ -13,6 +13,7 @@ from src.services.opportunity_guard import (
 from src.services.normalize_service import NormalizeService
 from src.services.publication_queue_service import PublicationQueueService, published_feed_ids
 from src.services.render_service import RenderService
+from src.services.recovered_deadlines import read_documented_deadlines, reconcile_documented_deadlines
 from src.services.repost_service import RepostService
 from src.services.scraper_service import ScraperService
 from src.services.storage_service import StorageService
@@ -301,6 +302,12 @@ def main() -> None:
     normalize_payload_text_fields(merged_payload, normalize_service)
     normalize_payload_ids(merged_payload, normalize_service)
     normalize_publication_state(merged_payload)
+    # A reconciliação de prazos documentados nunca autoriza publicação;
+    # cada registro recebe HOLD persistente, inclusive após novas coletas.
+    recovered = reconcile_documented_deadlines(
+        merged_payload, read_documented_deadlines(), settings.timezone
+    )
+    logger.info('Prazos recuperados documentalmente (sob HOLD): %s', recovered)
     history_rows = prune_history_rows(
         storage.read_csv(settings.historico_postagens_path), merged_payload,
     )
