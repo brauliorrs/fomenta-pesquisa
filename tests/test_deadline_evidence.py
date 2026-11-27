@@ -289,6 +289,89 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(result['registros']['c']['classificacao'], 'prazo_de_inscricao_ja_decorrido')
         self.assertEqual(len(vistos), 2)
 
+    def test_fapern_nao_adota_resultado_da_noticia_como_inscricao(self):
+        from src.sources.fapern import FAPERNSource
+        summary='Aberta chamada para projetos científicos'
+        content=('Evento em 10/11/2026.\nPrazo de inscrição até 18/12/2026\n'
+                 'Resultado final 20/01/2027. Contratação em 18/02/2027.')
+        self.assertEqual(FAPERNSource._extract_deadline(None,summary,content,'2026-11-01'),
+                         '2026-12-18')
+        only_results=('Divulgação do resultado em 20/01/2027.\n'
+                      'Prazo de contratação em 18/02/2027.')
+        self.assertIsNone(FAPERNSource._extract_deadline(None,summary,only_results,'2026-11-01'))
+
+    def test_fapesq_prazo_explicitado_e_datas_de_resultado(self):
+        from src.sources.fapesq import FAPESQSource
+        texto=('Lançamento do edital em 14/11/2026.\n'
+               'Prazo para submissão de propostas até 19/12/2026.\n'
+               'Resultado em 21/01/2027.')
+        self.assertEqual(FAPESQSource._extract_deadline(None,texto),'2026-12-19')
+        self.assertIsNone(FAPESQSource._extract_deadline(None,
+            'Resultado de projetos em 21/01/2027. Contratação em 15/02/2027.'))
+
+    def test_fapac_nao_trata_capa_jpg_como_edital(self):
+        from src.models import SourceConfig
+        from src.sources.fapac import FAPACSource
+        cfg=SourceConfig(nome='FAPAC', sigla='FAPAC', uf='AC',
+            site_oficial='https://fapac.ac.gov.br',
+            pagina_editais='https://fapac.ac.gov.br/editais',
+            tipo_coleta='html')
+        html=('<main><a href="/wp-content/uploads/2026/05/EDITAL-PDPG-01.2026-pdf-724x1024.jpg">'
+              'Edital PDPG 01/2026</a>'
+              '<a href="/wp-content/uploads/2026/05/EDITAL-02-2026.pdf">'
+              'Edital 02/2026 de pesquisa</a></main>')
+        items=FAPACSource(cfg).parse(html)
+        self.assertEqual(len(items),1)
+        self.assertTrue(items[0]['link'].endswith('.pdf'))
+
+    def test_auditor_falha_http_503_tem_um_retry_seguro(self):
+        from unittest.mock import Mock
+        service=DeadlineAuditService(logging.getLogger('retry-test'))
+        fail=Mock()
+        fail.status_code=503
+        success=Mock()
+        success.status_code=200
+        success.content=b'<html><main>Inscricoes ate 14/12/2026</main></html>'
+        success.text=success.content.decode()
+        success.headers={'content-type':'text/html'}
+        success.raise_for_status.return_value=None
+        with patch('src.services.deadline_audit_service.requests.get',
+                   side_effect=[fail,success]) as get:
+            content, retrieved, error=service._fetch_text('https://fap.org.br/edital')
+        self.assertEqual(error,'')
+        self.assertIn('14/12/2026',content)
+        self.assertEqual(get.call_count,2)
+
+    def test_auditor_timeout_e_imagem_falham_sem_liberacao(self):
+        from unittest.mock import Mock
+        from requests import Timeout
+        service=DeadlineAuditService(logging.getLogger('failure-test'))
+        with patch('src.services.deadline_audit_service.requests.get',
+                   side_effect=[Timeout('temporario'),Timeout('persistente')]) as get:
+            raw,url,error=service._fetch_text('https://fap.org.br/edital')
+        self.assertEqual(error,'timeout_http')
+        self.assertEqual(get.call_count,2)
+        response=Mock()
+        response.status_code=200
+        response.headers={'content-type':'image/jpeg'}
+        response.content=b'jpeg'
+        response.raise_for_status.return_value=None
+        with patch('src.services.deadline_audit_service.requests.get',return_value=response):
+            raw,url,error=service._fetch_text('https://fap.org.br/capa.jpg')
+        self.assertEqual(error,'imagem_nao_e_documento_textual')
+
+    def test_resumo_por_fonte_reconhece_recuperacao_transitoria(self):
+        state={'registros':{'id':{'id':'id','fonte':'FAP',
+                                 'link_cadastrado':'https://fap.org.br/editais/id',
+                                 'classificacao':'falha_http_503'}}}
+        service=DeadlineAuditService(logging.getLogger('recover-test'),
+            lambda url:('Inscricoes ate 14/12/2026',url,''))
+        now='2026-11-27T09:00:00-03:00'
+        report=service.run([item('id')],state,now)
+        self.assertEqual(report['sumario']['falhas_de_acesso_recuperadas_na_execucao'],1)
+        self.assertEqual(report['sumario']['novos_candidatos_a_recuperacao'],1)
+        self.assertFalse(report['registros']['id']['publicacao_autorizada_pela_auditoria'])
+
 
 if __name__ == '__main__':
     unittest.main()
