@@ -105,6 +105,11 @@ def opportunity_gate(
         return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
         return False, NOT_OPPORTUNITY, True
+    # Recuperacoes da etapa 2 exigem homologacao explicita alem do prazo valido.
+    # Uma data encontrada pelo extrator nao pode autorizar carrossel ou story.
+    if edital.get('recuperacao_etapa2') and edital.get('homologacao_editorial_etapa2') is not True:
+        return False, 'Recuperacao da etapa 2 sem homologacao editorial.', False
+
     if status in CLOSED_STATUSES:
         return False, CLOSED, True
     if CLOSED_REGISTRATION.search(title) or CLOSED_REGISTRATION.search(summary):
