@@ -125,6 +125,37 @@ class TestOpportunityGuard(unittest.TestCase):
                       homologacao_editorial_etapa2=False)
         self.assertTrue(opportunity_gate(item, NOW)[0])
 
+    def test_prazo_recuperado_bloqueia_feed_mesmo_com_data_futura(self):
+        item = edital(due='2026-12-16T17:00:00-03:00',
+                      bloqueio_recuperacao_prazo=True,
+                      pronto_para_postagem=True)
+        allowed, reason, definitive = opportunity_gate(item, NOW)
+        self.assertFalse(allowed)
+        self.assertIn('revisao editorial', reason)
+        self.assertFalse(definitive)
+        item['bloqueio_recuperacao_prazo'] = False
+        self.assertTrue(opportunity_gate(item, NOW)[0])
+
+    def test_modelo_preserva_bloqueio_entre_sincronizacoes(self):
+        from src.models import Edital
+        from src.services.dedup_service import DedupService
+        fields = dict(id='x', titulo='Chamada de pesquisa', orgao='FAP',
+                      fonte='FAP', uf='BR', categoria='pesquisa', link='https://fap.org/a',
+                      resumo='Chamada com prazo oficial', publico_alvo='ICTs',
+                      data_abertura='2026-11-01', data_expiracao='2026-12-16',
+                      data_ultima_coleta='2026-11-27T10:00:00-03:00',
+                      bloqueio_recuperacao_prazo=True,
+                      prazo_fase_recuperada='formulario_proposta',
+                      prazo_fonte_documental='https://fap.org/errata.pdf')
+        original=Edital(**fields).to_dict()
+        incoming=Edital(**dict(fields, data_ultima_coleta='2026-11-27T11:00:00-03:00',
+                               bloqueio_recuperacao_prazo=False,
+                               prazo_fase_recuperada='', prazo_fonte_documental=''))
+        merged,_=DedupService().merge(DedupService().index_existing([original]),[incoming])
+        self.assertTrue(merged[0].bloqueio_recuperacao_prazo)
+        self.assertEqual(merged[0].prazo_fase_recuperada,'formulario_proposta')
+        self.assertFalse(opportunity_gate(merged[0].to_dict(), NOW)[0])
+
 
 if __name__ == '__main__':
     unittest.main()
