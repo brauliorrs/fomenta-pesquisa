@@ -151,6 +151,55 @@ class PublicationQueueTests(unittest.TestCase):
         self.assertEqual(risk(None,now),'prazo_desconhecido')
         self.assertEqual(risk('2026-11-28',now),'vence_amanha')
 
+    def test_previsao_exportada_alerta_15_para_10(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from unittest.mock import patch
+        now = datetime(2026, 11, 27, 14, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        entries = [call(f'novo_{i}', deadline='2026-11-28') for i in range(15)]
+        from types import SimpleNamespace
+        fake_settings=SimpleNamespace(
+            timezone='America/Sao_Paulo', instagram_max_new_publications_per_day=10,
+        )
+        with patch('src.services.publication_queue_service.now_in_timezone', return_value=now), patch(
+            'src.services.publication_queue_service.settings', fake_settings,
+        ):
+            f1, f2 = self.export(entries)
+        preview = f1['previsao_capacidade']
+        self.assertEqual(f1['total_ineditos'], 15)
+        self.assertEqual(preview['capacidade_restante_hoje'],10)
+        self.assertEqual(preview['em_risco_antes_do_vencimento'],5)
+        self.assertTrue(preview['alerta_gargalo'])
+        self.assertEqual(f2['previsao_capacidade']['em_risco_antes_do_vencimento'],5)
+
+    def test_capacidade_com_feed_ja_publicado_hoje(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.stage5_capacity import forecast_capacity
+        now=datetime(2026,11,27,14,tzinfo=ZoneInfo('America/Sao_Paulo'))
+        hist=[{'edital_id':'ja_publicado','status':'success',
+               'feed_media_id':'feed_123',
+               'data_publicacao':'2026-11-27T09:00:00-03:00'}]
+        item=[{'id':f'novo_{i}','data_expiracao':'2026-11-28'} for i in range(15)]
+        result=forecast_capacity(item,hist,now,10)
+        self.assertEqual(result['capacidade_restante_hoje'],0)
+        self.assertEqual(result['em_risco_antes_do_vencimento'],15)
+
+    def test_previsao_diferencia_story_e_prorrogacao(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.stage5_capacity import forecast_capacity
+        now=datetime(2026,11,27,14,tzinfo=ZoneInfo('America/Sao_Paulo'))
+        story=[{'edital_id':'story','status':'success',
+                'story_media_id':'story123','feed_media_id':'',
+                'data_publicacao':'2026-11-27T09:00:00-03:00'}]
+        edital={'id':'novo','data_expiracao':'2026-11-27T15:00:00-03:00'}
+        self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],1)
+        edital['data_expiracao']='2026-11-27T12:00:00-03:00'
+        self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],0)
+        edital['data_expiracao']='2026-12-04'
+        self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],1)
+
 
 if __name__ == '__main__':
     unittest.main()
