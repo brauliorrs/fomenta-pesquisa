@@ -105,6 +105,26 @@ class TestOpportunityGuard(unittest.TestCase):
         self.assertFalse(opportunity_gate(
             edital(resumo='Inscrições encerradas às 12h'), NOW)[0])
 
+    def test_data_atualizada_e_verificada_novamente(self):
+        item = edital(due='2026-11-15')
+        self.assertFalse(opportunity_gate(item, NOW)[0])
+        item['data_expiracao'] = '2026-11-28'
+        self.assertTrue(opportunity_gate(item, NOW)[0])
+        item['data_expiracao'] = '2026-11-16'
+        self.assertFalse(opportunity_gate(item, NOW)[0])
+
+    def test_data_atualizada_nao_dispensa_filtros_editoriais(self):
+        item = edital('Divulgados os finalistas do premio', due='2026-12-10')
+        self.assertFalse(opportunity_gate(item, NOW)[0])
+        item = edital(due='data invalida')
+        self.assertFalse(opportunity_gate(item, NOW)[0])
+
+    def test_novo_prazo_em_registro_etapa2_nao_exige_homologacao_manual(self):
+        item = edital(due='2026-12-10', id='edital_recuperado',
+                      recuperacao_etapa2=True,
+                      homologacao_editorial_etapa2=False)
+        self.assertTrue(opportunity_gate(item, NOW)[0])
+
 
 if __name__ == '__main__':
     unittest.main()
