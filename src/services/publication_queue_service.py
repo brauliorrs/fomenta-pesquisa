@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from typing import Any
@@ -8,6 +9,7 @@ from typing import Any
 from src.config import settings
 from src.services.opportunity_guard import opportunity_gate, _parse
 from src.services.published_editorial_guard import published_repost_block_reason
+from src.services.continuous_audit import run_continuous_audit
 from src.services.stage5_capacity import forecast_capacity
 from src.services.storage_service import StorageService
 from src.utils.dates import now_in_timezone, parse_date
@@ -123,6 +125,22 @@ class PublicationQueueService:
         }
         self.storage.write_json(self.queue_path, pending_payload)
         self.storage.write_json(self.monitoring_path, monitoring_payload)
+
+        # Auditar depois de exportar. Uma falha de armazenamento da auditoria
+        # nunca pode impedir a gravacao posterior do historico de publicacoes.
+        try:
+            run_continuous_audit(
+                editais, history_rows or [], ordering_now, settings.timezone,
+                self.queue_path.parent / 'auditoria_continua.json',
+                self.queue_path.parent / 'auditoria_continua_eventos.jsonl',
+                queue1_ids={str(item['id']) for item in ineditos},
+                queue2_ids={str(item['id']) for item in publicados},
+            )
+        except (OSError, ValueError, TypeError, KeyError, json.JSONDecodeError) as error:
+            import logging
+            logging.getLogger(__name__).error(
+                'Auditoria continua falhou; filas exportadas: %s', type(error).__name__
+            )
 
     def _to_queue_item(
         self, item: dict[str, Any], position: int, published: bool,
