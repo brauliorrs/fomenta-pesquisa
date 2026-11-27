@@ -156,6 +156,68 @@ class TestOpportunityGuard(unittest.TestCase):
         self.assertEqual(merged[0].prazo_fase_recuperada,'formulario_proposta')
         self.assertFalse(opportunity_gate(merged[0].to_dict(), NOW)[0])
 
+    def test_reconciliacao_documentada_nao_publica_e_nao_confunde_fases(self):
+        from src.services.recovered_deadlines import (
+            read_documented_deadlines, reconcile_documented_deadlines,
+        )
+        from src.main import classify_posting_readiness, mark_expired
+        from src.models import Edital
+        rows = [
+            {'id':'fundacao_de_amparo_a_pesquisa_do_estado__70bb5a90',
+             'link':'https://www.fapesb.ba.gov.br/edital-no-0192026-ciencia-na-mesa-5-base-de-dados-e-sistemas-de-informacoes-para-tomada-de-decisao-em-soberania-alimentar-e-nutricional/',
+             'titulo':'Edital FAPESB 019/2026 Ciência na Mesa',
+             'orgao':'FAPESB','fonte':'FAPESB','uf':'BA','categoria':'pesquisa',
+             'resumo':'Edital para financiamento de pesquisa','publico_alvo':'Pesquisadores',
+             'status':'encerrado','data_abertura':None,'data_expiracao':None,
+             'data_ultima_coleta':'2026-11-27T10:00:00-03:00'},
+            {'id':'empresa_brasileira_de_pesquisa_e_inovaca_d7e4e002',
+             'link':'https://embrapii.org.br/chamadas-publicas/chamada-publica-n02-2026-para-projetos-de-alto-impacto-em-economia-circular/',
+             'titulo':'Chamada Petrobras Economia Circular',
+             'orgao':'EMBRAPII','fonte':'EMBRAPII','uf':'BR','categoria':'inovacao',
+             'resumo':'Projetos de desenvolvimento e inovação','publico_alvo':'Empresas',
+             'status':'novo','data_abertura':None,'data_expiracao':None,
+             'data_ultima_coleta':'2026-11-27T10:00:00-03:00'},
+        ]
+        report = reconcile_documented_deadlines(rows, read_documented_deadlines())
+        self.assertEqual(report['aplicados'],2)
+        fapesb,embrapii=rows
+        self.assertEqual(fapesb['data_expiracao'],'2026-12-16T17:00:00-03:00')
+        self.assertEqual(fapesb['prazo_documentacao_adicional'],'2026-12-18T23:59:00-03:00')
+        self.assertEqual(fapesb['status'],'atualizado')
+        self.assertEqual(embrapii['data_expiracao'],'2027-01-08')
+        self.assertEqual(embrapii['prazo_documentacao_adicional'],'2027-03-05')
+        self.assertTrue(all(row['bloqueio_recuperacao_prazo'] for row in rows))
+        for row in rows:
+            self.assertFalse(opportunity_gate(row,NOW)[0])
+            self.assertFalse(classify_posting_readiness(row)[0])
+            self.assertFalse(Edital(**row).pronto_para_postagem)
+        mark_expired(rows,'2026-11-27')
+        self.assertFalse(any(row['pronto_para_postagem'] for row in rows))
+
+    def test_reconciliacao_falha_fechada_em_url_mudada_e_fase_ambigua(self):
+        import copy
+        from src.services.recovered_deadlines import (
+            read_documented_deadlines,reconcile_documented_deadlines,
+        )
+        registry=read_documented_deadlines()
+        key='fundacao_de_amparo_a_pesquisa_do_estado__70bb5a90'
+        item={'id':key,'link':'https://fapesb.ba.gov.br/arquivo-diferente','data_expiracao':None}
+        result=reconcile_documented_deadlines([item],registry)
+        self.assertEqual(result['links_divergentes'],1)
+        self.assertIsNone(item['data_expiracao'])
+        item['link']=registry['registros'][key]['link_catalogado']
+        bad=copy.deepcopy(registry)
+        bad['registros'][key]['fase']=''
+        self.assertEqual(reconcile_documented_deadlines([item],bad)['invalidos'],1)
+        self.assertIsNone(item['data_expiracao'])
+        bad=copy.deepcopy(registry)
+        bad['registros'][key]['prazo_inscricao']='2027-05-11'
+        bad['registros'][key]['prazo_secundario']=''
+        # A ausência de fase para data secundária não pode ser reaproveitada.
+        bad['registros'][key]['prazo_secundario_fase']=''
+        self.assertEqual(reconcile_documented_deadlines([item],bad)['aplicados'],1)
+        self.assertFalse(opportunity_gate(item,NOW)[0])
+
 
 if __name__ == '__main__':
     unittest.main()
