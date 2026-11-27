@@ -54,7 +54,18 @@ NEGATIVE_PHASE = re.compile(
     r'recursos?|contestac(?:ao|oes)|impugnac(?:ao|oes)|'
     r'inelegiv(?:el|eis)|elegiv(?:el|eis)|elegibilidade|'
     r'divulgacao\s+(?:final|preliminar)|'
-    r'analise\s+de\s+merito|prestacao\s+de\s+contas)\b',
+    r'analise\s+de\s+merito|prestacao\s+de\s+contas|'
+    r'avaliac(?:ao|oes)(?:\s+d(?:e|as|os)\s+inscric(?:ao|oes))?|'
+    r'julgamento\s+d(?:e|as|os)\s+inscric(?:ao|oes))\b',
+    re.IGNORECASE,
+)
+
+
+OPENING_PHASE = re.compile(
+    r'\b(?:inicio|abertura|comeco)\s+'
+    r'(?:(?:d[aeo]s?|do\s+prazo\s+para|do\s+prazo\s+de)\s+)?'
+    r'(?:prazo\s+(?:de|para)\s+)?'
+    r'(?:inscric(?:ao|oes)|submiss(?:ao|oes)|envio\s+de\s+propostas)\b',
     re.IGNORECASE,
 )
 
@@ -136,7 +147,7 @@ def extract_registration_deadlines(text: str) -> list[dict[str, str]]:
             # O contexto de fase deve estar no mesmo rotulo, nao misturado
             # com uma data de contratacao/resultado na linha.
             local = normalized_evidence[max(0, label_offset + m.start() - 135): label_offset + m.start()]
-            if NEGATIVE_PHASE.search(local):
+            if NEGATIVE_PHASE.search(local) or OPENING_PHASE.search(local):
                 continue
             found.setdefault(parsed, {
                 'data': parsed,
@@ -158,10 +169,13 @@ def assess_deadline(
     today = date.fromisoformat(checked_at[:10]).isoformat()
     if not evidences:
         status = 'sem_evidencia_de_inscricao'
+    elif max(dates) < today:
+        # Mesmo com duas fases identificadas, todas as datas de submissao
+        # sao anteriores a hoje. Retificacoes posteriores continuam sujeitas
+        # a conferência e nunca liberam publicação automaticamente.
+        status = 'prazo_de_inscricao_ja_decorrido'
     elif len(dates) > 1:
         status = 'multiplos_prazos_revisao'
-    elif dates[0] < today:
-        status = 'prazo_de_inscricao_ja_decorrido'
     elif dates[0] == today:
         status = 'prazo_hoje_horario_nao_confirmado'
     elif stored and stored != dates[0]:

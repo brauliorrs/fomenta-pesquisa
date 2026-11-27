@@ -95,6 +95,10 @@ class DeadlineAuditService:
                     node.decompose()
                 section = soup.select_one('main, article, .entry-content') or soup.body or soup
                 return section.get_text('\n', strip=True)[:600_000], current, ''
+            except requests.HTTPError as exc:
+                status = exc.response.status_code if exc.response is not None else None
+                self.logger.warning('HTTP %s na auditoria da URL %s', status, current)
+                return '', current, f'falha_http_{status}' if status else 'falha_http_ou_documento'
             except (requests.RequestException, ValueError, KeyError) as exc:
                 self.logger.warning('Falha de auditoria no link %s: %s', current, exc)
                 return '', current, 'falha_http_ou_documento'
@@ -149,7 +153,19 @@ class DeadlineAuditService:
         total_missing = len(missing)
         cursor = int(old_state.get('cursor_sem_prazo') or 0) % total_missing if total_missing else 0
         rotated = missing[cursor:] + missing[:cursor]
-        selected_missing = rotated[:self.MAX_MISSING]
+        # Priorizar registros nunca lidos (ou cuja URL mudou) para cobrir
+        # o catalogo; somente depois repetir os que ja tiveram diagnostico.
+        first_pass = [
+            x for x in rotated
+            if str(x.get('id')) not in prior
+            or prior[str(x.get('id'))].get('link_cadastrado') != x.get('link')
+        ]
+        remaining = [
+            x for x in rotated
+            if str(x.get('id')) in prior
+            and prior[str(x.get('id'))].get('link_cadastrado') == x.get('link')
+        ]
+        selected_missing = (first_pass + remaining)[:self.MAX_MISSING]
         next_cursor = (cursor + len(selected_missing)) % total_missing if total_missing else 0
 
         # Reavaliar prioritariamente vencimentos proximos; nao repetir o
@@ -171,7 +187,7 @@ class DeadlineAuditService:
             if str(x.get('id')) not in selected_ids
             and prior.get(str(x.get('id')), {}).get('classificacao')
             in {'multiplos_prazos_revisao', 'prazo_divergente'}
-        ][:2]
+        ][:8]
         selected = ready_to_check + selected_missing + ambiguity_rechecks
         checked = 0
         new_recoveries = 0
