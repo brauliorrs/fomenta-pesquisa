@@ -157,8 +157,12 @@ class PublicationQueueTests(unittest.TestCase):
         from unittest.mock import patch
         now = datetime(2026, 11, 27, 14, tzinfo=ZoneInfo('America/Sao_Paulo'))
         entries = [call(f'novo_{i}', deadline='2026-11-28') for i in range(15)]
+        from types import SimpleNamespace
+        fake_settings=SimpleNamespace(
+            timezone='America/Sao_Paulo', instagram_max_new_publications_per_day=10,
+        )
         with patch('src.services.publication_queue_service.now_in_timezone', return_value=now), patch(
-            'src.services.publication_queue_service.settings.instagram_max_new_publications_per_day',10
+            'src.services.publication_queue_service.settings', fake_settings,
         ):
             f1, f2 = self.export(entries)
         preview = f1['previsao_capacidade']
