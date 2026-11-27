@@ -144,7 +144,8 @@ class Stage2InventoryTests(unittest.TestCase):
             candidato['homologacao_editorial_etapa2'] = flag
             self.assertFalse(opportunity_gate(candidato, now=now)[0])
         candidato['homologacao_editorial_etapa2'] = True
-        self.assertTrue(opportunity_gate(candidato, now=now)[0])
+        # Flag no próprio edital jamais é suficiente sem decisão separada.
+        self.assertFalse(opportunity_gate(candidato, now=now)[0])
         candidato['data_expiracao'] = '2026-10-08T17:00:00-03:00'
         self.assertFalse(opportunity_gate(candidato, now=now)[0])
 
