@@ -8,6 +8,7 @@ from typing import Any
 from src.config import settings
 from src.services.opportunity_guard import opportunity_gate, _parse
 from src.services.published_editorial_guard import published_repost_block_reason
+from src.services.stage5_capacity import forecast_capacity
 from src.services.storage_service import StorageService
 from src.utils.dates import now_in_timezone, parse_date
 
@@ -81,10 +82,17 @@ class PublicationQueueService:
         )
         assert not ({item['id'] for item in ineditos} & {item['id'] for item in publicados})
 
+        capacidade = forecast_capacity(
+            ineditos, history_rows or [], ordering_now,
+            settings.instagram_max_new_publications_per_day,
+            settings.timezone,
+        )
+
         common = {
             'generated_at': generated_at,
             'criterio': 'triagem_automatica_nao_equivale_a_inscricoes_confirmadas',
             'total_elegiveis_automaticamente': len(ineditos),
+            'previsao_capacidade': capacidade,
             'total_registros_catalogo_distintos': len(distinct),
             'total_bloqueados_ou_sem_prazo': len(unpublished) - len(ineditos),
             'total_encerrados_monitorados': sum(
