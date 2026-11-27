@@ -218,6 +218,29 @@ class TestOpportunityGuard(unittest.TestCase):
         self.assertEqual(reconcile_documented_deadlines([item],bad)['aplicados'],1)
         self.assertFalse(opportunity_gate(item,NOW)[0])
 
+    def test_catalogo_dois_prazos_recuperados_continuam_em_hold(self):
+        import json
+        from pathlib import Path
+        from src.publish_pending import eligible_for_publication
+        catalog = json.loads((Path(__file__).resolve().parents[1] /
+                              'data/editais.json').read_text(encoding='utf-8'))
+        by_id = {x['id']: x for x in catalog}
+        cases = {
+            'fundacao_de_amparo_a_pesquisa_do_estado__70bb5a90':
+                ('2026-12-16T17:00:00-03:00','conclusao_formulario_online_de_proposta'),
+            'empresa_brasileira_de_pesquisa_e_inovaca_d7e4e002':
+                ('2027-01-08','submissao_pre_propostas_por_unidades_embrapii'),
+        }
+        for key,(deadline,phase) in cases.items():
+            row=by_id[key]
+            self.assertEqual(row['data_expiracao'],deadline)
+            self.assertEqual(row['prazo_fase_recuperada'],phase)
+            self.assertTrue(row['prazo_fonte_documental'].startswith('https://'))
+            self.assertTrue(row['bloqueio_recuperacao_prazo'])
+            self.assertFalse(row['pronto_para_postagem'])
+            self.assertFalse(eligible_for_publication(row))
+        self.assertEqual(sum(not x.get('data_expiracao') for x in catalog),206)
+
 
 if __name__ == '__main__':
     unittest.main()
