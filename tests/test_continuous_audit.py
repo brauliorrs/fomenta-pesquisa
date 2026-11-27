@@ -64,6 +64,42 @@ class ContinuousAuditTests(unittest.TestCase):
         self.assertEqual(json.loads(self.events.read_text().splitlines()[-1])['tipo'],
                          'removido_do_catalogo')
 
+    def test_documento_falha_e_recuperacao_geram_alertas_sem_autorizacao(self):
+        import json
+        row={'id':'a','titulo':'Chamada de pesquisa', 'fonte':'FACEPE',
+             'link':'https://example.org/edital.pdf',
+             'data_expiracao':'2026-11-29', 'pronto_para_postagem':True}
+        evidence={'registros':{'a':{'link_cadastrado':row['link'],
+                   'classificacao':'falha_http_403',
+                   'verificado_em':'2026-11-27T10:00:00-03:00'}}}
+        audit=self.snapshot.parent/'auditoria_prazos.json'
+        audit.write_text(json.dumps(evidence),encoding='utf-8')
+        first=self.run_audit([row])
+        self.assertEqual(first['sumario']['auditados_documentalmente'],1)
+        self.assertEqual(first['sumario']['novos_desde_ultimo_snapshot'],1)
+        self.assertIn('falha_acesso_documento',first['sumario']['anomalias_por_tipo'])
+        self.assertEqual(first['sumario']['risco_de_expiracao_em_ate_3_dias'],1)
+        second=self.run_audit([row])
+        self.assertEqual(second['sumario']['anomalias_persistentes_desde_ultimo_snapshot'],1)
+        audit.write_text(json.dumps({'registros':{'a':{
+            'link_cadastrado':row['link'],'classificacao':'prazo_corroborrado',
+            'verificado_em':'2026-11-27T14:00:00-03:00'}}}),encoding='utf-8')
+        third=self.run_audit([row])
+        self.assertEqual(third['sumario']['falhas_recuperadas_desde_ultimo_snapshot'],1)
+        self.assertEqual(third['sumario']['ids_recuperados'],['a'])
+
+    def test_novo_link_invalida_auditoria_antiga(self):
+        import json
+        row={'id':'b','titulo':'Chamada','fonte':'FAP',
+             'link':'https://example.org/edital-novo','data_expiracao':None}
+        (self.snapshot.parent/'auditoria_prazos.json').write_text(
+            json.dumps({'registros':{'b':{'link_cadastrado':'https://example.org/antigo',
+                'classificacao':'prazo_corroborrado'}}}),encoding='utf-8')
+        report=self.run_audit([row])
+        self.assertIn('link_alterado_auditoria_obsoleta',
+                      report['sumario']['anomalias_por_tipo'])
+        self.assertEqual(report['sumario']['auditados_documentalmente'],0)
+
     def test_url_credenciais_e_query_removidos(self):
         self.assertEqual(safe_source_url('https://user:senha@example.org/x?a=token'),
                          'https://example.org/x')
