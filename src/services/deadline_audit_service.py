@@ -9,6 +9,8 @@ import io
 import ipaddress
 import re
 import logging
+from concurrent.futures import ThreadPoolExecutor
+from threading import Lock, Semaphore
 from datetime import date, timedelta
 from typing import Any, Callable
 from urllib.parse import urljoin, urlsplit
@@ -28,6 +30,8 @@ class DeadlineAuditService:
     MAX_PDF_PAGES = 14
     MAX_PDF_PAGES_SECOND_PASS = 40
     MAX_RETRIES_TRANSIENT = 1
+    MAX_CONCURRENT_REQUESTS = 4
+    MAX_CONCURRENT_PER_HOST = 2
 
     def __init__(
         self, logger: logging.Logger,
@@ -35,6 +39,7 @@ class DeadlineAuditService:
     ) -> None:
         self.logger = logger
         self.fetch_text = fetch_text or self._fetch_text
+        self._parallel_fetch = fetch_text is None
 
     @staticmethod
     def safe_url(url: str) -> bool:
@@ -267,10 +272,35 @@ class DeadlineAuditService:
         checked = 0
         new_recoveries = 0
         divergences = 0
-        for edital in selected:
+
+        # A consulta de rede é paralelizada com teto por origem para evitar
+        # que uma instituição indisponível monopolize todo o ciclo.
+        # Ordem dos resultados permanece determinística para o relatório.
+        if self._parallel_fetch and len(selected) > 1:
+            locks = Lock()
+            limits: dict[str, Semaphore] = {}
+
+            def fetch_one(edital: dict[str, Any]) -> tuple[str, str, str]:
+                url = str(edital['link']).strip()
+                host = (urlsplit(url).hostname or '').lower()
+                with locks:
+                    if host not in limits:
+                        limits[host] = Semaphore(self.MAX_CONCURRENT_PER_HOST)
+                    limiter = limits[host]
+                with limiter:
+                    return self.fetch_text(url)
+
+            with ThreadPoolExecutor(max_workers=self.MAX_CONCURRENT_REQUESTS) as executor:
+                retrieved_rows = list(executor.map(fetch_one, selected))
+        else:
+            # Mantém testes e provedores injetados em ordem sequencial.
+            retrieved_rows = [
+                self.fetch_text(str(edital['link']).strip())
+                for edital in selected
+            ]
+        for edital, (content, retrieved, error) in zip(selected, retrieved_rows):
             url = str(edital['link']).strip()
             checked += 1
-            content, retrieved, error = self.fetch_text(url)
             if error:
                 record = {
                     'id': edital['id'], 'titulo': edital.get('titulo'),
