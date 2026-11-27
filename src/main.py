@@ -85,6 +85,10 @@ def evaluate_editorial_quality(edital: dict) -> tuple[int, list[str], bool, bool
         pendencias.append(motivo_guard)
         score -= 100 if definitivo_guard else 35
 
+    if edital.get('bloqueio_recuperacao_prazo') is True:
+        pendencias.append('Prazo recuperado: revisao editorial de fase e publico pendente.')
+        score -= 100
+
     if edital.get('status') == 'encerrado' and CLOSED not in pendencias:
         pendencias.append('Edital encerrado.')
         score -= 100
@@ -140,7 +144,7 @@ def evaluate_editorial_quality(edital: dict) -> tuple[int, list[str], bool, bool
 
     score = max(score, 0)
     bloqueio_definitivo = definitivo_guard or any(pending in DEFINITIVE_BLOCK_REASONS for pending in pendencias)
-    revisao_humana = (not bloqueio_definitivo) and (not permitido or any(pending in REVIEW_REASONS for pending in pendencias))
+    revisao_humana = (not bloqueio_definitivo) and (not permitido or any(pending in REVIEW_REASONS for pending in pendencias) or edital.get('bloqueio_recuperacao_prazo') is True)
     return score, pendencias, revisao_humana, bloqueio_definitivo
 
 
