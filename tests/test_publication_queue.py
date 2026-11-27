@@ -4,6 +4,7 @@ from pathlib import Path
 
 # Include etapa 6 regressions in the existing CI queue test selection.
 from test_stage6_urgent_exception import Stage6UrgentTests
+from test_continuous_audit import ContinuousAuditTests
 
 from src.services.publication_queue_service import (
     PublicationQueueService, already_published, published_feed_ids,
@@ -223,6 +224,22 @@ class PublicationQueueTests(unittest.TestCase):
             dict(decision,ids_autorizados=['nao_existe']))[0])
         self.assertFalse(select_urgent_exception([item],hist+[
             dict(hist[0],feed_media_id='mid_2')],now,10,True,decision)[0])
+
+    def test_auditoria_de_fila_registra_origem_e_prazo_sem_publicar(self):
+        row=call('inedito', deadline='2099-12-31',
+                 link='https://example.org/edital?access_token=secreto')
+        f1, f2 = self.export([row])
+        audit_path=self.path1.parent/'auditoria_continua.json'
+        event_path=self.path1.parent/'auditoria_continua_eventos.jsonl'
+        self.assertTrue(audit_path.exists())
+        self.assertTrue(event_path.exists())
+        import json
+        audit=json.loads(audit_path.read_text(encoding='utf-8'))
+        self.assertEqual(audit['registros'][0]['url_fonte'],'https://example.org/edital')
+        self.assertEqual(audit['registros'][0]['decisao'],'inedito_apto')
+        self.assertNotIn('secreto',event_path.read_text(encoding='utf-8'))
+        self.export([row])
+        self.assertEqual(len(event_path.read_text(encoding='utf-8').splitlines()),1)
 
 
 if __name__ == '__main__':
