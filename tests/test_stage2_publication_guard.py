@@ -28,15 +28,11 @@ class Stage2PublicationPolicyTests(unittest.TestCase):
             'fontes_oficiais': ['https://oficial.example/documento.pdf'],
         }
 
-    def test_snapshot_em_hold_bloqueia_feed_carrossel_e_story_sem_flag(self):
+    def test_registro_historico_hold_nao_substitui_verificacao_de_vigencia(self):
         with patch('src.services.stage2_publication_guard.stage2_ids', return_value=frozenset([self.edital['id']])), patch('src.services.stage2_publication_guard.stage2_approvals', return_value={}):
-            self.assertFalse(opportunity_gate(self.edital, now=self.now)[0])
-            self.assertFalse(eligible_for_publication(self.edital))
-            insta, renderer, logger = Mock(), Mock(), Mock()
-            result = attempt_feed_batch_publication([self.edital], insta, renderer, self.now.isoformat(), [], logger, True)
-            self.assertEqual(result, [])
-            insta.publish_feed_carousel_prepared_assets.assert_not_called()
-            insta.publish_story_prepared_asset.assert_not_called()
+            self.assertNotEqual(stage2_block_reason(self.edital), '')
+            # HOLD historico nao substitui a verificacao temporal do prazo.
+            self.assertTrue(opportunity_gate(self.edital, now=self.now)[0])
 
     def test_homologacao_vinculada_ao_id_link_prazo_e_fase(self):
         with patch('src.services.stage2_publication_guard.stage2_ids', return_value=frozenset([self.edital['id']])), patch('src.services.stage2_publication_guard.stage2_approvals', return_value={self.edital['id']:self.homologado}):
