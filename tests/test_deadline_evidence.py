@@ -208,6 +208,57 @@ class EvidenceTests(unittest.TestCase):
                          'sem_evidencia_de_inscricao')
 
 
+    def test_inicio_do_prazo_nao_e_fim_da_submissao(self):
+        texto = (
+            'Início do prazo para submissão de propostas 13/07/2026\n'
+            'Término do prazo para submissão de propostas (até às 17h) 09/11/2026'
+        )
+        self.assertEqual(
+            [e['data'] for e in extract_registration_deadlines(texto)],
+            ['2026-11-09'],
+        )
+
+    def test_avaliacao_de_inscricoes_nao_gera_prazo(self):
+        texto = (
+            'Encerramento das inscrições 20 de outubro de 2025\n'
+            'Avaliação das inscrições pelo comitê de seleção 21 a 28 de outubro de 2025'
+        )
+        self.assertEqual(
+            [e['data'] for e in extract_registration_deadlines(texto)],
+            ['2025-10-20'],
+        )
+
+    def test_multiplas_datas_todas_passadas_nao_sao_ativas(self):
+        texto = (
+            'Prazo final de inscrições até 25 de janeiro de 2024\n'
+            'Prazo final para submissão de propostas completas 4 de abril de 2024'
+        )
+        row = assess_deadline(
+            item('serrapilheira'), texto, '2026-11-27T09:00:00-03:00',
+            'https://serrapilheira.org/chamada',
+        )
+        self.assertEqual(row['classificacao'], 'prazo_de_inscricao_ja_decorrido')
+        self.assertFalse(row['publicacao_autorizada_pela_auditoria'])
+
+    def test_prio_dos_registros_que_ainda_nao_foram_visitados(self):
+        vistos = []
+        def fetch(url):
+            vistos.append(url.split('/')[-1])
+            return '', url, ''
+        audit = DeadlineAuditService(logging.getLogger('test'), fetch)
+        audit.MAX_MISSING = 2
+        rows = [item(f'e{i}') for i in range(5)]
+        prior = {'registros': {
+            'e0': {'classificacao':'sem_evidencia_de_inscricao',
+                   'link_cadastrado': rows[0]['link']},
+            'e1': {'classificacao':'sem_evidencia_de_inscricao',
+                   'link_cadastrado': rows[1]['link']},
+        }}
+        report = audit.run(rows, prior, '2026-11-27T09:00:00-03:00')
+        self.assertEqual(len(vistos), 2)
+        self.assertTrue(set(vistos).isdisjoint({'e0', 'e1'}))
+        self.assertEqual(report['sumario']['consultados_nesta_execucao'], 2)
+
     def test_intervalo_explicito_ipea_tem_um_prazo_final(self):
         texto = 'Prazo de inscrição: 06/10/2026 a 19/10/2026'
         evidencias = extract_registration_deadlines(texto)

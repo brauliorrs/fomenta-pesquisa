@@ -2,7 +2,7 @@ name: Auditar Prazos de Inscricao
 
 on:
   workflow_dispatch:
-  # Etapa 2: prioriza revisao ampliada com inventario dos casos sem prazo;
+  # Etapa 2: prioriza revisao dos URLs ainda sem leitura, reprocessa ambiguidades e diagnostica HTTP;
   # o relatorio JSON gravado pela rotina nao dispara a mesma acao.
   push:
     branches: [main]
