@@ -11,6 +11,7 @@ on:
       - 'data/confrontos_oficiais_etapa2.json'
       - 'src/services/deadline_evidence.py'
       - 'src/services/deadline_audit_service.py'
+      - 'src/services/stage2_inventory.py'
   schedule:
     # 09h20 no horario de Brasilia (12h20 UTC).
     - cron: "20 12 * * *"
