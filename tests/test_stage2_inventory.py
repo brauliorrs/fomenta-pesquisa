@@ -108,6 +108,46 @@ class Stage2InventoryTests(unittest.TestCase):
         self.assertEqual(row['status'], 'prazo_de_inscricao_encerrado')
         self.assertFalse(row['publicacao_autorizada'])
 
+    def test_recuperacao_etapa2_sem_homologacao_bloqueia_feed_e_story(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.opportunity_guard import opportunity_gate
+        from src.publish_pending import eligible_for_publication, attempt_feed_batch_publication
+        from unittest.mock import Mock
+        now = datetime(2026, 11, 27, 12, 0, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        candidato = {
+            'id': 'fapesb_019_teste', 'titulo': 'Edital de apoio a pesquisa',
+            'link': 'https://www.fapesb.ba.gov.br/edital/',
+            'data_expiracao': '2026-12-16T17:00:00-03:00',
+            'status': 'aberto', 'pronto_para_postagem': True,
+            'recuperacao_etapa2': True, 'homologacao_editorial_etapa2': False,
+            'instagram_asset': 'card.png',
+        }
+        self.assertFalse(opportunity_gate(candidato, now=now)[0])
+        self.assertFalse(eligible_for_publication(candidato))
+        instagram, renderer, logger = Mock(), Mock(), Mock()
+        results = attempt_feed_batch_publication(
+            [candidato], instagram, renderer, now.isoformat(), [], logger, True,
+        )
+        self.assertEqual(results, [])
+        instagram.publish_feed_carousel_prepared_assets.assert_not_called()
+        instagram.publish_story_prepared_asset.assert_not_called()
+
+    def test_recuperacao_exige_booleano_true_e_prazo_vigente(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.opportunity_guard import opportunity_gate
+        now = datetime(2026, 11, 27, 12, 0, tzinfo=ZoneInfo('America/Sao_Paulo'))
+        candidato = {'id': 'recuperado', 'titulo': 'Edital valido', 'status': 'aberto',
+                     'recuperacao_etapa2': True, 'data_expiracao': '2026-12-16T17:00:00-03:00'}
+        for flag in (False, None, 'true', 1):
+            candidato['homologacao_editorial_etapa2'] = flag
+            self.assertFalse(opportunity_gate(candidato, now=now)[0])
+        candidato['homologacao_editorial_etapa2'] = True
+        self.assertTrue(opportunity_gate(candidato, now=now)[0])
+        candidato['data_expiracao'] = '2026-10-08T17:00:00-03:00'
+        self.assertFalse(opportunity_gate(candidato, now=now)[0])
+
 
 if __name__ == '__main__':
     unittest.main()
