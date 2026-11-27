@@ -35039,3 +35039,56 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://rond
 2026-11-26 12:33:10,697 [INFO] Tentativas de publicacao apos sync: 1
 2026-11-26 12:33:10,697 [INFO] Publicacoes concluidas apos sync: 1
 2026-11-26 12:33:10,697 [INFO] Novos editais publicados no feed hoje: 0/10.
+2026-11-26 23:29:03,512 [INFO] Inicio da execucao
+2026-11-26 23:29:37,958 [INFO] Fonte ANP retornou 0 itens
+2026-11-26 23:29:38,938 [INFO] Fonte CNPQ retornou 0 itens
+2026-11-26 23:30:12,924 [INFO] Fonte CAPES retornou 0 itens
+2026-11-26 23:30:16,138 [INFO] Fonte CONFAP retornou 8 itens
+2026-11-26 23:30:28,549 [WARNING] Falha ao ler PDF de edital: Stream has ended unexpectedly
+2026-11-26 23:31:06,674 [WARNING] Falha ao enriquecer item https://www.britishcouncil.org.br/atividades/educacao/alumni-awards-2027: HTTPSConnectionPool(host='www.britishcouncil.org.br', port=443): Read timed out. (read timeout=30)
+2026-11-26 23:31:25,021 [INFO] Fonte IPEA retornou 10 itens
+2026-11-26 23:32:03,965 [WARNING] Falha ao enriquecer item https://www.ipea.gov.br/portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027: HTTPSConnectionPool(host='www.ipea.gov.br', port=443): Max retries exceeded with url: /portal/bolsas-de-pesquisa-lista/16519-chamada-publica-033-2027 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ipea.gov.br', port=443) at 0x789610bf4490>, 'Connection to www.ipea.gov.br timed out. (connect timeout=30)'))
+2026-11-26 23:32:05,215 [INFO] Fonte FIOCRUZ retornou 7 itens
+2026-11-26 23:33:51,180 [INFO] Fonte EMBRAPA retornou 0 itens
+2026-11-26 23:33:58,387 [INFO] Fonte EMBRAPII retornou 10 itens
+2026-11-26 23:34:02,534 [INFO] Fonte FUNDECI retornou 0 itens
+2026-11-26 23:34:03,853 [INFO] Fonte BASA retornou 0 itens
+2026-11-26 23:34:04,800 [INFO] Fonte BNDES retornou 8 itens
+2026-11-26 23:35:21,077 [WARNING] Falha ao enriquecer item https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Festudo-de-mobilidade-urbana: HTTPSConnectionPool(host='www.bndes.gov.br', port=443): Read timed out. (read timeout=30)
+2026-11-26 23:36:07,029 [INFO] Fonte FINEP retornou 0 itens
+2026-11-26 23:36:17,357 [INFO] Fonte DECIT retornou 0 itens
+2026-11-26 23:36:18,354 [INFO] Fonte FAPESP retornou 13 itens
+2026-11-26 23:36:43,237 [INFO] Fonte FAPERJ retornou 30 itens
+2026-11-26 23:38:19,424 [INFO] Fonte FACEPE retornou 0 itens
+2026-11-26 23:38:21,631 [INFO] Fonte FAPAC retornou 29 itens
+2026-11-26 23:39:34,329 [INFO] Fonte FAPEAL retornou 15 itens
+2026-11-26 23:39:52,266 [INFO] Fonte FAPEPI retornou 0 itens
+2026-11-26 23:39:57,791 [INFO] Fonte FAPES retornou 0 itens
+2026-11-26 23:39:59,873 [INFO] Fonte FAPEG retornou 1 itens
+2026-11-26 23:40:02,570 [INFO] Fonte FAPEMA retornou 0 itens
+2026-11-26 23:40:04,477 [INFO] Fonte FAPEMAT retornou 0 itens
+2026-11-26 23:40:11,637 [INFO] Fonte FUNDECT retornou 1 itens
+2026-11-26 23:45:44,840 [INFO] Fonte FAPESPA retornou 21 itens
+2026-11-26 23:50:27,541 [INFO] Fonte FAPESQ retornou 2 itens
+2026-11-26 23:50:36,494 [INFO] Fonte FAPESB retornou 10 itens
+2026-11-26 23:51:30,472 [INFO] Fonte FUNCAP retornou 0 itens
+2026-11-26 23:53:06,902 [INFO] Fonte FAPEAM retornou 0 itens
+2026-11-26 23:53:13,511 [INFO] Fonte FAPEAP retornou 0 itens
+2026-11-26 23:54:48,117 [INFO] Fonte FAPDF retornou 0 itens
+2026-11-26 23:54:55,844 [INFO] Fonte FAPEMIG retornou 0 itens
+2026-11-26 23:54:57,879 [INFO] Fonte FAPPR retornou 4 itens
+2026-11-26 23:55:13,341 [INFO] Fonte FAPERGS retornou 0 itens
+2026-11-26 23:58:19,743 [INFO] Fonte FAPERN retornou 0 itens
+2026-11-26 23:58:21,314 [INFO] Fonte FAPERO retornou 0 itens
+2026-11-26 23:59:55,159 [INFO] Fonte FAPITEC retornou 0 itens
+2026-11-27 00:04:31,060 [INFO] Fonte FAPT retornou 0 itens
+2026-11-27 00:04:33,932 [INFO] Fonte FAPESC retornou 3 itens
+2026-11-27 00:04:41,879 [INFO] Fonte SERRAPILHEIRA retornou 16 itens
+2026-11-27 00:05:10,196 [INFO] Publicacao adiada para etapa posterior ao sync dos assets publicos.
+2026-11-27 00:05:10,207 [INFO] Total coletado: 121
+2026-11-27 00:05:10,207 [INFO] Novos: 32 | Prorrogados: 1 | Atualizados: 88 | Mantidos: 0 | Deduplicados por chave: 42
+2026-11-27 00:05:10,207 [INFO] Repostados/Publicados: 0
+2026-11-27 00:05:10,207 [INFO] Bloqueados para postagem: 0
+2026-11-27 00:05:10,207 [INFO] Expirados removidos da base: 0
+2026-11-27 00:05:10,207 [INFO] Erros por fonte: 0
+2026-11-27 00:05:10,207 [INFO] Fim da execucao
