@@ -61,6 +61,24 @@ class Stage2InventoryTests(unittest.TestCase):
              'prazo_de_formulario_comprovado_candidato_a_recuperacao'},
         )
 
+    def test_hold_editorial_explica_a_exclusao_por_registro(self):
+        item = entry(
+            'seminario', bloqueio_editorial_definitivo=True,
+            motivo_bloqueio_postagem='Prazo final nao identificado.',
+            pendencias_editoriais=[
+                'Prazo final nao identificado.',
+                'Titulo com perfil de noticia lateral ou institucional.',
+            ],
+        )
+        resultado = build_stage2_inventory(
+            [item], {}, {}, '2026-11-27T09:00:00-03:00',
+        )
+        rec = resultado['registros'][0]
+        self.assertEqual(rec['status'], 'bloqueio_editorial_a_conferir')
+        self.assertIn('Titulo com perfil de noticia lateral', rec['motivo'])
+        self.assertEqual(len(rec['pendencias_editoriais_de_origem']), 2)
+        self.assertFalse(rec['publicacao_autorizada'])
+
     def test_link_alterado_invalida_prova_antiga(self):
         item = entry('a', url='https://fap.example/novo')
         audit = {'registros': {'a': {'link_cadastrado': 'https://fap.example/antigo',
