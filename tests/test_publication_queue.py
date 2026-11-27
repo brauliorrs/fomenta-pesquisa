@@ -172,6 +172,34 @@ class PublicationQueueTests(unittest.TestCase):
         self.assertTrue(preview['alerta_gargalo'])
         self.assertEqual(f2['previsao_capacidade']['em_risco_antes_do_vencimento'],5)
 
+    def test_capacidade_com_feed_ja_publicado_hoje(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.stage5_capacity import forecast_capacity
+        now=datetime(2026,11,27,14,tzinfo=ZoneInfo('America/Sao_Paulo'))
+        hist=[{'edital_id':'ja_publicado','status':'success',
+               'feed_media_id':'feed_123',
+               'data_publicacao':'2026-11-27T09:00:00-03:00'}]
+        item=[{'id':f'novo_{i}','data_expiracao':'2026-11-28'} for i in range(15)]
+        result=forecast_capacity(item,hist,now,10)
+        self.assertEqual(result['capacidade_restante_hoje'],0)
+        self.assertEqual(result['em_risco_antes_do_vencimento'],15)
+
+    def test_previsao_diferencia_story_e_prorrogacao(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        from src.services.stage5_capacity import forecast_capacity
+        now=datetime(2026,11,27,14,tzinfo=ZoneInfo('America/Sao_Paulo'))
+        story=[{'edital_id':'story','status':'success',
+                'story_media_id':'story123','feed_media_id':'',
+                'data_publicacao':'2026-11-27T09:00:00-03:00'}]
+        edital={'id':'novo','data_expiracao':'2026-11-27T15:00:00-03:00'}
+        self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],1)
+        edital['data_expiracao']='2026-11-27T12:00:00-03:00'
+        self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],0)
+        edital['data_expiracao']='2026-12-04'
+        self.assertEqual(forecast_capacity([edital],story,now,10)['previstos_no_horizonte'],1)
+
 
 if __name__ == '__main__':
     unittest.main()
