@@ -87,6 +87,35 @@ class PublicationQueueTests(unittest.TestCase):
         self.assertEqual(f2['total_ja_publicados'], 1)
         self.assertEqual(f2['itens'][0]['id'], 'publicado')
 
+    def test_publicado_vencido_permanece_no_monitoramento(self):
+        f1, f2 = self.export([
+            call('antigo', deadline='2020-01-01', instagram_feed_publicado=True,
+                 pronto_para_postagem=False, status='encerrado'),
+            call('vigente'),
+        ])
+        self.assertEqual([x['id'] for x in f1['itens']], ['vigente'])
+        self.assertEqual([x['id'] for x in f2['itens']], ['antigo'])
+        self.assertEqual(f2['total_encerrados_monitorados'], 1)
+
+    def test_id_duplicado_nunca_reaparece_como_inedito(self):
+        f1, f2 = self.export([
+            call('repetido'), call('repetido', instagram_feed_media_id='17899'),
+            call('novo'), call('sem_data', deadline=None),
+        ])
+        self.assertEqual([x['id'] for x in f1['itens']], ['novo'])
+        self.assertEqual([x['id'] for x in f2['itens']], ['repetido'])
+        self.assertEqual(f1['total_registros_catalogo_distintos'], 3)
+        self.assertEqual(f1['total_bloqueados_ou_sem_prazo'], 1)
+
+    def test_feed_historico_vencido_nao_reaparece_em_ineditos(self):
+        history = [{'edital_id': 'hist', 'status': 'success',
+                    'feed_media_id': '178123', 'publication_kind': 'feed_carousel'}]
+        f1, f2 = self.export([
+            call('hist', deadline='2020-01-01', pronto_para_postagem=False),
+        ], history)
+        self.assertEqual(f1['total_ineditos'], 0)
+        self.assertEqual(f2['total_ja_publicados'], 1)
+
 
 if __name__ == '__main__':
     unittest.main()
