@@ -32,6 +32,35 @@ class Stage2InventoryTests(unittest.TestCase):
         self.assertEqual(states['d'], 'pagina_agregadora_nao_e_edital')
         self.assertTrue(all(not x['publicacao_autorizada'] for x in result['registros']))
 
+    def test_fapesb_erratas_confirmam_prazo_e_fase_sem_publicar(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        manual = json.loads((root / 'data/confrontos_oficiais_etapa2.json').read_text(encoding='utf-8'))
+        encerrado = manual['registros']['fundacao_de_amparo_a_pesquisa_do_estado__5bb9e677']
+        aberto = manual['registros']['fundacao_de_amparo_a_pesquisa_do_estado__70bb5a90']
+        self.assertEqual(encerrado['prazo_formulario'], '2026-10-08T17:00:00-03:00')
+        self.assertEqual(encerrado['fase'], 'inscricoes_encerradas')
+        self.assertEqual(aberto['prazo_formulario'], '2026-12-16T17:00:00-03:00')
+        self.assertEqual(aberto['prazo_documentos'], '2026-12-18T23:59:00-03:00')
+        self.assertNotEqual(aberto['prazo_formulario'], aberto['prazo_documentos'])
+        self.assertTrue(all(
+            any(url.lower().endswith('.pdf') for url in row['fontes_oficiais'])
+            for row in (encerrado, aberto)
+        ))
+        rows = [entry(key) for key in (
+            'fundacao_de_amparo_a_pesquisa_do_estado__5bb9e677',
+            'fundacao_de_amparo_a_pesquisa_do_estado__70bb5a90',
+        )]
+        inventario = build_stage2_inventory(rows, {}, manual, '2026-11-27T09:00:00-03:00')
+        self.assertEqual(inventario['sumario']['confrontos_oficiais_no_catalogo'], 2)
+        self.assertTrue(all(not x['publicacao_autorizada'] for x in inventario['registros']))
+        self.assertEqual(
+            {x['status'] for x in inventario['registros']},
+            {'inscricoes_encerradas_confirmadas_por_errata',
+             'prazo_de_formulario_comprovado_candidato_a_recuperacao'},
+        )
+
     def test_link_alterado_invalida_prova_antiga(self):
         item = entry('a', url='https://fap.example/novo')
         audit = {'registros': {'a': {'link_cadastrado': 'https://fap.example/antigo',

@@ -41,6 +41,32 @@
         "https://comunidade.embrapii.org.br/c/petrobras/desafio-petrobras-1",
         "https://embrapii.org.br/chamadas-publicas/chamada-publica-n02-2026-para-projetos-de-alto-impacto-em-economia-circular/"
       ]
+    },
+    "fundacao_de_amparo_a_pesquisa_do_estado__5bb9e677": {
+      "titulo": "FAPESB Edital 018/2026 — Apoio à Publicação Científica",
+      "decisao": "inscricoes_encerradas_confirmadas_por_errata",
+      "fundamento": "ERRATA III oficial (17/11/2026): prazo para preenchimento/conclusao da proposta terminou em 08/10/2026 às 17h; documentos dos proponentes até 16/10; resultado final em 02/12 e contratação em dezembro/janeiro não reabrem novas candidaturas. Não publicar como oportunidade aberta.",
+      "prazo_candidato": "2026-10-08",
+      "prazo_formulario": "2026-10-08T17:00:00-03:00",
+      "prazo_documentos": "2026-10-16",
+      "fase": "inscricoes_encerradas",
+      "fontes_oficiais": [
+        "https://www.fapesb.ba.gov.br/edital-fapesb-no-0182026-apoio-a-publicacao-cientifica-tecnologica-ou-de-popularizacao-das-ciencias/",
+        "https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/ERRATA-III-LIVROS-1.pdf"
+      ]
+    },
+    "fundacao_de_amparo_a_pesquisa_do_estado__70bb5a90": {
+      "titulo": "FAPESB Edital 019/2026 — Ciência na Mesa 5",
+      "decisao": "prazo_de_formulario_comprovado_candidato_a_recuperacao",
+      "fundamento": "ERRATA 04 oficial (29/10/2026): prorrogação do preenchimento/conclusão do formulário até 16/12/2026 às 17h e envio posterior de proposta/documentos digitalizados até 18/12/2026 às 23h59. Destinado a ICTs da Bahia segundo página da chamada. Só o primeiro horário é limite seguro para novas propostas; confirmar demais regras de elegibilidade antes de publicar.",
+      "prazo_candidato": "2026-12-16",
+      "prazo_formulario": "2026-12-16T17:00:00-03:00",
+      "prazo_documentos": "2026-12-18T23:59:00-03:00",
+      "fase": "submissao_de_propostas_para_icts_da_bahia",
+      "fontes_oficiais": [
+        "https://www.fapesb.ba.gov.br/edital-no-0192026-ciencia-na-mesa-5-base-de-dados-e-sistemas-de-informacoes-para-tomada-de-decisao-em-soberania-alimentar-e-nutricional/",
+        "https://www.fapesb.ba.gov.br/wp-content/uploads/2019/08/Errata_4_CNM_5.pdf"
+      ]
     }
   }
 }
