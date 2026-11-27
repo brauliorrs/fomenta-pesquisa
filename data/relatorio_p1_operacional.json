@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "gerado_em": "2026-11-27T16:39:22.583123-03:00",
+  "gerado_em": "2026-11-27T18:27:33.390385-03:00",
   "escopo": "P1 operacao diagnostica; sem alteracao do catalogo ou autorizacao de publicacao",
   "baseline_sem_prazo_2026_11_27": 208,
   "catalogo_total": 237,
@@ -15,19 +15,8 @@
   },
   "novos_links_visitados_nesta_execucao": 0,
   "ids_primeira_visita": [],
-  "falhas_de_acesso_recuperadas_nesta_execucao": 10,
-  "ids_acesso_recuperado": [
-    "conselho_nacional_das_fundacoes_estaduai_438c1f8d",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_7e452c30",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_9ca53523",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_b31b9191",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_b6d552ff",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_c2fb711e",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_d9017d7a",
-    "fundacao_de_apoio_a_pesquisa_do_estado_d_d9f78020",
-    "instituto_de_pesquisa_economica_aplicada_45b97278",
-    "instituto_de_pesquisa_economica_aplicada_4ff45c5c"
-  ],
+  "falhas_de_acesso_recuperadas_nesta_execucao": 0,
+  "ids_acesso_recuperado": [],
   "erros_de_acesso_ou_formato_atuais": 70,
   "fontes_sem_prazo_extraivel_atuais": 70,
   "fontes": {
@@ -46,7 +35,6 @@
       "visitados": 4
     },
     "CONFAP": {
-      "acesso_recuperado_na_execucao": 1,
       "elegiveis_para_visita": 22,
       "excluidos_da_auditoria": 5,
       "falha_de_acesso_ou_formato": 2,
@@ -121,7 +109,6 @@
       "visitados": 1
     },
     "FAPESQ": {
-      "acesso_recuperado_na_execucao": 7,
       "elegiveis_para_visita": 15,
       "outra_classificacao": 1,
       "prazo_encerrado": 1,
@@ -149,7 +136,6 @@
       "visitados": 2
     },
     "IPEA": {
-      "acesso_recuperado_na_execucao": 2,
       "elegiveis_para_visita": 23,
       "prazo_encerrado": 20,
       "sem_prazo": 23,
