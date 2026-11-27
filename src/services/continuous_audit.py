@@ -5,12 +5,12 @@ import hashlib
 import json
 import os
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit, urlunsplit
 
-from src.services.opportunity_guard import opportunity_gate
+from src.services.opportunity_guard import opportunity_gate, _parse, NOT_OPPORTUNITY
 from src.services.published_editorial_guard import published_repost_block_reason
 
 
@@ -79,6 +79,41 @@ def classify_record(
     }
 
 
+def _deadline_evidence(path: Path) -> dict[str, dict[str, Any]]:
+    """Dados de consulta acumulados, sem confundir extracao com homologacao."""
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding='utf-8'))
+    return data.get('registros', {}) if isinstance(data, dict) and isinstance(data.get('registros'), dict) else {}
+
+
+def _enrich_with_evidence(
+    item: dict[str, Any], row: dict[str, Any], evidence: dict[str, Any] | None,
+) -> None:
+    if row.get('motivo') == NOT_OPPORTUNITY:
+        row['anomalias'].append('fase_resultado_ou_premiacao')
+    if not evidence:
+        row['auditoria_documental'] = 'sem_consulta_registrada'
+        return
+    if evidence.get('link_cadastrado') != item.get('link'):
+        row['auditoria_documental'] = 'link_alterado_auditoria_obsoleta'
+        row['anomalias'].append('link_alterado_auditoria_obsoleta')
+        return
+    status = str(evidence.get('classificacao') or '')
+    row['auditoria_documental'] = status or 'classificacao_ausente'
+    row['ultima_auditoria_documental'] = evidence.get('verificado_em')
+    if status.startswith(('falha_http', 'erro_', 'falha_')) or status in ('pdf_inacessivel',):
+        row['anomalias'].append('falha_acesso_documento')
+    if status in ('prazo_divergente', 'multiplos_prazos_revisao'):
+        row['anomalias'].append('prazo_conflitante_ou_ambiguo')
+    if status == 'sem_evidencia_de_inscricao':
+        row['anomalias'].append('sem_evidencia_de_inscricao')
+    if status == 'prazo_de_inscricao_ja_decorrido' and row.get('decisao') == 'inedito_apto':
+        row['anomalias'].append('possivel_fase_encerrada')
+    if evidence.get('prazo_cadastrado') != item.get('data_expiracao'):
+        row['anomalias'].append('prazo_alterado_apos_auditoria')
+
+
 def run_continuous_audit(
     catalog: list[dict[str, Any]], history: list[dict[str, Any]],
     now: datetime, timezone_name: str,
@@ -88,13 +123,14 @@ def run_continuous_audit(
     """Trilha de mudancas em JSONL e snapshot atomico; sem chamadas externas."""
     history_ids = _published_ids(history)
     previous: dict[str, str] = {}
+    previous_rows: dict[str, dict[str, Any]] = {}
     if snapshot_path.exists():
         old = json.loads(snapshot_path.read_text(encoding='utf-8'))
         if not isinstance(old, dict) or old.get('schema_version') != 1:
             raise ValueError('Snapshot de auditoria corrompido')
-        previous = {str(row['id']):str(row['fingerprint'])
-                    for row in old.get('registros', [])
-                    if isinstance(row,dict) and row.get('id')}
+        previous_rows = {str(row['id']):row for row in old.get('registros', [])
+                         if isinstance(row,dict) and row.get('id')}
+        previous = {key:str(row['fingerprint']) for key,row in previous_rows.items()}
     unique: dict[str, dict[str, Any]] = {}
     for item in catalog:
         ident = str(item.get('id') or '').strip()
@@ -104,9 +140,11 @@ def run_continuous_audit(
         if prior is None or (_is_published(item, history_ids)
                              and not _is_published(prior, history_ids)):
             unique[ident] = item
+    evidence_by_id = _deadline_evidence(snapshot_path.parent / 'auditoria_prazos.json')
     rows = []
     for ident,item in sorted(unique.items()):
         row = classify_record(item, history_ids, now, timezone_name)
+        _enrich_with_evidence(item, row, evidence_by_id.get(ident))
         raw = json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(',',':'))
         row['fingerprint'] = hashlib.sha256(raw.encode('utf-8')).hexdigest()[:20]
         rows.append(row)
@@ -119,6 +157,20 @@ def run_continuous_audit(
                  'anterior':value} for ident,value in sorted(previous.items())
                 if ident not in current]
     anomalies = Counter(a for row in rows for a in row['anomalias'])
+    recovered = sorted(row['id'] for row in rows
+                       if previous_rows.get(row['id'], {}).get('anomalias')
+                       and not row['anomalias'])
+    persistent = sorted(row['id'] for row in rows
+                        if set(row['anomalias']) & set(
+                            previous_rows.get(row['id'], {}).get('anomalias', [])))
+    new_ids = sorted(ident for ident in current if ident not in previous)
+    deadline_risks = []
+    for row in rows:
+        if row['decisao'] != 'inedito_apto':
+            continue
+        parsed = _parse(row.get('data_expiracao'), now.tzinfo)
+        if parsed and 0 <= (parsed[0].date() - now.date()).days <= 3:
+            deadline_risks.append(row['id'])
     by_source: dict[str, Counter[str]] = {}
     for row in rows:
         if row['anomalias']:
@@ -126,6 +178,18 @@ def run_continuous_audit(
     failed = [row for row in history if str(row.get('status') or '').lower() == 'failed']
     summary = {
         'catalogo_distinto':len(rows),
+        'novos_desde_ultimo_snapshot':len(new_ids),
+        'ids_novos':new_ids,
+        'auditados_documentalmente':sum(1 for row in rows if row.get('auditoria_documental') not in ('sem_consulta_registrada','link_alterado_auditoria_obsoleta')),
+        'aprovados_para_fila_automatica':sum(row['decisao']=='inedito_apto' for row in rows),
+        'bloqueados_ou_hold':sum(row['decisao'].startswith('HOLD') for row in rows),
+        'publicados_no_catalogo':sum(row['publicado_feed'] for row in rows),
+        'risco_de_expiracao_em_ate_3_dias':len(deadline_risks),
+        'ids_em_risco_de_expiracao':deadline_risks,
+        'falhas_recuperadas_desde_ultimo_snapshot':len(recovered),
+        'ids_recuperados':recovered,
+        'anomalias_persistentes_desde_ultimo_snapshot':len(persistent),
+        'ids_anomalias_persistentes':persistent,
         'situacoes':dict(sorted(Counter(row['decisao'] for row in rows).items())),
         'anomalias_por_tipo':dict(sorted(anomalies.items())),
         'anomalias_por_fonte':{key:dict(sorted(value.items()))
