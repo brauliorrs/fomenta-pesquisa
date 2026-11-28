@@ -158,6 +158,24 @@ class Stage2InventoryTests(unittest.TestCase):
         self.assertEqual(report['excluidos_da_visita_por_filtro_editorial'],{
             'bloqueio_editorial_a_conferir':1})
 
+    def test_issue27_noticia_sem_inscricao_nao_conta_como_falha_da_fonte(self):
+        from src.services.stage2_inventory import build_stage2_inventory
+        from src.services.p1_operational_report import build_p1_operational_report
+        now='2026-11-28T10:00:00-03:00'
+        catalog=[{'id':'news','titulo':'FAPERN celebra 23 anos de ciencia',
+                  'fonte':'FAPERN','link':'https://www.fapern.rn.gov.br/materia/celebracao',
+                  'data_expiracao':None}]
+        audit={'generated_at':now,'registros':{}}
+        inventory=build_stage2_inventory(catalog,audit,{},now)
+        row=inventory['registros'][0]
+        self.assertEqual(row['status'],'noticia_institucional_sem_inscricoes')
+        self.assertFalse(row['auditoria_automatica_executada'])
+        report=build_p1_operational_report(catalog,{},audit,inventory)
+        self.assertEqual(report['elegiveis_para_visita'],0)
+        self.assertEqual(report['pendentes_de_visita_elegiveis'],0)
+        self.assertEqual(report['excluidos_da_visita_por_filtro_editorial'],
+                         {'noticia_institucional_sem_inscricoes':1})
+
 
 if __name__ == '__main__':
     unittest.main()
