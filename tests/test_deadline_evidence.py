@@ -448,6 +448,117 @@ class EvidenceTests(unittest.TestCase):
         self.assertTrue(all(r['classificacao']=='possivel_recuperacao'
                             for r in result['registros'].values()))
 
+    def test_issue27_tabela_intervalo_identifica_apenas_fim(self):
+        raw='Cronograma: periodo de inscricoes de projetos | 01/11/2026 | 15/12/2026'
+        self.assertEqual(
+            [x['data'] for x in extract_registration_deadlines(raw)],
+            ['2026-12-15'],
+        )
+
+    def test_issue27_tabela_celulas_com_inicio_e_fim(self):
+        raw='Submissao de propostas\nInicio: 01/11/2026\nFim: 16/12/2026'
+        self.assertEqual(
+            [x['data'] for x in extract_registration_deadlines(raw)],
+            ['2026-12-16'],
+        )
+
+    def test_issue27_rejeita_resultado_ou_recursos_mesmo_na_tabela(self):
+        raw=('Resultado final | 20/12/2026\n'
+             'Periodo de recursos | 21/12/2026 | 22/12/2026\n'
+             'Contratacao | fim: 23/12/2026')
+        self.assertEqual(extract_registration_deadlines(raw), [])
+
+    def test_issue27_recupera_tabela_mas_deixa_publicacao_bloqueada(self):
+        from src.services.deadline_candidates import build_deadline_candidates
+        from datetime import date
+        record=item('abc')
+        source=('Periodo de inscricoes de projetos | 01/11/2026 | 15/12/2026')
+        audit=assess_deadline(record,source,'2026-11-28T10:00:00-03:00',
+                              record['link'])
+        self.assertEqual(audit['classificacao'],'possivel_recuperacao')
+        ledger=build_deadline_candidates([record],
+            {'generated_at':'2026-11-28T10:00:00-03:00','registros':{'abc':audit}},
+            date(2026,11,28))
+        self.assertEqual(ledger['sumario']['candidatos_para_validacao'],1)
+        self.assertEqual(ledger['registros']['abc']['prazo_candidato'],'2026-12-15')
+        self.assertFalse(ledger['registros']['abc']['publicacao_autorizada'])
+        self.assertIsNone(record['data_expiracao'])
+
+    def test_issue27_sem_candidato_se_url_de_terceiro_ou_prazo_passado(self):
+        from src.services.deadline_candidates import build_deadline_candidates
+        from datetime import date
+        original=item('abc')
+        e=assess_deadline(original,
+            'Inscricoes ate 15/12/2026','2026-11-28T10:00:00-03:00',
+            'https://terceiro.example.org/edital')
+        report={'generated_at':'2026-11-28T10:00:00-03:00','registros':{'abc':e}}
+        self.assertFalse(build_deadline_candidates([original],report,date(2026,11,28))['registros'])
+        e['url_consultada']=original['link']
+        self.assertFalse(build_deadline_candidates([original],report,date(2026,12,16))['registros'])
+        e['classificacao']='multiplos_prazos_revisao'
+        self.assertFalse(build_deadline_candidates([original],report,date(2026,11,28))['registros'])
+
+    def test_issue27_espelho_facepe_apenas_falha_transitoria(self):
+        from requests import Timeout
+        from unittest.mock import Mock
+        from types import SimpleNamespace
+        service=DeadlineAuditService(logging.getLogger('facepe-fallback'))
+        original='https://www.facepe.br/wp-content/uploads/2026/11/edital.pdf'
+        mirror='https://www2.facepe.br/wp-content/uploads/2026/11/edital.pdf'
+        response=Mock(status_code=200,headers={'content-type':'application/pdf'},
+                      content=b'pdf',text='')
+        response.raise_for_status.return_value=None
+        page=SimpleNamespace(extract_text=lambda:'Inscricoes ate 18/12/2026')
+        with patch('src.services.deadline_audit_service.requests.get',
+                   side_effect=[Timeout('offline'),Timeout('offline'),response]) as get, patch(
+             'src.services.deadline_audit_service.PdfReader',
+             return_value=SimpleNamespace(pages=[page])):
+            raw,url,error=service._fetch_text(original)
+        self.assertEqual(error,'')
+        self.assertEqual(url,mirror)
+        self.assertIn('18/12/2026',raw)
+        self.assertEqual(get.call_count,3)
+        self.assertIsNone(service._facepe_official_mirror(
+            'https://www.facepe.br.evil.org/wp-content/uploads/x.pdf'))
+
+    def test_issue27_nao_tenta_espelho_facepe_apos_403(self):
+        from requests import HTTPError
+        from unittest.mock import Mock
+        service=DeadlineAuditService(logging.getLogger('facepe-403'))
+        url='https://www.facepe.br/wp-content/uploads/2026/11/edital.pdf'
+        denied=Mock(status_code=403,headers={},content=b'')
+        denied.raise_for_status.side_effect=HTTPError('403',response=denied)
+        with patch('src.services.deadline_audit_service.requests.get',
+                   return_value=denied) as get:
+            raw,retrieved,error=service._fetch_text(url)
+        self.assertEqual(error,'falha_http_403')
+        self.assertEqual(get.call_count,1)
+
+    def test_issue27_filtra_noticia_sem_inscricao_mas_mantem_chamada(self):
+        from src.services.source_triage import is_clear_non_application_news
+        from src.services.opportunity_guard import opportunity_gate
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        news={'titulo':'Fapern celebra 23 anos de incentivo à ciência',
+              'link':'https://www.fapern.rn.gov.br/materia/celebra',
+              'data_expiracao':'2026-12-10','status':'novo'}
+        self.assertTrue(is_clear_non_application_news(news))
+        self.assertFalse(opportunity_gate(news,datetime(
+            2026,11,28,10,tzinfo=ZoneInfo('America/Sao_Paulo')))[0])
+        real={'titulo':'FAPERN abre inscrições para edital de pesquisa',
+              'link':'https://www.fapern.rn.gov.br/materia/chamada',
+              'data_expiracao':'2026-12-10'}
+        self.assertFalse(is_clear_non_application_news(real))
+
+    def test_issue27_candidato_facepe_espelho_mesma_fundacao(self):
+        from src.services.deadline_candidates import _same_official_origin
+        self.assertTrue(_same_official_origin(
+            'https://www.facepe.br/wp-content/uploads/edital.pdf',
+            'https://www2.facepe.br/wp-content/uploads/edital.pdf'))
+        self.assertFalse(_same_official_origin(
+            'https://www.facepe.br/wp-content/uploads/edital.pdf',
+            'https://outro.org.br/wp-content/uploads/edital.pdf'))
+
 
 if __name__ == '__main__':
     unittest.main()
