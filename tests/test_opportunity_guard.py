@@ -239,7 +239,12 @@ class TestOpportunityGuard(unittest.TestCase):
             self.assertTrue(row['bloqueio_recuperacao_prazo'])
             self.assertFalse(row['pronto_para_postagem'])
             self.assertFalse(eligible_for_publication(row))
-        self.assertEqual(sum(not x.get('data_expiracao') for x in catalog),206)
+        # A lista cresce entre coletas; não fixar o total histórico de
+        # prazos ausentes. A invariante é nunca liberar prazo recuperado.
+        self.assertFalse(any(
+            row.get('bloqueio_recuperacao_prazo') and row.get('pronto_para_postagem')
+            for row in catalog
+        ))
 
 
 if __name__ == '__main__':
