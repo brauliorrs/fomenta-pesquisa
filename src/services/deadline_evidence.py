@@ -190,6 +190,8 @@ def extract_registration_deadlines(text: str) -> list[dict[str, str]]:
             dates = list(DATE_TOKEN.finditer(context))
             if not dates:
                 continue
+            if re.search(r'^(?:inicio|abertura|data inicial)\b', context):
+                continue
             if TABULAR_END.search(context) and len(dates) == 1:
                 parsed = parse_date_token(dates[0].group(0))
                 if parsed:
