@@ -1,20 +1,21 @@
 {
-  "gerado_em": "2026-11-27T18:27:33.390385-03:00",
+  "gerado_em": "2026-11-28T00:36:47.894868-03:00",
   "etapa": 2,
   "status_etapa": "EM_ANDAMENTO",
   "metodo": "inventario_todos_sem_prazo_com_diagnostico_sem_promocao_automatica",
   "sumario": {
-    "total_catalogo": 237,
-    "sem_prazo_atuais": 206,
+    "total_catalogo": 243,
+    "sem_prazo_atuais": 212,
     "linha_de_base_historica": 168,
     "com_auditoria_de_link": 192,
-    "nao_visitados_automaticamente": 14,
+    "nao_visitados_automaticamente": 20,
     "status_por_categoria": {
       "bloqueio_editorial_a_conferir": 13,
       "datas_ambiguas": 1,
-      "falha_de_acesso_ou_formato": 70,
+      "falha_de_acesso_ou_formato": 71,
       "inscricoes_encerradas_confirmadas_por_errata": 1,
-      "nao_extraido_do_link": 70,
+      "nao_extraido_do_link": 69,
+      "noticia_institucional_sem_inscricoes": 6,
       "pagina_agregadora_nao_e_edital": 1,
       "prazo_de_inscricao_encerrado": 50
     },
@@ -23,6 +24,48 @@
     "recuperacoes_autorizadas": 0
   },
   "registros": [
+    {
+      "id": "banco_nacional_de_desenvolvimento_econom_0631e519",
+      "titulo": "BNDES FEP Fomento nº 01/2022",
+      "fonte": "BNDES",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2022-formacao-bioeconomia-amazonia/!ut/p/z0/lY67bsMwDEV_JR00CmIEI21Hw0OLIhq8OVoC2qZjtrVoR3L6-Pqq_oAC3XjBi3OP8aYxPuCNL5hYAr7nfPKH8339VD2Xxf4Izj1ADUXtyuIRisqaF-P_LmSCvbrKXYyfMY2awyCmGWjWg0wUkmjYawvW5nydsEPRLQt1EmRi1DjhtwTGXw6_Losvjc-_RJ_JNG3oKZ45xMRp7TZjBWPGKsidkTreFhTMFJeVI-5o12MvUQHFtG7HxtDZR8H_peY33359lHc_D1M_vQ!!/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
+    {
+      "id": "banco_nacional_de_desenvolvimento_econom_28772726",
+      "titulo": "BNDES FEP Fomento nº 01/2026",
+      "fonte": "BNDES",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2026-certificacao-credito-de-carbono/!ut/p/z0/nY67TsQwEEV_ZSlcWjMbRQuUUYpFCBfpgpuVY082w8OTxA6Pv8fkAyjo5mquzj1goQcb3QdfXWaJ7q3kZ3u63Hbn9qGpj09ozB12WHemqe-xbit4BPt3oRCq1bTmCnZ2edIcR4F-pFmP8k4xi8ajrrA6aU9r5pG98060XylweQbS3q2DRPkl8cuy2Aasl5jpK0M_xEDpwjFlzpvfnRVOBaywdCbyvG8onCktGyd3oENwQZJCSnnbj52hi5HC_2jNr3b4_mxufgAbgqdI/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
     {
       "id": "banco_nacional_de_desenvolvimento_econom_57e74d9e",
       "titulo": "BNDES FEP Fomento nº 02/2026",
@@ -50,12 +93,12 @@
       "publicacao_autorizada": false
     },
     {
-      "id": "banco_nacional_de_desenvolvimento_econom_d1c58d8e",
-      "titulo": "BNDES FEP Fomento nº 03/2022",
+      "id": "banco_nacional_de_desenvolvimento_econom_5cbc9fce",
+      "titulo": "BNDES FEP Fomento nº 02/2022",
       "fonte": "BNDES",
-      "link_catalogado": "https://www.bndes.gov.br?1dmy&urile=wcm%3apath%3a%2Fbndes_institucional%2Fhome%2Fconhecimento%2Fpesquisa%2Be%2Bdados%2Festudos%2Fbndes-fep%2Ffep-fomento-03-2022-projeto-piloto-do-planejamento-espacial-marinho-pem",
-      "status": "nao_extraido_do_link",
-      "motivo": "Leitura nao encontrou prazo; isso NAO prova que o orgao omitiu a informacao.",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/iniciativa-producao-de-carne-e-leite-bovinos-de-baixo-carbono-selecao-publica-bndes-fep-fomento-2-2022/!ut/p/z0/vY-7ToVAEIZf5VhQTnYlxEtJKDRGCjrc5mR3GQ6jOLOwCx7fXqCwtLSbyX_58iujWmXYrnSxiYTtuP1v5u583zxVz2Vx-6rr-kE3umjqsnjURZWrF2X-NmwN-VxX9UWZYNMAxL2olpg8bZDVQpilW7wV6BC8nRkBYURKCE5WYom74CxdZZedsEDEEfdEWNxI3oLjDiP0GKCXT-QkkEOu8wNO79NkSmW8cMJrUu1hPhPHRGnxx8xMD1su05tnQE9HRaYDxmmhaE946mwnMdMY03Icv8BM_9OS8GHc91d58wNi4_Cp/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -64,7 +107,91 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:23:25.069264-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
+    {
+      "id": "banco_nacional_de_desenvolvimento_econom_61c224e9",
+      "titulo": "Estudo Nacional de Mobilidade Urbana",
+      "fonte": "BNDES",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/estudo-de-mobilidade-urbana/!ut/p/z0/fY47D4JAEIT_ChaUZE9CfJSEQmO8gg6vIQessAp3wB0-_r0nxs7YzUxmv1kQkIFQ8ka1tKSVbJ0_iVW-TnfJPo6WR8b5hqUsSnkcbVmUhHAA8b_gCOHIE16D6KVtAlJnDRkaO1U6qDDodEEtVdLJaSykku8LugyDiEGUWll8WMgKVaHJSRlLdirn33zW6A595joNltShstpnPZphIiM99BxTG599ppyYGcEZ-2_2e76_iuJ5jxcvrQDW2Q!!/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
+    {
+      "id": "banco_nacional_de_desenvolvimento_econom_73d0ecc6",
+      "titulo": "BNDES FEP Fomento nº 01/2024",
+      "fonte": "BNDES",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2024-projeto-piloto-do-planejamento-espacial-marinho-pem-norte/!ut/p/z0/rU-7boQwEPyVS-HS8h6yLkmJKBJF54KOuDntwXIsAdtgk8ffxyF9qlQ7ox3NQ1nVKOvwnW-Y2DucMn-1p8t9_VQ9l_p4BmMeoAZdm1I_gq4K9aLs34LsUKymMjdlA6ZBsuu9anoKsvczueQlHGUBhZZh9SNlHnjy-XQZTehoxF8ZxYAt4yRnXNkN-UuzdH5N9JPB47LYUtnWu0SfSTVX11G8sIuJ09buawQMOVJA1gzU8m4rIFBcNo54oEOHnY8CKKZtB7uHzF0F_G_h8GavXx_l3TeX-jq3/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
+    {
+      "id": "banco_nacional_de_desenvolvimento_econom_c1bb1db8",
+      "titulo": "BNDES FEP Fomento nº 01/2025",
+      "fonte": "BNDES",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-01-2025-fep-naval/!ut/p/z0/fY65DoMwEER_hRQurV0QuUpEkSiKCzriBhkw4Bw2xCbH38eQnm5nNXpvgEMOXIuXaoVTRou7zxe-KbbZIT0mcXhGxnaYYZyxJN5jnEZwAr5c8IToyVLWAu-F66jSjYG8kT1tzENqZyiGNMJoTaefl_-t6joMPAFeGe3kx0Fe6lraQmnrlBureR3BziMI-k4nKzXTCPbSDqOyIpBBLWpjCUrrxvmYGZOH4PKA_sbL7ztZ_QCRCaEh/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
+    {
+      "id": "banco_nacional_de_desenvolvimento_econom_f8859e31",
+      "titulo": "BNDES FEP Fomento nº 03/2022",
+      "fonte": "BNDES",
+      "link_catalogado": "https://www.bndes.gov.br/wps/portal/site/home/conhecimento/pesquisaedados/estudos/bndes-fep/fep-fomento-03-2022-projeto-piloto-do-planejamento-espacial-marinho-pem/!ut/p/z0/rY87c4QwDIT_yqVw6bHiMHmUDEUymbigI25udCAOEbANNnn8-_ORPlUq7Y52Pq2UVY2yDj_5jIm9wyn7d3t_fKifq5eyuH0DYx6hhqI2ZfEERaXVq7J_BzJBr6YyZ2UDpkGy671qegqy9zO55CXcSQ1ay7D6kbIPPPk8uqwmdDTib4xiwJZxkjOu7Ia8pflK53FZbKls612i76Sak-soHtnFxGlr9z8EDPmYgJwZqOUdKCBQXDaOeKBDh52PAiimbRc7Q-aWAv6raviwp5-v8uYC1JPlSQ!!/",
+      "status": "falha_de_acesso_ou_formato",
+      "motivo": "Coleta nao concluiu: timeout_http.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -85,7 +212,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -106,7 +233,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -149,7 +276,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -170,7 +297,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -511,6 +638,27 @@
       "publicacao_autorizada": false
     },
     {
+      "id": "conselho_nacional_das_fundacoes_estaduai_7d8a7aea",
+      "titulo": "Governo de Minas lança edital de R$ 20 milhões para solucionar desafios do setor público",
+      "fonte": "CONFAP",
+      "link_catalogado": "https://fapemig.br/files/Chamada-HUBMG-GOV-Retificada?title=Chamada+HUBMG+GOV+Retificada&url=https://api.site.fapemig.br/wp-content/uploads/2026-11-27__195__13142__sei_154607592_fapemig___chamada_2__ljePstys.pdf",
+      "status": "nao_extraido_do_link",
+      "motivo": "Leitura nao encontrou prazo; isso NAO prova que o orgao omitiu a informacao.",
+      "origem_do_diagnostico": "auditoria_automatica",
+      "fonte_de_evidencia": [],
+      "data_candidata": null,
+      "fase": null,
+      "pendencias_editoriais_de_origem": [
+        "Prazo final nao identificado."
+      ],
+      "auditoria_automatica_executada": true,
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
+      "evidencia_extrator": [],
+      "confronto_oficial": false,
+      "revisao_editorial_concluida": false,
+      "publicacao_autorizada": false
+    },
+    {
       "id": "conselho_nacional_das_fundacoes_estaduai_88133adf",
       "titulo": "CONFAP e Brasillinois lançam chamada para apoiar projetos entre pesquisadores do Brasil e de universidades de Illinois, nos EUA",
       "fonte": "CONFAP",
@@ -689,27 +837,6 @@
       "publicacao_autorizada": false
     },
     {
-      "id": "conselho_nacional_das_fundacoes_estaduai_decbe3ca",
-      "titulo": "Governo de Minas lança edital de R$ 20 milhões para solucionar desafios do setor público",
-      "fonte": "CONFAP",
-      "link_catalogado": "https://fapemig.br/files/Retifica%25C3%25A7%25C3%25A3o-da-Chamada-HUBMG-GOV?title=Retifica%C3%A7%C3%A3o+da+Chamada+HUBMG+GOV&url=https://api.site.fapemig.br/wp-content/uploads/2026-11-26__195__13122__sei_154244542_ato_74__Aw9XbVpX.pdf",
-      "status": "nao_extraido_do_link",
-      "motivo": "Leitura nao encontrou prazo; isso NAO prova que o orgao omitiu a informacao.",
-      "origem_do_diagnostico": "auditoria_automatica",
-      "fonte_de_evidencia": [],
-      "data_candidata": null,
-      "fase": null,
-      "pendencias_editoriais_de_origem": [
-        "Prazo final nao identificado."
-      ],
-      "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T09:35:50.699219-03:00",
-      "evidencia_extrator": [],
-      "confronto_oficial": false,
-      "revisao_editorial_concluida": false,
-      "publicacao_autorizada": false
-    },
-    {
       "id": "conselho_nacional_das_fundacoes_estaduai_ec8c7348",
       "titulo": "Prêmio internacional Science, She Says! recebe indicações de pesquisadoras",
       "fonte": "CONFAP",
@@ -839,7 +966,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -861,7 +988,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -904,7 +1031,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -926,7 +1053,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -948,7 +1075,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1144,7 +1271,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1165,7 +1292,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1187,7 +1314,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1209,7 +1336,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1231,7 +1358,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1253,7 +1380,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1940,7 +2067,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1961,7 +2088,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -1982,7 +2109,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2003,7 +2130,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2024,7 +2151,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2150,7 +2277,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2171,7 +2298,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2182,8 +2309,8 @@
       "titulo": "Fapern celebra 23 anos de contribuição à ciência e ao desenvolvimento do RN",
       "fonte": "FAPERN",
       "link_catalogado": "https://www.fapern.rn.gov.br/materia/fapern-celebra-23-anos-de-contribuicao-a-ciencia-e-ao-desenvolvimento-do-rn/",
-      "status": "falha_de_acesso_ou_formato",
-      "motivo": "Coleta nao concluiu: falha_conexao_http.",
+      "status": "noticia_institucional_sem_inscricoes",
+      "motivo": "Noticia de atividade institucional sem indicacao de processo de candidatura.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -2191,7 +2318,7 @@
       "pendencias_editoriais_de_origem": [
         "Prazo final nao identificado."
       ],
-      "auditoria_automatica_executada": true,
+      "auditoria_automatica_executada": false,
       "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
@@ -2213,7 +2340,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2234,7 +2361,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2255,7 +2382,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T16:39:22.583123-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2308,8 +2435,8 @@
       "titulo": "Ciência Perto da Comunidade reúne mais de 400 estudantes em Serra de São Bento",
       "fonte": "FAPERN",
       "link_catalogado": "https://www.fapern.rn.gov.br/materia/ciencia-perto-da-comunidade-reune-mais-de-400-estudantes-em-serra-de-sao-bento/",
-      "status": "falha_de_acesso_ou_formato",
-      "motivo": "Coleta nao concluiu: falha_conexao_http.",
+      "status": "noticia_institucional_sem_inscricoes",
+      "motivo": "Noticia de atividade institucional sem indicacao de processo de candidatura.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -2317,7 +2444,7 @@
       "pendencias_editoriais_de_origem": [
         "Prazo final nao identificado."
       ],
-      "auditoria_automatica_executada": true,
+      "auditoria_automatica_executada": false,
       "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
@@ -2392,8 +2519,8 @@
       "titulo": "Encontro reúne pesquisadores bolsistas da Fapern que atuam no Instituto Internacional de Física da UFRN",
       "fonte": "FAPERN",
       "link_catalogado": "https://www.fapern.rn.gov.br/materia/encontro-reune-pesquisadores-bolsistas-da-fapern-que-atuam-no-instituto-internacional-de-fisica-da-ufrn/",
-      "status": "falha_de_acesso_ou_formato",
-      "motivo": "Coleta nao concluiu: falha_conexao_http.",
+      "status": "noticia_institucional_sem_inscricoes",
+      "motivo": "Noticia de atividade institucional sem indicacao de processo de candidatura.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -2401,7 +2528,7 @@
       "pendencias_editoriais_de_origem": [
         "Prazo final nao identificado."
       ],
-      "auditoria_automatica_executada": true,
+      "auditoria_automatica_executada": false,
       "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
@@ -2413,8 +2540,8 @@
       "titulo": "Elas na Ciência: 2ª edição reúne pesquisadoras para debate",
       "fonte": "FAPERN",
       "link_catalogado": "https://www.fapern.rn.gov.br/materia/elas-na-ciencia-2a-edicao-reune-pesquisadoras-para-debate/",
-      "status": "falha_de_acesso_ou_formato",
-      "motivo": "Coleta nao concluiu: falha_conexao_http.",
+      "status": "noticia_institucional_sem_inscricoes",
+      "motivo": "Noticia de atividade institucional sem indicacao de processo de candidatura.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -2423,7 +2550,7 @@
         "Prazo final nao identificado.",
         "Resumo curto para postagem automatica."
       ],
-      "auditoria_automatica_executada": true,
+      "auditoria_automatica_executada": false,
       "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
@@ -2508,7 +2635,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2529,7 +2656,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2550,7 +2677,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2571,7 +2698,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2635,7 +2762,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2656,7 +2783,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2678,7 +2805,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2699,7 +2826,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2710,8 +2837,8 @@
       "titulo": "I SIMAC inicia debates sobre ciência e território no Vale do Assú",
       "fonte": "FAPERN",
       "link_catalogado": "https://www.fapern.rn.gov.br/materia/i-simac-inicia-debates-sobre-ciencia-e-territorio-no-vale-do-assu/",
-      "status": "falha_de_acesso_ou_formato",
-      "motivo": "Coleta nao concluiu: falha_conexao_http.",
+      "status": "noticia_institucional_sem_inscricoes",
+      "motivo": "Noticia de atividade institucional sem indicacao de processo de candidatura.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -2719,7 +2846,7 @@
       "pendencias_editoriais_de_origem": [
         "Prazo final nao identificado."
       ],
-      "auditoria_automatica_executada": true,
+      "auditoria_automatica_executada": false,
       "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
@@ -2753,8 +2880,8 @@
       "titulo": "FECITERN 2026 reúne estudantes e celebra a ciência produzida nas escolas potiguares",
       "fonte": "FAPERN",
       "link_catalogado": "https://www.fapern.rn.gov.br/materia/fecitern-2026-reune-estudantes-e-celebra-a-ciencia-produzida-nas-escolas-potiguares/",
-      "status": "falha_de_acesso_ou_formato",
-      "motivo": "Coleta nao concluiu: falha_conexao_http.",
+      "status": "noticia_institucional_sem_inscricoes",
+      "motivo": "Noticia de atividade institucional sem indicacao de processo de candidatura.",
       "origem_do_diagnostico": "auditoria_automatica",
       "fonte_de_evidencia": [],
       "data_candidata": null,
@@ -2762,7 +2889,7 @@
       "pendencias_editoriais_de_origem": [
         "Prazo final nao identificado."
       ],
-      "auditoria_automatica_executada": true,
+      "auditoria_automatica_executada": false,
       "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
@@ -2784,7 +2911,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2828,7 +2955,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2850,7 +2977,7 @@
         "Resumo curto para postagem automatica."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2893,7 +3020,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2914,7 +3041,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2935,7 +3062,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -2956,7 +3083,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [],
       "confronto_oficial": false,
       "revisao_editorial_concluida": false,
@@ -3560,7 +3687,7 @@
         "Prazo final nao identificado."
       ],
       "auditoria_automatica_executada": true,
-      "ultima_verificacao_automatica": "2026-11-27T18:27:33.390385-03:00",
+      "ultima_verificacao_automatica": "2026-11-28T00:36:47.894868-03:00",
       "evidencia_extrator": [
         {
           "data": "2026-12-02",

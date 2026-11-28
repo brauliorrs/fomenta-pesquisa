@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "gerado_em": "2026-11-28T00:36:47.894868-03:00",
+  "sumario": {
+    "candidatos_para_validacao": 0,
+    "rejeitados_por_ambiguidade": {},
+    "publicacoes_autorizadas": 0
+  },
+  "registros": {},
+  "observacao": "Candidato não é prazo oficial confirmado. Apenas o ledger documental aprovado é reconciliado sob HOLD."
+}
