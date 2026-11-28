@@ -14,6 +14,8 @@ from typing import Any
 from urllib.parse import unquote, urlsplit
 from zoneinfo import ZoneInfo
 
+from src.services.source_triage import is_clear_non_application_news
+
 
 NOT_OPPORTUNITY = 'Noticia de resultados, finalistas ou premiacoes; nao e uma oportunidade de inscricao.'
 CLOSED = 'Edital encerrado.'
@@ -105,6 +107,8 @@ def opportunity_gate(
     # Recuperar uma data não autoriza postagem: pendência persiste entre coletas.
     if edital.get('bloqueio_recuperacao_prazo') is True:
         return False, 'Prazo recuperado: revisao editorial de fase e publico pendente.', False
+    if is_clear_non_application_news(edital):
+        return False, 'Noticia institucional sem edital ou candidaturas abertas.', True
     if is_listing_page(edital.get('titulo'), edital.get('link')):
         return False, COLLECTION_PAGE, True
     if POST_SELECTION.search(title):
