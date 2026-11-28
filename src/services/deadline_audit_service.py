@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 from threading import Lock, Semaphore
 from datetime import date, timedelta
 from typing import Any, Callable
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -90,7 +90,33 @@ class DeadlineAuditService:
                 return None
         return next(iter(candidates)) if candidates else None
 
-    def _fetch_text(self, url: str, follow_pdf: bool = True) -> tuple[str, str, str]:
+    @staticmethod
+    def _facepe_official_mirror(url: str) -> str | None:
+        """Mesmo caminho de PDF, somente nos dois domínios oficiais da FACEPE.
+
+        Não contorna 401/403; usado apenas após indisponibilidade transitória
+        do host antigo. Não procurar por título nem adivinhar outro documento.
+        """
+        parts = urlsplit(url)
+        if (parts.scheme != 'https' or parts.hostname not in
+                {'facepe.br', 'www.facepe.br'} or
+                not parts.path.startswith('/wp-content/uploads/') or
+                not parts.path.lower().endswith('.pdf')):
+            return None
+        return urlunsplit(('https', 'www2.facepe.br', parts.path, parts.query, ''))
+
+    def _fallback_network(
+        self, url: str, follow_pdf: bool, enabled: bool,
+    ) -> tuple[str, str, str] | None:
+        alternate = self._facepe_official_mirror(url) if enabled else None
+        if alternate and self.safe_url(alternate):
+            return self._fetch_text(
+                alternate, follow_pdf=follow_pdf, allow_official_fallback=False
+            )
+        return None
+
+    def _fetch_text(self, url: str, follow_pdf: bool = True,
+                    allow_official_fallback: bool = True) -> tuple[str, str, str]:
         if not self.safe_url(url):
             return '', '', 'link_invalido'
         original_host = (urlsplit(url).hostname or '').lower()
@@ -155,12 +181,23 @@ class DeadlineAuditService:
             except requests.HTTPError as exc:
                 status = exc.response.status_code if exc.response is not None else None
                 self.logger.warning('HTTP %s na auditoria da URL %s', status, current)
+                if status in {500, 502, 503, 504}:
+                    alternate = self._fallback_network(
+                        url, follow_pdf, allow_official_fallback
+                    )
+                    if alternate is not None:
+                        return alternate
                 return '', current, f'falha_http_{status}' if status else 'falha_http_ou_documento'
             except requests.Timeout as exc:
                 self.logger.warning('Timeout na auditoria do link %s: %s', current, exc)
                 if retries < self.MAX_RETRIES_TRANSIENT:
                     retries += 1
                     continue
+                alternate = self._fallback_network(
+                    url, follow_pdf, allow_official_fallback
+                )
+                if alternate is not None:
+                    return alternate
                 return '', current, 'timeout_http'
             except requests.exceptions.SSLError as exc:
                 self.logger.warning('Falha TLS na auditoria do link %s: %s', current, exc)
@@ -170,6 +207,11 @@ class DeadlineAuditService:
                 if retries < self.MAX_RETRIES_TRANSIENT:
                     retries += 1
                     continue
+                alternate = self._fallback_network(
+                    url, follow_pdf, allow_official_fallback
+                )
+                if alternate is not None:
+                    return alternate
                 return '', current, 'falha_conexao_http'
             except (requests.RequestException, ValueError, KeyError) as exc:
                 self.logger.warning('Falha de auditoria no link %s: %s', current, exc)
