@@ -21,6 +21,7 @@ from pypdf import PdfReader
 
 from src.services.deadline_evidence import assess_deadline, extract_registration_deadlines
 from src.services.opportunity_guard import is_listing_page
+from src.services.source_triage import is_clear_non_application_news
 
 
 class DeadlineAuditService:
@@ -183,6 +184,7 @@ class DeadlineAuditService:
         return bool(
             item.get('id') and item.get('link')
             and not is_listing_page(item.get('titulo'), item.get('link'))
+            and not is_clear_non_application_news(item)
             and not item.get('bloqueio_editorial_definitivo')
         )
 
