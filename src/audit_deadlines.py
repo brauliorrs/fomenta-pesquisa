@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from src.config import settings
 from src.services.deadline_audit_service import DeadlineAuditService
+from src.services.deadline_candidates import build_deadline_candidates
 from src.services.p1_operational_report import build_p1_operational_report
 from src.services.stage2_inventory import build_stage2_inventory
 from src.services.storage_service import StorageService
@@ -18,6 +19,15 @@ def main() -> None:
     previous = storage.read_json(settings.deadline_audit_path, default={})
     report = DeadlineAuditService(logger).run(editais, previous, now_iso)
     storage.write_json(settings.deadline_audit_path, report)
+    candidates = build_deadline_candidates(
+        editais, report, now_in_timezone(settings.timezone).date()
+    )
+    storage.write_json(
+        settings.deadline_audit_path.parent / 'candidatos_recuperacao_prazos.json',
+        candidates,
+    )
+    logger.info('Candidatos de prazo para revisao, em HOLD: %s',
+                candidates['sumario']['candidatos_para_validacao'])
     confrontos = storage.read_json(settings.stage2_official_checks_path, default={})
     inventory = build_stage2_inventory(editais, report, confrontos, now_iso)
     storage.write_json(settings.stage2_inventory_path, inventory)

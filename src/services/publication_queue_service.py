@@ -79,7 +79,7 @@ class PublicationQueueService:
             (item for item in unpublished
              if item.get('pronto_para_postagem')
              and item.get('status') != 'encerrado'
-             and opportunity_gate(item, timezone_name=settings.timezone)[0]),
+             and opportunity_gate(item, now=ordering_now, timezone_name=settings.timezone)[0]),
             key=lambda item: self._sort_key(item, ordering_now),
         )
         assert not ({item['id'] for item in ineditos} & {item['id'] for item in publicados})
@@ -98,7 +98,7 @@ class PublicationQueueService:
             'total_registros_catalogo_distintos': len(distinct),
             'total_bloqueados_ou_sem_prazo': len(unpublished) - len(ineditos),
             'total_encerrados_monitorados': sum(
-                not opportunity_gate(item, timezone_name=settings.timezone)[0]
+                not opportunity_gate(item, now=ordering_now, timezone_name=settings.timezone)[0]
                 for item in publicados
             ),
         }
