@@ -9,6 +9,7 @@ from collections import Counter
 from typing import Any
 
 from src.services.opportunity_guard import is_listing_page
+from src.services.source_triage import is_clear_non_application_news
 
 
 def _automatic_classification(
@@ -30,6 +31,8 @@ def _automatic_classification(
         return ('bloqueio_editorial_a_conferir',
                 'Excluido pela triagem editorial: ' + reason
                 + ' Confirmar o enquadramento antes de qualquer reconsideracao.', False)
+    if is_clear_non_application_news(item):
+        return ('noticia_institucional_sem_inscricoes', 'Noticia de atividade institucional sem indicacao de processo de candidatura.', False)
     if not item.get('link'):
         return ('link_ausente', 'Sem URL de documento oficial para conferencia.', False)
     if not evidence:
