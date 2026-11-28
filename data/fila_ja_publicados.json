@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-28T08:22:01.263258-03:00",
+  "generated_at": "2026-11-28T08:55:28.215173-03:00",
   "criterio": "triagem_automatica_nao_equivale_a_inscricoes_confirmadas",
   "total_elegiveis_automaticamente": 0,
   "previsao_capacidade": {
-    "gerado_em": "2026-11-28T08:55:24.427528-03:00",
+    "gerado_em": "2026-11-28T08:55:40.592613-03:00",
     "modelo": "previsao_conservadora_um_carrossel_por_dia_sem_postagem_automatica",
     "capacidade_diaria": 10,
     "publicacoes_feed_hoje": 0,
@@ -244,8 +244,8 @@
       "prazo": "2026-12-18",
       "status": "atualizado",
       "score_editorial": 90,
-      "ultima_postagem": "2026-11-27T09:22:40.306251-03:00",
-      "quantidade_postagens": 2,
+      "ultima_postagem": "2026-11-28T08:55:28.215173-03:00",
+      "quantidade_postagens": 3,
       "instagram_feed_publicado": true,
       "validacao_inscricoes": "monitoramento_historico_nao_autoriza_repostagem",
       "repostagem_bloqueada": false,
