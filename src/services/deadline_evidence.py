@@ -61,6 +61,13 @@ NEGATIVE_PHASE = re.compile(
 )
 
 
+# Rótulos frequentes em tabelas de cronogramas (inclusive PDFs em colunas).
+TABULAR_RANGE = re.compile(r'\b(?:periodo|intervalo|de\s+\d|entre\s+\d)\b', re.IGNORECASE)
+TABULAR_END = re.compile(
+    r'\b(?:fim|termino|data\s+final|data\s+limite|encerramento|ate)\b',
+    re.IGNORECASE,
+)
+
 OPENING_PHASE = re.compile(
     r'\b(?:inicio|abertura|comeco)\s+'
     r'(?:(?:d[aeo]s?|do\s+prazo\s+para|do\s+prazo\s+de)\s+)?'
@@ -154,6 +161,45 @@ def extract_registration_deadlines(text: str) -> list[dict[str, str]]:
                 'trecho': evidence_line[:260],
             })
         prior_label = ''
+    # Complemento para cronogramas com células/linhas separadas.
+    # Só considera o final do PERÍODO de inscrições ou o rótulo explícito
+    # de encerramento; nunca datas de resultado, recurso ou contratação.
+    for offset, raw in enumerate(original_lines[:12000]):
+        normalized = fold(raw[:1500])
+        if not REGISTRATION.search(normalized) or NEGATIVE_PHASE.search(normalized):
+            continue
+        tokens = list(DATE_TOKEN.finditer(normalized))
+        if len(tokens) == 2 and (TABULAR_RANGE.search(normalized) or '|' in raw):
+            first = parse_date_token(tokens[0].group(0))
+            last = parse_date_token(tokens[1].group(0))
+            if first and last and first < last:
+                found.setdefault(last, {
+                    'data':last, 'trecho':raw[:260],
+                    'contexto':'termino_periodo_de_inscricao_em_tabela',
+                })
+        if tokens:
+            continue
+        # Um rótulo de fase seguido por até duas linhas/células. Não
+        # atravessar título de fase nova ou captar o início das inscrições.
+        for next_line in original_lines[offset + 1:offset + 3]:
+            context = fold(next_line[:500])
+            if NEGATIVE_PHASE.search(context) or OPENING_PHASE.search(context):
+                break
+            if REGISTRATION.search(context) and not TABULAR_END.search(context):
+                break
+            dates = list(DATE_TOKEN.finditer(context))
+            if not dates:
+                continue
+            if TABULAR_END.search(context) and len(dates) == 1:
+                parsed = parse_date_token(dates[0].group(0))
+                if parsed:
+                    found.setdefault(parsed, {
+                        'data':parsed,
+                        'trecho':(raw + ' | ' + next_line)[:260],
+                        'contexto':'rotulo_fim_cronograma',
+                    })
+            # Datas sem "fim"/"término" são ambíguas e não entram.
+            break
     return sorted(found.values(), key=lambda x: x['data'])
 
 
