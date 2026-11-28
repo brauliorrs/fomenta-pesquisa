@@ -11,7 +11,8 @@ from datetime import datetime
 from typing import Any
 
 
-NON_VISITABLE = {'bloqueio_editorial_a_conferir', 'pagina_agregadora_nao_e_edital'}
+NON_VISITABLE = {'bloqueio_editorial_a_conferir', 'pagina_agregadora_nao_e_edital',
+                 'noticia_institucional_sem_inscricoes'}
 ERROR_PREFIXES = ('falha_', 'timeout_', 'documento_muito_grande', 'pdf_sem_texto_extraivel',
                   'tipo_de_documento_nao_suportado', 'imagem_nao_e_documento_textual',
                   'excesso_redirecionamentos', 'redirecionamento_de_dominio_externo')
